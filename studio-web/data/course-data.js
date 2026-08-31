@@ -3071,7 +3071,7 @@ window.COMMUNITIES_DATA = [
         "subtitle": "Formación completa de Devin Jatho Editing Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 4,
-        "totalLessons": 31,
+        "totalLessons": 32,
         "totalResources": 0,
         "modules": [
           {
@@ -3531,6 +3531,20 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 4,
                 "gdriveId": "11AvN6s6U59S26iifwsS98sd1d7-hnHOf",
                 "gdriveLink": "https://drive.google.com/file/d/11AvN6s6U59S26iifwsS98sd1d7-hnHOf/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_32",
+                "slug": "les_devi",
+                "index": 10,
+                "globalIndex": 32,
+                "title": "Practice Create a Special Selector Animation",
+                "rawTitle": "Practice Create a Special Selector Animation",
+                "module": "04_Mastering Devin's Body Editing",
+                "moduleIndex": 4,
+                "gdriveId": "1emhX7QGHGMYrOs6z8b-I6UwjaFQ0ssVN",
+                "gdriveLink": "https://drive.google.com/file/d/1emhX7QGHGMYrOs6z8b-I6UwjaFQ0ssVN/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": []
               }
