@@ -3071,7 +3071,7 @@ window.COMMUNITIES_DATA = [
         "subtitle": "Formación completa de Devin Jatho Editing Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 4,
-        "totalLessons": 26,
+        "totalLessons": 27,
         "totalResources": 0,
         "modules": [
           {
@@ -3461,6 +3461,20 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 4,
                 "gdriveId": "1wp93D56NBwtpV-uEpc3F0mPxWw8g1Ws7",
                 "gdriveLink": "https://drive.google.com/file/d/1wp93D56NBwtpV-uEpc3F0mPxWw8g1Ws7/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_27",
+                "slug": "les_devi",
+                "index": 5,
+                "globalIndex": 27,
+                "title": "Making the 3D Reel Interactive",
+                "rawTitle": "Making the 3D Reel Interactive",
+                "module": "04_Mastering Devin's Body Editing",
+                "moduleIndex": 4,
+                "gdriveId": "1fliuCKDs-tYAuUeQqoc2f0-XlsCYEVEc",
+                "gdriveLink": "https://drive.google.com/file/d/1fliuCKDs-tYAuUeQqoc2f0-XlsCYEVEc/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": []
               }
