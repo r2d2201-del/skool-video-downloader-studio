@@ -118,15 +118,7 @@
     for (const les of lessonObjects) {
       const meta = les.metadata || {};
 
-      // 1. Native Mux / Skool HLS stream
-      const vidObj = meta.video || les.video || meta.videoObj || les.videoObj;
-      const pid = vidObj?.playbackId || meta.playbackId || les.playbackId;
-      const tok = vidObj?.playbackToken || meta.playbackToken || les.playbackToken;
-      if (pid) {
-        return tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
-      }
-
-      // 2. Direct HTTP candidates
+      // 1. Direct embed/external candidates FIRST (Loom, YouTube, Vimeo, direct MP4)
       const candidates = [
         meta.videoLink,
         meta.video_url,
@@ -134,7 +126,6 @@
         les.videoLink,
         les.video_url,
         les.videoUrl,
-        vidObj?.url,
         meta.hlsUrl,
         les.hlsUrl,
         meta.downloadUrl,
@@ -145,6 +136,14 @@
         if (c && typeof c === 'string' && c.startsWith('http')) {
           return c;
         }
+      }
+
+      // 2. Native Mux / Skool HLS stream
+      const vidObj = meta.video || les.video || meta.videoObj || les.videoObj;
+      const pid = vidObj?.playbackId || meta.playbackId || les.playbackId;
+      const tok = vidObj?.playbackToken || meta.playbackToken || les.playbackToken;
+      if (pid) {
+        return tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
       }
     }
 

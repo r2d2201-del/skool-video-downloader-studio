@@ -79,6 +79,10 @@ def resolve_skool_video_stream(page_url, cookie_file):
         return None
 
     try:
+        target_md = None
+        if "?md=" in page_url:
+            target_md = page_url.split("?md=")[1].split("&")[0].strip()
+
         jar = http.cookiejar.MozillaCookieJar(cookie_file)
         jar.load()
 
@@ -96,44 +100,59 @@ def resolve_skool_video_stream(page_url, cookie_file):
         m = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', html)
         if m:
             data = json.loads(m.group(1))
-            
-            def find_deep_py(obj, pred):
-                res = []
-                if pred(obj):
-                    res.append(obj)
+            page_props = data.get("props", {}).get("pageProps", {})
+
+            def find_node_by_id(obj, tid):
                 if isinstance(obj, dict):
+                    if obj.get("id") == tid or obj.get("_id") == tid:
+                        return obj
                     for v in obj.values():
-                        res.extend(find_deep_py(v, pred))
+                        res = find_node_by_id(v, tid)
+                        if res: return res
                 elif isinstance(obj, list):
                     for item in obj:
-                        res.extend(find_deep_py(item, pred))
-                return res
+                        res = find_node_by_id(item, tid)
+                        if res: return res
+                return None
 
-            matches = find_deep_py(data, lambda x: isinstance(x, dict) and (x.get("playbackId") or x.get("videoLink") or x.get("videoUrl") or x.get("hlsUrl")))
-            for obj in matches:
-                pid = obj.get("playbackId")
-                tok = obj.get("playbackToken")
-                if pid and tok:
-                    mux_url = f"https://stream.mux.com/{pid}.m3u8?token={tok}"
-                    print(f"🎯 [Companion Server] Resolved native Mux stream: {mux_url[:60]}...", flush=True)
-                    return mux_url
-                elif pid:
-                    mux_url = f"https://stream.mux.com/{pid}.m3u8"
-                    print(f"🎯 [Companion Server] Resolved native Mux stream: {mux_url}", flush=True)
-                    return mux_url
+            # 1. If target_md is specified, strictly locate that specific lesson node
+            if target_md:
+                les_node = find_node_by_id(page_props, target_md)
+                if les_node:
+                    meta = les_node.get("metadata", {})
+                    # A. Embed / external link (Loom, YouTube, Wistia, Vimeo)
+                    vlink = meta.get("videoLink") or les_node.get("videoLink") or meta.get("videoUrl") or les_node.get("videoUrl")
+                    if vlink and isinstance(vlink, str) and vlink.startswith("http"):
+                        print(f"🎯 [Companion Server] Resolved exact lesson videoLink ({target_md}): {vlink}", flush=True)
+                        return vlink
 
-                vlink = obj.get("videoLink") or obj.get("videoUrl") or obj.get("hlsUrl")
-                if vlink and isinstance(vlink, str) and vlink.startswith("http"):
-                    print(f"🎯 [Companion Server] Resolved embed videoLink: {vlink}", flush=True)
-                    return vlink
+                    # B. Mux / Native Skool stream for this specific videoId
+                    vid_id = meta.get("videoId") or les_node.get("videoId")
+                    page_vid = page_props.get("video") or {}
+                    if vid_id and page_vid.get("id") == vid_id:
+                        pid = page_vid.get("playbackId")
+                        tok = page_vid.get("playbackToken")
+                        if pid and tok:
+                            mux_url = f"https://stream.mux.com/{pid}.m3u8?token={tok}"
+                            print(f"🎯 [Companion Server] Resolved native Mux stream ({target_md}): {mux_url[:60]}...", flush=True)
+                            return mux_url
+                        elif pid:
+                            mux_url = f"https://stream.mux.com/{pid}.m3u8"
+                            print(f"🎯 [Companion Server] Resolved native Mux stream ({target_md}): {mux_url}", flush=True)
+                            return mux_url
 
-        # HTML regex fallback
-        pid_m = re.search(r'"playbackId"\s*:\s*"([^"]+)"', html)
-        tok_m = re.search(r'"playbackToken"\s*:\s*"([^"]+)"', html)
-        if pid_m and tok_m:
-            return f"https://stream.mux.com/{pid_m.group(1)}.m3u8?token={tok_m.group(1)}"
-        elif pid_m:
-            return f"https://stream.mux.com/{pid_m.group(1)}.m3u8"
+            # 2. General page video (when no specific ?md= or single lesson page)
+            page_vid = page_props.get("video") or {}
+            pid = page_vid.get("playbackId")
+            tok = page_vid.get("playbackToken")
+            if pid and tok:
+                return f"https://stream.mux.com/{pid}.m3u8?token={tok}"
+            elif pid:
+                return f"https://stream.mux.com/{pid}.m3u8"
+
+            vlink = page_vid.get("url") or page_vid.get("videoLink")
+            if vlink and isinstance(vlink, str) and vlink.startswith("http"):
+                return vlink
 
     except Exception as e:
         print(f"⚠️ [Companion Server] Stream resolution note for {page_url}: {e}", flush=True)

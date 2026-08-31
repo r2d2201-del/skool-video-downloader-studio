@@ -348,6 +348,9 @@
     document.querySelectorAll('.lesson-row').forEach(row => {
       if (row.getAttribute('data-id') === lesson.id) {
         row.classList.add('active');
+        try {
+          row.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        } catch (e) {}
       } else {
         row.classList.remove('active');
       }
