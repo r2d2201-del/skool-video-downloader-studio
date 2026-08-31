@@ -3071,7 +3071,7 @@ window.COMMUNITIES_DATA = [
         "subtitle": "Formación completa de Devin Jatho Editing Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 4,
-        "totalLessons": 27,
+        "totalLessons": 28,
         "totalResources": 0,
         "modules": [
           {
@@ -3475,6 +3475,20 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 4,
                 "gdriveId": "1fliuCKDs-tYAuUeQqoc2f0-XlsCYEVEc",
                 "gdriveLink": "https://drive.google.com/file/d/1fliuCKDs-tYAuUeQqoc2f0-XlsCYEVEc/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_28",
+                "slug": "les_devi",
+                "index": 6,
+                "globalIndex": 28,
+                "title": "An Instagram UI Animation",
+                "rawTitle": "An Instagram UI Animation",
+                "module": "04_Mastering Devin's Body Editing",
+                "moduleIndex": 4,
+                "gdriveId": "1w9ce9-bBEKJOggT7eBiR9pzPTvsh6Pb-",
+                "gdriveLink": "https://drive.google.com/file/d/1w9ce9-bBEKJOggT7eBiR9pzPTvsh6Pb-/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": []
               }
