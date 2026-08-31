@@ -8253,8 +8253,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "2nd Animation Application Phase 1",
                 "module": "04_Iman's 3D animation style",
                 "moduleIndex": 3,
-                "gdriveId": "1RgT5E5oQQEm5KPiL9IFJ1fA2qv9fH-5W",
-                "gdriveLink": "https://drive.google.com/file/d/1RgT5E5oQQEm5KPiL9IFJ1fA2qv9fH-5W/view?usp=drivesdk",
+                "gdriveId": "1_eY0-jOIwjO8RY0lt6nHFPdEiRERDm-f",
+                "gdriveLink": "https://drive.google.com/file/d/1_eY0-jOIwjO8RY0lt6nHFPdEiRERDm-f/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "<h2>What am I doing here ?</h2><p>In this stage, we’ll take everything we sketched and <em>bring it </em>into <strong>Blender</strong> to <em>start building</em> the actual <strong>animation.</strong> We’ll begin by <em>setting up</em> our <strong>assets</strong>, <em>adjusting</em> the <strong>lighting</strong>, and <em>creating</em> the <strong>core animations</strong>. From there, we’ll add <strong>camera movement</strong>, <em>apply textures</em>, and <em>refine every detail</em> to bring the scene to life. This is where your sketches transform into a <strong>full 3D animation</strong>.</p><h2>Note !!</h2><p>Please ensure you’ve <em>completed</em> the <strong>first 3D animation</strong> we created in <strong>Iman’s style</strong> before moving on.</p><p>If you haven’t completed the <strong>Blender Masterclass</strong> yet, please finish it first and then return to this course</p><h2>Link !!</h2><p>here are all the <a href=\"https://drive.google.com/drive/folders/1LaZzZJ6nFhc04f1oYYhDBZe6YmVRdHzo?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">links</a> you'll need to create this animation </p>",
                 "resources": [
