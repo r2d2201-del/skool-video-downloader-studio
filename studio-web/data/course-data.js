@@ -7221,8 +7221,8 @@ window.COMMUNITIES_DATA = [
         "courseTitle": "3D Animated Editing Masteclass",
         "subtitle": "Formación completa de 3D Animated Editing Masteclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
-        "totalModules": 3,
-        "totalLessons": 4,
+        "totalModules": 4,
+        "totalLessons": 5,
         "totalResources": 0,
         "modules": [
           {
@@ -7300,6 +7300,28 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 3,
                 "gdriveId": "1ucXfMk52FEbnW4nFkxCaGb_jVKqCsDW4",
                 "gdriveLink": "https://drive.google.com/file/d/1ucXfMk52FEbnW4nFkxCaGb_jVKqCsDW4/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "folder": "07_Compositing and Overlays",
+            "title": "07_Compositing and Overlays",
+            "lessons": [
+              {
+                "id": "5dc644c9581b40399c181715f5ebbb8e",
+                "slug": "5dc644c9",
+                "index": 1,
+                "globalIndex": 5,
+                "title": "Texture Overlays",
+                "rawTitle": "Texture Overlays",
+                "module": "07_Compositing and Overlays",
+                "moduleIndex": 4,
+                "gdriveId": "1Rfgu3SisfrCRuaD54OyAu6mLKjacqzZQ",
+                "gdriveLink": "https://drive.google.com/file/d/1Rfgu3SisfrCRuaD54OyAu6mLKjacqzZQ/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
