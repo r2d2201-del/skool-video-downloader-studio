@@ -3071,7 +3071,7 @@ window.COMMUNITIES_DATA = [
         "subtitle": "Formación completa de Devin Jatho Editing Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 4,
-        "totalLessons": 22,
+        "totalLessons": 24,
         "totalResources": 0,
         "modules": [
           {
@@ -3405,6 +3405,34 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 4,
                 "gdriveId": "1DY7u43ZFb9EVojWkBe4BMIJY7OicE7yJ",
                 "gdriveLink": "https://drive.google.com/file/d/1DY7u43ZFb9EVojWkBe4BMIJY7OicE7yJ/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_23",
+                "slug": "les_devi",
+                "index": 2,
+                "globalIndex": 23,
+                "title": "The Circle Selector Animation",
+                "rawTitle": "The Circle Selector Animation",
+                "module": "04_Mastering Devin's Body Editing",
+                "moduleIndex": 4,
+                "gdriveId": "1805evuEsDFjmb7j4d0ZG9Z-uGRVXiVex",
+                "gdriveLink": "https://drive.google.com/file/d/1805evuEsDFjmb7j4d0ZG9Z-uGRVXiVex/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_24",
+                "slug": "les_devi",
+                "index": 3,
+                "globalIndex": 24,
+                "title": "Making The Circle Interactive",
+                "rawTitle": "Making The Circle Interactive",
+                "module": "04_Mastering Devin's Body Editing",
+                "moduleIndex": 4,
+                "gdriveId": "1Rn5XftX-RLb9ap0GddXpkP9VPL9sLVm0",
+                "gdriveLink": "https://drive.google.com/file/d/1Rn5XftX-RLb9ap0GddXpkP9VPL9sLVm0/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": []
               }
