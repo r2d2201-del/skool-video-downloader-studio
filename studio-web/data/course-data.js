@@ -3071,7 +3071,7 @@ window.COMMUNITIES_DATA = [
         "subtitle": "Formación completa de Devin Jatho Editing Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 4,
-        "totalLessons": 24,
+        "totalLessons": 25,
         "totalResources": 0,
         "modules": [
           {
@@ -3384,6 +3384,20 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 3,
                 "gdriveId": "1uE5uMQveFIPAY2mLsty8pqEnT1VRGm2J",
                 "gdriveLink": "https://drive.google.com/file/d/1uE5uMQveFIPAY2mLsty8pqEnT1VRGm2J/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_25",
+                "slug": "les_devi",
+                "index": 13,
+                "globalIndex": 25,
+                "title": "Practice Creating Icon Hook Animations",
+                "rawTitle": "Practice Creating Icon Hook Animations",
+                "module": "03_Mastering Devin's Hook Editing",
+                "moduleIndex": 3,
+                "gdriveId": "1T8jEwaK3T5gLyjyoAhQ8z5RaZpdhxDsh",
+                "gdriveLink": "https://drive.google.com/file/d/1T8jEwaK3T5gLyjyoAhQ8z5RaZpdhxDsh/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": []
               }
