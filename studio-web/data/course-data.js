@@ -4805,8 +4805,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "The Minimal Inspiration Board",
                 "module": "02_Understanding Minimal Animations",
                 "moduleIndex": 1,
-                "gdriveId": "1B9T7xnms9kvllDKxoMJLZJg2Hla0OY0a",
-                "gdriveLink": "https://drive.google.com/file/d/1B9T7xnms9kvllDKxoMJLZJg2Hla0OY0a/view?usp=drivesdk",
+                "gdriveId": "1mB3DI7F7oELX7YOka38RW2rv24H6OnKe",
+                "gdriveLink": "https://drive.google.com/file/d/1mB3DI7F7oELX7YOka38RW2rv24H6OnKe/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
@@ -4924,8 +4924,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "Introduction to Minimal Animations",
                 "module": "01 General",
                 "moduleIndex": 3,
-                "gdriveId": "1S0Uns81l4lrtOSKBgiIYQvJj1QP7eWYB",
-                "gdriveLink": "https://drive.google.com/file/d/1S0Uns81l4lrtOSKBgiIYQvJj1QP7eWYB/view?usp=drivesdk",
+                "gdriveId": "14cOg_gKiR6KMNmD6rwRUc1T8SB_l9sve",
+                "gdriveLink": "https://drive.google.com/file/d/14cOg_gKiR6KMNmD6rwRUc1T8SB_l9sve/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
