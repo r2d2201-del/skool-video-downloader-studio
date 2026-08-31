@@ -799,13 +799,39 @@
         try {
           const lessonUrl = request.lessonUrl;
           const targetMd = request.targetMd;
+
+          // 1. Check local page __NEXT_DATA__ first
+          const localNext = getNextData();
+          if (localNext && targetMd) {
+            const foundLocal = findLessonVideoById(localNext, targetMd);
+            if (foundLocal) {
+              sendResponse({ success: true, directVideoUrl: foundLocal });
+              return;
+            }
+          }
+
+          // 2. Fetch specific lesson page with browser session
           const res = await fetch(lessonUrl, { credentials: 'include' });
           if (res.ok) {
             const html = await res.text();
             const m = html.match(/<script id="__NEXT_DATA__" type="application\/json">(.*?)<\/script>/);
             if (m) {
               const data = JSON.parse(m[1]);
-              const directVid = findLessonVideoById(data, targetMd);
+              let directVid = findLessonVideoById(data, targetMd);
+              if (!directVid) {
+                const les = data.props?.pageProps?.lesson;
+                if (les) {
+                  const meta = les.metadata || {};
+                  const cand = meta.videoLink || meta.video_url || les.videoLink || les.video_url;
+                  if (cand && cand.startsWith('http')) directVid = cand;
+                  else {
+                    const vid = meta.video || les.video;
+                    const pid = vid?.playbackId || meta.playbackId;
+                    const tok = vid?.playbackToken || meta.playbackToken;
+                    if (pid) directVid = tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
+                  }
+                }
+              }
               if (directVid) {
                 sendResponse({ success: true, directVideoUrl: directVid });
                 return;

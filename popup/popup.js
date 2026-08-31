@@ -28,6 +28,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     lessonId: ''
   };
 
+  async function getActiveTabId() {
+    try {
+      const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
+      return tabs[0]?.id || null;
+    } catch (e) {
+      return null;
+    }
+  }
+
   async function getSkoolCookiesNetscape() {
     try {
       const cookies = await chrome.cookies.getAll({ domain: "skool.com" });
@@ -255,6 +264,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
       // 1. Try resolving stream via the active tab (using active login session)
+      const activeTabId = await getActiveTabId();
       if (activeTabId) {
         try {
           const tabRes = await new Promise(resolve => {
