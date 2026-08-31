@@ -4772,8 +4772,8 @@ window.COMMUNITIES_DATA = [
         "courseTitle": "The Minimal Animation Masterclass",
         "subtitle": "Formación completa de The Minimal Animation Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
-        "totalModules": 3,
-        "totalLessons": 9,
+        "totalModules": 4,
+        "totalLessons": 10,
         "totalResources": 0,
         "modules": [
           {
@@ -4887,8 +4887,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "Creating Casted Shadows",
                 "module": "03_High-End Minimal Backgrounds",
                 "moduleIndex": 2,
-                "gdriveId": "1b-T6Pll850DJaJqFvCyYSgwrtiIN4nbi",
-                "gdriveLink": "https://drive.google.com/file/d/1b-T6Pll850DJaJqFvCyYSgwrtiIN4nbi/view?usp=drivesdk",
+                "gdriveId": "1iKsmXy8ShqP0WnY2rx8Uo2prcVG1pNEb",
+                "gdriveLink": "https://drive.google.com/file/d/1iKsmXy8ShqP0WnY2rx8Uo2prcVG1pNEb/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
@@ -4902,8 +4902,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "Applying Depth Textures",
                 "module": "03_High-End Minimal Backgrounds",
                 "moduleIndex": 2,
-                "gdriveId": "1SY7NaSPYq_YiG9hd9tGHwJxySn_jvZBy",
-                "gdriveLink": "https://drive.google.com/file/d/1SY7NaSPYq_YiG9hd9tGHwJxySn_jvZBy/view?usp=drivesdk",
+                "gdriveId": "1NtNsk1S60IAix6P1D6cZIRSyCWkJdInd",
+                "gdriveLink": "https://drive.google.com/file/d/1NtNsk1S60IAix6P1D6cZIRSyCWkJdInd/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
@@ -4926,6 +4926,28 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 3,
                 "gdriveId": "14cOg_gKiR6KMNmD6rwRUc1T8SB_l9sve",
                 "gdriveLink": "https://drive.google.com/file/d/14cOg_gKiR6KMNmD6rwRUc1T8SB_l9sve/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "folder": "04_Object Design Workflow",
+            "title": "04_Object Design Workflow",
+            "lessons": [
+              {
+                "id": "e9ae8be41eb8476f89c7ca66084caa95",
+                "slug": "e9ae8be4",
+                "index": 1,
+                "globalIndex": 10,
+                "title": "Finding and Placing Objects",
+                "rawTitle": "Finding and Placing Objects",
+                "module": "04_Object Design Workflow",
+                "moduleIndex": 4,
+                "gdriveId": "1KHaw7JicKJXUeA_C2QqL24uCj8WAKoYh",
+                "gdriveLink": "https://drive.google.com/file/d/1KHaw7JicKJXUeA_C2QqL24uCj8WAKoYh/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
