@@ -3071,7 +3071,7 @@ window.COMMUNITIES_DATA = [
         "subtitle": "Formación completa de Devin Jatho Editing Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 3,
-        "totalLessons": 14,
+        "totalLessons": 15,
         "totalResources": 0,
         "modules": [
           {
@@ -3286,6 +3286,20 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 3,
                 "gdriveId": "1nQzBGUZnP2IuH8BmJ0ODk8yTkx9vrs48",
                 "gdriveLink": "https://drive.google.com/file/d/1nQzBGUZnP2IuH8BmJ0ODk8yTkx9vrs48/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_15",
+                "slug": "les_devi",
+                "index": 6,
+                "globalIndex": 15,
+                "title": "Practice Creating Your Own Text Styles",
+                "rawTitle": "Practice Creating Your Own Text Styles",
+                "module": "03_Mastering Devin's Hook Editing",
+                "moduleIndex": 3,
+                "gdriveId": "1Xt3ODdbIqJUl2xhl8e8s2yfNf_NGkoyo",
+                "gdriveLink": "https://drive.google.com/file/d/1Xt3ODdbIqJUl2xhl8e8s2yfNf_NGkoyo/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": []
               }
