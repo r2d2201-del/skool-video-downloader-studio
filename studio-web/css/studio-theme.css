@@ -709,6 +709,7 @@ body::before {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-shrink: 0 !important;
 }
 
 .stage-title-section {
@@ -744,6 +745,8 @@ body::before {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
+  min-height: 380px;
+  flex-shrink: 0 !important;
   background: #000;
   border-radius: 8px;
   overflow: hidden;
@@ -787,11 +790,12 @@ body::before {
 /* LESSON NOTES & RICH CONTENT HUD */
 .lesson-notes-hud {
   margin-top: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   background: var(--bg-surface);
   border: var(--border-grid);
   border-radius: 8px;
   padding: 20px 24px;
+  flex-shrink: 0 !important;
 }
 
 .lesson-notes-header {
@@ -883,6 +887,7 @@ body::before {
   border: var(--border-grid);
   border-radius: 8px;
   padding: 20px;
+  flex-shrink: 0 !important;
 }
 
 .resources-hud-header {
