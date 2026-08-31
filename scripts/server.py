@@ -1464,6 +1464,16 @@ class DownloaderHandler(BaseHTTPRequestHandler):
                     "failed": FAILED_DOWNLOADS
                 }).encode('utf-8'))
 
+        elif self.path == '/clear-queue':
+            with DOWNLOAD_LOCK:
+                FAILED_DOWNLOADS.clear()
+                ACTIVE_DOWNLOADS.clear()
+            self.send_response(200)
+            self._send_cors_headers()
+            self.send_header('Content-Type', 'application/json')
+            self.end_headers()
+            self.wfile.write(json.dumps({"success": True, "message": "Queue cleared"}).encode('utf-8'))
+
         elif self.path.startswith('/audit-course'):
             self.send_response(200)
             self._send_cors_headers()

@@ -839,7 +839,40 @@
             }
           }
 
-          // 2. Fetch specific lesson page with browser session
+          // 2. Fetch via Next.js Data Route: /_next/data/{buildId}/[path].json?md={targetMd}
+          if (localNext?.buildId && targetMd) {
+            try {
+              const cleanPath = window.location.pathname.replace(/\/+$/, '');
+              const nextDataUrl = `/_next/data/${localNext.buildId}${cleanPath}.json?md=${targetMd}`;
+              const dataRes = await fetch(nextDataUrl, { credentials: 'include' });
+              if (dataRes.ok) {
+                const dataJson = await dataRes.json();
+                const pp = dataJson.pageProps || dataJson.props?.pageProps || {};
+                let directVid = findLessonVideoById(dataJson, targetMd);
+                if (!directVid && pp.video) {
+                  const pid = pp.video.playbackId || pp.video.id;
+                  const tok = pp.video.playbackToken;
+                  if (pid && typeof pid === 'string' && pid.length > 5) {
+                    directVid = tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
+                  } else if (pp.video.url) {
+                    directVid = pp.video.url;
+                  }
+                }
+                if (!directVid && pp.lesson) {
+                  const meta = pp.lesson.metadata || pp.lesson;
+                  directVid = meta.videoLink || meta.video_url || meta.videoUrl;
+                }
+                if (directVid) {
+                  sendResponse({ success: true, directVideoUrl: directVid });
+                  return;
+                }
+              }
+            } catch (de) {
+              console.warn('[Skool Detector] Next.js data route error:', de);
+            }
+          }
+
+          // 3. Fallback: Fetch specific lesson HTML page with browser session
           const res = await fetch(lessonUrl, {
             credentials: 'include',
             headers: {
