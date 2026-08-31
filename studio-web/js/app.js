@@ -394,6 +394,12 @@
     // Render Resources for this specific lesson
     renderLessonResources(lesson);
 
+    // Scroll stage smoothly to top on lesson switch
+    const stageEl = document.querySelector('.main-stage');
+    if (stageEl) {
+      stageEl.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     if (!skipTreeRender) {
       // Re-evaluate if tree needs refresh
       const hasActiveRow = document.querySelector(`.lesson-row[data-id="${lesson.id}"]`);
