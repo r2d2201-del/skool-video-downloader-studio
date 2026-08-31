@@ -8337,8 +8337,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "3rd Animation Application Phase 2",
                 "module": "04_Iman's 3D animation style",
                 "moduleIndex": 3,
-                "gdriveId": "1TyEbWBd6mVeGtWAhJSkIq7607-5nfwjH",
-                "gdriveLink": "https://drive.google.com/file/d/1TyEbWBd6mVeGtWAhJSkIq7607-5nfwjH/view?usp=drivesdk",
+                "gdriveId": "1V2o-n2MlyK1CZGQ5rkXu7Kljtg4h1TL3",
+                "gdriveLink": "https://drive.google.com/file/d/1V2o-n2MlyK1CZGQ5rkXu7Kljtg4h1TL3/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "<h2>What Are We Doing Here ?</h2><p>In this final phase, we’ll be <strong>creating</strong> the <em>second-to-last type of animation</em> featured in Iman’s video. Together, we’ll work through each stage of the application process. From <strong>setting up assets</strong> and <em>building</em> <strong>animations</strong> to <em>refining</em> the <strong>lighting</strong>, <strong>compositing</strong>, and <strong>rendering</strong>. Once complete, we’ll move into <strong>Adobe Premiere</strong> to <em>replace</em> the <strong>original animations</strong> with our own, bringing the project to completion.</p><h2>Note !! </h2><p>Please<strong> finish Phase 1</strong> before moving forward.</p><h2>Links !! </h2><p>here are all the <a href=\"https://drive.google.com/drive/folders/18bafPssO6jNys93VABl2qjsVkZQi0rIQ?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">links</a> you'll need :)</p>",
                 "resources": [
