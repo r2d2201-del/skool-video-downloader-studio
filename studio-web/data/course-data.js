@@ -7222,7 +7222,7 @@ window.COMMUNITIES_DATA = [
         "subtitle": "Formación completa de 3D Animated Editing Masteclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 10,
-        "totalLessons": 36,
+        "totalLessons": 37,
         "totalResources": 0,
         "modules": [
           {
@@ -7829,6 +7829,21 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 10,
                 "gdriveId": "1iEmVsRzAlhWgym4Adr6UlPeqdIzymk1F",
                 "gdriveLink": "https://drive.google.com/file/d/1iEmVsRzAlhWgym4Adr6UlPeqdIzymk1F/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "18d38c9024ed432baaf51d28413c519d",
+                "slug": "18d38c90",
+                "index": 7,
+                "globalIndex": 37,
+                "title": "Editing The Body - Animation 1",
+                "rawTitle": "Editing The Body - Animation 1",
+                "module": "08_Charles Style Walkthrough",
+                "moduleIndex": 10,
+                "gdriveId": "1xXxaMqxUlpwMgnOWJlGOIlcFwzEjRiey",
+                "gdriveLink": "https://drive.google.com/file/d/1xXxaMqxUlpwMgnOWJlGOIlcFwzEjRiey/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
