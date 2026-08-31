@@ -7214,6 +7214,40 @@ window.COMMUNITIES_DATA = [
             ]
           }
         ]
+      },
+      {
+        "id": "3d-animated-editing-masteclass",
+        "community": "Ultimate editors",
+        "courseTitle": "3D Animated Editing Masteclass",
+        "subtitle": "Formación completa de 3D Animated Editing Masteclass",
+        "bannerTag": "1080P FULL HD · EN DRIVE",
+        "totalModules": 1,
+        "totalLessons": 1,
+        "totalResources": 0,
+        "modules": [
+          {
+            "index": 1,
+            "folder": "01 General",
+            "title": "01 General",
+            "lessons": [
+              {
+                "id": "d436132d9fec4623ab5b1fd94268adf7",
+                "slug": "d436132d",
+                "index": 1,
+                "globalIndex": 1,
+                "title": "Welcome to The 3D Animated Editing Masterclass!",
+                "rawTitle": "Welcome to The 3D Animated Editing Masterclass!",
+                "module": "01 General",
+                "moduleIndex": 1,
+                "gdriveId": "1BIhnL3I5bb7l5Tl1wKWLXqzY7RaYUt48",
+                "gdriveLink": "https://drive.google.com/file/d/1BIhnL3I5bb7l5Tl1wKWLXqzY7RaYUt48/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          }
+        ]
       }
     ]
   }
