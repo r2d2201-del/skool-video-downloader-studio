@@ -15,6 +15,7 @@ import os
 import re
 import ssl
 import sys
+import shutil
 import subprocess
 import threading
 import time
@@ -525,31 +526,40 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
     except Exception as e:
         print(f"⚠️ [Studio Sync] Note: {e}", flush=True)
 
+_CLOUD_SYNC_TIMER = None
+_CLOUD_SYNC_LOCK = threading.Lock()
+
 def trigger_background_cloud_sync():
-    """Asynchronously commit and deploy updated course-data.js to Vercel without blocking downloads."""
-    def _sync():
-        try:
-            studio_dir = os.path.join(BASE_DIR, 'studio-web')
-            env = os.environ.copy()
-            env["PATH"] = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:" + env.get("PATH", "")
-            
-            git_bin = shutil.which("git", path=env["PATH"]) or "/usr/bin/git"
-            vercel_bin = shutil.which("vercel", path=env["PATH"]) or "/opt/homebrew/bin/vercel"
+    """Debounced asynchronously commit and deploy updated course-data.js to Vercel without blocking downloads."""
+    global _CLOUD_SYNC_TIMER
+    with _CLOUD_SYNC_LOCK:
+        if _CLOUD_SYNC_TIMER and _CLOUD_SYNC_TIMER.is_alive():
+            _CLOUD_SYNC_TIMER.cancel()
 
-            subprocess.run([git_bin, "add", "studio-web/data/course-data.js"], cwd=BASE_DIR, env=env, capture_output=True)
-            subprocess.run([git_bin, "commit", "-m", "chore: sync latest course-data catalog [skip ci]"], cwd=BASE_DIR, env=env, capture_output=True)
-            subprocess.run([git_bin, "push", "origin", "main"], cwd=BASE_DIR, env=env, capture_output=True)
-            
-            res = subprocess.run([vercel_bin, "--prod", "--yes"], cwd=studio_dir, env=env, capture_output=True, text=True)
-            if res.returncode == 0:
-                print("🚀 [Vercel Cloud Sync] Successfully deployed newest course catalog to Vercel production!", flush=True)
-            else:
-                print(f"⚠️ [Vercel Cloud Sync] Vercel CLI returned: {res.stderr.strip()}", flush=True)
-        except Exception as e:
-            print(f"⚠️ [Vercel Cloud Sync] Background deploy error: {e}", flush=True)
+        def _do_sync():
+            try:
+                studio_dir = os.path.join(BASE_DIR, 'studio-web')
+                env = os.environ.copy()
+                env["PATH"] = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:" + env.get("PATH", "")
+                
+                git_bin = shutil.which("git", path=env["PATH"]) or "/usr/bin/git"
+                vercel_bin = shutil.which("vercel", path=env["PATH"]) or "/opt/homebrew/bin/vercel"
 
-    t = threading.Thread(target=_sync, daemon=True)
-    t.start()
+                subprocess.run([git_bin, "add", "."], cwd=BASE_DIR, env=env, capture_output=True)
+                subprocess.run([git_bin, "commit", "-m", "chore: auto-sync course catalog and notes [skip ci]"], cwd=BASE_DIR, env=env, capture_output=True)
+                subprocess.run([git_bin, "push", "origin", "main"], cwd=BASE_DIR, env=env, capture_output=True)
+                
+                res = subprocess.run([vercel_bin, "--prod", "--yes"], cwd=studio_dir, env=env, capture_output=True, text=True)
+                if res.returncode == 0:
+                    print("🚀 [Vercel Cloud Sync] Successfully deployed newest course catalog to Vercel production!", flush=True)
+                else:
+                    print(f"⚠️ [Vercel Cloud Sync] Vercel CLI returned: {res.stderr.strip()}", flush=True)
+            except Exception as e:
+                print(f"⚠️ [Vercel Cloud Sync] Background deploy error: {e}", flush=True)
+
+        _CLOUD_SYNC_TIMER = threading.Timer(3.0, _do_sync)
+        _CLOUD_SYNC_TIMER.daemon = True
+        _CLOUD_SYNC_TIMER.start()
 
 def process_gdrive_sync(local_file_path, context, storage_mode, gdrive_root, task_id=None):
     if storage_mode not in ['gdrive', 'both'] or not os.path.exists(local_file_path):

@@ -13,7 +13,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 7,
         "totalLessons": 34,
-        "totalResources": 165,
+        "totalResources": 166,
         "modules": [
           {
             "index": 1,
@@ -2275,9 +2275,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_9",
+                    "lessonId": "9d8e61a31ae0487a9c28079ffc444cd1",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Complete Text Workflow",
+                    "name": "Tablero Figma · Complete Text Workflow",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "05682e7e77274619a953ad69c944051a",
@@ -2348,7 +2359,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "daee5a59b1ae4aed839085fd29ac7cce",
@@ -2480,7 +2491,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "<p><strong> This is the plugin that will be creating all the VIRAL edits you will later see in this course.</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create or questions you might have </strong>in this course on the community (I'd love to check them out)</p><h2>Want the Ultimate Editor Plugin? Here it is:</h2><p><strong>Want to download the Ultimate Editor Plugin for Claude: Click this </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download</a></strong></p><p>Make sure to have Higgsfield connected otherwise this plugin won't work...</p>"
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               }
             ]
           },
@@ -3821,7 +3832,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong><a href=\"https://drive.google.com/file/d/1B3JFZekF8UVXQxY9cuU_N7U8YLHSmZ5R/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Final Edit</a></strong><strong> we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/16ANvf8ZvGL2MBTtG1iYJdLoZnugKQ2y0?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE</a></strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "2da747e364564e5cb6fe916d4b0436e9",
@@ -3893,6 +3904,246 @@ window.COMMUNITIES_DATA = [
                   }
                 ],
                 "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "the-editing-fundamentals",
+        "community": "Ultimateeditors2",
+        "courseTitle": "The Editing Fundamentals",
+        "subtitle": "Formación completa de The Editing Fundamentals",
+        "bannerTag": "1080P FULL HD · EN DRIVE",
+        "totalModules": 3,
+        "totalLessons": 13,
+        "totalResources": 1,
+        "modules": [
+          {
+            "index": 1,
+            "folder": "01_Design for Video Editors",
+            "title": "01_Design for Video Editors",
+            "lessons": [
+              {
+                "id": "dfa3556dad754fe292729c2e4815cfe2",
+                "slug": "dfa3556d",
+                "index": 1,
+                "globalIndex": 1,
+                "title": "Introduction to Design",
+                "rawTitle": "Introduction to Design",
+                "module": "01_Design for Video Editors",
+                "moduleIndex": 1,
+                "gdriveId": "1qJOV9F7UJfQ2SKkmlOx2lckPPcCS80h-",
+                "gdriveLink": "https://drive.google.com/file/d/1qJOV9F7UJfQ2SKkmlOx2lckPPcCS80h-/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [],
+                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+              },
+              {
+                "id": "07b4682c52974bc1894fd9d1c4c54c26",
+                "slug": "07b4682c",
+                "index": 2,
+                "globalIndex": 2,
+                "title": "Why Editors NEED Design",
+                "rawTitle": "Why Editors NEED Design",
+                "module": "01_Design for Video Editors",
+                "moduleIndex": 1,
+                "gdriveId": "15gyEtQixMqQAw3f0oYGp5OAostaN8F8L",
+                "gdriveLink": "https://drive.google.com/file/d/15gyEtQixMqQAw3f0oYGp5OAostaN8F8L/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [],
+                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+              },
+              {
+                "id": "26460f04f1f94fc1805e44386451bfb4",
+                "slug": "26460f04",
+                "index": 3,
+                "globalIndex": 6,
+                "title": "The 4 Design Extras",
+                "rawTitle": "The 4 Design Extras",
+                "module": "01_Design for Video Editors",
+                "moduleIndex": 1,
+                "gdriveId": "14T6e5qhoK-ZXgCwqNryjftKXieUYcei4",
+                "gdriveLink": "https://drive.google.com/file/d/14T6e5qhoK-ZXgCwqNryjftKXieUYcei4/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [],
+                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+              },
+              {
+                "id": "cc468be23e194b8487af40dd6c5193b8",
+                "slug": "cc468be2",
+                "index": 4,
+                "globalIndex": 9,
+                "title": "An Editor's Guide to Colors",
+                "rawTitle": "An Editor's Guide to Colors",
+                "module": "01_Design for Video Editors",
+                "moduleIndex": 1,
+                "gdriveId": "1MsGjC1YpupDtfLa04wg8LAC7t2cmAr5e",
+                "gdriveLink": "https://drive.google.com/file/d/1MsGjC1YpupDtfLa04wg8LAC7t2cmAr5e/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [],
+                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+              },
+              {
+                "id": "f129a0fd0297439993db951fbf488fbd",
+                "slug": "f129a0fd",
+                "index": 5,
+                "globalIndex": 11,
+                "title": "Placement, Balance, Contrast",
+                "rawTitle": "Placement, Balance, Contrast",
+                "module": "01_Design for Video Editors",
+                "moduleIndex": 1,
+                "gdriveId": "19GVBF_CpEulBN9NZEgWzzslTswyI7nnP",
+                "gdriveLink": "https://drive.google.com/file/d/19GVBF_CpEulBN9NZEgWzzslTswyI7nnP/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [],
+                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "folder": "02_The I.B.P. Process",
+            "title": "02_The I.B.P. Process",
+            "lessons": [
+              {
+                "id": "45e9c5e828324389ba0e663d95c1d68c",
+                "slug": "45e9c5e8",
+                "index": 1,
+                "globalIndex": 3,
+                "title": "The Planning Workflow",
+                "rawTitle": "The Planning Workflow",
+                "module": "02_The I.B.P. Process",
+                "moduleIndex": 2,
+                "gdriveId": "1ubzucICO695K9KkwJqljBwUYpIVralpT",
+                "gdriveLink": "https://drive.google.com/file/d/1ubzucICO695K9KkwJqljBwUYpIVralpT/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [],
+                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+              },
+              {
+                "id": "7ad7457b92c9403caa7bde624e562879",
+                "slug": "7ad7457b",
+                "index": 2,
+                "globalIndex": 4,
+                "title": "Practice Breakdown",
+                "rawTitle": "Practice Breakdown",
+                "module": "02_The I.B.P. Process",
+                "moduleIndex": 2,
+                "gdriveId": "11JE4b7uqox1zY6b7Eb6ucfXHZ9O4hmsa",
+                "gdriveLink": "https://drive.google.com/file/d/11JE4b7uqox1zY6b7Eb6ucfXHZ9O4hmsa/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [],
+                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+              },
+              {
+                "id": "f1b554a5edd04e6a974cdd17db86a096",
+                "slug": "f1b554a5",
+                "index": 3,
+                "globalIndex": 7,
+                "title": "The IBP Process Introduction",
+                "rawTitle": "The IBP Process Introduction",
+                "module": "02_The I.B.P. Process",
+                "moduleIndex": 2,
+                "gdriveId": "1DTXVDnqChwNs5wDHQ6mqVUudVjzybBuA",
+                "gdriveLink": "https://drive.google.com/file/d/1DTXVDnqChwNs5wDHQ6mqVUudVjzybBuA/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [],
+                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+              },
+              {
+                "id": "1ffd04ac384441398b2f7080e0ad3480",
+                "slug": "1ffd04ac",
+                "index": 4,
+                "globalIndex": 8,
+                "title": "Practice Inspiration",
+                "rawTitle": "Practice Inspiration",
+                "module": "02_The I.B.P. Process",
+                "moduleIndex": 2,
+                "gdriveId": "1qXmyJP8QvMUNq8AoY7Jf-iuRPbAXvnDI",
+                "gdriveLink": "https://drive.google.com/file/d/1qXmyJP8QvMUNq8AoY7Jf-iuRPbAXvnDI/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "1ffd04ac384441398b2f7080e0ad3480",
+                    "moduleTitle": "02_The I.B.P. Process",
+                    "lessonTitle": "Practice Inspiration",
+                    "name": "Carpeta Google Drive · Practice Inspiration",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
+              },
+              {
+                "id": "3325ec1a7e834594a4df1be21314d53e",
+                "slug": "3325ec1a",
+                "index": 5,
+                "globalIndex": 10,
+                "title": "The Inspiration Process",
+                "rawTitle": "The Inspiration Process",
+                "module": "02_The I.B.P. Process",
+                "moduleIndex": 2,
+                "gdriveId": "1jvWG9Rgqu9g375gQklIPacOuaqSUoJe4",
+                "gdriveLink": "https://drive.google.com/file/d/1jvWG9Rgqu9g375gQklIPacOuaqSUoJe4/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [],
+                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+              },
+              {
+                "id": "da3d34fbed12480c815595613f31fbda",
+                "slug": "da3d34fb",
+                "index": 6,
+                "globalIndex": 12,
+                "title": "The Breakdown Overview",
+                "rawTitle": "The Breakdown Overview",
+                "module": "02_The I.B.P. Process",
+                "moduleIndex": 2,
+                "gdriveId": "1QNOg1kLzvTCXYkvGBTEdGaCNJunrajfA",
+                "gdriveLink": "https://drive.google.com/file/d/1QNOg1kLzvTCXYkvGBTEdGaCNJunrajfA/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [],
+                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+              },
+              {
+                "id": "3085325f75ff41ad964dee9f11252645",
+                "slug": "3085325f",
+                "index": 7,
+                "globalIndex": 13,
+                "title": "Practice Planning",
+                "rawTitle": "Practice Planning",
+                "module": "02_The I.B.P. Process",
+                "moduleIndex": 2,
+                "gdriveId": "1123vDYHFhbZnBK5uHlbJ382lgQXEUVrO",
+                "gdriveLink": "https://drive.google.com/file/d/1123vDYHFhbZnBK5uHlbJ382lgQXEUVrO/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [],
+                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+              }
+            ]
+          },
+          {
+            "index": 3,
+            "folder": "03_The Ultimate Workflow",
+            "title": "03_The Ultimate Workflow",
+            "lessons": [
+              {
+                "id": "974041e15d5946c981af079b0ea90c54",
+                "slug": "974041e1",
+                "index": 1,
+                "globalIndex": 5,
+                "title": "The Ultimate Workflow",
+                "rawTitle": "The Ultimate Workflow",
+                "module": "03_The Ultimate Workflow",
+                "moduleIndex": 3,
+                "gdriveId": "1kqCho1IO8Eyq5zESQa48mlPjz_rLe2WL",
+                "gdriveLink": "https://drive.google.com/file/d/1kqCho1IO8Eyq5zESQa48mlPjz_rLe2WL/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": [],
+                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
               }
             ]
           }
