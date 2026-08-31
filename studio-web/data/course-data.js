@@ -7966,8 +7966,8 @@ window.COMMUNITIES_DATA = [
         "courseTitle": "Iman Ghadzi Editing Masterclass",
         "subtitle": "Formación completa de Iman Ghadzi Editing Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
-        "totalModules": 4,
-        "totalLessons": 30,
+        "totalModules": 5,
+        "totalLessons": 31,
         "totalResources": 12,
         "modules": [
           {
@@ -8588,6 +8588,28 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1AkNZ5D51hCYW6EQ07v1de_wVPT6s0KrM/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "<p>If you've got any questions or any concerns feel free to reach out to me!</p>",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 5,
+            "folder": "General",
+            "title": "General",
+            "lessons": [
+              {
+                "id": "les_iman-ghadzi-editing-masterclass_31",
+                "slug": "les_iman",
+                "index": 1,
+                "globalIndex": 31,
+                "title": "16_Editing_like_Iman_-_Part_5",
+                "rawTitle": "16_Editing_like_Iman_-_Part_5",
+                "module": "General",
+                "moduleIndex": 5,
+                "gdriveId": "1iqCCz-pYhxbyvXF6CiR3CYmvIo0TpCe3",
+                "gdriveLink": "https://drive.google.com/file/d/1iqCCz-pYhxbyvXF6CiR3CYmvIo0TpCe3/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
                 "resources": []
               }
             ]
