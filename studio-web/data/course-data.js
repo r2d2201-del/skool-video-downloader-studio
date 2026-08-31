@@ -4772,8 +4772,8 @@ window.COMMUNITIES_DATA = [
         "courseTitle": "The Minimal Animation Masterclass",
         "subtitle": "Formación completa de The Minimal Animation Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
-        "totalModules": 2,
-        "totalLessons": 4,
+        "totalModules": 3,
+        "totalLessons": 9,
         "totalResources": 0,
         "modules": [
           {
@@ -4807,6 +4807,36 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 1,
                 "gdriveId": "1B9T7xnms9kvllDKxoMJLZJg2Hla0OY0a",
                 "gdriveLink": "https://drive.google.com/file/d/1B9T7xnms9kvllDKxoMJLZJg2Hla0OY0a/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "8802b62809fb48a7811d22e6633dfd5b",
+                "slug": "8802b628",
+                "index": 3,
+                "globalIndex": 6,
+                "title": "Complete Minimal Animation Workflow",
+                "rawTitle": "Complete Minimal Animation Workflow",
+                "module": "02_Understanding Minimal Animations",
+                "moduleIndex": 1,
+                "gdriveId": "14YBpJmEm2qqH9AM_Jscr9GhNGcHOt5Ae",
+                "gdriveLink": "https://drive.google.com/file/d/14YBpJmEm2qqH9AM_Jscr9GhNGcHOt5Ae/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "98af9137a0c74f2e811d7deb0cdbfd78",
+                "slug": "98af9137",
+                "index": 4,
+                "globalIndex": 7,
+                "title": "Breaking Down This Editing Style",
+                "rawTitle": "Breaking Down This Editing Style",
+                "module": "02_Understanding Minimal Animations",
+                "moduleIndex": 1,
+                "gdriveId": "1kDTsmDi0qMxfK6OGeQt5TIefrErACoGx",
+                "gdriveLink": "https://drive.google.com/file/d/1kDTsmDi0qMxfK6OGeQt5TIefrErACoGx/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
@@ -4844,6 +4874,58 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 2,
                 "gdriveId": "1EQ-MKD6AFiHTpVvMp9Tr-Z4D6bRc9HX-",
                 "gdriveLink": "https://drive.google.com/file/d/1EQ-MKD6AFiHTpVvMp9Tr-Z4D6bRc9HX-/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "af0548c4bb55473984fd9d102432948a",
+                "slug": "af0548c4",
+                "index": 3,
+                "globalIndex": 5,
+                "title": "Creating Casted Shadows",
+                "rawTitle": "Creating Casted Shadows",
+                "module": "03_High-End Minimal Backgrounds",
+                "moduleIndex": 2,
+                "gdriveId": "1b-T6Pll850DJaJqFvCyYSgwrtiIN4nbi",
+                "gdriveLink": "https://drive.google.com/file/d/1b-T6Pll850DJaJqFvCyYSgwrtiIN4nbi/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "90eca7c155cd4cf2974213b908da83cf",
+                "slug": "90eca7c1",
+                "index": 4,
+                "globalIndex": 9,
+                "title": "Applying Depth Textures",
+                "rawTitle": "Applying Depth Textures",
+                "module": "03_High-End Minimal Backgrounds",
+                "moduleIndex": 2,
+                "gdriveId": "1SY7NaSPYq_YiG9hd9tGHwJxySn_jvZBy",
+                "gdriveLink": "https://drive.google.com/file/d/1SY7NaSPYq_YiG9hd9tGHwJxySn_jvZBy/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 3,
+            "folder": "01 General",
+            "title": "01 General",
+            "lessons": [
+              {
+                "id": "1f3d820314a8476f8538fb2ec6a9a46a",
+                "slug": "1f3d8203",
+                "index": 1,
+                "globalIndex": 8,
+                "title": "Introduction to Minimal Animations",
+                "rawTitle": "Introduction to Minimal Animations",
+                "module": "01 General",
+                "moduleIndex": 3,
+                "gdriveId": "1S0Uns81l4lrtOSKBgiIYQvJj1QP7eWYB",
+                "gdriveLink": "https://drive.google.com/file/d/1S0Uns81l4lrtOSKBgiIYQvJj1QP7eWYB/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
