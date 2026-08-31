@@ -8238,8 +8238,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "2nd Animation Sketch Phase",
                 "module": "04_Iman's 3D animation style",
                 "moduleIndex": 3,
-                "gdriveId": "1aE6vJpo9EiDO2vZNR8_Hv4Qzmpfjm5q5",
-                "gdriveLink": "https://drive.google.com/file/d/1aE6vJpo9EiDO2vZNR8_Hv4Qzmpfjm5q5/view?usp=drivesdk",
+                "gdriveId": "1xyv9uv8w1LR_wp8541OTHqfLURpLVZr_",
+                "gdriveLink": "https://drive.google.com/file/d/1xyv9uv8w1LR_wp8541OTHqfLURpLVZr_/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "<h2>What's This All About ?</h2><p>In this lesson, we’ll dive into our <strong>second sample animation</strong> by studying the <strong>2nd animation</strong> in one of <em>Iman’s videos</em>. We’ll <strong>break down</strong> the <em>animation</em>, <strong>analyze</strong> the <em>thought process</em> behind how it was created, and then <strong>sketch</strong> out our <em>own version</em>. This exercise is all about learning from real examples while developing the skills to design animations in Iman’s style yourself.</p><h2>Note !!</h2><p>If you’re still <em>not fully confident</em> with the <strong>4 sketching phases</strong>, write them down and follow along with us.</p><p>Please ensure you’ve <em>completed</em> the <strong>Blender Masterclass</strong> before starting this course.</p>",
                 "resources": []
