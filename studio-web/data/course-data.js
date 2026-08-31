@@ -4772,8 +4772,8 @@ window.COMMUNITIES_DATA = [
         "courseTitle": "The Minimal Animation Masterclass",
         "subtitle": "Formación completa de The Minimal Animation Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
-        "totalModules": 4,
-        "totalLessons": 10,
+        "totalModules": 8,
+        "totalLessons": 22,
         "totalResources": 0,
         "modules": [
           {
@@ -4790,8 +4790,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "Minimal Animations Style",
                 "module": "02_Understanding Minimal Animations",
                 "moduleIndex": 1,
-                "gdriveId": "1RsNeJJ5zFMN4bimNBVKwnfvu6tNeDgpP",
-                "gdriveLink": "https://drive.google.com/file/d/1RsNeJJ5zFMN4bimNBVKwnfvu6tNeDgpP/view?usp=drivesdk",
+                "gdriveId": "1YaAXkk1vqz-jbYZvCM5_7lbBLYJoG8LY",
+                "gdriveLink": "https://drive.google.com/file/d/1YaAXkk1vqz-jbYZvCM5_7lbBLYJoG8LY/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
@@ -4837,6 +4837,21 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 1,
                 "gdriveId": "12uAz0tRqy23kqZSsTHsvszPgjFdQnvLy",
                 "gdriveLink": "https://drive.google.com/file/d/12uAz0tRqy23kqZSsTHsvszPgjFdQnvLy/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "325d697df6134cc1a41a04205bd4e593",
+                "slug": "325d697d",
+                "index": 5,
+                "globalIndex": 12,
+                "title": "The Minimal Animations Principles",
+                "rawTitle": "The Minimal Animations Principles",
+                "module": "02_Understanding Minimal Animations",
+                "moduleIndex": 1,
+                "gdriveId": "1gmRzGkwH781B4GPuW1nS83eagWDmx47I",
+                "gdriveLink": "https://drive.google.com/file/d/1gmRzGkwH781B4GPuW1nS83eagWDmx47I/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
@@ -4948,6 +4963,199 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 4,
                 "gdriveId": "1KHaw7JicKJXUeA_C2QqL24uCj8WAKoYh",
                 "gdriveLink": "https://drive.google.com/file/d/1KHaw7JicKJXUeA_C2QqL24uCj8WAKoYh/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "8ef2328cf90c4f56a5cfdb5bc5797258",
+                "slug": "8ef2328c",
+                "index": 2,
+                "globalIndex": 14,
+                "title": "Creating Depth with Shadows",
+                "rawTitle": "Creating Depth with Shadows",
+                "module": "04_Object Design Workflow",
+                "moduleIndex": 4,
+                "gdriveId": "1Bgetsy1-Qs0W6CjdQSvyO99ydcZwEvo_",
+                "gdriveLink": "https://drive.google.com/file/d/1Bgetsy1-Qs0W6CjdQSvyO99ydcZwEvo_/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "9577b20ee81e4d25b87ba34d9966f5c2",
+                "slug": "9577b20e",
+                "index": 3,
+                "globalIndex": 15,
+                "title": "Applying Textures to Objects",
+                "rawTitle": "Applying Textures to Objects",
+                "module": "04_Object Design Workflow",
+                "moduleIndex": 4,
+                "gdriveId": "1oJuEivyA4FojwAvAMosE3kD0ro9v8G_T",
+                "gdriveLink": "https://drive.google.com/file/d/1oJuEivyA4FojwAvAMosE3kD0ro9v8G_T/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 5,
+            "folder": "07_Animating Every Element",
+            "title": "07_Animating Every Element",
+            "lessons": [
+              {
+                "id": "69c7233759da47f585165a4f9f16e81a",
+                "slug": "69c72337",
+                "index": 1,
+                "globalIndex": 11,
+                "title": "Letter Text Animations",
+                "rawTitle": "Letter Text Animations",
+                "module": "07_Animating Every Element",
+                "moduleIndex": 5,
+                "gdriveId": "1pNc190Yl1sP93cachR29A3k3za5voxT5",
+                "gdriveLink": "https://drive.google.com/file/d/1pNc190Yl1sP93cachR29A3k3za5voxT5/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "8746b1b5df6e427ba44e8fd41d109e29",
+                "slug": "8746b1b5",
+                "index": 2,
+                "globalIndex": 19,
+                "title": "Object Reveal Animations",
+                "rawTitle": "Object Reveal Animations",
+                "module": "07_Animating Every Element",
+                "moduleIndex": 5,
+                "gdriveId": "1jKa-Y4AUePK4h0cKNxWc-Gvpbz5Gfnjk",
+                "gdriveLink": "https://drive.google.com/file/d/1jKa-Y4AUePK4h0cKNxWc-Gvpbz5Gfnjk/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "1e24c65da007400fa5f67b89c4191fe0",
+                "slug": "1e24c65d",
+                "index": 3,
+                "globalIndex": 21,
+                "title": "Minimal Text Animations",
+                "rawTitle": "Minimal Text Animations",
+                "module": "07_Animating Every Element",
+                "moduleIndex": 5,
+                "gdriveId": "1p5fnxbZGT2XgsT3VweAayrPiGXkMxRgv",
+                "gdriveLink": "https://drive.google.com/file/d/1p5fnxbZGT2XgsT3VweAayrPiGXkMxRgv/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 6,
+            "folder": "08_Post-Production Workflow",
+            "title": "08_Post-Production Workflow",
+            "lessons": [
+              {
+                "id": "cae4b43c00c24c0bb9ebe1c9e4fe0660",
+                "slug": "cae4b43c",
+                "index": 1,
+                "globalIndex": 13,
+                "title": "Live Zoom Ins",
+                "rawTitle": "Live Zoom Ins",
+                "module": "08_Post-Production Workflow",
+                "moduleIndex": 6,
+                "gdriveId": "1i6axcP3F3dwEaKZlZFVnoEEtILGZxx9T",
+                "gdriveLink": "https://drive.google.com/file/d/1i6axcP3F3dwEaKZlZFVnoEEtILGZxx9T/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "1e7acfb45ed544949928d8cf7945fc05",
+                "slug": "1e7acfb4",
+                "index": 2,
+                "globalIndex": 18,
+                "title": "3D Parallax Effect",
+                "rawTitle": "3D Parallax Effect",
+                "module": "08_Post-Production Workflow",
+                "moduleIndex": 6,
+                "gdriveId": "1etkV3zatnrtrthV8sOAqQre0EoIB2s_u",
+                "gdriveLink": "https://drive.google.com/file/d/1etkV3zatnrtrthV8sOAqQre0EoIB2s_u/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 7,
+            "folder": "11_Minimal Animation Practice Project",
+            "title": "11_Minimal Animation Practice Project",
+            "lessons": [
+              {
+                "id": "46f3693c7b0e4297bf5099087d60cb38",
+                "slug": "46f3693c",
+                "index": 1,
+                "globalIndex": 16,
+                "title": "Transporting into After Effects",
+                "rawTitle": "Transporting into After Effects",
+                "module": "11_Minimal Animation Practice Project",
+                "moduleIndex": 7,
+                "gdriveId": "19XkFNgOG89kM8xdMMcnZ9NCwX_frwIE_",
+                "gdriveLink": "https://drive.google.com/file/d/19XkFNgOG89kM8xdMMcnZ9NCwX_frwIE_/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "bce72363661e42fbbf6f7a98825a9cdb",
+                "slug": "bce72363",
+                "index": 2,
+                "globalIndex": 22,
+                "title": "Planning The Minimal Edit",
+                "rawTitle": "Planning The Minimal Edit",
+                "module": "11_Minimal Animation Practice Project",
+                "moduleIndex": 7,
+                "gdriveId": "1-ApdUhuhy9cwqRunUnuYNs_gbpVDuBSf",
+                "gdriveLink": "https://drive.google.com/file/d/1-ApdUhuhy9cwqRunUnuYNs_gbpVDuBSf/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 8,
+            "folder": "05_The Minimal Text Design",
+            "title": "05_The Minimal Text Design",
+            "lessons": [
+              {
+                "id": "8655adacd67241d9b322951c3fb3062d",
+                "slug": "8655adac",
+                "index": 1,
+                "globalIndex": 17,
+                "title": "Text Stylization",
+                "rawTitle": "Text Stylization",
+                "module": "05_The Minimal Text Design",
+                "moduleIndex": 8,
+                "gdriveId": "187vz6iDD6sWcRw0P4KMkRMXkOspMExPV",
+                "gdriveLink": "https://drive.google.com/file/d/187vz6iDD6sWcRw0P4KMkRMXkOspMExPV/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "985c433ba8d54aedb2f577ae7b3b52e3",
+                "slug": "985c433b",
+                "index": 2,
+                "globalIndex": 20,
+                "title": "Special Word Highlight",
+                "rawTitle": "Special Word Highlight",
+                "module": "05_The Minimal Text Design",
+                "moduleIndex": 8,
+                "gdriveId": "1oe33twRzMSJNiGUFtCKuZEEU50c6fWlz",
+                "gdriveLink": "https://drive.google.com/file/d/1oe33twRzMSJNiGUFtCKuZEEU50c6fWlz/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
