@@ -794,6 +794,32 @@
       return true;
     }
 
+    if (request.action === 'RESOLVE_LESSON_STREAM') {
+      (async () => {
+        try {
+          const lessonUrl = request.lessonUrl;
+          const targetMd = request.targetMd;
+          const res = await fetch(lessonUrl, { credentials: 'include' });
+          if (res.ok) {
+            const html = await res.text();
+            const m = html.match(/<script id="__NEXT_DATA__" type="application\/json">(.*?)<\/script>/);
+            if (m) {
+              const data = JSON.parse(m[1]);
+              const directVid = findLessonVideoById(data, targetMd);
+              if (directVid) {
+                sendResponse({ success: true, directVideoUrl: directVid });
+                return;
+              }
+            }
+          }
+          sendResponse({ success: false });
+        } catch (e) {
+          sendResponse({ success: false, error: e.message });
+        }
+      })();
+      return true;
+    }
+
     return false;
   });
 

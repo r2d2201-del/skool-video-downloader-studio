@@ -1324,9 +1324,10 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
         "--user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
         "--extractor-args", "youtube:player_client=android,web",
         "--concurrent-fragments", "10",
-        "-o", out_template,
-        download_url
     ]
+    if os.path.exists(COOKIES_FILE) and os.path.getsize(COOKIES_FILE) > 50:
+        cmd.extend(["--cookies", COOKIES_FILE])
+    cmd.extend(["-o", out_template, download_url])
 
     with DOWNLOAD_LOCK:
         ACTIVE_DOWNLOADS[task_id] = {

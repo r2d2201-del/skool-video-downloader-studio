@@ -254,6 +254,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (mdMatch) targetMd = mdMatch[1];
       }
 
+      // 1. Try resolving stream via the active tab (using active login session)
+      if (activeTabId) {
+        try {
+          const tabRes = await new Promise(resolve => {
+            chrome.tabs.sendMessage(activeTabId, { action: 'RESOLVE_LESSON_STREAM', lessonUrl, targetMd }, resp => {
+              if (chrome.runtime.lastError || !resp) resolve(null);
+              else resolve(resp);
+            });
+          });
+          if (tabRes && tabRes.success && tabRes.directVideoUrl) {
+            return tabRes.directVideoUrl;
+          }
+        } catch (te) {}
+      }
+
       const res = await fetch(lessonUrl, {
         credentials: 'include',
         headers: {
