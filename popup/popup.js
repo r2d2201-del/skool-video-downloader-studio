@@ -266,17 +266,36 @@ document.addEventListener('DOMContentLoaded', async () => {
       // 1. Try resolving stream via the active tab (using active login session)
       const activeTabId = await getActiveTabId();
       if (activeTabId) {
+        let tabRes = null;
         try {
-          const tabRes = await new Promise(resolve => {
+          tabRes = await new Promise(resolve => {
             chrome.tabs.sendMessage(activeTabId, { action: 'RESOLVE_LESSON_STREAM', lessonUrl, targetMd }, resp => {
               if (chrome.runtime.lastError || !resp) resolve(null);
               else resolve(resp);
             });
           });
-          if (tabRes && tabRes.success && tabRes.directVideoUrl) {
-            return tabRes.directVideoUrl;
-          }
         } catch (te) {}
+
+        if (!tabRes) {
+          try {
+            await chrome.scripting.executeScript({
+              target: { tabId: activeTabId },
+              files: ['content_scripts/skool-detector.js']
+            });
+            await new Promise(r => setTimeout(r, 150));
+            tabRes = await new Promise(resolve => {
+              chrome.tabs.sendMessage(activeTabId, { action: 'RESOLVE_LESSON_STREAM', lessonUrl, targetMd }, resp => {
+                if (chrome.runtime.lastError || !resp) resolve(null);
+                else resolve(resp);
+              });
+            });
+          } catch (ie) {}
+        }
+
+        if (tabRes && tabRes.success && tabRes.directVideoUrl) {
+          console.log('[Resolver] Resolved stream for', targetMd, '=>', tabRes.directVideoUrl);
+          return tabRes.directVideoUrl;
+        }
       }
 
       const res = await fetch(lessonUrl, {

@@ -819,8 +819,20 @@
 
           // 1. Check local page __NEXT_DATA__ first
           const localNext = getNextData();
-          if (localNext && targetMd) {
-            const foundLocal = findLessonVideoById(localNext, targetMd);
+          if (localNext) {
+            let foundLocal = findLessonVideoById(localNext, targetMd);
+            if (!foundLocal) {
+              const pv = localNext.props?.pageProps?.video || localNext.pageProps?.video;
+              if (pv) {
+                const pid = pv.playbackId || pv.id;
+                const tok = pv.playbackToken;
+                if (pid && typeof pid === 'string' && pid.length > 5) {
+                  foundLocal = tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
+                } else if (pv.url) {
+                  foundLocal = pv.url;
+                }
+              }
+            }
             if (foundLocal) {
               sendResponse({ success: true, directVideoUrl: foundLocal });
               return;
@@ -828,7 +840,12 @@
           }
 
           // 2. Fetch specific lesson page with browser session
-          const res = await fetch(lessonUrl, { credentials: 'include' });
+          const res = await fetch(lessonUrl, {
+            credentials: 'include',
+            headers: {
+              'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+            }
+          });
           if (res.ok) {
             const html = await res.text();
             const m = html.match(/<script id="__NEXT_DATA__" type="application\/json">(.*?)<\/script>/);
