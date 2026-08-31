@@ -8211,8 +8211,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "1st animation sketch phase",
                 "module": "04_Iman's 3D animation style",
                 "moduleIndex": 3,
-                "gdriveId": "1Yt_mTZ2e0AOfo-W204Dz5Le3m4a8uZq_",
-                "gdriveLink": "https://drive.google.com/file/d/1Yt_mTZ2e0AOfo-W204Dz5Le3m4a8uZq_/view?usp=drivesdk",
+                "gdriveId": "1jO-3r_gcfbI7VXS8aTP8Oahh43f3ZHQi",
+                "gdriveLink": "https://drive.google.com/file/d/1jO-3r_gcfbI7VXS8aTP8Oahh43f3ZHQi/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "<h2>What Are We Doing Here ?</h2><p>In this lesson, we’ll be <strong>watching</strong> one of <em>Iman’s videos</em> and <strong>breaking down</strong> the <em>thought process </em>behind sketching his animation style. Together, we’ll <strong>analyze</strong> the <em>context</em>,<strong> identify</strong> the <em>branding and audience</em>, and then <strong>sketch out our own animation idea</strong> before jumping into Blender.</p><h2>Note !!</h2><p>Make sure to <em>complete</em> the <strong>Blender Masterclass</strong> before jumping into this course.</p><p>If you’re not fully <em>comfortable</em> with the <strong>4 sketching phases</strong>, write them down and follow along with us.</p><h2>Links !!</h2><p>Link to files are <a href=\"https://drive.google.com/drive/folders/1rEvquAgSSpPFP0FHPoCQJynaNwOSms6m?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>",
                 "resources": [
