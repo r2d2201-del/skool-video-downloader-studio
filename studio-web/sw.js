@@ -3,7 +3,7 @@
  * Cache-First for static assets, Stale-While-Revalidate for course catalog.
  */
 
-const CACHE_NAME = 'cinematic-studio-v2.6.4';
+const CACHE_NAME = 'cinematic-studio-v2.6.5';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -39,7 +39,7 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Fetch Event - Network First for course data, Cache First for app shell
+// Fetch Event - Stale-while-revalidate for data, cache-first for assets with ignoreSearch
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
@@ -63,17 +63,23 @@ self.addEventListener('fetch', (event) => {
           }
           return networkResponse;
         }).catch(() => {
-          return cache.match(event.request);
+          return cache.match(event.request, { ignoreSearch: true });
         });
       })
     );
     return;
   }
 
-  // App shell assets: Cache first with network fallback
+  // App shell assets (CSS, JS, Fonts): Cache first with network fallback & ignoreSearch
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
+    caches.match(event.request, { ignoreSearch: true }).then((cachedResponse) => {
       if (cachedResponse) {
+        // Fetch update in background
+        fetch(event.request).then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200 && event.request.method === 'GET') {
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, networkResponse));
+          }
+        }).catch(() => {});
         return cachedResponse;
       }
       return fetch(event.request).then((networkResponse) => {
@@ -86,7 +92,7 @@ self.addEventListener('fetch', (event) => {
         return networkResponse;
       }).catch(() => {
         if (event.request.headers.get('accept')?.includes('text/html')) {
-          return caches.match('./index.html');
+          return caches.match('./index.html', { ignoreSearch: true });
         }
       });
     })
