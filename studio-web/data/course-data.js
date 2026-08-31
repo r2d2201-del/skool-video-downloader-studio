@@ -2419,7 +2419,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               }
             ]
           }
@@ -2452,7 +2452,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1DRFuynLgoFZhRPaTnrC9XFKBbzSKmojK",
                 "gdriveLink": "https://drive.google.com/file/d/1DRFuynLgoFZhRPaTnrC9XFKBbzSKmojK/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "272a78154c144605a10681e0eebe1863",
@@ -3891,7 +3892,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong><a href=\"https://drive.google.com/file/d/1B3JFZekF8UVXQxY9cuU_N7U8YLHSmZ5R/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Final Edit</a></strong><strong> we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/16ANvf8ZvGL2MBTtG1iYJdLoZnugKQ2y0?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE</a></strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               }
             ]
           }
@@ -3913,7 +3914,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 5,
         "totalLessons": 25,
-        "totalResources": 0,
+        "totalResources": 2,
         "modules": [
           {
             "index": 1,
@@ -3932,7 +3933,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Go2uUNYSJOfAqhl0CL4VO8B0bxjxwTIh",
                 "gdriveLink": "https://drive.google.com/file/d/1Go2uUNYSJOfAqhl0CL4VO8B0bxjxwTIh/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               }
             ]
           },
@@ -3953,7 +3955,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1uiaxDewF_HVSgCc15Oxz0d0k--zzktp0",
                 "gdriveLink": "https://drive.google.com/file/d/1uiaxDewF_HVSgCc15Oxz0d0k--zzktp0/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_7",
@@ -3967,7 +3970,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1OM_99ugm-W0lMHRIQxkXQ-ThFewfv4OQ",
                 "gdriveLink": "https://drive.google.com/file/d/1OM_99ugm-W0lMHRIQxkXQ-ThFewfv4OQ/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_6",
@@ -3981,7 +3985,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1se3IAjwOqmwG8GJsGrPb8d_W9c28OpXQ",
                 "gdriveLink": "https://drive.google.com/file/d/1se3IAjwOqmwG8GJsGrPb8d_W9c28OpXQ/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_8",
@@ -3995,7 +4000,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1PaVBw2WlBzZaRv6A8IS5R2EATT9i7-fp",
                 "gdriveLink": "https://drive.google.com/file/d/1PaVBw2WlBzZaRv6A8IS5R2EATT9i7-fp/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_2",
@@ -4009,7 +4015,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1su_8l5-83n9cr-UJjDBF4yroCjlms8Wx",
                 "gdriveLink": "https://drive.google.com/file/d/1su_8l5-83n9cr-UJjDBF4yroCjlms8Wx/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               }
             ]
           },
@@ -4030,7 +4037,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1B7Yed7llsWp9dgCIsI5_Y1byhqozQlPo",
                 "gdriveLink": "https://drive.google.com/file/d/1B7Yed7llsWp9dgCIsI5_Y1byhqozQlPo/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_14",
@@ -4044,7 +4052,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1fdZ0BifipCXnkXUuPIQsJdcusaLLe0sP",
                 "gdriveLink": "https://drive.google.com/file/d/1fdZ0BifipCXnkXUuPIQsJdcusaLLe0sP/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_5",
@@ -4058,7 +4067,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1RDu2v5i_8xUdhMqBFLZ3dUr-JVJ03IZT",
                 "gdriveLink": "https://drive.google.com/file/d/1RDu2v5i_8xUdhMqBFLZ3dUr-JVJ03IZT/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_12",
@@ -4072,7 +4082,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1oOwg2wixARV8bASfMTJqLgBomaGjB4sx",
                 "gdriveLink": "https://drive.google.com/file/d/1oOwg2wixARV8bASfMTJqLgBomaGjB4sx/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               }
             ]
           },
@@ -4093,7 +4104,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1jnYj7UMxQLINOp_j-Rs6wVClszy_rKKm",
                 "gdriveLink": "https://drive.google.com/file/d/1jnYj7UMxQLINOp_j-Rs6wVClszy_rKKm/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_21",
@@ -4107,7 +4119,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1M9Vr5jpQRC4DlmJ9FvU514Uw_lKGB4Dc",
                 "gdriveLink": "https://drive.google.com/file/d/1M9Vr5jpQRC4DlmJ9FvU514Uw_lKGB4Dc/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_4",
@@ -4121,7 +4134,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1DQg4L_-zMOAhcwX0Svrqrrws26eNnVUl",
                 "gdriveLink": "https://drive.google.com/file/d/1DQg4L_-zMOAhcwX0Svrqrrws26eNnVUl/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_23",
@@ -4135,7 +4149,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1KTOwftn1a-Z4KiL2YmwcEnsHBI4pGm7B",
                 "gdriveLink": "https://drive.google.com/file/d/1KTOwftn1a-Z4KiL2YmwcEnsHBI4pGm7B/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_24",
@@ -4149,7 +4164,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "137Qtt6u875aMYdW8_PsRi-kG0IhnkTKF",
                 "gdriveLink": "https://drive.google.com/file/d/137Qtt6u875aMYdW8_PsRi-kG0IhnkTKF/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_17",
@@ -4163,7 +4179,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "10kIdoU4gk0uI0dHCFLNQHr5t5TotoBVM",
                 "gdriveLink": "https://drive.google.com/file/d/10kIdoU4gk0uI0dHCFLNQHr5t5TotoBVM/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_11",
@@ -4177,7 +4194,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1VnEftzuRR5ahEXtb-R8CXEK-U8wB-U0M",
                 "gdriveLink": "https://drive.google.com/file/d/1VnEftzuRR5ahEXtb-R8CXEK-U8wB-U0M/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_9",
@@ -4191,7 +4209,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1aDAoEpEFU9wQFPFQgVWLPVgso8VR61k3",
                 "gdriveLink": "https://drive.google.com/file/d/1aDAoEpEFU9wQFPFQgVWLPVgso8VR61k3/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_20",
@@ -4205,7 +4224,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1RhOU1lYzUNwAvmO5_LIBEcZEFs9U89Ok",
                 "gdriveLink": "https://drive.google.com/file/d/1RhOU1lYzUNwAvmO5_LIBEcZEFs9U89Ok/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               }
             ]
           },
@@ -4226,7 +4246,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1yXnLVgDhHr_j1ToFfo-wnpr-BHvMKZwq",
                 "gdriveLink": "https://drive.google.com/file/d/1yXnLVgDhHr_j1ToFfo-wnpr-BHvMKZwq/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_16",
@@ -4240,7 +4261,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Sm-B-hM6BArXbxevxOkxdFfITtEc8z-Z",
                 "gdriveLink": "https://drive.google.com/file/d/1Sm-B-hM6BArXbxevxOkxdFfITtEc8z-Z/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_19",
@@ -4254,7 +4276,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Sp3SmokE4Ih7hyUulVtHnpcHJ-nV0eKV",
                 "gdriveLink": "https://drive.google.com/file/d/1Sp3SmokE4Ih7hyUulVtHnpcHJ-nV0eKV/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_22",
@@ -4268,7 +4291,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1RlO1uflo9eTcHXn7qLymRGtfCr-tH1Hw",
                 "gdriveLink": "https://drive.google.com/file/d/1RlO1uflo9eTcHXn7qLymRGtfCr-tH1Hw/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_25",
@@ -4282,7 +4306,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Hk9KGpKFfOmQbcTlSrAdyPd8ia1GgAp3",
                 "gdriveLink": "https://drive.google.com/file/d/1Hk9KGpKFfOmQbcTlSrAdyPd8ia1GgAp3/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_25",
+                    "moduleTitle": "05_Music & Sound Design",
+                    "lessonTitle": "EP 22 - Risers and Hits",
+                    "name": "Carpeta Google Drive · EP 22 - Risers and Hits",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_25",
+                    "moduleTitle": "05_Music & Sound Design",
+                    "lessonTitle": "EP 22 - Risers and Hits",
+                    "name": "Carpeta Google Drive · EP 22 - Risers and Hits",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_10",
@@ -4296,7 +4344,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1XiFcKRgRbBsdqhqelO6owNkRRvJYC9PG",
                 "gdriveLink": "https://drive.google.com/file/d/1XiFcKRgRbBsdqhqelO6owNkRRvJYC9PG/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
               }
             ]
           }
@@ -4329,7 +4378,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1JY0rfMHVEM0uaEyGPDsMtvZnK48G1X02",
                 "gdriveLink": "https://drive.google.com/file/d/1JY0rfMHVEM0uaEyGPDsMtvZnK48G1X02/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_02",
@@ -4343,7 +4393,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1viBSBwxz68ZDRnsN_7z8d8E59jEJj-xm",
                 "gdriveLink": "https://drive.google.com/file/d/1viBSBwxz68ZDRnsN_7z8d8E59jEJj-xm/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               }
             ]
           },
@@ -4365,7 +4416,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1E2j1lVm1hkzoVWjZZURO2EoQQWfdR7A7/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_04",
@@ -4380,7 +4431,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/186y4csSlUJr8ygfzrFIu-u4J3-uFAfJz/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_05",
@@ -4395,7 +4446,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1gOS7cQSsJ0eg86yUfDPEehCyoXiShE2I/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_06",
@@ -4410,7 +4461,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1JIW-DbEbOAJK1NPyKJ_6kiTDlhTsBdfR/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_07",
@@ -4425,7 +4476,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1mlFXztckMbdQBdUWGnscO3GB1IWDVT5T/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_08",
@@ -4440,7 +4491,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1_aIAAoND-H6-aUT6D5o4j3l47W3mRY8C/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_09",
@@ -4487,7 +4538,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!</p><p>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h3>Files You Might Need</h3><p>Find all the text files <a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_11",
@@ -4502,7 +4553,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1LMcni99d8XUN_x304rnr6btlDZKOGenH/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_12",
@@ -4517,7 +4568,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1PdwwDe5gj5PArKPASJPmZwyHf5FLpjQK/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_13",
@@ -4532,7 +4583,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/104G6ewbedcyhCs2OFcZ0HE3ll13crQl4/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_14",
@@ -4561,7 +4612,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1WrzzSgabm-oi1eRXaNMBN_oE_YhFy8ZB/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_16",
@@ -4576,7 +4627,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1nQzBGUZnP2IuH8BmJ0ODk8yTkx9vrs48/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_17",
@@ -4605,7 +4656,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1NaA8C1MwG6B5RcCQLhw0E4CZ7mnz0yTf/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_19",
@@ -4620,7 +4671,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1H1U3K6Q3j-e10Q5cf48QCtRAISAzWJRw/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_20",
@@ -4649,7 +4700,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1jWFWI57_g3jJi-qrQD3m9E_b1lETFf6n/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_22",
@@ -4685,7 +4736,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1DY7u43ZFb9EVojWkBe4BMIJY7OicE7yJ/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_24",
@@ -4700,7 +4751,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1805evuEsDFjmb7j4d0ZG9Z-uGRVXiVex/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_25",
@@ -4715,7 +4766,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1Rn5XftX-RLb9ap0GddXpkP9VPL9sLVm0/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_26",
@@ -4730,7 +4781,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1wp93D56NBwtpV-uEpc3F0mPxWw8g1Ws7/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_27",
@@ -4745,7 +4796,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1fliuCKDs-tYAuUeQqoc2f0-XlsCYEVEc/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_28",
@@ -4774,7 +4825,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1w9ce9-bBEKJOggT7eBiR9pzPTvsh6Pb-/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_30",
@@ -4789,7 +4840,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/11SzV_TWOUqJvIPwzemQOJj_KmJY4XVEy/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_31",
@@ -4804,7 +4855,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/11AvN6s6U59S26iifwsS98sd1d7-hnHOf/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_32",
@@ -4819,7 +4870,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1EOBaE5KuWi4DtaC_th3hXdoHIUnu6suD/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": ""
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_33",
@@ -4866,7 +4917,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1MKHahmgA4jprzhwnvD0MUH0voXsyFgyu",
                 "gdriveLink": "https://drive.google.com/file/d/1MKHahmgA4jprzhwnvD0MUH0voXsyFgyu/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               }
             ]
           },
@@ -4887,7 +4939,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1w2VcvT_G5tVf_q6l9_8k28NznbNz9KLe",
                 "gdriveLink": "https://drive.google.com/file/d/1w2VcvT_G5tVf_q6l9_8k28NznbNz9KLe/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p>"
               },
               {
                 "id": "bymax_les_03",
@@ -4901,7 +4954,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1ezhFMbWvyDo8UoQihH3KFphnMyOJafNI",
                 "gdriveLink": "https://drive.google.com/file/d/1ezhFMbWvyDo8UoQihH3KFphnMyOJafNI/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               }
             ]
           },
@@ -4922,7 +4976,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1zulKL8Qsc3W0ukOuoO8qVXtVQwOe42HG",
                 "gdriveLink": "https://drive.google.com/file/d/1zulKL8Qsc3W0ukOuoO8qVXtVQwOe42HG/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_05",
@@ -4936,7 +4991,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1fVIZrJME5Y5vlLj3ZcfL1MaGjIXyNB9Y",
                 "gdriveLink": "https://drive.google.com/file/d/1fVIZrJME5Y5vlLj3ZcfL1MaGjIXyNB9Y/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_06",
@@ -4950,7 +5006,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "16zD5xUyAKJq5k1n7E45W3EkALjy4JBpy",
                 "gdriveLink": "https://drive.google.com/file/d/16zD5xUyAKJq5k1n7E45W3EkALjy4JBpy/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_07",
@@ -4964,7 +5021,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1-vNiaaBOKWAebkVwqEhfOAEfRm4VzjCB",
                 "gdriveLink": "https://drive.google.com/file/d/1-vNiaaBOKWAebkVwqEhfOAEfRm4VzjCB/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               }
             ]
           },
@@ -4985,7 +5043,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1F0yIJlwugRC99apWQb-rI44MO-nVvtkA",
                 "gdriveLink": "https://drive.google.com/file/d/1F0yIJlwugRC99apWQb-rI44MO-nVvtkA/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_09",
@@ -4999,7 +5058,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1DlNZSMk0MQJLYK0Kx8quxo4PwjcMiWW8",
                 "gdriveLink": "https://drive.google.com/file/d/1DlNZSMk0MQJLYK0Kx8quxo4PwjcMiWW8/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_10",
@@ -5013,7 +5073,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1-SzJN6QVDCCqXi88fbS47QwemVGet3QD",
                 "gdriveLink": "https://drive.google.com/file/d/1-SzJN6QVDCCqXi88fbS47QwemVGet3QD/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_11",
@@ -5027,7 +5088,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1p2K8zChHJGkXu9EpLnVA_I7CbQhYCPxd",
                 "gdriveLink": "https://drive.google.com/file/d/1p2K8zChHJGkXu9EpLnVA_I7CbQhYCPxd/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               }
             ]
           },
@@ -5048,7 +5110,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1ackBIIrQK-bfGSsjmHf86nQkt3HauZPP",
                 "gdriveLink": "https://drive.google.com/file/d/1ackBIIrQK-bfGSsjmHf86nQkt3HauZPP/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_13",
@@ -5062,7 +5125,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1w4WqhFF992mmWSunFVZs6_Nh-OcLFtbq",
                 "gdriveLink": "https://drive.google.com/file/d/1w4WqhFF992mmWSunFVZs6_Nh-OcLFtbq/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_14",
@@ -5076,7 +5140,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1gSm1-xGySz3ry2J4MZIgm3E4wefe2-BM",
                 "gdriveLink": "https://drive.google.com/file/d/1gSm1-xGySz3ry2J4MZIgm3E4wefe2-BM/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_15",
@@ -5090,7 +5155,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Pv_9wHiPfUF1mImb_EDd2wm0kf-lnqeo",
                 "gdriveLink": "https://drive.google.com/file/d/1Pv_9wHiPfUF1mImb_EDd2wm0kf-lnqeo/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               }
             ]
           },
@@ -5111,7 +5177,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1lfq8BT-WUaQoMtPXLWTosDQNPXFOochg",
                 "gdriveLink": "https://drive.google.com/file/d/1lfq8BT-WUaQoMtPXLWTosDQNPXFOochg/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_17",
@@ -5125,7 +5192,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1EwHzqRf-19H5DKKpuFtRo6rjD9hzpKxt",
                 "gdriveLink": "https://drive.google.com/file/d/1EwHzqRf-19H5DKKpuFtRo6rjD9hzpKxt/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_18",
@@ -5139,7 +5207,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1XMCWbVyoFTvFzbNOMVtXTAcfHKnRSzzk",
                 "gdriveLink": "https://drive.google.com/file/d/1XMCWbVyoFTvFzbNOMVtXTAcfHKnRSzzk/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_19",
@@ -5153,7 +5222,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Sn5H4tQ3NstOkWgP4FcvSKu0cKJsnEX2",
                 "gdriveLink": "https://drive.google.com/file/d/1Sn5H4tQ3NstOkWgP4FcvSKu0cKJsnEX2/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_20",
@@ -5167,7 +5237,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1ukVx6gRa7QJnu9187yBKYazQ-wc5fTRQ",
                 "gdriveLink": "https://drive.google.com/file/d/1ukVx6gRa7QJnu9187yBKYazQ-wc5fTRQ/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               }
             ]
           },
@@ -5188,7 +5259,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1a_pOGrfLj7vF13NG_iRPzXMB3ModT4P5",
                 "gdriveLink": "https://drive.google.com/file/d/1a_pOGrfLj7vF13NG_iRPzXMB3ModT4P5/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_22",
@@ -5202,7 +5274,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1McoctnKpqlsZ_YOmpB6CAS7OEDjcHy_A",
                 "gdriveLink": "https://drive.google.com/file/d/1McoctnKpqlsZ_YOmpB6CAS7OEDjcHy_A/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_23",
@@ -5216,7 +5289,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1rARAXuwSTOE-PfmmP9zgO-dU10g_LXJ0",
                 "gdriveLink": "https://drive.google.com/file/d/1rARAXuwSTOE-PfmmP9zgO-dU10g_LXJ0/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_24",
@@ -5230,7 +5304,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1LdF1xu1jSsmRHQqli-1noRIxUXSJuGlB",
                 "gdriveLink": "https://drive.google.com/file/d/1LdF1xu1jSsmRHQqli-1noRIxUXSJuGlB/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               },
               {
                 "id": "bymax_les_25",
@@ -5244,7 +5319,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Yx__dMxJRLJri65RbfikP5VWBkcnN06r",
                 "gdriveLink": "https://drive.google.com/file/d/1Yx__dMxJRLJri65RbfikP5VWBkcnN06r/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
               }
             ]
           }
