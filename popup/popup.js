@@ -769,6 +769,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           lessonTitle: safeLesTitle,
           lessonIndex: les.index,
           lessonId: les.id,
+          descriptionHtml: les.descriptionHtml || '',
           resources: les.attachments || []
         };
 
@@ -1309,6 +1310,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               lessonTitle: safeTitle,
               lessonIndex: found.index,
               lessonId: found.id,
+              descriptionHtml: found.descriptionHtml || '',
               resources: found.attachments || []
             };
 

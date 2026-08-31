@@ -13,7 +13,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 7,
         "totalLessons": 34,
-        "totalResources": 163,
+        "totalResources": 164,
         "modules": [
           {
             "index": 1,
@@ -44,7 +44,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "1af1218e6ffe41ae89bf798976035a13",
@@ -70,7 +71,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "271f97b6488448078e807a69b2b327cc",
@@ -96,7 +98,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "77e277f3ee4c4a5e83cb2fddc2908e3d",
@@ -133,7 +136,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               }
             ]
           },
@@ -177,7 +181,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "a22eea10cd184351a42db71f37bb30bb",
@@ -214,7 +219,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "1c5e05c0940348b293b4794a32da6aab",
@@ -262,7 +268,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "d46921b6792044969dd9cfa1614eb7aa",
@@ -310,7 +317,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               }
             ]
           },
@@ -365,7 +373,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "fafbccf9aa45415c898eaddeca3e3a16",
@@ -424,7 +433,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "7b9b5b588cdf4bebb0a2db31d6a9af59",
@@ -494,7 +504,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "8418b329db8e41eab6af29cca7bbaa4d",
@@ -608,7 +619,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               }
             ]
           },
@@ -685,7 +697,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "99374afc1c244a689d1b5ac25a92851d",
@@ -755,7 +768,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "4bafd88eb7dc43b8ad37943d62a7051b",
@@ -825,7 +839,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "51786b7a38d04460a94cd357240db147",
@@ -895,7 +910,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "4354e2bfd21043bbb6e9f6fd96a1ad11",
@@ -965,7 +981,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "75aed36d7b3442c9ad86be5adce7f71a",
@@ -1035,7 +1052,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "19ef8744ff9c4c21b25711625a8fd4e5",
@@ -1105,7 +1123,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "7073fd31eef54f2a9c8903567fb3753c",
@@ -1219,7 +1238,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               }
             ]
           },
@@ -1307,7 +1327,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "f2a65983bf024166b2ff2a6a44f66c6f",
@@ -1388,7 +1409,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "d4e4e1a4f63643cbbb36293a9e0210ce",
@@ -1469,7 +1491,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "6148bbe9addd42c2a7e311aba3a4ac0d",
@@ -1550,7 +1573,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               }
             ]
           },
@@ -1649,7 +1673,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "a5c34a037bec41a38d4d2ea82d80bc5d",
@@ -1741,7 +1766,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "0da3e387045741d980bf7755cf9b858b",
@@ -1833,7 +1859,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               }
             ]
           },
@@ -1899,7 +1926,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "03bc312abffe4d1daae9c0d4d792bdbc",
@@ -1958,7 +1986,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "e3029dccbd7b4c30bccda71d9f4ab74e",
@@ -2017,7 +2046,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "d4b8dab0968f4201997468b52bac4ca0",
@@ -2131,7 +2161,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "9d8e61a31ae0487a9c28079ffc444cd1",
@@ -2245,7 +2276,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "05682e7e77274619a953ad69c944051a",
@@ -2304,7 +2336,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
               },
               {
                 "id": "daee5a59b1ae4aed839085fd29ac7cce",
@@ -2362,8 +2395,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_4",
+                    "lessonId": "daee5a59b1ae4aed839085fd29ac7cce",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Music and Final Touches",
+                    "name": "Tablero Figma · Music and Final Touches",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               }
             ]
           }
@@ -2443,7 +2488,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "89810eb2661242c18fccf8132ae4ac7a",
@@ -2469,7 +2515,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "dcaf52ae9325457aab335495a4a44b2d",
@@ -2495,7 +2542,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "e71f4d3edfdd483cbf00af99c3c47e9c",
@@ -2521,7 +2569,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "77a4be4e99564828b07d623be55060b6",
@@ -2547,7 +2596,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "74f88d899cd848e9952a9100f0a777db",
@@ -2573,7 +2623,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               }
             ]
           },
@@ -2606,7 +2657,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "1ae649da75d5489b9fab59982b986b46",
@@ -2632,7 +2684,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "f2524fa677364010b37355c0f515e05c",
@@ -2658,7 +2711,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "b10b8ce455c844149cc594db8167a403",
@@ -2684,7 +2738,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "c5a0234f364245cfa1348bab195a914b",
@@ -2710,7 +2765,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "b29c970a504b422ab490343cbefa506d",
@@ -2736,7 +2792,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               }
             ]
           },
@@ -2791,7 +2848,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "8b476d51abba42f1a941d3b7f56141dd",
@@ -2839,7 +2897,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "9f9e2ab6ecd14a289168103ce4d2b162",
@@ -2887,7 +2946,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "2f0f4e2950474b0b922f09d44f3d0e6d",
@@ -2935,7 +2995,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "1eb7148089ea44e89925e964feb43c06",
@@ -2983,7 +3044,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "83f5c247c4c04a619880e409655c244c",
@@ -3031,7 +3093,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "6c455482321f407f88fc1cbe71d5ec1d",
@@ -3079,7 +3142,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               }
             ]
           },
@@ -3156,7 +3220,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "099edeb60dce42f3afef234e71f98666",
@@ -3226,7 +3291,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "ff80ee6ea2044990b02d62fffe306eb1",
@@ -3296,7 +3362,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "c25c5192d6814ef2be03685368a13ebb",
@@ -3366,7 +3433,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "b393efb3ce224de1aad65fedb2e8a3f3",
@@ -3436,7 +3504,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               }
             ]
           },
@@ -3513,7 +3582,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "95f29b7a4863485eafc1f621fbd6a76e",
@@ -3583,7 +3653,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "a02f06104c14404b89e7880c50dc41ff",
@@ -3653,7 +3724,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "47af80c7ea4740b484ef038e04f3a8a1",
@@ -3723,7 +3795,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
               },
               {
                 "id": "2da747e364564e5cb6fe916d4b0436e9",
@@ -3793,7 +3866,8 @@ window.COMMUNITIES_DATA = [
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
-                ]
+                ],
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong><a href=\"https://drive.google.com/file/d/1B3JFZekF8UVXQxY9cuU_N7U8YLHSmZ5R/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Final Edit</a></strong><strong> we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/16ANvf8ZvGL2MBTtG1iYJdLoZnugKQ2y0?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE</a></strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               }
             ]
           }
@@ -4266,7 +4340,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1E2j1lVm1hkzoVWjZZURO2EoQQWfdR7A7",
                 "gdriveLink": "https://drive.google.com/file/d/1E2j1lVm1hkzoVWjZZURO2EoQQWfdR7A7/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_04",
@@ -4280,7 +4355,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "186y4csSlUJr8ygfzrFIu-u4J3-uFAfJz",
                 "gdriveLink": "https://drive.google.com/file/d/186y4csSlUJr8ygfzrFIu-u4J3-uFAfJz/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_05",
@@ -4294,7 +4370,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1gOS7cQSsJ0eg86yUfDPEehCyoXiShE2I",
                 "gdriveLink": "https://drive.google.com/file/d/1gOS7cQSsJ0eg86yUfDPEehCyoXiShE2I/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_06",
@@ -4308,7 +4385,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1JIW-DbEbOAJK1NPyKJ_6kiTDlhTsBdfR",
                 "gdriveLink": "https://drive.google.com/file/d/1JIW-DbEbOAJK1NPyKJ_6kiTDlhTsBdfR/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_07",
@@ -4322,7 +4400,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1mlFXztckMbdQBdUWGnscO3GB1IWDVT5T",
                 "gdriveLink": "https://drive.google.com/file/d/1mlFXztckMbdQBdUWGnscO3GB1IWDVT5T/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_08",
@@ -4336,7 +4415,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1_aIAAoND-H6-aUT6D5o4j3l47W3mRY8C",
                 "gdriveLink": "https://drive.google.com/file/d/1_aIAAoND-H6-aUT6D5o4j3l47W3mRY8C/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_09",
@@ -4371,7 +4451,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1HHfHQlTSO-gpXXF22-B3NojcPZHIzMBO",
                 "gdriveLink": "https://drive.google.com/file/d/1HHfHQlTSO-gpXXF22-B3NojcPZHIzMBO/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_11",
@@ -4385,7 +4466,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1LMcni99d8XUN_x304rnr6btlDZKOGenH",
                 "gdriveLink": "https://drive.google.com/file/d/1LMcni99d8XUN_x304rnr6btlDZKOGenH/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_12",
@@ -4399,7 +4481,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1PdwwDe5gj5PArKPASJPmZwyHf5FLpjQK",
                 "gdriveLink": "https://drive.google.com/file/d/1PdwwDe5gj5PArKPASJPmZwyHf5FLpjQK/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_13",
@@ -4413,7 +4496,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "104G6ewbedcyhCs2OFcZ0HE3ll13crQl4",
                 "gdriveLink": "https://drive.google.com/file/d/104G6ewbedcyhCs2OFcZ0HE3ll13crQl4/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_14",
@@ -4441,7 +4525,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1WrzzSgabm-oi1eRXaNMBN_oE_YhFy8ZB",
                 "gdriveLink": "https://drive.google.com/file/d/1WrzzSgabm-oi1eRXaNMBN_oE_YhFy8ZB/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_16",
@@ -4455,7 +4540,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1nQzBGUZnP2IuH8BmJ0ODk8yTkx9vrs48",
                 "gdriveLink": "https://drive.google.com/file/d/1nQzBGUZnP2IuH8BmJ0ODk8yTkx9vrs48/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_17",
@@ -4483,7 +4569,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1NaA8C1MwG6B5RcCQLhw0E4CZ7mnz0yTf",
                 "gdriveLink": "https://drive.google.com/file/d/1NaA8C1MwG6B5RcCQLhw0E4CZ7mnz0yTf/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_19",
@@ -4497,7 +4584,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1H1U3K6Q3j-e10Q5cf48QCtRAISAzWJRw",
                 "gdriveLink": "https://drive.google.com/file/d/1H1U3K6Q3j-e10Q5cf48QCtRAISAzWJRw/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_20",
@@ -4525,7 +4613,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1jWFWI57_g3jJi-qrQD3m9E_b1lETFf6n",
                 "gdriveLink": "https://drive.google.com/file/d/1jWFWI57_g3jJi-qrQD3m9E_b1lETFf6n/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_22",
@@ -4560,7 +4649,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1DY7u43ZFb9EVojWkBe4BMIJY7OicE7yJ",
                 "gdriveLink": "https://drive.google.com/file/d/1DY7u43ZFb9EVojWkBe4BMIJY7OicE7yJ/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_24",
@@ -4574,7 +4664,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1805evuEsDFjmb7j4d0ZG9Z-uGRVXiVex",
                 "gdriveLink": "https://drive.google.com/file/d/1805evuEsDFjmb7j4d0ZG9Z-uGRVXiVex/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_25",
@@ -4588,7 +4679,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Rn5XftX-RLb9ap0GddXpkP9VPL9sLVm0",
                 "gdriveLink": "https://drive.google.com/file/d/1Rn5XftX-RLb9ap0GddXpkP9VPL9sLVm0/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_26",
@@ -4602,7 +4694,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1wp93D56NBwtpV-uEpc3F0mPxWw8g1Ws7",
                 "gdriveLink": "https://drive.google.com/file/d/1wp93D56NBwtpV-uEpc3F0mPxWw8g1Ws7/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_27",
@@ -4616,7 +4709,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1fliuCKDs-tYAuUeQqoc2f0-XlsCYEVEc",
                 "gdriveLink": "https://drive.google.com/file/d/1fliuCKDs-tYAuUeQqoc2f0-XlsCYEVEc/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_28",
@@ -4644,7 +4738,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1w9ce9-bBEKJOggT7eBiR9pzPTvsh6Pb-",
                 "gdriveLink": "https://drive.google.com/file/d/1w9ce9-bBEKJOggT7eBiR9pzPTvsh6Pb-/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_30",
@@ -4658,7 +4753,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "11SzV_TWOUqJvIPwzemQOJj_KmJY4XVEy",
                 "gdriveLink": "https://drive.google.com/file/d/11SzV_TWOUqJvIPwzemQOJj_KmJY4XVEy/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_31",
@@ -4672,7 +4768,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "11AvN6s6U59S26iifwsS98sd1d7-hnHOf",
                 "gdriveLink": "https://drive.google.com/file/d/11AvN6s6U59S26iifwsS98sd1d7-hnHOf/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_32",
@@ -4686,7 +4783,8 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1EOBaE5KuWi4DtaC_th3hXdoHIUnu6suD",
                 "gdriveLink": "https://drive.google.com/file/d/1EOBaE5KuWi4DtaC_th3hXdoHIUnu6suD/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [],
+                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
               },
               {
                 "id": "devin_les_33",

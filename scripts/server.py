@@ -496,6 +496,7 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
                 "gdriveId": gdrive_id,
                 "gdriveLink": f"https://drive.google.com/file/d/{gdrive_id}/view?usp=drivesdk",
                 "inDrive": True,
+                "descriptionHtml": context.get('descriptionHtml') or context.get('description') or "",
                 "resources": resources
             }
             mod['lessons'].append(les)
@@ -503,6 +504,8 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
             les['gdriveId'] = gdrive_id
             les['gdriveLink'] = f"https://drive.google.com/file/d/{gdrive_id}/view?usp=drivesdk"
             les['inDrive'] = True
+            if context.get('descriptionHtml') or context.get('description'):
+                les['descriptionHtml'] = context.get('descriptionHtml') or context.get('description')
             if resources:
                 les['resources'] = resources
 

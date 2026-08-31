@@ -466,16 +466,80 @@
     return videos;
   }
 
-  function extractLessonAttachments(nextData, lessonId) {
-    if (!nextData || !lessonId) return [];
+  function tiptapToHtml(rawDesc) {
+    if (!rawDesc) return '';
+    let data = rawDesc;
+    if (typeof data === 'string') {
+      if (data.startsWith('[v2]')) {
+        try { data = JSON.parse(data.substring(4)); } catch (e) { return data; }
+      } else if (data.startsWith('[') || data.startsWith('{')) {
+        try { data = JSON.parse(data); } catch (e) { return data; }
+      } else {
+        return data;
+      }
+    }
+
+    function renderNode(node) {
+      if (!node || typeof node !== 'object') return '';
+      const nodeType = node.type || '';
+      const content = node.content || [];
+      const innerHtml = content.map(renderNode).join('');
+
+      if (nodeType === 'text') {
+        let text = node.text || '';
+        (node.marks || []).forEach(m => {
+          if (m.type === 'bold') text = `<strong>${text}</strong>`;
+          else if (m.type === 'italic') text = `<em>${text}</em>`;
+          else if (m.type === 'code') text = `<code>${text}</code>`;
+          else if (m.type === 'link') {
+            const href = m.attrs?.href || '#';
+            text = `<a href="${href}" target="_blank" rel="noopener noreferrer" class="lesson-link">${text}</a>`;
+          }
+        });
+        return text;
+      } else if (nodeType === 'paragraph') {
+        return innerHtml.trim() ? `<p>${innerHtml}</p>` : '';
+      } else if (nodeType === 'heading') {
+        const lvl = node.attrs?.level || 3;
+        return `<h${lvl}>${innerHtml}</h${lvl}>`;
+      } else if (nodeType === 'bulletList') {
+        return `<ul>${innerHtml}</ul>`;
+      } else if (nodeType === 'orderedList') {
+        return `<ol>${innerHtml}</ol>`;
+      } else if (nodeType === 'listItem') {
+        return `<li>${innerHtml}</li>`;
+      } else if (nodeType === 'blockquote') {
+        return `<blockquote>${innerHtml}</blockquote>`;
+      } else if (nodeType === 'codeBlock') {
+        return `<pre><code>${innerHtml}</code></pre>`;
+      } else if (nodeType === 'hardBreak') {
+        return '<br/>';
+      }
+      return innerHtml;
+    }
+
+    if (Array.isArray(data)) return data.map(renderNode).join('');
+    return renderNode(data);
+  }
+
+  function extractLessonDetails(nextData, lessonId) {
+    if (!nextData || !lessonId) return { attachments: [], descriptionHtml: '' };
     const attachments = [];
     const seenUrls = new Set();
+    let descriptionHtml = '';
 
     const lessonNodes = findDeep(nextData, (obj) => {
       return obj && (obj.id === lessonId || obj._id === lessonId || obj.metadata?.id === lessonId);
     });
 
     lessonNodes.forEach(node => {
+      // 1. Description / Rich Text
+      const rawDesc = node.metadata?.desc || node.desc || node.description || node.body || node.content || '';
+      if (rawDesc && !descriptionHtml) {
+        descriptionHtml = tiptapToHtml(rawDesc);
+      }
+
+      // 2. Direct attachments
       const list = node.attachments || node.files || node.resources || [];
       list.forEach(file => {
         if (!file) return;
@@ -495,8 +559,9 @@
         });
       });
 
-      const bodyText = node.description || node.body || node.content || node.rawDescription || '';
-      if (typeof bodyText === 'string') {
+      // 3. Embedded URLs inside text/description
+      const bodyText = typeof rawDesc === 'string' ? rawDesc : JSON.stringify(rawDesc);
+      if (bodyText) {
         const urls = bodyText.match(/https?:\/\/[^\s"\'<>]+/g) || [];
         urls.forEach((u, idx) => {
           const uClean = u.replace(/\\u0026/g, '&').replace(/\\+$/, '');
@@ -536,7 +601,7 @@
       }
     });
 
-    return attachments;
+    return { attachments, descriptionHtml };
   }
 
   function extractCompleteClassroomTree() {
@@ -557,7 +622,6 @@
     try {
       const allLessonLinks = Array.from(document.querySelectorAll('a[href*="?md="]'));
       if (allLessonLinks.length > 0) {
-        // Find common ancestor/container of sidebar
         let commonContainer = allLessonLinks[0].parentElement;
         while (commonContainer && commonContainer !== document.body) {
           const contained = allLessonLinks.filter(l => commonContainer.contains(l));
@@ -576,7 +640,6 @@
           for (let i = 0; i < allNodes.length; i++) {
             const el = allNodes[i];
 
-            // 1. Check if it's a Lesson Link
             if (el.tagName === 'A' && el.href && el.href.includes('?md=')) {
               const href = el.href;
               const mdMatch = href.match(/md=([a-f0-9]+)/i);
@@ -602,8 +665,8 @@
                 let rawTitle = el.textContent.trim().split('\n')[0] || `Lección ${globalLessonCount}`;
                 rawTitle = cleanTitleText(rawTitle.replace(/^\d+[\.\-\s]+/, ''));
                 const directVideo = findLessonVideoById(nextData, lesId);
-                const lessonAtts = extractLessonAttachments(nextData, lesId);
-                tree.totalAttachments += lessonAtts.length;
+                const lessonDetails = extractLessonDetails(nextData, lesId);
+                tree.totalAttachments += lessonDetails.attachments.length;
 
                 currentModule.lessons.push({
                   id: lesId,
@@ -614,7 +677,8 @@
                   platform: 'Skool Video (MP4)',
                   platformType: 'hls',
                   duration: null,
-                  attachments: lessonAtts
+                  descriptionHtml: lessonDetails.descriptionHtml,
+                  attachments: lessonDetails.attachments
                 });
               }
               continue;

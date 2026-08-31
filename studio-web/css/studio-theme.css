@@ -761,6 +761,98 @@ body::before {
   color: var(--text-muted);
 }
 
+/* LESSON NOTES & RICH CONTENT HUD */
+.lesson-notes-hud {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  background: var(--bg-surface);
+  border: var(--border-grid);
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+
+.lesson-notes-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: var(--border-grid);
+}
+
+.lesson-notes-title {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-main);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lesson-notes-body {
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #e2e8f0;
+}
+
+.lesson-notes-body p {
+  margin-bottom: 12px;
+}
+
+.lesson-notes-body p:last-child {
+  margin-bottom: 0;
+}
+
+.lesson-notes-body h1, .lesson-notes-body h2, .lesson-notes-body h3, .lesson-notes-body h4 {
+  font-family: var(--font-display);
+  color: #ffffff;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.lesson-notes-body strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.lesson-notes-body ul, .lesson-notes-body ol {
+  padding-left: 24px;
+  margin-bottom: 12px;
+}
+
+.lesson-notes-body li {
+  margin-bottom: 6px;
+}
+
+.lesson-notes-body blockquote {
+  border-left: 3px solid var(--accent-cyan);
+  padding-left: 16px;
+  margin: 14px 0;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.lesson-notes-body a.lesson-link, .lesson-notes-body a {
+  color: #38bdf8;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.lesson-notes-body a.lesson-link:hover, .lesson-notes-body a:hover {
+  color: var(--accent-lime);
+  text-shadow: 0 0 8px rgba(184, 255, 0, 0.4);
+}
+
 /* RESOURCES & ATTACHMENTS HUD */
 .resources-hud {
   margin-top: 8px;

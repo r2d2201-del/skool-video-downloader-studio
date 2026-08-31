@@ -60,6 +60,8 @@
   const btnMarkComplete = document.getElementById('btn-mark-complete');
   const btnPrevLesson = document.getElementById('btn-prev-lesson');
   const btnNextLesson = document.getElementById('btn-next-lesson');
+  const lessonNotesHud = document.getElementById('lesson-notes-hud');
+  const lessonNotesBody = document.getElementById('lesson-notes-body');
   const resourcesGrid = document.getElementById('resources-cards-grid');
   const resourcesCountBadge = document.getElementById('resources-count-badge');
   const btnSyncDrive = document.getElementById('btn-sync-drive');
@@ -386,6 +388,9 @@
       }
     }
 
+    // Render Lesson Notes & Content (Rich Text / Instructions / Embedded Links)
+    renderLessonNotes(lesson);
+
     // Render Resources for this specific lesson
     renderLessonResources(lesson);
 
@@ -395,6 +400,19 @@
       if (!hasActiveRow) {
         renderTree(searchInput ? searchInput.value : '');
       }
+    }
+  }
+
+  // Render Lesson Notes & Rich Text Content
+  function renderLessonNotes(lesson) {
+    if (!lessonNotesHud || !lessonNotesBody) return;
+    const descHtml = lesson.descriptionHtml || lesson.description || '';
+    if (descHtml && typeof descHtml === 'string' && descHtml.trim()) {
+      lessonNotesBody.innerHTML = descHtml;
+      lessonNotesHud.style.display = 'block';
+    } else {
+      lessonNotesBody.innerHTML = '';
+      lessonNotesHud.style.display = 'none';
     }
   }
 
