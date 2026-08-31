@@ -3063,6 +3063,158 @@ window.COMMUNITIES_DATA = [
             ]
           }
         ]
+      },
+      {
+        "id": "devin-jatho-editing-masterclass",
+        "community": "Ultimate editors",
+        "courseTitle": "Devin Jatho Editing Masterclass",
+        "subtitle": "Formación completa de Devin Jatho Editing Masterclass",
+        "bannerTag": "1080P FULL HD · EN DRIVE",
+        "totalModules": 2,
+        "totalLessons": 9,
+        "totalResources": 0,
+        "modules": [
+          {
+            "index": 1,
+            "folder": "02_Understanding the Editing Style.",
+            "title": "02_Understanding the Editing Style.",
+            "lessons": [
+              {
+                "id": "les_devin-jatho-editing-masterclass_1",
+                "slug": "les_devi",
+                "index": 1,
+                "globalIndex": 1,
+                "title": "Choosing Color Palettes & Fonts",
+                "rawTitle": "Choosing Color Palettes & Fonts",
+                "module": "02_Understanding the Editing Style.",
+                "moduleIndex": 1,
+                "gdriveId": "1gOS7cQSsJ0eg86yUfDPEehCyoXiShE2I",
+                "gdriveLink": "https://drive.google.com/file/d/1gOS7cQSsJ0eg86yUfDPEehCyoXiShE2I/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_2",
+                "slug": "les_devi",
+                "index": 2,
+                "globalIndex": 2,
+                "title": "Collecting Creative Inspiration (Animations)",
+                "rawTitle": "Collecting Creative Inspiration (Animations)",
+                "module": "02_Understanding the Editing Style.",
+                "moduleIndex": 1,
+                "gdriveId": "1JIW-DbEbOAJK1NPyKJ_6kiTDlhTsBdfR",
+                "gdriveLink": "https://drive.google.com/file/d/1JIW-DbEbOAJK1NPyKJ_6kiTDlhTsBdfR/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_4",
+                "slug": "les_devi",
+                "index": 3,
+                "globalIndex": 4,
+                "title": "Practice Creating an Editing Style",
+                "rawTitle": "Practice Creating an Editing Style",
+                "module": "02_Understanding the Editing Style.",
+                "moduleIndex": 1,
+                "gdriveId": "1cIZ5KB1gNWfXryYTM6zws4yhMUoOULFq",
+                "gdriveLink": "https://drive.google.com/file/d/1cIZ5KB1gNWfXryYTM6zws4yhMUoOULFq/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_5",
+                "slug": "les_devi",
+                "index": 4,
+                "globalIndex": 5,
+                "title": "Editing Style Breakdown (Process)",
+                "rawTitle": "Editing Style Breakdown (Process)",
+                "module": "02_Understanding the Editing Style.",
+                "moduleIndex": 1,
+                "gdriveId": "186y4csSlUJr8ygfzrFIu-u4J3-uFAfJz",
+                "gdriveLink": "https://drive.google.com/file/d/186y4csSlUJr8ygfzrFIu-u4J3-uFAfJz/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_7",
+                "slug": "les_devi",
+                "index": 5,
+                "globalIndex": 7,
+                "title": "From an Editor's Perspective...",
+                "rawTitle": "From an Editor's Perspective...",
+                "module": "02_Understanding the Editing Style.",
+                "moduleIndex": 1,
+                "gdriveId": "1E2j1lVm1hkzoVWjZZURO2EoQQWfdR7A7",
+                "gdriveLink": "https://drive.google.com/file/d/1E2j1lVm1hkzoVWjZZURO2EoQQWfdR7A7/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_8",
+                "slug": "les_devi",
+                "index": 6,
+                "globalIndex": 8,
+                "title": "Categorizing Animation Plans",
+                "rawTitle": "Categorizing Animation Plans",
+                "module": "02_Understanding the Editing Style.",
+                "moduleIndex": 1,
+                "gdriveId": "1mlFXztckMbdQBdUWGnscO3GB1IWDVT5T",
+                "gdriveLink": "https://drive.google.com/file/d/1mlFXztckMbdQBdUWGnscO3GB1IWDVT5T/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_9",
+                "slug": "les_devi",
+                "index": 7,
+                "globalIndex": 9,
+                "title": "Creativity & New Animation Concepts",
+                "rawTitle": "Creativity & New Animation Concepts",
+                "module": "02_Understanding the Editing Style.",
+                "moduleIndex": 1,
+                "gdriveId": "1_aIAAoND-H6-aUT6D5o4j3l47W3mRY8C",
+                "gdriveLink": "https://drive.google.com/file/d/1_aIAAoND-H6-aUT6D5o4j3l47W3mRY8C/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "folder": "01 General",
+            "title": "01 General",
+            "lessons": [
+              {
+                "id": "les_devin-jatho-editing-masterclass_3",
+                "slug": "les_devi",
+                "index": 1,
+                "globalIndex": 3,
+                "title": "The Devin Jatho Style Inspiration Page",
+                "rawTitle": "The Devin Jatho Style Inspiration Page",
+                "module": "01 General",
+                "moduleIndex": 2,
+                "gdriveId": "1viBSBwxz68ZDRnsN_7z8d8E59jEJj-xm",
+                "gdriveLink": "https://drive.google.com/file/d/1viBSBwxz68ZDRnsN_7z8d8E59jEJj-xm/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_6",
+                "slug": "les_devi",
+                "index": 2,
+                "globalIndex": 6,
+                "title": "Introduction -- Devin Jatho Masterclass",
+                "rawTitle": "Introduction -- Devin Jatho Masterclass",
+                "module": "01 General",
+                "moduleIndex": 2,
+                "gdriveId": "1JY0rfMHVEM0uaEyGPDsMtvZnK48G1X02",
+                "gdriveLink": "https://drive.google.com/file/d/1JY0rfMHVEM0uaEyGPDsMtvZnK48G1X02/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              }
+            ]
+          }
+        ]
       }
     ]
   }
