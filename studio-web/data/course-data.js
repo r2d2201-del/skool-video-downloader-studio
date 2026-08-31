@@ -8157,8 +8157,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "1st animation application phase 1",
                 "module": "04_Iman's 3D animation style",
                 "moduleIndex": 3,
-                "gdriveId": "1oytncWsg19Lv1iK5C-IQL4HC8BOUE2HK",
-                "gdriveLink": "https://drive.google.com/file/d/1oytncWsg19Lv1iK5C-IQL4HC8BOUE2HK/view?usp=drivesdk",
+                "gdriveId": "1q0uYlnCzDJw6XmBlPyuMPp8TlBsDWAps",
+                "gdriveLink": "https://drive.google.com/file/d/1q0uYlnCzDJw6XmBlPyuMPp8TlBsDWAps/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "<h2>What Are We Starting With ?</h2><p>In this phase, we’ll take the <strong>sketches</strong> we’ve created and <em>bring them</em> into <strong>Blender</strong> to <em>begin</em> the <strong>application process</strong>. We’ll <em>use</em> our <strong>Blender skills </strong>to <strong>build out</strong> the <em>scene</em>, <strong>set up</strong> the<em> elements</em>, and transform our sketches into fully realized animations. By the end of this stage, your concepts will begin to take shape.</p><h2>Note !!</h2><p>If you haven’t taken the <strong>Blender Masterclass</strong> yet, please go back and complete it before continuing.</p><h2>Link !!</h2><p>Below are the <a href=\"https://drive.google.com/drive/folders/1rEvquAgSSpPFP0FHPoCQJynaNwOSms6m?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">links</a> to the files you’ll need in order to follow along.</p>",
                 "resources": [
