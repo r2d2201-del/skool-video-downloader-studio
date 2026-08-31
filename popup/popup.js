@@ -138,6 +138,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   const folderChipButtons = document.querySelectorAll('.folder-chip-btn');
   const gdriveStatusTextEl = document.getElementById('gdrive-status-text');
 
+  // Studio Launcher Button
+  const btnHeaderOpenStudio = document.getElementById('btn-open-studio');
+  if (btnHeaderOpenStudio) {
+    btnHeaderOpenStudio.addEventListener('click', () => {
+      chrome.tabs.create({ url: 'https://cinematic-lms-studio.vercel.app' });
+    });
+  }
+
   // Universal Bridge Fetcher (Direct fetch with Background Service Worker Proxy fallback)
   async function callBridge(endpoint, method = 'GET', body = null) {
     // 1. Direct fetch from popup
@@ -1309,11 +1317,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Audit Course in Google Drive Button
     const btnAuditCourse = document.getElementById('btn-audit-course');
-    // Studio Web Launcher
+    // Studio Web Launcher (Vercel Cloud & PWA)
     const btnOpenStudio = document.getElementById('btn-open-studio');
     if (btnOpenStudio) {
       btnOpenStudio.addEventListener('click', () => {
-        chrome.tabs.create({ url: 'http://127.0.0.1:4545/studio/' });
+        chrome.tabs.create({ url: 'https://cinematic-lms-studio.vercel.app' });
       });
     }
 
