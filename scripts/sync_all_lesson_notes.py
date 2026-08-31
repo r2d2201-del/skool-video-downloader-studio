@@ -3,7 +3,6 @@ import os
 import urllib.request
 import re
 import http.cookiejar
-from concurrent.futures import ThreadPoolExecutor
 from scripts.server import COOKIES_FILE, SSL_CTX, BASE_DIR
 
 if not os.path.exists(COOKIES_FILE):
@@ -80,7 +79,7 @@ def tiptap_to_html(raw_desc):
         return render_node(raw_desc)
     return str(raw_desc)
 
-def scan_course_notes(course_slug):
+def scan_course_deep(course_slug):
     url = f"https://www.skool.com/ultimateeditors2/classroom/{course_slug}"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36", "Referer": "https://www.skool.com/"})
     try:
@@ -90,70 +89,31 @@ def scan_course_notes(course_slug):
         if not m:
             return {}
         data = json.loads(m.group(1))
-        course_obj = data.get("props", {}).get("pageProps", {}).get("course", {})
+        pageProps = data.get("props", {}).get("pageProps", {})
         
-        lesson_data_map = {}
-        lessons_to_fetch = []
+        all_lessons = {}
         
-        for mod_idx, mod in enumerate(course_obj.get("children", []), 1):
-            for les in mod.get("children", []):
-                les_info = les.get("course", {})
-                lid = les_info.get("id")
-                ltitle = les_info.get("metadata", {}).get("title") or ""
-                desc = les_info.get("metadata", {}).get("desc") or ""
-                if desc:
-                    html_desc = tiptap_to_html(desc)
-                    lesson_data_map[lid] = {
-                        "title": ltitle,
-                        "descriptionHtml": html_desc
-                    }
-                else:
-                    lessons_to_fetch.append((lid, ltitle))
-
-        # For any lessons without direct metadata.desc in main classroom payload, fetch their page
-        def fetch_les(tuple_info):
-            lid, ltitle = tuple_info
-            l_url = f"https://www.skool.com/ultimateeditors2/classroom/{course_slug}?md={lid}"
-            try:
-                l_req = urllib.request.Request(l_url, headers={"User-Agent": "Mozilla/5.0", "Referer": "https://www.skool.com/"})
-                with opener.open(l_req, timeout=8) as l_res:
-                    l_html = l_res.read().decode("utf-8")
-                lm = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', l_html)
-                if lm:
-                    ldata = json.loads(lm.group(1))
-                    pageProps = ldata.get("props", {}).get("pageProps", {})
-                    # Find desc
-                    def search_desc(o):
-                        if isinstance(o, dict):
-                            if "desc" in o and o["desc"]:
-                                return o["desc"]
-                            if "description" in o and o["description"] and isinstance(o["description"], (dict, list)):
-                                return o["description"]
-                            for v in o.values():
-                                res = search_desc(v)
-                                if res:
-                                    return res
-                        elif isinstance(o, list):
-                            for it in o:
-                                res = search_desc(it)
-                                if res:
-                                    return res
-                        return None
-                    
-                    found_desc = search_desc(pageProps)
-                    if found_desc:
-                        lesson_data_map[lid] = {
-                            "title": ltitle,
-                            "descriptionHtml": tiptap_to_html(found_desc)
+        def find_lessons(o):
+            if isinstance(o, dict):
+                lid = o.get("id")
+                meta = o.get("metadata")
+                if lid and isinstance(meta, dict):
+                    title = meta.get("title")
+                    desc = meta.get("desc")
+                    if title:
+                        all_lessons[lid] = {
+                            "id": lid,
+                            "title": title,
+                            "descriptionHtml": tiptap_to_html(desc) if desc else ""
                         }
-            except Exception:
-                pass
-
-        if lessons_to_fetch:
-            with ThreadPoolExecutor(max_workers=8) as executor:
-                executor.map(fetch_les, lessons_to_fetch)
-
-        return lesson_data_map
+                for v in o.values():
+                    find_lessons(v)
+            elif isinstance(o, list):
+                for it in o:
+                    find_lessons(it)
+                    
+        find_lessons(pageProps)
+        return all_lessons
     except Exception as e:
         print(f"Error scanning {course_slug}:", e)
         return {}
@@ -166,10 +126,11 @@ slug_map = {
 
 all_scanned_notes = {}
 for slug, name in slug_map.items():
-    print(f"📖 Scanning rich text lesson notes for: {name} ({slug})...")
-    res = scan_course_notes(slug)
+    print(f"📖 Deep scanning rich text lesson notes for: {name} ({slug})...")
+    res = scan_course_deep(slug)
     all_scanned_notes[name] = res
-    print(f"   -> Found rich text notes for {len(res)} lessons!")
+    with_notes = sum(1 for l in res.values() if l.get('descriptionHtml'))
+    print(f"   -> Found {len(res)} total lessons ({with_notes} with rich text notes & links)!")
 
 # Update course-data.js
 course_data_file = os.path.join(BASE_DIR, 'studio-web', 'data', 'course-data.js')
@@ -202,9 +163,13 @@ if os.path.exists(course_data_file):
                         
                         note_info = matching_notes.get(les_id)
                         if not note_info:
-                            # match by title
+                            # match by title substring
                             for n_id, n_data in matching_notes.items():
-                                if les_title and n_data.get('title') and (les_title.lower() in n_data['title'].lower() or n_data['title'].lower() in les_title.lower()):
+                                if les_title and n_data.get('title') and (
+                                    les_title.lower() in n_data['title'].lower() or 
+                                    n_data['title'].lower() in les_title.lower() or
+                                    re.sub(r'^\d+[\.\-\s]+', '', les.get('title', '')).strip().lower() in n_data['title'].lower()
+                                ):
                                     note_info = n_data
                                     break
                                     

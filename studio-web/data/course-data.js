@@ -13,7 +13,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 7,
         "totalLessons": 34,
-        "totalResources": 164,
+        "totalResources": 165,
         "modules": [
           {
             "index": 1,
@@ -2335,9 +2335,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_4",
+                    "lessonId": "05682e7e77274619a953ad69c944051a",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Cinematic Sound Design Workflow",
+                    "name": "Tablero Figma · Cinematic Sound Design Workflow",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "daee5a59b1ae4aed839085fd29ac7cce",
@@ -2422,7 +2433,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 6,
         "totalLessons": 31,
-        "totalResources": 83,
+        "totalResources": 84,
         "modules": [
           {
             "index": 1,
@@ -2455,7 +2466,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1zWVzaFgslsOsu5olK2JdqqklPLQfQsy2",
                 "gdriveLink": "https://drive.google.com/file/d/1zWVzaFgslsOsu5olK2JdqqklPLQfQsy2/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "272a78154c144605a10681e0eebe1863",
+                    "moduleTitle": "Breaking Down Cinematic Editing",
+                    "lessonTitle": "Ultimate Editor Plugin (VERY IMPORTANT)",
+                    "name": "Carpeta Google Drive · Ultimate Editor Plugin (VERY IMPORTANT)",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p><strong> This is the plugin that will be creating all the VIRAL edits you will later see in this course.</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create or questions you might have </strong>in this course on the community (I'd love to check them out)</p><h2>Want the Ultimate Editor Plugin? Here it is:</h2><p><strong>Want to download the Ultimate Editor Plugin for Claude: Click this </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download</a></strong></p><p>Make sure to have Higgsfield connected otherwise this plugin won't work...</p>"
               }
             ]
           },
