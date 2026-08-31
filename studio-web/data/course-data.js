@@ -8322,8 +8322,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "3rd Animation Sketch Phase",
                 "module": "04_Iman's 3D animation style",
                 "moduleIndex": 3,
-                "gdriveId": "1c3vA63KtJgYo75WfymsVh66zcqi90WXg",
-                "gdriveLink": "https://drive.google.com/file/d/1c3vA63KtJgYo75WfymsVh66zcqi90WXg/view?usp=drivesdk",
+                "gdriveId": "1-Q53Kw__yxwK6UZOV2yrZpkmyDHjRVp0",
+                "gdriveLink": "https://drive.google.com/file/d/1-Q53Kw__yxwK6UZOV2yrZpkmyDHjRVp0/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "<h2>What's With This ?</h2><p>In this final sample animation, we’ll be <strong>analyzing</strong> one of <strong>Iman’s videos</strong> to <strong>understand</strong> the <em>thought process</em> behind <em><strong>how this style of animation is created</strong></em>. Unlike before, we’ll be taking a slightly different approach by <em><strong>using the video itself as a reference point</strong></em>. From there, we’ll <strong>sketch</strong> and <strong>develop </strong>our <em>own version</em>, <strong>combining inspiration</strong> from <em>Iman’s style</em> with our own creative execution. This exercise will help you not only learn from real examples but also practice adapting and personalizing animations..</p><h2>Note !! </h2><p>If you’re still not confident with the <strong>4 steps of sketching</strong>,<em> write them down</em> and follow along with us.</p>",
                 "resources": []
@@ -8364,8 +8364,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "3rd Animation Application Phase 1",
                 "module": "04_Iman's 3D animation style",
                 "moduleIndex": 3,
-                "gdriveId": "1xDsBlh1m1MSgexjtFETSTwJ-RM8ukWaD",
-                "gdriveLink": "https://drive.google.com/file/d/1xDsBlh1m1MSgexjtFETSTwJ-RM8ukWaD/view?usp=drivesdk",
+                "gdriveId": "1oRyE_mOkENfuLC917xm5vFf6lIooRMzJ",
+                "gdriveLink": "https://drive.google.com/file/d/1oRyE_mOkENfuLC917xm5vFf6lIooRMzJ/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "<h2>What Is Going On Here ?</h2><p>As usual, we’ll<strong> take</strong> our <strong>sketches and references</strong> and <em>bring them into </em><em><strong>Blender</strong></em> to begin building the animation. We’ll start by <em>adding</em> the necessary<strong> assets</strong>, <em>setting up </em>the<strong> lighting</strong>, and <em>constructing</em> the <strong>full scene</strong>. From there, we’ll focus on <em>refining</em> the<strong> animation flow</strong>, ensuring <strong>smooth transitions</strong>, and creating near-perfect camera movements.</p><h2>Note !!</h2><p>Please complete the <strong>Blender Masterclass</strong> before moving forward.</p><h2>Links !! </h2><p>Here are all the <a href=\"https://drive.google.com/drive/folders/18bafPssO6jNys93VABl2qjsVkZQi0rIQ?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">files</a> you'll need :)</p>",
                 "resources": [
