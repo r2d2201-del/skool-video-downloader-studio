@@ -222,11 +222,38 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   // Fast In-Browser Video Stream Resolver (Bypasses Cloudflare & AWS WAF using the browser's active session)
+  // Fast In-Browser Video Stream Resolver (Bypasses Cloudflare & AWS WAF using the browser's active session)
   async function resolveLessonDirectStream(lessonUrl) {
-    if (!lessonUrl || !lessonUrl.includes('skool.com') || lessonUrl.includes('stream.mux.com') || lessonUrl.includes('.m3u8')) {
+    if (!lessonUrl) return lessonUrl;
+
+    // If already a direct video stream/platform URL, return as-is
+    if (
+      lessonUrl.includes('stream.mux.com') ||
+      lessonUrl.includes('.m3u8') ||
+      lessonUrl.includes('loom.com') ||
+      lessonUrl.includes('youtube.com') ||
+      lessonUrl.includes('youtu.be') ||
+      lessonUrl.includes('vimeo.com') ||
+      lessonUrl.includes('wistia.com') ||
+      lessonUrl.includes('wistia.net')
+    ) {
       return lessonUrl;
     }
+
+    if (!lessonUrl.includes('skool.com')) {
+      return lessonUrl;
+    }
+
     try {
+      let targetMd = null;
+      try {
+        const u = new URL(lessonUrl, window.location.href);
+        targetMd = u.searchParams.get('md');
+      } catch (ue) {
+        const mdMatch = lessonUrl.match(/[?&]md=([a-f0-9]+)/i);
+        if (mdMatch) targetMd = mdMatch[1];
+      }
+
       const res = await fetch(lessonUrl, {
         credentials: 'include',
         headers: {
@@ -239,38 +266,48 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (m) {
           const data = JSON.parse(m[1]);
 
-          const videoObjects = findDeep(data, obj => {
-            return obj && typeof obj === 'object' && (obj.playbackId || obj.videoLink || obj.videoUrl || obj.video_url || obj.hlsUrl || obj.video?.playbackId);
-          });
+          // If specific ?md= is present, find ONLY that lesson
+          if (targetMd) {
+            const lessonObjects = findDeep(data, obj => {
+              return obj && typeof obj === 'object' && (obj.id === targetMd || obj._id === targetMd);
+            });
 
-          for (const obj of videoObjects) {
-            const pid = obj.playbackId || obj.video?.playbackId;
-            const tok = obj.playbackToken || obj.video?.playbackToken;
-            if (pid && tok) {
-              return `https://stream.mux.com/${pid}.m3u8?token=${tok}`;
-            } else if (pid) {
-              return `https://stream.mux.com/${pid}.m3u8`;
+            for (const les of lessonObjects) {
+              const meta = les.metadata || {};
+              const candidates = [
+                meta.videoLink,
+                meta.video_url,
+                meta.videoUrl,
+                les.videoLink,
+                les.video_url,
+                les.videoUrl,
+                meta.hlsUrl,
+                les.hlsUrl
+              ];
+              for (const c of candidates) {
+                if (c && typeof c === 'string' && c.startsWith('http')) {
+                  return c;
+                }
+              }
+
+              const vidObj = meta.video || les.video;
+              const pid = vidObj?.playbackId || meta.playbackId || les.playbackId;
+              const tok = vidObj?.playbackToken || meta.playbackToken || les.playbackToken;
+              if (pid) {
+                return tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
+              }
             }
-
-            const vlink = obj.videoLink || obj.videoUrl || obj.video_url || obj.hlsUrl || obj.video?.url;
-            if (vlink && typeof vlink === 'string' && vlink.startsWith('http')) {
-              return vlink;
+          } else {
+            // General page video
+            const pageVid = data.props?.pageProps?.video;
+            if (pageVid?.playbackId) {
+              const tok = pageVid.playbackToken;
+              return tok ? `https://stream.mux.com/${pageVid.playbackId}.m3u8?token=${tok}` : `https://stream.mux.com/${pageVid.playbackId}.m3u8`;
+            }
+            if (pageVid?.url && typeof pageVid.url === 'string' && pageVid.url.startsWith('http')) {
+              return pageVid.url;
             }
           }
-        }
-
-        // HTML regex fallback
-        const pidMatch = html.match(/"playbackId"\s*:\s*"([^"]+)"/);
-        const tokMatch = html.match(/"playbackToken"\s*:\s*"([^"]+)"/);
-        if (pidMatch && tokMatch) {
-          return `https://stream.mux.com/${pidMatch[1]}.m3u8?token=${tokMatch[1]}`;
-        } else if (pidMatch) {
-          return `https://stream.mux.com/${pidMatch[1]}.m3u8`;
-        }
-
-        const embedMatch = html.match(/(https:\/\/(?:www\.)?(?:loom\.com\/(?:share|embed)|fastly\.video\.skool\.com|stream\.video\.skool\.com|wistia\.(?:com|net)|vimeo\.com|youtube\.com|youtu\.be)\/[^\s"']+)/i);
-        if (embedMatch) {
-          return embedMatch[1];
         }
       }
     } catch (err) {

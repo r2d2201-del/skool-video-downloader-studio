@@ -7968,7 +7968,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 4,
         "totalLessons": 30,
-        "totalResources": 0,
+        "totalResources": 12,
         "modules": [
           {
             "index": 1,
@@ -7987,7 +7987,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1GLxWUAlJGB7ZalQ7Uif1S401FlVwVgHK",
                 "gdriveLink": "https://drive.google.com/file/d/1GLxWUAlJGB7ZalQ7Uif1S401FlVwVgHK/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Welcome to the Iman Ghadzhi Video Editing Masterclass!<br/><br/>This class will take you from someone who knows NOTHING about Iman Gadzhi's video editing style to a pro in the niche.</p><p>Jump in, get learning! 🎓</p>",
                 "resources": []
               }
             ]
@@ -8009,8 +8009,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Mj4p7raGrVOFuZAnIaaYe7uC3RU5Skp_",
                 "gdriveLink": "https://drive.google.com/file/d/1Mj4p7raGrVOFuZAnIaaYe7uC3RU5Skp_/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Here are the relevant resources mentioned in this lesson:</p><p><a href=\"https://drive.google.com/drive/folders/1Q8vyXSjRVD8JegY3czntrijLySC00CGi?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1Q8vyXSjRVD8JegY3czntrijLySC00CGi?usp=sharing</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Here is the expression, ensure you follow the steps and apply it correctly!</p><p>num = value;</p><p>function addCommas(x) {</p><p>    return x.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");</p><p>}</p><p>addCommas(num)</p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>If you've got any questions or any concerns feel free to reach out to me!</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "4a67015f45124b1581b3fcce68746ae7",
+                    "moduleTitle": "02_How it's done",
+                    "lessonTitle": "Your text isn't doing enough",
+                    "name": "Descarga de Archivos / PDFs · Your text isn't doing enough",
+                    "url": "https://drive.google.com/drive/folders/1Q8vyXSjRVD8JegY3czntrijLySC00CGi?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "0a29c87336634d6b93e7fa640feea789",
@@ -8024,8 +8036,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1h6tuInJaOkBYsFRg_VmWgi8-1EnV3KYb",
                 "gdriveLink": "https://drive.google.com/file/d/1h6tuInJaOkBYsFRg_VmWgi8-1EnV3KYb/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Take a look at these overlays, all are high quality and ready to drop into your projects, just set the blend mode to 'Screen'.</p><p><a href=\"https://drive.google.com/drive/folders/1rFQO2zdTOG0leynnWM8K4d1XXbAULR0J?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1rFQO2zdTOG0leynnWM8K4d1XXbAULR0J?usp=sharing</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>If you've got any questions or any concerns feel free to reach out to me!</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "0a29c87336634d6b93e7fa640feea789",
+                    "moduleTitle": "02_How it's done",
+                    "lessonTitle": "How Iman Composites",
+                    "name": "Descarga de Archivos / PDFs · How Iman Composites",
+                    "url": "https://drive.google.com/drive/folders/1rFQO2zdTOG0leynnWM8K4d1XXbAULR0J?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "ce5608ead58340358f724cd8b1629602",
@@ -8039,7 +8063,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Vf9bNY4gzoUwq5iv-VTYqRnWXHv_Iw2p",
                 "gdriveLink": "https://drive.google.com/file/d/1Vf9bNY4gzoUwq5iv-VTYqRnWXHv_Iw2p/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Here's the video mentioned in this lesson:<br/><a href=\"https://youtu.be/H7XTE9Yc7XM?si=MlOgI3L82WqlTIGP\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://youtu.be/H7XTE9Yc7XM?si=MlOgI3L82WqlTIGP</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>If you've got any questions or any concerns feel free to reach out to me!</p>",
                 "resources": []
               },
               {
@@ -8054,7 +8078,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1XCiNRzVbjj5uXdmFWu2K108lWe8wMhpS",
                 "gdriveLink": "https://drive.google.com/file/d/1XCiNRzVbjj5uXdmFWu2K108lWe8wMhpS/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you've got any questions or any concerns feel free to reach out to me!</p>",
                 "resources": []
               },
               {
@@ -8069,7 +8093,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1zEYNSvbQ-qIrEdQPKZOhJwo08wVsbZrq",
                 "gdriveLink": "https://drive.google.com/file/d/1zEYNSvbQ-qIrEdQPKZOhJwo08wVsbZrq/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Here are the relevant resources mentioned in this lesson:</p><p><a href=\"https://www.bing.com/images/create\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.bing.com/images/create</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>If you've got any questions or any concerns feel free to reach out to me!</p>",
                 "resources": []
               },
               {
@@ -8084,7 +8108,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1gcMV8c5QGHT7UgHhPUp_0JsJy40y1JWw",
                 "gdriveLink": "https://drive.google.com/file/d/1gcMV8c5QGHT7UgHhPUp_0JsJy40y1JWw/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Congratulations on making it this far!</p><p>Here are the plug-ins mentioned during this lesson, feel free to take a look:</p><ul><li><p><a href=\"https://aescripts.com/deep-glow/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://aescripts.com/deep-glow/</a></p></li><li><p><a href=\"https://aescripts.com/digit-fiddler/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://aescripts.com/digit-fiddler/</a></p></li><li><p><a href=\"https://borisfx.com/products/sapphire/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://borisfx.com/products/sapphire/</a></p></li></ul><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>If you've got any questions or any concerns feel free to reach out to me!</p>",
                 "resources": []
               },
               {
@@ -8099,7 +8123,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1t4nKE1VGFaB-RtamjsFDeECTE2QJPHyl",
                 "gdriveLink": "https://drive.google.com/file/d/1t4nKE1VGFaB-RtamjsFDeECTE2QJPHyl/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you've got any questions or any concerns feel free to reach out to me!</p>",
                 "resources": []
               },
               {
@@ -8114,7 +8138,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "14Yzsv8b2oi8OU81V64HDQSyX8aQSSyPX",
                 "gdriveLink": "https://drive.google.com/file/d/14Yzsv8b2oi8OU81V64HDQSyX8aQSSyPX/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you've got any questions or any concerns feel free to reach out to me!</p>",
                 "resources": []
               }
             ]
@@ -8136,8 +8160,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1oytncWsg19Lv1iK5C-IQL4HC8BOUE2HK",
                 "gdriveLink": "https://drive.google.com/file/d/1oytncWsg19Lv1iK5C-IQL4HC8BOUE2HK/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<h2>What Are We Starting With ?</h2><p>In this phase, we’ll take the <strong>sketches</strong> we’ve created and <em>bring them</em> into <strong>Blender</strong> to <em>begin</em> the <strong>application process</strong>. We’ll <em>use</em> our <strong>Blender skills </strong>to <strong>build out</strong> the <em>scene</em>, <strong>set up</strong> the<em> elements</em>, and transform our sketches into fully realized animations. By the end of this stage, your concepts will begin to take shape.</p><h2>Note !!</h2><p>If you haven’t taken the <strong>Blender Masterclass</strong> yet, please go back and complete it before continuing.</p><h2>Link !!</h2><p>Below are the <a href=\"https://drive.google.com/drive/folders/1rEvquAgSSpPFP0FHPoCQJynaNwOSms6m?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">links</a> to the files you’ll need in order to follow along.</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "e6acd7fdcb524b0c8a6bb5fe60fd5541",
+                    "moduleTitle": "04_Iman's 3D animation style",
+                    "lessonTitle": "1st animation application phase 1",
+                    "name": "Descarga de Archivos / PDFs · 1st animation application phase 1",
+                    "url": "https://drive.google.com/drive/folders/1rEvquAgSSpPFP0FHPoCQJynaNwOSms6m?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "083843ae71fc453485110f8daf58590c",
@@ -8151,8 +8187,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1VyldGSnU71NyEoUi8n07LvtXVwn715RM",
                 "gdriveLink": "https://drive.google.com/file/d/1VyldGSnU71NyEoUi8n07LvtXVwn715RM/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<h2>What's Going On In Phase 2 ?</h2><p>In this phase, we’ll continue <strong>working inside Blender</strong> to <em>refine our project</em>. We’ll focus on <strong>tweaking the lighting</strong> for the right mood, <strong>building new scenes</strong> to enhance our <em>camera animations</em>, and <strong>polishing</strong> every <em>detail to perfection</em>. This step is all about elevating the quality of your work and making sure the final result feels professional.</p><h2>Note !!</h2><p>Please make sure you’ve <em>completed</em> the <strong>1st phase</strong> before continuing.</p><h2>Link !!</h2><p>here are all the <a href=\"https://drive.google.com/drive/folders/1rEvquAgSSpPFP0FHPoCQJynaNwOSms6m?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">files</a> you'll need </p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "083843ae71fc453485110f8daf58590c",
+                    "moduleTitle": "04_Iman's 3D animation style",
+                    "lessonTitle": "1st animation application phase 2",
+                    "name": "Descarga de Archivos / PDFs · 1st animation application phase 2",
+                    "url": "https://drive.google.com/drive/folders/1rEvquAgSSpPFP0FHPoCQJynaNwOSms6m?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "bf4f90fc2ae740528fda65a1c6e5f6fa",
@@ -8166,8 +8214,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Yt_mTZ2e0AOfo-W204Dz5Le3m4a8uZq_",
                 "gdriveLink": "https://drive.google.com/file/d/1Yt_mTZ2e0AOfo-W204Dz5Le3m4a8uZq_/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<h2>What Are We Doing Here ?</h2><p>In this lesson, we’ll be <strong>watching</strong> one of <em>Iman’s videos</em> and <strong>breaking down</strong> the <em>thought process </em>behind sketching his animation style. Together, we’ll <strong>analyze</strong> the <em>context</em>,<strong> identify</strong> the <em>branding and audience</em>, and then <strong>sketch out our own animation idea</strong> before jumping into Blender.</p><h2>Note !!</h2><p>Make sure to <em>complete</em> the <strong>Blender Masterclass</strong> before jumping into this course.</p><p>If you’re not fully <em>comfortable</em> with the <strong>4 sketching phases</strong>, write them down and follow along with us.</p><h2>Links !!</h2><p>Link to files are <a href=\"https://drive.google.com/drive/folders/1rEvquAgSSpPFP0FHPoCQJynaNwOSms6m?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bf4f90fc2ae740528fda65a1c6e5f6fa",
+                    "moduleTitle": "04_Iman's 3D animation style",
+                    "lessonTitle": "1st animation sketch phase",
+                    "name": "Descarga de Archivos / PDFs · 1st animation sketch phase",
+                    "url": "https://drive.google.com/drive/folders/1rEvquAgSSpPFP0FHPoCQJynaNwOSms6m?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "2111737502de4a88a9b80905b127246e",
@@ -8181,7 +8241,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1aE6vJpo9EiDO2vZNR8_Hv4Qzmpfjm5q5",
                 "gdriveLink": "https://drive.google.com/file/d/1aE6vJpo9EiDO2vZNR8_Hv4Qzmpfjm5q5/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<h2>What's This All About ?</h2><p>In this lesson, we’ll dive into our <strong>second sample animation</strong> by studying the <strong>2nd animation</strong> in one of <em>Iman’s videos</em>. We’ll <strong>break down</strong> the <em>animation</em>, <strong>analyze</strong> the <em>thought process</em> behind how it was created, and then <strong>sketch</strong> out our <em>own version</em>. This exercise is all about learning from real examples while developing the skills to design animations in Iman’s style yourself.</p><h2>Note !!</h2><p>If you’re still <em>not fully confident</em> with the <strong>4 sketching phases</strong>, write them down and follow along with us.</p><p>Please ensure you’ve <em>completed</em> the <strong>Blender Masterclass</strong> before starting this course.</p>",
                 "resources": []
               },
               {
@@ -8196,8 +8256,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1RgT5E5oQQEm5KPiL9IFJ1fA2qv9fH-5W",
                 "gdriveLink": "https://drive.google.com/file/d/1RgT5E5oQQEm5KPiL9IFJ1fA2qv9fH-5W/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<h2>What am I doing here ?</h2><p>In this stage, we’ll take everything we sketched and <em>bring it </em>into <strong>Blender</strong> to <em>start building</em> the actual <strong>animation.</strong> We’ll begin by <em>setting up</em> our <strong>assets</strong>, <em>adjusting</em> the <strong>lighting</strong>, and <em>creating</em> the <strong>core animations</strong>. From there, we’ll add <strong>camera movement</strong>, <em>apply textures</em>, and <em>refine every detail</em> to bring the scene to life. This is where your sketches transform into a <strong>full 3D animation</strong>.</p><h2>Note !!</h2><p>Please ensure you’ve <em>completed</em> the <strong>first 3D animation</strong> we created in <strong>Iman’s style</strong> before moving on.</p><p>If you haven’t completed the <strong>Blender Masterclass</strong> yet, please finish it first and then return to this course</p><h2>Link !!</h2><p>here are all the <a href=\"https://drive.google.com/drive/folders/1LaZzZJ6nFhc04f1oYYhDBZe6YmVRdHzo?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">links</a> you'll need to create this animation </p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "10dd92d1681644f79474ce3e18242cfb",
+                    "moduleTitle": "04_Iman's 3D animation style",
+                    "lessonTitle": "2nd Animation Application Phase 1",
+                    "name": "Descarga de Archivos / PDFs · 2nd Animation Application Phase 1",
+                    "url": "https://drive.google.com/drive/folders/1LaZzZJ6nFhc04f1oYYhDBZe6YmVRdHzo?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "d9bbf4508cf54a3eaf79da4aaf7518a9",
@@ -8208,10 +8280,10 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "Outro to Iman's 3D Style Animations",
                 "module": "04_Iman's 3D animation style",
                 "moduleIndex": 3,
-                "gdriveId": "1PKz6GFPzmw9PfZatbLNSujLO9SBSI_2-",
-                "gdriveLink": "https://drive.google.com/file/d/1PKz6GFPzmw9PfZatbLNSujLO9SBSI_2-/view?usp=drivesdk",
+                "gdriveId": "1i6s5BF_0pOatsHl4yyMHSulxjZ9uTJRu",
+                "gdriveLink": "https://drive.google.com/file/d/1i6s5BF_0pOatsHl4yyMHSulxjZ9uTJRu/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<h2>What To Do Now ?</h2><p>We’re sending you off with heartfelt encouragement and gratitude for completing this course. <strong>Take everything you’ve learned</strong> here and<em> start applying it to your own </em><em><strong>editing style</strong></em>. We’re proud of the incredible progress you’ve made, and we’re excited to see you continue growing into some of the most dominant editors in the market.</p>",
                 "resources": []
               },
               {
@@ -8226,8 +8298,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1xnu1mS70OYu-ifgf7X9aolOt1eKuQj4-",
                 "gdriveLink": "https://drive.google.com/file/d/1xnu1mS70OYu-ifgf7X9aolOt1eKuQj4-/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<h2>What's In Phase 3 ?</h2><p>In this final stage, we’ll<strong> bring everything together</strong> and <em>wrap up the project</em>. This is where we <strong>merge</strong> all our <em>elements</em>,<strong> render</strong> out the <em>finished animation</em>, and then move into <strong>Adobe Premiere </strong>to <em>set everything up</em> for the <strong>final edit</strong>. By the end of this phase, you’ll have a complete, polished sequence ready to showcase.</p><h2>Note !! </h2><p>Make sure you’ve <em>completed</em>  <strong>the 2nd phase</strong> before moving on to this section!</p><h2>Link !!</h2><p>here are all the <a href=\"https://drive.google.com/drive/folders/1rEvquAgSSpPFP0FHPoCQJynaNwOSms6m?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">files</a> you'll need :)</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "0749a3ec345a41eca1b5df2b8de0de06",
+                    "moduleTitle": "04_Iman's 3D animation style",
+                    "lessonTitle": "1st Animation Application Phase 3",
+                    "name": "Descarga de Archivos / PDFs · 1st Animation Application Phase 3",
+                    "url": "https://drive.google.com/drive/folders/1rEvquAgSSpPFP0FHPoCQJynaNwOSms6m?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "2b90d8af2e154df08a6d60c8feb5820c",
@@ -8241,7 +8325,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1c3vA63KtJgYo75WfymsVh66zcqi90WXg",
                 "gdriveLink": "https://drive.google.com/file/d/1c3vA63KtJgYo75WfymsVh66zcqi90WXg/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<h2>What's With This ?</h2><p>In this final sample animation, we’ll be <strong>analyzing</strong> one of <strong>Iman’s videos</strong> to <strong>understand</strong> the <em>thought process</em> behind <em><strong>how this style of animation is created</strong></em>. Unlike before, we’ll be taking a slightly different approach by <em><strong>using the video itself as a reference point</strong></em>. From there, we’ll <strong>sketch</strong> and <strong>develop </strong>our <em>own version</em>, <strong>combining inspiration</strong> from <em>Iman’s style</em> with our own creative execution. This exercise will help you not only learn from real examples but also practice adapting and personalizing animations..</p><h2>Note !! </h2><p>If you’re still not confident with the <strong>4 steps of sketching</strong>,<em> write them down</em> and follow along with us.</p>",
                 "resources": []
               },
               {
@@ -8256,8 +8340,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1TyEbWBd6mVeGtWAhJSkIq7607-5nfwjH",
                 "gdriveLink": "https://drive.google.com/file/d/1TyEbWBd6mVeGtWAhJSkIq7607-5nfwjH/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<h2>What Are We Doing Here ?</h2><p>In this final phase, we’ll be <strong>creating</strong> the <em>second-to-last type of animation</em> featured in Iman’s video. Together, we’ll work through each stage of the application process. From <strong>setting up assets</strong> and <em>building</em> <strong>animations</strong> to <em>refining</em> the <strong>lighting</strong>, <strong>compositing</strong>, and <strong>rendering</strong>. Once complete, we’ll move into <strong>Adobe Premiere</strong> to <em>replace</em> the <strong>original animations</strong> with our own, bringing the project to completion.</p><h2>Note !! </h2><p>Please<strong> finish Phase 1</strong> before moving forward.</p><h2>Links !! </h2><p>here are all the <a href=\"https://drive.google.com/drive/folders/18bafPssO6jNys93VABl2qjsVkZQi0rIQ?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">links</a> you'll need :)</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "2bb48658fe384ec5adede60ecafdbbd7",
+                    "moduleTitle": "04_Iman's 3D animation style",
+                    "lessonTitle": "3rd Animation Application Phase 2",
+                    "name": "Descarga de Archivos / PDFs · 3rd Animation Application Phase 2",
+                    "url": "https://drive.google.com/drive/folders/18bafPssO6jNys93VABl2qjsVkZQi0rIQ?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "2accdf7833554f588e9529686fcacd1c",
@@ -8271,8 +8367,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1xDsBlh1m1MSgexjtFETSTwJ-RM8ukWaD",
                 "gdriveLink": "https://drive.google.com/file/d/1xDsBlh1m1MSgexjtFETSTwJ-RM8ukWaD/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<h2>What Is Going On Here ?</h2><p>As usual, we’ll<strong> take</strong> our <strong>sketches and references</strong> and <em>bring them into </em><em><strong>Blender</strong></em> to begin building the animation. We’ll start by <em>adding</em> the necessary<strong> assets</strong>, <em>setting up </em>the<strong> lighting</strong>, and <em>constructing</em> the <strong>full scene</strong>. From there, we’ll focus on <em>refining</em> the<strong> animation flow</strong>, ensuring <strong>smooth transitions</strong>, and creating near-perfect camera movements.</p><h2>Note !!</h2><p>Please complete the <strong>Blender Masterclass</strong> before moving forward.</p><h2>Links !! </h2><p>Here are all the <a href=\"https://drive.google.com/drive/folders/18bafPssO6jNys93VABl2qjsVkZQi0rIQ?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">files</a> you'll need :)</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "2accdf7833554f588e9529686fcacd1c",
+                    "moduleTitle": "04_Iman's 3D animation style",
+                    "lessonTitle": "3rd Animation Application Phase 1",
+                    "name": "Descarga de Archivos / PDFs · 3rd Animation Application Phase 1",
+                    "url": "https://drive.google.com/drive/folders/18bafPssO6jNys93VABl2qjsVkZQi0rIQ?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "322fdd3fa7a6439ca41f9acc95c1a6aa",
@@ -8286,7 +8394,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1WAdO4eG8iIIJBio_AN-TvWEowJU9PX82",
                 "gdriveLink": "https://drive.google.com/file/d/1WAdO4eG8iIIJBio_AN-TvWEowJU9PX82/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<h2>What Are We Gonna Learn Here ?</h2><p>This course teaches you how to <strong>sketch animations for Iman's Style</strong>. You’ll learn how to <em>break down</em> his <strong>branding and audience</strong>, <strong>sketch</strong> <em>animation ideas</em> step by step, and <em>turn them</em> into <strong>polished visuals</strong> that match his <strong>luxury, business, and self-improvement themes</strong>. By the end, you’ll know exactly how to apply these techniques to sketch animations for Iman's style.</p><h2>Note !!</h2><p>If you haven’t completed the <strong>Blender Masterclass</strong> yet, I recommend finishing that first before starting this course.</p>",
                 "resources": []
               },
               {
@@ -8301,8 +8409,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1G9OjdpHFxnPU-a81Fnd0fOHdyohNQaZs",
                 "gdriveLink": "https://drive.google.com/file/d/1G9OjdpHFxnPU-a81Fnd0fOHdyohNQaZs/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<h2>What's Going On Here ?</h2><p>In this final stage, we’ll bring everything together by <strong>finalizing our animations</strong>, <strong>rendering </strong>out the <em>sequences</em>, and <em>moving them</em> into <strong>After Effects</strong>. From there, we’ll <strong>merge</strong> our newly <em>created animations</em> with <strong>Iman’s video</strong> to complete the project. This step ties all of your work into a seamless final edit, showcasing the full process from sketch to finished animation using after effects .</p><h2>Note !!</h2><p>Please <em>complete</em> <strong>the 1st phase</strong> before moving on to this section.</p><h2>Link !!</h2><p><a href=\"https://drive.google.com/drive/folders/1LaZzZJ6nFhc04f1oYYhDBZe6YmVRdHzo?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Here</a> you'll access to all what you need to create this animation.</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "fd6e588f497f4a9dbe0f39317eeb8022",
+                    "moduleTitle": "04_Iman's 3D animation style",
+                    "lessonTitle": "2nd Animation Application Phase 2",
+                    "name": "Descarga de Archivos / PDFs · 2nd Animation Application Phase 2",
+                    "url": "https://drive.google.com/drive/folders/1LaZzZJ6nFhc04f1oYYhDBZe6YmVRdHzo?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               }
             ]
           },
@@ -8323,8 +8443,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1nFmSXQSd25P7ju6sYlodocvgpB7wlaWH",
                 "gdriveLink": "https://drive.google.com/file/d/1nFmSXQSd25P7ju6sYlodocvgpB7wlaWH/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Want to follow along? Feel free to grab all of the resources used over the course of this tutorial in this google drive:</p><p><a href=\"https://drive.google.com/drive/folders/1PzqqU5WfWx0RaRUOSgFs3QtEIxOCpZSe?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1PzqqU5WfWx0RaRUOSgFs3QtEIxOCpZSe?usp=sharing</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>If you've got any questions or any concerns feel free to reach out to me!</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "d8063e5b67ca463fbddc0eb4c095e7b1",
+                    "moduleTitle": "03_Getting it done",
+                    "lessonTitle": "Cutting your videos like Iman",
+                    "name": "Descarga de Archivos / PDFs · Cutting your videos like Iman",
+                    "url": "https://drive.google.com/drive/folders/1PzqqU5WfWx0RaRUOSgFs3QtEIxOCpZSe?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "dea74f74d99443e4b55e4585a2da53a8",
@@ -8338,7 +8470,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1RjxGTNhNx3wqPpJXMY3i7mgDmwupia-c",
                 "gdriveLink": "https://drive.google.com/file/d/1RjxGTNhNx3wqPpJXMY3i7mgDmwupia-c/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you've got any questions or any concerns feel free to reach out to me!</p>",
                 "resources": []
               },
               {
@@ -8353,7 +8485,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1wHuTFDmFdnV4ir0EY_xax_38l5tK6bCt",
                 "gdriveLink": "https://drive.google.com/file/d/1wHuTFDmFdnV4ir0EY_xax_38l5tK6bCt/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you've got any questions or any concerns feel free to reach out to me!</p>",
                 "resources": []
               },
               {
@@ -8383,7 +8515,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1cJQRaEooxMEuQ4FFBRTmyVPaFyyHQCBv",
                 "gdriveLink": "https://drive.google.com/file/d/1cJQRaEooxMEuQ4FFBRTmyVPaFyyHQCBv/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you've got any questions or any concerns feel free to reach out to me!</p>",
                 "resources": []
               },
               {
@@ -8398,8 +8530,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1zkkPCwrZexOksNAP43W9CEEfJ_kzI6n1",
                 "gdriveLink": "https://drive.google.com/file/d/1zkkPCwrZexOksNAP43W9CEEfJ_kzI6n1/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Here's the link for all the sound effects I typically use whilst working in this style, feel free to use them wherever you see fit!</p><p><a href=\"https://drive.google.com/drive/folders/1WJNElgr6Rj0K-NnfW0ICyE2nwZUArgk0?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1WJNElgr6Rj0K-NnfW0ICyE2nwZUArgk0?usp=sharing</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>If you've got any questions or any concerns feel free to reach out to me!</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "32a6ec668a9f42f5994762681356e737",
+                    "moduleTitle": "03_Getting it done",
+                    "lessonTitle": "Sound design like Iman",
+                    "name": "Descarga de Archivos / PDFs · Sound design like Iman",
+                    "url": "https://drive.google.com/drive/folders/1WJNElgr6Rj0K-NnfW0ICyE2nwZUArgk0?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "a9ca3c2e0db64a54894f5a55df5dfdee",
@@ -8413,7 +8557,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1_-Gu_xsGeOnK8CelHprBoMzTBavf6pTg",
                 "gdriveLink": "https://drive.google.com/file/d/1_-Gu_xsGeOnK8CelHprBoMzTBavf6pTg/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you've got any questions or any concerns feel free to reach out to me!</p>",
                 "resources": []
               },
               {
@@ -8443,7 +8587,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1zkk_rze-iWJi3T-W-OLLIxX1RunGyvxY",
                 "gdriveLink": "https://drive.google.com/file/d/1zkk_rze-iWJi3T-W-OLLIxX1RunGyvxY/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you've got any questions or any concerns feel free to reach out to me!</p>",
                 "resources": []
               }
             ]

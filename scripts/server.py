@@ -157,6 +157,24 @@ def resolve_skool_video_stream(page_url, cookie_file):
     except Exception as e:
         print(f"⚠️ [Companion Server] Stream resolution note for {page_url}: {e}", flush=True)
 
+def resolve_loom_stream_url(loom_url):
+    """Directly extracts high quality Luna HLS playlist stream from Loom video pages."""
+    if not loom_url or 'loom.com' not in loom_url:
+        return None
+    try:
+        lid_m = re.search(r'/(?:share|embed)/([a-f0-9]+)', loom_url)
+        if not lid_m:
+            return None
+        lid = lid_m.group(1)
+        page_url = f"https://www.loom.com/share/{lid}"
+        req = urllib.request.Request(page_url, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"})
+        with urllib.request.urlopen(req, timeout=10) as res:
+            html = res.read().decode("utf-8")
+        hls_m = re.search(r'(https://luna\.loom\.com/[^"\'\s<>]*\.m3u8[^"\'\s<>]*)', html)
+        if hls_m:
+            return hls_m.group(1).replace("&amp;", "&")
+    except Exception as e:
+        print(f"⚠️ [Companion Server] Loom direct stream resolution error: {e}", flush=True)
     return None
 
 # ==========================================
@@ -1251,13 +1269,20 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
     clean_t = clean_file_name(title)
     out_template = os.path.join(target_dir, f"{clean_t}.%(ext)s")
 
-    # If it's a Skool webpage URL, resolve the signed stream using session cookies
+    # 1. If it's a Skool webpage URL, resolve the signed stream using session cookies
     download_url = url
     if "skool.com" in url and "stream.mux.com" not in url and ".m3u8" not in url:
         resolved = resolve_skool_video_stream(url, COOKIES_FILE)
         if resolved:
             download_url = resolved
             print(f"⚡ [Companion Server] Using resolved direct stream: {download_url[:70]}...", flush=True)
+
+    # 2. If it's a Loom URL, resolve native Luna HLS stream
+    if "loom.com" in download_url:
+        loom_hls = resolve_loom_stream_url(download_url)
+        if loom_hls:
+            download_url = loom_hls
+            print(f"⚡ [Companion Server] Using resolved Loom HLS stream: {download_url[:70]}...", flush=True)
 
     cmd = [
         YTDLP_BIN,
@@ -1266,6 +1291,7 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
         "--merge-output-format", "mp4",
         "--referer", "https://www.skool.com/",
         "--user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+        "--extractor-args", "youtube:player_client=android,web",
         "--concurrent-fragments", "10",
         "-o", out_template,
         download_url
