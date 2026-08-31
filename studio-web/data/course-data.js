@@ -8391,8 +8391,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "Ideation  Sketching",
                 "module": "04_Iman's 3D animation style",
                 "moduleIndex": 3,
-                "gdriveId": "1WAdO4eG8iIIJBio_AN-TvWEowJU9PX82",
-                "gdriveLink": "https://drive.google.com/file/d/1WAdO4eG8iIIJBio_AN-TvWEowJU9PX82/view?usp=drivesdk",
+                "gdriveId": "13JyrGJ448Qiqw0fMElesS6mB_p0Mtrnh",
+                "gdriveLink": "https://drive.google.com/file/d/13JyrGJ448Qiqw0fMElesS6mB_p0Mtrnh/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "<h2>What Are We Gonna Learn Here ?</h2><p>This course teaches you how to <strong>sketch animations for Iman's Style</strong>. You’ll learn how to <em>break down</em> his <strong>branding and audience</strong>, <strong>sketch</strong> <em>animation ideas</em> step by step, and <em>turn them</em> into <strong>polished visuals</strong> that match his <strong>luxury, business, and self-improvement themes</strong>. By the end, you’ll know exactly how to apply these techniques to sketch animations for Iman's style.</p><h2>Note !!</h2><p>If you haven’t completed the <strong>Blender Masterclass</strong> yet, I recommend finishing that first before starting this course.</p>",
                 "resources": []
