@@ -596,10 +596,13 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
         course['totalLessons'] = sum(len(m.get('lessons', [])) for m in course['modules'])
         course['totalResources'] = sum(len(l.get('resources', [])) for m in course['modules'] for l in m.get('lessons', []))
 
-        # Write back to course-data.js
+        # Write back to both root and studio-web course-data.js
         new_content = f"window.COMMUNITIES_DATA = {json.dumps(communities, indent=2, ensure_ascii=False)};\n\nwindow.COURSE_DATA = window.COMMUNITIES_DATA[0].courses[0];\n"
         with open(course_data_file, 'w', encoding='utf-8') as f:
             f.write(new_content)
+        root_data_file = os.path.join(BASE_DIR, 'data', 'course-data.js')
+        with open(root_data_file, 'w', encoding='utf-8') as rf:
+            rf.write(new_content)
 
         print(f"🎬 [Studio Sync] Automatically updated Cinematic Studio with: {clean_les_title} ({course_name})", flush=True)
         trigger_background_cloud_sync()
