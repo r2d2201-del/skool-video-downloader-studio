@@ -836,16 +836,31 @@
               const data = JSON.parse(m[1]);
               let directVid = findLessonVideoById(data, targetMd);
               if (!directVid) {
-                const les = data.props?.pageProps?.lesson;
-                if (les) {
-                  const meta = les.metadata || {};
-                  const cand = meta.videoLink || meta.video_url || les.videoLink || les.video_url;
-                  if (cand && cand.startsWith('http')) directVid = cand;
-                  else {
-                    const vid = meta.video || les.video;
-                    const pid = vid?.playbackId || meta.playbackId;
-                    const tok = vid?.playbackToken || meta.playbackToken;
-                    if (pid) directVid = tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
+                const pageProps = data.props?.pageProps || data.pageProps || {};
+                const pageVid = pageProps.video;
+                if (pageVid) {
+                  const pid = pageVid.playbackId || pageVid.id;
+                  const tok = pageVid.playbackToken;
+                  if (pid && typeof pid === 'string' && pid.length > 5) {
+                    directVid = tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
+                  } else if (pageVid.url) {
+                    directVid = pageVid.url;
+                  }
+                }
+              }
+              if (!directVid) {
+                const allPids = findDeep(data, o => o && typeof o === 'object' && (o.playbackId || o.playback_id || o.videoLink || o.video_url));
+                for (const o of allPids) {
+                  const vl = o.videoLink || o.video_url || o.videoUrl;
+                  if (vl && typeof vl === 'string' && vl.startsWith('http')) {
+                    directVid = vl;
+                    break;
+                  }
+                  const pid = o.playbackId || o.playback_id;
+                  const tok = o.playbackToken || o.playback_token;
+                  if (pid && typeof pid === 'string' && pid.length > 5) {
+                    directVid = tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
+                    break;
                   }
                 }
               }
