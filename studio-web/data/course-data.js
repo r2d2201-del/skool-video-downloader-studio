@@ -8295,8 +8295,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "1st Animation Application Phase 3",
                 "module": "04_Iman's 3D animation style",
                 "moduleIndex": 3,
-                "gdriveId": "1xnu1mS70OYu-ifgf7X9aolOt1eKuQj4-",
-                "gdriveLink": "https://drive.google.com/file/d/1xnu1mS70OYu-ifgf7X9aolOt1eKuQj4-/view?usp=drivesdk",
+                "gdriveId": "13mez7OJg-RJ9DMkRA1QXqlu70_OELHxX",
+                "gdriveLink": "https://drive.google.com/file/d/13mez7OJg-RJ9DMkRA1QXqlu70_OELHxX/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "<h2>What's In Phase 3 ?</h2><p>In this final stage, we’ll<strong> bring everything together</strong> and <em>wrap up the project</em>. This is where we <strong>merge</strong> all our <em>elements</em>,<strong> render</strong> out the <em>finished animation</em>, and then move into <strong>Adobe Premiere </strong>to <em>set everything up</em> for the <strong>final edit</strong>. By the end of this phase, you’ll have a complete, polished sequence ready to showcase.</p><h2>Note !! </h2><p>Make sure you’ve <em>completed</em>  <strong>the 2nd phase</strong> before moving on to this section!</p><h2>Link !!</h2><p>here are all the <a href=\"https://drive.google.com/drive/folders/1rEvquAgSSpPFP0FHPoCQJynaNwOSms6m?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">files</a> you'll need :)</p>",
                 "resources": [
