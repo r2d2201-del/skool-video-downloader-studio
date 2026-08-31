@@ -4772,8 +4772,8 @@ window.COMMUNITIES_DATA = [
         "courseTitle": "The Minimal Animation Masterclass",
         "subtitle": "Formación completa de The Minimal Animation Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
-        "totalModules": 8,
-        "totalLessons": 22,
+        "totalModules": 9,
+        "totalLessons": 23,
         "totalResources": 0,
         "modules": [
           {
@@ -5156,6 +5156,28 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 8,
                 "gdriveId": "1oe33twRzMSJNiGUFtCKuZEEU50c6fWlz",
                 "gdriveLink": "https://drive.google.com/file/d/1oe33twRzMSJNiGUFtCKuZEEU50c6fWlz/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 9,
+            "folder": "10_Minimal Sound Design",
+            "title": "10_Minimal Sound Design",
+            "lessons": [
+              {
+                "id": "3df8b7302b8546fcb90808977a1a1f5e",
+                "slug": "3df8b730",
+                "index": 1,
+                "globalIndex": 23,
+                "title": "Textured Minimal Sound Design",
+                "rawTitle": "Textured Minimal Sound Design",
+                "module": "10_Minimal Sound Design",
+                "moduleIndex": 9,
+                "gdriveId": "1PZmSstyX7F7659pGIB2c-5s2oOxj86hc",
+                "gdriveLink": "https://drive.google.com/file/d/1PZmSstyX7F7659pGIB2c-5s2oOxj86hc/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
