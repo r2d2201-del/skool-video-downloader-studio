@@ -8184,8 +8184,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "1st animation application phase 2",
                 "module": "04_Iman's 3D animation style",
                 "moduleIndex": 3,
-                "gdriveId": "1VyldGSnU71NyEoUi8n07LvtXVwn715RM",
-                "gdriveLink": "https://drive.google.com/file/d/1VyldGSnU71NyEoUi8n07LvtXVwn715RM/view?usp=drivesdk",
+                "gdriveId": "149bzspQ5mVdf_xIRotEULiSc2FuOO5rY",
+                "gdriveLink": "https://drive.google.com/file/d/149bzspQ5mVdf_xIRotEULiSc2FuOO5rY/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "<h2>What's Going On In Phase 2 ?</h2><p>In this phase, we’ll continue <strong>working inside Blender</strong> to <em>refine our project</em>. We’ll focus on <strong>tweaking the lighting</strong> for the right mood, <strong>building new scenes</strong> to enhance our <em>camera animations</em>, and <strong>polishing</strong> every <em>detail to perfection</em>. This step is all about elevating the quality of your work and making sure the final result feels professional.</p><h2>Note !!</h2><p>Please make sure you’ve <em>completed</em> the <strong>1st phase</strong> before continuing.</p><h2>Link !!</h2><p>here are all the <a href=\"https://drive.google.com/drive/folders/1rEvquAgSSpPFP0FHPoCQJynaNwOSms6m?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">files</a> you'll need </p>",
                 "resources": [
