@@ -7967,7 +7967,7 @@ window.COMMUNITIES_DATA = [
         "subtitle": "Formación completa de Iman Ghadzi Editing Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 4,
-        "totalLessons": 13,
+        "totalLessons": 18,
         "totalResources": 0,
         "modules": [
           {
@@ -8086,6 +8086,21 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
+              },
+              {
+                "id": "770b9c88327f4abcadd8591ddfef8f5d",
+                "slug": "770b9c88",
+                "index": 7,
+                "globalIndex": 18,
+                "title": "Incorporating your footage",
+                "rawTitle": "Incorporating your footage",
+                "module": "02_How it's done",
+                "moduleIndex": 2,
+                "gdriveId": "1t4nKE1VGFaB-RtamjsFDeECTE2QJPHyl",
+                "gdriveLink": "https://drive.google.com/file/d/1t4nKE1VGFaB-RtamjsFDeECTE2QJPHyl/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
               }
             ]
           },
@@ -8153,6 +8168,36 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
+              },
+              {
+                "id": "10dd92d1681644f79474ce3e18242cfb",
+                "slug": "10dd92d1",
+                "index": 5,
+                "globalIndex": 15,
+                "title": "2nd Animation Application Phase 1",
+                "rawTitle": "2nd Animation Application Phase 1",
+                "module": "04_Iman's 3D animation style",
+                "moduleIndex": 3,
+                "gdriveId": "1RgT5E5oQQEm5KPiL9IFJ1fA2qv9fH-5W",
+                "gdriveLink": "https://drive.google.com/file/d/1RgT5E5oQQEm5KPiL9IFJ1fA2qv9fH-5W/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "d9bbf4508cf54a3eaf79da4aaf7518a9",
+                "slug": "d9bbf450",
+                "index": 6,
+                "globalIndex": 17,
+                "title": "Outro to Iman's 3D Style Animations",
+                "rawTitle": "Outro to Iman's 3D Style Animations",
+                "module": "04_Iman's 3D animation style",
+                "moduleIndex": 3,
+                "gdriveId": "1PKz6GFPzmw9PfZatbLNSujLO9SBSI_2-",
+                "gdriveLink": "https://drive.google.com/file/d/1PKz6GFPzmw9PfZatbLNSujLO9SBSI_2-/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
               }
             ]
           },
@@ -8187,6 +8232,36 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 4,
                 "gdriveId": "1RjxGTNhNx3wqPpJXMY3i7mgDmwupia-c",
                 "gdriveLink": "https://drive.google.com/file/d/1RjxGTNhNx3wqPpJXMY3i7mgDmwupia-c/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "24fe45a3da5e431ebbc5811d9c5f2e39",
+                "slug": "24fe45a3",
+                "index": 3,
+                "globalIndex": 14,
+                "title": "Editing like Iman - Part 2",
+                "rawTitle": "Editing like Iman - Part 2",
+                "module": "03_Getting it done",
+                "moduleIndex": 4,
+                "gdriveId": "1wHuTFDmFdnV4ir0EY_xax_38l5tK6bCt",
+                "gdriveLink": "https://drive.google.com/file/d/1wHuTFDmFdnV4ir0EY_xax_38l5tK6bCt/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "d5eb78f215ca43dcb69b41ef4bae2c7f",
+                "slug": "d5eb78f2",
+                "index": 4,
+                "globalIndex": 16,
+                "title": "Wrapping up the visuals",
+                "rawTitle": "Wrapping up the visuals",
+                "module": "03_Getting it done",
+                "moduleIndex": 4,
+                "gdriveId": "1mx4E7C56I05njbf-1aPf0LtfWfEcKgH3",
+                "gdriveLink": "https://drive.google.com/file/d/1mx4E7C56I05njbf-1aPf0LtfWfEcKgH3/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
