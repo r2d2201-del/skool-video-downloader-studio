@@ -185,6 +185,10 @@ def clean_folder_name(name):
     """Normalize folder names to clean human-readable titles."""
     if not name:
         return 'Skool'
+    if name in ('ultimate-editors-5412', 'ultimate_editors_5412'):
+        return 'Ultimate editors'
+    if name in ('ultimateeditors2', 'ultimate_editors_2'):
+        return 'Ultimate Editors 2.0'
     clean = re.sub(r'[<>:"/\\|?*]', '', name).strip()
     clean = ' '.join(clean.split())
     if '_' in clean and ' ' not in clean:
@@ -414,25 +418,52 @@ def upload_file_to_gdrive(local_file_path, folder_id, token=None, max_retries=3)
             if not upload_url:
                 raise ValueError("No upload URL returned by Google Drive")
 
+            chunk_size = 16 * 1024 * 1024  # 16 MB per chunk
+            file_id = None
             with open(local_file_path, 'rb') as f:
-                file_bytes = f.read()
+                start_byte = 0
+                while start_byte < file_size:
+                    chunk = f.read(chunk_size)
+                    chunk_len = len(chunk)
+                    end_byte = start_byte + chunk_len - 1
+                    
+                    put_req = urllib.request.Request(
+                        upload_url,
+                        data=chunk,
+                        headers={
+                            'Content-Type': 'application/octet-stream',
+                            'Content-Length': str(chunk_len),
+                            'Content-Range': f'bytes {start_byte}-{end_byte}/{file_size}'
+                        },
+                        method='PUT'
+                    )
+                    
+                    try:
+                        with urllib.request.urlopen(put_req, context=SSL_CTX, timeout=300) as res:
+                            if res.status in (200, 201):
+                                result = json.loads(res.read().decode('utf-8'))
+                                file_id = result.get('id')
+                                break
+                    except urllib.error.HTTPError as he:
+                        if he.code == 308:
+                            range_hdr = he.headers.get('Range')
+                            if range_hdr:
+                                m = re.search(r'bytes=0-(\d+)', range_hdr)
+                                if m:
+                                    start_byte = int(m.group(1)) + 1
+                                else:
+                                    start_byte += chunk_len
+                            else:
+                                start_byte += chunk_len
+                            pct = (start_byte / file_size) * 100
+                            print(f"   ☁️ [Drive Chunk] Uploaded {start_byte/(1024*1024):.1f}/{file_size/(1024*1024):.1f} MB ({pct:.1f}%)...", flush=True)
+                            continue
+                        else:
+                            raise he
 
-            put_req = urllib.request.Request(
-                upload_url,
-                data=file_bytes,
-                headers={
-                    'Content-Type': 'application/octet-stream',
-                    'Content-Length': str(file_size)
-                },
-                method='PUT'
-            )
-
-            with urllib.request.urlopen(put_req, context=SSL_CTX, timeout=300) as res:
-                result = json.loads(res.read().decode('utf-8'))
-                file_id = result.get('id')
-                if file_id:
-                    print(f"✅ [Google Drive] Uploaded successfully: {file_name} (ID: {file_id})", flush=True)
-                    return file_id
+            if file_id:
+                print(f"✅ [Google Drive] Uploaded successfully: {file_name} (ID: {file_id})", flush=True)
+                return file_id
 
         except Exception as e:
             print(f"⚠️ [Google Drive] Upload attempt {attempt} failed for {file_name}: {e}", flush=True)

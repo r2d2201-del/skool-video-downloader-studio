@@ -254,8 +254,14 @@
       } catch (e) {}
     }
 
-    if (!communityName) {
-      communityName = slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+    if (!communityName || communityName.includes('5412')) {
+      if (slug.includes('5412') || slug.includes('ultimate-editors')) {
+        communityName = 'Ultimate editors';
+      } else if (slug.includes('ultimateeditors2')) {
+        communityName = 'Ultimate Editors 2.0';
+      } else {
+        communityName = slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+      }
     }
 
     if (!courseName) {
