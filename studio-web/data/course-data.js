@@ -7966,8 +7966,8 @@ window.COMMUNITIES_DATA = [
         "courseTitle": "Iman Ghadzi Editing Masterclass",
         "subtitle": "Formación completa de Iman Ghadzi Editing Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
-        "totalModules": 2,
-        "totalLessons": 6,
+        "totalModules": 4,
+        "totalLessons": 11,
         "totalResources": 0,
         "modules": [
           {
@@ -8068,6 +8068,95 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 2,
                 "gdriveId": "1zEYNSvbQ-qIrEdQPKZOhJwo08wVsbZrq",
                 "gdriveLink": "https://drive.google.com/file/d/1zEYNSvbQ-qIrEdQPKZOhJwo08wVsbZrq/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "6f0bc3b2a26c4916aae29b9465bff91d",
+                "slug": "6f0bc3b2",
+                "index": 6,
+                "globalIndex": 11,
+                "title": "Taking the next step",
+                "rawTitle": "Taking the next step",
+                "module": "02_How it's done",
+                "moduleIndex": 2,
+                "gdriveId": "1gcMV8c5QGHT7UgHhPUp_0JsJy40y1JWw",
+                "gdriveLink": "https://drive.google.com/file/d/1gcMV8c5QGHT7UgHhPUp_0JsJy40y1JWw/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 3,
+            "folder": "04_Iman's 3D animation style",
+            "title": "04_Iman's 3D animation style",
+            "lessons": [
+              {
+                "id": "e6acd7fdcb524b0c8a6bb5fe60fd5541",
+                "slug": "e6acd7fd",
+                "index": 1,
+                "globalIndex": 7,
+                "title": "1st animation application phase 1",
+                "rawTitle": "1st animation application phase 1",
+                "module": "04_Iman's 3D animation style",
+                "moduleIndex": 3,
+                "gdriveId": "1oytncWsg19Lv1iK5C-IQL4HC8BOUE2HK",
+                "gdriveLink": "https://drive.google.com/file/d/1oytncWsg19Lv1iK5C-IQL4HC8BOUE2HK/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "083843ae71fc453485110f8daf58590c",
+                "slug": "083843ae",
+                "index": 2,
+                "globalIndex": 9,
+                "title": "1st animation application phase 2",
+                "rawTitle": "1st animation application phase 2",
+                "module": "04_Iman's 3D animation style",
+                "moduleIndex": 3,
+                "gdriveId": "1VyldGSnU71NyEoUi8n07LvtXVwn715RM",
+                "gdriveLink": "https://drive.google.com/file/d/1VyldGSnU71NyEoUi8n07LvtXVwn715RM/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "bf4f90fc2ae740528fda65a1c6e5f6fa",
+                "slug": "bf4f90fc",
+                "index": 3,
+                "globalIndex": 10,
+                "title": "1st animation sketch phase",
+                "rawTitle": "1st animation sketch phase",
+                "module": "04_Iman's 3D animation style",
+                "moduleIndex": 3,
+                "gdriveId": "1Yt_mTZ2e0AOfo-W204Dz5Le3m4a8uZq_",
+                "gdriveLink": "https://drive.google.com/file/d/1Yt_mTZ2e0AOfo-W204Dz5Le3m4a8uZq_/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "folder": "03_Getting it done",
+            "title": "03_Getting it done",
+            "lessons": [
+              {
+                "id": "d8063e5b67ca463fbddc0eb4c095e7b1",
+                "slug": "d8063e5b",
+                "index": 1,
+                "globalIndex": 8,
+                "title": "Cutting your videos like Iman",
+                "rawTitle": "Cutting your videos like Iman",
+                "module": "03_Getting it done",
+                "moduleIndex": 4,
+                "gdriveId": "1nFmSXQSd25P7ju6sYlodocvgpB7wlaWH",
+                "gdriveLink": "https://drive.google.com/file/d/1nFmSXQSd25P7ju6sYlodocvgpB7wlaWH/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
