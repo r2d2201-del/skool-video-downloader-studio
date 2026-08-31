@@ -573,6 +573,8 @@ document.addEventListener('DOMContentLoaded', async () => {
               } else if (failed[lesId]) {
                 badge.className = 'status-badge failed';
                 badge.textContent = '❌ Error';
+              } else if (badge.classList.contains('uploading') || badge.classList.contains('downloading')) {
+                badge.remove();
               }
             }
           });
