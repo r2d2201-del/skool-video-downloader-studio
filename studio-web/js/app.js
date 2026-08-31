@@ -489,23 +489,56 @@
     }
   }
 
+  // Reload course data dynamically (Local bridge first with Vercel/cloud fallback)
+  async function reloadCourseData() {
+    let jsCode = null;
+    // 1. Try local companion bridge first
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 1500);
+      const localRes = await fetch(`http://127.0.0.1:4545/studio/data/course-data.js?t=${Date.now()}`, { signal: controller.signal });
+      clearTimeout(timeoutId);
+      if (localRes.ok) {
+        jsCode = await localRes.text();
+      }
+    } catch (e) {
+      // Local bridge not reachable
+    }
+
+    // 2. Cloud fallback
+    if (!jsCode) {
+      try {
+        const cloudRes = await fetch(`data/course-data.js?t=${Date.now()}`);
+        if (cloudRes.ok) {
+          jsCode = await cloudRes.text();
+        }
+      } catch (e) {
+        console.warn('[Data Reload] Cloud fetch failed:', e);
+      }
+    }
+
+    if (jsCode) {
+      try {
+        const executeData = new Function(jsCode);
+        executeData();
+        communitiesList = window.COMMUNITIES_DATA || [];
+        populateCourseSelector(true);
+        flattenLessons();
+        updateProgressUI();
+        return true;
+      } catch (e) {
+        console.warn('[Data Reload] Exec error:', e);
+      }
+    }
+    return false;
+  }
+
   // Live Drive Audit & Dynamic Catalog Synchronization
   async function syncWithGoogleDrive() {
     showToast('🔄 Sincronizando catálogo con Google Drive...');
     try {
-      // 1. Refetch latest course-data.js dynamically without caching
-      try {
-        const dataRes = await fetch(`data/course-data.js?t=${Date.now()}`);
-        if (dataRes.ok) {
-          const jsCode = await dataRes.text();
-          const executeData = new Function(jsCode);
-          executeData();
-          communitiesList = window.COMMUNITIES_DATA || [];
-          populateCourseSelector(true);
-        }
-      } catch (e) {
-        console.warn('Dynamic script reload note:', e);
-      }
+      // 1. Refetch latest course data
+      await reloadCourseData();
 
       // 2. Audit against local bridge
       const res = await fetch('http://127.0.0.1:4545/audit-course');
@@ -686,7 +719,8 @@
   }
 
   // Initialize App
-  function init() {
+  async function init() {
+    await reloadCourseData();
     communitiesList = window.COMMUNITIES_DATA || [];
     const savedCourseId = localStorage.getItem(STORAGE_KEY_ACTIVE_COURSE);
     if (savedCourseId && communitiesList.length > 0) {

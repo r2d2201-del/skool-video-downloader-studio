@@ -285,7 +285,8 @@ def get_or_create_gdrive_folder(folder_name, parent_id=None, token=None):
             GDRIVE_CACHE["folders"].pop(cache_key, None)
 
         try:
-            query = f"name = '{normalized_name}' and mimeType = 'application/vnd.google-apps.folder' and trashed = false"
+            safe_query_name = normalized_name.replace("\\", "\\\\").replace("'", "\\'")
+            query = f"name = '{safe_query_name}' and mimeType = 'application/vnd.google-apps.folder' and trashed = false"
             if parent_id:
                 query += f" and '{parent_id}' in parents"
             else:
@@ -508,9 +509,26 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
             f.write(new_content)
 
         print(f"🎬 [Studio Sync] Automatically updated Cinematic Studio with: {clean_les_title} ({course_name})", flush=True)
+        trigger_background_cloud_sync()
 
     except Exception as e:
         print(f"⚠️ [Studio Sync] Note: {e}", flush=True)
+
+def trigger_background_cloud_sync():
+    """Asynchronously commit and deploy updated course-data.js to Vercel without blocking downloads."""
+    def _sync():
+        try:
+            studio_dir = os.path.join(BASE_DIR, 'studio-web')
+            subprocess.run(["git", "add", "studio-web/data/course-data.js"], cwd=BASE_DIR, capture_output=True)
+            subprocess.run(["git", "commit", "-m", "chore: sync latest course-data catalog [skip ci]"], cwd=BASE_DIR, capture_output=True)
+            subprocess.run(["git", "push", "origin", "main"], cwd=BASE_DIR, capture_output=True)
+            subprocess.run(["vercel", "--prod", "--yes"], cwd=studio_dir, capture_output=True)
+            print("🚀 [Vercel Cloud Sync] Successfully deployed newest course catalog to Vercel production!", flush=True)
+        except Exception as e:
+            print(f"⚠️ [Vercel Cloud Sync] Background deploy note: {e}", flush=True)
+
+    t = threading.Thread(target=_sync, daemon=True)
+    t.start()
 
 def process_gdrive_sync(local_file_path, context, storage_mode, gdrive_root, task_id=None):
     if storage_mode not in ['gdrive', 'both'] or not os.path.exists(local_file_path):
@@ -565,7 +583,8 @@ def create_or_update_gdrive_doc(doc_name, html_content, folder_id, token=None):
         return None
 
     try:
-        query = f"name = '{doc_name}' and mimeType = 'application/vnd.google-apps.document' and '{folder_id}' in parents and trashed = false"
+        safe_doc_name = doc_name.replace("\\", "\\\\").replace("'", "\\'")
+        query = f"name = '{safe_doc_name}' and mimeType = 'application/vnd.google-apps.document' and '{folder_id}' in parents and trashed = false"
         url = f"https://www.googleapis.com/drive/v3/files?q={urllib.parse.quote(query)}&fields=files(id,name,webViewLink)"
         req = urllib.request.Request(url, headers={'Authorization': f'Bearer {token}'})
         with urllib.request.urlopen(req, context=SSL_CTX, timeout=15) as res:
@@ -1400,6 +1419,14 @@ class DownloaderHandler(BaseHTTPRequestHandler):
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
             self.wfile.write(json.dumps(result).encode('utf-8'))
+
+        elif self.path == '/sync-cloud':
+            trigger_background_cloud_sync()
+            self.send_response(200)
+            self._send_cors_headers()
+            self.send_header('Content-Type', 'application/json')
+            self.end_headers()
+            self.wfile.write(json.dumps({"success": True, "message": "Cloud sync initiated"}).encode('utf-8'))
 
         elif self.path == '/studio':
             self.send_response(301)
