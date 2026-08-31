@@ -7221,8 +7221,8 @@ window.COMMUNITIES_DATA = [
         "courseTitle": "3D Animated Editing Masteclass",
         "subtitle": "Formación completa de 3D Animated Editing Masteclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
-        "totalModules": 4,
-        "totalLessons": 5,
+        "totalModules": 6,
+        "totalLessons": 7,
         "totalResources": 0,
         "modules": [
           {
@@ -7322,6 +7322,50 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 4,
                 "gdriveId": "1Rfgu3SisfrCRuaD54OyAu6mLKjacqzZQ",
                 "gdriveLink": "https://drive.google.com/file/d/1Rfgu3SisfrCRuaD54OyAu6mLKjacqzZQ/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 5,
+            "folder": "04_3D Editing Concepts",
+            "title": "04_3D Editing Concepts",
+            "lessons": [
+              {
+                "id": "df59d444a00b41d58b29a533c4842344",
+                "slug": "df59d444",
+                "index": 1,
+                "globalIndex": 6,
+                "title": "Using Color like BartVFX",
+                "rawTitle": "Using Color like BartVFX",
+                "module": "04_3D Editing Concepts",
+                "moduleIndex": 5,
+                "gdriveId": "1so6lYQhMA0Kllrmu-v2nHjRGu_6O5IFR",
+                "gdriveLink": "https://drive.google.com/file/d/1so6lYQhMA0Kllrmu-v2nHjRGu_6O5IFR/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 6,
+            "folder": "06_Using Transitions",
+            "title": "06_Using Transitions",
+            "lessons": [
+              {
+                "id": "fad59c86944c4baa9e4b69edb3ec9828",
+                "slug": "fad59c86",
+                "index": 1,
+                "globalIndex": 7,
+                "title": "Transition Stacking",
+                "rawTitle": "Transition Stacking",
+                "module": "06_Using Transitions",
+                "moduleIndex": 6,
+                "gdriveId": "1MnjzwLLoKqViZC2qqQhxU0wahRwYIoI7",
+                "gdriveLink": "https://drive.google.com/file/d/1MnjzwLLoKqViZC2qqQhxU0wahRwYIoI7/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
