@@ -7967,7 +7967,7 @@ window.COMMUNITIES_DATA = [
         "subtitle": "Formación completa de Iman Ghadzi Editing Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 4,
-        "totalLessons": 18,
+        "totalLessons": 20,
         "totalResources": 0,
         "modules": [
           {
@@ -8198,6 +8198,21 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
+              },
+              {
+                "id": "0749a3ec345a41eca1b5df2b8de0de06",
+                "slug": "0749a3ec",
+                "index": 7,
+                "globalIndex": 19,
+                "title": "1st Animation Application Phase 3",
+                "rawTitle": "1st Animation Application Phase 3",
+                "module": "04_Iman's 3D animation style",
+                "moduleIndex": 3,
+                "gdriveId": "1xnu1mS70OYu-ifgf7X9aolOt1eKuQj4-",
+                "gdriveLink": "https://drive.google.com/file/d/1xnu1mS70OYu-ifgf7X9aolOt1eKuQj4-/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
               }
             ]
           },
@@ -8262,6 +8277,21 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 4,
                 "gdriveId": "1mx4E7C56I05njbf-1aPf0LtfWfEcKgH3",
                 "gdriveLink": "https://drive.google.com/file/d/1mx4E7C56I05njbf-1aPf0LtfWfEcKgH3/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "78e08735dad7423dbd7af1733db3cb35",
+                "slug": "78e08735",
+                "index": 5,
+                "globalIndex": 20,
+                "title": "Editing like Iman - Part 1",
+                "rawTitle": "Editing like Iman - Part 1",
+                "module": "03_Getting it done",
+                "moduleIndex": 4,
+                "gdriveId": "1cJQRaEooxMEuQ4FFBRTmyVPaFyyHQCBv",
+                "gdriveLink": "https://drive.google.com/file/d/1cJQRaEooxMEuQ4FFBRTmyVPaFyyHQCBv/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
