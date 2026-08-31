@@ -4772,8 +4772,8 @@ window.COMMUNITIES_DATA = [
         "courseTitle": "The Minimal Animation Masterclass",
         "subtitle": "Formación completa de The Minimal Animation Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
-        "totalModules": 9,
-        "totalLessons": 23,
+        "totalModules": 11,
+        "totalLessons": 32,
         "totalResources": 0,
         "modules": [
           {
@@ -5048,6 +5048,21 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
+              },
+              {
+                "id": "8d99b3ba4d0e4dc5a85006e2cdc9126b",
+                "slug": "8d99b3ba",
+                "index": 4,
+                "globalIndex": 29,
+                "title": "Live Movement in Animations",
+                "rawTitle": "Live Movement in Animations",
+                "module": "07_Animating Every Element",
+                "moduleIndex": 5,
+                "gdriveId": "1YcpzlROmvj3ID437mIqITreSavyjbA_L",
+                "gdriveLink": "https://drive.google.com/file/d/1YcpzlROmvj3ID437mIqITreSavyjbA_L/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
               }
             ]
           },
@@ -5085,6 +5100,21 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
+              },
+              {
+                "id": "723eccf2c3de42cf864b9fbfac4d6bf4",
+                "slug": "723eccf2",
+                "index": 3,
+                "globalIndex": 27,
+                "title": "Post-Production Workflow",
+                "rawTitle": "Post-Production Workflow",
+                "module": "08_Post-Production Workflow",
+                "moduleIndex": 6,
+                "gdriveId": "1ilek0q3qWqbKsRk-H2NoEt-eV9VGhmDk",
+                "gdriveLink": "https://drive.google.com/file/d/1ilek0q3qWqbKsRk-H2NoEt-eV9VGhmDk/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
               }
             ]
           },
@@ -5119,6 +5149,51 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 7,
                 "gdriveId": "1-ApdUhuhy9cwqRunUnuYNs_gbpVDuBSf",
                 "gdriveLink": "https://drive.google.com/file/d/1-ApdUhuhy9cwqRunUnuYNs_gbpVDuBSf/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "d11881b26a084e3fbe7d57f9e0e3aec3",
+                "slug": "d11881b2",
+                "index": 3,
+                "globalIndex": 25,
+                "title": "Practice Project Minimal Animation",
+                "rawTitle": "Practice Project Minimal Animation",
+                "module": "11_Minimal Animation Practice Project",
+                "moduleIndex": 7,
+                "gdriveId": "14lsHC4y8wLy6GmcJuXhikoG8iRCOdhdQ",
+                "gdriveLink": "https://drive.google.com/file/d/14lsHC4y8wLy6GmcJuXhikoG8iRCOdhdQ/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "c646c3530f4048d3a154d06974919102",
+                "slug": "c646c353",
+                "index": 4,
+                "globalIndex": 26,
+                "title": "Creating Subtitles and Text",
+                "rawTitle": "Creating Subtitles and Text",
+                "module": "11_Minimal Animation Practice Project",
+                "moduleIndex": 7,
+                "gdriveId": "1TavEXbk_5QaJYNQFjhMrPkQq1k_Ge-zB",
+                "gdriveLink": "https://drive.google.com/file/d/1TavEXbk_5QaJYNQFjhMrPkQq1k_Ge-zB/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "0d136624ff20436b9df9a4a9daba8178",
+                "slug": "0d136624",
+                "index": 5,
+                "globalIndex": 32,
+                "title": "Short-Form Clip Extraction",
+                "rawTitle": "Short-Form Clip Extraction",
+                "module": "11_Minimal Animation Practice Project",
+                "moduleIndex": 7,
+                "gdriveId": "11_btadyWn6TpFpbz4oAufisoim5KA1KI",
+                "gdriveLink": "https://drive.google.com/file/d/11_btadyWn6TpFpbz4oAufisoim5KA1KI/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
@@ -5178,6 +5253,80 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 9,
                 "gdriveId": "1PZmSstyX7F7659pGIB2c-5s2oOxj86hc",
                 "gdriveLink": "https://drive.google.com/file/d/1PZmSstyX7F7659pGIB2c-5s2oOxj86hc/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 10,
+            "folder": "06_Volumetric Depth",
+            "title": "06_Volumetric Depth",
+            "lessons": [
+              {
+                "id": "d5914806dffb44118f2b36ef00f732ae",
+                "slug": "d5914806",
+                "index": 1,
+                "globalIndex": 24,
+                "title": "Creating Depth with Objects",
+                "rawTitle": "Creating Depth with Objects",
+                "module": "06_Volumetric Depth",
+                "moduleIndex": 10,
+                "gdriveId": "102LhVB6Ru4dAYrgdA35CTEtuoxTGkUM3",
+                "gdriveLink": "https://drive.google.com/file/d/102LhVB6Ru4dAYrgdA35CTEtuoxTGkUM3/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "048ce990d11e46c1b63a185b405fab56",
+                "slug": "048ce990",
+                "index": 2,
+                "globalIndex": 28,
+                "title": "Creating Depth with Shapes",
+                "rawTitle": "Creating Depth with Shapes",
+                "module": "06_Volumetric Depth",
+                "moduleIndex": 10,
+                "gdriveId": "1osnFUsqwXMhe5tZgrixEJQOXfSHI_srh",
+                "gdriveLink": "https://drive.google.com/file/d/1osnFUsqwXMhe5tZgrixEJQOXfSHI_srh/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 11,
+            "folder": "09_Minimal Animations Practice",
+            "title": "09_Minimal Animations Practice",
+            "lessons": [
+              {
+                "id": "31e7bcfec50241e2a59f9c7d86cd3e8d",
+                "slug": "31e7bcfe",
+                "index": 1,
+                "globalIndex": 30,
+                "title": "Brain Hand Control Animation (6)",
+                "rawTitle": "Brain Hand Control Animation (6)",
+                "module": "09_Minimal Animations Practice",
+                "moduleIndex": 11,
+                "gdriveId": "1yXAp6N6aPc8ual87iMi5ClenuAWNphY2",
+                "gdriveLink": "https://drive.google.com/file/d/1yXAp6N6aPc8ual87iMi5ClenuAWNphY2/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "ffb24570242a407db25088bb44270aa8",
+                "slug": "ffb24570",
+                "index": 2,
+                "globalIndex": 31,
+                "title": "Graphic Text Animation (1)",
+                "rawTitle": "Graphic Text Animation (1)",
+                "module": "09_Minimal Animations Practice",
+                "moduleIndex": 11,
+                "gdriveId": "1E_d8jwAfFRukxHL3TtZAaehKsJC10BVV",
+                "gdriveLink": "https://drive.google.com/file/d/1E_d8jwAfFRukxHL3TtZAaehKsJC10BVV/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
