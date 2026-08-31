@@ -1277,12 +1277,12 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
             download_url = resolved
             print(f"⚡ [Companion Server] Using resolved direct stream: {download_url[:70]}...", flush=True)
 
-    # 2. If it's a Loom URL, resolve native Luna HLS stream
+    # 2. If it's a Loom URL, sanitize to clean share URL for native yt-dlp extractor
     if "loom.com" in download_url:
-        loom_hls = resolve_loom_stream_url(download_url)
-        if loom_hls:
-            download_url = loom_hls
-            print(f"⚡ [Companion Server] Using resolved Loom HLS stream: {download_url[:70]}...", flush=True)
+        clean_lid = re.search(r'/(?:share|embed)/([a-f0-9]+)', download_url)
+        if clean_lid:
+            download_url = f"https://www.loom.com/share/{clean_lid.group(1)}"
+            print(f"⚡ [Companion Server] Sanitized Loom URL: {download_url}", flush=True)
 
     cmd = [
         YTDLP_BIN,

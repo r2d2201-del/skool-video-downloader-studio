@@ -549,8 +549,21 @@
         const executeData = new Function(jsCode);
         executeData();
         communitiesList = window.COMMUNITIES_DATA || [];
+        if (currentCourse) {
+          const freshCourse = communitiesList.flatMap(c => c.courses).find(c => c.id === currentCourse.id);
+          if (freshCourse) {
+            currentCourse = freshCourse;
+          }
+        }
         populateCourseSelector(true);
         flattenLessons();
+        renderTree();
+        if (currentActiveLesson) {
+          const freshLesson = allFlattenedLessons.find(l => l.id === currentActiveLesson.id) || allFlattenedLessons[0];
+          if (freshLesson) {
+            loadLesson(freshLesson, true);
+          }
+        }
         updateProgressUI();
         return true;
       } catch (e) {

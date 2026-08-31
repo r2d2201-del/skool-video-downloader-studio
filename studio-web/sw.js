@@ -3,7 +3,7 @@
  * Cache-First for static assets, Stale-While-Revalidate for course catalog.
  */
 
-const CACHE_NAME = 'cinematic-studio-v2.6.5';
+const CACHE_NAME = 'cinematic-studio-v2.6.6';
 const STATIC_ASSETS = [
   './',
   './index.html',
