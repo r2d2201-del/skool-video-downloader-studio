@@ -7221,8 +7221,8 @@ window.COMMUNITIES_DATA = [
         "courseTitle": "3D Animated Editing Masteclass",
         "subtitle": "Formación completa de 3D Animated Editing Masteclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
-        "totalModules": 1,
-        "totalLessons": 1,
+        "totalModules": 3,
+        "totalLessons": 3,
         "totalResources": 0,
         "modules": [
           {
@@ -7241,6 +7241,50 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 1,
                 "gdriveId": "1BIhnL3I5bb7l5Tl1wKWLXqzY7RaYUt48",
                 "gdriveLink": "https://drive.google.com/file/d/1BIhnL3I5bb7l5Tl1wKWLXqzY7RaYUt48/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "folder": "03_The 3D Editing Workflow + Resources",
+            "title": "03_The 3D Editing Workflow + Resources",
+            "lessons": [
+              {
+                "id": "1a02cca46e3c4dd886579fe4acae4540",
+                "slug": "1a02cca4",
+                "index": 1,
+                "globalIndex": 2,
+                "title": "Free Asset Pack!",
+                "rawTitle": "Free Asset Pack!",
+                "module": "03_The 3D Editing Workflow + Resources",
+                "moduleIndex": 2,
+                "gdriveId": "1XAXgYw3GA3dfYVKUPNyLrH16WvLCewgU",
+                "gdriveLink": "https://drive.google.com/file/d/1XAXgYw3GA3dfYVKUPNyLrH16WvLCewgU/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 3,
+            "folder": "02_3D Style Breakdowns",
+            "title": "02_3D Style Breakdowns",
+            "lessons": [
+              {
+                "id": "43120f4437694f79be41c684775aa527",
+                "slug": "43120f44",
+                "index": 1,
+                "globalIndex": 3,
+                "title": "The Charles Editing Style Breakdown",
+                "rawTitle": "The Charles Editing Style Breakdown",
+                "module": "02_3D Style Breakdowns",
+                "moduleIndex": 3,
+                "gdriveId": "1ucXfMk52FEbnW4nFkxCaGb_jVKqCsDW4",
+                "gdriveLink": "https://drive.google.com/file/d/1ucXfMk52FEbnW4nFkxCaGb_jVKqCsDW4/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
