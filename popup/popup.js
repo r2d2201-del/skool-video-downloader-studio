@@ -767,7 +767,9 @@ document.addEventListener('DOMContentLoaded', async () => {
           course: course,
           module: safeModTitle,
           lessonTitle: safeLesTitle,
-          lessonIndex: les.index
+          lessonIndex: les.index,
+          lessonId: les.id,
+          resources: les.attachments || []
         };
 
         // Add video (all lessons have video URL)
@@ -1305,7 +1307,9 @@ document.addEventListener('DOMContentLoaded', async () => {
               course: course,
               module: safeMod,
               lessonTitle: safeTitle,
-              lessonIndex: found.index
+              lessonIndex: found.index,
+              lessonId: found.id,
+              resources: found.attachments || []
             };
 
             downloadDirectVideo({ url: found.videoUrl || found.url, title: `${idxStr}_${safeTitle}`, id: found.id }, destFolder, found.id, customCtx);

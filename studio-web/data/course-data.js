@@ -13,7 +13,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 7,
         "totalLessons": 34,
-        "totalResources": 145,
+        "totalResources": 163,
         "modules": [
           {
             "index": 1,
@@ -34,11 +34,11 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_2b234b70de1c4d0a870aead09061aa61_7",
+                    "id": "res_2b234b70de1c4d0a870aead09061aa61_10",
                     "lessonId": "2b234b70de1c4d0a870aead09061aa61",
-                    "moduleTitle": "01_Breaking Down Cinematic Editing",
-                    "lessonTitle": "01. What Cinematic Edits Look Like",
-                    "name": "Tablero de Figma · 01. What Cinematic Edits Look Like",
+                    "moduleTitle": "Breaking Down Cinematic Editing",
+                    "lessonTitle": "What Cinematic Edits Look Like",
+                    "name": "Tablero de Figma · What Cinematic Edits Look Like",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
@@ -62,9 +62,9 @@ window.COMMUNITIES_DATA = [
                   {
                     "id": "res_1af1218e6ffe41ae89bf798976035a13_0",
                     "lessonId": "1af1218e6ffe41ae89bf798976035a13",
-                    "moduleTitle": "01_Breaking Down Cinematic Editing",
-                    "lessonTitle": "02. Gathering Cinematic Inspiration",
-                    "name": "Tablero de Figma · 02. Gathering Cinematic Inspiration",
+                    "moduleTitle": "Breaking Down Cinematic Editing",
+                    "lessonTitle": "Gathering Cinematic Inspiration",
+                    "name": "Tablero de Figma · Gathering Cinematic Inspiration",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
@@ -86,11 +86,11 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_271f97b6488448078e807a69b2b327cc_36",
+                    "id": "res_271f97b6488448078e807a69b2b327cc_28",
                     "lessonId": "271f97b6488448078e807a69b2b327cc",
-                    "moduleTitle": "01_Breaking Down Cinematic Editing",
-                    "lessonTitle": "03. Breaking Down Cinematic Reels",
-                    "name": "Tablero de Figma · 03. Breaking Down Cinematic Reels",
+                    "moduleTitle": "Breaking Down Cinematic Editing",
+                    "lessonTitle": "Breaking Down Cinematic Reels",
+                    "name": "Tablero de Figma · Breaking Down Cinematic Reels",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
@@ -112,25 +112,25 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_77e277f3ee4c4a5e83cb2fddc2908e3d_15",
+                    "id": "res_77e277f3ee4c4a5e83cb2fddc2908e3d_4",
                     "lessonId": "77e277f3ee4c4a5e83cb2fddc2908e3d",
-                    "moduleTitle": "01_Breaking Down Cinematic Editing",
-                    "lessonTitle": "04. Planning out our Animation",
-                    "name": "Tablero de Figma · 04. Planning out our Animation",
+                    "moduleTitle": "Breaking Down Cinematic Editing",
+                    "lessonTitle": "Planning out our Animation",
+                    "name": "Tablero de Figma · Planning out our Animation",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_77e277f3ee4c4a5e83cb2fddc2908e3d_16",
+                    "id": "res_77e277f3ee4c4a5e83cb2fddc2908e3d_5",
                     "lessonId": "77e277f3ee4c4a5e83cb2fddc2908e3d",
-                    "moduleTitle": "01_Breaking Down Cinematic Editing",
-                    "lessonTitle": "04. Planning out our Animation",
-                    "name": "Google Drive (Archivos/Presets) · 04. Planning out our Animation",
+                    "moduleTitle": "Breaking Down Cinematic Editing",
+                    "lessonTitle": "Planning out our Animation",
+                    "name": "Carpeta Google Drive · Planning out our Animation",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -156,25 +156,25 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_e46dbb64cc43427e9209025bb85a2c64_10",
+                    "id": "res_e46dbb64cc43427e9209025bb85a2c64_6",
                     "lessonId": "e46dbb64cc43427e9209025bb85a2c64",
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "lessonTitle": "01. Cutting & Pacing Fundamentals",
-                    "name": "Tablero de Figma · 01. Cutting & Pacing Fundamentals",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Cutting & Pacing Fundamentals",
+                    "name": "Tablero de Figma · Cutting & Pacing Fundamentals",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_e46dbb64cc43427e9209025bb85a2c64_11",
+                    "id": "res_e46dbb64cc43427e9209025bb85a2c64_7",
                     "lessonId": "e46dbb64cc43427e9209025bb85a2c64",
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "lessonTitle": "01. Cutting & Pacing Fundamentals",
-                    "name": "Google Drive (Archivos/Presets) · 01. Cutting & Pacing Fundamentals",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Cutting & Pacing Fundamentals",
+                    "name": "Carpeta Google Drive · Cutting & Pacing Fundamentals",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -195,9 +195,9 @@ window.COMMUNITIES_DATA = [
                   {
                     "id": "res_a22eea10cd184351a42db71f37bb30bb_8",
                     "lessonId": "a22eea10cd184351a42db71f37bb30bb",
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "lessonTitle": "02. Creating Shorts from Long-Form (Theory)",
-                    "name": "Tablero de Figma · 02. Creating Shorts from Long-Form (Theory)",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Creating Shorts from Long-Form (Theory)",
+                    "name": "Tablero de Figma · Creating Shorts from Long-Form (Theory)",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
@@ -206,12 +206,12 @@ window.COMMUNITIES_DATA = [
                   {
                     "id": "res_a22eea10cd184351a42db71f37bb30bb_9",
                     "lessonId": "a22eea10cd184351a42db71f37bb30bb",
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "lessonTitle": "02. Creating Shorts from Long-Form (Theory)",
-                    "name": "Google Drive (Archivos/Presets) · 02. Creating Shorts from Long-Form (Theory)",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Creating Shorts from Long-Form (Theory)",
+                    "name": "Carpeta Google Drive · Creating Shorts from Long-Form (Theory)",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -230,36 +230,36 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_1c5e05c0940348b293b4794a32da6aab_1",
+                    "id": "res_1c5e05c0940348b293b4794a32da6aab_34",
                     "lessonId": "1c5e05c0940348b293b4794a32da6aab",
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "lessonTitle": "03. Creating Short-Form Clips (Practice)",
-                    "name": "Tablero de Figma · 03. Creating Short-Form Clips (Practice)",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Creating Short-Form Clips (Practice)",
+                    "name": "Tablero de Figma · Creating Short-Form Clips (Practice)",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_1c5e05c0940348b293b4794a32da6aab_2",
+                    "id": "res_1c5e05c0940348b293b4794a32da6aab_35",
                     "lessonId": "1c5e05c0940348b293b4794a32da6aab",
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "lessonTitle": "03. Creating Short-Form Clips (Practice)",
-                    "name": "Google Drive (Archivos/Presets) · 03. Creating Short-Form Clips (Practice)",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Creating Short-Form Clips (Practice)",
+                    "name": "Carpeta Google Drive · Creating Short-Form Clips (Practice)",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_1c5e05c0940348b293b4794a32da6aab_3",
+                    "id": "res_1c5e05c0940348b293b4794a32da6aab_36",
                     "lessonId": "1c5e05c0940348b293b4794a32da6aab",
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "lessonTitle": "03. Creating Short-Form Clips (Practice)",
-                    "name": "Google Drive (Archivos/Presets) · 03. Creating Short-Form Clips (Practice)",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Creating Short-Form Clips (Practice)",
+                    "name": "Carpeta Google Drive · Creating Short-Form Clips (Practice)",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -278,36 +278,36 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_d46921b6792044969dd9cfa1614eb7aa_4",
+                    "id": "res_d46921b6792044969dd9cfa1614eb7aa_1",
                     "lessonId": "d46921b6792044969dd9cfa1614eb7aa",
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "lessonTitle": "04. Extracting Short-Form Clips (Overview)",
-                    "name": "Tablero de Figma · 04. Extracting Short-Form Clips (Overview)",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Extracting Short-Form Clips (Overview)",
+                    "name": "Tablero de Figma · Extracting Short-Form Clips (Overview)",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_d46921b6792044969dd9cfa1614eb7aa_5",
+                    "id": "res_d46921b6792044969dd9cfa1614eb7aa_2",
                     "lessonId": "d46921b6792044969dd9cfa1614eb7aa",
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "lessonTitle": "04. Extracting Short-Form Clips (Overview)",
-                    "name": "Google Drive (Archivos/Presets) · 04. Extracting Short-Form Clips (Overview)",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Extracting Short-Form Clips (Overview)",
+                    "name": "Carpeta Google Drive · Extracting Short-Form Clips (Overview)",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_d46921b6792044969dd9cfa1614eb7aa_6",
+                    "id": "res_d46921b6792044969dd9cfa1614eb7aa_3",
                     "lessonId": "d46921b6792044969dd9cfa1614eb7aa",
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "lessonTitle": "04. Extracting Short-Form Clips (Overview)",
-                    "name": "Google Drive (Archivos/Presets) · 04. Extracting Short-Form Clips (Overview)",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Extracting Short-Form Clips (Overview)",
+                    "name": "Carpeta Google Drive · Extracting Short-Form Clips (Overview)",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -333,36 +333,36 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_b5e1b0991ede46b593994c7d3d4c94b7_12",
+                    "id": "res_b5e1b0991ede46b593994c7d3d4c94b7_15",
                     "lessonId": "b5e1b0991ede46b593994c7d3d4c94b7",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "01. B-roll Theory",
-                    "name": "Tablero de Figma · 01. B-roll Theory",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "B-roll Theory",
+                    "name": "Tablero de Figma · B-roll Theory",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_b5e1b0991ede46b593994c7d3d4c94b7_13",
+                    "id": "res_b5e1b0991ede46b593994c7d3d4c94b7_16",
                     "lessonId": "b5e1b0991ede46b593994c7d3d4c94b7",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "01. B-roll Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. B-roll Theory",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "B-roll Theory",
+                    "name": "Carpeta Google Drive · B-roll Theory",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_b5e1b0991ede46b593994c7d3d4c94b7_14",
+                    "id": "res_b5e1b0991ede46b593994c7d3d4c94b7_17",
                     "lessonId": "b5e1b0991ede46b593994c7d3d4c94b7",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "01. B-roll Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. B-roll Theory",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "B-roll Theory",
+                    "name": "Carpeta Google Drive · B-roll Theory",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -381,47 +381,47 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_fafbccf9aa45415c898eaddeca3e3a16_17",
+                    "id": "res_fafbccf9aa45415c898eaddeca3e3a16_11",
                     "lessonId": "fafbccf9aa45415c898eaddeca3e3a16",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "02. Choosing B-roll For Your Story",
-                    "name": "Tablero de Figma · 02. Choosing B-roll For Your Story",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Choosing B-roll For Your Story",
+                    "name": "Tablero de Figma · Choosing B-roll For Your Story",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_fafbccf9aa45415c898eaddeca3e3a16_18",
+                    "id": "res_fafbccf9aa45415c898eaddeca3e3a16_12",
                     "lessonId": "fafbccf9aa45415c898eaddeca3e3a16",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "02. Choosing B-roll For Your Story",
-                    "name": "Google Drive (Archivos/Presets) · 02. Choosing B-roll For Your Story",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Choosing B-roll For Your Story",
+                    "name": "Carpeta Google Drive · Choosing B-roll For Your Story",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_fafbccf9aa45415c898eaddeca3e3a16_19",
+                    "id": "res_fafbccf9aa45415c898eaddeca3e3a16_13",
                     "lessonId": "fafbccf9aa45415c898eaddeca3e3a16",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "02. Choosing B-roll For Your Story",
-                    "name": "Google Drive (Archivos/Presets) · 02. Choosing B-roll For Your Story",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Choosing B-roll For Your Story",
+                    "name": "Carpeta Google Drive · Choosing B-roll For Your Story",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_fafbccf9aa45415c898eaddeca3e3a16_20",
+                    "id": "res_fafbccf9aa45415c898eaddeca3e3a16_14",
                     "lessonId": "fafbccf9aa45415c898eaddeca3e3a16",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "02. Choosing B-roll For Your Story",
-                    "name": "Google Drive (Archivos/Presets) · 02. Choosing B-roll For Your Story",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Choosing B-roll For Your Story",
+                    "name": "Carpeta Google Drive · Choosing B-roll For Your Story",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -440,58 +440,58 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_7b9b5b588cdf4bebb0a2db31d6a9af59_26",
+                    "id": "res_7b9b5b588cdf4bebb0a2db31d6a9af59_47",
                     "lessonId": "7b9b5b588cdf4bebb0a2db31d6a9af59",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "03. Collecting Stock Footage",
-                    "name": "Tablero de Figma · 03. Collecting Stock Footage",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Collecting Stock Footage",
+                    "name": "Tablero de Figma · Collecting Stock Footage",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_7b9b5b588cdf4bebb0a2db31d6a9af59_27",
+                    "id": "res_7b9b5b588cdf4bebb0a2db31d6a9af59_48",
                     "lessonId": "7b9b5b588cdf4bebb0a2db31d6a9af59",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "03. Collecting Stock Footage",
-                    "name": "Google Drive (Archivos/Presets) · 03. Collecting Stock Footage",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Collecting Stock Footage",
+                    "name": "Carpeta Google Drive · Collecting Stock Footage",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_7b9b5b588cdf4bebb0a2db31d6a9af59_28",
+                    "id": "res_7b9b5b588cdf4bebb0a2db31d6a9af59_49",
                     "lessonId": "7b9b5b588cdf4bebb0a2db31d6a9af59",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "03. Collecting Stock Footage",
-                    "name": "Google Drive (Archivos/Presets) · 03. Collecting Stock Footage",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Collecting Stock Footage",
+                    "name": "Carpeta Google Drive · Collecting Stock Footage",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_7b9b5b588cdf4bebb0a2db31d6a9af59_29",
+                    "id": "res_7b9b5b588cdf4bebb0a2db31d6a9af59_50",
                     "lessonId": "7b9b5b588cdf4bebb0a2db31d6a9af59",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "03. Collecting Stock Footage",
-                    "name": "Google Drive (Archivos/Presets) · 03. Collecting Stock Footage",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Collecting Stock Footage",
+                    "name": "Carpeta Google Drive · Collecting Stock Footage",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_7b9b5b588cdf4bebb0a2db31d6a9af59_30",
+                    "id": "res_7b9b5b588cdf4bebb0a2db31d6a9af59_51",
                     "lessonId": "7b9b5b588cdf4bebb0a2db31d6a9af59",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "03. Collecting Stock Footage",
-                    "name": "Google Drive (Archivos/Presets) · 03. Collecting Stock Footage",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Collecting Stock Footage",
+                    "name": "Carpeta Google Drive · Collecting Stock Footage",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -510,58 +510,102 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_21",
+                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_18",
                     "lessonId": "8418b329db8e41eab6af29cca7bbaa4d",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "04. Storytelling with B-roll",
-                    "name": "Tablero de Figma · 04. Storytelling with B-roll",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Tablero de Figma · Storytelling with B-roll",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_22",
+                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_19",
                     "lessonId": "8418b329db8e41eab6af29cca7bbaa4d",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "04. Storytelling with B-roll",
-                    "name": "Google Drive (Archivos/Presets) · 04. Storytelling with B-roll",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_23",
+                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_20",
                     "lessonId": "8418b329db8e41eab6af29cca7bbaa4d",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "04. Storytelling with B-roll",
-                    "name": "Google Drive (Archivos/Presets) · 04. Storytelling with B-roll",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_24",
+                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_21",
                     "lessonId": "8418b329db8e41eab6af29cca7bbaa4d",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "04. Storytelling with B-roll",
-                    "name": "Google Drive (Archivos/Presets) · 04. Storytelling with B-roll",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_25",
+                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_22",
                     "lessonId": "8418b329db8e41eab6af29cca7bbaa4d",
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "lessonTitle": "04. Storytelling with B-roll",
-                    "name": "Google Drive (Archivos/Presets) · 04. Storytelling with B-roll",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_d4b8dab0968f4201997468b52bac4ca0_133",
+                    "lessonId": "d4b8dab0968f4201997468b52bac4ca0",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Tablero de Figma · Storytelling with B-roll",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "res_d4b8dab0968f4201997468b52bac4ca0_134",
+                    "lessonId": "d4b8dab0968f4201997468b52bac4ca0",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
+                    "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_d4b8dab0968f4201997468b52bac4ca0_135",
+                    "lessonId": "d4b8dab0968f4201997468b52bac4ca0",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
+                    "url": "https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_d4b8dab0968f4201997468b52bac4ca0_136",
+                    "lessonId": "d4b8dab0968f4201997468b52bac4ca0",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
+                    "url": "https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -587,58 +631,58 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_89b761d4c6524f609f2defcc141969d7_31",
+                    "id": "res_89b761d4c6524f609f2defcc141969d7_23",
                     "lessonId": "89b761d4c6524f609f2defcc141969d7",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "01. The Text Theory",
-                    "name": "Tablero de Figma · 01. The Text Theory",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "The Text Theory",
+                    "name": "Tablero de Figma · The Text Theory",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_89b761d4c6524f609f2defcc141969d7_32",
+                    "id": "res_89b761d4c6524f609f2defcc141969d7_24",
                     "lessonId": "89b761d4c6524f609f2defcc141969d7",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "01. The Text Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. The Text Theory",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "The Text Theory",
+                    "name": "Carpeta Google Drive · The Text Theory",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_89b761d4c6524f609f2defcc141969d7_33",
+                    "id": "res_89b761d4c6524f609f2defcc141969d7_25",
                     "lessonId": "89b761d4c6524f609f2defcc141969d7",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "01. The Text Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. The Text Theory",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "The Text Theory",
+                    "name": "Carpeta Google Drive · The Text Theory",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_89b761d4c6524f609f2defcc141969d7_34",
+                    "id": "res_89b761d4c6524f609f2defcc141969d7_26",
                     "lessonId": "89b761d4c6524f609f2defcc141969d7",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "01. The Text Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. The Text Theory",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "The Text Theory",
+                    "name": "Carpeta Google Drive · The Text Theory",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_89b761d4c6524f609f2defcc141969d7_35",
+                    "id": "res_89b761d4c6524f609f2defcc141969d7_27",
                     "lessonId": "89b761d4c6524f609f2defcc141969d7",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "01. The Text Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. The Text Theory",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "The Text Theory",
+                    "name": "Carpeta Google Drive · The Text Theory",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -657,58 +701,58 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_99374afc1c244a689d1b5ac25a92851d_37",
+                    "id": "res_99374afc1c244a689d1b5ac25a92851d_29",
                     "lessonId": "99374afc1c244a689d1b5ac25a92851d",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "02. Default Text Workflow",
-                    "name": "Tablero de Figma · 02. Default Text Workflow",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Default Text Workflow",
+                    "name": "Tablero de Figma · Default Text Workflow",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_99374afc1c244a689d1b5ac25a92851d_38",
+                    "id": "res_99374afc1c244a689d1b5ac25a92851d_30",
                     "lessonId": "99374afc1c244a689d1b5ac25a92851d",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "02. Default Text Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 02. Default Text Workflow",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Default Text Workflow",
+                    "name": "Carpeta Google Drive · Default Text Workflow",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_99374afc1c244a689d1b5ac25a92851d_39",
+                    "id": "res_99374afc1c244a689d1b5ac25a92851d_31",
                     "lessonId": "99374afc1c244a689d1b5ac25a92851d",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "02. Default Text Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 02. Default Text Workflow",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Default Text Workflow",
+                    "name": "Carpeta Google Drive · Default Text Workflow",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_99374afc1c244a689d1b5ac25a92851d_40",
+                    "id": "res_99374afc1c244a689d1b5ac25a92851d_32",
                     "lessonId": "99374afc1c244a689d1b5ac25a92851d",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "02. Default Text Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 02. Default Text Workflow",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Default Text Workflow",
+                    "name": "Carpeta Google Drive · Default Text Workflow",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_99374afc1c244a689d1b5ac25a92851d_41",
+                    "id": "res_99374afc1c244a689d1b5ac25a92851d_33",
                     "lessonId": "99374afc1c244a689d1b5ac25a92851d",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "02. Default Text Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 02. Default Text Workflow",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Default Text Workflow",
+                    "name": "Carpeta Google Drive · Default Text Workflow",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -729,9 +773,9 @@ window.COMMUNITIES_DATA = [
                   {
                     "id": "res_4bafd88eb7dc43b8ad37943d62a7051b_42",
                     "lessonId": "4bafd88eb7dc43b8ad37943d62a7051b",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "03. How to Special Design Text",
-                    "name": "Tablero de Figma · 03. How to Special Design Text",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "How to Special Design Text",
+                    "name": "Tablero de Figma · How to Special Design Text",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
@@ -740,45 +784,45 @@ window.COMMUNITIES_DATA = [
                   {
                     "id": "res_4bafd88eb7dc43b8ad37943d62a7051b_43",
                     "lessonId": "4bafd88eb7dc43b8ad37943d62a7051b",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "03. How to Special Design Text",
-                    "name": "Google Drive (Archivos/Presets) · 03. How to Special Design Text",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "How to Special Design Text",
+                    "name": "Carpeta Google Drive · How to Special Design Text",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_4bafd88eb7dc43b8ad37943d62a7051b_44",
                     "lessonId": "4bafd88eb7dc43b8ad37943d62a7051b",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "03. How to Special Design Text",
-                    "name": "Google Drive (Archivos/Presets) · 03. How to Special Design Text",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "How to Special Design Text",
+                    "name": "Carpeta Google Drive · How to Special Design Text",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_4bafd88eb7dc43b8ad37943d62a7051b_45",
                     "lessonId": "4bafd88eb7dc43b8ad37943d62a7051b",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "03. How to Special Design Text",
-                    "name": "Google Drive (Archivos/Presets) · 03. How to Special Design Text",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "How to Special Design Text",
+                    "name": "Carpeta Google Drive · How to Special Design Text",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_4bafd88eb7dc43b8ad37943d62a7051b_46",
                     "lessonId": "4bafd88eb7dc43b8ad37943d62a7051b",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "03. How to Special Design Text",
-                    "name": "Google Drive (Archivos/Presets) · 03. How to Special Design Text",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "How to Special Design Text",
+                    "name": "Carpeta Google Drive · How to Special Design Text",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -797,58 +841,58 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_51786b7a38d04460a94cd357240db147_69",
+                    "id": "res_51786b7a38d04460a94cd357240db147_37",
                     "lessonId": "51786b7a38d04460a94cd357240db147",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "04. 3D Warped Text Effect",
-                    "name": "Tablero de Figma · 04. 3D Warped Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "3D Warped Text Effect",
+                    "name": "Tablero de Figma · 3D Warped Text Effect",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_51786b7a38d04460a94cd357240db147_70",
+                    "id": "res_51786b7a38d04460a94cd357240db147_38",
                     "lessonId": "51786b7a38d04460a94cd357240db147",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "04. 3D Warped Text Effect",
-                    "name": "Google Drive (Archivos/Presets) · 04. 3D Warped Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "3D Warped Text Effect",
+                    "name": "Carpeta Google Drive · 3D Warped Text Effect",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_51786b7a38d04460a94cd357240db147_71",
+                    "id": "res_51786b7a38d04460a94cd357240db147_39",
                     "lessonId": "51786b7a38d04460a94cd357240db147",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "04. 3D Warped Text Effect",
-                    "name": "Google Drive (Archivos/Presets) · 04. 3D Warped Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "3D Warped Text Effect",
+                    "name": "Carpeta Google Drive · 3D Warped Text Effect",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_51786b7a38d04460a94cd357240db147_72",
+                    "id": "res_51786b7a38d04460a94cd357240db147_40",
                     "lessonId": "51786b7a38d04460a94cd357240db147",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "04. 3D Warped Text Effect",
-                    "name": "Google Drive (Archivos/Presets) · 04. 3D Warped Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "3D Warped Text Effect",
+                    "name": "Carpeta Google Drive · 3D Warped Text Effect",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_51786b7a38d04460a94cd357240db147_73",
+                    "id": "res_51786b7a38d04460a94cd357240db147_41",
                     "lessonId": "51786b7a38d04460a94cd357240db147",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "04. 3D Warped Text Effect",
-                    "name": "Google Drive (Archivos/Presets) · 04. 3D Warped Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "3D Warped Text Effect",
+                    "name": "Carpeta Google Drive · 3D Warped Text Effect",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -867,58 +911,58 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_4354e2bfd21043bbb6e9f6fd96a1ad11_53",
+                    "id": "res_4354e2bfd21043bbb6e9f6fd96a1ad11_74",
                     "lessonId": "4354e2bfd21043bbb6e9f6fd96a1ad11",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "05. Blending Text Effect",
-                    "name": "Tablero de Figma · 05. Blending Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Blending Text Effect",
+                    "name": "Tablero de Figma · Blending Text Effect",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_4354e2bfd21043bbb6e9f6fd96a1ad11_54",
+                    "id": "res_4354e2bfd21043bbb6e9f6fd96a1ad11_75",
                     "lessonId": "4354e2bfd21043bbb6e9f6fd96a1ad11",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "05. Blending Text Effect",
-                    "name": "Google Drive (Archivos/Presets) · 05. Blending Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Blending Text Effect",
+                    "name": "Carpeta Google Drive · Blending Text Effect",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_4354e2bfd21043bbb6e9f6fd96a1ad11_55",
+                    "id": "res_4354e2bfd21043bbb6e9f6fd96a1ad11_76",
                     "lessonId": "4354e2bfd21043bbb6e9f6fd96a1ad11",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "05. Blending Text Effect",
-                    "name": "Google Drive (Archivos/Presets) · 05. Blending Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Blending Text Effect",
+                    "name": "Carpeta Google Drive · Blending Text Effect",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_4354e2bfd21043bbb6e9f6fd96a1ad11_56",
+                    "id": "res_4354e2bfd21043bbb6e9f6fd96a1ad11_77",
                     "lessonId": "4354e2bfd21043bbb6e9f6fd96a1ad11",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "05. Blending Text Effect",
-                    "name": "Google Drive (Archivos/Presets) · 05. Blending Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Blending Text Effect",
+                    "name": "Carpeta Google Drive · Blending Text Effect",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_4354e2bfd21043bbb6e9f6fd96a1ad11_57",
+                    "id": "res_4354e2bfd21043bbb6e9f6fd96a1ad11_78",
                     "lessonId": "4354e2bfd21043bbb6e9f6fd96a1ad11",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "05. Blending Text Effect",
-                    "name": "Google Drive (Archivos/Presets) · 05. Blending Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Blending Text Effect",
+                    "name": "Carpeta Google Drive · Blending Text Effect",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -937,58 +981,58 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_75aed36d7b3442c9ad86be5adce7f71a_74",
+                    "id": "res_75aed36d7b3442c9ad86be5adce7f71a_63",
                     "lessonId": "75aed36d7b3442c9ad86be5adce7f71a",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "06. Tracking Text Effect",
-                    "name": "Tablero de Figma · 06. Tracking Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Tracking Text Effect",
+                    "name": "Tablero de Figma · Tracking Text Effect",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_75aed36d7b3442c9ad86be5adce7f71a_75",
+                    "id": "res_75aed36d7b3442c9ad86be5adce7f71a_64",
                     "lessonId": "75aed36d7b3442c9ad86be5adce7f71a",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "06. Tracking Text Effect",
-                    "name": "Google Drive (Archivos/Presets) · 06. Tracking Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Tracking Text Effect",
+                    "name": "Carpeta Google Drive · Tracking Text Effect",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_75aed36d7b3442c9ad86be5adce7f71a_76",
+                    "id": "res_75aed36d7b3442c9ad86be5adce7f71a_65",
                     "lessonId": "75aed36d7b3442c9ad86be5adce7f71a",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "06. Tracking Text Effect",
-                    "name": "Google Drive (Archivos/Presets) · 06. Tracking Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Tracking Text Effect",
+                    "name": "Carpeta Google Drive · Tracking Text Effect",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_75aed36d7b3442c9ad86be5adce7f71a_77",
+                    "id": "res_75aed36d7b3442c9ad86be5adce7f71a_66",
                     "lessonId": "75aed36d7b3442c9ad86be5adce7f71a",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "06. Tracking Text Effect",
-                    "name": "Google Drive (Archivos/Presets) · 06. Tracking Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Tracking Text Effect",
+                    "name": "Carpeta Google Drive · Tracking Text Effect",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_75aed36d7b3442c9ad86be5adce7f71a_78",
+                    "id": "res_75aed36d7b3442c9ad86be5adce7f71a_67",
                     "lessonId": "75aed36d7b3442c9ad86be5adce7f71a",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "06. Tracking Text Effect",
-                    "name": "Google Drive (Archivos/Presets) · 06. Tracking Text Effect",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Tracking Text Effect",
+                    "name": "Carpeta Google Drive · Tracking Text Effect",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1007,58 +1051,58 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_19ef8744ff9c4c21b25711625a8fd4e5_85",
+                    "id": "res_19ef8744ff9c4c21b25711625a8fd4e5_52",
                     "lessonId": "19ef8744ff9c4c21b25711625a8fd4e5",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "07. Integrating Text into B-roll",
-                    "name": "Tablero de Figma · 07. Integrating Text into B-roll",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Integrating Text into B-roll",
+                    "name": "Tablero de Figma · Integrating Text into B-roll",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_19ef8744ff9c4c21b25711625a8fd4e5_86",
+                    "id": "res_19ef8744ff9c4c21b25711625a8fd4e5_53",
                     "lessonId": "19ef8744ff9c4c21b25711625a8fd4e5",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "07. Integrating Text into B-roll",
-                    "name": "Google Drive (Archivos/Presets) · 07. Integrating Text into B-roll",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Integrating Text into B-roll",
+                    "name": "Carpeta Google Drive · Integrating Text into B-roll",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_19ef8744ff9c4c21b25711625a8fd4e5_87",
+                    "id": "res_19ef8744ff9c4c21b25711625a8fd4e5_54",
                     "lessonId": "19ef8744ff9c4c21b25711625a8fd4e5",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "07. Integrating Text into B-roll",
-                    "name": "Google Drive (Archivos/Presets) · 07. Integrating Text into B-roll",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Integrating Text into B-roll",
+                    "name": "Carpeta Google Drive · Integrating Text into B-roll",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_19ef8744ff9c4c21b25711625a8fd4e5_88",
+                    "id": "res_19ef8744ff9c4c21b25711625a8fd4e5_55",
                     "lessonId": "19ef8744ff9c4c21b25711625a8fd4e5",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "07. Integrating Text into B-roll",
-                    "name": "Google Drive (Archivos/Presets) · 07. Integrating Text into B-roll",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Integrating Text into B-roll",
+                    "name": "Carpeta Google Drive · Integrating Text into B-roll",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_19ef8744ff9c4c21b25711625a8fd4e5_89",
+                    "id": "res_19ef8744ff9c4c21b25711625a8fd4e5_56",
                     "lessonId": "19ef8744ff9c4c21b25711625a8fd4e5",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "07. Integrating Text into B-roll",
-                    "name": "Google Drive (Archivos/Presets) · 07. Integrating Text into B-roll",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Integrating Text into B-roll",
+                    "name": "Carpeta Google Drive · Integrating Text into B-roll",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1077,58 +1121,102 @@ window.COMMUNITIES_DATA = [
                 "inDrive": false,
                 "resources": [
                   {
-                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_64",
+                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_85",
                     "lessonId": "7073fd31eef54f2a9c8903567fb3753c",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "08. Recap: Complete Text Workflow",
-                    "name": "Tablero de Figma · 08. Recap: Complete Text Workflow",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Recap: Complete Text Workflow",
+                    "name": "Tablero de Figma · Recap: Complete Text Workflow",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_65",
+                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_86",
                     "lessonId": "7073fd31eef54f2a9c8903567fb3753c",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "08. Recap: Complete Text Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 08. Recap: Complete Text Workflow",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Recap: Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Recap: Complete Text Workflow",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_66",
+                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_87",
                     "lessonId": "7073fd31eef54f2a9c8903567fb3753c",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "08. Recap: Complete Text Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 08. Recap: Complete Text Workflow",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Recap: Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Recap: Complete Text Workflow",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_67",
+                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_88",
                     "lessonId": "7073fd31eef54f2a9c8903567fb3753c",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "08. Recap: Complete Text Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 08. Recap: Complete Text Workflow",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Recap: Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Recap: Complete Text Workflow",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_68",
+                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_89",
                     "lessonId": "7073fd31eef54f2a9c8903567fb3753c",
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "lessonTitle": "08. Recap: Complete Text Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 08. Recap: Complete Text Workflow",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Recap: Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Recap: Complete Text Workflow",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_129",
+                    "lessonId": "9d8e61a31ae0487a9c28079ffc444cd1",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Complete Text Workflow",
+                    "name": "Tablero de Figma · Complete Text Workflow",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_130",
+                    "lessonId": "9d8e61a31ae0487a9c28079ffc444cd1",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Complete Text Workflow",
+                    "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_131",
+                    "lessonId": "9d8e61a31ae0487a9c28079ffc444cd1",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Complete Text Workflow",
+                    "url": "https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_132",
+                    "lessonId": "9d8e61a31ae0487a9c28079ffc444cd1",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Complete Text Workflow",
+                    "url": "https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1154,69 +1242,69 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_71ebf19ebc734ad9b6f8118acabdaf56_47",
+                    "id": "res_71ebf19ebc734ad9b6f8118acabdaf56_57",
                     "lessonId": "71ebf19ebc734ad9b6f8118acabdaf56",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "01. Cinematic Sound Design Theory",
-                    "name": "Tablero de Figma · 01. Cinematic Sound Design Theory",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Cinematic Sound Design Theory",
+                    "name": "Tablero de Figma · Cinematic Sound Design Theory",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_71ebf19ebc734ad9b6f8118acabdaf56_48",
+                    "id": "res_71ebf19ebc734ad9b6f8118acabdaf56_58",
                     "lessonId": "71ebf19ebc734ad9b6f8118acabdaf56",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "01. Cinematic Sound Design Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. Cinematic Sound Design Theory",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Cinematic Sound Design Theory",
+                    "name": "Carpeta Google Drive · Cinematic Sound Design Theory",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_71ebf19ebc734ad9b6f8118acabdaf56_49",
+                    "id": "res_71ebf19ebc734ad9b6f8118acabdaf56_59",
                     "lessonId": "71ebf19ebc734ad9b6f8118acabdaf56",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "01. Cinematic Sound Design Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. Cinematic Sound Design Theory",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Cinematic Sound Design Theory",
+                    "name": "Carpeta Google Drive · Cinematic Sound Design Theory",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_71ebf19ebc734ad9b6f8118acabdaf56_50",
+                    "id": "res_71ebf19ebc734ad9b6f8118acabdaf56_60",
                     "lessonId": "71ebf19ebc734ad9b6f8118acabdaf56",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "01. Cinematic Sound Design Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. Cinematic Sound Design Theory",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Cinematic Sound Design Theory",
+                    "name": "Carpeta Google Drive · Cinematic Sound Design Theory",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_71ebf19ebc734ad9b6f8118acabdaf56_51",
+                    "id": "res_71ebf19ebc734ad9b6f8118acabdaf56_61",
                     "lessonId": "71ebf19ebc734ad9b6f8118acabdaf56",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "01. Cinematic Sound Design Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. Cinematic Sound Design Theory",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Cinematic Sound Design Theory",
+                    "name": "Carpeta Google Drive · Cinematic Sound Design Theory",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_71ebf19ebc734ad9b6f8118acabdaf56_52",
+                    "id": "res_71ebf19ebc734ad9b6f8118acabdaf56_62",
                     "lessonId": "71ebf19ebc734ad9b6f8118acabdaf56",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "01. Cinematic Sound Design Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. Cinematic Sound Design Theory",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Cinematic Sound Design Theory",
+                    "name": "Carpeta Google Drive · Cinematic Sound Design Theory",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1235,69 +1323,69 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_f2a65983bf024166b2ff2a6a44f66c6f_115",
+                    "id": "res_f2a65983bf024166b2ff2a6a44f66c6f_68",
                     "lessonId": "f2a65983bf024166b2ff2a6a44f66c6f",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "02. Environmental Sound Effects",
-                    "name": "Tablero de Figma · 02. Environmental Sound Effects",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Environmental Sound Effects",
+                    "name": "Tablero de Figma · Environmental Sound Effects",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_f2a65983bf024166b2ff2a6a44f66c6f_116",
+                    "id": "res_f2a65983bf024166b2ff2a6a44f66c6f_69",
                     "lessonId": "f2a65983bf024166b2ff2a6a44f66c6f",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "02. Environmental Sound Effects",
-                    "name": "Google Drive (Archivos/Presets) · 02. Environmental Sound Effects",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Environmental Sound Effects",
+                    "name": "Carpeta Google Drive · Environmental Sound Effects",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_f2a65983bf024166b2ff2a6a44f66c6f_117",
+                    "id": "res_f2a65983bf024166b2ff2a6a44f66c6f_70",
                     "lessonId": "f2a65983bf024166b2ff2a6a44f66c6f",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "02. Environmental Sound Effects",
-                    "name": "Google Drive (Archivos/Presets) · 02. Environmental Sound Effects",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Environmental Sound Effects",
+                    "name": "Carpeta Google Drive · Environmental Sound Effects",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_f2a65983bf024166b2ff2a6a44f66c6f_118",
+                    "id": "res_f2a65983bf024166b2ff2a6a44f66c6f_71",
                     "lessonId": "f2a65983bf024166b2ff2a6a44f66c6f",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "02. Environmental Sound Effects",
-                    "name": "Google Drive (Archivos/Presets) · 02. Environmental Sound Effects",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Environmental Sound Effects",
+                    "name": "Carpeta Google Drive · Environmental Sound Effects",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_f2a65983bf024166b2ff2a6a44f66c6f_119",
+                    "id": "res_f2a65983bf024166b2ff2a6a44f66c6f_72",
                     "lessonId": "f2a65983bf024166b2ff2a6a44f66c6f",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "02. Environmental Sound Effects",
-                    "name": "Google Drive (Archivos/Presets) · 02. Environmental Sound Effects",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Environmental Sound Effects",
+                    "name": "Carpeta Google Drive · Environmental Sound Effects",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_f2a65983bf024166b2ff2a6a44f66c6f_120",
+                    "id": "res_f2a65983bf024166b2ff2a6a44f66c6f_73",
                     "lessonId": "f2a65983bf024166b2ff2a6a44f66c6f",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "02. Environmental Sound Effects",
-                    "name": "Google Drive (Archivos/Presets) · 02. Environmental Sound Effects",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Environmental Sound Effects",
+                    "name": "Carpeta Google Drive · Environmental Sound Effects",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1316,69 +1404,69 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_d4e4e1a4f63643cbbb36293a9e0210ce_58",
+                    "id": "res_d4e4e1a4f63643cbbb36293a9e0210ce_90",
                     "lessonId": "d4e4e1a4f63643cbbb36293a9e0210ce",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "03. Textured Sound Design Workflow",
-                    "name": "Tablero de Figma · 03. Textured Sound Design Workflow",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Textured Sound Design Workflow",
+                    "name": "Tablero de Figma · Textured Sound Design Workflow",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_d4e4e1a4f63643cbbb36293a9e0210ce_59",
+                    "id": "res_d4e4e1a4f63643cbbb36293a9e0210ce_91",
                     "lessonId": "d4e4e1a4f63643cbbb36293a9e0210ce",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "03. Textured Sound Design Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 03. Textured Sound Design Workflow",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Textured Sound Design Workflow",
+                    "name": "Carpeta Google Drive · Textured Sound Design Workflow",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_d4e4e1a4f63643cbbb36293a9e0210ce_60",
+                    "id": "res_d4e4e1a4f63643cbbb36293a9e0210ce_92",
                     "lessonId": "d4e4e1a4f63643cbbb36293a9e0210ce",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "03. Textured Sound Design Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 03. Textured Sound Design Workflow",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Textured Sound Design Workflow",
+                    "name": "Carpeta Google Drive · Textured Sound Design Workflow",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_d4e4e1a4f63643cbbb36293a9e0210ce_61",
+                    "id": "res_d4e4e1a4f63643cbbb36293a9e0210ce_93",
                     "lessonId": "d4e4e1a4f63643cbbb36293a9e0210ce",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "03. Textured Sound Design Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 03. Textured Sound Design Workflow",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Textured Sound Design Workflow",
+                    "name": "Carpeta Google Drive · Textured Sound Design Workflow",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_d4e4e1a4f63643cbbb36293a9e0210ce_62",
+                    "id": "res_d4e4e1a4f63643cbbb36293a9e0210ce_94",
                     "lessonId": "d4e4e1a4f63643cbbb36293a9e0210ce",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "03. Textured Sound Design Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 03. Textured Sound Design Workflow",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Textured Sound Design Workflow",
+                    "name": "Carpeta Google Drive · Textured Sound Design Workflow",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_d4e4e1a4f63643cbbb36293a9e0210ce_63",
+                    "id": "res_d4e4e1a4f63643cbbb36293a9e0210ce_95",
                     "lessonId": "d4e4e1a4f63643cbbb36293a9e0210ce",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "03. Textured Sound Design Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 03. Textured Sound Design Workflow",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Textured Sound Design Workflow",
+                    "name": "Carpeta Google Drive · Textured Sound Design Workflow",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1399,9 +1487,9 @@ window.COMMUNITIES_DATA = [
                   {
                     "id": "res_6148bbe9addd42c2a7e311aba3a4ac0d_79",
                     "lessonId": "6148bbe9addd42c2a7e311aba3a4ac0d",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "04. Creating Anticipation with Sound Design",
-                    "name": "Tablero de Figma · 04. Creating Anticipation with Sound Design",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Creating Anticipation with Sound Design",
+                    "name": "Tablero de Figma · Creating Anticipation with Sound Design",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
@@ -1410,56 +1498,56 @@ window.COMMUNITIES_DATA = [
                   {
                     "id": "res_6148bbe9addd42c2a7e311aba3a4ac0d_80",
                     "lessonId": "6148bbe9addd42c2a7e311aba3a4ac0d",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "04. Creating Anticipation with Sound Design",
-                    "name": "Google Drive (Archivos/Presets) · 04. Creating Anticipation with Sound Design",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Creating Anticipation with Sound Design",
+                    "name": "Carpeta Google Drive · Creating Anticipation with Sound Design",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_6148bbe9addd42c2a7e311aba3a4ac0d_81",
                     "lessonId": "6148bbe9addd42c2a7e311aba3a4ac0d",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "04. Creating Anticipation with Sound Design",
-                    "name": "Google Drive (Archivos/Presets) · 04. Creating Anticipation with Sound Design",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Creating Anticipation with Sound Design",
+                    "name": "Carpeta Google Drive · Creating Anticipation with Sound Design",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_6148bbe9addd42c2a7e311aba3a4ac0d_82",
                     "lessonId": "6148bbe9addd42c2a7e311aba3a4ac0d",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "04. Creating Anticipation with Sound Design",
-                    "name": "Google Drive (Archivos/Presets) · 04. Creating Anticipation with Sound Design",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Creating Anticipation with Sound Design",
+                    "name": "Carpeta Google Drive · Creating Anticipation with Sound Design",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_6148bbe9addd42c2a7e311aba3a4ac0d_83",
                     "lessonId": "6148bbe9addd42c2a7e311aba3a4ac0d",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "04. Creating Anticipation with Sound Design",
-                    "name": "Google Drive (Archivos/Presets) · 04. Creating Anticipation with Sound Design",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Creating Anticipation with Sound Design",
+                    "name": "Carpeta Google Drive · Creating Anticipation with Sound Design",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_6148bbe9addd42c2a7e311aba3a4ac0d_84",
                     "lessonId": "6148bbe9addd42c2a7e311aba3a4ac0d",
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "lessonTitle": "04. Creating Anticipation with Sound Design",
-                    "name": "Google Drive (Archivos/Presets) · 04. Creating Anticipation with Sound Design",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Creating Anticipation with Sound Design",
+                    "name": "Carpeta Google Drive · Creating Anticipation with Sound Design",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1485,80 +1573,80 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_90",
+                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_103",
                     "lessonId": "9acc2e5bdb084f5ab3307117b8eb330f",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "01. Cinematic Music Theory",
-                    "name": "Tablero de Figma · 01. Cinematic Music Theory",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Cinematic Music Theory",
+                    "name": "Tablero de Figma · Cinematic Music Theory",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_91",
+                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_104",
                     "lessonId": "9acc2e5bdb084f5ab3307117b8eb330f",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "01. Cinematic Music Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. Cinematic Music Theory",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Cinematic Music Theory",
+                    "name": "Carpeta Google Drive · Cinematic Music Theory",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_92",
+                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_105",
                     "lessonId": "9acc2e5bdb084f5ab3307117b8eb330f",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "01. Cinematic Music Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. Cinematic Music Theory",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Cinematic Music Theory",
+                    "name": "Carpeta Google Drive · Cinematic Music Theory",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_93",
+                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_106",
                     "lessonId": "9acc2e5bdb084f5ab3307117b8eb330f",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "01. Cinematic Music Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. Cinematic Music Theory",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Cinematic Music Theory",
+                    "name": "Carpeta Google Drive · Cinematic Music Theory",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_94",
+                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_107",
                     "lessonId": "9acc2e5bdb084f5ab3307117b8eb330f",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "01. Cinematic Music Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. Cinematic Music Theory",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Cinematic Music Theory",
+                    "name": "Carpeta Google Drive · Cinematic Music Theory",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_95",
+                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_108",
                     "lessonId": "9acc2e5bdb084f5ab3307117b8eb330f",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "01. Cinematic Music Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. Cinematic Music Theory",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Cinematic Music Theory",
+                    "name": "Carpeta Google Drive · Cinematic Music Theory",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_96",
+                    "id": "res_9acc2e5bdb084f5ab3307117b8eb330f_109",
                     "lessonId": "9acc2e5bdb084f5ab3307117b8eb330f",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "01. Cinematic Music Theory",
-                    "name": "Google Drive (Archivos/Presets) · 01. Cinematic Music Theory",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Cinematic Music Theory",
+                    "name": "Carpeta Google Drive · Cinematic Music Theory",
                     "url": "https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1577,80 +1665,80 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_a5c34a037bec41a38d4d2ea82d80bc5d_97",
+                    "id": "res_a5c34a037bec41a38d4d2ea82d80bc5d_96",
                     "lessonId": "a5c34a037bec41a38d4d2ea82d80bc5d",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "02. Testing Music Tracks",
-                    "name": "Tablero de Figma · 02. Testing Music Tracks",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Testing Music Tracks",
+                    "name": "Tablero de Figma · Testing Music Tracks",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_a5c34a037bec41a38d4d2ea82d80bc5d_98",
+                    "id": "res_a5c34a037bec41a38d4d2ea82d80bc5d_97",
                     "lessonId": "a5c34a037bec41a38d4d2ea82d80bc5d",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "02. Testing Music Tracks",
-                    "name": "Google Drive (Archivos/Presets) · 02. Testing Music Tracks",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Testing Music Tracks",
+                    "name": "Carpeta Google Drive · Testing Music Tracks",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_a5c34a037bec41a38d4d2ea82d80bc5d_98",
+                    "lessonId": "a5c34a037bec41a38d4d2ea82d80bc5d",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Testing Music Tracks",
+                    "name": "Carpeta Google Drive · Testing Music Tracks",
+                    "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_a5c34a037bec41a38d4d2ea82d80bc5d_99",
                     "lessonId": "a5c34a037bec41a38d4d2ea82d80bc5d",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "02. Testing Music Tracks",
-                    "name": "Google Drive (Archivos/Presets) · 02. Testing Music Tracks",
-                    "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Testing Music Tracks",
+                    "name": "Carpeta Google Drive · Testing Music Tracks",
+                    "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_a5c34a037bec41a38d4d2ea82d80bc5d_100",
                     "lessonId": "a5c34a037bec41a38d4d2ea82d80bc5d",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "02. Testing Music Tracks",
-                    "name": "Google Drive (Archivos/Presets) · 02. Testing Music Tracks",
-                    "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Testing Music Tracks",
+                    "name": "Carpeta Google Drive · Testing Music Tracks",
+                    "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_a5c34a037bec41a38d4d2ea82d80bc5d_101",
                     "lessonId": "a5c34a037bec41a38d4d2ea82d80bc5d",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "02. Testing Music Tracks",
-                    "name": "Google Drive (Archivos/Presets) · 02. Testing Music Tracks",
-                    "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Testing Music Tracks",
+                    "name": "Carpeta Google Drive · Testing Music Tracks",
+                    "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_a5c34a037bec41a38d4d2ea82d80bc5d_102",
                     "lessonId": "a5c34a037bec41a38d4d2ea82d80bc5d",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "02. Testing Music Tracks",
-                    "name": "Google Drive (Archivos/Presets) · 02. Testing Music Tracks",
-                    "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
-                    "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
-                    "badgeColor": "#3b82f6"
-                  },
-                  {
-                    "id": "res_a5c34a037bec41a38d4d2ea82d80bc5d_103",
-                    "lessonId": "a5c34a037bec41a38d4d2ea82d80bc5d",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "02. Testing Music Tracks",
-                    "name": "Google Drive (Archivos/Presets) · 02. Testing Music Tracks",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Testing Music Tracks",
+                    "name": "Carpeta Google Drive · Testing Music Tracks",
                     "url": "https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1669,80 +1757,80 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_0da3e387045741d980bf7755cf9b858b_104",
+                    "id": "res_0da3e387045741d980bf7755cf9b858b_110",
                     "lessonId": "0da3e387045741d980bf7755cf9b858b",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "03. Bonus Music Effects",
-                    "name": "Tablero de Figma · 03. Bonus Music Effects",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Bonus Music Effects",
+                    "name": "Tablero de Figma · Bonus Music Effects",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_0da3e387045741d980bf7755cf9b858b_105",
+                    "id": "res_0da3e387045741d980bf7755cf9b858b_111",
                     "lessonId": "0da3e387045741d980bf7755cf9b858b",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "03. Bonus Music Effects",
-                    "name": "Google Drive (Archivos/Presets) · 03. Bonus Music Effects",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Bonus Music Effects",
+                    "name": "Carpeta Google Drive · Bonus Music Effects",
                     "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_0da3e387045741d980bf7755cf9b858b_106",
+                    "id": "res_0da3e387045741d980bf7755cf9b858b_112",
                     "lessonId": "0da3e387045741d980bf7755cf9b858b",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "03. Bonus Music Effects",
-                    "name": "Google Drive (Archivos/Presets) · 03. Bonus Music Effects",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Bonus Music Effects",
+                    "name": "Carpeta Google Drive · Bonus Music Effects",
                     "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_0da3e387045741d980bf7755cf9b858b_107",
+                    "id": "res_0da3e387045741d980bf7755cf9b858b_113",
                     "lessonId": "0da3e387045741d980bf7755cf9b858b",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "03. Bonus Music Effects",
-                    "name": "Google Drive (Archivos/Presets) · 03. Bonus Music Effects",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Bonus Music Effects",
+                    "name": "Carpeta Google Drive · Bonus Music Effects",
                     "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_0da3e387045741d980bf7755cf9b858b_108",
+                    "id": "res_0da3e387045741d980bf7755cf9b858b_114",
                     "lessonId": "0da3e387045741d980bf7755cf9b858b",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "03. Bonus Music Effects",
-                    "name": "Google Drive (Archivos/Presets) · 03. Bonus Music Effects",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Bonus Music Effects",
+                    "name": "Carpeta Google Drive · Bonus Music Effects",
                     "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_0da3e387045741d980bf7755cf9b858b_109",
+                    "id": "res_0da3e387045741d980bf7755cf9b858b_115",
                     "lessonId": "0da3e387045741d980bf7755cf9b858b",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "03. Bonus Music Effects",
-                    "name": "Google Drive (Archivos/Presets) · 03. Bonus Music Effects",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Bonus Music Effects",
+                    "name": "Carpeta Google Drive · Bonus Music Effects",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_0da3e387045741d980bf7755cf9b858b_110",
+                    "id": "res_0da3e387045741d980bf7755cf9b858b_116",
                     "lessonId": "0da3e387045741d980bf7755cf9b858b",
-                    "moduleTitle": "06_Film-like Music",
-                    "lessonTitle": "03. Bonus Music Effects",
-                    "name": "Google Drive (Archivos/Presets) · 03. Bonus Music Effects",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Bonus Music Effects",
+                    "name": "Carpeta Google Drive · Bonus Music Effects",
                     "url": "https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1768,47 +1856,47 @@ window.COMMUNITIES_DATA = [
                 "inDrive": false,
                 "resources": [
                   {
-                    "id": "res_8243fb954af24339be94aaf44f41a781_111",
+                    "id": "res_8243fb954af24339be94aaf44f41a781_121",
                     "lessonId": "8243fb954af24339be94aaf44f41a781",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "01. Reveal: Cinematic Practice Project",
-                    "name": "Tablero de Figma · 01. Reveal: Cinematic Practice Project",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Reveal: Cinematic Practice Project",
+                    "name": "Tablero de Figma · Reveal: Cinematic Practice Project",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_8243fb954af24339be94aaf44f41a781_112",
+                    "id": "res_8243fb954af24339be94aaf44f41a781_122",
                     "lessonId": "8243fb954af24339be94aaf44f41a781",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "01. Reveal: Cinematic Practice Project",
-                    "name": "Google Drive (Archivos/Presets) · 01. Reveal: Cinematic Practice Project",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Reveal: Cinematic Practice Project",
+                    "name": "Carpeta Google Drive · Reveal: Cinematic Practice Project",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_8243fb954af24339be94aaf44f41a781_113",
+                    "id": "res_8243fb954af24339be94aaf44f41a781_123",
                     "lessonId": "8243fb954af24339be94aaf44f41a781",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "01. Reveal: Cinematic Practice Project",
-                    "name": "Google Drive (Archivos/Presets) · 01. Reveal: Cinematic Practice Project",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Reveal: Cinematic Practice Project",
+                    "name": "Carpeta Google Drive · Reveal: Cinematic Practice Project",
                     "url": "https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_8243fb954af24339be94aaf44f41a781_114",
+                    "id": "res_8243fb954af24339be94aaf44f41a781_124",
                     "lessonId": "8243fb954af24339be94aaf44f41a781",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "01. Reveal: Cinematic Practice Project",
-                    "name": "Google Drive (Archivos/Presets) · 01. Reveal: Cinematic Practice Project",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Reveal: Cinematic Practice Project",
+                    "name": "Carpeta Google Drive · Reveal: Cinematic Practice Project",
                     "url": "https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1827,47 +1915,47 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_03bc312abffe4d1daae9c0d4d792bdbc_121",
+                    "id": "res_03bc312abffe4d1daae9c0d4d792bdbc_117",
                     "lessonId": "03bc312abffe4d1daae9c0d4d792bdbc",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "02. Creating a Short-Form Clip",
-                    "name": "Tablero de Figma · 02. Creating a Short-Form Clip",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Creating a Short-Form Clip",
+                    "name": "Tablero de Figma · Creating a Short-Form Clip",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_03bc312abffe4d1daae9c0d4d792bdbc_122",
+                    "id": "res_03bc312abffe4d1daae9c0d4d792bdbc_118",
                     "lessonId": "03bc312abffe4d1daae9c0d4d792bdbc",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "02. Creating a Short-Form Clip",
-                    "name": "Google Drive (Archivos/Presets) · 02. Creating a Short-Form Clip",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Creating a Short-Form Clip",
+                    "name": "Carpeta Google Drive · Creating a Short-Form Clip",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_03bc312abffe4d1daae9c0d4d792bdbc_123",
+                    "id": "res_03bc312abffe4d1daae9c0d4d792bdbc_119",
                     "lessonId": "03bc312abffe4d1daae9c0d4d792bdbc",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "02. Creating a Short-Form Clip",
-                    "name": "Google Drive (Archivos/Presets) · 02. Creating a Short-Form Clip",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Creating a Short-Form Clip",
+                    "name": "Carpeta Google Drive · Creating a Short-Form Clip",
                     "url": "https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_03bc312abffe4d1daae9c0d4d792bdbc_124",
+                    "id": "res_03bc312abffe4d1daae9c0d4d792bdbc_120",
                     "lessonId": "03bc312abffe4d1daae9c0d4d792bdbc",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "02. Creating a Short-Form Clip",
-                    "name": "Google Drive (Archivos/Presets) · 02. Creating a Short-Form Clip",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Creating a Short-Form Clip",
+                    "name": "Carpeta Google Drive · Creating a Short-Form Clip",
                     "url": "https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1886,47 +1974,47 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_e3029dccbd7b4c30bccda71d9f4ab74e_129",
+                    "id": "res_e3029dccbd7b4c30bccda71d9f4ab74e_125",
                     "lessonId": "e3029dccbd7b4c30bccda71d9f4ab74e",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "03. Planning My Practice Project",
-                    "name": "Tablero de Figma · 03. Planning My Practice Project",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Planning My Practice Project",
+                    "name": "Tablero de Figma · Planning My Practice Project",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_e3029dccbd7b4c30bccda71d9f4ab74e_130",
+                    "id": "res_e3029dccbd7b4c30bccda71d9f4ab74e_126",
                     "lessonId": "e3029dccbd7b4c30bccda71d9f4ab74e",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "03. Planning My Practice Project",
-                    "name": "Google Drive (Archivos/Presets) · 03. Planning My Practice Project",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Planning My Practice Project",
+                    "name": "Carpeta Google Drive · Planning My Practice Project",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_e3029dccbd7b4c30bccda71d9f4ab74e_131",
+                    "id": "res_e3029dccbd7b4c30bccda71d9f4ab74e_127",
                     "lessonId": "e3029dccbd7b4c30bccda71d9f4ab74e",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "03. Planning My Practice Project",
-                    "name": "Google Drive (Archivos/Presets) · 03. Planning My Practice Project",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Planning My Practice Project",
+                    "name": "Carpeta Google Drive · Planning My Practice Project",
                     "url": "https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_e3029dccbd7b4c30bccda71d9f4ab74e_132",
+                    "id": "res_e3029dccbd7b4c30bccda71d9f4ab74e_128",
                     "lessonId": "e3029dccbd7b4c30bccda71d9f4ab74e",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "03. Planning My Practice Project",
-                    "name": "Google Drive (Archivos/Presets) · 03. Planning My Practice Project",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Planning My Practice Project",
+                    "name": "Carpeta Google Drive · Planning My Practice Project",
                     "url": "https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -1945,11 +2033,66 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
+                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_18",
+                    "lessonId": "8418b329db8e41eab6af29cca7bbaa4d",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Tablero de Figma · Storytelling with B-roll",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_19",
+                    "lessonId": "8418b329db8e41eab6af29cca7bbaa4d",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
+                    "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_20",
+                    "lessonId": "8418b329db8e41eab6af29cca7bbaa4d",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
+                    "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_21",
+                    "lessonId": "8418b329db8e41eab6af29cca7bbaa4d",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
+                    "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_8418b329db8e41eab6af29cca7bbaa4d_22",
+                    "lessonId": "8418b329db8e41eab6af29cca7bbaa4d",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
+                    "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
                     "id": "res_d4b8dab0968f4201997468b52bac4ca0_133",
                     "lessonId": "d4b8dab0968f4201997468b52bac4ca0",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "04. Storytelling with B-roll",
-                    "name": "Tablero de Figma · 04. Storytelling with B-roll",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Tablero de Figma · Storytelling with B-roll",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
@@ -1958,34 +2101,34 @@ window.COMMUNITIES_DATA = [
                   {
                     "id": "res_d4b8dab0968f4201997468b52bac4ca0_134",
                     "lessonId": "d4b8dab0968f4201997468b52bac4ca0",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "04. Storytelling with B-roll",
-                    "name": "Google Drive (Archivos/Presets) · 04. Storytelling with B-roll",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_d4b8dab0968f4201997468b52bac4ca0_135",
                     "lessonId": "d4b8dab0968f4201997468b52bac4ca0",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "04. Storytelling with B-roll",
-                    "name": "Google Drive (Archivos/Presets) · 04. Storytelling with B-roll",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
                     "url": "https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
                     "id": "res_d4b8dab0968f4201997468b52bac4ca0_136",
                     "lessonId": "d4b8dab0968f4201997468b52bac4ca0",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "04. Storytelling with B-roll",
-                    "name": "Google Drive (Archivos/Presets) · 04. Storytelling with B-roll",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Carpeta Google Drive · Storytelling with B-roll",
                     "url": "https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -2004,47 +2147,102 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_141",
-                    "lessonId": "9d8e61a31ae0487a9c28079ffc444cd1",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "05. Complete Text Workflow",
-                    "name": "Tablero de Figma · 05. Complete Text Workflow",
+                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_85",
+                    "lessonId": "7073fd31eef54f2a9c8903567fb3753c",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Recap: Complete Text Workflow",
+                    "name": "Tablero de Figma · Recap: Complete Text Workflow",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_142",
+                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_86",
+                    "lessonId": "7073fd31eef54f2a9c8903567fb3753c",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Recap: Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Recap: Complete Text Workflow",
+                    "url": "https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_87",
+                    "lessonId": "7073fd31eef54f2a9c8903567fb3753c",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Recap: Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Recap: Complete Text Workflow",
+                    "url": "https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_88",
+                    "lessonId": "7073fd31eef54f2a9c8903567fb3753c",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Recap: Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Recap: Complete Text Workflow",
+                    "url": "https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_7073fd31eef54f2a9c8903567fb3753c_89",
+                    "lessonId": "7073fd31eef54f2a9c8903567fb3753c",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Recap: Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Recap: Complete Text Workflow",
+                    "url": "https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_129",
                     "lessonId": "9d8e61a31ae0487a9c28079ffc444cd1",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "05. Complete Text Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 05. Complete Text Workflow",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Complete Text Workflow",
+                    "name": "Tablero de Figma · Complete Text Workflow",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_130",
+                    "lessonId": "9d8e61a31ae0487a9c28079ffc444cd1",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Complete Text Workflow",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_143",
+                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_131",
                     "lessonId": "9d8e61a31ae0487a9c28079ffc444cd1",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "05. Complete Text Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 05. Complete Text Workflow",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Complete Text Workflow",
                     "url": "https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_144",
+                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_132",
                     "lessonId": "9d8e61a31ae0487a9c28079ffc444cd1",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "05. Complete Text Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 05. Complete Text Workflow",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Complete Text Workflow",
+                    "name": "Carpeta Google Drive · Complete Text Workflow",
                     "url": "https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -2063,47 +2261,47 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_05682e7e77274619a953ad69c944051a_125",
+                    "id": "res_05682e7e77274619a953ad69c944051a_137",
                     "lessonId": "05682e7e77274619a953ad69c944051a",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "06. Cinematic Sound Design Workflow",
-                    "name": "Tablero de Figma · 06. Cinematic Sound Design Workflow",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Cinematic Sound Design Workflow",
+                    "name": "Tablero de Figma · Cinematic Sound Design Workflow",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_05682e7e77274619a953ad69c944051a_126",
+                    "id": "res_05682e7e77274619a953ad69c944051a_138",
                     "lessonId": "05682e7e77274619a953ad69c944051a",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "06. Cinematic Sound Design Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 06. Cinematic Sound Design Workflow",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Cinematic Sound Design Workflow",
+                    "name": "Carpeta Google Drive · Cinematic Sound Design Workflow",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_05682e7e77274619a953ad69c944051a_127",
+                    "id": "res_05682e7e77274619a953ad69c944051a_139",
                     "lessonId": "05682e7e77274619a953ad69c944051a",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "06. Cinematic Sound Design Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 06. Cinematic Sound Design Workflow",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Cinematic Sound Design Workflow",
+                    "name": "Carpeta Google Drive · Cinematic Sound Design Workflow",
                     "url": "https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_05682e7e77274619a953ad69c944051a_128",
+                    "id": "res_05682e7e77274619a953ad69c944051a_140",
                     "lessonId": "05682e7e77274619a953ad69c944051a",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "06. Cinematic Sound Design Workflow",
-                    "name": "Google Drive (Archivos/Presets) · 06. Cinematic Sound Design Workflow",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Cinematic Sound Design Workflow",
+                    "name": "Carpeta Google Drive · Cinematic Sound Design Workflow",
                     "url": "https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -2122,47 +2320,47 @@ window.COMMUNITIES_DATA = [
                 "inDrive": true,
                 "resources": [
                   {
-                    "id": "res_daee5a59b1ae4aed839085fd29ac7cce_137",
+                    "id": "res_daee5a59b1ae4aed839085fd29ac7cce_141",
                     "lessonId": "daee5a59b1ae4aed839085fd29ac7cce",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "07. Music and Final Touches",
-                    "name": "Tablero de Figma · 07. Music and Final Touches",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Music and Final Touches",
+                    "name": "Tablero de Figma · Music and Final Touches",
                     "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
                   },
                   {
-                    "id": "res_daee5a59b1ae4aed839085fd29ac7cce_138",
+                    "id": "res_daee5a59b1ae4aed839085fd29ac7cce_142",
                     "lessonId": "daee5a59b1ae4aed839085fd29ac7cce",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "07. Music and Final Touches",
-                    "name": "Google Drive (Archivos/Presets) · 07. Music and Final Touches",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Music and Final Touches",
+                    "name": "Carpeta Google Drive · Music and Final Touches",
                     "url": "https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_daee5a59b1ae4aed839085fd29ac7cce_139",
+                    "id": "res_daee5a59b1ae4aed839085fd29ac7cce_143",
                     "lessonId": "daee5a59b1ae4aed839085fd29ac7cce",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "07. Music and Final Touches",
-                    "name": "Google Drive (Archivos/Presets) · 07. Music and Final Touches",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Music and Final Touches",
+                    "name": "Carpeta Google Drive · Music and Final Touches",
                     "url": "https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_daee5a59b1ae4aed839085fd29ac7cce_140",
+                    "id": "res_daee5a59b1ae4aed839085fd29ac7cce_144",
                     "lessonId": "daee5a59b1ae4aed839085fd29ac7cce",
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "lessonTitle": "07. Music and Final Touches",
-                    "name": "Google Drive (Archivos/Presets) · 07. Music and Final Touches",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Music and Final Touches",
+                    "name": "Carpeta Google Drive · Music and Final Touches",
                     "url": "https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing",
                     "category": "gdrive",
-                    "categoryLabel": "Google Drive (Archivos/Presets)",
+                    "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
                   }
                 ]
@@ -2179,7 +2377,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 6,
         "totalLessons": 31,
-        "totalResources": 0,
+        "totalResources": 83,
         "modules": [
           {
             "index": 1,
@@ -2233,7 +2431,19 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "17MZIjQtocB4IwrSzqJM6ZyWuLmbJ5GIM",
                 "gdriveLink": "https://drive.google.com/file/d/17MZIjQtocB4IwrSzqJM6ZyWuLmbJ5GIM/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_380c0653387b4db79062864790581337_3",
+                    "lessonId": "380c0653387b4db79062864790581337",
+                    "moduleTitle": "The AI Editing Theory",
+                    "lessonTitle": "The AI Editing Workflow (How it Works)",
+                    "name": "Tablero de Figma · The AI Editing Workflow (How it Works)",
+                    "url": "https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1\\&t=kDkzwgUQFLgop1zm-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ]
               },
               {
                 "id": "89810eb2661242c18fccf8132ae4ac7a",
@@ -2247,7 +2457,19 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1wMHlxZCbQ-FkobfkF2fehNIWKvqUGZgR",
                 "gdriveLink": "https://drive.google.com/file/d/1wMHlxZCbQ-FkobfkF2fehNIWKvqUGZgR/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_89810eb2661242c18fccf8132ae4ac7a_7",
+                    "lessonId": "89810eb2661242c18fccf8132ae4ac7a",
+                    "moduleTitle": "The AI Editing Theory",
+                    "lessonTitle": "What is Claude? (Actually)",
+                    "name": "Tablero de Figma · What is Claude? (Actually)",
+                    "url": "https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1\\&t=kDkzwgUQFLgop1zm-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ]
               },
               {
                 "id": "dcaf52ae9325457aab335495a4a44b2d",
@@ -2261,7 +2483,19 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1n_4Uc6I_9ZZgoUFC1ETn4cBknzMv9-VB",
                 "gdriveLink": "https://drive.google.com/file/d/1n_4Uc6I_9ZZgoUFC1ETn4cBknzMv9-VB/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_dcaf52ae9325457aab335495a4a44b2d_4",
+                    "lessonId": "dcaf52ae9325457aab335495a4a44b2d",
+                    "moduleTitle": "The AI Editing Theory",
+                    "lessonTitle": "Installing Claude (Simple Guide)",
+                    "name": "Tablero de Figma · Installing Claude (Simple Guide)",
+                    "url": "https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1\\&t=kDkzwgUQFLgop1zm-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ]
               },
               {
                 "id": "e71f4d3edfdd483cbf00af99c3c47e9c",
@@ -2275,7 +2509,19 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1_nZRmPUyarZdOYY92V37tmwAQC5Ly3GK",
                 "gdriveLink": "https://drive.google.com/file/d/1_nZRmPUyarZdOYY92V37tmwAQC5Ly3GK/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_e71f4d3edfdd483cbf00af99c3c47e9c_10",
+                    "lessonId": "e71f4d3edfdd483cbf00af99c3c47e9c",
+                    "moduleTitle": "The AI Editing Theory",
+                    "lessonTitle": "The Claude UI Breakdown",
+                    "name": "Tablero de Figma · The Claude UI Breakdown",
+                    "url": "https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1\\&t=kDkzwgUQFLgop1zm-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ]
               },
               {
                 "id": "77a4be4e99564828b07d623be55060b6",
@@ -2289,7 +2535,19 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1qK8Kw_6_l0CEo0caE6ONVXsZw_9xzGrs",
                 "gdriveLink": "https://drive.google.com/file/d/1qK8Kw_6_l0CEo0caE6ONVXsZw_9xzGrs/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_77a4be4e99564828b07d623be55060b6_0",
+                    "lessonId": "77a4be4e99564828b07d623be55060b6",
+                    "moduleTitle": "The AI Editing Theory",
+                    "lessonTitle": "How to Train Claude",
+                    "name": "Tablero de Figma · How to Train Claude",
+                    "url": "https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1\\&t=kDkzwgUQFLgop1zm-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ]
               },
               {
                 "id": "74f88d899cd848e9952a9100f0a777db",
@@ -2303,7 +2561,19 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1yccS_48tsLEhxagXQ--ZCnlFRfaL2bXw",
                 "gdriveLink": "https://drive.google.com/file/d/1yccS_48tsLEhxagXQ--ZCnlFRfaL2bXw/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_74f88d899cd848e9952a9100f0a777db_1",
+                    "lessonId": "74f88d899cd848e9952a9100f0a777db",
+                    "moduleTitle": "The AI Editing Theory",
+                    "lessonTitle": "Claude is the Brain",
+                    "name": "Tablero de Figma · Claude is the Brain",
+                    "url": "https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1\\&t=kDkzwgUQFLgop1zm-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ]
               }
             ]
           },
@@ -2324,7 +2594,19 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "17n6DwRlp-jGfOCsnbfIU2z36_kEmlaSs",
                 "gdriveLink": "https://drive.google.com/file/d/17n6DwRlp-jGfOCsnbfIU2z36_kEmlaSs/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_95b738a25cfa40958ddc86aa5e9aa501_8",
+                    "lessonId": "95b738a25cfa40958ddc86aa5e9aa501",
+                    "moduleTitle": "Higgsfield: The Advanced Editor",
+                    "lessonTitle": "What is Higgsfield?",
+                    "name": "Tablero de Figma · What is Higgsfield?",
+                    "url": "https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5\\&t=wWSg0hq8g86lrAul-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ]
               },
               {
                 "id": "1ae649da75d5489b9fab59982b986b46",
@@ -2338,7 +2620,19 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1spTBTzlp98jwvDjuMbZBlGTTnVFMYq1v",
                 "gdriveLink": "https://drive.google.com/file/d/1spTBTzlp98jwvDjuMbZBlGTTnVFMYq1v/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_1ae649da75d5489b9fab59982b986b46_2",
+                    "lessonId": "1ae649da75d5489b9fab59982b986b46",
+                    "moduleTitle": "Higgsfield: The Advanced Editor",
+                    "lessonTitle": "A Full Breakdown of Higgsfield",
+                    "name": "Tablero de Figma · A Full Breakdown of Higgsfield",
+                    "url": "https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5\\&t=wWSg0hq8g86lrAul-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ]
               },
               {
                 "id": "f2524fa677364010b37355c0f515e05c",
@@ -2352,7 +2646,19 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1oeDPZIIYBexy6iMaJekrapBAX0KASE-a",
                 "gdriveLink": "https://drive.google.com/file/d/1oeDPZIIYBexy6iMaJekrapBAX0KASE-a/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_f2524fa677364010b37355c0f515e05c_5",
+                    "lessonId": "f2524fa677364010b37355c0f515e05c",
+                    "moduleTitle": "Higgsfield: The Advanced Editor",
+                    "lessonTitle": "The 4 Main Tools (Models)",
+                    "name": "Tablero de Figma · The 4 Main Tools (Models)",
+                    "url": "https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5\\&t=wWSg0hq8g86lrAul-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ]
               },
               {
                 "id": "b10b8ce455c844149cc594db8167a403",
@@ -2366,7 +2672,19 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1luLu8VfHDREX0Hn3h7mHNssjU3FHPS-2",
                 "gdriveLink": "https://drive.google.com/file/d/1luLu8VfHDREX0Hn3h7mHNssjU3FHPS-2/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_b10b8ce455c844149cc594db8167a403_6",
+                    "lessonId": "b10b8ce455c844149cc594db8167a403",
+                    "moduleTitle": "Higgsfield: The Advanced Editor",
+                    "lessonTitle": "The 7 Main Functions (Features)",
+                    "name": "Tablero de Figma · The 7 Main Functions (Features)",
+                    "url": "https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5\\&t=wWSg0hq8g86lrAul-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ]
               },
               {
                 "id": "c5a0234f364245cfa1348bab195a914b",
@@ -2380,7 +2698,19 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1g2TfUKRhF7qS2rJ8ugj8pJ3VSnsrQxhZ",
                 "gdriveLink": "https://drive.google.com/file/d/1g2TfUKRhF7qS2rJ8ugj8pJ3VSnsrQxhZ/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_c5a0234f364245cfa1348bab195a914b_9",
+                    "lessonId": "c5a0234f364245cfa1348bab195a914b",
+                    "moduleTitle": "Higgsfield: The Advanced Editor",
+                    "lessonTitle": "The Higgsfield Workflows (IMPORTANT)",
+                    "name": "Tablero de Figma · The Higgsfield Workflows (IMPORTANT)",
+                    "url": "https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5\\&t=wWSg0hq8g86lrAul-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ]
               },
               {
                 "id": "b29c970a504b422ab490343cbefa506d",
@@ -2394,7 +2724,19 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "16_0p59r_hXxGwEG9gTVxQwrwIy3n1h2O",
                 "gdriveLink": "https://drive.google.com/file/d/16_0p59r_hXxGwEG9gTVxQwrwIy3n1h2O/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_b29c970a504b422ab490343cbefa506d_11",
+                    "lessonId": "b29c970a504b422ab490343cbefa506d",
+                    "moduleTitle": "Higgsfield: The Advanced Editor",
+                    "lessonTitle": "The AI Quality Ladder (Mentality)",
+                    "name": "Tablero de Figma · The AI Quality Ladder (Mentality)",
+                    "url": "https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5\\&t=wWSg0hq8g86lrAul-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero de Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ]
               }
             ]
           },
@@ -2415,7 +2757,41 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "12yvQDqBxWkaa8KMfhgzMnr43pqd5HCC8",
                 "gdriveLink": "https://drive.google.com/file/d/12yvQDqBxWkaa8KMfhgzMnr43pqd5HCC8/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_5fdb45707dd2444d8d2d4f7a7e631f5c_12",
+                    "lessonId": "5fdb45707dd2444d8d2d4f7a7e631f5c",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Podcast Editing Style Breakdown",
+                    "name": "Carpeta Google Drive · Podcast Editing Style Breakdown",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_5fdb45707dd2444d8d2d4f7a7e631f5c_13",
+                    "lessonId": "5fdb45707dd2444d8d2d4f7a7e631f5c",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Podcast Editing Style Breakdown",
+                    "name": "Carpeta Google Drive · Podcast Editing Style Breakdown",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_5fdb45707dd2444d8d2d4f7a7e631f5c_14",
+                    "lessonId": "5fdb45707dd2444d8d2d4f7a7e631f5c",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Podcast Editing Style Breakdown",
+                    "name": "Carpeta Google Drive · Podcast Editing Style Breakdown",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "8b476d51abba42f1a941d3b7f56141dd",
@@ -2429,7 +2805,41 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1qgeY0YfCz2ttOaMhUWmcmfHavHYM44bq",
                 "gdriveLink": "https://drive.google.com/file/d/1qgeY0YfCz2ttOaMhUWmcmfHavHYM44bq/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_8b476d51abba42f1a941d3b7f56141dd_15",
+                    "lessonId": "8b476d51abba42f1a941d3b7f56141dd",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Clipping Shorts out of Podcasts",
+                    "name": "Carpeta Google Drive · Clipping Shorts out of Podcasts",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_8b476d51abba42f1a941d3b7f56141dd_16",
+                    "lessonId": "8b476d51abba42f1a941d3b7f56141dd",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Clipping Shorts out of Podcasts",
+                    "name": "Carpeta Google Drive · Clipping Shorts out of Podcasts",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_8b476d51abba42f1a941d3b7f56141dd_17",
+                    "lessonId": "8b476d51abba42f1a941d3b7f56141dd",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Clipping Shorts out of Podcasts",
+                    "name": "Carpeta Google Drive · Clipping Shorts out of Podcasts",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "9f9e2ab6ecd14a289168103ce4d2b162",
@@ -2443,7 +2853,41 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1ZDdf7_uHe26rCDBiAwH84V1GU6sqIimg",
                 "gdriveLink": "https://drive.google.com/file/d/1ZDdf7_uHe26rCDBiAwH84V1GU6sqIimg/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_9f9e2ab6ecd14a289168103ce4d2b162_24",
+                    "lessonId": "9f9e2ab6ecd14a289168103ce4d2b162",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Adding Viral Captions (Submagic)",
+                    "name": "Carpeta Google Drive · Adding Viral Captions (Submagic)",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_9f9e2ab6ecd14a289168103ce4d2b162_25",
+                    "lessonId": "9f9e2ab6ecd14a289168103ce4d2b162",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Adding Viral Captions (Submagic)",
+                    "name": "Carpeta Google Drive · Adding Viral Captions (Submagic)",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_9f9e2ab6ecd14a289168103ce4d2b162_26",
+                    "lessonId": "9f9e2ab6ecd14a289168103ce4d2b162",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Adding Viral Captions (Submagic)",
+                    "name": "Carpeta Google Drive · Adding Viral Captions (Submagic)",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "2f0f4e2950474b0b922f09d44f3d0e6d",
@@ -2457,7 +2901,41 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Mz07U0vTHZu5jXstRFMm74OLkx_N5dC9",
                 "gdriveLink": "https://drive.google.com/file/d/1Mz07U0vTHZu5jXstRFMm74OLkx_N5dC9/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_2f0f4e2950474b0b922f09d44f3d0e6d_30",
+                    "lessonId": "2f0f4e2950474b0b922f09d44f3d0e6d",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Planning the Viral Edit",
+                    "name": "Carpeta Google Drive · Planning the Viral Edit",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_2f0f4e2950474b0b922f09d44f3d0e6d_31",
+                    "lessonId": "2f0f4e2950474b0b922f09d44f3d0e6d",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Planning the Viral Edit",
+                    "name": "Carpeta Google Drive · Planning the Viral Edit",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_2f0f4e2950474b0b922f09d44f3d0e6d_32",
+                    "lessonId": "2f0f4e2950474b0b922f09d44f3d0e6d",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Planning the Viral Edit",
+                    "name": "Carpeta Google Drive · Planning the Viral Edit",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "1eb7148089ea44e89925e964feb43c06",
@@ -2471,7 +2949,41 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1EDMLl-vxMFJYI7EytaOCLPGijmh0APnI",
                 "gdriveLink": "https://drive.google.com/file/d/1EDMLl-vxMFJYI7EytaOCLPGijmh0APnI/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_1eb7148089ea44e89925e964feb43c06_18",
+                    "lessonId": "1eb7148089ea44e89925e964feb43c06",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Creating Premium Designs",
+                    "name": "Carpeta Google Drive · Creating Premium Designs",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_1eb7148089ea44e89925e964feb43c06_19",
+                    "lessonId": "1eb7148089ea44e89925e964feb43c06",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Creating Premium Designs",
+                    "name": "Carpeta Google Drive · Creating Premium Designs",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_1eb7148089ea44e89925e964feb43c06_20",
+                    "lessonId": "1eb7148089ea44e89925e964feb43c06",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Creating Premium Designs",
+                    "name": "Carpeta Google Drive · Creating Premium Designs",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "83f5c247c4c04a619880e409655c244c",
@@ -2485,7 +2997,41 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Uv_dJJURHvHxi7yW7vsLF8ljTDtnmZLl",
                 "gdriveLink": "https://drive.google.com/file/d/1Uv_dJJURHvHxi7yW7vsLF8ljTDtnmZLl/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_83f5c247c4c04a619880e409655c244c_21",
+                    "lessonId": "83f5c247c4c04a619880e409655c244c",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Generating Premium Animations",
+                    "name": "Carpeta Google Drive · Generating Premium Animations",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_83f5c247c4c04a619880e409655c244c_22",
+                    "lessonId": "83f5c247c4c04a619880e409655c244c",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Generating Premium Animations",
+                    "name": "Carpeta Google Drive · Generating Premium Animations",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_83f5c247c4c04a619880e409655c244c_23",
+                    "lessonId": "83f5c247c4c04a619880e409655c244c",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Generating Premium Animations",
+                    "name": "Carpeta Google Drive · Generating Premium Animations",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "6c455482321f407f88fc1cbe71d5ec1d",
@@ -2499,7 +3045,41 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1nP2p2dV3a8Kdv2LrDPva42_Bk5aqzgOF",
                 "gdriveLink": "https://drive.google.com/file/d/1nP2p2dV3a8Kdv2LrDPva42_Bk5aqzgOF/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_6c455482321f407f88fc1cbe71d5ec1d_27",
+                    "lessonId": "6c455482321f407f88fc1cbe71d5ec1d",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Assembling the Edit (Final)",
+                    "name": "Carpeta Google Drive · Assembling the Edit (Final)",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_6c455482321f407f88fc1cbe71d5ec1d_28",
+                    "lessonId": "6c455482321f407f88fc1cbe71d5ec1d",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Assembling the Edit (Final)",
+                    "name": "Carpeta Google Drive · Assembling the Edit (Final)",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_6c455482321f407f88fc1cbe71d5ec1d_29",
+                    "lessonId": "6c455482321f407f88fc1cbe71d5ec1d",
+                    "moduleTitle": "The Podcast Editing Style (Short-form)",
+                    "lessonTitle": "Assembling the Edit (Final)",
+                    "name": "Carpeta Google Drive · Assembling the Edit (Final)",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               }
             ]
           },
@@ -2520,7 +3100,63 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1n-pDPq7bFbCJZSvLl-OnkVuVZrfOJruB",
                 "gdriveLink": "https://drive.google.com/file/d/1n-pDPq7bFbCJZSvLl-OnkVuVZrfOJruB/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_1c5671b7cab94065834a929f02812149_33",
+                    "lessonId": "1c5671b7cab94065834a929f02812149",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Iman Gadzhi Style Breakdown",
+                    "name": "Carpeta Google Drive · Iman Gadzhi Style Breakdown",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_1c5671b7cab94065834a929f02812149_34",
+                    "lessonId": "1c5671b7cab94065834a929f02812149",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Iman Gadzhi Style Breakdown",
+                    "name": "Carpeta Google Drive · Iman Gadzhi Style Breakdown",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_1c5671b7cab94065834a929f02812149_35",
+                    "lessonId": "1c5671b7cab94065834a929f02812149",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Iman Gadzhi Style Breakdown",
+                    "name": "Carpeta Google Drive · Iman Gadzhi Style Breakdown",
+                    "url": "https://drive.google.com/file/d/1S4X-sG2OiMp4k1raNgtlCZ2_ZaBbG7Wf/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_1c5671b7cab94065834a929f02812149_36",
+                    "lessonId": "1c5671b7cab94065834a929f02812149",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Iman Gadzhi Style Breakdown",
+                    "name": "Carpeta Google Drive · Iman Gadzhi Style Breakdown",
+                    "url": "https://drive.google.com/drive/folders/1rcZ_LBeQd7DR1YA1Q5hIOnGj-j-4A5aE?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_1c5671b7cab94065834a929f02812149_37",
+                    "lessonId": "1c5671b7cab94065834a929f02812149",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Iman Gadzhi Style Breakdown",
+                    "name": "Carpeta Google Drive · Iman Gadzhi Style Breakdown",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "099edeb60dce42f3afef234e71f98666",
@@ -2534,7 +3170,63 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1sJjL08KfXkiNLfZFwzlJY2zl336C5OVJ",
                 "gdriveLink": "https://drive.google.com/file/d/1sJjL08KfXkiNLfZFwzlJY2zl336C5OVJ/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_099edeb60dce42f3afef234e71f98666_68",
+                    "lessonId": "099edeb60dce42f3afef234e71f98666",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Planning an Iman Video",
+                    "name": "Carpeta Google Drive · Planning an Iman Video",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_099edeb60dce42f3afef234e71f98666_69",
+                    "lessonId": "099edeb60dce42f3afef234e71f98666",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Planning an Iman Video",
+                    "name": "Carpeta Google Drive · Planning an Iman Video",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_099edeb60dce42f3afef234e71f98666_70",
+                    "lessonId": "099edeb60dce42f3afef234e71f98666",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Planning an Iman Video",
+                    "name": "Carpeta Google Drive · Planning an Iman Video",
+                    "url": "https://drive.google.com/file/d/1S4X-sG2OiMp4k1raNgtlCZ2_ZaBbG7Wf/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_099edeb60dce42f3afef234e71f98666_71",
+                    "lessonId": "099edeb60dce42f3afef234e71f98666",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Planning an Iman Video",
+                    "name": "Carpeta Google Drive · Planning an Iman Video",
+                    "url": "https://drive.google.com/drive/folders/1rcZ_LBeQd7DR1YA1Q5hIOnGj-j-4A5aE?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_099edeb60dce42f3afef234e71f98666_72",
+                    "lessonId": "099edeb60dce42f3afef234e71f98666",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Planning an Iman Video",
+                    "name": "Carpeta Google Drive · Planning an Iman Video",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "ff80ee6ea2044990b02d62fffe306eb1",
@@ -2548,7 +3240,63 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1hssp6XqdBkOIKy6-XgjVvBk1yR7T3fmv",
                 "gdriveLink": "https://drive.google.com/file/d/1hssp6XqdBkOIKy6-XgjVvBk1yR7T3fmv/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_ff80ee6ea2044990b02d62fffe306eb1_48",
+                    "lessonId": "ff80ee6ea2044990b02d62fffe306eb1",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Creating the Iman Scene Designs",
+                    "name": "Carpeta Google Drive · Creating the Iman Scene Designs",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_ff80ee6ea2044990b02d62fffe306eb1_49",
+                    "lessonId": "ff80ee6ea2044990b02d62fffe306eb1",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Creating the Iman Scene Designs",
+                    "name": "Carpeta Google Drive · Creating the Iman Scene Designs",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_ff80ee6ea2044990b02d62fffe306eb1_50",
+                    "lessonId": "ff80ee6ea2044990b02d62fffe306eb1",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Creating the Iman Scene Designs",
+                    "name": "Carpeta Google Drive · Creating the Iman Scene Designs",
+                    "url": "https://drive.google.com/file/d/1S4X-sG2OiMp4k1raNgtlCZ2_ZaBbG7Wf/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_ff80ee6ea2044990b02d62fffe306eb1_51",
+                    "lessonId": "ff80ee6ea2044990b02d62fffe306eb1",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Creating the Iman Scene Designs",
+                    "name": "Carpeta Google Drive · Creating the Iman Scene Designs",
+                    "url": "https://drive.google.com/drive/folders/1rcZ_LBeQd7DR1YA1Q5hIOnGj-j-4A5aE?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_ff80ee6ea2044990b02d62fffe306eb1_52",
+                    "lessonId": "ff80ee6ea2044990b02d62fffe306eb1",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Creating the Iman Scene Designs",
+                    "name": "Carpeta Google Drive · Creating the Iman Scene Designs",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "c25c5192d6814ef2be03685368a13ebb",
@@ -2562,7 +3310,63 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1JyK_hM-EOkw3VHSwu0b9xsYIPMsLzper",
                 "gdriveLink": "https://drive.google.com/file/d/1JyK_hM-EOkw3VHSwu0b9xsYIPMsLzper/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_c25c5192d6814ef2be03685368a13ebb_38",
+                    "lessonId": "c25c5192d6814ef2be03685368a13ebb",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Generating Iman Animations with AI",
+                    "name": "Carpeta Google Drive · Generating Iman Animations with AI",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_c25c5192d6814ef2be03685368a13ebb_39",
+                    "lessonId": "c25c5192d6814ef2be03685368a13ebb",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Generating Iman Animations with AI",
+                    "name": "Carpeta Google Drive · Generating Iman Animations with AI",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_c25c5192d6814ef2be03685368a13ebb_40",
+                    "lessonId": "c25c5192d6814ef2be03685368a13ebb",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Generating Iman Animations with AI",
+                    "name": "Carpeta Google Drive · Generating Iman Animations with AI",
+                    "url": "https://drive.google.com/file/d/1S4X-sG2OiMp4k1raNgtlCZ2_ZaBbG7Wf/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_c25c5192d6814ef2be03685368a13ebb_41",
+                    "lessonId": "c25c5192d6814ef2be03685368a13ebb",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Generating Iman Animations with AI",
+                    "name": "Carpeta Google Drive · Generating Iman Animations with AI",
+                    "url": "https://drive.google.com/drive/folders/1rcZ_LBeQd7DR1YA1Q5hIOnGj-j-4A5aE?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_c25c5192d6814ef2be03685368a13ebb_42",
+                    "lessonId": "c25c5192d6814ef2be03685368a13ebb",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Generating Iman Animations with AI",
+                    "name": "Carpeta Google Drive · Generating Iman Animations with AI",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "b393efb3ce224de1aad65fedb2e8a3f3",
@@ -2576,7 +3380,63 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1xgli-XbVl2XrTvKU5-lA8RxKfmJWf_xo",
                 "gdriveLink": "https://drive.google.com/file/d/1xgli-XbVl2XrTvKU5-lA8RxKfmJWf_xo/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_b393efb3ce224de1aad65fedb2e8a3f3_43",
+                    "lessonId": "b393efb3ce224de1aad65fedb2e8a3f3",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Assembling the Iman Edit (Final)",
+                    "name": "Carpeta Google Drive · Assembling the Iman Edit (Final)",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_b393efb3ce224de1aad65fedb2e8a3f3_44",
+                    "lessonId": "b393efb3ce224de1aad65fedb2e8a3f3",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Assembling the Iman Edit (Final)",
+                    "name": "Carpeta Google Drive · Assembling the Iman Edit (Final)",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_b393efb3ce224de1aad65fedb2e8a3f3_45",
+                    "lessonId": "b393efb3ce224de1aad65fedb2e8a3f3",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Assembling the Iman Edit (Final)",
+                    "name": "Carpeta Google Drive · Assembling the Iman Edit (Final)",
+                    "url": "https://drive.google.com/file/d/1S4X-sG2OiMp4k1raNgtlCZ2_ZaBbG7Wf/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_b393efb3ce224de1aad65fedb2e8a3f3_46",
+                    "lessonId": "b393efb3ce224de1aad65fedb2e8a3f3",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Assembling the Iman Edit (Final)",
+                    "name": "Carpeta Google Drive · Assembling the Iman Edit (Final)",
+                    "url": "https://drive.google.com/drive/folders/1rcZ_LBeQd7DR1YA1Q5hIOnGj-j-4A5aE?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_b393efb3ce224de1aad65fedb2e8a3f3_47",
+                    "lessonId": "b393efb3ce224de1aad65fedb2e8a3f3",
+                    "moduleTitle": "Iman Gadzhi Editing Style (AI)",
+                    "lessonTitle": "Assembling the Iman Edit (Final)",
+                    "name": "Carpeta Google Drive · Assembling the Iman Edit (Final)",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               }
             ]
           },
@@ -2597,7 +3457,63 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1q0EwAzAC1Lc46sXLzpcKc2aAxykRNCg-",
                 "gdriveLink": "https://drive.google.com/file/d/1q0EwAzAC1Lc46sXLzpcKc2aAxykRNCg-/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_f260ea067d8b4230ac7d014959070c6b_53",
+                    "lessonId": "f260ea067d8b4230ac7d014959070c6b",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "The Vox Documentary Breakdown",
+                    "name": "Carpeta Google Drive · The Vox Documentary Breakdown",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_f260ea067d8b4230ac7d014959070c6b_54",
+                    "lessonId": "f260ea067d8b4230ac7d014959070c6b",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "The Vox Documentary Breakdown",
+                    "name": "Carpeta Google Drive · The Vox Documentary Breakdown",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_f260ea067d8b4230ac7d014959070c6b_55",
+                    "lessonId": "f260ea067d8b4230ac7d014959070c6b",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "The Vox Documentary Breakdown",
+                    "name": "Carpeta Google Drive · The Vox Documentary Breakdown",
+                    "url": "https://drive.google.com/file/d/1B3JFZekF8UVXQxY9cuU_N7U8YLHSmZ5R/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_f260ea067d8b4230ac7d014959070c6b_56",
+                    "lessonId": "f260ea067d8b4230ac7d014959070c6b",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "The Vox Documentary Breakdown",
+                    "name": "Carpeta Google Drive · The Vox Documentary Breakdown",
+                    "url": "https://drive.google.com/drive/folders/16ANvf8ZvGL2MBTtG1iYJdLoZnugKQ2y0?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_f260ea067d8b4230ac7d014959070c6b_57",
+                    "lessonId": "f260ea067d8b4230ac7d014959070c6b",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "The Vox Documentary Breakdown",
+                    "name": "Carpeta Google Drive · The Vox Documentary Breakdown",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "95f29b7a4863485eafc1f621fbd6a76e",
@@ -2611,7 +3527,63 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1XKLNxL0rmSVDp-8KVRqfoCf_eVNb2Aiz",
                 "gdriveLink": "https://drive.google.com/file/d/1XKLNxL0rmSVDp-8KVRqfoCf_eVNb2Aiz/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_95f29b7a4863485eafc1f621fbd6a76e_58",
+                    "lessonId": "95f29b7a4863485eafc1f621fbd6a76e",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Planning the Vox Storyline",
+                    "name": "Carpeta Google Drive · Planning the Vox Storyline",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_95f29b7a4863485eafc1f621fbd6a76e_59",
+                    "lessonId": "95f29b7a4863485eafc1f621fbd6a76e",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Planning the Vox Storyline",
+                    "name": "Carpeta Google Drive · Planning the Vox Storyline",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_95f29b7a4863485eafc1f621fbd6a76e_60",
+                    "lessonId": "95f29b7a4863485eafc1f621fbd6a76e",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Planning the Vox Storyline",
+                    "name": "Carpeta Google Drive · Planning the Vox Storyline",
+                    "url": "https://drive.google.com/file/d/1B3JFZekF8UVXQxY9cuU_N7U8YLHSmZ5R/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_95f29b7a4863485eafc1f621fbd6a76e_61",
+                    "lessonId": "95f29b7a4863485eafc1f621fbd6a76e",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Planning the Vox Storyline",
+                    "name": "Carpeta Google Drive · Planning the Vox Storyline",
+                    "url": "https://drive.google.com/drive/folders/16ANvf8ZvGL2MBTtG1iYJdLoZnugKQ2y0?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_95f29b7a4863485eafc1f621fbd6a76e_62",
+                    "lessonId": "95f29b7a4863485eafc1f621fbd6a76e",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Planning the Vox Storyline",
+                    "name": "Carpeta Google Drive · Planning the Vox Storyline",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "a02f06104c14404b89e7880c50dc41ff",
@@ -2625,7 +3597,63 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1jMERue-_cY6cEvIkbKkpe9RTCH0L2pTg",
                 "gdriveLink": "https://drive.google.com/file/d/1jMERue-_cY6cEvIkbKkpe9RTCH0L2pTg/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_a02f06104c14404b89e7880c50dc41ff_63",
+                    "lessonId": "a02f06104c14404b89e7880c50dc41ff",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Generating the Vox-Style Designs",
+                    "name": "Carpeta Google Drive · Generating the Vox-Style Designs",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_a02f06104c14404b89e7880c50dc41ff_64",
+                    "lessonId": "a02f06104c14404b89e7880c50dc41ff",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Generating the Vox-Style Designs",
+                    "name": "Carpeta Google Drive · Generating the Vox-Style Designs",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_a02f06104c14404b89e7880c50dc41ff_65",
+                    "lessonId": "a02f06104c14404b89e7880c50dc41ff",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Generating the Vox-Style Designs",
+                    "name": "Carpeta Google Drive · Generating the Vox-Style Designs",
+                    "url": "https://drive.google.com/file/d/1B3JFZekF8UVXQxY9cuU_N7U8YLHSmZ5R/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_a02f06104c14404b89e7880c50dc41ff_66",
+                    "lessonId": "a02f06104c14404b89e7880c50dc41ff",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Generating the Vox-Style Designs",
+                    "name": "Carpeta Google Drive · Generating the Vox-Style Designs",
+                    "url": "https://drive.google.com/drive/folders/16ANvf8ZvGL2MBTtG1iYJdLoZnugKQ2y0?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_a02f06104c14404b89e7880c50dc41ff_67",
+                    "lessonId": "a02f06104c14404b89e7880c50dc41ff",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Generating the Vox-Style Designs",
+                    "name": "Carpeta Google Drive · Generating the Vox-Style Designs",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "47af80c7ea4740b484ef038e04f3a8a1",
@@ -2639,7 +3667,63 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1lchb4V2Kst0cke2ptP5mT2pDPs5u-xx4",
                 "gdriveLink": "https://drive.google.com/file/d/1lchb4V2Kst0cke2ptP5mT2pDPs5u-xx4/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_47af80c7ea4740b484ef038e04f3a8a1_73",
+                    "lessonId": "47af80c7ea4740b484ef038e04f3a8a1",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Creating Vox Documentary Animations",
+                    "name": "Carpeta Google Drive · Creating Vox Documentary Animations",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_47af80c7ea4740b484ef038e04f3a8a1_74",
+                    "lessonId": "47af80c7ea4740b484ef038e04f3a8a1",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Creating Vox Documentary Animations",
+                    "name": "Carpeta Google Drive · Creating Vox Documentary Animations",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_47af80c7ea4740b484ef038e04f3a8a1_75",
+                    "lessonId": "47af80c7ea4740b484ef038e04f3a8a1",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Creating Vox Documentary Animations",
+                    "name": "Carpeta Google Drive · Creating Vox Documentary Animations",
+                    "url": "https://drive.google.com/file/d/1B3JFZekF8UVXQxY9cuU_N7U8YLHSmZ5R/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_47af80c7ea4740b484ef038e04f3a8a1_76",
+                    "lessonId": "47af80c7ea4740b484ef038e04f3a8a1",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Creating Vox Documentary Animations",
+                    "name": "Carpeta Google Drive · Creating Vox Documentary Animations",
+                    "url": "https://drive.google.com/drive/folders/16ANvf8ZvGL2MBTtG1iYJdLoZnugKQ2y0?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_47af80c7ea4740b484ef038e04f3a8a1_77",
+                    "lessonId": "47af80c7ea4740b484ef038e04f3a8a1",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Creating Vox Documentary Animations",
+                    "name": "Carpeta Google Drive · Creating Vox Documentary Animations",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "2da747e364564e5cb6fe916d4b0436e9",
@@ -2653,7 +3737,63 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "19OF2kBY6Xy1AQ_kkZWQm1DhVbD0Xw1H0",
                 "gdriveLink": "https://drive.google.com/file/d/19OF2kBY6Xy1AQ_kkZWQm1DhVbD0Xw1H0/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": []
+                "resources": [
+                  {
+                    "id": "res_2da747e364564e5cb6fe916d4b0436e9_78",
+                    "lessonId": "2da747e364564e5cb6fe916d4b0436e9",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Assembling the Vox Style Edit",
+                    "name": "Carpeta Google Drive · Assembling the Vox Style Edit",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_2da747e364564e5cb6fe916d4b0436e9_79",
+                    "lessonId": "2da747e364564e5cb6fe916d4b0436e9",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Assembling the Vox Style Edit",
+                    "name": "Carpeta Google Drive · Assembling the Vox Style Edit",
+                    "url": "https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_2da747e364564e5cb6fe916d4b0436e9_80",
+                    "lessonId": "2da747e364564e5cb6fe916d4b0436e9",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Assembling the Vox Style Edit",
+                    "name": "Carpeta Google Drive · Assembling the Vox Style Edit",
+                    "url": "https://drive.google.com/file/d/1B3JFZekF8UVXQxY9cuU_N7U8YLHSmZ5R/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_2da747e364564e5cb6fe916d4b0436e9_81",
+                    "lessonId": "2da747e364564e5cb6fe916d4b0436e9",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Assembling the Vox Style Edit",
+                    "name": "Carpeta Google Drive · Assembling the Vox Style Edit",
+                    "url": "https://drive.google.com/drive/folders/16ANvf8ZvGL2MBTtG1iYJdLoZnugKQ2y0?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "res_2da747e364564e5cb6fe916d4b0436e9_82",
+                    "lessonId": "2da747e364564e5cb6fe916d4b0436e9",
+                    "moduleTitle": "The Vox Documentary Style (AI)",
+                    "lessonTitle": "Assembling the Vox Style Edit",
+                    "name": "Carpeta Google Drive · Assembling the Vox Style Edit",
+                    "url": "https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               }
             ]
           }
@@ -3069,7 +4209,7 @@ window.COMMUNITIES_DATA = [
         "community": "Ultimate editors",
         "courseTitle": "Devin Jatho Editing Masterclass",
         "subtitle": "Domina el estilo de edición dinámica de Devin Jatho: tipografías, animación de elementos UI, hooks visuales y animaciones 3D.",
-        "bannerTag": "1080P FULL HD · EN DRIVE",
+        "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 4,
         "totalLessons": 33,
         "totalResources": 0,
@@ -3559,6 +4699,417 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 4,
                 "gdriveId": "1PMy0Dsabl9dYp9JIRxKjDS9V2q-UDHR-",
                 "gdriveLink": "https://drive.google.com/file/d/1PMy0Dsabl9dYp9JIRxKjDS9V2q-UDHR-/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bymaximise-editing-masterclass",
+        "community": "Ultimate editors",
+        "courseTitle": "Bymaximise Editing Masterclass",
+        "subtitle": "Aprende el estilo de edición limpio (Clean Editing Style) de Bymaximise: narrativa, colocación de textos, SFX cinemáticos e intros icónicas.",
+        "bannerTag": "1080P FULL HD · COMPLETO",
+        "totalModules": 7,
+        "totalLessons": 25,
+        "totalResources": 0,
+        "modules": [
+          {
+            "index": 1,
+            "folder": "01_General",
+            "title": "General & Bienvenida",
+            "lessons": [
+              {
+                "id": "bymax_les_01",
+                "slug": "bymax_01",
+                "index": 1,
+                "globalIndex": 1,
+                "title": "01. Welcome to the Clean Editing Style Masterclass!",
+                "rawTitle": "Welcome to the Clean Editing Style Masterclass!",
+                "module": "01_General",
+                "moduleIndex": 1,
+                "gdriveId": "1MKHahmgA4jprzhwnvD0MUH0voXsyFgyu",
+                "gdriveLink": "https://drive.google.com/file/d/1MKHahmgA4jprzhwnvD0MUH0voXsyFgyu/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "folder": "02_The Breakdown & Planning",
+            "title": "The Breakdown & Planning",
+            "lessons": [
+              {
+                "id": "bymax_les_02",
+                "slug": "bymax_02",
+                "index": 1,
+                "globalIndex": 2,
+                "title": "02. Breaking Down Cinematic Clean Editing",
+                "rawTitle": "Breaking Down Cinematic Clean Editing",
+                "module": "02_The Breakdown & Planning",
+                "moduleIndex": 2,
+                "gdriveId": "1w2VcvT_G5tVf_q6l9_8k28NznbNz9KLe",
+                "gdriveLink": "https://drive.google.com/file/d/1w2VcvT_G5tVf_q6l9_8k28NznbNz9KLe/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_03",
+                "slug": "bymax_03",
+                "index": 2,
+                "globalIndex": 3,
+                "title": "03. Planning Your Story & Workflow",
+                "rawTitle": "Planning Your Story & Workflow",
+                "module": "02_The Breakdown & Planning",
+                "moduleIndex": 2,
+                "gdriveId": "1ezhFMbWvyDo8UoQihH3KFphnMyOJafNI",
+                "gdriveLink": "https://drive.google.com/file/d/1ezhFMbWvyDo8UoQihH3KFphnMyOJafNI/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 3,
+            "folder": "03_Story Telling Secrets",
+            "title": "Story Telling Secrets",
+            "lessons": [
+              {
+                "id": "bymax_les_04",
+                "slug": "bymax_04",
+                "index": 1,
+                "globalIndex": 4,
+                "title": "04. Clip Selection & Merging Segments",
+                "rawTitle": "Clip Selection & Merging Segments",
+                "module": "03_Story Telling Secrets",
+                "moduleIndex": 3,
+                "gdriveId": "1zulKL8Qsc3W0ukOuoO8qVXtVQwOe42HG",
+                "gdriveLink": "https://drive.google.com/file/d/1zulKL8Qsc3W0ukOuoO8qVXtVQwOe42HG/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_05",
+                "slug": "bymax_05",
+                "index": 2,
+                "globalIndex": 5,
+                "title": "05. Story Telling with Shot Selection",
+                "rawTitle": "Story Telling with Shot Selection",
+                "module": "03_Story Telling Secrets",
+                "moduleIndex": 3,
+                "gdriveId": "1fVIZrJME5Y5vlLj3ZcfL1MaGjIXyNB9Y",
+                "gdriveLink": "https://drive.google.com/file/d/1fVIZrJME5Y5vlLj3ZcfL1MaGjIXyNB9Y/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_06",
+                "slug": "bymax_06",
+                "index": 3,
+                "globalIndex": 6,
+                "title": "06. Emotionally Motivating Music",
+                "rawTitle": "Emotionally Motivating Music",
+                "module": "03_Story Telling Secrets",
+                "moduleIndex": 3,
+                "gdriveId": "16zD5xUyAKJq5k1n7E45W3EkALjy4JBpy",
+                "gdriveLink": "https://drive.google.com/file/d/16zD5xUyAKJq5k1n7E45W3EkALjy4JBpy/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_07",
+                "slug": "bymax_07",
+                "index": 4,
+                "globalIndex": 7,
+                "title": "07. Tie it all Together",
+                "rawTitle": "Tie it all Together",
+                "module": "03_Story Telling Secrets",
+                "moduleIndex": 3,
+                "gdriveId": "1-vNiaaBOKWAebkVwqEhfOAEfRm4VzjCB",
+                "gdriveLink": "https://drive.google.com/file/d/1-vNiaaBOKWAebkVwqEhfOAEfRm4VzjCB/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "folder": "04_Text Stylization & Animations",
+            "title": "Text Stylization & Animations",
+            "lessons": [
+              {
+                "id": "bymax_les_08",
+                "slug": "bymax_08",
+                "index": 1,
+                "globalIndex": 8,
+                "title": "08. Font Selection Guide",
+                "rawTitle": "Font Selection Guide",
+                "module": "04_Text Stylization & Animations",
+                "moduleIndex": 4,
+                "gdriveId": "1F0yIJlwugRC99apWQb-rI44MO-nVvtkA",
+                "gdriveLink": "https://drive.google.com/file/d/1F0yIJlwugRC99apWQb-rI44MO-nVvtkA/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_09",
+                "slug": "bymax_09",
+                "index": 2,
+                "globalIndex": 9,
+                "title": "09. Text Stylization & Types",
+                "rawTitle": "Text Stylization & Types",
+                "module": "04_Text Stylization & Animations",
+                "moduleIndex": 4,
+                "gdriveId": "1DlNZSMk0MQJLYK0Kx8quxo4PwjcMiWW8",
+                "gdriveLink": "https://drive.google.com/file/d/1DlNZSMk0MQJLYK0Kx8quxo4PwjcMiWW8/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_10",
+                "slug": "bymax_10",
+                "index": 3,
+                "globalIndex": 10,
+                "title": "10. The Three Animations",
+                "rawTitle": "The Three Animations",
+                "module": "04_Text Stylization & Animations",
+                "moduleIndex": 4,
+                "gdriveId": "1-SzJN6QVDCCqXi88fbS47QwemVGet3QD",
+                "gdriveLink": "https://drive.google.com/file/d/1-SzJN6QVDCCqXi88fbS47QwemVGet3QD/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_11",
+                "slug": "bymax_11",
+                "index": 4,
+                "globalIndex": 11,
+                "title": "11. Commonly Used Text Effects",
+                "rawTitle": "Commonly Used Text Effects",
+                "module": "04_Text Stylization & Animations",
+                "moduleIndex": 4,
+                "gdriveId": "1p2K8zChHJGkXu9EpLnVA_I7CbQhYCPxd",
+                "gdriveLink": "https://drive.google.com/file/d/1p2K8zChHJGkXu9EpLnVA_I7CbQhYCPxd/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 5,
+            "folder": "05_Footage and Text Placement",
+            "title": "Footage and Text Placement",
+            "lessons": [
+              {
+                "id": "bymax_les_12",
+                "slug": "bymax_12",
+                "index": 1,
+                "globalIndex": 12,
+                "title": "12. Text Placement Theory",
+                "rawTitle": "Text Placement Theory",
+                "module": "05_Footage and Text Placement",
+                "moduleIndex": 5,
+                "gdriveId": "1ackBIIrQK-bfGSsjmHf86nQkt3HauZPP",
+                "gdriveLink": "https://drive.google.com/file/d/1ackBIIrQK-bfGSsjmHf86nQkt3HauZPP/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_13",
+                "slug": "bymax_13",
+                "index": 2,
+                "globalIndex": 13,
+                "title": "13. Placement & Workflow",
+                "rawTitle": "Placement & Workflow",
+                "module": "05_Footage and Text Placement",
+                "moduleIndex": 5,
+                "gdriveId": "1w4WqhFF992mmWSunFVZs6_Nh-OcLFtbq",
+                "gdriveLink": "https://drive.google.com/file/d/1w4WqhFF992mmWSunFVZs6_Nh-OcLFtbq/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_14",
+                "slug": "bymax_14",
+                "index": 3,
+                "globalIndex": 14,
+                "title": "14. Rotoscoping & Text Placement",
+                "rawTitle": "Rotoscoping & Text Placement",
+                "module": "05_Footage and Text Placement",
+                "moduleIndex": 5,
+                "gdriveId": "1gSm1-xGySz3ry2J4MZIgm3E4wefe2-BM",
+                "gdriveLink": "https://drive.google.com/file/d/1gSm1-xGySz3ry2J4MZIgm3E4wefe2-BM/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_15",
+                "slug": "bymax_15",
+                "index": 4,
+                "globalIndex": 15,
+                "title": "15. Combining it All Together",
+                "rawTitle": "Combining it All Together",
+                "module": "05_Footage and Text Placement",
+                "moduleIndex": 5,
+                "gdriveId": "1Pv_9wHiPfUF1mImb_EDd2wm0kf-lnqeo",
+                "gdriveLink": "https://drive.google.com/file/d/1Pv_9wHiPfUF1mImb_EDd2wm0kf-lnqeo/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 6,
+            "folder": "06_Advanced Sound Design",
+            "title": "Advanced Sound Design",
+            "lessons": [
+              {
+                "id": "bymax_les_16",
+                "slug": "bymax_016",
+                "index": 1,
+                "globalIndex": 16,
+                "title": "16. The High Quality SFX Folder",
+                "rawTitle": "The High Quality SFX Folder",
+                "module": "06_Advanced Sound Design",
+                "moduleIndex": 6,
+                "gdriveId": "1lfq8BT-WUaQoMtPXLWTosDQNPXFOochg",
+                "gdriveLink": "https://drive.google.com/file/d/1lfq8BT-WUaQoMtPXLWTosDQNPXFOochg/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_17",
+                "slug": "bymax_017",
+                "index": 2,
+                "globalIndex": 17,
+                "title": "17. Less is More Mentality",
+                "rawTitle": "Less is More Mentality",
+                "module": "06_Advanced Sound Design",
+                "moduleIndex": 6,
+                "gdriveId": "1EwHzqRf-19H5DKKpuFtRo6rjD9hzpKxt",
+                "gdriveLink": "https://drive.google.com/file/d/1EwHzqRf-19H5DKKpuFtRo6rjD9hzpKxt/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_18",
+                "slug": "bymax_018",
+                "index": 3,
+                "globalIndex": 18,
+                "title": "18. Cinematic Clicks & Camera SFX",
+                "rawTitle": "Cinematic Clicks & Camera SFX",
+                "module": "06_Advanced Sound Design",
+                "moduleIndex": 6,
+                "gdriveId": "1XMCWbVyoFTvFzbNOMVtXTAcfHKnRSzzk",
+                "gdriveLink": "https://drive.google.com/file/d/1XMCWbVyoFTvFzbNOMVtXTAcfHKnRSzzk/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_19",
+                "slug": "bymax_019",
+                "index": 4,
+                "globalIndex": 19,
+                "title": "19. Environmental SFX & Layering",
+                "rawTitle": "Environmental SFX & Layering",
+                "module": "06_Advanced Sound Design",
+                "moduleIndex": 6,
+                "gdriveId": "1Sn5H4tQ3NstOkWgP4FcvSKu0cKJsnEX2",
+                "gdriveLink": "https://drive.google.com/file/d/1Sn5H4tQ3NstOkWgP4FcvSKu0cKJsnEX2/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_20",
+                "slug": "bymax_020",
+                "index": 5,
+                "globalIndex": 20,
+                "title": "20. Emotionally Captivating Sound Design",
+                "rawTitle": "Emotionally Captivating Sound Design",
+                "module": "06_Advanced Sound Design",
+                "moduleIndex": 6,
+                "gdriveId": "1ukVx6gRa7QJnu9187yBKYazQ-wc5fTRQ",
+                "gdriveLink": "https://drive.google.com/file/d/1ukVx6gRa7QJnu9187yBKYazQ-wc5fTRQ/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 7,
+            "folder": "07_Common Bymaximise Intros",
+            "title": "Common Bymaximise Intros",
+            "lessons": [
+              {
+                "id": "bymax_les_21",
+                "slug": "bymax_021",
+                "index": 1,
+                "globalIndex": 21,
+                "title": "21. 3D Text Tracking Intro",
+                "rawTitle": "3D Text Tracking Intro",
+                "module": "07_Common Bymaximise Intros",
+                "moduleIndex": 7,
+                "gdriveId": "1a_pOGrfLj7vF13NG_iRPzXMB3ModT4P5",
+                "gdriveLink": "https://drive.google.com/file/d/1a_pOGrfLj7vF13NG_iRPzXMB3ModT4P5/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_22",
+                "slug": "bymax_022",
+                "index": 2,
+                "globalIndex": 22,
+                "title": "22. Old Tv Screen + Write Out Intro",
+                "rawTitle": "Old Tv Screen + Write Out Intro",
+                "module": "07_Common Bymaximise Intros",
+                "moduleIndex": 7,
+                "gdriveId": "1McoctnKpqlsZ_YOmpB6CAS7OEDjcHy_A",
+                "gdriveLink": "https://drive.google.com/file/d/1McoctnKpqlsZ_YOmpB6CAS7OEDjcHy_A/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_23",
+                "slug": "bymax_023",
+                "index": 3,
+                "globalIndex": 23,
+                "title": "23. Zoom Back + White Background Intro",
+                "rawTitle": "Zoom Back + White Background Intro",
+                "module": "07_Common Bymaximise Intros",
+                "moduleIndex": 7,
+                "gdriveId": "1rARAXuwSTOE-PfmmP9zgO-dU10g_LXJ0",
+                "gdriveLink": "https://drive.google.com/file/d/1rARAXuwSTOE-PfmmP9zgO-dU10g_LXJ0/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_24",
+                "slug": "bymax_024",
+                "index": 4,
+                "globalIndex": 24,
+                "title": "24. Hour Masterclass on Clean Editing!",
+                "rawTitle": "Hour Masterclass on Clean Editing!",
+                "module": "07_Common Bymaximise Intros",
+                "moduleIndex": 7,
+                "gdriveId": "1LdF1xu1jSsmRHQqli-1noRIxUXSJuGlB",
+                "gdriveLink": "https://drive.google.com/file/d/1LdF1xu1jSsmRHQqli-1noRIxUXSJuGlB/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "bymax_les_25",
+                "slug": "bymax_025",
+                "index": 5,
+                "globalIndex": 25,
+                "title": "25. A 1 Hour Guide to Editing Like Eleven Stoic",
+                "rawTitle": "A 1 Hour Guide to Editing Like Eleven Stoic",
+                "module": "07_Common Bymaximise Intros",
+                "moduleIndex": 7,
+                "gdriveId": "1Yx__dMxJRLJri65RbfikP5VWBkcnN06r",
+                "gdriveLink": "https://drive.google.com/file/d/1Yx__dMxJRLJri65RbfikP5VWBkcnN06r/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": []
               }

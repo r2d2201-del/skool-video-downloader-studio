@@ -413,6 +413,7 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
     course_name = clean_folder_name(context.get('course') or 'Curso')
     module_name = clean_folder_name(context.get('module') or 'General')
     lesson_title = context.get('lessonTitle') or file_name.replace('.mp4', '')
+    resources = context.get('resources') or []
     
     comm_id = re.sub(r'[^a-zA-Z0-9]', '', community_name).lower() or 'community'
     course_id = re.sub(r'[^a-zA-Z0-9]', '-', course_name).lower() or 'course'
@@ -430,16 +431,11 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
         if start_idx == -1:
             return
         json_start = content.find("[", start_idx)
-        json_end = content.rfind("];")
-        if json_start == -1 or json_end == -1 or json_end <= json_start:
-            json_end = content.rfind("]")
-            if json_start == -1 or json_end == -1:
-                return
-            json_end += 1
-        else:
-            json_end += 1
+        if json_start == -1:
+            return
 
-        communities = json.loads(content[json_start:json_end])
+        decoder = json.JSONDecoder()
+        communities, _ = decoder.raw_decode(content[json_start:])
         
         # 1. Find or create community
         comm = next((c for c in communities if c.get('id') == comm_id or c.get('name') == community_name), None)
@@ -500,17 +496,20 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
                 "gdriveId": gdrive_id,
                 "gdriveLink": f"https://drive.google.com/file/d/{gdrive_id}/view?usp=drivesdk",
                 "inDrive": True,
-                "resources": []
+                "resources": resources
             }
             mod['lessons'].append(les)
         else:
             les['gdriveId'] = gdrive_id
             les['gdriveLink'] = f"https://drive.google.com/file/d/{gdrive_id}/view?usp=drivesdk"
             les['inDrive'] = True
+            if resources:
+                les['resources'] = resources
 
         # Update course totals
         course['totalModules'] = len(course['modules'])
         course['totalLessons'] = sum(len(m.get('lessons', [])) for m in course['modules'])
+        course['totalResources'] = sum(len(l.get('resources', [])) for m in course['modules'] for l in m.get('lessons', []))
 
         # Write back to course-data.js
         new_content = f"window.COMMUNITIES_DATA = {json.dumps(communities, indent=2, ensure_ascii=False)};\n\nwindow.COURSE_DATA = window.COMMUNITIES_DATA[0].courses[0];\n"
@@ -528,13 +527,23 @@ def trigger_background_cloud_sync():
     def _sync():
         try:
             studio_dir = os.path.join(BASE_DIR, 'studio-web')
-            subprocess.run(["git", "add", "studio-web/data/course-data.js"], cwd=BASE_DIR, capture_output=True)
-            subprocess.run(["git", "commit", "-m", "chore: sync latest course-data catalog [skip ci]"], cwd=BASE_DIR, capture_output=True)
-            subprocess.run(["git", "push", "origin", "main"], cwd=BASE_DIR, capture_output=True)
-            subprocess.run(["vercel", "--prod", "--yes"], cwd=studio_dir, capture_output=True)
-            print("🚀 [Vercel Cloud Sync] Successfully deployed newest course catalog to Vercel production!", flush=True)
+            env = os.environ.copy()
+            env["PATH"] = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:" + env.get("PATH", "")
+            
+            git_bin = shutil.which("git", path=env["PATH"]) or "/usr/bin/git"
+            vercel_bin = shutil.which("vercel", path=env["PATH"]) or "/opt/homebrew/bin/vercel"
+
+            subprocess.run([git_bin, "add", "studio-web/data/course-data.js"], cwd=BASE_DIR, env=env, capture_output=True)
+            subprocess.run([git_bin, "commit", "-m", "chore: sync latest course-data catalog [skip ci]"], cwd=BASE_DIR, env=env, capture_output=True)
+            subprocess.run([git_bin, "push", "origin", "main"], cwd=BASE_DIR, env=env, capture_output=True)
+            
+            res = subprocess.run([vercel_bin, "--prod", "--yes"], cwd=studio_dir, env=env, capture_output=True, text=True)
+            if res.returncode == 0:
+                print("🚀 [Vercel Cloud Sync] Successfully deployed newest course catalog to Vercel production!", flush=True)
+            else:
+                print(f"⚠️ [Vercel Cloud Sync] Vercel CLI returned: {res.stderr.strip()}", flush=True)
         except Exception as e:
-            print(f"⚠️ [Vercel Cloud Sync] Background deploy note: {e}", flush=True)
+            print(f"⚠️ [Vercel Cloud Sync] Background deploy error: {e}", flush=True)
 
     t = threading.Thread(target=_sync, daemon=True)
     t.start()
