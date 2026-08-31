@@ -3071,7 +3071,7 @@ window.COMMUNITIES_DATA = [
         "subtitle": "Formación completa de Devin Jatho Editing Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 3,
-        "totalLessons": 11,
+        "totalLessons": 12,
         "totalResources": 0,
         "modules": [
           {
@@ -3244,6 +3244,20 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 3,
                 "gdriveId": "1HHfHQlTSO-gpXXF22-B3NojcPZHIzMBO",
                 "gdriveLink": "https://drive.google.com/file/d/1HHfHQlTSO-gpXXF22-B3NojcPZHIzMBO/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_12",
+                "slug": "les_devi",
+                "index": 3,
+                "globalIndex": 12,
+                "title": "Special Devin Text Style (Effects)",
+                "rawTitle": "Special Devin Text Style (Effects)",
+                "module": "03_Mastering Devin's Hook Editing",
+                "moduleIndex": 3,
+                "gdriveId": "104G6ewbedcyhCs2OFcZ0HE3ll13crQl4",
+                "gdriveLink": "https://drive.google.com/file/d/104G6ewbedcyhCs2OFcZ0HE3ll13crQl4/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": []
               }
