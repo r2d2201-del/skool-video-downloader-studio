@@ -7222,7 +7222,7 @@ window.COMMUNITIES_DATA = [
         "subtitle": "Formación completa de 3D Animated Editing Masteclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 3,
-        "totalLessons": 3,
+        "totalLessons": 4,
         "totalResources": 0,
         "modules": [
           {
@@ -7263,6 +7263,21 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 2,
                 "gdriveId": "1XAXgYw3GA3dfYVKUPNyLrH16WvLCewgU",
                 "gdriveLink": "https://drive.google.com/file/d/1XAXgYw3GA3dfYVKUPNyLrH16WvLCewgU/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "be667a21e982474ba9b3fad7e524f081",
+                "slug": "be667a21",
+                "index": 2,
+                "globalIndex": 4,
+                "title": "The Full Workflow",
+                "rawTitle": "The Full Workflow",
+                "module": "03_The 3D Editing Workflow + Resources",
+                "moduleIndex": 2,
+                "gdriveId": "1sL1fDtLqc1Gt8wyRyAioKSOWOg8Uwtlx",
+                "gdriveLink": "https://drive.google.com/file/d/1sL1fDtLqc1Gt8wyRyAioKSOWOg8Uwtlx/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
