@@ -4310,7 +4310,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 4,
         "totalLessons": 33,
-        "totalResources": 0,
+        "totalResources": 1,
         "modules": [
           {
             "index": 1,
@@ -4365,7 +4365,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1E2j1lVm1hkzoVWjZZURO2EoQQWfdR7A7/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_04",
@@ -4380,7 +4380,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/186y4csSlUJr8ygfzrFIu-u4J3-uFAfJz/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_05",
@@ -4395,7 +4395,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1gOS7cQSsJ0eg86yUfDPEehCyoXiShE2I/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_06",
@@ -4410,7 +4410,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1JIW-DbEbOAJK1NPyKJ_6kiTDlhTsBdfR/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_07",
@@ -4425,7 +4425,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1mlFXztckMbdQBdUWGnscO3GB1IWDVT5T/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_08",
@@ -4440,7 +4440,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1_aIAAoND-H6-aUT6D5o4j3l47W3mRY8C/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_09",
@@ -4474,9 +4474,20 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 3,
                 "gdriveId": "1HHfHQlTSO-gpXXF22-B3NojcPZHIzMBO",
                 "gdriveLink": "https://drive.google.com/file/d/1HHfHQlTSO-gpXXF22-B3NojcPZHIzMBO/view?usp=drivesdk",
-                "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "devin_res_10",
+                    "lessonId": "devin_les_10",
+                    "moduleTitle": "03_Mastering Devin's Hook Editing",
+                    "lessonTitle": "Generating Subtitles & Set-Up",
+                    "name": "Archivos de Texto y Subtítulos (Devin Jatho)",
+                    "url": "https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Carpeta Google Drive",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!</p><p>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h3>Files You Might Need</h3><p>Find all the text files <a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_11",
@@ -4491,7 +4502,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1LMcni99d8XUN_x304rnr6btlDZKOGenH/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_12",
@@ -4506,7 +4517,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1PdwwDe5gj5PArKPASJPmZwyHf5FLpjQK/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_13",
@@ -4521,7 +4532,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/104G6ewbedcyhCs2OFcZ0HE3ll13crQl4/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_14",
@@ -4550,7 +4561,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1WrzzSgabm-oi1eRXaNMBN_oE_YhFy8ZB/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_16",
@@ -4565,7 +4576,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1nQzBGUZnP2IuH8BmJ0ODk8yTkx9vrs48/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_17",
@@ -4594,7 +4605,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1NaA8C1MwG6B5RcCQLhw0E4CZ7mnz0yTf/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_19",
@@ -4609,7 +4620,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1H1U3K6Q3j-e10Q5cf48QCtRAISAzWJRw/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_20",
@@ -4638,7 +4649,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1jWFWI57_g3jJi-qrQD3m9E_b1lETFf6n/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_22",
@@ -4674,7 +4685,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1DY7u43ZFb9EVojWkBe4BMIJY7OicE7yJ/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_24",
@@ -4689,7 +4700,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1805evuEsDFjmb7j4d0ZG9Z-uGRVXiVex/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_25",
@@ -4704,7 +4715,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1Rn5XftX-RLb9ap0GddXpkP9VPL9sLVm0/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_26",
@@ -4719,7 +4730,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1wp93D56NBwtpV-uEpc3F0mPxWw8g1Ws7/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_27",
@@ -4734,7 +4745,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1fliuCKDs-tYAuUeQqoc2f0-XlsCYEVEc/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_28",
@@ -4763,7 +4774,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1w9ce9-bBEKJOggT7eBiR9pzPTvsh6Pb-/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_30",
@@ -4778,7 +4789,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/11SzV_TWOUqJvIPwzemQOJj_KmJY4XVEy/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_31",
@@ -4793,7 +4804,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/11AvN6s6U59S26iifwsS98sd1d7-hnHOf/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_32",
@@ -4808,7 +4819,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1EOBaE5KuWi4DtaC_th3hXdoHIUnu6suD/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": ""
               },
               {
                 "id": "devin_les_33",

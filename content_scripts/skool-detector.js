@@ -248,13 +248,6 @@
           else if (pageProps.group?.name) communityName = pageProps.group.name;
         }
 
-        if (!courseName) {
-          const courseObj = pageProps.course?.course || pageProps.course || pageProps.classroom?.course || pageProps.classroom || {};
-          if (courseObj.metadata?.title) courseName = courseObj.metadata.title;
-          else if (courseObj.title) courseName = courseObj.title;
-          else if (courseObj.name) courseName = courseObj.name;
-        }
-
         if (!lessonId && pageProps.course?.sets) {
           const firstLes = pageProps.course.sets[0]?.lessons?.[0];
           if (firstLes?.id) lessonId = firstLes.id;
@@ -282,13 +275,40 @@
       }
     }
 
+    const descSelectors = [
+      '.ProseMirror',
+      'div[class*="styled__ModuleContent"]',
+      'div[class*="styled__ModuleDesc"]',
+      'div[class*="styled__PostContent"]',
+      'div[class*="ModuleContent"]',
+      'div[class*="ModuleDesc"]',
+      'div[class*="tiptap"]',
+      'div[class*="styled__Description"]',
+      'div[class*="Description"]'
+    ];
+    let domDescriptionHtml = '';
+    for (const sel of descSelectors) {
+      const el = document.querySelector(sel);
+      if (el && el.innerHTML.trim() && el.textContent.trim().length > 5) {
+        const clone = el.cloneNode(true);
+        clone.querySelectorAll('a').forEach(a => {
+          a.setAttribute('target', '_blank');
+          a.setAttribute('rel', 'noopener noreferrer');
+          a.classList.add('lesson-link');
+        });
+        domDescriptionHtml = clone.innerHTML.trim();
+        break;
+      }
+    }
+
     return {
       community: cleanTitleText(communityName || 'Comunidad Skool'),
       course: cleanTitleText(courseName || 'Curso'),
       module: cleanTitleText(moduleName),
       lessonTitle: cleanTitleText(lessonTitle),
       lessonIndex: lessonIndex,
-      lessonId: lessonId
+      lessonId: lessonId,
+      descriptionHtml: domDescriptionHtml
     };
   }
 
