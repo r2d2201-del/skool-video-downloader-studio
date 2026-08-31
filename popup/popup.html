@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skool Video Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-group">
+        <div class="logo-icon">⚡</div>
+        <div class="logo-text">
+          <h1>Skool Downloader</h1>
+          <span class="version-tag">v2.5.7</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="btn-open-studio" class="action-btn" style="background:#ccff00; color:#000; font-weight:700; font-size:11px; padding:4px 8px; border-radius:4px; border:none; cursor:pointer; display:flex; align-items:center; gap:4px;" title="Abrir Plataforma Web Cinematic Studio">
+          <span>🚀</span> Studio
+        </button>
+        <span id="bridge-status-badge" class="bridge-status online" title="Estado del Motor">⚡ Motor Activo</span>
+        <button id="btn-refresh" class="icon-btn" title="Volver a escanear página">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <polyline points="1 20 1 14 7 14"></polyline>
+            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="tab-btn active" data-tab="tab-current">
+        <span class="tab-icon">📺</span> Lección
+      </button>
+      <button class="tab-btn" data-tab="tab-resources">
+        <span class="tab-icon">📎</span> Recursos
+        <span id="badge-resources-count" class="count-pill" style="display:none;">0</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-bulk">
+        <span class="tab-icon">📚</span> Aula Completa
+        <span id="badge-lessons-count" class="count-pill" style="display:none;">0</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-settings">
+        <span class="tab-icon">⚙️</span> Destino
+      </button>
+    </nav>
+
+    <!-- Main Scrollable Content -->
+    <main class="main-content">
+
+      <!-- Global Download Progress Bar -->
+      <div id="download-progress-box" class="progress-box" style="display:none;">
+        <div class="progress-info">
+          <span id="progress-status-text" class="progress-text">Descargando...</span>
+          <span id="progress-percentage-text" class="progress-percentage">0%</span>
+        </div>
+        <div class="progress-track">
+          <div id="progress-bar-fill" class="progress-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+      
+      <!-- Tab 1: Current Lesson & Video -->
+      <section id="tab-current" class="tab-content active">
+        <div id="page-context" class="page-context-card">
+          <div class="context-badge-row">
+            <span id="context-community" class="context-pill">Comunidad</span>
+            <span id="context-course" class="context-pill">Curso</span>
+          </div>
+          <div class="context-title" id="page-title">Escaneando lección...</div>
+          <div class="context-url" id="page-url">...</div>
+        </div>
+
+        <!-- Master Pack Download CTA -->
+        <div id="pack-download-card" class="pack-card" style="display:none;">
+          <div class="pack-info">
+            <h4>📦 Pack Completo de la Clase</h4>
+            <p id="pack-summary-text">Descarga el video MP4 y todos sus archivos adjuntos organizados en su carpeta.</p>
+          </div>
+          <button id="btn-download-pack" class="action-btn pack-btn">
+            📥 Descargar Todo (Video MP4 + Recursos)
+          </button>
+        </div>
+
+        <div class="section-divider-title">
+          <span>Video de esta clase</span>
+        </div>
+
+        <div id="video-list-container" class="video-list">
+          <div class="empty-state" id="loading-state">
+            <div class="spinner"></div>
+            <p>Buscando video de la lección...</p>
+            <small>Consejo: Inicia la reproducción del video si no aparece de inmediato.</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab 2: Lesson Resources & Attachments -->
+      <section id="tab-resources" class="tab-content">
+        <!-- Resource Mode Toggle -->
+        <div class="resource-toggle-row" style="display:flex; gap:6px; margin-bottom:12px; background:rgba(255,255,255,0.03); padding:4px; border-radius:8px; border:1px solid rgba(255,255,255,0.08);">
+          <button id="btn-toggle-res-single" class="toggle-pill active" style="flex:1; padding:6px 10px; font-size:11px; border-radius:6px; border:none; background:#3b82f6; color:#fff; cursor:pointer; font-weight:500;">
+            📄 Esta Lección (<span id="res-single-pill-count">0</span>)
+          </button>
+          <button id="btn-toggle-res-all" class="toggle-pill" style="flex:1; padding:6px 10px; font-size:11px; border-radius:6px; border:none; background:transparent; color:#94a3b8; cursor:pointer; font-weight:500;">
+            📚 Todo el Curso (<span id="res-all-pill-count">...</span>)
+          </button>
+        </div>
+
+        <div class="resources-header-card">
+          <div class="bulk-stats">
+            <span class="stat-number" id="resources-total-count">0</span>
+            <span class="stat-label" id="resources-header-label">Archivos y Enlaces de esta Lección</span>
+          </div>
+          <p class="bulk-description" id="resources-header-desc">PDFs, plantillas, ZIPs, Google Drive, Docs y enlaces anexados a esta clase.</p>
+          <div style="display:flex; gap:6px; margin-top:8px;">
+            <button id="btn-download-all-resources" class="action-btn primary" style="flex:1.2;">
+              📥 Descargar Recursos
+            </button>
+            <button id="btn-generate-guide" class="action-btn secondary" style="font-size:11px; padding:8px 10px;" title="Genera un archivo HTML y Markdown interactivo con todos los enlaces clickeables">
+              📖 Guía HTML/MD
+            </button>
+          </div>
+        </div>
+
+        <div class="resources-list-section">
+          <div id="resources-list-container" class="resources-container">
+            <div class="empty-state">
+              <p>No se encontraron archivos o enlaces adjuntos en esta lección.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab 3: Bulk Classroom Hierarchy Extraction -->
+      <section id="tab-bulk" class="tab-content">
+        <div class="classroom-summary-card">
+          <div class="classroom-header-row">
+            <div>
+              <h3 id="bulk-course-title">Temario Completo del Curso</h3>
+              <p id="bulk-stats-summary" class="bulk-summary-text">Cargando módulos y lecciones...</p>
+              <div class="destination-preview-tag" id="bulk-destination-preview" style="font-size: 10px; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 4px 8px; border-radius: 6px; margin-top: 6px; display: flex; align-items: center; justify-content: space-between;">
+                <div style="display:flex; align-items:center; gap:4px; overflow:hidden;">
+                  <span>📁 Destino:</span> 
+                  <span id="destination-path-text" style="color: #60a5fa; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Skool Downloads / Cargando...</span>
+                </div>
+                <button id="btn-edit-destination" style="background:none; border:none; color:#38bdf8; font-size:10px; cursor:pointer; padding:0 4px; text-decoration:underline;" title="Modificar nombre de carpeta o destino">
+                  ✏️ Cambiar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Bulk Actions -->
+          <div class="classroom-btn-row">
+            <button id="btn-bulk-download-all" class="action-btn pack-btn" style="flex:1.3;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Descargar Todo</span>
+            </button>
+            <button id="btn-bulk-download-videos" class="action-btn primary">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+              <span>Solo Videos</span>
+            </button>
+            <button id="btn-bulk-download-resources" class="action-btn secondary">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+              <span>Recursos</span>
+            </button>
+          </div>
+
+          <!-- Audit & Google Drive Action Toolbar -->
+          <div class="audit-toolbar" style="display: flex; gap: 8px; margin-top: 10px;">
+            <button id="btn-audit-course" class="action-btn secondary" style="flex: 1; font-size: 11px;" title="Verificar qué videos ya existen en Google Drive">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+              <span>Auditar en Drive</span>
+            </button>
+            <button id="btn-open-gdrive" class="action-btn secondary" style="flex: 0.8; font-size: 11px;" title="Abrir carpeta del curso en Google Drive">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              <span>Abrir en Drive</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Lessons Tree Filter & Select All -->
+        <div class="tree-controls-bar">
+          <label class="tree-select-all-label">
+            <input type="checkbox" id="check-select-all" checked>
+            <span>Seleccionar Todo</span>
+          </label>
+          <button id="btn-download-selected" class="action-btn primary compact">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Descargar Selección (<span id="selected-items-count">0</span>)</span>
+          </button>
+        </div>
+
+        <!-- Scrollable Classroom Modules & Lessons List -->
+        <div class="classroom-tree-container" id="classroom-tree-container">
+          <div class="tree-loading-state">
+            <div class="spinner"></div>
+            <p>Escaneando módulos, lecciones y enlaces...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab 4: Destination & Storage Settings -->
+      <section id="tab-settings" class="tab-content">
+        <div class="settings-card">
+          <h3 class="settings-title">⚙️ Destino y Almacenamiento</h3>
+
+          <!-- Storage Mode Selection -->
+          <div class="setting-group">
+            <label class="setting-label">
+              💾 ¿Dónde deseas guardar las descargas?
+            </label>
+            <div class="storage-mode-selector">
+              <label class="radio-card storage-mode-card">
+                <input type="radio" name="storage-mode" value="local">
+                <div class="radio-card-body">
+                  <span class="radio-card-icon">💻</span>
+                  <div class="radio-card-info">
+                    <span class="radio-card-title">Solo en mi Computadora</span>
+                    <span class="radio-card-desc">Guarda los archivos en tu disco local.</span>
+                  </div>
+                </div>
+              </label>
+
+              <label class="radio-card storage-mode-card">
+                <input type="radio" name="storage-mode" value="gdrive" checked>
+                <div class="radio-card-body">
+                  <span class="radio-card-icon">☁️</span>
+                  <div class="radio-card-info">
+                    <span class="radio-card-title">Solo en Google Drive (Recomendado)</span>
+                    <span class="radio-card-desc">Sube a tu nube y libera espacio local.</span>
+                  </div>
+                </div>
+              </label>
+
+              <label class="radio-card storage-mode-card">
+                <input type="radio" name="storage-mode" value="both">
+                <div class="radio-card-body">
+                  <span class="radio-card-icon">⚡</span>
+                  <div class="radio-card-info">
+                    <span class="radio-card-title">Ambos (PC + Google Drive)</span>
+                    <span class="radio-card-desc">Copia de respaldo local y en la nube.</span>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Community Folder Name Override -->
+          <div class="setting-group" id="group-community-override">
+            <label class="setting-label" for="input-custom-community-name">
+              👥 Nombre de la Comunidad / Carpeta Intermedia:
+            </label>
+            <input type="text" id="input-custom-community-name" class="setting-input" placeholder="Detectado automáticamente (o escribe tu propio nombre)">
+            <small class="setting-hint">Déjalo vacío para usar el nombre detectado automáticamente.</small>
+          </div>
+
+          <!-- Course Folder Name Override -->
+          <div class="setting-group" id="group-course-override">
+            <label class="setting-label" for="input-custom-course-name">
+              📚 Nombre de la Carpeta del Curso:
+            </label>
+            <input type="text" id="input-custom-course-name" class="setting-input" placeholder="Detectado automáticamente (o escribe tu propio nombre)">
+            <small class="setting-hint">Déjalo vacío para usar el nombre detectado automáticamente.</small>
+          </div>
+
+          <!-- Local Folder Selection -->
+          <div class="setting-group" id="group-local-folder">
+            <label class="setting-label" for="input-root-folder">
+              📁 Carpeta Local en tu Computadora:
+            </label>
+            <input type="text" id="input-root-folder" class="setting-input" value="Documentos/Skool_Downloads" placeholder="Ej: Documentos/Mis_Cursos o ~/Desktop/Cursos">
+            <small class="setting-hint">Elige un acceso rápido o escribe tu ruta:</small>
+            
+            <div class="preset-folder-buttons">
+              <button type="button" class="folder-chip-btn" data-path="Documentos/Skool_Downloads">
+                📄 Documentos
+              </button>
+              <button type="button" class="folder-chip-btn" data-path="Escritorio/Skool_Downloads">
+                🖥️ Escritorio
+              </button>
+              <button type="button" class="folder-chip-btn" data-path="Descargas/Skool_Downloads">
+                📥 Descargas
+              </button>
+              <button type="button" class="folder-chip-btn" data-path="Videos/Skool_Downloads">
+                🎬 Videos
+              </button>
+            </div>
+          </div>
+
+          <!-- Google Drive Target Folder -->
+          <div class="setting-group" id="group-gdrive-folder">
+            <label class="setting-label" for="input-gdrive-folder">
+              ☁️ Carpeta Raíz en Google Drive:
+            </label>
+            <input type="text" id="input-gdrive-folder" class="setting-input" value="Skool Downloads" placeholder="Ej: Skool Downloads o Cursos">
+          </div>
+
+          <div class="setting-group">
+            <label class="setting-label" for="select-folder-pattern">
+              🗂️ Organización de Subcarpetas:
+            </label>
+            <select id="select-folder-pattern" class="setting-select">
+              <option value="{community}/{course}/{module}/{index}_{title}">1. Comunidad / Curso / Módulo / 01_Lección (Recomendado)</option>
+              <option value="{community}/{course}/{index}_{title}">2. Comunidad / Curso / 01_Lección</option>
+              <option value="{community}/{course}/Videos y Recursos">3. Comunidad / Curso / Videos y Recursos</option>
+              <option value="flat">4. Carpeta Plana</option>
+            </select>
+          </div>
+
+          <button id="btn-save-settings" class="action-btn primary full-width" style="margin-top: 4px;">
+            💾 Guardar Preferencias
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">¡Operación completada!</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

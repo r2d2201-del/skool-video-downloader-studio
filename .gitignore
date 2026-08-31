@@ -1,0 +1,61 @@
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Secrets & Credentials (NEVER COMMIT)
+credentials.json
+token.json
+cookies.txt
+*cookies*.txt
+skool_session_cookies.txt
+*.pem
+*.key
+.env
+.env.local
+.env.*.local
+
+# Server Logs & Runtime Data
+*.log
+server.log
+server_err.log
+
+# Vercel Deployment
+.vercel
+
+# Downloaded Media & Large Files
+*.mp4
+*.mkv
+*.webm
+*.avi
+*.mov
+*.zip
+*.tar.gz
+*.rar

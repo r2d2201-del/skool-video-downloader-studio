@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "Skool Video Downloader",
+  "version": "2.5.7",
+  "description": "Download videos from Skool classroom lessons, community posts, and about pages in MP4 format (Wistia, Loom, Vimeo, YouTube, and Fastly/Cloudflare HLS .m3u8).",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "default_title": "Skool Video Downloader"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "storage",
+    "cookies",
+    "webRequest",
+    "clipboardRead",
+    "contextMenus",
+    "notifications",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://127.0.0.1/*",
+    "http://127.0.0.1:4545/*",
+    "http://localhost/*",
+    "http://localhost:4545/*",
+    "*://*.skool.com/*",
+    "*://*.fastly.video.skool.com/*",
+    "*://stream.video.skool.com/*",
+    "*://*.cloudflarestream.com/*",
+    "*://*.videodelivery.net/*",
+    "*://*.loom.com/*",
+    "*://cdn.loom.com/*",
+    "*://*.wistia.com/*",
+    "*://*.wistia.net/*",
+    "*://*.vimeo.com/*",
+    "*://*.vimeocdn.com/*",
+    "*://*.akamaized.net/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.skool.com/*"
+      ],
+      "js": [
+        "content_scripts/skool-detector.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
