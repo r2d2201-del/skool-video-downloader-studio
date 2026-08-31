@@ -7223,7 +7223,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 10,
         "totalLessons": 37,
-        "totalResources": 0,
+        "totalResources": 9,
         "modules": [
           {
             "index": 1,
@@ -7264,8 +7264,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1gcLngciaN4DI7EHBCJsbU0zlE4iQK9ic",
                 "gdriveLink": "https://drive.google.com/file/d/1gcLngciaN4DI7EHBCJsbU0zlE4iQK9ic/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Here are the assets: <a href=\"https://drive.google.com/file/d/1hhw-YY2aQ7KX2W_gimGoAKYnweOFpq5M/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/file/d/1hhw-YY2aQ7KX2W_gimGoAKYnweOFpq5M/view?usp=sharing</a></p><p>If you have any questions, feel free to ask me by tagging me in the community!</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "1a02cca46e3c4dd886579fe4acae4540",
+                    "moduleTitle": "03_The 3D Editing Workflow + Resources",
+                    "lessonTitle": "Free Asset Pack!",
+                    "name": "Descarga de Archivos / PDFs · Free Asset Pack!",
+                    "url": "https://drive.google.com/file/d/1hhw-YY2aQ7KX2W_gimGoAKYnweOFpq5M/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "be667a21e982474ba9b3fad7e524f081",
@@ -7279,7 +7291,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1zJRIyFPzgKUxq3TKprMy-AJGJ3Q4Fes-",
                 "gdriveLink": "https://drive.google.com/file/d/1zJRIyFPzgKUxq3TKprMy-AJGJ3Q4Fes-/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Here's the full workflow guide for 3D video editing. Practical examples will be taught throughout the rest of this masterclass.</p><p>If you have any questions, feel free to ask me by tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7294,7 +7306,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1qeCDhUhxjvtY3dW0jiRl-9lijDbD-WIv",
                 "gdriveLink": "https://drive.google.com/file/d/1qeCDhUhxjvtY3dW0jiRl-9lijDbD-WIv/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7309,7 +7321,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "115P50lQPChclDUUO-F1f31PPon9n8OcN",
                 "gdriveLink": "https://drive.google.com/file/d/115P50lQPChclDUUO-F1f31PPon9n8OcN/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7324,7 +7336,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "19aZfXF3wc65DvYgvCX4vbjRJc_o63Fk1",
                 "gdriveLink": "https://drive.google.com/file/d/19aZfXF3wc65DvYgvCX4vbjRJc_o63Fk1/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Here are the best plugins for After Effects! Please excuse me whenever I say preset instead of plugin. The plugins mentioned can be found here. If you have any installation issues, just search for installation guides on YouTube, they are extremely helpful.</p><p><a href=\"https://aescripts.com/flow/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://aescripts.com/flow/</a> (Flow) </p><p><a href=\"https://aescripts.com/deep-glow/#\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://aescripts.com/deep-glow/# </a>(Deep Glow) </p><p><a href=\"https://www.videocopilot.net/blog/2018/05/fx-console-updated-to-v1-0-3/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.videocopilot.net/blog/2018/05/fx-console-updated-to-v1-0-3/</a> (FX Console - FREE)</p><p><a href=\"https://misterhorse.com/animation-composer\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://misterhorse.com/animation-composer</a> (Animation Composer - FREE)</p><p><a href=\"https://mega.nz/file/LVc3gCaY#GStSRvgP1yBbj72gOdNNQzPpMeIj1cWHk6KZp8A_KU0\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://mega.nz/file/LVc3gCaY#GStSRvgP1yBbj72gOdNNQzPpMeIj1cWHk6KZp8A_KU0</a></p><p>(Ez Tools - FREE)</p><p>If you have any questions, feel free to ask by tagging me in the community!</p>",
                 "resources": []
               }
             ]
@@ -7346,7 +7358,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Dxh6RXA24gtxu-P_6ebca7tjUqUEeEnq",
                 "gdriveLink": "https://drive.google.com/file/d/1Dxh6RXA24gtxu-P_6ebca7tjUqUEeEnq/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Welcome to the 3D Editing Masterclass! Here is a full breakdown of the Charles Editing Style.</p><p>The original edit can be viewed here: <a href=\"https://www.youtube.com/watch?v=J0DKBKPgzbw\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.youtube.com/watch?v=J0DKBKPgzbw</a></p><p>If you have any questions, feel free to let me know by tagging me in the community. We're so excited to have you with us! Let's keep working!</p>",
                 "resources": []
               },
               {
@@ -7361,7 +7373,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Ik-n4qnMepXHfBOoBIzzYvD8hf5-MvEa",
                 "gdriveLink": "https://drive.google.com/file/d/1Ik-n4qnMepXHfBOoBIzzYvD8hf5-MvEa/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>The 3D Editing Masterclass has arrived!</p><p>To kick us off, I've broken down BartVFX's visual style so we can get a good understanding of the ideas that build an interesting 3D style.</p><p>I highly recommend you check him out, find him here: <a href=\"https://www.instagram.com/bart_vfx/?hl=en\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.instagram.com/bart_vfx</a></p><p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               }
             ]
@@ -7383,7 +7395,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1JLU_zHEN3orsgJhmNJTHgfaedL5WWX1C",
                 "gdriveLink": "https://drive.google.com/file/d/1JLU_zHEN3orsgJhmNJTHgfaedL5WWX1C/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7398,7 +7410,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1JLamRQBcGDPwXaSt9uUwPfUYoA66qYNC",
                 "gdriveLink": "https://drive.google.com/file/d/1JLamRQBcGDPwXaSt9uUwPfUYoA66qYNC/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               }
             ]
@@ -7420,7 +7432,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1QWWxxn5n6Z9oSPvPXZCttf4SiDeRlXj5",
                 "gdriveLink": "https://drive.google.com/file/d/1QWWxxn5n6Z9oSPvPXZCttf4SiDeRlXj5/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7435,7 +7447,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1oOxUK7b61WkBTvMjIwsgf49uCx3s18wW",
                 "gdriveLink": "https://drive.google.com/file/d/1oOxUK7b61WkBTvMjIwsgf49uCx3s18wW/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7450,7 +7462,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1G6n7g-NyI4nTpYIrWFGk0THxUt8D6Oih",
                 "gdriveLink": "https://drive.google.com/file/d/1G6n7g-NyI4nTpYIrWFGk0THxUt8D6Oih/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Here are some of the top free AI image generators:</p><p>Update: Dall E is now also accessible for free users of chat gpt!</p><p><a href=\"https://www.bing.com/images/create\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.bing.com/images/create</a></p><p><a href=\"https://app.leonardo.ai/auth/login?callbackUrl=%2F\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://app.leonardo.ai/auth/login?callbackUrl=%2F</a></p><p><a href=\"https://firefly.adobe.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://firefly.adobe.com/</a></p><p>Prompting Keywords: \"cell shading\", \"low lighting\", \"subtle geometric shapes\", \"9:16\"</p><p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7465,7 +7477,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1QmAxcxuxBw0XuTA-eT3vgvPBLXIdsemy",
                 "gdriveLink": "https://drive.google.com/file/d/1QmAxcxuxBw0XuTA-eT3vgvPBLXIdsemy/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>You can find free 3D assets here: <a href=\"https://sketchfab.com/feed\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://sketchfab.com/feed</a></p><p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7480,7 +7492,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "14eqvElvp99ZGy3o6IDqoM3joTC1dV4hQ",
                 "gdriveLink": "https://drive.google.com/file/d/14eqvElvp99ZGy3o6IDqoM3joTC1dV4hQ/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7495,7 +7507,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "11syLqWm0vx-Ti8TYx1U4Hy6u4joeY9Wh",
                 "gdriveLink": "https://drive.google.com/file/d/11syLqWm0vx-Ti8TYx1U4Hy6u4joeY9Wh/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7510,7 +7522,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1JyQIM1jlZVKtGbZli5ow682psZSYoJqo",
                 "gdriveLink": "https://drive.google.com/file/d/1JyQIM1jlZVKtGbZli5ow682psZSYoJqo/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
                 "resources": []
               }
             ]
@@ -7532,7 +7544,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1AkUbGbIeBCh6NjxPQrCZvCGeEXtp8qQL",
                 "gdriveLink": "https://drive.google.com/file/d/1AkUbGbIeBCh6NjxPQrCZvCGeEXtp8qQL/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7547,7 +7559,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "15DmF6e5R6wwjrIv0XpUa3IiS44ju_aKU",
                 "gdriveLink": "https://drive.google.com/file/d/15DmF6e5R6wwjrIv0XpUa3IiS44ju_aKU/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7562,7 +7574,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1ELFV7fv-yeQ4SSlpVZIj_94dF4S-9ETo",
                 "gdriveLink": "https://drive.google.com/file/d/1ELFV7fv-yeQ4SSlpVZIj_94dF4S-9ETo/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
                 "resources": []
               }
             ]
@@ -7584,7 +7596,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1f_mSKWvViGijU7JZvqa2VSWB7ftpDhJ4",
                 "gdriveLink": "https://drive.google.com/file/d/1f_mSKWvViGijU7JZvqa2VSWB7ftpDhJ4/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7599,7 +7611,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "127MYor44TEe0P7WzToMqxlkC0tSm0rnx",
                 "gdriveLink": "https://drive.google.com/file/d/127MYor44TEe0P7WzToMqxlkC0tSm0rnx/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7614,7 +7626,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1VOlsGxtFNq6Lvxc7_Zz3VphDs_j-Xn5l",
                 "gdriveLink": "https://drive.google.com/file/d/1VOlsGxtFNq6Lvxc7_Zz3VphDs_j-Xn5l/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               }
             ]
@@ -7636,8 +7648,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "17wVgQ2ljskUjS0wcIun_cBVTaAkOSqzA",
                 "gdriveLink": "https://drive.google.com/file/d/17wVgQ2ljskUjS0wcIun_cBVTaAkOSqzA/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Here is the project file to my competition winning video from January 2025. The project file can be downloaded from here: </p><p><a href=\"https://drive.google.com/file/d/1EVVO8jxeWskoN8eMlI7QaZ7wNx9s4qVr/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/file/d/1EVVO8jxeWskoN8eMlI7QaZ7wNx9s4qVr/view?usp=sharing</a></p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "12737a0685c34ca4aaf681d15b702c85",
+                    "moduleTitle": "10_Bonus Project File",
+                    "lessonTitle": "Project File - Charles (January Competition Video)",
+                    "name": "Descarga de Archivos / PDFs · Project File - Charles (January Competition Video)",
+                    "url": "https://drive.google.com/file/d/1EVVO8jxeWskoN8eMlI7QaZ7wNx9s4qVr/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               }
             ]
           },
@@ -7658,8 +7682,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "19Adm8HvV6XUlRbNhibNGGtvwmrzLNmWu",
                 "gdriveLink": "https://drive.google.com/file/d/19Adm8HvV6XUlRbNhibNGGtvwmrzLNmWu/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Grab the the asset packs used for this project at the link below:</p><p><a href=\"https://drive.google.com/drive/folders/1t3F2NH_6HvWK09SOHPTpi_Cl1TYeFJU6?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1t3F2NH_6HvWK09SOHPTpi_Cl1TYeFJU6?usp=sharing</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "9c8938eb4a72475bb1d4dbcd3e127df5",
+                    "moduleTitle": "09_BartVFX Style Walkthrough",
+                    "lessonTitle": "Laying the Foundation",
+                    "name": "Descarga de Archivos / PDFs · Laying the Foundation",
+                    "url": "https://drive.google.com/drive/folders/1t3F2NH_6HvWK09SOHPTpi_Cl1TYeFJU6?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "50ac7a1a338e492d8a377e6836d3f9f1",
@@ -7673,7 +7709,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1qkTWztKAdB8mHoEyjURigzz0dbBUSrEJ",
                 "gdriveLink": "https://drive.google.com/file/d/1qkTWztKAdB8mHoEyjURigzz0dbBUSrEJ/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7688,7 +7724,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1BPejJOSQwM7CwNCCxp6_wUjcwxcaEzkJ",
                 "gdriveLink": "https://drive.google.com/file/d/1BPejJOSQwM7CwNCCxp6_wUjcwxcaEzkJ/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7703,7 +7739,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1nvN_Sq7lP51BnucMzNJBxSAIUsJEaiDc",
                 "gdriveLink": "https://drive.google.com/file/d/1nvN_Sq7lP51BnucMzNJBxSAIUsJEaiDc/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7718,7 +7754,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1xcLZaFwubrMpHy-g5mtEPEYxH19M6Lc8",
                 "gdriveLink": "https://drive.google.com/file/d/1xcLZaFwubrMpHy-g5mtEPEYxH19M6Lc8/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               },
               {
@@ -7733,7 +7769,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1j1CciJx4STGvaWjDiXeF8CXVG_byNy2m",
                 "gdriveLink": "https://drive.google.com/file/d/1j1CciJx4STGvaWjDiXeF8CXVG_byNy2m/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Got questions? Shoot them my way! Either a DM or tagging me in the community!</p>",
                 "resources": []
               }
             ]
@@ -7755,7 +7791,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1J84vWpdle8yubSeGhj5sV1ccWTVeAqo0",
                 "gdriveLink": "https://drive.google.com/file/d/1J84vWpdle8yubSeGhj5sV1ccWTVeAqo0/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
+                "descriptionHtml": "<p>Congratulations! You have finally learnt 3D editing! I wish you the best of luck with clients and all your video editing endeavours :) </p>",
                 "resources": []
               },
               {
@@ -7770,8 +7806,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Qr7n1YCEV3JdCmM0ulBXSDvDvtHJxA3W",
                 "gdriveLink": "https://drive.google.com/file/d/1Qr7n1YCEV3JdCmM0ulBXSDvDvtHJxA3W/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Here are the assets + project file: <a href=\"https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing</a></p><p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "62ec3414bff14aa5abfa75b4edb2b2c1",
+                    "moduleTitle": "08_Charles Style Walkthrough",
+                    "lessonTitle": "Editing The Body - Animation 2",
+                    "name": "Descarga de Archivos / PDFs · Editing The Body - Animation 2",
+                    "url": "https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "895942ae927b45a8b5d2ef14e0799b66",
@@ -7785,8 +7833,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1gCYEs6sDmr_1X9LB3GIfVjyrGi7f46WM",
                 "gdriveLink": "https://drive.google.com/file/d/1gCYEs6sDmr_1X9LB3GIfVjyrGi7f46WM/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Here are the assets + project file: <a href=\"https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing</a></p><p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "895942ae927b45a8b5d2ef14e0799b66",
+                    "moduleTitle": "08_Charles Style Walkthrough",
+                    "lessonTitle": "Editing The Body - Animation 3",
+                    "name": "Descarga de Archivos / PDFs · Editing The Body - Animation 3",
+                    "url": "https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "1482b34528994c89bd0ddabb1d7b99d2",
@@ -7800,8 +7860,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1cnqrLyQdPnUH51PeO13ovmfmAyBAY7Do",
                 "gdriveLink": "https://drive.google.com/file/d/1cnqrLyQdPnUH51PeO13ovmfmAyBAY7Do/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Here are the assets + project file: <a href=\"https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing</a></p><p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "1482b34528994c89bd0ddabb1d7b99d2",
+                    "moduleTitle": "08_Charles Style Walkthrough",
+                    "lessonTitle": "Final Touches + Sound Design",
+                    "name": "Descarga de Archivos / PDFs · Final Touches + Sound Design",
+                    "url": "https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "fe46a29ac9ff40b7b89c228eeabd6fe4",
@@ -7815,8 +7887,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1O-LAMeGBS5EHwi2nohRzL2uPgRzxE2lU",
                 "gdriveLink": "https://drive.google.com/file/d/1O-LAMeGBS5EHwi2nohRzL2uPgRzxE2lU/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Here are the assets + project file: <a href=\"https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing</a></p><p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "fe46a29ac9ff40b7b89c228eeabd6fe4",
+                    "moduleTitle": "08_Charles Style Walkthrough",
+                    "lessonTitle": "Rough Cuts and Planning",
+                    "name": "Descarga de Archivos / PDFs · Rough Cuts and Planning",
+                    "url": "https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "afff636bcd1c45618089bbbf83c41e81",
@@ -7830,8 +7914,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1iEmVsRzAlhWgym4Adr6UlPeqdIzymk1F",
                 "gdriveLink": "https://drive.google.com/file/d/1iEmVsRzAlhWgym4Adr6UlPeqdIzymk1F/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Here are the assets + project file: <a href=\"https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing</a></p><p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "afff636bcd1c45618089bbbf83c41e81",
+                    "moduleTitle": "08_Charles Style Walkthrough",
+                    "lessonTitle": "Editing The Hook",
+                    "name": "Descarga de Archivos / PDFs · Editing The Hook",
+                    "url": "https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               },
               {
                 "id": "18d38c9024ed432baaf51d28413c519d",
@@ -7845,8 +7941,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1N8NBenl0JW3mXo1xx_9ujD5T0WKxl6-K",
                 "gdriveLink": "https://drive.google.com/file/d/1N8NBenl0JW3mXo1xx_9ujD5T0WKxl6-K/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "",
-                "resources": []
+                "descriptionHtml": "<p>Here are the assets + project file: <a href=\"https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing</a></p><p>If you have any questions, feel free to let me know by tagging me in the community!</p>",
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "18d38c9024ed432baaf51d28413c519d",
+                    "moduleTitle": "08_Charles Style Walkthrough",
+                    "lessonTitle": "Editing The Body - Animation 1",
+                    "name": "Descarga de Archivos / PDFs · Editing The Body - Animation 1",
+                    "url": "https://drive.google.com/file/d/1fYB6o-VwcwD_-L3cpK6hDU3kElNQy1h1/view?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ]
               }
             ]
           }
