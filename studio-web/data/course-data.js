@@ -3071,7 +3071,7 @@ window.COMMUNITIES_DATA = [
         "subtitle": "Formación completa de Devin Jatho Editing Masterclass",
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 3,
-        "totalLessons": 10,
+        "totalLessons": 11,
         "totalResources": 0,
         "modules": [
           {
@@ -3230,6 +3230,20 @@ window.COMMUNITIES_DATA = [
                 "moduleIndex": 3,
                 "gdriveId": "1LMcni99d8XUN_x304rnr6btlDZKOGenH",
                 "gdriveLink": "https://drive.google.com/file/d/1LMcni99d8XUN_x304rnr6btlDZKOGenH/view?usp=drivesdk",
+                "inDrive": true,
+                "resources": []
+              },
+              {
+                "id": "les_devin-jatho-editing-masterclass_11",
+                "slug": "les_devi",
+                "index": 2,
+                "globalIndex": 11,
+                "title": "Generating Subtitles & Set-Up",
+                "rawTitle": "Generating Subtitles & Set-Up",
+                "module": "03_Mastering Devin's Hook Editing",
+                "moduleIndex": 3,
+                "gdriveId": "1HHfHQlTSO-gpXXF22-B3NojcPZHIzMBO",
+                "gdriveLink": "https://drive.google.com/file/d/1HHfHQlTSO-gpXXF22-B3NojcPZHIzMBO/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": []
               }
