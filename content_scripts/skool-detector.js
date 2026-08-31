@@ -109,23 +109,27 @@
 
   // Find exact video URL for a specific lesson ID inside Next.js payload
   function findLessonVideoById(nextData, lessonId) {
-    if (!nextData || !lessonId) return null;
+    if (!nextData) return null;
 
-    const lessonObjects = findDeep(nextData, obj => {
+    const lessonObjects = lessonId ? findDeep(nextData, obj => {
       return obj && typeof obj === 'object' && (obj.id === lessonId || obj._id === lessonId);
-    });
+    }) : [nextData];
 
     for (const les of lessonObjects) {
-      const meta = les.metadata || {};
+      if (!les || typeof les !== 'object') continue;
+      const meta = les.metadata || les;
 
       // 1. Direct embed/external candidates FIRST (Loom, YouTube, Vimeo, direct MP4)
       const candidates = [
         meta.videoLink,
         meta.video_url,
         meta.videoUrl,
+        meta.url,
+        meta.link,
         les.videoLink,
         les.video_url,
         les.videoUrl,
+        les.url,
         meta.hlsUrl,
         les.hlsUrl,
         meta.downloadUrl,
@@ -133,16 +137,29 @@
       ];
 
       for (const c of candidates) {
-        if (c && typeof c === 'string' && c.startsWith('http')) {
+        if (c && typeof c === 'string' && (
+          c.startsWith('http') || c.includes('loom.com') || c.includes('youtube') || c.includes('youtu.be') || c.includes('vimeo') || c.includes('wistia') || c.includes('mux.com') || c.includes('.m3u8')
+        )) {
           return c;
         }
       }
 
-      // 2. Native Mux / Skool HLS stream
+      // 2. Mux / Native Skool Video Object
       const vidObj = meta.video || les.video || meta.videoObj || les.videoObj;
-      const pid = vidObj?.playbackId || meta.playbackId || les.playbackId;
-      const tok = vidObj?.playbackToken || meta.playbackToken || les.playbackToken;
-      if (pid) {
+      if (vidObj && typeof vidObj === 'object') {
+        const pid = vidObj.playbackId || vidObj.playback_id || vidObj.id || vidObj.muxPlaybackId;
+        const tok = vidObj.playbackToken || vidObj.playback_token || vidObj.token || vidObj.signedToken;
+        if (pid && typeof pid === 'string' && pid.length > 5 && !pid.includes(' ')) {
+          return tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
+        }
+        if (vidObj.url && typeof vidObj.url === 'string' && vidObj.url.startsWith('http')) {
+          return vidObj.url;
+        }
+      }
+
+      const pid = meta.playbackId || meta.playback_id || les.playbackId || les.playback_id;
+      const tok = meta.playbackToken || meta.playback_token || les.playbackToken || les.playback_token;
+      if (pid && typeof pid === 'string' && pid.length > 5 && !pid.includes(' ')) {
         return tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
       }
     }

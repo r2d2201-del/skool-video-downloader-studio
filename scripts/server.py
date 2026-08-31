@@ -86,15 +86,28 @@ def resolve_skool_video_stream(page_url, cookie_file):
         jar = http.cookiejar.MozillaCookieJar(cookie_file)
         jar.load()
 
-        opener = urllib.request.build_opener(
-            urllib.request.HTTPSHandler(context=SSL_CTX),
-            urllib.request.HTTPCookieProcessor(jar)
-        )
-        req = urllib.request.Request(page_url, headers={
+        # Build raw Cookie header from cookie_file
+        cookie_header_parts = []
+        try:
+            with open(cookie_file, "r", encoding="utf-8") as cf:
+                for line in cf:
+                    parts = line.strip().split("\t")
+                    if len(parts) >= 7 and not line.startswith("#"):
+                        cookie_header_parts.append(f"{parts[5]}={parts[6]}")
+        except Exception:
+            pass
+        cookie_header_str = "; ".join(cookie_header_parts)
+
+        headers = {
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
-            "Referer": "https://www.skool.com/"
-        })
-        with opener.open(req, timeout=15) as res:
+            "Referer": "https://www.skool.com/",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+        }
+        if cookie_header_str:
+            headers["Cookie"] = cookie_header_str
+
+        req = urllib.request.Request(page_url, headers=headers)
+        with urllib.request.urlopen(req, context=SSL_CTX, timeout=15) as res:
             html = res.read().decode("utf-8", "ignore")
 
         m = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', html)
