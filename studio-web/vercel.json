@@ -1,6 +1,4 @@
 {
-  "version": 2,
-  "name": "cinematic-lms-studio",
   "cleanUrls": true,
   "headers": [
     {
@@ -16,5 +14,9 @@
         }
       ]
     }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
