@@ -13,7 +13,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 7,
         "totalLessons": 34,
-        "totalResources": 166,
+        "totalResources": 197,
         "modules": [
           {
             "index": 1,
@@ -43,9 +43,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "2b234b70de1c4d0a870aead09061aa61",
+                    "moduleTitle": "Breaking Down Cinematic Editing",
+                    "lessonTitle": "What Cinematic Edits Look Like",
+                    "name": "Tablero Figma · What Cinematic Edits Look Like",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "1af1218e6ffe41ae89bf798976035a13",
@@ -70,9 +81,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "1af1218e6ffe41ae89bf798976035a13",
+                    "moduleTitle": "Breaking Down Cinematic Editing",
+                    "lessonTitle": "Gathering Cinematic Inspiration",
+                    "name": "Tablero Figma · Gathering Cinematic Inspiration",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "271f97b6488448078e807a69b2b327cc",
@@ -97,9 +119,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "271f97b6488448078e807a69b2b327cc",
+                    "moduleTitle": "Breaking Down Cinematic Editing",
+                    "lessonTitle": "Breaking Down Cinematic Reels",
+                    "name": "Tablero Figma · Breaking Down Cinematic Reels",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "77e277f3ee4c4a5e83cb2fddc2908e3d",
@@ -135,9 +168,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_2",
+                    "lessonId": "77e277f3ee4c4a5e83cb2fddc2908e3d",
+                    "moduleTitle": "Breaking Down Cinematic Editing",
+                    "lessonTitle": "Planning out our Animation",
+                    "name": "Tablero Figma · Planning out our Animation",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               }
             ]
           },
@@ -180,9 +224,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_2",
+                    "lessonId": "e46dbb64cc43427e9209025bb85a2c64",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Cutting & Pacing Fundamentals",
+                    "name": "Tablero Figma · Cutting & Pacing Fundamentals",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "a22eea10cd184351a42db71f37bb30bb",
@@ -218,9 +273,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_2",
+                    "lessonId": "a22eea10cd184351a42db71f37bb30bb",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Creating Shorts from Long-Form (Theory)",
+                    "name": "Tablero Figma · Creating Shorts from Long-Form (Theory)",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "1c5e05c0940348b293b4794a32da6aab",
@@ -267,9 +333,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_3",
+                    "lessonId": "1c5e05c0940348b293b4794a32da6aab",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Creating Short-Form Clips (Practice)",
+                    "name": "Tablero Figma · Creating Short-Form Clips (Practice)",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "d46921b6792044969dd9cfa1614eb7aa",
@@ -316,9 +393,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_3",
+                    "lessonId": "d46921b6792044969dd9cfa1614eb7aa",
+                    "moduleTitle": "Cutting & Preparing",
+                    "lessonTitle": "Extracting Short-Form Clips (Overview)",
+                    "name": "Tablero Figma · Extracting Short-Form Clips (Overview)",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               }
             ]
           },
@@ -372,9 +460,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_3",
+                    "lessonId": "b5e1b0991ede46b593994c7d3d4c94b7",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "B-roll Theory",
+                    "name": "Tablero Figma · B-roll Theory",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "fafbccf9aa45415c898eaddeca3e3a16",
@@ -432,9 +531,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_4",
+                    "lessonId": "fafbccf9aa45415c898eaddeca3e3a16",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Choosing B-roll For Your Story",
+                    "name": "Tablero Figma · Choosing B-roll For Your Story",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "7b9b5b588cdf4bebb0a2db31d6a9af59",
@@ -503,9 +613,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_5",
+                    "lessonId": "7b9b5b588cdf4bebb0a2db31d6a9af59",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Collecting Stock Footage",
+                    "name": "Tablero Figma · Collecting Stock Footage",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "8418b329db8e41eab6af29cca7bbaa4d",
@@ -618,9 +739,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_9",
+                    "lessonId": "8418b329db8e41eab6af29cca7bbaa4d",
+                    "moduleTitle": "Storytelling with Your Footage",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Tablero Figma · Storytelling with B-roll",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               }
             ]
           },
@@ -696,9 +828,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_5",
+                    "lessonId": "89b761d4c6524f609f2defcc141969d7",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "The Text Theory",
+                    "name": "Tablero Figma · The Text Theory",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "99374afc1c244a689d1b5ac25a92851d",
@@ -767,9 +910,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_5",
+                    "lessonId": "99374afc1c244a689d1b5ac25a92851d",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Default Text Workflow",
+                    "name": "Tablero Figma · Default Text Workflow",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "4bafd88eb7dc43b8ad37943d62a7051b",
@@ -838,9 +992,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_5",
+                    "lessonId": "4bafd88eb7dc43b8ad37943d62a7051b",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "How to Special Design Text",
+                    "name": "Tablero Figma · How to Special Design Text",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "51786b7a38d04460a94cd357240db147",
@@ -909,9 +1074,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_5",
+                    "lessonId": "51786b7a38d04460a94cd357240db147",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "3D Warped Text Effect",
+                    "name": "Tablero Figma · 3D Warped Text Effect",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "4354e2bfd21043bbb6e9f6fd96a1ad11",
@@ -980,9 +1156,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_5",
+                    "lessonId": "4354e2bfd21043bbb6e9f6fd96a1ad11",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Blending Text Effect",
+                    "name": "Tablero Figma · Blending Text Effect",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "75aed36d7b3442c9ad86be5adce7f71a",
@@ -1051,9 +1238,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_5",
+                    "lessonId": "75aed36d7b3442c9ad86be5adce7f71a",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Tracking Text Effect",
+                    "name": "Tablero Figma · Tracking Text Effect",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "19ef8744ff9c4c21b25711625a8fd4e5",
@@ -1122,9 +1320,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_5",
+                    "lessonId": "19ef8744ff9c4c21b25711625a8fd4e5",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Integrating Text into B-roll",
+                    "name": "Tablero Figma · Integrating Text into B-roll",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "7073fd31eef54f2a9c8903567fb3753c",
@@ -1237,9 +1446,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_9",
+                    "lessonId": "7073fd31eef54f2a9c8903567fb3753c",
+                    "moduleTitle": "Everything Cinematic Text",
+                    "lessonTitle": "Recap: Complete Text Workflow",
+                    "name": "Tablero Figma · Recap: Complete Text Workflow",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               }
             ]
           },
@@ -1326,9 +1546,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_6",
+                    "lessonId": "71ebf19ebc734ad9b6f8118acabdaf56",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Cinematic Sound Design Theory",
+                    "name": "Tablero Figma · Cinematic Sound Design Theory",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "f2a65983bf024166b2ff2a6a44f66c6f",
@@ -1408,9 +1639,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_6",
+                    "lessonId": "f2a65983bf024166b2ff2a6a44f66c6f",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Environmental Sound Effects",
+                    "name": "Tablero Figma · Environmental Sound Effects",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "d4e4e1a4f63643cbbb36293a9e0210ce",
@@ -1490,9 +1732,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_6",
+                    "lessonId": "d4e4e1a4f63643cbbb36293a9e0210ce",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Textured Sound Design Workflow",
+                    "name": "Tablero Figma · Textured Sound Design Workflow",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "6148bbe9addd42c2a7e311aba3a4ac0d",
@@ -1572,9 +1825,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_6",
+                    "lessonId": "6148bbe9addd42c2a7e311aba3a4ac0d",
+                    "moduleTitle": "Cinematic Sound Workflow",
+                    "lessonTitle": "Creating Anticipation with Sound Design",
+                    "name": "Tablero Figma · Creating Anticipation with Sound Design",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               }
             ]
           },
@@ -1672,9 +1936,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_7",
+                    "lessonId": "9acc2e5bdb084f5ab3307117b8eb330f",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Cinematic Music Theory",
+                    "name": "Tablero Figma · Cinematic Music Theory",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "a5c34a037bec41a38d4d2ea82d80bc5d",
@@ -1765,9 +2040,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_7",
+                    "lessonId": "a5c34a037bec41a38d4d2ea82d80bc5d",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Testing Music Tracks",
+                    "name": "Tablero Figma · Testing Music Tracks",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "0da3e387045741d980bf7755cf9b858b",
@@ -1858,9 +2144,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_7",
+                    "lessonId": "0da3e387045741d980bf7755cf9b858b",
+                    "moduleTitle": "Film-like Music",
+                    "lessonTitle": "Bonus Music Effects",
+                    "name": "Tablero Figma · Bonus Music Effects",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               }
             ]
           },
@@ -1925,9 +2222,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_4",
+                    "lessonId": "8243fb954af24339be94aaf44f41a781",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Reveal: Cinematic Practice Project",
+                    "name": "Tablero Figma · Reveal: Cinematic Practice Project",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "03bc312abffe4d1daae9c0d4d792bdbc",
@@ -1985,9 +2293,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_4",
+                    "lessonId": "03bc312abffe4d1daae9c0d4d792bdbc",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Creating a Short-Form Clip",
+                    "name": "Tablero Figma · Creating a Short-Form Clip",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "e3029dccbd7b4c30bccda71d9f4ab74e",
@@ -2045,9 +2364,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_4",
+                    "lessonId": "e3029dccbd7b4c30bccda71d9f4ab74e",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Planning My Practice Project",
+                    "name": "Tablero Figma · Planning My Practice Project",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "d4b8dab0968f4201997468b52bac4ca0",
@@ -2160,9 +2490,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_9",
+                    "lessonId": "d4b8dab0968f4201997468b52bac4ca0",
+                    "moduleTitle": "The Cinematic Practice Project",
+                    "lessonTitle": "Storytelling with B-roll",
+                    "name": "Tablero Figma · Storytelling with B-roll",
+                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "9d8e61a31ae0487a9c28079ffc444cd1",
@@ -2288,7 +2629,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "05682e7e77274619a953ad69c944051a",
@@ -2359,7 +2700,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "daee5a59b1ae4aed839085fd29ac7cce",
@@ -2430,7 +2771,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Learn the Cinematic Short-Film editing style making editors $1,000+/mo (3 days)"
+                "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               }
             ]
           }
@@ -2444,7 +2785,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 6,
         "totalLessons": 31,
-        "totalResources": 84,
+        "totalResources": 96,
         "modules": [
           {
             "index": 1,
@@ -2491,7 +2832,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong> This is the plugin that will be creating all the VIRAL edits you will later see in this course.</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create or questions you might have </strong>in this course on the community (I'd love to check them out)</p><h2>Want the Ultimate Editor Plugin? Here it is:</h2><p><strong>Want to download the Ultimate Editor Plugin for Claude: Click this </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download</a></strong></p><p>Make sure to have Higgsfield connected otherwise this plugin won't work...</p>"
               }
             ]
           },
@@ -2523,9 +2864,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "380c0653387b4db79062864790581337",
+                    "moduleTitle": "The AI Editing Theory",
+                    "lessonTitle": "The AI Editing Workflow (How it Works)",
+                    "name": "Tablero Figma · The AI Editing Workflow (How it Works)",
+                    "url": "https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1&t=kDkzwgUQFLgop1zm-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course on the community (I'd love to review them)</p><h2>You Might Need These Assets</h2><p><a href=\"https://www.skool.com/ultimateeditors2/classroom/e7209e55?md=272a78154c144605a10681e0eebe1863\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Ultimate Editors Skill Pack (12+ Skills created and used throughout these courses)</a></p><p><a href=\"https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1&t=kDkzwgUQFLgop1zm-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Figma PDF used in this course! (The AI Editing Theory)</a></p><p><a href=\"https://higgsfield.ai/s/mcp-josephvideoediting-LZOTAv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Wanna Check out Higgsfield? Use this link</a></p>"
               },
               {
                 "id": "89810eb2661242c18fccf8132ae4ac7a",
@@ -2550,9 +2902,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "89810eb2661242c18fccf8132ae4ac7a",
+                    "moduleTitle": "The AI Editing Theory",
+                    "lessonTitle": "What is Claude (Actually)",
+                    "name": "Tablero Figma · What is Claude (Actually)",
+                    "url": "https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1&t=kDkzwgUQFLgop1zm-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course on the community (I'd love to review them)</p><h2>You Might Need These Assets</h2><p><a href=\"https://www.skool.com/ultimateeditors2/classroom/e7209e55?md=272a78154c144605a10681e0eebe1863\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Ultimate Editors Skill Pack (12+ Skills created and used throughout these courses)</a></p><p><a href=\"https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1&t=kDkzwgUQFLgop1zm-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Figma PDF used in this course! (The AI Editing Theory)</a></p><p><a href=\"https://higgsfield.ai/s/mcp-josephvideoediting-LZOTAv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Wanna Check out Higgsfield? Use this link</a></p>"
               },
               {
                 "id": "dcaf52ae9325457aab335495a4a44b2d",
@@ -2577,9 +2940,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "dcaf52ae9325457aab335495a4a44b2d",
+                    "moduleTitle": "The AI Editing Theory",
+                    "lessonTitle": "Installing Claude (Simple Guide)",
+                    "name": "Tablero Figma · Installing Claude (Simple Guide)",
+                    "url": "https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1&t=kDkzwgUQFLgop1zm-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course on the community (I'd love to review them)</p><h2>You Might Need These Assets</h2><p><a href=\"https://www.skool.com/ultimateeditors2/classroom/e7209e55?md=272a78154c144605a10681e0eebe1863\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Ultimate Editors Skill Pack (12+ Skills created and used throughout these courses)</a></p><p><a href=\"https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1&t=kDkzwgUQFLgop1zm-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Figma PDF used in this course! (The AI Editing Theory)</a></p><p><a href=\"https://higgsfield.ai/s/mcp-josephvideoediting-LZOTAv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Wanna Check out Higgsfield? Use this link</a></p>"
               },
               {
                 "id": "e71f4d3edfdd483cbf00af99c3c47e9c",
@@ -2604,9 +2978,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "e71f4d3edfdd483cbf00af99c3c47e9c",
+                    "moduleTitle": "The AI Editing Theory",
+                    "lessonTitle": "The Claude UI Breakdown",
+                    "name": "Tablero Figma · The Claude UI Breakdown",
+                    "url": "https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1&t=kDkzwgUQFLgop1zm-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course on the community (I'd love to review them)</p><h2>You Might Need These Assets</h2><p><a href=\"https://www.skool.com/ultimateeditors2/classroom/e7209e55?md=272a78154c144605a10681e0eebe1863\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Ultimate Editors Skill Pack (12+ Skills created and used throughout these courses)</a></p><p><a href=\"https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1&t=kDkzwgUQFLgop1zm-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Figma PDF used in this course! (The AI Editing Theory)</a></p><p><a href=\"https://higgsfield.ai/s/mcp-josephvideoediting-LZOTAv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Wanna Check out Higgsfield? Use this link</a></p>"
               },
               {
                 "id": "77a4be4e99564828b07d623be55060b6",
@@ -2631,9 +3016,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "77a4be4e99564828b07d623be55060b6",
+                    "moduleTitle": "The AI Editing Theory",
+                    "lessonTitle": "How to Train Claude",
+                    "name": "Tablero Figma · How to Train Claude",
+                    "url": "https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1&t=kDkzwgUQFLgop1zm-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course on the community (I'd love to review them)</p><h2>You Might Need These Assets</h2><p><a href=\"https://www.skool.com/ultimateeditors2/classroom/e7209e55?md=272a78154c144605a10681e0eebe1863\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Ultimate Editors Skill Pack (12+ Skills created and used throughout these courses)</a></p><p><a href=\"https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1&t=kDkzwgUQFLgop1zm-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Figma PDF used in this course! (The AI Editing Theory)</a></p><p><a href=\"https://higgsfield.ai/s/mcp-josephvideoediting-LZOTAv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Wanna Check out Higgsfield? Use this link</a></p>"
               },
               {
                 "id": "74f88d899cd848e9952a9100f0a777db",
@@ -2658,9 +3054,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "74f88d899cd848e9952a9100f0a777db",
+                    "moduleTitle": "The AI Editing Theory",
+                    "lessonTitle": "Claude is the Brain",
+                    "name": "Tablero Figma · Claude is the Brain",
+                    "url": "https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1&t=kDkzwgUQFLgop1zm-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course on the community (I'd love to review them)</p><h2>You Might Need These Assets</h2><p><a href=\"https://www.skool.com/ultimateeditors2/classroom/e7209e55?md=272a78154c144605a10681e0eebe1863\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Ultimate Editors Skill Pack (12+ Skills created and used throughout these courses)</a></p><p><a href=\"https://www.figma.com/design/fJk1839uUvBqC5z0h2GQNF/The-AI-Editing-Fundamentals?node-id=0-1&t=kDkzwgUQFLgop1zm-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Figma PDF used in this course! (The AI Editing Theory)</a></p><p><a href=\"https://higgsfield.ai/s/mcp-josephvideoediting-LZOTAv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Wanna Check out Higgsfield? Use this link</a></p>"
               }
             ]
           },
@@ -2692,9 +3099,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "95b738a25cfa40958ddc86aa5e9aa501",
+                    "moduleTitle": "Higgsfield The Advanced Editor",
+                    "lessonTitle": "What is Higgsfield",
+                    "name": "Tablero Figma · What is Higgsfield",
+                    "url": "https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5&t=wWSg0hq8g86lrAul-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course on the community (I'd love to review them)</p><h2>You Might Need These Assets</h2><p><a href=\"https://www.skool.com/ultimateeditors2/classroom/e7209e55?md=272a78154c144605a10681e0eebe1863\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Ultimate Editors Skill Pack (12+ Skills created and used throughout these courses)</a></p><p><a href=\"https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5&t=wWSg0hq8g86lrAul-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Figma PDF used in this course! (Higgsfield)</a></p><p><a href=\"https://higgsfield.ai/s/mcp-josephvideoediting-LZOTAv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Wanna Check out Higgsfield? Use this link</a></p>"
               },
               {
                 "id": "1ae649da75d5489b9fab59982b986b46",
@@ -2719,9 +3137,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "1ae649da75d5489b9fab59982b986b46",
+                    "moduleTitle": "Higgsfield The Advanced Editor",
+                    "lessonTitle": "A Full Breakdown of Higgsfield",
+                    "name": "Tablero Figma · A Full Breakdown of Higgsfield",
+                    "url": "https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5&t=wWSg0hq8g86lrAul-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course on the community (I'd love to review them)</p><h2>You Might Need These Assets</h2><p><a href=\"https://www.skool.com/ultimateeditors2/classroom/e7209e55?md=272a78154c144605a10681e0eebe1863\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Ultimate Editors Skill Pack (12+ Skills created and used throughout these courses)</a></p><p><a href=\"https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5&t=wWSg0hq8g86lrAul-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Figma PDF used in this course! (Higgsfield)</a></p><p><a href=\"https://higgsfield.ai/s/mcp-josephvideoediting-LZOTAv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Wanna Check out Higgsfield? Use this link</a></p>"
               },
               {
                 "id": "f2524fa677364010b37355c0f515e05c",
@@ -2746,9 +3175,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "f2524fa677364010b37355c0f515e05c",
+                    "moduleTitle": "Higgsfield The Advanced Editor",
+                    "lessonTitle": "The 4 Main Tools (Models)",
+                    "name": "Tablero Figma · The 4 Main Tools (Models)",
+                    "url": "https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5&t=wWSg0hq8g86lrAul-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course on the community (I'd love to review them)</p><h2>You Might Need These Assets</h2><p><a href=\"https://www.skool.com/ultimateeditors2/classroom/e7209e55?md=272a78154c144605a10681e0eebe1863\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Ultimate Editors Skill Pack (12+ Skills created and used throughout these courses)</a></p><p><a href=\"https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5&t=wWSg0hq8g86lrAul-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Figma PDF used in this course! (Higgsfield)</a></p><p><a href=\"https://higgsfield.ai/s/mcp-josephvideoediting-LZOTAv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Wanna Check out Higgsfield? Use this link</a></p>"
               },
               {
                 "id": "b10b8ce455c844149cc594db8167a403",
@@ -2773,9 +3213,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "b10b8ce455c844149cc594db8167a403",
+                    "moduleTitle": "Higgsfield The Advanced Editor",
+                    "lessonTitle": "The 7 Main Functions (Features)",
+                    "name": "Tablero Figma · The 7 Main Functions (Features)",
+                    "url": "https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5&t=wWSg0hq8g86lrAul-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course on the community (I'd love to review them)</p><h2>You Might Need These Assets</h2><p><a href=\"https://www.skool.com/ultimateeditors2/classroom/e7209e55?md=272a78154c144605a10681e0eebe1863\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Ultimate Editors Skill Pack (12+ Skills created and used throughout these courses)</a></p><p><a href=\"https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5&t=wWSg0hq8g86lrAul-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Figma PDF used in this course! (Higgsfield)</a></p><p><a href=\"https://higgsfield.ai/s/mcp-josephvideoediting-LZOTAv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Wanna Check out Higgsfield? Use this link</a></p>"
               },
               {
                 "id": "c5a0234f364245cfa1348bab195a914b",
@@ -2800,9 +3251,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "c5a0234f364245cfa1348bab195a914b",
+                    "moduleTitle": "Higgsfield The Advanced Editor",
+                    "lessonTitle": "The Higgsfield Workflows (IMPORTANT)",
+                    "name": "Tablero Figma · The Higgsfield Workflows (IMPORTANT)",
+                    "url": "https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5&t=wWSg0hq8g86lrAul-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course on the community (I'd love to review them)</p><h2>You Might Need These Assets</h2><p><a href=\"https://www.skool.com/ultimateeditors2/classroom/e7209e55?md=272a78154c144605a10681e0eebe1863\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Ultimate Editors Skill Pack (12+ Skills created and used throughout these courses)</a></p><p><a href=\"https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5&t=wWSg0hq8g86lrAul-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Figma PDF used in this course! (Higgsfield)</a></p><p><a href=\"https://higgsfield.ai/s/mcp-josephvideoediting-LZOTAv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Wanna Check out Higgsfield? Use this link</a></p>"
               },
               {
                 "id": "b29c970a504b422ab490343cbefa506d",
@@ -2827,9 +3289,20 @@ window.COMMUNITIES_DATA = [
                     "category": "figma",
                     "categoryLabel": "Tablero de Figma",
                     "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "b29c970a504b422ab490343cbefa506d",
+                    "moduleTitle": "Higgsfield The Advanced Editor",
+                    "lessonTitle": "The AI Quality Ladder (Mentality)",
+                    "name": "Tablero Figma · The AI Quality Ladder (Mentality)",
+                    "url": "https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5&t=wWSg0hq8g86lrAul-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course on the community (I'd love to review them)</p><h2>You Might Need These Assets</h2><p><a href=\"https://www.skool.com/ultimateeditors2/classroom/e7209e55?md=272a78154c144605a10681e0eebe1863\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Ultimate Editors Skill Pack (12+ Skills created and used throughout these courses)</a></p><p><a href=\"https://www.figma.com/design/Vi3Y9v4FS67Lr5aBNphIjW/Higgsfield--The-Advanced-AI-Editor?node-id=2-5&t=wWSg0hq8g86lrAul-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">The Figma PDF used in this course! (Higgsfield)</a></p><p><a href=\"https://higgsfield.ai/s/mcp-josephvideoediting-LZOTAv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Wanna Check out Higgsfield? Use this link</a></p>"
               }
             ]
           },
@@ -2885,7 +3358,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> Final Edit </a></strong><strong>we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "8b476d51abba42f1a941d3b7f56141dd",
@@ -2934,7 +3407,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> Final Edit </a></strong><strong>we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "9f9e2ab6ecd14a289168103ce4d2b162",
@@ -2983,7 +3456,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> Final Edit </a></strong><strong>we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "2f0f4e2950474b0b922f09d44f3d0e6d",
@@ -3032,7 +3505,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> Final Edit </a></strong><strong>we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "1eb7148089ea44e89925e964feb43c06",
@@ -3081,7 +3554,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> Final Edit </a></strong><strong>we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "83f5c247c4c04a619880e409655c244c",
@@ -3130,7 +3603,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> Final Edit </a></strong><strong>we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "6c455482321f407f88fc1cbe71d5ec1d",
@@ -3179,7 +3652,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> Final Edit </a></strong><strong>we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               }
             ]
           },
@@ -3257,7 +3730,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong><a href=\"https://drive.google.com/file/d/1S4X-sG2OiMp4k1raNgtlCZ2_ZaBbG7Wf/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Final Edit</a></strong><strong> we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/1rcZ_LBeQd7DR1YA1Q5hIOnGj-j-4A5aE?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE</a></strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "099edeb60dce42f3afef234e71f98666",
@@ -3328,7 +3801,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong><a href=\"https://drive.google.com/file/d/1S4X-sG2OiMp4k1raNgtlCZ2_ZaBbG7Wf/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Final Edit</a></strong><strong> we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/1rcZ_LBeQd7DR1YA1Q5hIOnGj-j-4A5aE?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE</a></strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "ff80ee6ea2044990b02d62fffe306eb1",
@@ -3399,7 +3872,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong><a href=\"https://drive.google.com/file/d/1S4X-sG2OiMp4k1raNgtlCZ2_ZaBbG7Wf/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Final Edit</a></strong><strong> we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/1rcZ_LBeQd7DR1YA1Q5hIOnGj-j-4A5aE?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE</a></strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "c25c5192d6814ef2be03685368a13ebb",
@@ -3470,7 +3943,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong><a href=\"https://drive.google.com/file/d/1S4X-sG2OiMp4k1raNgtlCZ2_ZaBbG7Wf/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Final Edit</a></strong><strong> we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/1rcZ_LBeQd7DR1YA1Q5hIOnGj-j-4A5aE?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE</a></strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "b393efb3ce224de1aad65fedb2e8a3f3",
@@ -3541,7 +4014,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong><a href=\"https://drive.google.com/file/d/1S4X-sG2OiMp4k1raNgtlCZ2_ZaBbG7Wf/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Final Edit</a></strong><strong> we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/1rcZ_LBeQd7DR1YA1Q5hIOnGj-j-4A5aE?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE</a></strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               }
             ]
           },
@@ -3619,7 +4092,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong><a href=\"https://drive.google.com/file/d/1B3JFZekF8UVXQxY9cuU_N7U8YLHSmZ5R/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Final Edit</a></strong><strong> we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/16ANvf8ZvGL2MBTtG1iYJdLoZnugKQ2y0?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE</a></strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "95f29b7a4863485eafc1f621fbd6a76e",
@@ -3690,7 +4163,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong><a href=\"https://drive.google.com/file/d/1B3JFZekF8UVXQxY9cuU_N7U8YLHSmZ5R/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Final Edit</a></strong><strong> we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/16ANvf8ZvGL2MBTtG1iYJdLoZnugKQ2y0?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE</a></strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "a02f06104c14404b89e7880c50dc41ff",
@@ -3761,7 +4234,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong><a href=\"https://drive.google.com/file/d/1B3JFZekF8UVXQxY9cuU_N7U8YLHSmZ5R/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Final Edit</a></strong><strong> we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/16ANvf8ZvGL2MBTtG1iYJdLoZnugKQ2y0?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE</a></strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               },
               {
                 "id": "47af80c7ea4740b484ef038e04f3a8a1",
@@ -3903,7 +4376,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "Master AI Video Editing from A-Z learning how to use Claude to create Viral Edits."
+                "descriptionHtml": "<p><strong>The Plugin we're using to create these edits is the </strong><strong><a href=\"https://drive.google.com/drive/folders/1eZ5KioiJoJpNir8qFgsrOWhjmA2_JFkk?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Ultimate Editor Plugin </a></strong><strong>(Make sure to have Higgsfield Connected)</strong></p><h3>Some Assets you might need...</h3><p><strong>This is the</strong><strong><a href=\"https://drive.google.com/file/d/1i8tR4fAzFdCncDFtnBmRkq9DcoUj609X/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong><a href=\"https://drive.google.com/file/d/1B3JFZekF8UVXQxY9cuU_N7U8YLHSmZ5R/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Final Edit</a></strong><strong> we created.</strong></p><p><strong>Wanna Follow along? Download </strong><strong><a href=\"https://drive.google.com/drive/folders/16ANvf8ZvGL2MBTtG1iYJdLoZnugKQ2y0?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">THESE</a></strong><strong><a href=\"https://drive.google.com/drive/folders/1jUAcA-JmFP_NVUmjlxsfJzySVm_Suc51?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\"> </a></strong><strong>Files</strong></p><p>Don't forget to<strong> click that circle in the top right</strong> once you've watched this course... </p><p>And of course -- make sure to <strong>post any edits you create </strong>in this course <strong>or any questions you have on AI editing</strong> on the community (I'd love to review them)</p>"
               }
             ]
           }
@@ -3917,7 +4390,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 3,
         "totalLessons": 13,
-        "totalResources": 1,
+        "totalResources": 13,
         "modules": [
           {
             "index": 1,
@@ -3936,8 +4409,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1qJOV9F7UJfQ2SKkmlOx2lckPPcCS80h-",
                 "gdriveLink": "https://drive.google.com/file/d/1qJOV9F7UJfQ2SKkmlOx2lckPPcCS80h-/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "dfa3556dad754fe292729c2e4815cfe2",
+                    "moduleTitle": "01_Design for Video Editors",
+                    "lessonTitle": "Introduction to Design",
+                    "name": "Descarga de Archivos / PDFs · Introduction to Design",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "07b4682c52974bc1894fd9d1c4c54c26",
@@ -3951,8 +4436,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "15gyEtQixMqQAw3f0oYGp5OAostaN8F8L",
                 "gdriveLink": "https://drive.google.com/file/d/15gyEtQixMqQAw3f0oYGp5OAostaN8F8L/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "07b4682c52974bc1894fd9d1c4c54c26",
+                    "moduleTitle": "01_Design for Video Editors",
+                    "lessonTitle": "Why Editors NEED Design",
+                    "name": "Descarga de Archivos / PDFs · Why Editors NEED Design",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "26460f04f1f94fc1805e44386451bfb4",
@@ -3966,8 +4463,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "14T6e5qhoK-ZXgCwqNryjftKXieUYcei4",
                 "gdriveLink": "https://drive.google.com/file/d/14T6e5qhoK-ZXgCwqNryjftKXieUYcei4/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "26460f04f1f94fc1805e44386451bfb4",
+                    "moduleTitle": "01_Design for Video Editors",
+                    "lessonTitle": "The 4 Design Extras",
+                    "name": "Descarga de Archivos / PDFs · The 4 Design Extras",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "cc468be23e194b8487af40dd6c5193b8",
@@ -3981,8 +4490,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1MsGjC1YpupDtfLa04wg8LAC7t2cmAr5e",
                 "gdriveLink": "https://drive.google.com/file/d/1MsGjC1YpupDtfLa04wg8LAC7t2cmAr5e/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "cc468be23e194b8487af40dd6c5193b8",
+                    "moduleTitle": "01_Design for Video Editors",
+                    "lessonTitle": "An Editor's Guide to Colors",
+                    "name": "Descarga de Archivos / PDFs · An Editor's Guide to Colors",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "f129a0fd0297439993db951fbf488fbd",
@@ -3996,8 +4517,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "19GVBF_CpEulBN9NZEgWzzslTswyI7nnP",
                 "gdriveLink": "https://drive.google.com/file/d/19GVBF_CpEulBN9NZEgWzzslTswyI7nnP/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "f129a0fd0297439993db951fbf488fbd",
+                    "moduleTitle": "01_Design for Video Editors",
+                    "lessonTitle": "Placement, Balance, Contrast",
+                    "name": "Descarga de Archivos / PDFs · Placement, Balance, Contrast",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               }
             ]
           },
@@ -4018,8 +4551,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1ubzucICO695K9KkwJqljBwUYpIVralpT",
                 "gdriveLink": "https://drive.google.com/file/d/1ubzucICO695K9KkwJqljBwUYpIVralpT/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "45e9c5e828324389ba0e663d95c1d68c",
+                    "moduleTitle": "02_The I.B.P. Process",
+                    "lessonTitle": "The Planning Workflow",
+                    "name": "Descarga de Archivos / PDFs · The Planning Workflow",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "7ad7457b92c9403caa7bde624e562879",
@@ -4033,8 +4578,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "11JE4b7uqox1zY6b7Eb6ucfXHZ9O4hmsa",
                 "gdriveLink": "https://drive.google.com/file/d/11JE4b7uqox1zY6b7Eb6ucfXHZ9O4hmsa/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "7ad7457b92c9403caa7bde624e562879",
+                    "moduleTitle": "02_The I.B.P. Process",
+                    "lessonTitle": "Practice Breakdown",
+                    "name": "Descarga de Archivos / PDFs · Practice Breakdown",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "f1b554a5edd04e6a974cdd17db86a096",
@@ -4048,8 +4605,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1DTXVDnqChwNs5wDHQ6mqVUudVjzybBuA",
                 "gdriveLink": "https://drive.google.com/file/d/1DTXVDnqChwNs5wDHQ6mqVUudVjzybBuA/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "f1b554a5edd04e6a974cdd17db86a096",
+                    "moduleTitle": "02_The I.B.P. Process",
+                    "lessonTitle": "The IBP Process Introduction",
+                    "name": "Descarga de Archivos / PDFs · The IBP Process Introduction",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "1ffd04ac384441398b2f7080e0ad3480",
@@ -4076,7 +4645,7 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "3325ec1a7e834594a4df1be21314d53e",
@@ -4090,8 +4659,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1jvWG9Rgqu9g375gQklIPacOuaqSUoJe4",
                 "gdriveLink": "https://drive.google.com/file/d/1jvWG9Rgqu9g375gQklIPacOuaqSUoJe4/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "3325ec1a7e834594a4df1be21314d53e",
+                    "moduleTitle": "02_The I.B.P. Process",
+                    "lessonTitle": "The Inspiration Process",
+                    "name": "Descarga de Archivos / PDFs · The Inspiration Process",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "da3d34fbed12480c815595613f31fbda",
@@ -4105,8 +4686,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1QNOg1kLzvTCXYkvGBTEdGaCNJunrajfA",
                 "gdriveLink": "https://drive.google.com/file/d/1QNOg1kLzvTCXYkvGBTEdGaCNJunrajfA/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "da3d34fbed12480c815595613f31fbda",
+                    "moduleTitle": "02_The I.B.P. Process",
+                    "lessonTitle": "The Breakdown Overview",
+                    "name": "Descarga de Archivos / PDFs · The Breakdown Overview",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               },
               {
                 "id": "3085325f75ff41ad964dee9f11252645",
@@ -4120,8 +4713,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1123vDYHFhbZnBK5uHlbJ382lgQXEUVrO",
                 "gdriveLink": "https://drive.google.com/file/d/1123vDYHFhbZnBK5uHlbJ382lgQXEUVrO/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "3085325f75ff41ad964dee9f11252645",
+                    "moduleTitle": "02_The I.B.P. Process",
+                    "lessonTitle": "Practice Planning",
+                    "name": "Descarga de Archivos / PDFs · Practice Planning",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               }
             ]
           },
@@ -4142,8 +4747,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1kqCho1IO8Eyq5zESQa48mlPjz_rLe2WL",
                 "gdriveLink": "https://drive.google.com/file/d/1kqCho1IO8Eyq5zESQa48mlPjz_rLe2WL/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Learn the Fundamentals of High-Level Video Editing (Essential)"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "974041e15d5946c981af079b0ea90c54",
+                    "moduleTitle": "03_The Ultimate Workflow",
+                    "lessonTitle": "The Ultimate Workflow",
+                    "name": "Descarga de Archivos / PDFs · The Ultimate Workflow",
+                    "url": "https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've watched this course through!</p><h3>Assets from this course</h3><p><a href=\"https://drive.google.com/drive/folders/1DANEFKs6A0EieTsn1QgMMDq63LL2HeBb?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the PDFs from this course</a></p><hr style=\"border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 16px 0;\"/><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>"
               }
             ]
           }
@@ -4165,7 +4782,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · EN DRIVE",
         "totalModules": 5,
         "totalLessons": 25,
-        "totalResources": 2,
+        "totalResources": 47,
         "modules": [
           {
             "index": 1,
@@ -4207,7 +4824,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1uiaxDewF_HVSgCc15Oxz0d0k--zzktp0/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_7",
@@ -4221,8 +4838,53 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1OM_99ugm-W0lMHRIQxkXQ-ThFewfv4OQ",
                 "gdriveLink": "https://drive.google.com/file/d/1OM_99ugm-W0lMHRIQxkXQ-ThFewfv4OQ/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_7",
+                    "moduleTitle": "02_Planning & Brand Pack",
+                    "lessonTitle": "EP 2 - Color Palette and Brand Style",
+                    "name": "Recurso / Enlace · EP 2 - Color Palette and Brand Style",
+                    "url": "https://www.canva.com/colors/color-palette-generator/",
+                    "category": "link",
+                    "categoryLabel": "Recurso / Enlace",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_7",
+                    "moduleTitle": "02_Planning & Brand Pack",
+                    "lessonTitle": "EP 2 - Color Palette and Brand Style",
+                    "name": "Descarga de Archivos / PDFs · EP 2 - Color Palette and Brand Style",
+                    "url": "https://drive.google.com/drive/folders/12ROcv6QZ0-s5rNSp-2tPUPu5m-wx2v3p?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_2",
+                    "lessonId": "les_josh-lyon-editing-masterclass_7",
+                    "moduleTitle": "02_Planning & Brand Pack",
+                    "lessonTitle": "EP 2 - Color Palette and Brand Style",
+                    "name": "Descarga de Archivos / PDFs · EP 2 - Color Palette and Brand Style",
+                    "url": "https://drive.google.com/drive/folders/1W4gxp8nlSH4fvEy4gzTRz_G3rOk2RiIc?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_3",
+                    "lessonId": "les_josh-lyon-editing-masterclass_7",
+                    "moduleTitle": "02_Planning & Brand Pack",
+                    "lessonTitle": "EP 2 - Color Palette and Brand Style",
+                    "name": "Tablero Figma · EP 2 - Color Palette and Brand Style",
+                    "url": "https://www.figma.com/design/iIfDR9fSVMpBHFAnx6YloI/Untitled?node-id=0-1&t=zYjWSQc7p5SYmF2p-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Get your color palette here <a href=\"https://www.canva.com/colors/color-palette-generator/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.canva.com/colors/color-palette-generator/</a></p><p>Find the fonts we used here <a href=\"https://drive.google.com/drive/folders/12ROcv6QZ0-s5rNSp-2tPUPu5m-wx2v3p?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/12ROcv6QZ0-s5rNSp-2tPUPu5m-wx2v3p?usp=sharing</a></p><p>Find the color palette we used here <a href=\"https://drive.google.com/drive/folders/1W4gxp8nlSH4fvEy4gzTRz_G3rOk2RiIc?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1W4gxp8nlSH4fvEy4gzTRz_G3rOk2RiIc?usp=sharing</a></p><p>Get access to the figma file <a href=\"https://www.figma.com/design/iIfDR9fSVMpBHFAnx6YloI/Untitled?node-id=0-1&t=zYjWSQc7p5SYmF2p-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.figma.com/design/iIfDR9fSVMpBHFAnx6YloI/Untitled?node-id=0-1&t=zYjWSQc7p5SYmF2p-1</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_6",
@@ -4236,8 +4898,53 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1se3IAjwOqmwG8GJsGrPb8d_W9c28OpXQ",
                 "gdriveLink": "https://drive.google.com/file/d/1se3IAjwOqmwG8GJsGrPb8d_W9c28OpXQ/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_6",
+                    "moduleTitle": "02_Planning & Brand Pack",
+                    "lessonTitle": "EP 3 - Fonts and Icon Types",
+                    "name": "Recurso / Enlace · EP 3 - Fonts and Icon Types",
+                    "url": "https://www.canva.com/colors/color-palette-generator/",
+                    "category": "link",
+                    "categoryLabel": "Recurso / Enlace",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_6",
+                    "moduleTitle": "02_Planning & Brand Pack",
+                    "lessonTitle": "EP 3 - Fonts and Icon Types",
+                    "name": "Descarga de Archivos / PDFs · EP 3 - Fonts and Icon Types",
+                    "url": "https://drive.google.com/drive/folders/12ROcv6QZ0-s5rNSp-2tPUPu5m-wx2v3p?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_2",
+                    "lessonId": "les_josh-lyon-editing-masterclass_6",
+                    "moduleTitle": "02_Planning & Brand Pack",
+                    "lessonTitle": "EP 3 - Fonts and Icon Types",
+                    "name": "Descarga de Archivos / PDFs · EP 3 - Fonts and Icon Types",
+                    "url": "https://drive.google.com/drive/folders/1W4gxp8nlSH4fvEy4gzTRz_G3rOk2RiIc?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_3",
+                    "lessonId": "les_josh-lyon-editing-masterclass_6",
+                    "moduleTitle": "02_Planning & Brand Pack",
+                    "lessonTitle": "EP 3 - Fonts and Icon Types",
+                    "name": "Tablero Figma · EP 3 - Fonts and Icon Types",
+                    "url": "https://www.figma.com/design/iIfDR9fSVMpBHFAnx6YloI/Untitled?node-id=0-1&t=zYjWSQc7p5SYmF2p-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Use this website to download icons <a href=\"https://www.flaticon.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.flaticon.com</a></p><p>Get your color palette here <a href=\"https://www.canva.com/colors/color-palette-generator/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.canva.com/colors/color-palette-generator/</a></p><p>Find the fonts we used here <a href=\"https://drive.google.com/drive/folders/12ROcv6QZ0-s5rNSp-2tPUPu5m-wx2v3p?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/12ROcv6QZ0-s5rNSp-2tPUPu5m-wx2v3p?usp=sharing</a></p><p>Find the color palette we used here <a href=\"https://drive.google.com/drive/folders/1W4gxp8nlSH4fvEy4gzTRz_G3rOk2RiIc?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1W4gxp8nlSH4fvEy4gzTRz_G3rOk2RiIc?usp=sharing</a></p><p>Get Access to the Figma File Here <a href=\"https://www.figma.com/design/iIfDR9fSVMpBHFAnx6YloI/Untitled?node-id=0-1&t=zYjWSQc7p5SYmF2p-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.figma.com/design/iIfDR9fSVMpBHFAnx6YloI/Untitled?node-id=0-1&t=zYjWSQc7p5SYmF2p-1</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_8",
@@ -4251,8 +4958,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1PaVBw2WlBzZaRv6A8IS5R2EATT9i7-fp",
                 "gdriveLink": "https://drive.google.com/file/d/1PaVBw2WlBzZaRv6A8IS5R2EATT9i7-fp/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_8",
+                    "moduleTitle": "02_Planning & Brand Pack",
+                    "lessonTitle": "EP 4 - Creating an Inspiration Vault",
+                    "name": "Tablero Figma · EP 4 - Creating an Inspiration Vault",
+                    "url": "https://www.figma.com/design/iIfDR9fSVMpBHFAnx6YloI/Untitled?node-id=0-1&t=zYjWSQc7p5SYmF2p-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Find the Inspiration Vault here <a href=\"https://www.figma.com/design/iIfDR9fSVMpBHFAnx6YloI/Untitled?node-id=0-1&t=zYjWSQc7p5SYmF2p-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.figma.com/design/iIfDR9fSVMpBHFAnx6YloI/Untitled?node-id=0-1&t=zYjWSQc7p5SYmF2p-1</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_2",
@@ -4266,8 +4985,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1su_8l5-83n9cr-UJjDBF4yroCjlms8Wx",
                 "gdriveLink": "https://drive.google.com/file/d/1su_8l5-83n9cr-UJjDBF4yroCjlms8Wx/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_2",
+                    "moduleTitle": "02_Planning & Brand Pack",
+                    "lessonTitle": "EP 5 - Planning the Animations in Figma",
+                    "name": "Tablero Figma · EP 5 - Planning the Animations in Figma",
+                    "url": "https://www.figma.com/design/iIfDR9fSVMpBHFAnx6YloI/Untitled?node-id=0-1&t=zYjWSQc7p5SYmF2p-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_2",
+                    "moduleTitle": "02_Planning & Brand Pack",
+                    "lessonTitle": "EP 5 - Planning the Animations in Figma",
+                    "name": "Descarga de Archivos / PDFs · EP 5 - Planning the Animations in Figma",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Find the Inspiration Vault & Animations Plan here <a href=\"https://www.figma.com/design/iIfDR9fSVMpBHFAnx6YloI/Untitled?node-id=0-1&t=zYjWSQc7p5SYmF2p-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.figma.com/design/iIfDR9fSVMpBHFAnx6YloI/Untitled?node-id=0-1&t=zYjWSQc7p5SYmF2p-1</a></p><p>Download the raw short here: <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p>"
               }
             ]
           },
@@ -4288,8 +5030,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1B7Yed7llsWp9dgCIsI5_Y1byhqozQlPo",
                 "gdriveLink": "https://drive.google.com/file/d/1B7Yed7llsWp9dgCIsI5_Y1byhqozQlPo/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_13",
+                    "moduleTitle": "03_Setting Up",
+                    "lessonTitle": "EP 6 - Importing, Colors, Audio, and Cuts",
+                    "name": "Descarga de Archivos / PDFs · EP 6 - Importing, Colors, Audio, and Cuts",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_13",
+                    "moduleTitle": "03_Setting Up",
+                    "lessonTitle": "EP 6 - Importing, Colors, Audio, and Cuts",
+                    "name": "Descarga de Archivos / PDFs · EP 6 - Importing, Colors, Audio, and Cuts",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_14",
@@ -4303,8 +5068,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1fdZ0BifipCXnkXUuPIQsJdcusaLLe0sP",
                 "gdriveLink": "https://drive.google.com/file/d/1fdZ0BifipCXnkXUuPIQsJdcusaLLe0sP/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_14",
+                    "moduleTitle": "03_Setting Up",
+                    "lessonTitle": "EP 7 - Creating Subtitles and Text Layers",
+                    "name": "Descarga de Archivos / PDFs · EP 7 - Creating Subtitles and Text Layers",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_14",
+                    "moduleTitle": "03_Setting Up",
+                    "lessonTitle": "EP 7 - Creating Subtitles and Text Layers",
+                    "name": "Descarga de Archivos / PDFs · EP 7 - Creating Subtitles and Text Layers",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_5",
@@ -4318,8 +5106,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1RDu2v5i_8xUdhMqBFLZ3dUr-JVJ03IZT",
                 "gdriveLink": "https://drive.google.com/file/d/1RDu2v5i_8xUdhMqBFLZ3dUr-JVJ03IZT/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_5",
+                    "moduleTitle": "03_Setting Up",
+                    "lessonTitle": "EP 8 - Dynamic Link and Organization",
+                    "name": "Descarga de Archivos / PDFs · EP 8 - Dynamic Link and Organization",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_5",
+                    "moduleTitle": "03_Setting Up",
+                    "lessonTitle": "EP 8 - Dynamic Link and Organization",
+                    "name": "Descarga de Archivos / PDFs · EP 8 - Dynamic Link and Organization",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_12",
@@ -4333,8 +5144,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1oOwg2wixARV8bASfMTJqLgBomaGjB4sx",
                 "gdriveLink": "https://drive.google.com/file/d/1oOwg2wixARV8bASfMTJqLgBomaGjB4sx/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_12",
+                    "moduleTitle": "03_Setting Up",
+                    "lessonTitle": "EP 9 - An Overview of Plugins",
+                    "name": "Descarga de Archivos / PDFs · EP 9 - An Overview of Plugins",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_12",
+                    "moduleTitle": "03_Setting Up",
+                    "lessonTitle": "EP 9 - An Overview of Plugins",
+                    "name": "Descarga de Archivos / PDFs · EP 9 - An Overview of Plugins",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p><p>Feel free to look up the plugins and download them.</p>"
               }
             ]
           },
@@ -4355,8 +5189,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1jnYj7UMxQLINOp_j-Rs6wVClszy_rKKm",
                 "gdriveLink": "https://drive.google.com/file/d/1jnYj7UMxQLINOp_j-Rs6wVClszy_rKKm/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_18",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 10 - High End Text Style & Icons",
+                    "name": "Descarga de Archivos / PDFs · EP 10 - High End Text Style & Icons",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_18",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 10 - High End Text Style & Icons",
+                    "name": "Descarga de Archivos / PDFs · EP 10 - High End Text Style & Icons",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_21",
@@ -4370,8 +5227,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1M9Vr5jpQRC4DlmJ9FvU514Uw_lKGB4Dc",
                 "gdriveLink": "https://drive.google.com/file/d/1M9Vr5jpQRC4DlmJ9FvU514Uw_lKGB4Dc/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_21",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 11 - Color Changing Background",
+                    "name": "Descarga de Archivos / PDFs · EP 11 - Color Changing Background",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_21",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 11 - Color Changing Background",
+                    "name": "Descarga de Archivos / PDFs · EP 11 - Color Changing Background",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_4",
@@ -4385,8 +5265,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1DQg4L_-zMOAhcwX0Svrqrrws26eNnVUl",
                 "gdriveLink": "https://drive.google.com/file/d/1DQg4L_-zMOAhcwX0Svrqrrws26eNnVUl/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_4",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 12 - Graphic ToolBar Animation",
+                    "name": "Descarga de Archivos / PDFs · EP 12 - Graphic ToolBar Animation",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_4",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 12 - Graphic ToolBar Animation",
+                    "name": "Descarga de Archivos / PDFs · EP 12 - Graphic ToolBar Animation",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_23",
@@ -4400,8 +5303,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1KTOwftn1a-Z4KiL2YmwcEnsHBI4pGm7B",
                 "gdriveLink": "https://drive.google.com/file/d/1KTOwftn1a-Z4KiL2YmwcEnsHBI4pGm7B/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_23",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 13 - Hyper Realistic UI Animations",
+                    "name": "Descarga de Archivos / PDFs · EP 13 - Hyper Realistic UI Animations",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_23",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 13 - Hyper Realistic UI Animations",
+                    "name": "Descarga de Archivos / PDFs · EP 13 - Hyper Realistic UI Animations",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_24",
@@ -4415,8 +5341,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "137Qtt6u875aMYdW8_PsRi-kG0IhnkTKF",
                 "gdriveLink": "https://drive.google.com/file/d/137Qtt6u875aMYdW8_PsRi-kG0IhnkTKF/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_24",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 14 - Interesting Background and Frame Animation",
+                    "name": "Descarga de Archivos / PDFs · EP 14 - Interesting Background and Frame Animation",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_24",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 14 - Interesting Background and Frame Animation",
+                    "name": "Descarga de Archivos / PDFs · EP 14 - Interesting Background and Frame Animation",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_17",
@@ -4430,8 +5379,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "10kIdoU4gk0uI0dHCFLNQHr5t5TotoBVM",
                 "gdriveLink": "https://drive.google.com/file/d/10kIdoU4gk0uI0dHCFLNQHr5t5TotoBVM/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_17",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 15 - Creating a Shatter Animation",
+                    "name": "Descarga de Archivos / PDFs · EP 15 - Creating a Shatter Animation",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_17",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 15 - Creating a Shatter Animation",
+                    "name": "Descarga de Archivos / PDFs · EP 15 - Creating a Shatter Animation",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_11",
@@ -4445,8 +5417,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1VnEftzuRR5ahEXtb-R8CXEK-U8wB-U0M",
                 "gdriveLink": "https://drive.google.com/file/d/1VnEftzuRR5ahEXtb-R8CXEK-U8wB-U0M/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_11",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 16 - Creating a Notification Pop-up Animation",
+                    "name": "Descarga de Archivos / PDFs · EP 16 - Creating a Notification Pop-up Animation",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_11",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 16 - Creating a Notification Pop-up Animation",
+                    "name": "Descarga de Archivos / PDFs · EP 16 - Creating a Notification Pop-up Animation",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_9",
@@ -4460,8 +5455,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1aDAoEpEFU9wQFPFQgVWLPVgso8VR61k3",
                 "gdriveLink": "https://drive.google.com/file/d/1aDAoEpEFU9wQFPFQgVWLPVgso8VR61k3/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_9",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 17 - Conversation Scene and Coloration",
+                    "name": "Descarga de Archivos / PDFs · EP 17 - Conversation Scene and Coloration",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_9",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 17 - Conversation Scene and Coloration",
+                    "name": "Descarga de Archivos / PDFs · EP 17 - Conversation Scene and Coloration",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_20",
@@ -4475,8 +5493,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1RhOU1lYzUNwAvmO5_LIBEcZEFs9U89Ok",
                 "gdriveLink": "https://drive.google.com/file/d/1RhOU1lYzUNwAvmO5_LIBEcZEFs9U89Ok/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_20",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 17.5 - Post Production & Final Touches",
+                    "name": "Descarga de Archivos / PDFs · EP 17.5 - Post Production & Final Touches",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_20",
+                    "moduleTitle": "04_Creating the Animations",
+                    "lessonTitle": "EP 17.5 - Post Production & Final Touches",
+                    "name": "Descarga de Archivos / PDFs · EP 17.5 - Post Production & Final Touches",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               }
             ]
           },
@@ -4497,8 +5538,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1yXnLVgDhHr_j1ToFfo-wnpr-BHvMKZwq",
                 "gdriveLink": "https://drive.google.com/file/d/1yXnLVgDhHr_j1ToFfo-wnpr-BHvMKZwq/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_15",
+                    "moduleTitle": "05_Music & Sound Design",
+                    "lessonTitle": "EP 18 - Choosing the Right Music",
+                    "name": "Descarga de Archivos / PDFs · EP 18 - Choosing the Right Music",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_15",
+                    "moduleTitle": "05_Music & Sound Design",
+                    "lessonTitle": "EP 18 - Choosing the Right Music",
+                    "name": "Descarga de Archivos / PDFs · EP 18 - Choosing the Right Music",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_16",
@@ -4512,8 +5576,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Sm-B-hM6BArXbxevxOkxdFfITtEc8z-Z",
                 "gdriveLink": "https://drive.google.com/file/d/1Sm-B-hM6BArXbxevxOkxdFfITtEc8z-Z/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_16",
+                    "moduleTitle": "05_Music & Sound Design",
+                    "lessonTitle": "EP 19 - Sound Design Mentality and Planning",
+                    "name": "Descarga de Archivos / PDFs · EP 19 - Sound Design Mentality and Planning",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_16",
+                    "moduleTitle": "05_Music & Sound Design",
+                    "lessonTitle": "EP 19 - Sound Design Mentality and Planning",
+                    "name": "Descarga de Archivos / PDFs · EP 19 - Sound Design Mentality and Planning",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_19",
@@ -4527,8 +5614,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Sp3SmokE4Ih7hyUulVtHnpcHJ-nV0eKV",
                 "gdriveLink": "https://drive.google.com/file/d/1Sp3SmokE4Ih7hyUulVtHnpcHJ-nV0eKV/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_19",
+                    "moduleTitle": "05_Music & Sound Design",
+                    "lessonTitle": "EP 20 - Choosing Whooshes and Adding them In",
+                    "name": "Descarga de Archivos / PDFs · EP 20 - Choosing Whooshes and Adding them In",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_19",
+                    "moduleTitle": "05_Music & Sound Design",
+                    "lessonTitle": "EP 20 - Choosing Whooshes and Adding them In",
+                    "name": "Descarga de Archivos / PDFs · EP 20 - Choosing Whooshes and Adding them In",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_22",
@@ -4542,8 +5652,31 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1RlO1uflo9eTcHXn7qLymRGtfCr-tH1Hw",
                 "gdriveLink": "https://drive.google.com/file/d/1RlO1uflo9eTcHXn7qLymRGtfCr-tH1Hw/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master hyper-realistic UI animations, High-Quality Text styles, and much more with the Josh Lyon Editing Style"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "les_josh-lyon-editing-masterclass_22",
+                    "moduleTitle": "05_Music & Sound Design",
+                    "lessonTitle": "EP 21 - Texturing Sound Effects",
+                    "name": "Descarga de Archivos / PDFs · EP 21 - Texturing Sound Effects",
+                    "url": "https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "les_josh-lyon-editing-masterclass_22",
+                    "moduleTitle": "05_Music & Sound Design",
+                    "lessonTitle": "EP 21 - Texturing Sound Effects",
+                    "name": "Descarga de Archivos / PDFs · EP 21 - Texturing Sound Effects",
+                    "url": "https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>If you have any questions, face any problems, or anything of this sort... send me a message.</p><p>Download the Raw Footage Here <a href=\"https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1wpoknPQLS2csmlUrdoFpg37mWCJzo-5N?usp=sharing</a></p><p>Download all assets used here: <a href=\"https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1VqeqHO2MoBCyFUwNDvV9hpCQeEEM0GWd?usp=sharing</a></p>"
               },
               {
                 "id": "les_josh-lyon-editing-masterclass_25",
@@ -4610,7 +5743,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 4,
         "totalLessons": 33,
-        "totalResources": 1,
+        "totalResources": 30,
         "modules": [
           {
             "index": 1,
@@ -4644,8 +5777,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1viBSBwxz68ZDRnsN_7z8d8E59jEJj-xm",
                 "gdriveLink": "https://drive.google.com/file/d/1viBSBwxz68ZDRnsN_7z8d8E59jEJj-xm/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_02",
+                    "moduleTitle": "General & Bienvenida",
+                    "lessonTitle": "The Devin Jatho Style Inspiration Page",
+                    "name": "Tablero Figma · The Devin Jatho Style Inspiration Page",
+                    "url": "https://www.figma.com/design/zVdJwSS6b2abpiExfUS22u/Devin-Jatho-Editing-Style?t=RQI1jrhGPmssTZ6q-1",
+                    "category": "figma",
+                    "categoryLabel": "Tablero Figma",
+                    "badgeColor": "#a855f7"
+                  }
+                ],
+                "descriptionHtml": "<h3>This is the <strong>Figma File</strong> that <strong>Breaks Down</strong> <em>the Devin Jatho Editing Style</em></h3><p>Get Access: <a href=\"https://www.figma.com/design/zVdJwSS6b2abpiExfUS22u/Devin-Jatho-Editing-Style?t=RQI1jrhGPmssTZ6q-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.figma.com/design/zVdJwSS6b2abpiExfUS22u/Devin-Jatho-Editing-Style?t=RQI1jrhGPmssTZ6q-1</a></p>"
               }
             ]
           },
@@ -4667,7 +5812,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1E2j1lVm1hkzoVWjZZURO2EoQQWfdR7A7/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>N/A</p>"
               },
               {
                 "id": "devin_les_04",
@@ -4682,7 +5827,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/186y4csSlUJr8ygfzrFIu-u4J3-uFAfJz/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>N/A</p>"
               },
               {
                 "id": "devin_les_05",
@@ -4697,7 +5842,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1gOS7cQSsJ0eg86yUfDPEehCyoXiShE2I/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>N/A</p>"
               },
               {
                 "id": "devin_les_06",
@@ -4712,7 +5857,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1JIW-DbEbOAJK1NPyKJ_6kiTDlhTsBdfR/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>N/A</p>"
               },
               {
                 "id": "devin_les_07",
@@ -4727,7 +5872,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1mlFXztckMbdQBdUWGnscO3GB1IWDVT5T/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>N/A</p>"
               },
               {
                 "id": "devin_les_08",
@@ -4742,7 +5887,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1_aIAAoND-H6-aUT6D5o4j3l47W3mRY8C/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>N/A</p>"
               },
               {
                 "id": "devin_les_09",
@@ -4787,9 +5932,20 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "devin_les_10",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Generating Subtitles & Set-Up",
+                    "name": "Descarga de Archivos / PDFs · Generating Subtitles & Set-Up",
+                    "url": "https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
                   }
                 ],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the text files <a href=\"https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_11",
@@ -4803,8 +5959,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1LMcni99d8XUN_x304rnr6btlDZKOGenH",
                 "gdriveLink": "https://drive.google.com/file/d/1LMcni99d8XUN_x304rnr6btlDZKOGenH/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_11",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Minimal White Devin Text",
+                    "name": "Descarga de Archivos / PDFs · Minimal White Devin Text",
+                    "url": "https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the text files <a href=\"https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_12",
@@ -4818,8 +5986,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1PdwwDe5gj5PArKPASJPmZwyHf5FLpjQK",
                 "gdriveLink": "https://drive.google.com/file/d/1PdwwDe5gj5PArKPASJPmZwyHf5FLpjQK/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_12",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Special Devin Text Style (Design)",
+                    "name": "Descarga de Archivos / PDFs · Special Devin Text Style (Design)",
+                    "url": "https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the text files <a href=\"https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_13",
@@ -4833,8 +6013,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "104G6ewbedcyhCs2OFcZ0HE3ll13crQl4",
                 "gdriveLink": "https://drive.google.com/file/d/104G6ewbedcyhCs2OFcZ0HE3ll13crQl4/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_13",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Special Devin Text Style (Effects)",
+                    "name": "Descarga de Archivos / PDFs · Special Devin Text Style (Effects)",
+                    "url": "https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the text files <a href=\"https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_14",
@@ -4862,8 +6054,42 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1WrzzSgabm-oi1eRXaNMBN_oE_YhFy8ZB",
                 "gdriveLink": "https://drive.google.com/file/d/1WrzzSgabm-oi1eRXaNMBN_oE_YhFy8ZB/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_15",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Icon Hook Animations (Basic)",
+                    "name": "Descarga de Archivos / PDFs · Icon Hook Animations (Basic)",
+                    "url": "https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "devin_les_15",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Icon Hook Animations (Basic)",
+                    "name": "Descarga de Archivos / PDFs · Icon Hook Animations (Basic)",
+                    "url": "https://drive.google.com/drive/folders/13x5Z2cof0rwzbPw8MtBy7fZAbZGiJukR?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_2",
+                    "lessonId": "devin_les_15",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Icon Hook Animations (Basic)",
+                    "name": "Descarga de Archivos / PDFs · Icon Hook Animations (Basic)",
+                    "url": "https://drive.google.com/drive/folders/17WFN-pgDZ-cBPtElQJs2VszI6-BF6JmK?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the text files <a href=\"https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p><p>Find all the Icon Animation Files <a href=\"https://drive.google.com/drive/folders/13x5Z2cof0rwzbPw8MtBy7fZAbZGiJukR?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p><p>Find your Samples for the Edit <a href=\"https://drive.google.com/drive/folders/17WFN-pgDZ-cBPtElQJs2VszI6-BF6JmK?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_16",
@@ -4877,8 +6103,42 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1nQzBGUZnP2IuH8BmJ0ODk8yTkx9vrs48",
                 "gdriveLink": "https://drive.google.com/file/d/1nQzBGUZnP2IuH8BmJ0ODk8yTkx9vrs48/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_16",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Icon Hook Animations (Advanced)",
+                    "name": "Descarga de Archivos / PDFs · Icon Hook Animations (Advanced)",
+                    "url": "https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "devin_les_16",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Icon Hook Animations (Advanced)",
+                    "name": "Descarga de Archivos / PDFs · Icon Hook Animations (Advanced)",
+                    "url": "https://drive.google.com/drive/folders/13x5Z2cof0rwzbPw8MtBy7fZAbZGiJukR?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_2",
+                    "lessonId": "devin_les_16",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Icon Hook Animations (Advanced)",
+                    "name": "Descarga de Archivos / PDFs · Icon Hook Animations (Advanced)",
+                    "url": "https://drive.google.com/drive/folders/17WFN-pgDZ-cBPtElQJs2VszI6-BF6JmK?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the text files <a href=\"https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p><p>Find all the Icon Animation Files <a href=\"https://drive.google.com/drive/folders/13x5Z2cof0rwzbPw8MtBy7fZAbZGiJukR?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p><p>Find your Samples for the Edit <a href=\"https://drive.google.com/drive/folders/17WFN-pgDZ-cBPtElQJs2VszI6-BF6JmK?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_17",
@@ -4906,8 +6166,42 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1NaA8C1MwG6B5RcCQLhw0E4CZ7mnz0yTf",
                 "gdriveLink": "https://drive.google.com/file/d/1NaA8C1MwG6B5RcCQLhw0E4CZ7mnz0yTf/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_18",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "UI Hook Animations (Basic)",
+                    "name": "Descarga de Archivos / PDFs · UI Hook Animations (Basic)",
+                    "url": "https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "devin_les_18",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "UI Hook Animations (Basic)",
+                    "name": "Descarga de Archivos / PDFs · UI Hook Animations (Basic)",
+                    "url": "https://drive.google.com/drive/folders/13x5Z2cof0rwzbPw8MtBy7fZAbZGiJukR?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_2",
+                    "lessonId": "devin_les_18",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "UI Hook Animations (Basic)",
+                    "name": "Descarga de Archivos / PDFs · UI Hook Animations (Basic)",
+                    "url": "https://drive.google.com/drive/folders/17WFN-pgDZ-cBPtElQJs2VszI6-BF6JmK?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the text files <a href=\"https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p><p>Find all the Icon Animation Files <a href=\"https://drive.google.com/drive/folders/13x5Z2cof0rwzbPw8MtBy7fZAbZGiJukR?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p><p>Find your Samples for the Edit <a href=\"https://drive.google.com/drive/folders/17WFN-pgDZ-cBPtElQJs2VszI6-BF6JmK?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_19",
@@ -4921,8 +6215,42 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1H1U3K6Q3j-e10Q5cf48QCtRAISAzWJRw",
                 "gdriveLink": "https://drive.google.com/file/d/1H1U3K6Q3j-e10Q5cf48QCtRAISAzWJRw/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_19",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "UI Hook Animations (Advanced)",
+                    "name": "Descarga de Archivos / PDFs · UI Hook Animations (Advanced)",
+                    "url": "https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "devin_les_19",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "UI Hook Animations (Advanced)",
+                    "name": "Descarga de Archivos / PDFs · UI Hook Animations (Advanced)",
+                    "url": "https://drive.google.com/drive/folders/13x5Z2cof0rwzbPw8MtBy7fZAbZGiJukR?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_2",
+                    "lessonId": "devin_les_19",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "UI Hook Animations (Advanced)",
+                    "name": "Descarga de Archivos / PDFs · UI Hook Animations (Advanced)",
+                    "url": "https://drive.google.com/drive/folders/17WFN-pgDZ-cBPtElQJs2VszI6-BF6JmK?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the text files <a href=\"https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p><p>Find all the Icon Animation Files <a href=\"https://drive.google.com/drive/folders/13x5Z2cof0rwzbPw8MtBy7fZAbZGiJukR?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p><p>Find your Samples for the Edit <a href=\"https://drive.google.com/drive/folders/17WFN-pgDZ-cBPtElQJs2VszI6-BF6JmK?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_20",
@@ -4950,8 +6278,42 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1jWFWI57_g3jJi-qrQD3m9E_b1lETFf6n",
                 "gdriveLink": "https://drive.google.com/file/d/1jWFWI57_g3jJi-qrQD3m9E_b1lETFf6n/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_21",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Complete Instagram UI Animation",
+                    "name": "Descarga de Archivos / PDFs · Complete Instagram UI Animation",
+                    "url": "https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_1",
+                    "lessonId": "devin_les_21",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Complete Instagram UI Animation",
+                    "name": "Descarga de Archivos / PDFs · Complete Instagram UI Animation",
+                    "url": "https://drive.google.com/drive/folders/13x5Z2cof0rwzbPw8MtBy7fZAbZGiJukR?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  },
+                  {
+                    "id": "link_2",
+                    "lessonId": "devin_les_21",
+                    "moduleTitle": "Mastering Devin's Hook Editing",
+                    "lessonTitle": "Complete Instagram UI Animation",
+                    "name": "Descarga de Archivos / PDFs · Complete Instagram UI Animation",
+                    "url": "https://drive.google.com/drive/folders/1QsQYvqF1-yjpESoEyoNMhudibvumyBfu?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the text files <a href=\"https://drive.google.com/drive/folders/1wBbrqVgZ5toccAmmBOvvIqQfo2VQKMbA?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p><p>Find all the Icon Animation Files <a href=\"https://drive.google.com/drive/folders/13x5Z2cof0rwzbPw8MtBy7fZAbZGiJukR?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p><p>Find the Instagram UI Animation Files <a href=\"https://drive.google.com/drive/folders/1QsQYvqF1-yjpESoEyoNMhudibvumyBfu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_22",
@@ -4986,8 +6348,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1DY7u43ZFb9EVojWkBe4BMIJY7OicE7yJ",
                 "gdriveLink": "https://drive.google.com/file/d/1DY7u43ZFb9EVojWkBe4BMIJY7OicE7yJ/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_23",
+                    "moduleTitle": "Mastering Devin's Body Editing",
+                    "lessonTitle": "Devin's Body Animations",
+                    "name": "Descarga de Archivos / PDFs · Devin's Body Animations",
+                    "url": "https://drive.google.com/drive/folders/1WGEoQsusvF0JIZEIy3z80pvcNi1rfJTc?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the body animation files <a href=\"https://drive.google.com/drive/folders/1WGEoQsusvF0JIZEIy3z80pvcNi1rfJTc?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_24",
@@ -5001,8 +6375,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1805evuEsDFjmb7j4d0ZG9Z-uGRVXiVex",
                 "gdriveLink": "https://drive.google.com/file/d/1805evuEsDFjmb7j4d0ZG9Z-uGRVXiVex/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_24",
+                    "moduleTitle": "Mastering Devin's Body Editing",
+                    "lessonTitle": "The Circle Selector Animation",
+                    "name": "Descarga de Archivos / PDFs · The Circle Selector Animation",
+                    "url": "https://drive.google.com/drive/folders/1ZnpjkaFSAvXR7PoqjcUckKxrVecKHsHP?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the body animation files <a href=\"https://drive.google.com/drive/folders/1ZnpjkaFSAvXR7PoqjcUckKxrVecKHsHP?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_25",
@@ -5016,8 +6402,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Rn5XftX-RLb9ap0GddXpkP9VPL9sLVm0",
                 "gdriveLink": "https://drive.google.com/file/d/1Rn5XftX-RLb9ap0GddXpkP9VPL9sLVm0/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_25",
+                    "moduleTitle": "Mastering Devin's Body Editing",
+                    "lessonTitle": "Making The Circle Interactive",
+                    "name": "Descarga de Archivos / PDFs · Making The Circle Interactive",
+                    "url": "https://drive.google.com/drive/folders/1ZnpjkaFSAvXR7PoqjcUckKxrVecKHsHP?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the body animation files <a href=\"https://drive.google.com/drive/folders/1ZnpjkaFSAvXR7PoqjcUckKxrVecKHsHP?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_26",
@@ -5031,8 +6429,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1wp93D56NBwtpV-uEpc3F0mPxWw8g1Ws7",
                 "gdriveLink": "https://drive.google.com/file/d/1wp93D56NBwtpV-uEpc3F0mPxWw8g1Ws7/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_26",
+                    "moduleTitle": "Mastering Devin's Body Editing",
+                    "lessonTitle": "The 3D Reel Animation",
+                    "name": "Descarga de Archivos / PDFs · The 3D Reel Animation",
+                    "url": "https://drive.google.com/drive/folders/1QOuzcfXUfVtvUMZIrMi5Cw2Yl1GnnZMV?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the body animation files <a href=\"https://drive.google.com/drive/folders/1QOuzcfXUfVtvUMZIrMi5Cw2Yl1GnnZMV?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_27",
@@ -5046,8 +6456,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1fliuCKDs-tYAuUeQqoc2f0-XlsCYEVEc",
                 "gdriveLink": "https://drive.google.com/file/d/1fliuCKDs-tYAuUeQqoc2f0-XlsCYEVEc/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_27",
+                    "moduleTitle": "Mastering Devin's Body Editing",
+                    "lessonTitle": "Making the 3D Reel Interactive",
+                    "name": "Descarga de Archivos / PDFs · Making the 3D Reel Interactive",
+                    "url": "https://drive.google.com/drive/folders/1QOuzcfXUfVtvUMZIrMi5Cw2Yl1GnnZMV?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the body animation files <a href=\"https://drive.google.com/drive/folders/1QOuzcfXUfVtvUMZIrMi5Cw2Yl1GnnZMV?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_28",
@@ -5075,8 +6497,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1w9ce9-bBEKJOggT7eBiR9pzPTvsh6Pb-",
                 "gdriveLink": "https://drive.google.com/file/d/1w9ce9-bBEKJOggT7eBiR9pzPTvsh6Pb-/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_29",
+                    "moduleTitle": "Mastering Devin's Body Editing",
+                    "lessonTitle": "An Instagram UI Animation",
+                    "name": "Descarga de Archivos / PDFs · An Instagram UI Animation",
+                    "url": "https://drive.google.com/drive/folders/19nl7XWtal4Ar4E60OaJRu-RLkiFkHKrH?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the body animation files <a href=\"https://drive.google.com/drive/folders/19nl7XWtal4Ar4E60OaJRu-RLkiFkHKrH?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_30",
@@ -5090,8 +6524,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "11SzV_TWOUqJvIPwzemQOJj_KmJY4XVEy",
                 "gdriveLink": "https://drive.google.com/file/d/11SzV_TWOUqJvIPwzemQOJj_KmJY4XVEy/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_30",
+                    "moduleTitle": "Mastering Devin's Body Editing",
+                    "lessonTitle": "Turn Anything Into a UI Animation",
+                    "name": "Descarga de Archivos / PDFs · Turn Anything Into a UI Animation",
+                    "url": "https://drive.google.com/drive/folders/1zsYwIHoEQZosEN5GhbbRVSMAKrD8tiiK?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the body animation files <a href=\"https://drive.google.com/drive/folders/1zsYwIHoEQZosEN5GhbbRVSMAKrD8tiiK?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_31",
@@ -5105,8 +6551,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "11AvN6s6U59S26iifwsS98sd1d7-hnHOf",
                 "gdriveLink": "https://drive.google.com/file/d/11AvN6s6U59S26iifwsS98sd1d7-hnHOf/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_31",
+                    "moduleTitle": "Mastering Devin's Body Editing",
+                    "lessonTitle": "Split-Screen Animation (Special)",
+                    "name": "Descarga de Archivos / PDFs · Split-Screen Animation (Special)",
+                    "url": "https://drive.google.com/drive/folders/1WRSYLhVVZFY_mDF5-6zb2REE_cr_EDx4?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the body animation files <a href=\"https://drive.google.com/drive/folders/1WRSYLhVVZFY_mDF5-6zb2REE_cr_EDx4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_32",
@@ -5120,8 +6578,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1EOBaE5KuWi4DtaC_th3hXdoHIUnu6suD",
                 "gdriveLink": "https://drive.google.com/file/d/1EOBaE5KuWi4DtaC_th3hXdoHIUnu6suD/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "learn how to create complete Viral Devin Jatho Talking Head Edits step-by-step!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "devin_les_32",
+                    "moduleTitle": "Mastering Devin's Body Editing",
+                    "lessonTitle": "3D Character Animations (Special)",
+                    "name": "Descarga de Archivos / PDFs · 3D Character Animations (Special)",
+                    "url": "https://drive.google.com/drive/folders/1WRSYLhVVZFY_mDF5-6zb2REE_cr_EDx4?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to click that check in the top right after you're done watching this course!<br/><br/>If you have any <em>questions, concerns, or problems</em>, please <strong>create a post about it in the community</strong> and <strong>send Koussay (Community Admin) a DM</strong>, and he'll get back to you as soon as possible!</p><h1>Files You Might Need</h1><p>Find all the body animation files <a href=\"https://drive.google.com/drive/folders/1WRSYLhVVZFY_mDF5-6zb2REE_cr_EDx4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">here</a></p>"
               },
               {
                 "id": "devin_les_33",
@@ -5149,7 +6619,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 7,
         "totalLessons": 25,
-        "totalResources": 0,
+        "totalResources": 14,
         "modules": [
           {
             "index": 1,
@@ -5206,7 +6676,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1ezhFMbWvyDo8UoQihH3KFphnMyOJafNI/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p>"
               }
             ]
           },
@@ -5227,8 +6697,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1zulKL8Qsc3W0ukOuoO8qVXtVQwOe42HG",
                 "gdriveLink": "https://drive.google.com/file/d/1zulKL8Qsc3W0ukOuoO8qVXtVQwOe42HG/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_04",
+                    "moduleTitle": "Story Telling Secrets",
+                    "lessonTitle": "Clip Selection & Merging Segments",
+                    "name": "Descarga de Archivos / PDFs · Clip Selection & Merging Segments",
+                    "url": "https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p><p>Download the Short and all it's files here: <a href=\"https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing</a></p>"
               },
               {
                 "id": "bymax_les_05",
@@ -5242,8 +6724,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1fVIZrJME5Y5vlLj3ZcfL1MaGjIXyNB9Y",
                 "gdriveLink": "https://drive.google.com/file/d/1fVIZrJME5Y5vlLj3ZcfL1MaGjIXyNB9Y/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_05",
+                    "moduleTitle": "Story Telling Secrets",
+                    "lessonTitle": "Story Telling with Shot Selection",
+                    "name": "Descarga de Archivos / PDFs · Story Telling with Shot Selection",
+                    "url": "https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p><p>Download the Short and all it's files here: <a href=\"https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing</a></p><p>Drop Mo a follow: <a href=\"https://www.instagram.com/mocookx/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.instagram.com/mocookx/</a></p><p>Feel Free to use this Playlist to download your videos : <a href=\"https://youtube.com/playlist?list=PLGzJj8O2YyGcr7lYqrRI0MrQPj99ocMGs&si=CoTWjfj36Z1jMNNl\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://youtube.com/playlist?list=PLGzJj8O2YyGcr7lYqrRI0MrQPj99ocMGs&si=CoTWjfj36Z1jMNNl</a></p><p>Use these websites to download clips:</p><ol><li><p><a href=\"http://clip.cafe\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">clip.cafe</a></p></li><li><p><a href=\"http://playphrase.me\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">playphrase.me</a></p></li><li><p><a href=\"http://getyarn.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">getyarn.io</a></p></li><li><p><a href=\"http://clippit.tv\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">clippit.tv</a></p></li><li><p><a href=\"http://subzin.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">subzin.com</a></p></li><li><p><a href=\"http://kapwing.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">kapwing.com</a></p></li><li><p><a href=\"http://soundboard.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">soundboard.com</a></p></li></ol>"
               },
               {
                 "id": "bymax_les_06",
@@ -5257,8 +6751,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "16zD5xUyAKJq5k1n7E45W3EkALjy4JBpy",
                 "gdriveLink": "https://drive.google.com/file/d/16zD5xUyAKJq5k1n7E45W3EkALjy4JBpy/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_06",
+                    "moduleTitle": "Story Telling Secrets",
+                    "lessonTitle": "Emotionally Motivating Music",
+                    "name": "Descarga de Archivos / PDFs · Emotionally Motivating Music",
+                    "url": "https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p><p>Check out the free 7 day trial in the presets & plugins module!</p><p>Download the Short and all it's files here: <a href=\"https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing</a></p>"
               },
               {
                 "id": "bymax_les_07",
@@ -5273,7 +6779,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1-vNiaaBOKWAebkVwqEhfOAEfRm4VzjCB/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p>"
               }
             ]
           },
@@ -5295,7 +6801,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1F0yIJlwugRC99apWQb-rI44MO-nVvtkA/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p>"
               },
               {
                 "id": "bymax_les_09",
@@ -5310,7 +6816,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1DlNZSMk0MQJLYK0Kx8quxo4PwjcMiWW8/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p>"
               },
               {
                 "id": "bymax_les_10",
@@ -5325,7 +6831,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1-SzJN6QVDCCqXi88fbS47QwemVGet3QD/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p>"
               },
               {
                 "id": "bymax_les_11",
@@ -5340,7 +6846,7 @@ window.COMMUNITIES_DATA = [
                 "gdriveLink": "https://drive.google.com/file/d/1p2K8zChHJGkXu9EpLnVA_I7CbQhYCPxd/view?usp=drivesdk",
                 "inDrive": true,
                 "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p>"
               }
             ]
           },
@@ -5361,8 +6867,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1ackBIIrQK-bfGSsjmHf86nQkt3HauZPP",
                 "gdriveLink": "https://drive.google.com/file/d/1ackBIIrQK-bfGSsjmHf86nQkt3HauZPP/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_12",
+                    "moduleTitle": "Footage and Text Placement",
+                    "lessonTitle": "Text Placement Theory",
+                    "name": "Descarga de Archivos / PDFs · Text Placement Theory",
+                    "url": "https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p><p>Download the Short and all it's files here: <a href=\"https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing</a></p>"
               },
               {
                 "id": "bymax_les_13",
@@ -5376,8 +6894,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1w4WqhFF992mmWSunFVZs6_Nh-OcLFtbq",
                 "gdriveLink": "https://drive.google.com/file/d/1w4WqhFF992mmWSunFVZs6_Nh-OcLFtbq/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_13",
+                    "moduleTitle": "Footage and Text Placement",
+                    "lessonTitle": "Placement & Workflow",
+                    "name": "Descarga de Archivos / PDFs · Placement & Workflow",
+                    "url": "https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p><p>Download the Short and all it's files here: <a href=\"https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing</a></p>"
               },
               {
                 "id": "bymax_les_14",
@@ -5391,8 +6921,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1gSm1-xGySz3ry2J4MZIgm3E4wefe2-BM",
                 "gdriveLink": "https://drive.google.com/file/d/1gSm1-xGySz3ry2J4MZIgm3E4wefe2-BM/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_14",
+                    "moduleTitle": "Footage and Text Placement",
+                    "lessonTitle": "Rotoscoping & Text Placement",
+                    "name": "Descarga de Archivos / PDFs · Rotoscoping & Text Placement",
+                    "url": "https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p><p>Download the Short and all it's files here: <a href=\"https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing</a></p>"
               },
               {
                 "id": "bymax_les_15",
@@ -5406,8 +6948,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Pv_9wHiPfUF1mImb_EDd2wm0kf-lnqeo",
                 "gdriveLink": "https://drive.google.com/file/d/1Pv_9wHiPfUF1mImb_EDd2wm0kf-lnqeo/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_15",
+                    "moduleTitle": "Footage and Text Placement",
+                    "lessonTitle": "Combining it All Together",
+                    "name": "Descarga de Archivos / PDFs · Combining it All Together",
+                    "url": "https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p><p>Download the Short and all it's files here: <a href=\"https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing</a></p>"
               }
             ]
           },
@@ -5428,8 +6982,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1lfq8BT-WUaQoMtPXLWTosDQNPXFOochg",
                 "gdriveLink": "https://drive.google.com/file/d/1lfq8BT-WUaQoMtPXLWTosDQNPXFOochg/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_16",
+                    "moduleTitle": "Advanced Sound Design",
+                    "lessonTitle": "The High Quality SFX Folder",
+                    "name": "Descarga de Archivos / PDFs · The High Quality SFX Folder",
+                    "url": "https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Or feel free to shoot me or Charles a DM :)</p><p>Download the Short and all it's files here: <a href=\"https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing</a></p><p>Niko Hunt's Sound Effects:</p><p>Overlay Pack: <a href=\"https://nwjfx.gumroad.com/l/yvzplu?layout=discover&recommended_by=search&_gl=1*1sdf8c1*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg4MzcuMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://nwjfx.gumroad.com/l/yvzplu?layout=discover&recommended_by=search&_gl=1*1sdf8c1*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg4MzcuMC4wLjA</a></p><p>Sfx pack: <a href=\"https://nikkohunt.gumroad.com/l/JJCAf?layout=discover&recommended_by=search&_gl=1*3s101i*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg2MTYuMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://nikkohunt.gumroad.com/l/JJCAf?layout=discover&recommended_by=search&_gl=1*3s101i*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg2MTYuMC4wLjA</a></p><p>4,000 SFX: <a href=\"https://fcptemplate.gumroad.com/l/ayziz?layout=discover&recommended_by=search&_gl=1*7y3fol*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjkyMjguMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://fcptemplate.gumroad.com/l/ayziz?layout=discover&recommended_by=search&_gl=1*7y3fol*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjkyMjguMC4wLjA</a></p>"
               },
               {
                 "id": "bymax_les_17",
@@ -5443,8 +7009,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1EwHzqRf-19H5DKKpuFtRo6rjD9hzpKxt",
                 "gdriveLink": "https://drive.google.com/file/d/1EwHzqRf-19H5DKKpuFtRo6rjD9hzpKxt/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_17",
+                    "moduleTitle": "Advanced Sound Design",
+                    "lessonTitle": "Less is More Mentality",
+                    "name": "Descarga de Archivos / PDFs · Less is More Mentality",
+                    "url": "https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Download the Short and all it's files here: <a href=\"https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing</a></p><p>Or feel free to shoot me or Charles a DM :)</p><p>Overlay Pack: <a href=\"https://nwjfx.gumroad.com/l/yvzplu?layout=discover&recommended_by=search&_gl=1*1sdf8c1*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg4MzcuMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://nwjfx.gumroad.com/l/yvzplu?layout=discover&recommended_by=search&_gl=1*1sdf8c1*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg4MzcuMC4wLjA</a></p><p>Sfx pack: <a href=\"https://nikkohunt.gumroad.com/l/JJCAf?layout=discover&recommended_by=search&_gl=1*3s101i*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg2MTYuMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://nikkohunt.gumroad.com/l/JJCAf?layout=discover&recommended_by=search&_gl=1*3s101i*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg2MTYuMC4wLjA</a></p><p>4,000 SFX: <a href=\"https://fcptemplate.gumroad.com/l/ayziz?layout=discover&recommended_by=search&_gl=1*7y3fol*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjkyMjguMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://fcptemplate.gumroad.com/l/ayziz?layout=discover&recommended_by=search&_gl=1*7y3fol*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjkyMjguMC4wLjA</a></p>"
               },
               {
                 "id": "bymax_les_18",
@@ -5458,8 +7036,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1XMCWbVyoFTvFzbNOMVtXTAcfHKnRSzzk",
                 "gdriveLink": "https://drive.google.com/file/d/1XMCWbVyoFTvFzbNOMVtXTAcfHKnRSzzk/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_18",
+                    "moduleTitle": "Advanced Sound Design",
+                    "lessonTitle": "Cinematic Clicks & Camera SFX",
+                    "name": "Descarga de Archivos / PDFs · Cinematic Clicks & Camera SFX",
+                    "url": "https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Download the Short and all it's files here: <a href=\"https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing</a></p><p>Or feel free to shoot me or Charles a DM :)</p><p>Overlay Pack: <a href=\"https://nwjfx.gumroad.com/l/yvzplu?layout=discover&recommended_by=search&_gl=1*1sdf8c1*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg4MzcuMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://nwjfx.gumroad.com/l/yvzplu?layout=discover&recommended_by=search&_gl=1*1sdf8c1*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg4MzcuMC4wLjA</a></p><p>Sfx pack: <a href=\"https://nikkohunt.gumroad.com/l/JJCAf?layout=discover&recommended_by=search&_gl=1*3s101i*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg2MTYuMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://nikkohunt.gumroad.com/l/JJCAf?layout=discover&recommended_by=search&_gl=1*3s101i*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg2MTYuMC4wLjA</a></p><p>4,000 SFX: <a href=\"https://fcptemplate.gumroad.com/l/ayziz?layout=discover&recommended_by=search&_gl=1*7y3fol*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjkyMjguMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://fcptemplate.gumroad.com/l/ayziz?layout=discover&recommended_by=search&_gl=1*7y3fol*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjkyMjguMC4wLjA</a></p>"
               },
               {
                 "id": "bymax_les_19",
@@ -5473,8 +7063,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Sn5H4tQ3NstOkWgP4FcvSKu0cKJsnEX2",
                 "gdriveLink": "https://drive.google.com/file/d/1Sn5H4tQ3NstOkWgP4FcvSKu0cKJsnEX2/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_19",
+                    "moduleTitle": "Advanced Sound Design",
+                    "lessonTitle": "Environmental SFX & Layering",
+                    "name": "Descarga de Archivos / PDFs · Environmental SFX & Layering",
+                    "url": "https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Download the Short and all it's files here: <a href=\"https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing</a></p><p>Or feel free to shoot me or Charles a DM :)</p><p>Overlay Pack: <a href=\"https://nwjfx.gumroad.com/l/yvzplu?layout=discover&recommended_by=search&_gl=1*1sdf8c1*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg4MzcuMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://nwjfx.gumroad.com/l/yvzplu?layout=discover&recommended_by=search&_gl=1*1sdf8c1*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg4MzcuMC4wLjA</a></p><p>Sfx pack: <a href=\"https://nikkohunt.gumroad.com/l/JJCAf?layout=discover&recommended_by=search&_gl=1*3s101i*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg2MTYuMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://nikkohunt.gumroad.com/l/JJCAf?layout=discover&recommended_by=search&_gl=1*3s101i*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg2MTYuMC4wLjA</a></p><p>4,000 SFX: <a href=\"https://fcptemplate.gumroad.com/l/ayziz?layout=discover&recommended_by=search&_gl=1*7y3fol*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjkyMjguMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://fcptemplate.gumroad.com/l/ayziz?layout=discover&recommended_by=search&_gl=1*7y3fol*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjkyMjguMC4wLjA</a></p>"
               },
               {
                 "id": "bymax_les_20",
@@ -5488,8 +7090,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1ukVx6gRa7QJnu9187yBKYazQ-wc5fTRQ",
                 "gdriveLink": "https://drive.google.com/file/d/1ukVx6gRa7QJnu9187yBKYazQ-wc5fTRQ/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_20",
+                    "moduleTitle": "Advanced Sound Design",
+                    "lessonTitle": "Emotionally Captivating Sound Design",
+                    "name": "Descarga de Archivos / PDFs · Emotionally Captivating Sound Design",
+                    "url": "https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Don't forget to join the calls and ask your questions if you have any!</p><p>Download the Short and all it's files here: <a href=\"https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/10GU3lUWl97SBUloUMRIkWbmH3qlTY989?usp=sharing</a></p><p>Or feel free to shoot me or Charles a DM :)Overlay Pack: <a href=\"https://nwjfx.gumroad.com/l/yvzplu?layout=discover&recommended_by=search&_gl=1*1sdf8c1*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg4MzcuMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://nwjfx.gumroad.com/l/yvzplu?layout=discover&recommended_by=search&_gl=1*1sdf8c1*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg4MzcuMC4wLjA</a></p><p>Sfx pack: <a href=\"https://nikkohunt.gumroad.com/l/JJCAf?layout=discover&recommended_by=search&_gl=1*3s101i*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg2MTYuMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://nikkohunt.gumroad.com/l/JJCAf?layout=discover&recommended_by=search&_gl=1*3s101i*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjg2MTYuMC4wLjA</a></p><p>4,000 SFX: <a href=\"https://fcptemplate.gumroad.com/l/ayziz?layout=discover&recommended_by=search&_gl=1*7y3fol*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjkyMjguMC4wLjA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://fcptemplate.gumroad.com/l/ayziz?layout=discover&recommended_by=search&_gl=1*7y3fol*_ga*MzcyNTY5NjE2LjE3MTE5Nzc5NDg.*_ga_6LJN6D94N6*MTcyMjI2ODQzNC4xMi4xLjE3MjIyNjkyMjguMC4wLjA</a></p>"
               }
             ]
           },
@@ -5555,8 +7169,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1LdF1xu1jSsmRHQqli-1noRIxUXSJuGlB",
                 "gdriveLink": "https://drive.google.com/file/d/1LdF1xu1jSsmRHQqli-1noRIxUXSJuGlB/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_24",
+                    "moduleTitle": "Common Bymaximise Intros",
+                    "lessonTitle": "Hour Masterclass on Clean Editing!",
+                    "name": "Descarga de Archivos / PDFs · Hour Masterclass on Clean Editing!",
+                    "url": "https://drive.google.com/drive/folders/1hUAgJmLl5rJlR-uhLCJTynLUh88BqO6L?usp=sharing",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Download all the assets + project files right here: <a href=\"https://drive.google.com/drive/folders/1hUAgJmLl5rJlR-uhLCJTynLUh88BqO6L?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1hUAgJmLl5rJlR-uhLCJTynLUh88BqO6L?usp=sharing</a></p>"
               },
               {
                 "id": "bymax_les_25",
@@ -5570,8 +7196,20 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Yx__dMxJRLJri65RbfikP5VWBkcnN06r",
                 "gdriveLink": "https://drive.google.com/file/d/1Yx__dMxJRLJri65RbfikP5VWBkcnN06r/view?usp=drivesdk",
                 "inDrive": true,
-                "resources": [],
-                "descriptionHtml": "Master the Secrets to editing like Bymaximise and Daniel Dallen in the clean Editing Style Masterclass!"
+                "resources": [
+                  {
+                    "id": "link_0",
+                    "lessonId": "bymax_les_25",
+                    "moduleTitle": "Common Bymaximise Intros",
+                    "lessonTitle": "A 1 Hour Guide to Editing Like Eleven Stoic",
+                    "name": "Descarga de Archivos / PDFs · A 1 Hour Guide to Editing Like Eleven Stoic",
+                    "url": "https://drive.google.com/drive/folders/1URdpEwwusxWxGhLLvkWMRGrl--daa-Mo",
+                    "category": "gdrive",
+                    "categoryLabel": "Descarga de Archivos / PDFs",
+                    "badgeColor": "#3b82f6"
+                  }
+                ],
+                "descriptionHtml": "<p>Huge thanks to Mo for providing this training for you guys!<br/>Drop him a follow as a thank you: <a href=\"https://www.instagram.com/mocookx/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://www.instagram.com/mocookx/</a></p><p>Find the rest of the assets here: <a href=\"https://drive.google.com/drive/folders/1URdpEwwusxWxGhLLvkWMRGrl--daa-Mo\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">https://drive.google.com/drive/folders/1URdpEwwusxWxGhLLvkWMRGrl--daa-Mo</a></p>"
               }
             ]
           }
