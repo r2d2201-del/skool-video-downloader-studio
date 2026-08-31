@@ -7959,6 +7959,122 @@ window.COMMUNITIES_DATA = [
             ]
           }
         ]
+      },
+      {
+        "id": "iman-ghadzi-editing-masterclass",
+        "community": "Ultimate editors",
+        "courseTitle": "Iman Ghadzi Editing Masterclass",
+        "subtitle": "Formación completa de Iman Ghadzi Editing Masterclass",
+        "bannerTag": "1080P FULL HD · EN DRIVE",
+        "totalModules": 2,
+        "totalLessons": 6,
+        "totalResources": 0,
+        "modules": [
+          {
+            "index": 1,
+            "folder": "01 General",
+            "title": "01 General",
+            "lessons": [
+              {
+                "id": "e8b5d53149d94ba593432b1aceceba11",
+                "slug": "e8b5d531",
+                "index": 1,
+                "globalIndex": 1,
+                "title": "Watch This First!",
+                "rawTitle": "Watch This First!",
+                "module": "01 General",
+                "moduleIndex": 1,
+                "gdriveId": "1GLxWUAlJGB7ZalQ7Uif1S401FlVwVgHK",
+                "gdriveLink": "https://drive.google.com/file/d/1GLxWUAlJGB7ZalQ7Uif1S401FlVwVgHK/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "folder": "02_How it's done",
+            "title": "02_How it's done",
+            "lessons": [
+              {
+                "id": "4a67015f45124b1581b3fcce68746ae7",
+                "slug": "4a67015f",
+                "index": 1,
+                "globalIndex": 2,
+                "title": "Your text isn't doing enough",
+                "rawTitle": "Your text isn't doing enough",
+                "module": "02_How it's done",
+                "moduleIndex": 2,
+                "gdriveId": "1Mj4p7raGrVOFuZAnIaaYe7uC3RU5Skp_",
+                "gdriveLink": "https://drive.google.com/file/d/1Mj4p7raGrVOFuZAnIaaYe7uC3RU5Skp_/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "0a29c87336634d6b93e7fa640feea789",
+                "slug": "0a29c873",
+                "index": 2,
+                "globalIndex": 3,
+                "title": "How Iman Composites",
+                "rawTitle": "How Iman Composites",
+                "module": "02_How it's done",
+                "moduleIndex": 2,
+                "gdriveId": "1h6tuInJaOkBYsFRg_VmWgi8-1EnV3KYb",
+                "gdriveLink": "https://drive.google.com/file/d/1h6tuInJaOkBYsFRg_VmWgi8-1EnV3KYb/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "ce5608ead58340358f724cd8b1629602",
+                "slug": "ce5608ea",
+                "index": 3,
+                "globalIndex": 4,
+                "title": "Do you REALLY understand Iman's Style",
+                "rawTitle": "Do you REALLY understand Iman's Style",
+                "module": "02_How it's done",
+                "moduleIndex": 2,
+                "gdriveId": "1Vf9bNY4gzoUwq5iv-VTYqRnWXHv_Iw2p",
+                "gdriveLink": "https://drive.google.com/file/d/1Vf9bNY4gzoUwq5iv-VTYqRnWXHv_Iw2p/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "860aebb61036415d97d49358849bc9c5",
+                "slug": "860aebb6",
+                "index": 4,
+                "globalIndex": 5,
+                "title": "The true power of motion graphics",
+                "rawTitle": "The true power of motion graphics",
+                "module": "02_How it's done",
+                "moduleIndex": 2,
+                "gdriveId": "1XCiNRzVbjj5uXdmFWu2K108lWe8wMhpS",
+                "gdriveLink": "https://drive.google.com/file/d/1XCiNRzVbjj5uXdmFWu2K108lWe8wMhpS/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "bc6960ef4ec14647bdb1b651f8bc1c1a",
+                "slug": "bc6960ef",
+                "index": 5,
+                "globalIndex": 6,
+                "title": "Creating AI images the right way",
+                "rawTitle": "Creating AI images the right way",
+                "module": "02_How it's done",
+                "moduleIndex": 2,
+                "gdriveId": "1zEYNSvbQ-qIrEdQPKZOhJwo08wVsbZrq",
+                "gdriveLink": "https://drive.google.com/file/d/1zEYNSvbQ-qIrEdQPKZOhJwo08wVsbZrq/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          }
+        ]
       }
     ]
   }
