@@ -30,7 +30,7 @@
   let completedLessonIds = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY_PROGRESS) || '[]'));
   let currentActiveLesson = null;
   let allFlattenedLessons = [];
-  let currentView = 'player'; // 'home' or 'player'
+  let currentView = 'home'; // 'home' or 'player'
 
   // DOM Elements - Views & Navigation
   const homeView = document.getElementById('home-view');
@@ -756,6 +756,9 @@
     } else {
       renderTree();
     }
+
+    // Default to Home / Academies & Courses Catalog view
+    switchView('home');
   }
 
   // Run on DOM Ready

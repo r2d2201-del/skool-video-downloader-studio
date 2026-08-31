@@ -426,11 +426,20 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
         with open(course_data_file, 'r', encoding='utf-8') as f:
             content = f.read()
 
-        m = re.search(r'window\.COMMUNITIES_DATA\s*=\s*(\[.*?\]);\s*window\.COURSE_DATA', content, re.DOTALL)
-        if not m:
+        start_idx = content.find("window.COMMUNITIES_DATA")
+        if start_idx == -1:
             return
+        json_start = content.find("[", start_idx)
+        json_end = content.rfind("];")
+        if json_start == -1 or json_end == -1 or json_end <= json_start:
+            json_end = content.rfind("]")
+            if json_start == -1 or json_end == -1:
+                return
+            json_end += 1
+        else:
+            json_end += 1
 
-        communities = json.loads(m.group(1))
+        communities = json.loads(content[json_start:json_end])
         
         # 1. Find or create community
         comm = next((c for c in communities if c.get('id') == comm_id or c.get('name') == community_name), None)
