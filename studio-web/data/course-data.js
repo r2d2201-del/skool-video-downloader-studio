@@ -4765,6 +4765,92 @@ window.COMMUNITIES_DATA = [
             ]
           }
         ]
+      },
+      {
+        "id": "the-minimal-animation-masterclass",
+        "community": "Ultimateeditors2",
+        "courseTitle": "The Minimal Animation Masterclass",
+        "subtitle": "Formación completa de The Minimal Animation Masterclass",
+        "bannerTag": "1080P FULL HD · EN DRIVE",
+        "totalModules": 2,
+        "totalLessons": 4,
+        "totalResources": 0,
+        "modules": [
+          {
+            "index": 1,
+            "folder": "02_Understanding Minimal Animations",
+            "title": "02_Understanding Minimal Animations",
+            "lessons": [
+              {
+                "id": "59d4a76de6c0492b97b9451ebf06b365",
+                "slug": "59d4a76d",
+                "index": 1,
+                "globalIndex": 1,
+                "title": "Minimal Animations Style",
+                "rawTitle": "Minimal Animations Style",
+                "module": "02_Understanding Minimal Animations",
+                "moduleIndex": 1,
+                "gdriveId": "1RsNeJJ5zFMN4bimNBVKwnfvu6tNeDgpP",
+                "gdriveLink": "https://drive.google.com/file/d/1RsNeJJ5zFMN4bimNBVKwnfvu6tNeDgpP/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "d08a8f108849417182edd0861a8832d1",
+                "slug": "d08a8f10",
+                "index": 2,
+                "globalIndex": 3,
+                "title": "The Minimal Inspiration Board",
+                "rawTitle": "The Minimal Inspiration Board",
+                "module": "02_Understanding Minimal Animations",
+                "moduleIndex": 1,
+                "gdriveId": "1B9T7xnms9kvllDKxoMJLZJg2Hla0OY0a",
+                "gdriveLink": "https://drive.google.com/file/d/1B9T7xnms9kvllDKxoMJLZJg2Hla0OY0a/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "folder": "03_High-End Minimal Backgrounds",
+            "title": "03_High-End Minimal Backgrounds",
+            "lessons": [
+              {
+                "id": "bfdd3010ae0c4ebeae23692d5224d16e",
+                "slug": "bfdd3010",
+                "index": 1,
+                "globalIndex": 2,
+                "title": "Generating Grid Backgrounds",
+                "rawTitle": "Generating Grid Backgrounds",
+                "module": "03_High-End Minimal Backgrounds",
+                "moduleIndex": 2,
+                "gdriveId": "18_gdaln-xqVJbV1dPqS1MyxbZOLr4-oy",
+                "gdriveLink": "https://drive.google.com/file/d/18_gdaln-xqVJbV1dPqS1MyxbZOLr4-oy/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              },
+              {
+                "id": "05198a1fabaa459495b936ba38884d9d",
+                "slug": "05198a1f",
+                "index": 2,
+                "globalIndex": 4,
+                "title": "Creating Solid Gradients",
+                "rawTitle": "Creating Solid Gradients",
+                "module": "03_High-End Minimal Backgrounds",
+                "moduleIndex": 2,
+                "gdriveId": "1EQ-MKD6AFiHTpVvMp9Tr-Z4D6bRc9HX-",
+                "gdriveLink": "https://drive.google.com/file/d/1EQ-MKD6AFiHTpVvMp9Tr-Z4D6bRc9HX-/view?usp=drivesdk",
+                "inDrive": true,
+                "descriptionHtml": "",
+                "resources": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },
