@@ -4820,8 +4820,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "Complete Minimal Animation Workflow",
                 "module": "02_Understanding Minimal Animations",
                 "moduleIndex": 1,
-                "gdriveId": "14YBpJmEm2qqH9AM_Jscr9GhNGcHOt5Ae",
-                "gdriveLink": "https://drive.google.com/file/d/14YBpJmEm2qqH9AM_Jscr9GhNGcHOt5Ae/view?usp=drivesdk",
+                "gdriveId": "1gadg-_wTeoV6ybumoTOT9G-xz3a7RJUR",
+                "gdriveLink": "https://drive.google.com/file/d/1gadg-_wTeoV6ybumoTOT9G-xz3a7RJUR/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
@@ -4835,8 +4835,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "Breaking Down This Editing Style",
                 "module": "02_Understanding Minimal Animations",
                 "moduleIndex": 1,
-                "gdriveId": "1kDTsmDi0qMxfK6OGeQt5TIefrErACoGx",
-                "gdriveLink": "https://drive.google.com/file/d/1kDTsmDi0qMxfK6OGeQt5TIefrErACoGx/view?usp=drivesdk",
+                "gdriveId": "12uAz0tRqy23kqZSsTHsvszPgjFdQnvLy",
+                "gdriveLink": "https://drive.google.com/file/d/12uAz0tRqy23kqZSsTHsvszPgjFdQnvLy/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
@@ -4857,8 +4857,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "Generating Grid Backgrounds",
                 "module": "03_High-End Minimal Backgrounds",
                 "moduleIndex": 2,
-                "gdriveId": "18_gdaln-xqVJbV1dPqS1MyxbZOLr4-oy",
-                "gdriveLink": "https://drive.google.com/file/d/18_gdaln-xqVJbV1dPqS1MyxbZOLr4-oy/view?usp=drivesdk",
+                "gdriveId": "1nq1lOJToLZhNkOi2hNRRKFKCvmf6ttYq",
+                "gdriveLink": "https://drive.google.com/file/d/1nq1lOJToLZhNkOi2hNRRKFKCvmf6ttYq/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
@@ -4872,8 +4872,8 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "Creating Solid Gradients",
                 "module": "03_High-End Minimal Backgrounds",
                 "moduleIndex": 2,
-                "gdriveId": "1EQ-MKD6AFiHTpVvMp9Tr-Z4D6bRc9HX-",
-                "gdriveLink": "https://drive.google.com/file/d/1EQ-MKD6AFiHTpVvMp9Tr-Z4D6bRc9HX-/view?usp=drivesdk",
+                "gdriveId": "1puS7sajq95svBDvAzj6zQ9hr7ckT17Qv",
+                "gdriveLink": "https://drive.google.com/file/d/1puS7sajq95svBDvAzj6zQ9hr7ckT17Qv/view?usp=drivesdk",
                 "inDrive": true,
                 "descriptionHtml": "",
                 "resources": []
