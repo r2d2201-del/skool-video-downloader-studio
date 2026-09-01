@@ -20,12 +20,14 @@
   "background": {
     "service_worker": "service-worker.js"
   },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArqnUg3yQtWiFYnQr9jLeoMFq8VFNMDdFa8aFkpWC1GO5wNSeeqq6Uu6Q3628uOYGAuTo9nuVvO7tjyStePiZtmutwCyblHHy9MjX+g+9CkQI02LT1/dSVIF3Q57VIW8VF0e4txFYyRiPIYdKfE50sOFUsrt5oXieJqGpCUDtVaPl2OYSxcKh1hxqYLQjWmdi5yVFfVF6sJdWGhJdJtpHjXt+0Xq75QL6chlt7kIiDz0lrl9uJE1VgWU3xGmEwByP3DQ9DtcVbbnK3TOqKRAXtPRQzVgcU7+XUhVJ44wSbqVgyng/P9TH/oO/pmnRLuxJyK+dyxcjHMpasFbSjOs+RQIDAQAB",
   "permissions": [
     "activeTab",
     "scripting",
     "downloads",
     "storage",
     "cookies",
+    "nativeMessaging",
     "webRequest",
     "clipboardRead",
     "contextMenus",

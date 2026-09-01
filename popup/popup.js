@@ -193,11 +193,48 @@ document.addEventListener('DOMContentLoaded', async () => {
     return { success: false };
   }
 
-  // Check Local Downloader Server Bridge
+  let isNativeMessagingActive = false;
+
+  async function checkNativeHost() {
+    return new Promise(resolve => {
+      try {
+        if (!chrome.runtime.sendNativeMessage) {
+          resolve(null);
+          return;
+        }
+        chrome.runtime.sendNativeMessage('com.cinematic.skool_downloader', { action: 'STATUS' }, response => {
+          if (chrome.runtime.lastError || !response || !response.success) {
+            resolve(null);
+          } else {
+            resolve(response);
+          }
+        });
+      } catch (e) {
+        resolve(null);
+      }
+    });
+  }
+
+  // Check Local Downloader Server Bridge (Native Messaging First -> HTTP Bridge Fallback)
   async function checkBridgeStatus() {
+    // 1. Check Native Messaging Host (0 background processes)
+    const nativeRes = await checkNativeHost();
+    if (nativeRes && nativeRes.success) {
+      isNativeMessagingActive = true;
+      isLocalBridgeOnline = true;
+      bridgeStatusBadge.textContent = '⚡ Motor Nativo';
+      bridgeStatusBadge.className = 'bridge-status online';
+      if (nativeRes.gdriveUser && gdriveStatusTextEl) {
+        gdriveStatusTextEl.textContent = `Google Drive Conectado (${nativeRes.gdriveUser})`;
+      }
+      return true;
+    }
+
+    // 2. Fallback to HTTP Bridge
     try {
       const res = await callBridge('/status', 'GET');
       if (res && res.success && res.data && res.data.status === 'online') {
+        isNativeMessagingActive = false;
         isLocalBridgeOnline = true;
         bridgeStatusBadge.textContent = '⚡ Motor Activo';
         bridgeStatusBadge.className = 'bridge-status online';
@@ -210,6 +247,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     } catch (e) {
       console.warn('[Bridge Check]', e);
     }
+
+    isNativeMessagingActive = false;
     isLocalBridgeOnline = false;
     bridgeStatusBadge.textContent = '🌐 Modo Navegador';
     bridgeStatusBadge.className = 'bridge-status offline';
@@ -829,6 +868,80 @@ document.addEventListener('DOMContentLoaded', async () => {
     updateSelectedCount();
   });
 
+  function executeNativeBatch(itemsToDownload, rootFolder) {
+    return new Promise(async (resolve) => {
+      try {
+        const skoolCookies = await getSkoolCookiesNetscape();
+        const port = chrome.runtime.connectNative('com.cinematic.skool_downloader');
+        let completedCount = 0;
+        const total = itemsToDownload.length;
+
+        port.onMessage.addListener((msg) => {
+          if (msg.type === 'DOWNLOAD_PROGRESS' || msg.type === 'UPLOAD_PROGRESS') {
+            const taskId = msg.taskId;
+            const pct = Math.round(msg.progress || 0);
+            const prefix = msg.type === 'UPLOAD_PROGRESS' ? '☁️' : '🔄';
+            const row = document.querySelector(`[data-lesson-id="${taskId}"]`);
+            if (row) {
+              const badge = row.querySelector('.status-badge');
+              if (badge) {
+                badge.className = `status-badge ${msg.type === 'UPLOAD_PROGRESS' ? 'uploading' : 'downloading'}`;
+                badge.textContent = `${prefix} ${pct}%`;
+              }
+            }
+          } else if (msg.type === 'TASK_COMPLETED') {
+            completedCount++;
+            const taskId = msg.taskId;
+            const row = document.querySelector(`[data-lesson-id="${taskId}"]`);
+            if (row) {
+              const badge = row.querySelector('.status-badge');
+              if (badge) {
+                badge.className = 'status-badge completed';
+                badge.textContent = '✅ En Drive 📁';
+              }
+            }
+            updateProgress(`Completado (${completedCount}/${total})...`, Math.round((completedCount / total) * 100), true);
+          } else if (msg.type === 'TASK_ERROR') {
+            const taskId = msg.taskId;
+            const row = document.querySelector(`[data-lesson-id="${taskId}"]`);
+            if (row) {
+              const badge = row.querySelector('.status-badge');
+              if (badge) {
+                badge.className = 'status-badge failed';
+                badge.textContent = '❌ Error';
+              }
+            }
+          } else if (msg.type === 'BATCH_COMPLETED') {
+            showToast(`✅ Descarga por lotes finalizada (${total} elementos)`);
+            updateProgress('Todas las tareas completadas', 100, false);
+            try { port.disconnect(); } catch (e) {}
+            resolve(true);
+          }
+        });
+
+        port.onDisconnect.addListener(() => {
+          resolve(true);
+        });
+
+        port.postMessage({
+          action: 'DOWNLOAD_BATCH',
+          items: itemsToDownload,
+          folder: rootFolder,
+          storageMode: userSettings.storageMode,
+          gdriveRoot: userSettings.gdriveFolder || 'Skool Downloads',
+          cookies: skoolCookies
+        });
+
+        const destMsg = userSettings.storageMode === 'gdrive' ? 'a Google Drive' : userSettings.storageMode === 'both' ? 'a PC y Drive' : 'a tu PC';
+        showToast(`🚀 Descargando ${itemsToDownload.length} elementos ${destMsg} (Motor Nativo)...`);
+
+      } catch (err) {
+        console.error('[Native Messaging Batch Error]', err);
+        resolve(false);
+      }
+    });
+  }
+
   async function triggerBatchDownload(filterType = 'all', onlySelected = false) {
     const itemsToDownload = [];
     const rootFolder = (userSettings.rootFolder || 'Documentos/Skool_Downloads').trim();
@@ -914,7 +1027,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     updateProgress(`Descargando ${itemsToDownload.length} elementos...`, 20, true);
 
     await checkBridgeStatus();
-    if (isLocalBridgeOnline) {
+    if (isNativeMessagingActive) {
+      const ok = await executeNativeBatch(itemsToDownload, rootFolder);
+      if (ok) return;
+    } else if (isLocalBridgeOnline) {
       const skoolCookies = await getSkoolCookiesNetscape();
       const res = await callBridge('/download-batch', 'POST', {
         items: itemsToDownload,
@@ -1430,10 +1546,22 @@ document.addEventListener('DOMContentLoaded', async () => {
           const course = getEffectiveCourseName();
           const gdriveRoot = userSettings.gdriveFolder || 'Skool Downloads';
           const queryStr = `?community=${encodeURIComponent(community)}&course=${encodeURIComponent(course)}&gdriveRoot=${encodeURIComponent(gdriveRoot)}`;
-          const res = await callBridge(`/audit-course${queryStr}`, 'GET');
-          if (res && res.success && res.data) {
-            const data = res.data;
-            if (data.success) {
+          let data = null;
+          if (isNativeMessagingActive) {
+            data = await new Promise(resolve => {
+              chrome.runtime.sendNativeMessage('com.cinematic.skool_downloader', {
+                action: 'AUDIT_COURSE',
+                community,
+                course,
+                gdriveRoot
+              }, resp => resolve(resp || null));
+            });
+          } else {
+            const res = await callBridge(`/audit-course${queryStr}`, 'GET');
+            if (res && res.success && res.data) data = res.data;
+          }
+
+          if (data && data.success) {
               const files = data.files || {};
               let verifiedCount = 0;
 
