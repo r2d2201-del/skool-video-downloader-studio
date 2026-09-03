@@ -503,6 +503,13 @@ def download_and_upload_task(task_id, item_type, url, title, item_folder, storag
                 if storage_mode == 'gdrive' and os.path.exists(out_file):
                     try:
                         os.remove(out_file)
+                        curr_dir = target_dir
+                        for _ in range(4):
+                            if os.path.exists(curr_dir) and not os.listdir(curr_dir):
+                                os.rmdir(curr_dir)
+                                curr_dir = os.path.dirname(curr_dir)
+                            else:
+                                break
                     except Exception:
                         pass
 

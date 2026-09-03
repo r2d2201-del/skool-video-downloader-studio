@@ -1556,7 +1556,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const btnOpenGdrive = document.getElementById('btn-open-gdrive');
     if (btnOpenGdrive) {
       btnOpenGdrive.addEventListener('click', () => {
-        chrome.tabs.create({ url: 'https://drive.google.com/drive/folders/1ixMK0y6mzYW9UC0HCzzNxBU-Wp6AahDO' });
+        chrome.tabs.create({ url: 'https://drive.google.com/drive/folders/13CJ1bm6bfY7IdpyhjC75SNukpHFGuiZH' });
       });
     }
 
