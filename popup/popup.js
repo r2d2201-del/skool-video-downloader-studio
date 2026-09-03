@@ -100,6 +100,21 @@ document.addEventListener('DOMContentLoaded', async () => {
   const toastEl = document.getElementById('toast');
   const bridgeStatusBadge = document.getElementById('bridge-status-badge');
 
+  // Tab navigation (Registered immediately)
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabButtons.forEach(b => b.classList.remove('active'));
+      tabContents.forEach(c => c.classList.remove('active'));
+
+      btn.classList.add('active');
+      const targetId = btn.getAttribute('data-tab');
+      const targetContent = document.getElementById(targetId);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+    });
+  });
+
   // Context & Pack Elements
   const pageTitleEl = document.getElementById('page-title');
   const pageUrlEl = document.getElementById('page-url');
@@ -619,20 +634,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     return `${root}/${relative}`.replace(/\/+/g, '/').replace(/\/$/, '');
   }
 
-  // Tab navigation
-  tabButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tabButtons.forEach(b => b.classList.remove('active'));
-      tabContents.forEach(c => c.classList.remove('active'));
 
-      btn.classList.add('active');
-      const targetId = btn.getAttribute('data-tab');
-      const targetContent = document.getElementById(targetId);
-      if (targetContent) {
-        targetContent.classList.add('active');
-      }
-    });
-  });
 
   // Live Queue Status Polling with Rich Feedback
   function startQueuePolling() {
@@ -1582,36 +1584,35 @@ document.addEventListener('DOMContentLoaded', async () => {
           }
 
           if (data && data.success) {
-              const files = data.files || {};
-              let verifiedCount = 0;
+            const files = data.files || {};
+            let verifiedCount = 0;
 
-              document.querySelectorAll('.tree-lesson-item').forEach(row => {
-                const titleEl = row.querySelector('.lesson-title');
-                const titleText = titleEl ? titleEl.textContent.trim() : '';
-                const badge = row.querySelector('.status-badge');
+            document.querySelectorAll('.tree-lesson-item').forEach(row => {
+              const titleEl = row.querySelector('.lesson-title');
+              const titleText = titleEl ? titleEl.textContent.trim() : '';
+              const badge = row.querySelector('.status-badge');
 
-                const isFound = Object.keys(files).some(k => {
-                  const cleanK = k.replace(/^\d+_/, '').toLowerCase().replace(/[^a-z0-9]/g, '');
-                  const cleanT = titleText.replace(/^\d+\.\s*/, '').toLowerCase().replace(/[^a-z0-9]/g, '');
-                  return cleanK.includes(cleanT) || cleanT.includes(cleanK);
-                });
-
-                if (badge) {
-                  if (isFound) {
-                    verifiedCount++;
-                    badge.className = 'status-badge completed';
-                    badge.textContent = '✅ En Drive 📁';
-                  } else {
-                    badge.className = 'status-badge';
-                    badge.textContent = 'Listo';
-                  }
-                }
+              const isFound = Object.keys(files).some(k => {
+                const cleanK = k.replace(/^\d+_/, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+                const cleanT = titleText.replace(/^\d+\.\s*/, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+                return cleanK.includes(cleanT) || cleanT.includes(cleanK);
               });
 
-              showToast(`🛡️ Auditoría: ${verifiedCount} videos verificados en Google Drive`);
-            } else {
-              showToast('⚠️ No se pudo conectar con Drive para la auditoría.');
-            }
+              if (badge) {
+                if (isFound) {
+                  verifiedCount++;
+                  badge.className = 'status-badge completed';
+                  badge.textContent = '✅ En Drive 📁';
+                } else {
+                  badge.className = 'status-badge';
+                  badge.textContent = 'Listo';
+                }
+              }
+            });
+
+            showToast(`🛡️ Auditoría: ${verifiedCount} videos verificados en Google Drive`);
+          } else {
+            showToast('⚠️ No se pudo conectar con Drive para la auditoría.');
           }
         } catch (err) {
           showToast('❌ Error en auditoría: ' + err.message);
