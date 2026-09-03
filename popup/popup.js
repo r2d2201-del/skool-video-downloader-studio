@@ -197,20 +197,37 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   async function checkNativeHost() {
     return new Promise(resolve => {
+      let done = false;
+      const t = setTimeout(() => {
+        if (!done) {
+          done = true;
+          resolve(null);
+        }
+      }, 600);
+
       try {
         if (!chrome.runtime.sendNativeMessage) {
+          clearTimeout(t);
           resolve(null);
           return;
         }
         chrome.runtime.sendNativeMessage('com.cinematic.skool_downloader', { action: 'STATUS' }, response => {
-          if (chrome.runtime.lastError || !response || !response.success) {
-            resolve(null);
-          } else {
-            resolve(response);
+          if (!done) {
+            done = true;
+            clearTimeout(t);
+            if (chrome.runtime.lastError || !response || !response.success) {
+              resolve(null);
+            } else {
+              resolve(response);
+            }
           }
         });
       } catch (e) {
-        resolve(null);
+        if (!done) {
+          done = true;
+          clearTimeout(t);
+          resolve(null);
+        }
       }
     });
   }
@@ -232,7 +249,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 2. Fallback to HTTP Bridge
     try {
-      const res = await callBridge('/status', 'GET');
+      const res = await Promise.race([
+        callBridge('/status', 'GET'),
+        new Promise(r => setTimeout(() => r(null), 600))
+      ]);
       if (res && res.success && res.data && res.data.status === 'online') {
         isNativeMessagingActive = false;
         isLocalBridgeOnline = true;
@@ -1633,14 +1653,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
       }
 
-      await checkBridgeStatus();
+      checkBridgeStatus(); // Run bridge check asynchronously without blocking page scan
 
       // Query content script with timeout & direct fallback
       let response = null;
       try {
         response = await Promise.race([
           chrome.tabs.sendMessage(currentTab.id, { action: 'SCAN_PAGE_VIDEOS' }),
-          new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT')), 800))
+          new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT')), 600))
         ]);
       } catch (err) {
         try {
@@ -1648,10 +1668,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             target: { tabId: currentTab.id },
             files: ['content_scripts/skool-detector.js']
           });
-          await new Promise(r => setTimeout(r, 200));
+          await new Promise(r => setTimeout(r, 150));
           response = await Promise.race([
             chrome.tabs.sendMessage(currentTab.id, { action: 'SCAN_PAGE_VIDEOS' }),
-            new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_AFTER_INJECT')), 1200))
+            new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_AFTER_INJECT')), 1000))
           ]);
         } catch (e) {
           console.warn('[Skool Downloader] Messaging timeout/injection fallback:', e);
