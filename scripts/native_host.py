@@ -88,11 +88,15 @@ def clean_folder_name(name):
     if not name:
         return "General"
     name_str = str(name).strip()
-    if 'ultimate' in name_str.lower() and 'editor' in name_str.lower():
-        return "Ultimate Editors"
+    low = name_str.lower()
+    if any(k in low for k in ['ultimateeditors2', 'ultimate_editors_2', 'ultimate-editors-2', 'ultimate editors 2']):
+        return 'Ultimate Editors 2.0'
+    if any(k in low for k in ['ultimate-editors-5412', 'ultimate_editors_5412', 'ultimateeditors', 'ultimate editors']):
+        return 'Ultimate editors'
+
     name_str = re.sub(r'[\/\\:\*\?"<>\|]', '_', name_str)
     name_str = re.sub(r'[\s_]+', ' ', name_str).strip()
-    return name_str
+    return name_str or "General"
 
 def resolve_target_dir(folder_path):
     folder_path = folder_path.strip().rstrip('/')

@@ -565,15 +565,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   if (inputCustomCommunityName) {
     inputCustomCommunityName.addEventListener('input', (e) => {
-      userSettings.customCommunityName = e.target.value;
+      userSettings.customCommunityName = e.target.value.trim();
       updateDestinationPreview();
+    });
+    inputCustomCommunityName.addEventListener('change', async (e) => {
+      userSettings.customCommunityName = e.target.value.trim();
+      await chrome.storage.local.set({ customCommunityName: userSettings.customCommunityName });
     });
   }
 
   if (inputCustomCourseName) {
     inputCustomCourseName.addEventListener('input', (e) => {
-      userSettings.customCourseName = e.target.value;
+      userSettings.customCourseName = e.target.value.trim();
       updateDestinationPreview();
+    });
+    inputCustomCourseName.addEventListener('change', async (e) => {
+      userSettings.customCourseName = e.target.value.trim();
+      await chrome.storage.local.set({ customCourseName: userSettings.customCourseName });
     });
   }
 
@@ -582,12 +590,20 @@ document.addEventListener('DOMContentLoaded', async () => {
       userSettings.gdriveFolder = e.target.value.trim() || 'Skool Downloads';
       updateDestinationPreview();
     });
+    inputGdriveFolder.addEventListener('change', async (e) => {
+      userSettings.gdriveFolder = e.target.value.trim() || 'Skool Downloads';
+      await chrome.storage.local.set({ gdriveFolder: userSettings.gdriveFolder });
+    });
   }
 
   if (inputRootFolder) {
     inputRootFolder.addEventListener('input', (e) => {
       userSettings.rootFolder = e.target.value.trim() || 'Documentos/Skool_Downloads';
       updateDestinationPreview();
+    });
+    inputRootFolder.addEventListener('change', async (e) => {
+      userSettings.rootFolder = e.target.value.trim() || 'Documentos/Skool_Downloads';
+      await chrome.storage.local.set({ rootFolder: userSettings.rootFolder });
     });
   }
 

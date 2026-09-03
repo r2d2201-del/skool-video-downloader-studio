@@ -272,10 +272,10 @@
     }
 
     if (!communityName || communityName.includes('5412')) {
-      if (slug.includes('5412') || slug.includes('ultimate-editors')) {
-        communityName = 'Ultimate editors';
-      } else if (slug.includes('ultimateeditors2')) {
+      if (slug.includes('2') || slug.includes('2.0') || slug.includes('ultimateeditors2') || slug.includes('ultimate-editors-2')) {
         communityName = 'Ultimate Editors 2.0';
+      } else if (slug.includes('5412') || slug.includes('ultimate-editors') || slug.includes('ultimateeditors')) {
+        communityName = 'Ultimate editors';
       } else {
         communityName = slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
       }

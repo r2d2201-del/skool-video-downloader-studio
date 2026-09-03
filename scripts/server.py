@@ -198,10 +198,11 @@ def clean_folder_name(name):
     """Normalize folder names to clean human-readable titles."""
     if not name:
         return 'Skool'
-    if name in ('ultimate-editors-5412', 'ultimate_editors_5412'):
-        return 'Ultimate editors'
-    if name in ('ultimateeditors2', 'ultimate_editors_2'):
+    low = name.lower().strip()
+    if any(k in low for k in ['ultimateeditors2', 'ultimate_editors_2', 'ultimate-editors-2', 'ultimate editors 2']):
         return 'Ultimate Editors 2.0'
+    if any(k in low for k in ['ultimate-editors-5412', 'ultimate_editors_5412', 'ultimateeditors', 'ultimate editors']):
+        return 'Ultimate editors'
     clean = re.sub(r'[<>:"/\\|?*]', '', name).strip()
     clean = ' '.join(clean.split())
     if '_' in clean and ' ' not in clean:
