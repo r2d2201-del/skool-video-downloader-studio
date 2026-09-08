@@ -13,7 +13,7 @@ window.COMMUNITIES_DATA = [
         "bannerTag": "1080P FULL HD · COMPLETO",
         "totalModules": 7,
         "totalLessons": 34,
-        "totalResources": 197,
+        "totalResources": 193,
         "modules": [
           {
             "index": 1,
@@ -695,17 +695,6 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
-                  },
-                  {
-                    "id": "res_d4b8dab0968f4201997468b52bac4ca0_133",
-                    "lessonId": "d4b8dab0968f4201997468b52bac4ca0",
-                    "moduleTitle": "The Cinematic Practice Project",
-                    "lessonTitle": "Storytelling with B-roll",
-                    "name": "Tablero de Figma · Storytelling with B-roll",
-                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
-                    "category": "figma",
-                    "categoryLabel": "Tablero de Figma",
-                    "badgeColor": "#a855f7"
                   },
                   {
                     "id": "res_d4b8dab0968f4201997468b52bac4ca0_134",
@@ -1402,17 +1391,6 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
-                  },
-                  {
-                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_129",
-                    "lessonId": "9d8e61a31ae0487a9c28079ffc444cd1",
-                    "moduleTitle": "The Cinematic Practice Project",
-                    "lessonTitle": "Complete Text Workflow",
-                    "name": "Tablero de Figma · Complete Text Workflow",
-                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
-                    "category": "figma",
-                    "categoryLabel": "Tablero de Figma",
-                    "badgeColor": "#a855f7"
                   },
                   {
                     "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_130",
@@ -2448,17 +2426,6 @@ window.COMMUNITIES_DATA = [
                     "badgeColor": "#3b82f6"
                   },
                   {
-                    "id": "res_d4b8dab0968f4201997468b52bac4ca0_133",
-                    "lessonId": "d4b8dab0968f4201997468b52bac4ca0",
-                    "moduleTitle": "The Cinematic Practice Project",
-                    "lessonTitle": "Storytelling with B-roll",
-                    "name": "Tablero de Figma · Storytelling with B-roll",
-                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
-                    "category": "figma",
-                    "categoryLabel": "Tablero de Figma",
-                    "badgeColor": "#a855f7"
-                  },
-                  {
                     "id": "res_d4b8dab0968f4201997468b52bac4ca0_134",
                     "lessonId": "d4b8dab0968f4201997468b52bac4ca0",
                     "moduleTitle": "The Cinematic Practice Project",
@@ -2572,17 +2539,6 @@ window.COMMUNITIES_DATA = [
                     "category": "gdrive",
                     "categoryLabel": "Carpeta Google Drive",
                     "badgeColor": "#3b82f6"
-                  },
-                  {
-                    "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_129",
-                    "lessonId": "9d8e61a31ae0487a9c28079ffc444cd1",
-                    "moduleTitle": "The Cinematic Practice Project",
-                    "lessonTitle": "Complete Text Workflow",
-                    "name": "Tablero de Figma · Complete Text Workflow",
-                    "url": "https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1\\&t=Modt8m9tojHKObeG-1",
-                    "category": "figma",
-                    "categoryLabel": "Tablero de Figma",
-                    "badgeColor": "#a855f7"
                   },
                   {
                     "id": "res_9d8e61a31ae0487a9c28079ffc444cd1_130",
@@ -6136,7 +6092,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 1,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1D5D_bEU_pd3B_CF7l5PA8VjtCTCHA-EO",
+                    "gdriveLink": "https://drive.google.com/file/d/1D5D_bEU_pd3B_CF7l5PA8VjtCTCHA-EO/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_bc23394371a54cca84c45686d630b70e_o0fimo",
@@ -6151,11 +6110,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 1,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1RnES2vB6augmWOr9aYz8PnCliQ3LDyLv",
+                    "gdriveLink": "https://drive.google.com/file/d/1RnES2vB6augmWOr9aYz8PnCliQ3LDyLv/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 1,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=bc23394371a54cca84c45686d630b70e"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=bc23394371a54cca84c45686d630b70e",
+                "requestedQuality": "best",
+                "fileSizeBytes": 80380945,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 1546.614,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "ce33e7febbbe4047933d2eb25230ce72",
@@ -6184,7 +6161,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 2,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1PMgmalK89HXTS3osOf9brChOxRgLKXk8",
+                    "gdriveLink": "https://drive.google.com/file/d/1PMgmalK89HXTS3osOf9brChOxRgLKXk8/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_ce33e7febbbe4047933d2eb25230ce72_1opnuik",
@@ -6199,11 +6179,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 2,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1iGBia0sJDaB2dQmmFAOe0FG9rY0FUKX3",
+                    "gdriveLink": "https://drive.google.com/file/d/1iGBia0sJDaB2dQmmFAOe0FG9rY0FUKX3/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 2,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=ce33e7febbbe4047933d2eb25230ce72"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=ce33e7febbbe4047933d2eb25230ce72",
+                "requestedQuality": "best",
+                "fileSizeBytes": 141148222,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 2190.614,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "2a39fd1d21644ac2802ab9382ed00e93",
@@ -6232,7 +6230,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 3,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1BZwYRQ02ddFA1hOp9f5qzmSD2KP1iscT",
+                    "gdriveLink": "https://drive.google.com/file/d/1BZwYRQ02ddFA1hOp9f5qzmSD2KP1iscT/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_2a39fd1d21644ac2802ab9382ed00e93_1vd2ldt",
@@ -6247,11 +6248,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 3,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "10tQqqTChEJsavsNoV5eUuu-dRrHiO99Q",
+                    "gdriveLink": "https://drive.google.com/file/d/10tQqqTChEJsavsNoV5eUuu-dRrHiO99Q/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 3,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=2a39fd1d21644ac2802ab9382ed00e93"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=2a39fd1d21644ac2802ab9382ed00e93",
+                "requestedQuality": "best",
+                "fileSizeBytes": 122024030,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 2068.614,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "65e792f20cd341b4a80199039aa84d05",
@@ -6280,7 +6299,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 4,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1QXnxP61-4PUGJ4--PzP3VyMpGANblpsb",
+                    "gdriveLink": "https://drive.google.com/file/d/1QXnxP61-4PUGJ4--PzP3VyMpGANblpsb/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_65e792f20cd341b4a80199039aa84d05_1eflka",
@@ -6295,11 +6317,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 4,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1fvM79-HmiJc58P8wz1f7eJEqa1ovbDii",
+                    "gdriveLink": "https://drive.google.com/file/d/1fvM79-HmiJc58P8wz1f7eJEqa1ovbDii/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 4,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=65e792f20cd341b4a80199039aa84d05"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=65e792f20cd341b4a80199039aa84d05",
+                "requestedQuality": "best",
+                "fileSizeBytes": 104620962,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 1861.954,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "dd588a2d33ec42919a8019b9c3c84271",
@@ -6328,7 +6368,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 5,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1YRVHoIPHL_QVboS7Z5XP3YOVMzjCeAY9",
+                    "gdriveLink": "https://drive.google.com/file/d/1YRVHoIPHL_QVboS7Z5XP3YOVMzjCeAY9/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_dd588a2d33ec42919a8019b9c3c84271_d54eua",
@@ -6343,11 +6386,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 5,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1h2D9j6zPE8eB7F0j2X0b_xBZiOPbOZzi",
+                    "gdriveLink": "https://drive.google.com/file/d/1h2D9j6zPE8eB7F0j2X0b_xBZiOPbOZzi/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 5,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=dd588a2d33ec42919a8019b9c3c84271"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=dd588a2d33ec42919a8019b9c3c84271",
+                "requestedQuality": "best",
+                "fileSizeBytes": 362464636,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 1853.574,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "04960dd3bd9244edb4c29f9d2132a738",
@@ -6376,7 +6437,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 6,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1QiubcrFVYfg1m5QKTXw131mV50NSTDog",
+                    "gdriveLink": "https://drive.google.com/file/d/1QiubcrFVYfg1m5QKTXw131mV50NSTDog/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_04960dd3bd9244edb4c29f9d2132a738_6xtbtr",
@@ -6391,11 +6455,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 6,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1hCr9t2B4M2rQ65VTDGo49AYCVxBIrwO5",
+                    "gdriveLink": "https://drive.google.com/file/d/1hCr9t2B4M2rQ65VTDGo49AYCVxBIrwO5/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 6,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=04960dd3bd9244edb4c29f9d2132a738"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=04960dd3bd9244edb4c29f9d2132a738",
+                "requestedQuality": "best",
+                "fileSizeBytes": 391700658,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 2293.014,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "187e66206f5b48848b807ea14b881953",
@@ -6424,7 +6506,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 7,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1pTtHNwTV99a85GNbdKWyKoGWV0vt6zz7",
+                    "gdriveLink": "https://drive.google.com/file/d/1pTtHNwTV99a85GNbdKWyKoGWV0vt6zz7/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_187e66206f5b48848b807ea14b881953_146ykd8",
@@ -6439,11 +6524,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 7,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "18Vx2nontIxPPLreJfNXySc6_1JnnWfUr",
+                    "gdriveLink": "https://drive.google.com/file/d/18Vx2nontIxPPLreJfNXySc6_1JnnWfUr/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 7,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=187e66206f5b48848b807ea14b881953"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=187e66206f5b48848b807ea14b881953",
+                "requestedQuality": "best",
+                "fileSizeBytes": 101176114,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 1795.654,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "2fc4c401fc4e470582850e766d11ed66",
@@ -6472,7 +6575,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 8,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1blrbl24oXx5KwMM4LjgbNNvu2WI6kfLf",
+                    "gdriveLink": "https://drive.google.com/file/d/1blrbl24oXx5KwMM4LjgbNNvu2WI6kfLf/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_2fc4c401fc4e470582850e766d11ed66_10xpxpj",
@@ -6487,11 +6593,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 8,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1A1unhBW7KYPJCIqn2CFfM13o6xl9LB7A",
+                    "gdriveLink": "https://drive.google.com/file/d/1A1unhBW7KYPJCIqn2CFfM13o6xl9LB7A/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 8,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=2fc4c401fc4e470582850e766d11ed66"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=2fc4c401fc4e470582850e766d11ed66",
+                "requestedQuality": "best",
+                "fileSizeBytes": 87320187,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 1533.574,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "07d8c6afbda140c2866cf3eea3792b2f",
@@ -6520,7 +6644,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 9,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1IFYtSASiifK4vwJiLOY30dAOAf0STQaS",
+                    "gdriveLink": "https://drive.google.com/file/d/1IFYtSASiifK4vwJiLOY30dAOAf0STQaS/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_07d8c6afbda140c2866cf3eea3792b2f_dg0kyc",
@@ -6535,11 +6662,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 9,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "158C-txOdydkc4RMcbBWfZg--3pVJS99I",
+                    "gdriveLink": "https://drive.google.com/file/d/158C-txOdydkc4RMcbBWfZg--3pVJS99I/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 9,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=07d8c6afbda140c2866cf3eea3792b2f"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=07d8c6afbda140c2866cf3eea3792b2f",
+                "requestedQuality": "best",
+                "fileSizeBytes": 141856408,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 2704.414,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "66f4cadfdff34a2e8046d141d17fa624",
@@ -6568,7 +6713,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 10,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1MdaiWLMcDmOsmov3RLWaEHFMOlqZSi7e",
+                    "gdriveLink": "https://drive.google.com/file/d/1MdaiWLMcDmOsmov3RLWaEHFMOlqZSi7e/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_66f4cadfdff34a2e8046d141d17fa624_1fl6v1h",
@@ -6583,11 +6731,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 10,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1XKOmxtcGZB17BxQkDOwKQpArTnJ29lJZ",
+                    "gdriveLink": "https://drive.google.com/file/d/1XKOmxtcGZB17BxQkDOwKQpArTnJ29lJZ/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 10,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=66f4cadfdff34a2e8046d141d17fa624"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=66f4cadfdff34a2e8046d141d17fa624",
+                "requestedQuality": "best",
+                "fileSizeBytes": 162400678,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 2767.334,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "051ec1c425274b1f9cf50a69c4267a73",
@@ -6616,7 +6782,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 11,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1jqOZkS2YHLmTOm13iScBqPc2UJ6zMx4_",
+                    "gdriveLink": "https://drive.google.com/file/d/1jqOZkS2YHLmTOm13iScBqPc2UJ6zMx4_/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_051ec1c425274b1f9cf50a69c4267a73_1cdgg7b",
@@ -6631,11 +6800,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 11,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "182vjGfDVXAbA7k2k_Ff8f7w7KDGjEptx",
+                    "gdriveLink": "https://drive.google.com/file/d/182vjGfDVXAbA7k2k_Ff8f7w7KDGjEptx/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 16,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=051ec1c425274b1f9cf50a69c4267a73"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=051ec1c425274b1f9cf50a69c4267a73",
+                "requestedQuality": "best",
+                "fileSizeBytes": 99724343,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 1921.894,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "1140803824fb40a1b9db77a7652449f9",
@@ -6664,7 +6851,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 12,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1TSofZt255FSCM2MkE4C7jDgg28t3oE8a",
+                    "gdriveLink": "https://drive.google.com/file/d/1TSofZt255FSCM2MkE4C7jDgg28t3oE8a/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_1140803824fb40a1b9db77a7652449f9_1v2k4o9",
@@ -6679,11 +6869,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 12,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1mrfG0qJonJuwdKdeiIK_DrnY-ZzANo35",
+                    "gdriveLink": "https://drive.google.com/file/d/1mrfG0qJonJuwdKdeiIK_DrnY-ZzANo35/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 17,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=1140803824fb40a1b9db77a7652449f9"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=1140803824fb40a1b9db77a7652449f9",
+                "requestedQuality": "best",
+                "fileSizeBytes": 125446946,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 2917.494,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "f1de2e1696a74c3493e3f48024dbf1cd",
@@ -6712,7 +6920,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 13,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1q7by3I6Dcd6R_MuFKBtZWlx718oRgemC",
+                    "gdriveLink": "https://drive.google.com/file/d/1q7by3I6Dcd6R_MuFKBtZWlx718oRgemC/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_f1de2e1696a74c3493e3f48024dbf1cd_ax66b2",
@@ -6727,11 +6938,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 13,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1-3MGJOAdxbRUSbuJMuDCBqjx6pzYx6o6",
+                    "gdriveLink": "https://drive.google.com/file/d/1-3MGJOAdxbRUSbuJMuDCBqjx6pzYx6o6/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 18,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=f1de2e1696a74c3493e3f48024dbf1cd"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=f1de2e1696a74c3493e3f48024dbf1cd",
+                "requestedQuality": "best",
+                "fileSizeBytes": 398853664,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 2496.214,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "f3e22f5d71bb4d7886eca3638bc690dc",
@@ -6760,7 +6989,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 14,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1xSIJZaBkir6tY0sOT0HlR89cTg1uERI2",
+                    "gdriveLink": "https://drive.google.com/file/d/1xSIJZaBkir6tY0sOT0HlR89cTg1uERI2/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_f3e22f5d71bb4d7886eca3638bc690dc_ax66b2",
@@ -6775,11 +7007,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 14,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1xtgUCVhABjrhlG2uy7GPUSR_Ce-TAdCo",
+                    "gdriveLink": "https://drive.google.com/file/d/1xtgUCVhABjrhlG2uy7GPUSR_Ce-TAdCo/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 19,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=f3e22f5d71bb4d7886eca3638bc690dc"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=f3e22f5d71bb4d7886eca3638bc690dc",
+                "requestedQuality": "best",
+                "fileSizeBytes": 251046212,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 1719.794,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "77406f3975794e13ad061e7579b727c9",
@@ -6808,7 +7058,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 15,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1tR0IzcrsTrMMUEmZhtMXOYOhOAyPKL-n",
+                    "gdriveLink": "https://drive.google.com/file/d/1tR0IzcrsTrMMUEmZhtMXOYOhOAyPKL-n/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_77406f3975794e13ad061e7579b727c9_ikaxer",
@@ -6823,11 +7076,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 15,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1-uOK1WoC4tXb4GXrgUOlMYsCs9BSnm4R",
+                    "gdriveLink": "https://drive.google.com/file/d/1-uOK1WoC4tXb4GXrgUOlMYsCs9BSnm4R/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 20,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=77406f3975794e13ad061e7579b727c9"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=77406f3975794e13ad061e7579b727c9",
+                "requestedQuality": "best",
+                "fileSizeBytes": 401142354,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 2386.854,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "b9934c89eca542a5bfb9881be88e00e2",
@@ -6856,7 +7127,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 16,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1e0SZBW1aVwBGCTgx4GHrN3rlKaivvO0P",
+                    "gdriveLink": "https://drive.google.com/file/d/1e0SZBW1aVwBGCTgx4GHrN3rlKaivvO0P/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_b9934c89eca542a5bfb9881be88e00e2_ikaxer",
@@ -6871,11 +7145,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 16,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1Bn_WCwQwHh8mrvHkJKrzywg0k4mH7eLA",
+                    "gdriveLink": "https://drive.google.com/file/d/1Bn_WCwQwHh8mrvHkJKrzywg0k4mH7eLA/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 21,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=b9934c89eca542a5bfb9881be88e00e2"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=b9934c89eca542a5bfb9881be88e00e2",
+                "requestedQuality": "best",
+                "fileSizeBytes": 287565543,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 1722.414,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "a93bd4ed0a4049048a7050a822cccea5",
@@ -6904,7 +7196,10 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 17,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1q_kGFv-s0iQTeZzQiBcGLVGcwXfwuzXU",
+                    "gdriveLink": "https://drive.google.com/file/d/1q_kGFv-s0iQTeZzQiBcGLVGcwXfwuzXU/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
                     "id": "body_link_a93bd4ed0a4049048a7050a822cccea5_3p89ew",
@@ -6919,11 +7214,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 17,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1WWoxZprHbfqjIU1QmebCbpbxGlW6xeCs",
+                    "gdriveLink": "https://drive.google.com/file/d/1WWoxZprHbfqjIU1QmebCbpbxGlW6xeCs/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 22,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=a93bd4ed0a4049048a7050a822cccea5"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=a93bd4ed0a4049048a7050a822cccea5",
+                "requestedQuality": "best",
+                "fileSizeBytes": 422288129,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 2594.194,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               },
               {
                 "id": "29d64c9395d7461a99c3f45166d8645a",
@@ -6937,14 +7250,13 @@ window.COMMUNITIES_DATA = [
                 "gdriveId": "1Xs7iJVqgjJvG0itLcIiyJEKcgpk85Mn3",
                 "gdriveLink": "https://drive.google.com/file/d/1Xs7iJVqgjJvG0itLcIiyJEKcgpk85Mn3/view?usp=drivesdk",
                 "inDrive": true,
-                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've done this animation!</p><p>And make sure to <strong>post these animations on the community</strong> (I'd love to review them)<br><br><br class=\"ProseMirror-trailingBreak\"></p><h4>Assets you'll Need for this animation</h4><p><a target=\"_blank\" rel=\"noopener noreferrer\" class=\"link lesson-link\" href=\"https://drive.google.com/drive/folders/1tjT764VEYKJJHcqbtMQtiWINB41xAiiz?usp=sharing\" title=\"https://drive.google.com/drive/folders/1tjT764VEYKJJHcqbtMQtiWINB41xAiiz?usp=sharing\">Download the project file for the animations</a></p><p><a target=\"_blank\" rel=\"noopener noreferrer\" class=\"link lesson-link\" href=\"https://drive.google.com/drive/folders/1-yPyEM0TZ5KVTTOd8BNo1Bqvswo58xH5?usp=sharing\" title=\"https://drive.google.com/drive/folders/1-yPyEM0TZ5KVTTOd8BNo1Bqvswo58xH5?usp=sharing\">Download the assets used for this animation</a></p><p><br class=\"ProseMirror-trailingBreak\"></p><hr contenteditable=\"false\"><p>If you face any issues or have any questions, feel free to<strong> create a post on the community</strong>, or simply <strong>join one of our Q&amp;As</strong> and we'll help you out!</p>",
+                "descriptionHtml": "<p>Don't forget to <strong>click that circle in the top right</strong> once you've done this animation!</p><p>And make sure to <strong>post these animations on the community</strong> (I'd love to review them)<br/><br/></p><h4>Assets you'll Need for this animation</h4><p><a href=\"https://drive.google.com/drive/folders/1tjT764VEYKJJHcqbtMQtiWINB41xAiiz?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the project file for the animations</a></p><p><a href=\"https://drive.google.com/drive/folders/1-yPyEM0TZ5KVTTOd8BNo1Bqvswo58xH5?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the assets used for this animation</a></p><p>If you face any issues or have any questions, feel free to<strong> create a post on the community</strong>, or simply <strong>join one of our Q&As</strong> and we'll help you out!</p>",
                 "resources": [
                   {
-                    "id": "dom_link_26",
+                    "id": "body_link_29d64c9395d7461a99c3f45166d8645a_117nmra",
                     "lessonId": "29d64c9395d7461a99c3f45166d8645a",
                     "name": "Download the project file for the animations",
                     "url": "https://drive.google.com/drive/folders/1tjT764VEYKJJHcqbtMQtiWINB41xAiiz?usp=sharing",
-                    "size": null,
                     "category": "gdrive_folder",
                     "categoryLabel": "DRIVE 📁",
                     "categoryColor": "#0ea5e9",
@@ -6953,14 +7265,16 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 18,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 1
+                    "resourceIndex": 1,
+                    "gdriveId": "1NX0WIB5Q430i9a0ta50UhnOI0bckM4m1",
+                    "gdriveLink": "https://drive.google.com/file/d/1NX0WIB5Q430i9a0ta50UhnOI0bckM4m1/view?usp=drivesdk",
+                    "inDrive": true
                   },
                   {
-                    "id": "dom_link_27",
+                    "id": "body_link_29d64c9395d7461a99c3f45166d8645a_9gv0tv",
                     "lessonId": "29d64c9395d7461a99c3f45166d8645a",
                     "name": "Download the assets used for this animation",
                     "url": "https://drive.google.com/drive/folders/1-yPyEM0TZ5KVTTOd8BNo1Bqvswo58xH5?usp=sharing",
-                    "size": null,
                     "category": "gdrive_folder",
                     "categoryLabel": "DRIVE 📁",
                     "categoryColor": "#0ea5e9",
@@ -6969,11 +7283,29 @@ window.COMMUNITIES_DATA = [
                     "globalLessonIndex": 18,
                     "moduleTitle": "01_General",
                     "moduleIndex": 1,
-                    "resourceIndex": 2
+                    "resourceIndex": 2,
+                    "gdriveId": "1DsQBOk1JmYI7yCaCbieOQIiPIvxNf-nZ",
+                    "gdriveLink": "https://drive.google.com/file/d/1DsQBOk1JmYI7yCaCbieOQIiPIvxNf-nZ/view?usp=drivesdk",
+                    "inDrive": true
                   }
                 ],
                 "sourceOrder": 23,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=29d64c9395d7461a99c3f45166d8645a"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/6c147586?md=29d64c9395d7461a99c3f45166d8645a",
+                "requestedQuality": "best",
+                "fileSizeBytes": 102100054,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "durationSeconds": 1877.334,
+                "availableHeights": [
+                  144,
+                  240,
+                  360,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080
               }
             ]
           }
