@@ -1,4 +1,4 @@
-# 🎬 Skool Video Downloader (Chrome Extension v2.8.0)
+# 🎬 Skool Video Downloader (Chrome Extension v2.8.1)
 
 Extensión de Google Chrome (Manifest V3) de alto rendimiento para detectar y descargar videos y recursos adjuntos en toda la plataforma **Skool.com** (lecciones de aulas / classrooms, publicaciones de la comunidad y páginas sobre/about).
 
@@ -6,7 +6,7 @@ Soporta múltiples reproductores y CDN de streaming: **Loom, Wistia, Vimeo, YouT
 
 ---
 
-## ✨ Características Principales (v2.8.0)
+## ✨ Características Principales (v2.8.1)
 
 - **Cola persistente fuera del popup**: Puedes cerrar la ventana de la extensión mientras el motor nativo procesa un curso largo. Los streams firmados se resuelven justo antes de cada descarga.
 - **Detección y Descarga de Recursos Adjuntos**: Extrae PDFs, ZIPs, hojas de cálculo, documentos y enlaces (Google Drive, Notion, Figma) asociados por ID a su lección original.

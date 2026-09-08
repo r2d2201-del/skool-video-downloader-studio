@@ -189,6 +189,33 @@
       /\.(m3u8|mp4|webm|m4v|mov|mkv)(\?|$)/i.test(candidate);
   }
 
+  function muxPlaybackUrl(video, allowObjectId = false) {
+    if (!video || typeof video !== 'object') return null;
+    const playbackId = video.playbackId || video.playback_id || video.muxPlaybackId || (allowObjectId ? video.id : null);
+    const token = video.playbackToken || video.playback_token || video.token || video.signedToken;
+    if (!playbackId || typeof playbackId !== 'string' || playbackId.length <= 5 || playbackId.includes(' ')) {
+      return null;
+    }
+    return token
+      ? `https://stream.mux.com/${playbackId}.m3u8?token=${token}`
+      : `https://stream.mux.com/${playbackId}.m3u8`;
+  }
+
+  function videoUrlPriority(value) {
+    if (!isRecognizedVideoUrl(value)) return -1;
+    const candidate = value.toLowerCase();
+    // Adaptive manifests expose every rendition. A direct MP4 returned by Skool
+    // is commonly only the 360p compatibility rendition.
+    if (candidate.includes('.m3u8') || candidate.includes('stream.mux.com')) return 400;
+    if (candidate.includes('cloudflarestream.com') || candidate.includes('videodelivery.net')) return 350;
+    if (
+      candidate.includes('loom.com') || candidate.includes('youtube.com') ||
+      candidate.includes('youtu.be') || candidate.includes('vimeo.com') ||
+      candidate.includes('wistia.com') || candidate.includes('wistia.net')
+    ) return 300;
+    return 100;
+  }
+
   // Find exact video URL for a specific lesson ID inside Next.js payload
   function findLessonVideoById(nextData, lessonId) {
     if (!nextData) return null;
@@ -197,49 +224,54 @@
       return obj && typeof obj === 'object' && (obj.id === lessonId || obj._id === lessonId);
     }) : [nextData];
 
+    let bestCandidate = null;
+    let bestPriority = -1;
+
+    const consider = value => {
+      const priority = videoUrlPriority(value);
+      if (priority > bestPriority) {
+        bestCandidate = value;
+        bestPriority = priority;
+      }
+    };
+
     for (const les of lessonObjects) {
       if (!les || typeof les !== 'object') continue;
       const meta = les.metadata || les;
 
-      // 1. Direct embed/external candidates FIRST (Loom, YouTube, Vimeo, direct MP4)
+      // Prefer the adaptive playback object/master manifest over a direct MP4.
+      // This is what lets yt-dlp see the 720p/1080p renditions.
+      const videoObjects = [meta.video, les.video, meta.videoObj, les.videoObj];
+      for (const videoObject of videoObjects) {
+        consider(muxPlaybackUrl(videoObject, true));
+        if (videoObject && typeof videoObject === 'object') {
+          consider(videoObject.hlsUrl);
+          consider(videoObject.playbackUrl);
+          consider(videoObject.url);
+        }
+      }
+      consider(muxPlaybackUrl(meta));
+      if (les !== meta) consider(muxPlaybackUrl(les));
+
       const candidates = [
+        meta.hlsUrl,
+        meta.playbackUrl,
+        les.hlsUrl,
+        les.playbackUrl,
         meta.videoLink,
         meta.video_url,
         meta.videoUrl,
         les.videoLink,
         les.video_url,
-        les.videoUrl,
-        meta.hlsUrl,
-        les.hlsUrl
+        les.videoUrl
       ];
 
       for (const c of candidates) {
-        if (isRecognizedVideoUrl(c)) {
-          return c;
-        }
-      }
-
-      // 2. Mux / Native Skool Video Object
-      const vidObj = meta.video || les.video || meta.videoObj || les.videoObj;
-      if (vidObj && typeof vidObj === 'object') {
-        const pid = vidObj.playbackId || vidObj.playback_id || vidObj.id || vidObj.muxPlaybackId;
-        const tok = vidObj.playbackToken || vidObj.playback_token || vidObj.token || vidObj.signedToken;
-        if (pid && typeof pid === 'string' && pid.length > 5 && !pid.includes(' ')) {
-          return tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
-        }
-        if (isRecognizedVideoUrl(vidObj.url)) {
-          return vidObj.url;
-        }
-      }
-
-      const pid = meta.playbackId || meta.playback_id || les.playbackId || les.playback_id;
-      const tok = meta.playbackToken || meta.playback_token || les.playbackToken || les.playback_token;
-      if (pid && typeof pid === 'string' && pid.length > 5 && !pid.includes(' ')) {
-        return tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
+        consider(c);
       }
     }
 
-    return null;
+    return bestCandidate;
   }
 
   // Extract contextual metadata (DOM First -> Next.js Fallback)
@@ -869,7 +901,10 @@
           lessonIndexInModule: sourceOrder,
           title: lessonTitle,
           url: lessonUrl,
-          videoUrl: directVideo || lessonUrl,
+          // Resolve the short-lived signed stream immediately before each item.
+          // Keeping the stable lesson URL here prevents long courses from using
+          // an expired token captured when the popup was first opened.
+          videoUrl: lessonUrl,
           videoResolved: Boolean(directVideo),
           hasVideo,
           platform: platform.name,
@@ -962,7 +997,7 @@
                   lessonIndexInModule: sourceOrder,
                   title: rawTitle,
                   url: href,
-                  videoUrl: directVideo || href,
+                  videoUrl: href,
                   videoResolved: Boolean(directVideo),
                   platform: identifyPlatform(directVideo).name,
                   platformType: identifyPlatform(directVideo).type,

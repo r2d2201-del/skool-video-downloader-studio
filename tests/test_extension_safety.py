@@ -11,6 +11,7 @@ class ExtensionSafetyTests(unittest.TestCase):
         manifest = json.loads((PROJECT_ROOT / "manifest.json").read_text(encoding="utf-8"))
         self.assertNotIn("cookies", manifest["permissions"])
         self.assertNotIn("clipboardRead", manifest["permissions"])
+        self.assertNotIn("webRequest", manifest["permissions"])
         self.assertNotIn("<all_urls>", manifest["host_permissions"])
 
     def test_downloaders_verify_tls_and_do_not_export_browser_cookies(self):
@@ -19,6 +20,14 @@ class ExtensionSafetyTests(unittest.TestCase):
         self.assertNotIn("chrome.cookies", popup)
         self.assertNotIn("--no-check-certificate", native)
         self.assertNotIn('msg.get("cookies")', native)
+
+    def test_signed_streams_are_resolved_just_in_time_and_not_persisted(self):
+        detector = (PROJECT_ROOT / "content_scripts" / "skool-detector.js").read_text(encoding="utf-8")
+        worker = (PROJECT_ROOT / "service-worker.js").read_text(encoding="utf-8")
+        self.assertIn("videoUrl: lessonUrl", detector)
+        self.assertIn("videoUrlPriority", detector)
+        self.assertNotIn("tab_streams_", worker)
+        self.assertNotIn("Intercepted HLS Stream", worker)
 
     def test_cloud_sync_does_not_double_deploy_or_stage_the_repository(self):
         native = (PROJECT_ROOT / "scripts" / "native_host.py").read_text(encoding="utf-8")

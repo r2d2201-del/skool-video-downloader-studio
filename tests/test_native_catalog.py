@@ -173,6 +173,31 @@ class NativeCatalogTests(unittest.TestCase):
         status = self.native.course_status(str(self.base), "Comunidad", "The $2,000 mo Editor Blueprint")
         self.assertTrue(status["courseExists"])
 
+    def test_repair_deduplicates_same_resource_url_and_keeps_drive_metadata(self):
+        ctx = self.context(1, 1, "lesson-1", "Primera")
+        self.native.update_course_catalog(ctx, "one.mp4", "drive-1")
+        catalog_path = self.base / "data" / "course-data.js"
+        catalog = read_catalog(catalog_path)
+        lesson = catalog[0]["courses"][0]["modules"][0]["lessons"][0]
+        lesson["resources"] = [
+            {"id": "body-link", "name": "Guía", "url": "https://example.com/guide"},
+            {
+                "id": "dom-link",
+                "name": "Guía",
+                "url": "https://example.com/guide",
+                "gdriveId": "resource-drive-id",
+                "inDrive": True,
+            },
+        ]
+        payload = f"window.COMMUNITIES_DATA = {json.dumps(catalog)};\n"
+        catalog_path.write_text(payload, encoding="utf-8")
+        (self.base / "studio-web" / "data" / "course-data.js").write_text(payload, encoding="utf-8")
+
+        repair_catalog(str(self.base))
+        resources = read_catalog(catalog_path)[0]["courses"][0]["modules"][0]["lessons"][0]["resources"]
+        self.assertEqual(len(resources), 1)
+        self.assertEqual(resources[0]["gdriveId"], "resource-drive-id")
+
     def test_repair_removes_a_complete_course_copied_inside_another(self):
         shared_lessons = [
             {"id": "devin-1", "title": "Devin 1", "resources": [], "gdriveId": "drive-d1"},

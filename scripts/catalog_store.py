@@ -73,10 +73,10 @@ def _module_title(value: str, position: int) -> str:
 
 
 def _resource_key(resource: dict) -> tuple[str, str]:
-    if resource.get("id"):
-        return ("id", str(resource["id"]))
     if resource.get("url"):
         return ("url", str(resource["url"]).strip())
+    if resource.get("id"):
+        return ("id", str(resource["id"]))
     return ("name", str(resource.get("name") or "").casefold())
 
 
@@ -204,6 +204,7 @@ def _recount_course(course):
             global_index += 1
             lesson["globalIndex"] = global_index
             lesson["moduleIndex"] = module["index"]
+            lesson["resources"] = merge_resources(lesson.get("resources"), lesson.get("resources"))
             _restore_resource_labels(lesson)
     course["totalModules"] = len(course.get("modules") or [])
     course["totalLessons"] = global_index

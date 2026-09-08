@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Skool Downloader - Local Background Companion Server (v2.8.0)
+Skool Downloader - Local Background Companion Server (v2.8.1)
 Features:
 - Native Mux & Fastly Signed HLS Stream Resolver (1080p Full HD)
 - Course Resource Scanner API (/scan-course-resources) to aggregate all Figma, Drive, PDFs across course
@@ -94,17 +94,12 @@ YTDLP_BIN = find_binary("yt-dlp")
 FFMPEG_BIN = find_binary("ffmpeg")
 FFPROBE_BIN = find_binary("ffprobe")
 
-VIDEO_QUALITY_FORMATS = {
-    'best': 'bv*+ba/b',
-    '1080': 'bv*[height<=1080]+ba/b[height<=1080]/b',
-    '720': 'bv*[height<=720]+ba/b[height<=720]/b',
-    '480': 'bv*[height<=480]+ba/b[height<=480]/b',
-}
-
-
-def normalize_video_quality(value):
-    quality = str(value or 'best').lower().replace('p', '')
-    return quality if quality in VIDEO_QUALITY_FORMATS else 'best'
+from video_quality import (
+    VIDEO_QUALITY_FORMATS,
+    inspect_available_formats,
+    normalize_video_quality,
+    verify_downloaded_quality,
+)
 
 def get_exec_env():
     """Build execution environment with full PATH including Homebrew and system binaries."""
@@ -1426,6 +1421,12 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
 
     context = context or {}
     selected_quality = normalize_video_quality(context.get('videoQuality'))
+    try:
+        format_report = inspect_available_formats(YTDLP_BIN, download_url, get_exec_env())
+    except Exception as error:
+        with DOWNLOAD_LOCK:
+            FAILED_DOWNLOADS[task_id] = str(error)
+        return
     cmd = [
         YTDLP_BIN,
         "--no-playlist",
@@ -1433,7 +1434,6 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
         "--merge-output-format", "mp4",
         "--referer", "https://www.skool.com/",
         "--user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
-        "--extractor-args", "youtube:player_client=android,web",
         "--concurrent-fragments", "3",
     ]
     if context.get('duplicatePolicy') == 'replace':
@@ -1443,7 +1443,6 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
     with DOWNLOAD_LOCK:
         ACTIVE_DOWNLOADS[task_id] = {
             "title": clean_t,
-            "url": download_url,
             "folder": target_dir,
             "status": "downloading",
             "percent": 10,
@@ -1453,7 +1452,6 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
         }
 
     print(f"\n🚀 [Companion Server] Starting video task {task_id}: {clean_t}", flush=True)
-    print(f"🔗 Target Stream: {download_url[:80]}...", flush=True)
     print(f"📁 Destination: {target_dir}", flush=True)
 
     try:
@@ -1502,6 +1500,12 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
                     context['durationSeconds'] = round(float(duration), 3) if duration else None
                 except Exception:
                     pass
+                quality_metadata = {
+                    'requestedQuality': selected_quality,
+                    'actualHeight': context.get('actualHeight'),
+                }
+                quality_metadata = verify_downloaded_quality(quality_metadata, format_report, selected_quality)
+                context.update(quality_metadata)
                 gdrive_id = process_gdrive_sync(final_mp4, context, storage_mode, gdrive_root, task_id)
 
             if storage_mode == 'gdrive' and not gdrive_id:
@@ -1700,7 +1704,7 @@ class DownloaderHandler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(json.dumps({
                 "status": "online",
-                "version": "2.8.0",
+                "version": "2.8.1",
                 "ytdlp": os.path.exists(YTDLP_BIN),
                 "ytdlpPath": YTDLP_BIN,
                 "ffmpeg": os.path.exists(FFMPEG_BIN),
@@ -2113,7 +2117,7 @@ class DownloaderHandler(BaseHTTPRequestHandler):
 
 def run_server():
     server = ThreadingHTTPServer(('127.0.0.1', PORT), DownloaderHandler)
-    print(f"⚡ [Skool Downloader Bridge] Server v2.8.0 running on http://127.0.0.1:{PORT}", flush=True)
+    print(f"⚡ [Skool Downloader Bridge] Server v2.8.1 running on http://127.0.0.1:{PORT}", flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

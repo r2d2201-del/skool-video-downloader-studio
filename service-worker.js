@@ -1,12 +1,12 @@
 /**
- * Skool Video Downloader - Service Worker (Manifest V3 - v2.1.0)
- * Handles network stream interception (Fastly/Cloudflare HLS), direct MP4 downloads,
- * video source resolution (Loom, Wistia, Vimeo, HLS), organized folder routing, and notifications.
+ * Skool Video Downloader - Service Worker (Manifest V3 - v2.8.1)
+ * Handles direct video resolution (Loom, Wistia, Vimeo, HLS), organized folder
+ * routing, and notifications.
  */
 
 // Initialize on install
 chrome.runtime.onInstalled.addListener(() => {
-  console.log('[Skool Downloader] Service Worker v2.1.0 installed');
+  console.log('[Skool Downloader] Service Worker v2.8.1 installed');
   
   // Set default settings if not configured
   chrome.storage.local.get(['rootFolder', 'folderPattern', 'groupLessonPack'], (res) => {
@@ -33,16 +33,6 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 });
 
-// Clean up tab stream cache when tab is closed
-chrome.tabs.onRemoved.addListener(async (tabId) => {
-  try {
-    const key = `tab_streams_${tabId}`;
-    await chrome.storage.session.remove(key);
-  } catch (err) {
-    // Ignore storage errors on tab close
-  }
-});
-
 // Helper to sanitize path segments
 function sanitizePathSegment(name) {
   return (name || 'skool')
@@ -50,66 +40,6 @@ function sanitizePathSegment(name) {
     .replace(/\s+/g, ' ')
     .trim()
     .substring(0, 80);
-}
-
-// Sniff network requests for tokenized .m3u8 streams (Fastly & Cloudflare CDN)
-chrome.webRequest.onBeforeRequest.addListener(
-  (details) => {
-    const { url, tabId } = details;
-    if (tabId < 0 || !url) return;
-
-    const isSkoolHls = (
-      url.includes('.fastly.video.skool.com') ||
-      url.includes('stream.video.skool.com') ||
-      url.includes('fastly.video.skool.com') ||
-      (url.includes('.m3u8') && (url.includes('skool.com') || url.includes('token=') || url.includes('signature=')))
-    );
-
-    if (isSkoolHls) {
-      console.log(`[Skool Downloader] Intercepted HLS Stream on tab ${tabId}:`, url);
-      saveInterceptedStream(tabId, url);
-    }
-  },
-  {
-    urls: [
-      "*://*.fastly.video.skool.com/*",
-      "*://stream.video.skool.com/*",
-      "*://*.skool.com/*"
-    ]
-  }
-);
-
-// Save intercepted stream into storage
-async function saveInterceptedStream(tabId, streamUrl) {
-  try {
-    const key = `tab_streams_${tabId}`;
-    const data = await chrome.storage.session.get(key);
-    const streams = data[key] || [];
-
-    if (!streams.some(s => s.url === streamUrl)) {
-      const isFastly = streamUrl.includes('fastly.video.skool.com');
-      const isCloudflare = streamUrl.includes('stream.video.skool.com');
-      
-      const newStream = {
-        id: 'hls_' + Date.now(),
-        type: 'hls',
-        platform: isFastly ? 'Skool Fastly HLS' : (isCloudflare ? 'Skool Cloudflare HLS' : 'Skool HLS Stream'),
-        url: streamUrl,
-        badgeColor: '#10b981',
-        title: 'Skool Video Stream',
-        detectedAt: new Date().toISOString()
-      };
-
-      streams.push(newStream);
-      await chrome.storage.session.set({ [key]: streams });
-
-      // Update badge
-      await chrome.action.setBadgeText({ tabId, text: String(streams.length) });
-      await chrome.action.setBadgeBackgroundColor({ tabId, color: '#10b981' });
-    }
-  } catch (err) {
-    console.error('[Skool Downloader] Error storing stream:', err);
-  }
 }
 
 // Resolver: Resolve Loom direct MP4
@@ -257,7 +187,7 @@ let nativeDownloadPort = null;
 let nativeDownloadJob = null;
 
 function isActiveJobStatus(status) {
-  return ['queued', 'resolving', 'downloading', 'uploading', 'syncing'].includes(status);
+  return ['queued', 'resolving', 'verifying_quality', 'downloading', 'uploading', 'syncing'].includes(status);
 }
 
 function publicDownloadJob() {
@@ -331,7 +261,16 @@ function ensureNativeDownloadPort() {
     if (!nativeDownloadJob) return;
 
     const taskId = message.taskId || nativeDownloadJob.currentItem?.id;
-    if (message.type === 'TASK_START') {
+    if (message.type === 'QUALITY_CHECK') {
+      nativeDownloadJob.status = 'verifying_quality';
+      markTask(taskId, {
+        status: 'verifying_quality',
+        requestedQuality: message.requestedQuality || 'best',
+        availableHeights: message.availableHeights || [],
+        sourceMaxHeight: message.sourceMaxHeight || null,
+        expectedHeight: message.expectedHeight || null
+      });
+    } else if (message.type === 'TASK_START') {
       nativeDownloadJob.status = 'downloading';
       markTask(taskId, { status: 'downloading', progress: 0 });
     } else if (message.type === 'DOWNLOAD_PROGRESS') {
@@ -341,7 +280,14 @@ function ensureNativeDownloadPort() {
       nativeDownloadJob.status = 'uploading';
       markTask(taskId, { status: 'uploading', progress: Math.round(message.progress || 0) });
     } else if (message.type === 'TASK_COMPLETED') {
-      markTask(taskId, { status: 'completed', progress: 100, gdriveId: message.gdriveId || null });
+      markTask(taskId, {
+        status: 'completed',
+        progress: 100,
+        gdriveId: message.gdriveId || null,
+        actualHeight: message.actualHeight || null,
+        sourceMaxHeight: message.sourceMaxHeight || null,
+        expectedHeight: message.expectedHeight || null
+      });
       nativeDownloadJob.completed += 1;
       nativeDownloadJob.currentItem = null;
       await persistDownloadJob();
@@ -530,20 +476,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
   if (message.action === 'SYNC_PENDING_CLOUD') {
     forceNativeCloudSync().then(sendResponse);
-    return true;
-  }
-
-  if (message.action === 'GET_TAB_STREAMS') {
-    (async () => {
-      try {
-        const targetTabId = message.tabId || tabId;
-        const key = `tab_streams_${targetTabId}`;
-        const data = await chrome.storage.session.get(key);
-        sendResponse({ success: true, streams: data[key] || [] });
-      } catch (err) {
-        sendResponse({ success: false, error: err.message });
-      }
-    })();
     return true;
   }
 

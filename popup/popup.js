@@ -1,5 +1,5 @@
 /**
- * Skool Video Downloader - Popup Script (v2.8.0)
+ * Skool Video Downloader - Popup Script (v2.8.1)
  * Features:
  * - Accurate Section Hierarchies ("Cutting & Preparing", "Storytelling with Your Footage", etc.)
  * - 100% Video Coverage across all 37 lessons
@@ -1344,7 +1344,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else if (job.status === 'interrupted') {
       updateProgress(`Cola interrumpida: ${job.error || 'motor desconectado'}`, percent, true);
     } else {
-      const stage = job.status === 'uploading' ? 'Subiendo a Drive' : job.status === 'resolving' ? 'Resolviendo video' : 'Descargando';
+      const stage = job.status === 'uploading'
+        ? 'Subiendo a Drive'
+        : job.status === 'resolving'
+        ? 'Resolviendo video'
+        : job.status === 'verifying_quality'
+        ? 'Verificando calidad disponible'
+        : 'Descargando';
       updateProgress(`${stage} (${done}/${job.total})`, percent, true);
     }
   }

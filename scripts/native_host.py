@@ -27,6 +27,13 @@ if SCRIPT_DIR not in sys.path:
     sys.path.insert(0, SCRIPT_DIR)
 from catalog_store import course_status, reconcile_course
 from drive_library import resolve_path as resolve_drive_path
+from video_quality import (
+    VIDEO_QUALITY_FORMATS,
+    expected_video_height,
+    inspect_available_formats,
+    normalize_video_quality,
+    verify_downloaded_quality,
+)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG_LOCK_FILE = os.path.join(BASE_DIR, ".course_catalog.lock")
@@ -315,19 +322,6 @@ def _positive_int(value, fallback):
         return fallback
 
 
-VIDEO_QUALITY_FORMATS = {
-    'best': 'bv*+ba/b',
-    '1080': 'bv*[height<=1080]+ba/b[height<=1080]/b',
-    '720': 'bv*[height<=720]+ba/b[height<=720]/b',
-    '480': 'bv*[height<=480]+ba/b[height<=480]/b',
-}
-
-
-def normalize_video_quality(value):
-    quality = str(value or 'best').lower().replace('p', '')
-    return quality if quality in VIDEO_QUALITY_FORMATS else 'best'
-
-
 def probe_video_metadata(path, requested_quality='best'):
     metadata = {
         'requestedQuality': normalize_video_quality(requested_quality),
@@ -597,16 +591,16 @@ def download_and_upload_task(task_id, item_type, url, title, item_folder, storag
         target_dir = resolve_target_dir(item_folder)
         clean_t = clean_file_name(title)
         
-        send_native_message({
-            "type": "TASK_START",
-            "taskId": task_id,
-            "title": clean_t,
-            "folder": target_dir
-        })
-
         out_file = None
+        format_report = None
 
         if item_type == 'resource':
+            send_native_message({
+                "type": "TASK_START",
+                "taskId": task_id,
+                "title": clean_t,
+                "folder": target_dir
+            })
             out_file = download_resource_to_disk(url, clean_t, target_dir)
 
             send_native_message({
@@ -626,6 +620,22 @@ def download_and_upload_task(task_id, item_type, url, title, item_folder, storag
                     download_url = f"https://www.loom.com/share/{clean_lid.group(1)}"
 
             selected_quality = normalize_video_quality(quality or (context or {}).get('videoQuality'))
+            format_report = inspect_available_formats(YTDLP_BIN, download_url, get_exec_env())
+            expected_height = expected_video_height(format_report, selected_quality)
+            send_native_message({
+                "type": "QUALITY_CHECK",
+                "taskId": task_id,
+                "requestedQuality": selected_quality,
+                "availableHeights": format_report.get('availableHeights') or [],
+                "sourceMaxHeight": format_report.get('maxHeight'),
+                "expectedHeight": expected_height,
+            })
+            send_native_message({
+                "type": "TASK_START",
+                "taskId": task_id,
+                "title": clean_t,
+                "folder": target_dir
+            })
             cmd = [
                 YTDLP_BIN,
                 "--no-playlist",
@@ -633,7 +643,6 @@ def download_and_upload_task(task_id, item_type, url, title, item_folder, storag
                 "--merge-output-format", "mp4",
                 "--referer", "https://www.skool.com/",
                 "--user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-                "--extractor-args", "youtube:player_client=android,web",
                 "--concurrent-fragments", "3",
                 "--newline"
             ]
@@ -675,6 +684,8 @@ def download_and_upload_task(task_id, item_type, url, title, item_folder, storag
             raise FileNotFoundError(f"Output file not found for task {task_id}")
 
         video_metadata = probe_video_metadata(out_file, quality) if item_type != 'resource' else None
+        if item_type != 'resource':
+            video_metadata = verify_downloaded_quality(video_metadata, format_report, quality)
         gdrive_id = None
         if storage_mode in ('gdrive', 'both'):
             token, _ = get_gdrive_access_token()
@@ -729,6 +740,8 @@ def download_and_upload_task(task_id, item_type, url, title, item_folder, storag
             "itemType": item_type,
             "requestedQuality": (video_metadata or {}).get('requestedQuality'),
             "actualHeight": (video_metadata or {}).get('actualHeight'),
+            "sourceMaxHeight": (video_metadata or {}).get('sourceMaxHeight'),
+            "expectedHeight": (video_metadata or {}).get('expectedHeight'),
             "replaced": bool(existing_gdrive_id and duplicate_policy == 'replace')
         })
 
