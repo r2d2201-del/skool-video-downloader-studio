@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Skool Video Downloader",
-  "version": "2.8.1",
+  "version": "2.8.2",
   "description": "Download videos from Skool classroom lessons, community posts, and about pages in MP4 format (Wistia, Loom, Vimeo, YouTube, and Fastly/Cloudflare HLS .m3u8).",
   "icons": {
     "16": "icons/icon-16.png",

@@ -6,6 +6,7 @@ from scripts.video_quality import (
     VIDEO_QUALITY_FORMATS,
     expected_video_height,
     inspect_available_formats,
+    verify_browser_compatible,
     verify_downloaded_quality,
 )
 
@@ -15,6 +16,8 @@ class VideoQualityTests(unittest.TestCase):
         report = {'availableHeights': [360, 720, 1080], 'maxHeight': 1080}
         self.assertEqual(expected_video_height(report, 'best'), 1080)
         self.assertIn('bestvideo', VIDEO_QUALITY_FORMATS['best'])
+        self.assertIn('vcodec^=avc1', VIDEO_QUALITY_FORMATS['best'])
+        self.assertIn('acodec^=mp4a', VIDEO_QUALITY_FORMATS['best'])
 
     def test_capped_quality_selects_highest_rendition_under_cap(self):
         report = {'availableHeights': [360, 720, 1080], 'maxHeight': 1080}
@@ -28,14 +31,21 @@ class VideoQualityTests(unittest.TestCase):
             stdout=json.dumps({
                 'url': 'https://signed.example/master.m3u8?token=secret',
                 'formats': [
-                    {'height': 360, 'vcodec': 'avc1'},
-                    {'height': 1080, 'vcodec': 'avc1'},
+                    {'height': None, 'vcodec': 'none', 'acodec': 'mp4a.40.2'},
+                    {'height': 360, 'vcodec': 'avc1', 'acodec': 'none'},
+                    {'height': 1080, 'vcodec': 'avc1', 'acodec': 'none'},
+                    {'height': 2160, 'vcodec': 'av01', 'acodec': 'none'},
                     {'height': None, 'vcodec': 'none'},
                 ],
             }),
         )
         report = inspect_available_formats('yt-dlp', 'https://signed.example/master.m3u8?token=secret', {})
-        self.assertEqual(report, {'availableHeights': [360, 1080], 'maxHeight': 1080})
+        self.assertEqual(report, {
+            'availableHeights': [360, 1080, 2160],
+            'maxHeight': 2160,
+            'compatibleHeights': [360, 1080],
+            'maxCompatibleHeight': 1080,
+        })
         self.assertNotIn('url', report)
         self.assertNotIn('token', str(report))
 
@@ -55,6 +65,14 @@ class VideoQualityTests(unittest.TestCase):
         )
         self.assertEqual(metadata['expectedHeight'], 1080)
         self.assertEqual(metadata['sourceMaxHeight'], 1080)
+
+    def test_av1_opus_mp4_is_rejected_before_drive_replacement(self):
+        with self.assertRaisesRegex(RuntimeError, 'H.264 \+ AAC'):
+            verify_browser_compatible({'videoCodec': 'av1', 'audioCodec': 'opus'})
+
+    def test_h264_aac_mp4_is_accepted_for_web_playback(self):
+        metadata = verify_browser_compatible({'videoCodec': 'h264', 'audioCodec': 'aac'})
+        self.assertTrue(metadata['browserCompatible'])
 
 
 if __name__ == '__main__':

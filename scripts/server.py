@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Skool Downloader - Local Background Companion Server (v2.8.1)
+Skool Downloader - Local Background Companion Server (v2.8.2)
 Features:
 - Native Mux & Fastly Signed HLS Stream Resolver (1080p Full HD)
 - Course Resource Scanner API (/scan-course-resources) to aggregate all Figma, Drive, PDFs across course
@@ -98,6 +98,7 @@ from video_quality import (
     VIDEO_QUALITY_FORMATS,
     inspect_available_formats,
     normalize_video_quality,
+    verify_browser_compatible,
     verify_downloaded_quality,
 )
 
@@ -1489,13 +1490,17 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
                 context['fileSizeBytes'] = os.path.getsize(final_mp4)
                 try:
                     probe = subprocess.run(
-                        [FFPROBE_BIN, '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height:format=duration', '-of', 'json', final_mp4],
+                        [FFPROBE_BIN, '-v', 'error', '-show_entries', 'stream=codec_name,codec_type,width,height:format=duration', '-of', 'json', final_mp4],
                         capture_output=True, text=True, timeout=30, env=get_exec_env(), check=True
                     )
                     metadata = json.loads(probe.stdout or '{}')
-                    stream = (metadata.get('streams') or [{}])[0]
-                    context['actualWidth'] = stream.get('width')
-                    context['actualHeight'] = stream.get('height')
+                    streams = metadata.get('streams') or []
+                    video_stream = next((item for item in streams if item.get('codec_type') == 'video'), {})
+                    audio_stream = next((item for item in streams if item.get('codec_type') == 'audio'), {})
+                    context['actualWidth'] = video_stream.get('width')
+                    context['actualHeight'] = video_stream.get('height')
+                    context['videoCodec'] = video_stream.get('codec_name')
+                    context['audioCodec'] = audio_stream.get('codec_name')
                     duration = (metadata.get('format') or {}).get('duration')
                     context['durationSeconds'] = round(float(duration), 3) if duration else None
                 except Exception:
@@ -1503,8 +1508,11 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
                 quality_metadata = {
                     'requestedQuality': selected_quality,
                     'actualHeight': context.get('actualHeight'),
+                    'videoCodec': context.get('videoCodec'),
+                    'audioCodec': context.get('audioCodec'),
                 }
                 quality_metadata = verify_downloaded_quality(quality_metadata, format_report, selected_quality)
+                quality_metadata = verify_browser_compatible(quality_metadata)
                 context.update(quality_metadata)
                 gdrive_id = process_gdrive_sync(final_mp4, context, storage_mode, gdrive_root, task_id)
 
@@ -1704,7 +1712,7 @@ class DownloaderHandler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(json.dumps({
                 "status": "online",
-                "version": "2.8.1",
+                "version": "2.8.2",
                 "ytdlp": os.path.exists(YTDLP_BIN),
                 "ytdlpPath": YTDLP_BIN,
                 "ffmpeg": os.path.exists(FFMPEG_BIN),
@@ -2117,7 +2125,7 @@ class DownloaderHandler(BaseHTTPRequestHandler):
 
 def run_server():
     server = ThreadingHTTPServer(('127.0.0.1', PORT), DownloaderHandler)
-    print(f"⚡ [Skool Downloader Bridge] Server v2.8.1 running on http://127.0.0.1:{PORT}", flush=True)
+    print(f"⚡ [Skool Downloader Bridge] Server v2.8.2 running on http://127.0.0.1:{PORT}", flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

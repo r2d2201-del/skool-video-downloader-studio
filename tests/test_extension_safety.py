@@ -53,8 +53,15 @@ class ExtensionSafetyTests(unittest.TestCase):
     def test_web_cache_is_bumped_for_new_player(self):
         worker = (PROJECT_ROOT / "sw.js").read_text(encoding="utf-8")
         studio_worker = (PROJECT_ROOT / "studio-web" / "sw.js").read_text(encoding="utf-8")
-        self.assertIn("cinematic-studio-v2.7.0", worker)
+        self.assertIn("cinematic-studio-v2.8.2", worker)
         self.assertEqual(worker, studio_worker)
+
+    def test_drive_replacements_bust_stale_media_ranges(self):
+        app = (PROJECT_ROOT / "js" / "app.js").read_text(encoding="utf-8")
+        studio_app = (PROJECT_ROOT / "studio-web" / "js" / "app.js").read_text(encoding="utf-8")
+        self.assertIn("const revision = Date.now()", app)
+        self.assertIn("&v=${revision}", app)
+        self.assertEqual(app, studio_app)
 
     def test_cloud_catalog_sync_is_manual_after_download_batches(self):
         worker = (PROJECT_ROOT / "service-worker.js").read_text(encoding="utf-8")
@@ -67,6 +74,8 @@ class ExtensionSafetyTests(unittest.TestCase):
         detector = (PROJECT_ROOT / "content_scripts" / "skool-detector.js").read_text(encoding="utf-8")
         popup = (PROJECT_ROOT / "popup" / "popup.js").read_text(encoding="utf-8")
         self.assertIn("contextFromDocumentTitle", detector)
+        self.assertIn("dashParts.length >= 2", detector)
+        self.assertIn("documentContext.lesson", detector)
         self.assertIn("isUsableCourseName(context.course", detector)
         self.assertIn("customCourseRouteId", popup)
         self.assertIn("isUsableDetectedCourseName", popup)

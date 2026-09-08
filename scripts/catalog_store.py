@@ -252,6 +252,85 @@ def _merge_overlapping_course(target, incoming):
     _recount_course(target)
 
 
+def _replace_course_structure(target, incoming):
+    """Adopt a complete route snapshot while preserving downloaded metadata."""
+    old_lessons = _course_lessons(target)
+    old_by_id = {str(item.get("id")): item for item in old_lessons if item.get("id")}
+    old_by_title = {
+        _entity_key(item.get("title") or item.get("rawTitle")): item
+        for item in old_lessons
+        if item.get("title") or item.get("rawTitle")
+    }
+    modules = []
+    for module_position, incoming_module in enumerate(incoming.get("modules") or [], 1):
+        if not isinstance(incoming_module, dict):
+            continue
+        module = dict(incoming_module)
+        lessons = []
+        for lesson_position, incoming_lesson in enumerate(incoming_module.get("lessons") or [], 1):
+            if not isinstance(incoming_lesson, dict):
+                continue
+            lesson_id = str(incoming_lesson.get("id") or "")
+            title_key = _entity_key(incoming_lesson.get("title") or incoming_lesson.get("rawTitle"))
+            previous = old_by_id.get(lesson_id) or old_by_title.get(title_key) or {}
+            lesson = dict(previous)
+            lesson.update(incoming_lesson)
+            lesson["resources"] = merge_resources(
+                previous.get("resources"), incoming_lesson.get("resources")
+            )
+            lesson["inDrive"] = bool(lesson.get("gdriveId") or lesson.get("inDrive"))
+            lesson["index"] = _positive_int(
+                incoming_lesson.get("sourceOrder") or incoming_lesson.get("index"), lesson_position
+            )
+            lessons.append(lesson)
+        if not lessons:
+            continue
+        module["index"] = _positive_int(
+            incoming_module.get("sourceIndex") or incoming_module.get("index"), module_position
+        )
+        module["lessons"] = lessons
+        modules.append(module)
+    target["modules"] = modules
+    _recount_course(target)
+
+
+def _merge_route_id_courses(community):
+    """Fold an opaque classroom-route snapshot into its already named course."""
+    courses = [course for course in (community.get("courses") or []) if isinstance(course, dict)]
+    route_courses = [
+        course for course in courses
+        if re.fullmatch(r"[a-f0-9]{8,}", str(course.get("courseTitle") or ""), re.I)
+    ]
+    removed = set()
+    changed = False
+    for route_course in route_courses:
+        route_ids = {
+            str(lesson.get("id")) for lesson in _course_lessons(route_course) if lesson.get("id")
+        }
+        if len(route_ids) < 2:
+            continue
+        target = None
+        overlap_size = 0
+        for candidate in courses:
+            if candidate is route_course or candidate in route_courses:
+                continue
+            candidate_ids = {
+                str(lesson.get("id")) for lesson in _course_lessons(candidate) if lesson.get("id")
+            }
+            overlap = len(route_ids & candidate_ids)
+            if candidate_ids.issubset(route_ids) and overlap > overlap_size:
+                target, overlap_size = candidate, overlap
+        if target is None or overlap_size < 2:
+            continue
+        _replace_course_structure(target, route_course)
+        removed.add(id(route_course))
+        changed = True
+
+    if removed:
+        community["courses"] = [course for course in courses if id(course) not in removed]
+    return changed
+
+
 def _consolidate_duplicate_communities(communities):
     """Collapse duplicate community records and route course snapshots by lesson-ID overlap."""
     canonical_by_name = {}
@@ -335,6 +414,7 @@ def repair_catalog(base_dir: str):
         before = json.dumps(communities, ensure_ascii=False, sort_keys=True)
         communities, changed = _consolidate_duplicate_communities(communities)
         for community in communities:
+            changed = _merge_route_id_courses(community) or changed
             changed = _remove_contained_course_duplicates(community) or changed
             for course in community.get("courses") or []:
                 _recount_course(course)
@@ -387,6 +467,7 @@ def reconcile_course(base_dir: str, community_name: str, course_name: str, tree:
         communities = _load_communities(base_dir)
         communities, _ = _consolidate_duplicate_communities(communities)
         for catalog_community in communities:
+            _merge_route_id_courses(catalog_community)
             _remove_contained_course_duplicates(catalog_community)
         community, course = _find_course(communities, community_name, course_name)
         if not community:

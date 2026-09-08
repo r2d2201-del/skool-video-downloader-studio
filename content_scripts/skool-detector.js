@@ -1,5 +1,5 @@
 /**
- * Skool Video Downloader - Content Script Detector (v2.7.0)
+ * Skool Video Downloader - Content Script Detector (v2.8.2)
  * Features:
  * - Bulletproof Multi-Tier Video Detection
  * - Authenticated Session & Live Player Extraction
@@ -10,7 +10,7 @@
 (function () {
   if (window.__SKOOL_DOWNLOADER_DETECTOR_LOADED__) return;
   window.__SKOOL_DOWNLOADER_DETECTOR_LOADED__ = true;
-  console.log('[Skool Downloader] Content script v2.7.0 initialized on:', window.location.href);
+  console.log('[Skool Downloader] Content script v2.8.2 initialized on:', window.location.href);
 
   function findDeep(obj, predicate) {
     if (!obj || typeof obj !== 'object') return [];
@@ -76,7 +76,13 @@
     const beforeCommunity = communityParts[0] || '';
     const dashParts = beforeCommunity.split(/\s+-\s+/).filter(Boolean);
     return {
-      course: dashParts.length >= 3 ? cleanTitleText(dashParts[dashParts.length - 1]) : '',
+      // Skool currently uses both "Lesson - Course · Community" and
+      // "Order - Lesson - Course · Community". Requiring three components
+      // caused two-part titles to fall back to the opaque classroom route ID.
+      course: dashParts.length >= 2 ? cleanTitleText(dashParts[dashParts.length - 1]) : '',
+      lesson: dashParts.length >= 2
+        ? stripLeadingSourceOrder(dashParts.slice(0, -1).join(' - '))
+        : stripLeadingSourceOrder(beforeCommunity),
       community: communityParts.length >= 2 ? cleanTitleText(communityParts[communityParts.length - 1]) : ''
     };
   }
@@ -289,8 +295,8 @@
     const routeCourseId = pathParts[2] || '';
     const documentContext = contextFromDocumentTitle();
 
-    if (lessonTitle.includes('|')) lessonTitle = lessonTitle.split('|')[0].trim();
-    else if (lessonTitle.includes('-')) lessonTitle = lessonTitle.split('-')[0].trim();
+    if (documentContext.lesson) lessonTitle = documentContext.lesson;
+    else if (lessonTitle.includes('|')) lessonTitle = lessonTitle.split('|')[0].trim();
 
     // 1. DOM Community Name FIRST
     const commSelectors = [

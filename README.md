@@ -1,4 +1,4 @@
-# 🎬 Skool Video Downloader (Chrome Extension v2.8.1)
+# 🎬 Skool Video Downloader (Chrome Extension v2.8.2)
 
 Extensión de Google Chrome (Manifest V3) de alto rendimiento para detectar y descargar videos y recursos adjuntos en toda la plataforma **Skool.com** (lecciones de aulas / classrooms, publicaciones de la comunidad y páginas sobre/about).
 
@@ -6,7 +6,7 @@ Soporta múltiples reproductores y CDN de streaming: **Loom, Wistia, Vimeo, YouT
 
 ---
 
-## ✨ Características Principales (v2.8.1)
+## ✨ Características Principales (v2.8.2)
 
 - **Cola persistente fuera del popup**: Puedes cerrar la ventana de la extensión mientras el motor nativo procesa un curso largo. Los streams firmados se resuelven justo antes de cada descarga.
 - **Detección y Descarga de Recursos Adjuntos**: Extrae PDFs, ZIPs, hojas de cálculo, documentos y enlaces (Google Drive, Notion, Figma) asociados por ID a su lección original.
@@ -17,7 +17,7 @@ Soporta múltiples reproductores y CDN de streaming: **Loom, Wistia, Vimeo, YouT
   - Organiza automáticamente por: `{Comunidad}/{Curso}/{01_TituloLeccion}/` o por tipo `{Curso}/Videos` y `{Curso}/Recursos`.
 - **Orden determinista**: Módulos y lecciones conservan el orden original aunque las subidas a Drive terminen en otro orden.
 - **Catálogo inteligente**: La extensión reconoce las clases que ya están catalogadas y las omite por defecto para evitar descargas duplicadas.
-- **Calidad seleccionable**: Permite descargar en calidad máxima o limitar a 1080p, 720p o 480p.
+- **Calidad seleccionable y compatible con la web**: Permite descargar en calidad máxima o limitar a 1080p, 720p o 480p, priorizando H.264 + AAC y validando los códecs antes de reemplazar un archivo en Drive.
 - **Reemplazo sin enlaces rotos**: Al elegir “Reemplazar en Drive”, actualiza el contenido del mismo archivo y conserva su ID y enlace web.
 - **Sincronización Vercel manual y agrupada**: Las descargas actualizan el catálogo local, pero ningún lote despliega automáticamente. Usa **Sincronizar web** una sola vez cuando hayas terminado.
 - **Reproducción privada estable**: La web intenta reproducir los videos privados de Drive mediante el servidor local autenticado (`127.0.0.1:4545`), sin depender de cookies de terceros ni hacer públicos los archivos. Si el servidor no está activo, muestra un enlace seguro para abrirlos en Drive.

@@ -32,6 +32,7 @@ from video_quality import (
     expected_video_height,
     inspect_available_formats,
     normalize_video_quality,
+    verify_browser_compatible,
     verify_downloaded_quality,
 )
 
@@ -332,8 +333,8 @@ def probe_video_metadata(path, requested_quality='best'):
     try:
         result = subprocess.run(
             [
-                FFPROBE_BIN, '-v', 'error', '-select_streams', 'v:0',
-                '-show_entries', 'stream=width,height:format=duration',
+                FFPROBE_BIN, '-v', 'error',
+                '-show_entries', 'stream=codec_name,codec_type,width,height:format=duration',
                 '-of', 'json', path
             ],
             capture_output=True,
@@ -343,9 +344,13 @@ def probe_video_metadata(path, requested_quality='best'):
             check=True,
         )
         payload = json.loads(result.stdout or '{}')
-        stream = (payload.get('streams') or [{}])[0]
-        metadata['actualWidth'] = stream.get('width')
-        metadata['actualHeight'] = stream.get('height')
+        streams = payload.get('streams') or []
+        video_stream = next((item for item in streams if item.get('codec_type') == 'video'), {})
+        audio_stream = next((item for item in streams if item.get('codec_type') == 'audio'), {})
+        metadata['actualWidth'] = video_stream.get('width')
+        metadata['actualHeight'] = video_stream.get('height')
+        metadata['videoCodec'] = video_stream.get('codec_name')
+        metadata['audioCodec'] = audio_stream.get('codec_name')
         duration = (payload.get('format') or {}).get('duration')
         metadata['durationSeconds'] = round(float(duration), 3) if duration else None
     except Exception:
@@ -686,6 +691,7 @@ def download_and_upload_task(task_id, item_type, url, title, item_folder, storag
         video_metadata = probe_video_metadata(out_file, quality) if item_type != 'resource' else None
         if item_type != 'resource':
             video_metadata = verify_downloaded_quality(video_metadata, format_report, quality)
+            video_metadata = verify_browser_compatible(video_metadata)
         gdrive_id = None
         if storage_mode in ('gdrive', 'both'):
             token, _ = get_gdrive_access_token()

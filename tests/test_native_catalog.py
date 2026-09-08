@@ -235,6 +235,52 @@ class NativeCatalogTests(unittest.TestCase):
         self.assertEqual(["viral-1"], viral_ids)
         self.assertEqual(["devin-1", "devin-2"], devin_ids)
 
+    def test_repair_folds_route_id_snapshot_into_named_course(self):
+        catalog = [{
+            "id": "community",
+            "name": "Comunidad",
+            "courses": [
+                {
+                    "id": "cinematic",
+                    "community": "Comunidad",
+                    "courseTitle": "Cinematic Course",
+                    "modules": [{"index": 1, "title": "Old module", "lessons": [
+                        {"id": "lesson-1", "title": "One", "resources": [], "gdriveId": "drive-1", "inDrive": True},
+                        {"id": "lesson-2", "title": "Two", "resources": [], "gdriveId": "drive-2", "inDrive": True},
+                    ]}],
+                },
+                {
+                    "id": "d0fb6bb7",
+                    "community": "Comunidad",
+                    "courseTitle": "D0fb6bb7",
+                    "modules": [
+                        {"index": 1, "title": "01 Intro", "lessons": [
+                            {"id": "lesson-0", "title": "Welcome", "resources": [], "inDrive": False},
+                        ]},
+                        {"index": 2, "title": "02 Lessons", "lessons": [
+                            {"id": "lesson-1", "title": "One renamed", "resources": [], "inDrive": False},
+                            {"id": "lesson-2", "title": "Two", "resources": [{"id": "guide", "url": "https://example.com/guide"}], "inDrive": False},
+                        ]},
+                    ],
+                },
+            ],
+        }]
+        payload = f"window.COMMUNITIES_DATA = {json.dumps(catalog)};\n"
+        (self.base / "data" / "course-data.js").write_text(payload, encoding="utf-8")
+        (self.base / "studio-web" / "data" / "course-data.js").write_text(payload, encoding="utf-8")
+
+        result = repair_catalog(str(self.base))
+        courses = read_catalog(self.base / "data" / "course-data.js")[0]["courses"]
+        self.assertTrue(result["changed"])
+        self.assertEqual(["Cinematic Course"], [course["courseTitle"] for course in courses])
+        self.assertEqual(2, len(courses[0]["modules"]))
+        lessons = [lesson for module in courses[0]["modules"] for lesson in module["lessons"]]
+        self.assertEqual(["lesson-0", "lesson-1", "lesson-2"], [lesson["id"] for lesson in lessons])
+        self.assertEqual("drive-1", lessons[1]["gdriveId"])
+        self.assertTrue(lessons[1]["inDrive"])
+        self.assertEqual("One renamed", lessons[1]["title"])
+        self.assertEqual("https://example.com/guide", lessons[2]["resources"][0]["url"])
+
 
 if __name__ == "__main__":
     unittest.main()

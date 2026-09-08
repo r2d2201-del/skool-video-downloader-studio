@@ -341,10 +341,14 @@
 
   function drivePlaybackSources(fileId) {
     const encodedId = encodeURIComponent(fileId);
+    // A Drive replacement intentionally preserves the file ID. Use a fresh URL
+    // per lesson load so Chrome never combines cached byte ranges from the old
+    // media with the newly replaced file.
+    const revision = Date.now();
     return [
-      `http://127.0.0.1:4545/drive-video?id=${encodedId}`,
-      `https://drive.usercontent.google.com/download?id=${encodedId}&export=download&confirm=t`,
-      `https://drive.google.com/uc?export=download&confirm=t&id=${encodedId}`
+      `http://127.0.0.1:4545/drive-video?id=${encodedId}&v=${revision}`,
+      `https://drive.usercontent.google.com/download?id=${encodedId}&export=download&confirm=t&v=${revision}`,
+      `https://drive.google.com/uc?export=download&confirm=t&id=${encodedId}&v=${revision}`
     ];
   }
 

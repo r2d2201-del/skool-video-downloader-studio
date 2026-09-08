@@ -1,12 +1,12 @@
 /**
- * Skool Video Downloader - Service Worker (Manifest V3 - v2.8.1)
+ * Skool Video Downloader - Service Worker (Manifest V3 - v2.8.2)
  * Handles direct video resolution (Loom, Wistia, Vimeo, HLS), organized folder
  * routing, and notifications.
  */
 
 // Initialize on install
 chrome.runtime.onInstalled.addListener(() => {
-  console.log('[Skool Downloader] Service Worker v2.8.1 installed');
+  console.log('[Skool Downloader] Service Worker v2.8.2 installed');
   
   // Set default settings if not configured
   chrome.storage.local.get(['rootFolder', 'folderPattern', 'groupLessonPack'], (res) => {

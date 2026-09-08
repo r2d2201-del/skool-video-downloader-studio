@@ -1,5 +1,5 @@
 /**
- * Skool Video Downloader - Popup Script (v2.8.1)
+ * Skool Video Downloader - Popup Script (v2.8.2)
  * Features:
  * - Accurate Section Hierarchies ("Cutting & Preparing", "Storytelling with Your Footage", etc.)
  * - 100% Video Coverage across all 37 lessons
