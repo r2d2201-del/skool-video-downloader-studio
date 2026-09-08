@@ -137,12 +137,14 @@
 
       <!-- VIDEO PLAYER STAGE -->
       <div class="video-player-frame">
-        <iframe id="video-player-iframe" class="video-iframe" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <video id="video-player-native" class="video-native" controls playsinline preload="metadata" style="display: none;"></video>
+        <iframe id="video-player-iframe" class="video-iframe" src="" allow="autoplay; fullscreen" allowfullscreen style="display: none;"></iframe>
         
         <div id="video-placeholder-frame" class="video-placeholder" style="display: none;">
           <svg class="svg-icon lime" style="width: 48px; height: 48px;" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
           <h3 id="placeholder-title">Video en Preparación</h3>
           <p id="placeholder-desc">Este video se está sincronizando con tu Google Drive. En cuanto termine la descarga aparecerá disponible aquí para reproducir.</p>
+          <a id="placeholder-drive-link" class="btn-technical secondary" href="#" target="_blank" rel="noopener noreferrer" style="display: none;">ABRIR EN GOOGLE DRIVE</a>
         </div>
       </div>
 
@@ -179,8 +181,8 @@
   </div>
 
   <!-- DATA & APP SCRIPTS -->
-  <script src="data/course-data.js?v=2.6.6"></script>
-  <script src="js/app.js?v=2.6.6"></script>
+  <script src="data/course-data.js?v=2.7.0"></script>
+  <script src="js/app.js?v=2.7.0"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {

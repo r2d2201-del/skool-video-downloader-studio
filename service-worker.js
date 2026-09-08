@@ -246,9 +246,292 @@ async function resolveVimeoDirectMp4(vimeoUrl) {
   return null;
 }
 
+// Durable popup-independent native download queue. A long-lived native port keeps
+// the MV3 worker alive while a course is being processed, so closing the popup no
+// longer terminates an active batch. Only progress metadata is persisted; signed
+// media URLs remain in memory and are resolved immediately before each download.
+const NATIVE_HOST_NAME = 'com.cinematic.skool_downloader';
+const DOWNLOAD_JOB_STORAGE_KEY = 'nativeDownloadJob';
+const LAST_CLOUD_SYNC_STORAGE_KEY = 'lastCatalogCloudSyncAt';
+let nativeDownloadPort = null;
+let nativeDownloadJob = null;
+
+function isActiveJobStatus(status) {
+  return ['queued', 'resolving', 'downloading', 'uploading', 'syncing'].includes(status);
+}
+
+function publicDownloadJob() {
+  if (!nativeDownloadJob) {
+    return { status: 'idle', total: 0, completed: 0, failed: 0, tasks: {} };
+  }
+  const { items, currentItem, settings, ...safeJob } = nativeDownloadJob;
+  return safeJob;
+}
+
+async function persistDownloadJob() {
+  try {
+    await chrome.storage.local.set({ [DOWNLOAD_JOB_STORAGE_KEY]: publicDownloadJob() });
+  } catch (err) {
+    console.warn('[Skool Downloader] Could not persist queue status:', err);
+  }
+}
+
+async function restoreInterruptedJobStatus() {
+  try {
+    const stored = await chrome.storage.local.get(DOWNLOAD_JOB_STORAGE_KEY);
+    const previous = stored[DOWNLOAD_JOB_STORAGE_KEY];
+    if (previous && isActiveJobStatus(previous.status)) {
+      previous.status = 'interrupted';
+      previous.error = 'Chrome se reinició mientras la cola estaba activa. Vuelve a iniciar solo los elementos pendientes.';
+      previous.updatedAt = Date.now();
+      await chrome.storage.local.set({ [DOWNLOAD_JOB_STORAGE_KEY]: previous });
+    }
+  } catch (err) {
+    console.warn('[Skool Downloader] Could not restore queue status:', err);
+  }
+}
+
+restoreInterruptedJobStatus();
+
+function markTask(taskId, updates) {
+  if (!nativeDownloadJob || !taskId) return;
+  const previous = nativeDownloadJob.tasks[taskId] || {};
+  nativeDownloadJob.tasks[taskId] = { ...previous, ...updates, updatedAt: Date.now() };
+  nativeDownloadJob.updatedAt = Date.now();
+}
+
+async function resolveQueuedVideo(item) {
+  const originalUrl = item.url || item.lessonUrl || '';
+  const isLessonPage = originalUrl.includes('skool.com') &&
+    !originalUrl.includes('stream.mux.com') &&
+    !originalUrl.includes('.m3u8') &&
+    !originalUrl.match(/\.(mp4|webm|mov|mkv)(\?|$)/i);
+
+  if (!isLessonPage) return originalUrl;
+  if (!nativeDownloadJob.sourceTabId) {
+    throw new Error('No hay una pestaña de Skool disponible para resolver este video.');
+  }
+
+  const response = await chrome.tabs.sendMessage(nativeDownloadJob.sourceTabId, {
+    action: 'RESOLVE_LESSON_STREAM',
+    lessonUrl: originalUrl,
+    targetMd: item.context?.lessonId || null
+  });
+  if (!response?.success || !response.directVideoUrl) {
+    throw new Error('La lección no contiene un video resoluble o la sesión de Skool ya no está disponible.');
+  }
+  return response.directVideoUrl;
+}
+
+function ensureNativeDownloadPort() {
+  if (nativeDownloadPort) return nativeDownloadPort;
+
+  nativeDownloadPort = chrome.runtime.connectNative(NATIVE_HOST_NAME);
+  nativeDownloadPort.onMessage.addListener(async (message) => {
+    if (!nativeDownloadJob) return;
+
+    const taskId = message.taskId || nativeDownloadJob.currentItem?.id;
+    if (message.type === 'TASK_START') {
+      nativeDownloadJob.status = 'downloading';
+      markTask(taskId, { status: 'downloading', progress: 0 });
+    } else if (message.type === 'DOWNLOAD_PROGRESS') {
+      nativeDownloadJob.status = 'downloading';
+      markTask(taskId, { status: 'downloading', progress: Math.round(message.progress || 0) });
+    } else if (message.type === 'UPLOAD_PROGRESS') {
+      nativeDownloadJob.status = 'uploading';
+      markTask(taskId, { status: 'uploading', progress: Math.round(message.progress || 0) });
+    } else if (message.type === 'TASK_COMPLETED') {
+      markTask(taskId, { status: 'completed', progress: 100, gdriveId: message.gdriveId || null });
+      nativeDownloadJob.completed += 1;
+      nativeDownloadJob.currentItem = null;
+      await persistDownloadJob();
+      dispatchNextNativeItem();
+      return;
+    } else if (message.type === 'TASK_ERROR') {
+      markTask(taskId, { status: 'failed', error: message.error || 'Error desconocido' });
+      nativeDownloadJob.failed += 1;
+      nativeDownloadJob.currentItem = null;
+      await persistDownloadJob();
+      dispatchNextNativeItem();
+      return;
+    } else if (message.type === 'CLOUD_SYNC_COMPLETED') {
+      nativeDownloadJob.status = nativeDownloadJob.failed > 0 ? 'completed_with_errors' : 'completed';
+      nativeDownloadJob.cloudSync = message.noChanges ? 'sin_cambios' : 'completed';
+      nativeDownloadJob.finishedAt = Date.now();
+      await chrome.storage.local.set({ [LAST_CLOUD_SYNC_STORAGE_KEY]: Date.now() });
+    } else if (message.type === 'CLOUD_SYNC_ERROR') {
+      nativeDownloadJob.status = 'completed_with_sync_error';
+      nativeDownloadJob.cloudSync = 'failed';
+      nativeDownloadJob.syncError = message.error || 'No se pudo sincronizar el catálogo web.';
+      nativeDownloadJob.finishedAt = Date.now();
+    }
+
+    await persistDownloadJob();
+  });
+
+  nativeDownloadPort.onDisconnect.addListener(async () => {
+    nativeDownloadPort = null;
+    if (nativeDownloadJob && isActiveJobStatus(nativeDownloadJob.status)) {
+      const taskId = nativeDownloadJob.currentItem?.id;
+      if (taskId) {
+        markTask(taskId, { status: 'interrupted', error: 'Se perdió la conexión con el motor nativo.' });
+      }
+      nativeDownloadJob.status = 'interrupted';
+      nativeDownloadJob.error = chrome.runtime.lastError?.message || 'Se perdió la conexión con el motor nativo.';
+      nativeDownloadJob.currentItem = null;
+      await persistDownloadJob();
+    }
+  });
+
+  return nativeDownloadPort;
+}
+
+async function finishNativeDownloadJob() {
+  if (!nativeDownloadJob) return;
+  nativeDownloadJob.status = nativeDownloadJob.failed > 0 ? 'completed_with_errors' : 'completed';
+  nativeDownloadJob.cloudSync = nativeDownloadJob.settings.storageMode !== 'local' && nativeDownloadJob.completed > 0
+    ? 'deferred'
+    : 'not_needed';
+  nativeDownloadJob.finishedAt = Date.now();
+  await persistDownloadJob();
+}
+
+async function forceNativeCloudSync() {
+  if (nativeDownloadJob && isActiveJobStatus(nativeDownloadJob.status)) {
+    return { success: false, error: 'Espera a que termine la descarga activa.' };
+  }
+  if (!nativeDownloadJob) {
+    const stored = await chrome.storage.local.get(DOWNLOAD_JOB_STORAGE_KEY);
+    const previous = stored[DOWNLOAD_JOB_STORAGE_KEY];
+    if (!previous) return { success: false, error: 'No hay un catálogo pendiente para sincronizar.' };
+    nativeDownloadJob = {
+      ...previous,
+      items: [],
+      currentItem: null,
+      settings: { storageMode: 'gdrive', folder: '', gdriveRoot: 'Skool Downloads', gdriveRootId: null }
+    };
+  }
+  nativeDownloadJob.status = 'syncing';
+  nativeDownloadJob.cloudSync = 'running';
+  await persistDownloadJob();
+  ensureNativeDownloadPort().postMessage({ action: 'SYNC_CLOUD' });
+  return { success: true, job: publicDownloadJob() };
+}
+
+async function dispatchNextNativeItem() {
+  if (!nativeDownloadJob || nativeDownloadJob.currentItem || !isActiveJobStatus(nativeDownloadJob.status)) return;
+  if (nativeDownloadJob.nextIndex >= nativeDownloadJob.items.length) {
+    await finishNativeDownloadJob();
+    return;
+  }
+
+  const item = nativeDownloadJob.items[nativeDownloadJob.nextIndex++];
+  nativeDownloadJob.currentItem = item;
+  nativeDownloadJob.status = item.type === 'video' ? 'resolving' : 'queued';
+  markTask(item.id, { status: nativeDownloadJob.status, progress: 0 });
+  await persistDownloadJob();
+
+  try {
+    const resolvedUrl = item.type === 'video' ? await resolveQueuedVideo(item) : item.url;
+    if (!resolvedUrl) throw new Error('El elemento no contiene una URL válida.');
+    ensureNativeDownloadPort().postMessage({
+      action: 'DOWNLOAD',
+      ...item,
+      url: resolvedUrl,
+      folder: item.folder || nativeDownloadJob.settings.folder,
+      storageMode: nativeDownloadJob.settings.storageMode,
+      gdriveRoot: nativeDownloadJob.settings.gdriveRoot,
+      gdriveRootId: nativeDownloadJob.settings.gdriveRootId
+    });
+  } catch (err) {
+    markTask(item.id, { status: 'failed', error: err.message });
+    nativeDownloadJob.failed += 1;
+    nativeDownloadJob.currentItem = null;
+    await persistDownloadJob();
+    dispatchNextNativeItem();
+  }
+}
+
+async function startNativeDownloadJob(message) {
+  if (nativeDownloadJob && isActiveJobStatus(nativeDownloadJob.status)) {
+    return { success: false, error: 'Ya existe una descarga en curso.', job: publicDownloadJob() };
+  }
+
+  const items = (message.items || []).filter(item => item && item.id && item.url);
+  if (items.length === 0) return { success: false, error: 'La cola está vacía.' };
+
+  const tasks = {};
+  for (const item of items) {
+    tasks[item.id] = {
+      id: item.id,
+      lessonId: item.context?.lessonId || item.id,
+      title: item.title || 'Archivo',
+      type: item.type || 'video',
+      status: 'queued',
+      progress: 0
+    };
+  }
+
+  nativeDownloadJob = {
+    id: `job_${Date.now()}`,
+    status: 'queued',
+    total: items.length,
+    completed: 0,
+    failed: 0,
+    nextIndex: 0,
+    currentItem: null,
+    items,
+    tasks,
+    sourceTabId: message.tabId || null,
+    settings: {
+      folder: message.folder || 'Documentos/Skool_Downloads',
+      storageMode: message.storageMode || 'both',
+      gdriveRoot: message.gdriveRoot || 'Skool Downloads',
+      gdriveRootId: message.gdriveRootId || null
+    },
+    cloudSync: 'pending',
+    startedAt: Date.now(),
+    updatedAt: Date.now()
+  };
+
+  try {
+    ensureNativeDownloadPort();
+    await persistDownloadJob();
+    dispatchNextNativeItem();
+    return { success: true, job: publicDownloadJob() };
+  } catch (err) {
+    nativeDownloadJob.status = 'interrupted';
+    nativeDownloadJob.error = err.message;
+    await persistDownloadJob();
+    return { success: false, error: err.message, job: publicDownloadJob() };
+  }
+}
+
 // Runtime message dispatcher
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   const tabId = sender.tab ? sender.tab.id : message.tabId;
+
+  if (message.action === 'START_NATIVE_BATCH') {
+    startNativeDownloadJob({ ...message, tabId }).then(sendResponse);
+    return true;
+  }
+
+  if (message.action === 'GET_NATIVE_BATCH_STATUS') {
+    (async () => {
+      if (nativeDownloadJob) {
+        sendResponse({ success: true, job: publicDownloadJob() });
+        return;
+      }
+      const stored = await chrome.storage.local.get(DOWNLOAD_JOB_STORAGE_KEY);
+      sendResponse({ success: true, job: stored[DOWNLOAD_JOB_STORAGE_KEY] || publicDownloadJob() });
+    })();
+    return true;
+  }
+
+  if (message.action === 'SYNC_PENDING_CLOUD') {
+    forceNativeCloudSync().then(sendResponse);
+    return true;
+  }
 
   if (message.action === 'GET_TAB_STREAMS') {
     (async () => {

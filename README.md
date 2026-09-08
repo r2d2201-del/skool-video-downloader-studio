@@ -1,4 +1,4 @@
-# 🎬 Skool Video Downloader (Chrome Extension v2.1.0)
+# 🎬 Skool Video Downloader (Chrome Extension v2.8.0)
 
 Extensión de Google Chrome (Manifest V3) de alto rendimiento para detectar y descargar videos y recursos adjuntos en toda la plataforma **Skool.com** (lecciones de aulas / classrooms, publicaciones de la comunidad y páginas sobre/about).
 
@@ -6,17 +6,22 @@ Soporta múltiples reproductores y CDN de streaming: **Loom, Wistia, Vimeo, YouT
 
 ---
 
-## ✨ Características Principales (v2.1.0)
+## ✨ Características Principales (v2.8.0)
 
-- **Descarga Directa en el Navegador**: Descarga videos con 1 clic directamente desde la extensión, sin necesidad de usar terminal. Incluye un motor de descarga concurrente para streams HLS con barra de progreso en vivo.
-- **Detección y Descarga de Recursos Adjuntos**: Extrae todos los archivos PDF, ZIP, hojas de cálculo, documentos y enlaces (Google Drive, Notion, Figma) adjuntos a cada lección.
+- **Cola persistente fuera del popup**: Puedes cerrar la ventana de la extensión mientras el motor nativo procesa un curso largo. Los streams firmados se resuelven justo antes de cada descarga.
+- **Detección y Descarga de Recursos Adjuntos**: Extrae PDFs, ZIPs, hojas de cálculo, documentos y enlaces (Google Drive, Notion, Figma) asociados por ID a su lección original.
 - **Botón "📦 Descargar Pack Completo"**: Descarga el video y todos los archivos adjuntos de la lección de una sola vez.
 - **Organización en Carpetas Personalizadas**:
-  - Elige tu carpeta base (ej. `Skool_Downloads` o `Mis_Cursos`).
+  - Elige o crea en vivo una carpeta base de Google Drive; se guarda su ID estable y se comprueba antes de usarla.
+  - La estructura recomendada es `Skool Downloads / Comunidad / Curso` para todas las comunidades actuales y futuras.
   - Organiza automáticamente por: `{Comunidad}/{Curso}/{01_TituloLeccion}/` o por tipo `{Curso}/Videos` y `{Curso}/Recursos`.
-- **Extractor Masivo de Aulas (Classroom Bulk Extractor)**: Extrae todas las lecciones del curso (`md=...`) y genera listas `.txt`, tablas `.csv`, o scripts ejecutables `.sh` / `.bat`.
-- **Generador de Comandos yt-dlp**: Para usuarios avanzados, copia con 1 clic comandos optimizados con cabeceras requeridas (`--referer "https://www.skool.com"`, `--concurrent-fragments 10` y user-agent anti-403).
-- **Interfaz Moderna y Oscura**: Popup responsive con pestañas dedicadas (Lección, Recursos, Aula, Carpetas, Comandos).
+- **Orden determinista**: Módulos y lecciones conservan el orden original aunque las subidas a Drive terminen en otro orden.
+- **Catálogo inteligente**: La extensión reconoce las clases que ya están catalogadas y las omite por defecto para evitar descargas duplicadas.
+- **Calidad seleccionable**: Permite descargar en calidad máxima o limitar a 1080p, 720p o 480p.
+- **Reemplazo sin enlaces rotos**: Al elegir “Reemplazar en Drive”, actualiza el contenido del mismo archivo y conserva su ID y enlace web.
+- **Sincronización Vercel manual y agrupada**: Las descargas actualizan el catálogo local, pero ningún lote despliega automáticamente. Usa **Sincronizar web** una sola vez cuando hayas terminado.
+- **Reproducción privada estable**: La web intenta reproducir los videos privados de Drive mediante el servidor local autenticado (`127.0.0.1:4545`), sin depender de cookies de terceros ni hacer públicos los archivos. Si el servidor no está activo, muestra un enlace seguro para abrirlos en Drive.
+- **Interfaz Moderna y Oscura**: Popup accesible con pestañas dedicadas (Lección, Recursos, Aula Completa y Destino).
 
 ---
 

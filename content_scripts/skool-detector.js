@@ -1,5 +1,5 @@
 /**
- * Skool Video Downloader - Content Script Detector (v2.2.9)
+ * Skool Video Downloader - Content Script Detector (v2.7.0)
  * Features:
  * - Bulletproof Multi-Tier Video Detection
  * - Authenticated Session & Live Player Extraction
@@ -8,7 +8,9 @@
  */
 
 (function () {
-  console.log('[Skool Downloader] Content script v2.2.9 initialized on:', window.location.href);
+  if (window.__SKOOL_DOWNLOADER_DETECTOR_LOADED__) return;
+  window.__SKOOL_DOWNLOADER_DETECTOR_LOADED__ = true;
+  console.log('[Skool Downloader] Content script v2.7.0 initialized on:', window.location.href);
 
   function findDeep(obj, predicate) {
     if (!obj || typeof obj !== 'object') return [];
@@ -62,8 +64,70 @@
     return clean;
   }
 
+  function isUsableCourseName(value, routeId = '') {
+    const name = cleanTitleText(value || '');
+    if (!name || name === 'Curso' || name === routeId) return false;
+    return !/^[a-f0-9]{8,}$/i.test(name);
+  }
+
+  function contextFromDocumentTitle() {
+    const rawTitle = String(document.title || '').replace(/\s+/g, ' ').trim();
+    const communityParts = rawTitle.split(/\s+·\s+/);
+    const beforeCommunity = communityParts[0] || '';
+    const dashParts = beforeCommunity.split(/\s+-\s+/).filter(Boolean);
+    return {
+      course: dashParts.length >= 3 ? cleanTitleText(dashParts[dashParts.length - 1]) : '',
+      community: communityParts.length >= 2 ? cleanTitleText(communityParts[communityParts.length - 1]) : ''
+    };
+  }
+
+  function readLeadingSourceOrder(value) {
+    const match = String(value || '').trim().match(/^(\d+)\s*[.\-_:)]\s*/);
+    const parsed = match ? Number.parseInt(match[1], 10) : NaN;
+    return Number.isFinite(parsed) && parsed > 0 ? parsed : null;
+  }
+
+  function leadingSourceOrder(value, fallback) {
+    const parsed = readLeadingSourceOrder(value) || Number.parseInt(fallback, 10);
+    return Number.isFinite(parsed) && parsed > 0 ? parsed : 1;
+  }
+
+  function stripLeadingSourceOrder(value) {
+    return cleanTitleText(String(value || '').replace(/^\s*\d+\s*[.\-_:)]\s*/, ''));
+  }
+
+  function domSourceOrderForLesson(lessonId) {
+    if (!lessonId) return null;
+    const link = Array.from(document.querySelectorAll('a[href*="?md="]')).find(candidate => {
+      try { return new URL(candidate.href).searchParams.get('md') === String(lessonId); } catch (error) { return false; }
+    });
+    if (!link) return null;
+    const row = link.closest('li, [role="listitem"], [class*="lesson"], [class*="Lesson"]');
+    const candidates = [
+      link.textContent,
+      link.previousElementSibling?.textContent,
+      link.parentElement?.textContent,
+      row?.textContent,
+    ];
+    for (const text of candidates) {
+      const order = readLeadingSourceOrder(text);
+      if (order) return order;
+    }
+    return null;
+  }
+
+  function stableId(prefix, value) {
+    let hash = 2166136261;
+    const text = String(value || '');
+    for (let index = 0; index < text.length; index++) {
+      hash ^= text.charCodeAt(index);
+      hash = Math.imul(hash, 16777619);
+    }
+    return `${prefix}_${(hash >>> 0).toString(36)}`;
+  }
+
   function getFileCategory(filename, url) {
-    const target = (filename || url || '').toLowerCase();
+    const target = `${filename || ''} ${url || ''}`.toLowerCase();
     if (target.match(/\.(pdf)$/i)) return { type: 'pdf', label: 'PDF', color: '#ef4444' };
     if (target.match(/\.(zip|rar|7z|tar|gz)$/i)) return { type: 'zip', label: 'ZIP', color: '#f59e0b' };
     if (target.match(/\.(doc|docx|pages|txt|rtf|odt)$/i)) return { type: 'doc', label: 'DOC', color: '#3b82f6' };
@@ -80,7 +144,7 @@
   }
 
   function identifyPlatform(url) {
-    if (!url) return { name: 'Skool Video (MP4)', type: 'hls', badgeColor: '#10b981' };
+    if (!url) return { name: 'Sin video', type: 'unknown', badgeColor: '#6b7280' };
     const u = url.toLowerCase();
 
     if (
@@ -98,13 +162,31 @@
     if (u.includes('loom.com')) return { name: 'Loom', type: 'loom', badgeColor: '#8b5cf6' };
     if (u.includes('wistia.com') || u.includes('wistia.net') || u.includes('wi.st')) return { name: 'Wistia', type: 'wistia', badgeColor: '#3b82f6' };
     if (u.includes('vimeo.com') || u.includes('vimeocdn.com')) return { name: 'Vimeo', type: 'vimeo', badgeColor: '#0ea5e9' };
-    if (u.includes('youtube.com') || u.includes('youtu.be')) return { name: 'YouTube', type: 'youtube', badgeColor: '#ef4444' };
+    if (u.includes('youtube.com') || u.includes('youtube-nocookie.com') || u.includes('youtu.be')) return { name: 'YouTube', type: 'youtube', badgeColor: '#ef4444' };
     if (u.includes('fastly.video.skool.com') || u.includes('stream.video.skool.com') || u.includes('.m3u8') || u.includes('cloudflarestream') || u.includes('videodelivery.net')) {
       return { name: 'Skool Video (MP4)', type: 'hls', badgeColor: '#10b981' };
     }
     if (u.match(/\.(mp4|webm|m4v|mov|mkv)(\?.*)?$/i)) return { name: 'Direct Video', type: 'direct', badgeColor: '#10b981' };
 
-    return { name: 'Skool Video (MP4)', type: 'hls', badgeColor: '#10b981' };
+    return { name: 'Desconocido', type: 'unknown', badgeColor: '#6b7280' };
+  }
+
+  function isRecognizedVideoUrl(value) {
+    if (!value || typeof value !== 'string') return false;
+    const candidate = value.toLowerCase();
+    return candidate.includes('loom.com') ||
+      candidate.includes('youtube.com') ||
+      candidate.includes('youtube-nocookie.com') ||
+      candidate.includes('youtu.be') ||
+      candidate.includes('vimeo.com') ||
+      candidate.includes('wistia.com') ||
+      candidate.includes('wistia.net') ||
+      candidate.includes('mux.com') ||
+      candidate.includes('cloudflarestream.com') ||
+      candidate.includes('videodelivery.net') ||
+      candidate.includes('fastly.video.skool.com') ||
+      candidate.includes('stream.video.skool.com') ||
+      /\.(m3u8|mp4|webm|m4v|mov|mkv)(\?|$)/i.test(candidate);
   }
 
   // Find exact video URL for a specific lesson ID inside Next.js payload
@@ -124,22 +206,15 @@
         meta.videoLink,
         meta.video_url,
         meta.videoUrl,
-        meta.url,
-        meta.link,
         les.videoLink,
         les.video_url,
         les.videoUrl,
-        les.url,
         meta.hlsUrl,
-        les.hlsUrl,
-        meta.downloadUrl,
-        les.downloadUrl
+        les.hlsUrl
       ];
 
       for (const c of candidates) {
-        if (c && typeof c === 'string' && (
-          c.startsWith('http') || c.includes('loom.com') || c.includes('youtube') || c.includes('youtu.be') || c.includes('vimeo') || c.includes('wistia') || c.includes('mux.com') || c.includes('.m3u8')
-        )) {
+        if (isRecognizedVideoUrl(c)) {
           return c;
         }
       }
@@ -152,7 +227,7 @@
         if (pid && typeof pid === 'string' && pid.length > 5 && !pid.includes(' ')) {
           return tok ? `https://stream.mux.com/${pid}.m3u8?token=${tok}` : `https://stream.mux.com/${pid}.m3u8`;
         }
-        if (vidObj.url && typeof vidObj.url === 'string' && vidObj.url.startsWith('http')) {
+        if (isRecognizedVideoUrl(vidObj.url)) {
           return vidObj.url;
         }
       }
@@ -179,6 +254,8 @@
     let lessonTitle = document.title || 'Lección';
     let lessonIndex = 1;
     let lessonId = url.searchParams.get('md') || '';
+    const routeCourseId = pathParts[2] || '';
+    const documentContext = contextFromDocumentTitle();
 
     if (lessonTitle.includes('|')) lessonTitle = lessonTitle.split('|')[0].trim();
     else if (lessonTitle.includes('-')) lessonTitle = lessonTitle.split('-')[0].trim();
@@ -254,6 +331,15 @@
       }
     }
 
+    // The current Skool UI exposes the reliable course/community pair in the
+    // browser title even when its sidebar classes change or only expose an ID.
+    if (isUsableCourseName(documentContext.course, routeCourseId)) {
+      courseName = documentContext.course;
+    }
+    if (!communityName && documentContext.community) {
+      communityName = documentContext.community;
+    }
+
     // 3. Next.js Fallback if DOM was empty
     const nextData = getNextData();
     if (nextData) {
@@ -281,8 +367,8 @@
       }
     }
 
-    if (!courseName) {
-      const classroomSlug = pathParts[2] || 'Curso';
+    if (!isUsableCourseName(courseName, routeCourseId)) {
+      const classroomSlug = routeCourseId || 'Curso';
       courseName = classroomSlug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
     }
 
@@ -338,57 +424,33 @@
     const attachments = [];
     const seenUrls = new Set();
     const nextData = getNextData();
+    const activeLessonId = new URL(window.location.href).searchParams.get('md') || extractPageContext().lessonId;
 
-    if (nextData) {
-      const containers = findDeep(nextData, (obj) => {
-        return obj && (Array.isArray(obj.attachments) || Array.isArray(obj.files) || Array.isArray(obj.resources));
-      });
-
-      containers.forEach((container) => {
-        const list = container.attachments || container.files || container.resources || [];
-        list.forEach((file) => {
-          if (!file) return;
-          const url = file.url || file.link || file.downloadUrl || file.fileUrl || (typeof file === 'string' ? file : null);
-          if (!url || seenUrls.has(url)) return;
-          seenUrls.add(url);
-
-          const name = file.name || file.filename || file.title || url.split('/').pop().split('?')[0] || 'Adjunto';
-          const sizeStr = formatBytes(file.size || file.fileSize || file.bytes);
-          const category = getFileCategory(name, url);
-
-          attachments.push({
-            id: file.id || 'att_' + Math.random().toString(36).substr(2, 9),
-            name: cleanTitleText(name),
-            url: url,
-            size: sizeStr,
-            category: category.type,
-            categoryLabel: category.label,
-            categoryColor: category.color
-          });
-        });
+    if (nextData && activeLessonId) {
+      const exactDetails = extractLessonDetails(nextData, activeLessonId);
+      exactDetails.attachments.forEach(attachment => {
+        if (!seenUrls.has(attachment.url)) {
+          seenUrls.add(attachment.url);
+          attachments.push(attachment);
+        }
       });
     }
 
-    document.querySelectorAll('a[href]').forEach((link, idx) => {
+    const contentRoots = Array.from(document.querySelectorAll(
+      'main, article, [role="main"], [class*="lesson-content"], [class*="LessonContent"], [class*="description"], [class*="Description"]'
+    ));
+    const roots = contentRoots.length > 0 ? contentRoots : [document.body];
+    const candidateLinks = Array.from(new Set(roots.flatMap(root => Array.from(root.querySelectorAll('a[href]')))));
+
+    candidateLinks.forEach((link, idx) => {
       const href = link.href;
-      if (!href || href.startsWith('javascript:') || href.startsWith('#') || seenUrls.has(href)) return;
+      if (
+        !isExternalLessonResource(href) ||
+        seenUrls.has(href) ||
+        link.closest('nav, header, aside, [role="navigation"]')
+      ) return;
 
-      const isResource = (
-        href.includes('drive.google.com') ||
-        href.includes('docs.google.com') ||
-        href.includes('dropbox.com') ||
-        href.includes('figma.com') ||
-        href.includes('canva.com') ||
-        href.includes('notion.so') ||
-        href.includes('github.com') ||
-        href.includes('.pdf') ||
-        href.includes('.zip') ||
-        href.includes('.rar') ||
-        href.includes('.prproj') ||
-        href.includes('.aep')
-      );
-
-      if (isResource) {
+      if (isExternalLessonResource(href)) {
         seenUrls.add(href);
         let linkText = link.textContent.trim() || link.getAttribute('title') || '';
         let cleanName = linkText;
@@ -399,6 +461,7 @@
         const cat = getFileCategory(cleanName, href);
         attachments.push({
           id: 'dom_link_' + idx,
+          lessonId: activeLessonId,
           name: cleanTitleText(cleanName),
           url: href,
           size: null,
@@ -420,7 +483,19 @@
     const targetMd = currentUrlParams.get('md') || context.lessonId;
 
     if (nextData && targetMd) {
-      const nextVideoUrl = findLessonVideoById(nextData, targetMd);
+      let nextVideoUrl = findLessonVideoById(nextData, targetMd);
+      if (!nextVideoUrl) {
+        const pageVideo = nextData.props?.pageProps?.video || nextData.pageProps?.video;
+        const playbackId = pageVideo?.playbackId || pageVideo?.playback_id;
+        const playbackToken = pageVideo?.playbackToken || pageVideo?.playback_token;
+        if (playbackId) {
+          nextVideoUrl = playbackToken
+            ? `https://stream.mux.com/${playbackId}.m3u8?token=${playbackToken}`
+            : `https://stream.mux.com/${playbackId}.m3u8`;
+        } else if (isRecognizedVideoUrl(pageVideo?.url)) {
+          nextVideoUrl = pageVideo.url;
+        }
+      }
       if (nextVideoUrl) {
         const cleanUrl = nextVideoUrl.split('?')[0];
         const pInfo = identifyPlatform(nextVideoUrl);
@@ -489,22 +564,6 @@
       }
     }
 
-    if (window.location.href.includes('skool.com')) {
-      const fullUrl = window.location.href;
-      videos.push({
-        id: targetMd || 'active_skool_lesson',
-        title: cleanTitleText(context.lessonTitle || 'Video de la Lección'),
-        url: fullUrl,
-        cleanUrl: fullUrl.split('?')[0],
-        platform: 'Skool Video (MP4)',
-        platformType: 'hls',
-        badgeColor: '#10b981',
-        duration: null,
-        source: 'Video de la Lección',
-        isCurrentLesson: true
-      });
-    }
-
     return videos;
   }
 
@@ -564,6 +623,85 @@
     return renderNode(data);
   }
 
+  function normalizeResourceUrl(value) {
+    if (!value || typeof value !== 'string') return '';
+    const unescaped = value
+      .replace(/\\u0026/g, '&')
+      .replace(/\\\//g, '/')
+      .replace(/[),.;\]}'"]+$/g, '')
+      .trim();
+    try {
+      const parsed = new URL(unescaped, window.location.origin);
+      return ['http:', 'https:'].includes(parsed.protocol) ? parsed.href : '';
+    } catch (error) {
+      return '';
+    }
+  }
+
+  function isExternalLessonResource(value) {
+    const normalized = normalizeResourceUrl(value);
+    if (!normalized || isRecognizedVideoUrl(normalized)) return false;
+    try {
+      const parsed = new URL(normalized);
+      const hostname = parsed.hostname.toLowerCase();
+      if (hostname === 'skool.com' || hostname.endsWith('.skool.com')) return false;
+      if (
+        hostname.includes('google-analytics.com') ||
+        hostname.includes('googletagmanager.com') ||
+        hostname.includes('doubleclick.net') ||
+        hostname.includes('intercom.io') ||
+        hostname.includes('stripe.com')
+      ) return false;
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function resourceLabel(value, url, fallback = 'Recurso') {
+    const direct = cleanTitleText(value || '');
+    if (direct && !/^https?:\/\//i.test(direct) && direct.length >= 3) return direct;
+    const lower = String(url || '').toLowerCase();
+    if (lower.includes('figma.com')) return 'Tablero de Figma';
+    if (lower.includes('drive.google.com/drive/folders')) return 'Carpeta Google Drive';
+    if (lower.includes('drive.google.com')) return 'Archivo Google Drive';
+    if (lower.match(/\.(zip|rar|7z)(\?|$)/)) return 'Archivo comprimido / Assets';
+    if (lower.includes('.prfpset')) return 'Preset de Premiere Pro';
+    try {
+      const parsed = new URL(url);
+      const tail = decodeURIComponent(parsed.pathname.split('/').filter(Boolean).pop() || '');
+      return cleanTitleText(tail) || parsed.hostname || fallback;
+    } catch (error) {
+      return fallback;
+    }
+  }
+
+  function collectLessonLinks(value, results, inheritedLabel = '') {
+    if (!value) return;
+    if (Array.isArray(value)) {
+      value.forEach(item => collectLessonLinks(item, results, inheritedLabel));
+      return;
+    }
+    if (typeof value !== 'object') return;
+
+    const nearbyLabel = value.name || value.filename || value.title || value.label || value.text || inheritedLabel;
+    for (const key of ['href', 'url', 'link', 'downloadUrl', 'fileUrl']) {
+      const url = normalizeResourceUrl(value[key]);
+      if (isExternalLessonResource(url)) results.push({ url, label: nearbyLabel });
+    }
+    if (value.type === 'text' && value.text && Array.isArray(value.marks)) {
+      value.marks.forEach(mark => {
+        const url = normalizeResourceUrl(mark?.attrs?.href);
+        if (mark?.type === 'link' && isExternalLessonResource(url)) {
+          results.push({ url, label: value.text });
+        }
+      });
+    }
+    Object.values(value).forEach(child => {
+      if (child && typeof child === 'object') collectLessonLinks(child, results, nearbyLabel);
+    });
+  }
+
   function extractLessonDetails(nextData, lessonId) {
     if (!nextData || !lessonId) return { attachments: [], descriptionHtml: '' };
     const attachments = [];
@@ -581,56 +719,53 @@
         descriptionHtml = tiptapToHtml(rawDesc);
       }
 
-      // 2. Direct attachments
-      const list = node.attachments || node.files || node.resources || [];
-      list.forEach(file => {
-        if (!file) return;
-        const url = file.url || file.link || file.downloadUrl || file.fileUrl || (typeof file === 'string' ? file : null);
-        if (!url || seenUrls.has(url)) return;
-        seenUrls.add(url);
-        const name = file.name || file.filename || file.title || url.split('/').pop().split('?')[0] || 'Adjunto';
-        const category = getFileCategory(name, url);
-        attachments.push({
-          id: file.id || 'att_' + Math.random().toString(36).substr(2, 9),
-          lessonId: lessonId,
-          name: cleanTitleText(name),
-          url: url,
-          category: category.type,
-          categoryLabel: category.label,
-          categoryColor: category.color
+      // 2. Attachments strictly below the matching lesson node.
+      const containers = [node, ...findDeep(node, child => child !== node && child && (
+        Array.isArray(child.attachments) || Array.isArray(child.files) || Array.isArray(child.resources)
+      ))];
+      containers.forEach(container => {
+        const list = container.attachments || container.files || container.resources || [];
+        list.forEach(file => {
+          if (!file) return;
+          const url = normalizeResourceUrl(file.url || file.link || file.downloadUrl || file.fileUrl || (typeof file === 'string' ? file : null));
+          if (!isExternalLessonResource(url) || seenUrls.has(url)) return;
+          seenUrls.add(url);
+          const name = resourceLabel(file.name || file.filename || file.title, url, 'Adjunto');
+          const category = getFileCategory(name, url);
+          attachments.push({
+            id: file.id || stableId(`att_${lessonId}`, url),
+            lessonId: lessonId,
+            name: cleanTitleText(name),
+            url: url,
+            size: formatBytes(file.size || file.fileSize || file.bytes),
+            category: category.type,
+            categoryLabel: category.label,
+            categoryColor: category.color
+          });
         });
       });
 
-      // 3. Embedded URLs inside text/description
+      // 3. Embedded links inside rich text. Capture arbitrary external resources,
+      // while excluding Skool navigation and the lesson's video provider.
+      const richLinks = [];
+      let structuredDescription = rawDesc;
+      if (typeof rawDesc === 'string') {
+        const serialized = rawDesc.startsWith('[v2]') ? rawDesc.substring(4) : rawDesc;
+        if (serialized.startsWith('{') || serialized.startsWith('[')) {
+          try { structuredDescription = JSON.parse(serialized); } catch (error) {}
+        }
+      }
+      collectLessonLinks(structuredDescription, richLinks);
       const bodyText = typeof rawDesc === 'string' ? rawDesc : JSON.stringify(rawDesc);
-      if (bodyText) {
-        const urls = bodyText.match(/https?:\/\/[^\s"\'<>]+/g) || [];
-        urls.forEach((u, idx) => {
-          const uClean = u.replace(/\\u0026/g, '&').replace(/\\+$/, '');
-          const isRes = (
-            uClean.includes('figma.com') ||
-            uClean.includes('drive.google.com') ||
-            uClean.includes('dropbox.com') ||
-            uClean.includes('notion.so') ||
-            uClean.includes('canva.com') ||
-            uClean.includes('github.com') ||
-            uClean.includes('.pdf') ||
-            uClean.includes('.zip') ||
-            uClean.includes('.rar') ||
-            uClean.includes('.prfpset') ||
-            uClean.includes('.aep') ||
-            uClean.includes('.cube')
-          );
-          if (isRes && !seenUrls.has(uClean)) {
+      (bodyText.match(/https?:\/\/[^\s"\'<>]+/g) || []).forEach(url => richLinks.push({ url, label: '' }));
+      richLinks.forEach((candidate) => {
+          const uClean = normalizeResourceUrl(candidate.url);
+          if (isExternalLessonResource(uClean) && !seenUrls.has(uClean)) {
             seenUrls.add(uClean);
-            let label = 'Recurso';
-            if (uClean.includes('figma.com')) label = 'Tablero de Figma';
-            else if (uClean.includes('drive.google.com')) label = 'Carpeta Google Drive';
-            else if (uClean.includes('.zip') || uClean.includes('.rar')) label = 'Archivo ZIP / Assets';
-            else if (uClean.includes('.prfpset')) label = 'Preset de Premiere Pro';
+            const label = resourceLabel(candidate.label, uClean);
             const cat = getFileCategory(label, uClean);
             attachments.push({
-              id: `body_link_${lessonId}_${idx}`,
+              id: stableId(`body_link_${lessonId}`, uClean),
               lessonId: lessonId,
               name: label,
               url: uClean,
@@ -639,16 +774,124 @@
               categoryColor: cat.color
             });
           }
-        });
-      }
+      });
     });
 
     return { attachments, descriptionHtml };
   }
 
+  function unwrapCourseNode(node) {
+    if (!node || typeof node !== 'object') return {};
+    return node.course || node.lesson || node.module || node;
+  }
+
+  function nodeTitle(node, fallback) {
+    const info = unwrapCourseNode(node);
+    return cleanTitleText(info.metadata?.title || info.title || info.name || fallback);
+  }
+
+  function extractStructuredClassroomTree(nextData, context) {
+    if (!nextData) return null;
+    const pageProps = nextData.props?.pageProps || nextData.pageProps || {};
+    const candidates = [pageProps.course, pageProps.classroom].filter(Boolean);
+    candidates.push(...findDeep(pageProps, value => value && typeof value === 'object' && (
+      Array.isArray(value.sets) || Array.isArray(value.modules) ||
+      (Array.isArray(value.children) && value.children.some(child => Array.isArray(child?.children)))
+    )));
+
+    const courseObject = candidates
+      .map(candidate => ({
+        candidate,
+        score: (context.lessonId && findDeep(candidate, value => value && typeof value === 'object' && (
+          value.id === context.lessonId || value._id === context.lessonId
+        )).length > 0 ? 100 : 0) +
+          (Array.isArray(candidate?.sets) ? 30 : 0) +
+          (Array.isArray(candidate?.modules) ? 20 : 0) +
+          (Array.isArray(candidate?.children) && candidate.children.some(child => Array.isArray(child?.children)) ? 10 : 0)
+      }))
+      .sort((a, b) => b.score - a.score)[0]?.candidate;
+    if (!courseObject) return null;
+
+    let moduleNodes = courseObject.sets || courseObject.modules || courseObject.children || [];
+    moduleNodes = moduleNodes.filter(moduleNode => {
+      const lessons = moduleNode?.lessons || moduleNode?.children || unwrapCourseNode(moduleNode)?.lessons || [];
+      return Array.isArray(lessons) && lessons.length > 0;
+    });
+    if (moduleNodes.length === 0) return null;
+
+    const baseLessonUrl = `${window.location.origin}${window.location.pathname}`;
+    const structuredCourseTitle = nodeTitle(courseObject, context.course || 'Curso');
+    const routeCourseId = new URL(window.location.href).pathname.split('/').filter(Boolean)[2] || '';
+    const tree = {
+      courseTitle: isUsableCourseName(context.course, routeCourseId)
+        ? context.course
+        : structuredCourseTitle,
+      communityName: context.community || 'Comunidad Skool',
+      totalLessons: 0,
+      totalVideos: 0,
+      totalAttachments: 0,
+      modules: []
+    };
+    let globalLessonIndex = 0;
+
+    moduleNodes.forEach((moduleNode, moduleArrayIndex) => {
+      const moduleIndex = moduleArrayIndex + 1;
+      const rawModuleTitle = nodeTitle(moduleNode, `Módulo ${moduleIndex}`).replace(/^\d+[\s._-]+/, '');
+      const rawLessons = moduleNode.lessons || moduleNode.children || unwrapCourseNode(moduleNode).lessons || [];
+      const module = {
+        moduleId: unwrapCourseNode(moduleNode).id || `structured_module_${moduleIndex}`,
+        moduleIndex,
+        title: `${String(moduleIndex).padStart(2, '0')}_${rawModuleTitle}`,
+        lessons: []
+      };
+
+      rawLessons.forEach((lessonNode, lessonArrayIndex) => {
+        const info = unwrapCourseNode(lessonNode);
+        const lessonId = info.id || info._id || lessonNode.id || lessonNode._id;
+        if (!lessonId) return;
+        globalLessonIndex += 1;
+        const rawLessonTitle = nodeTitle(lessonNode, `Lección ${lessonArrayIndex + 1}`);
+        const explicitOrder = info.lessonNumber || info.number || info.order || info.metadata?.lessonNumber || info.metadata?.order;
+        const sourceOrder = domSourceOrderForLesson(lessonId) || leadingSourceOrder(rawLessonTitle, explicitOrder || lessonArrayIndex + 1);
+        const lessonTitle = stripLeadingSourceOrder(rawLessonTitle);
+        const lessonUrl = info.href || lessonNode.href || `${baseLessonUrl}?md=${encodeURIComponent(lessonId)}`;
+        const directVideo = findLessonVideoById(nextData, lessonId);
+        const platform = identifyPlatform(directVideo);
+        const details = extractLessonDetails(nextData, lessonId);
+        const hasVideo = Boolean(directVideo || info.videoId || info.metadata?.videoId || info.video || info.metadata?.video);
+        if (hasVideo) tree.totalVideos += 1;
+        tree.totalAttachments += details.attachments.length;
+
+        module.lessons.push({
+          id: lessonId,
+          index: globalLessonIndex,
+          sourceOrder,
+          lessonIndexInModule: sourceOrder,
+          title: lessonTitle,
+          url: lessonUrl,
+          videoUrl: directVideo || lessonUrl,
+          videoResolved: Boolean(directVideo),
+          hasVideo,
+          platform: platform.name,
+          platformType: platform.type,
+          duration: info.duration || info.metadata?.duration || null,
+          descriptionHtml: details.descriptionHtml,
+          attachments: details.attachments
+        });
+      });
+
+      if (module.lessons.length > 0) tree.modules.push(module);
+    });
+
+    tree.totalLessons = globalLessonIndex;
+    return tree.modules.length > 0 ? tree : null;
+  }
+
   function extractCompleteClassroomTree() {
     const nextData = getNextData();
     const context = extractPageContext();
+    const structuredTree = extractStructuredClassroomTree(nextData, context);
+    if (structuredTree) return structuredTree;
     const tree = {
       courseTitle: context.course || 'Curso',
       communityName: context.community || 'Comunidad Skool',
@@ -690,7 +933,6 @@
               if (!seenLessonIds.has(lesId)) {
                 seenLessonIds.add(lesId);
                 globalLessonCount++;
-                tree.totalVideos++;
 
                 if (!currentModule) {
                   secIdx++;
@@ -704,20 +946,26 @@
                   domModules.push(currentModule);
                 }
 
-                let rawTitle = el.textContent.trim().split('\n')[0] || `Lección ${globalLessonCount}`;
-                rawTitle = cleanTitleText(rawTitle.replace(/^\d+[\.\-\s]+/, ''));
+                const visibleTitle = el.textContent.trim().split('\n')[0] || `Lección ${globalLessonCount}`;
+                const surroundingText = el.parentElement?.textContent?.trim().split('\n')[0] || visibleTitle;
+                const sourceOrder = leadingSourceOrder(visibleTitle, leadingSourceOrder(surroundingText, currentModule.lessons.length + 1));
+                const rawTitle = stripLeadingSourceOrder(visibleTitle);
                 const directVideo = findLessonVideoById(nextData, lesId);
+                if (directVideo) tree.totalVideos++;
                 const lessonDetails = extractLessonDetails(nextData, lesId);
                 tree.totalAttachments += lessonDetails.attachments.length;
 
                 currentModule.lessons.push({
                   id: lesId,
                   index: globalLessonCount,
+                  sourceOrder,
+                  lessonIndexInModule: sourceOrder,
                   title: rawTitle,
                   url: href,
                   videoUrl: directVideo || href,
-                  platform: 'Skool Video (MP4)',
-                  platformType: 'hls',
+                  videoResolved: Boolean(directVideo),
+                  platform: identifyPlatform(directVideo).name,
+                  platformType: identifyPlatform(directVideo).type,
                   duration: null,
                   descriptionHtml: lessonDetails.descriptionHtml,
                   attachments: lessonDetails.attachments
@@ -790,6 +1038,21 @@
       const context = extractPageContext();
       const tree = extractCompleteClassroomTree();
 
+      for (const module of tree.modules || []) {
+        const lessonPosition = (module.lessons || []).findIndex(lesson => lesson.id === context.lessonId);
+        if (lessonPosition >= 0) {
+          const lesson = module.lessons[lessonPosition];
+          context.module = module.title;
+          context.moduleIndex = module.moduleIndex;
+          context.lessonTitle = lesson.title;
+          context.lessonIndex = lesson.sourceOrder || lesson.index;
+          context.lessonIndexInModule = lesson.lessonIndexInModule || lessonPosition + 1;
+          context.globalLessonIndex = lesson.index;
+          context.descriptionHtml = lesson.descriptionHtml || context.descriptionHtml;
+          break;
+        }
+      }
+
       sendResponse({
         success: true,
         pageUrl: window.location.href,
@@ -799,6 +1062,38 @@
         attachments: attachments,
         tree: tree
       });
+      return true;
+    }
+
+    if (request.action === 'FETCH_LESSON_DETAILS') {
+      (async () => {
+        try {
+          const lessonUrl = request.lessonUrl;
+          const targetMd = request.targetMd;
+          if (!lessonUrl || !targetMd) throw new Error('Falta la URL o el ID de la lección.');
+
+          let lessonData = null;
+          const currentMd = new URL(window.location.href).searchParams.get('md');
+          if (currentMd === targetMd) lessonData = getNextData();
+
+          if (!lessonData) {
+            const response = await fetch(lessonUrl, {
+              credentials: 'include',
+              headers: { 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' }
+            });
+            if (!response.ok) throw new Error(`Skool respondió HTTP ${response.status}`);
+            const html = await response.text();
+            const match = html.match(/<script[^>]+id=["']__NEXT_DATA__["'][^>]*>([\s\S]*?)<\/script>/i);
+            if (!match) throw new Error('La página no contiene datos estructurados de la lección.');
+            lessonData = JSON.parse(match[1]);
+          }
+
+          const details = extractLessonDetails(lessonData, targetMd);
+          sendResponse({ success: true, ...details });
+        } catch (error) {
+          sendResponse({ success: false, error: error.message, attachments: [], descriptionHtml: '' });
+        }
+      })();
       return true;
     }
 
@@ -821,7 +1116,8 @@
           const localNext = getNextData();
           if (localNext) {
             let foundLocal = findLessonVideoById(localNext, targetMd);
-            if (!foundLocal) {
+            const currentMd = new URL(window.location.href).searchParams.get('md');
+            if (!foundLocal && (!targetMd || currentMd === targetMd)) {
               const pv = localNext.props?.pageProps?.video || localNext.pageProps?.video;
               if (pv) {
                 const pid = pv.playbackId || pv.id;

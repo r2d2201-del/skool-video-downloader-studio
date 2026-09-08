@@ -26,6 +26,16 @@
   };
 
   let communitiesList = window.COMMUNITIES_DATA || [];
+  communitiesList.forEach(community => {
+    (community.courses || []).forEach(course => {
+      course.modules = (course.modules || []).sort((a, b) => Number(a.index || 0) - Number(b.index || 0));
+      course.modules.forEach(module => {
+        module.lessons = (module.lessons || []).sort((a, b) =>
+          Number(a.sourceOrder || a.index || 0) - Number(b.sourceOrder || b.index || 0)
+        );
+      });
+    });
+  });
   let currentCourse = window.COURSE_DATA || (communitiesList[0] && communitiesList[0].courses[0]);
   let completedLessonIds = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY_PROGRESS) || '[]'));
   let currentActiveLesson = null;
@@ -53,10 +63,12 @@
   // DOM Elements - Stage
   const stageModuleBadge = document.getElementById('stage-module-badge');
   const stageLessonTitle = document.getElementById('stage-lesson-title');
+  const videoPlayer = document.getElementById('video-player-native');
   const videoIframe = document.getElementById('video-player-iframe');
   const videoPlaceholder = document.getElementById('video-placeholder-frame');
   const placeholderTitle = document.getElementById('placeholder-title');
   const placeholderDesc = document.getElementById('placeholder-desc');
+  const placeholderDriveLink = document.getElementById('placeholder-drive-link');
   const btnMarkComplete = document.getElementById('btn-mark-complete');
   const btnPrevLesson = document.getElementById('btn-prev-lesson');
   const btnNextLesson = document.getElementById('btn-next-lesson');
@@ -298,7 +310,7 @@
             <button class="lesson-check-btn ${isCompleted ? 'completed' : ''}" title="Marcar como completada">
               ${isCompleted ? ICONS.CHECK : ''}
             </button>
-            <span class="lesson-title-text" title="${les.title}">${les.title}</span>
+            <span class="lesson-title-text" title="${les.title}">${les.sourceOrder || les.index} - ${les.title}</span>
           </div>
           <span class="lesson-status-tag ${les.inDrive ? 'drive' : 'pending'}">
             ${les.inDrive ? 'Drive ✓' : 'Pendiente'}
@@ -324,6 +336,65 @@
       moduleCard.appendChild(modHeader);
       moduleCard.appendChild(lessonsList);
       treeContainer.appendChild(moduleCard);
+    });
+  }
+
+  function drivePlaybackSources(fileId) {
+    const encodedId = encodeURIComponent(fileId);
+    return [
+      `http://127.0.0.1:4545/drive-video?id=${encodedId}`,
+      `https://drive.usercontent.google.com/download?id=${encodedId}&export=download&confirm=t`,
+      `https://drive.google.com/uc?export=download&confirm=t&id=${encodedId}`
+    ];
+  }
+
+  function showVideoPlaceholder(title, description, driveLink = '') {
+    if (videoPlaceholder) videoPlaceholder.style.display = 'flex';
+    if (placeholderTitle) placeholderTitle.textContent = title;
+    if (placeholderDesc) placeholderDesc.textContent = description;
+    if (placeholderDriveLink) {
+      placeholderDriveLink.href = driveLink || '#';
+      placeholderDriveLink.style.display = driveLink ? 'inline-flex' : 'none';
+    }
+  }
+
+  function resetVideoPlayer() {
+    if (videoIframe) {
+      videoIframe.src = '';
+      videoIframe.style.display = 'none';
+    }
+    if (videoPlayer) {
+      videoPlayer.pause();
+      videoPlayer.removeAttribute('src');
+      videoPlayer.dataset.sources = '[]';
+      videoPlayer.dataset.sourceIndex = '0';
+      videoPlayer.style.display = 'none';
+      videoPlayer.load();
+    }
+  }
+
+  if (videoPlayer) {
+    const hideLoadingState = () => {
+      if (videoPlaceholder) videoPlaceholder.style.display = 'none';
+      if (placeholderDriveLink) placeholderDriveLink.style.display = 'none';
+    };
+    videoPlayer.addEventListener('loadedmetadata', hideLoadingState);
+    videoPlayer.addEventListener('canplay', hideLoadingState);
+    videoPlayer.addEventListener('error', () => {
+      const sources = JSON.parse(videoPlayer.dataset.sources || '[]');
+      const nextIndex = Number(videoPlayer.dataset.sourceIndex || 0) + 1;
+      if (nextIndex < sources.length) {
+        videoPlayer.dataset.sourceIndex = String(nextIndex);
+        videoPlayer.src = sources[nextIndex];
+        videoPlayer.load();
+        return;
+      }
+      videoPlayer.style.display = 'none';
+      showVideoPlaceholder(
+        'No se pudo reproducir este archivo privado',
+        'Comprueba que el servidor local esté activo. También puedes abrir el archivo directamente en Google Drive.',
+        videoPlayer.dataset.driveLink || ''
+      );
     });
   }
 
@@ -372,23 +443,26 @@
       }
     }
 
-    // Video Player Loading (Google Drive Stream vs Placeholder)
+    // Prefer the authenticated local bridge for private Drive files. Public files
+    // can still use the direct fallbacks without third-party Drive cookies.
+    resetVideoPlayer();
     if (lesson.gdriveId) {
-      if (videoIframe) {
-        videoIframe.src = `https://drive.google.com/file/d/${lesson.gdriveId}/preview`;
-        videoIframe.style.display = 'block';
+      const driveLink = lesson.gdriveLink || `https://drive.google.com/file/d/${lesson.gdriveId}/view`;
+      if (videoPlayer) {
+        const sources = drivePlaybackSources(lesson.gdriveId);
+        videoPlayer.dataset.sources = JSON.stringify(sources);
+        videoPlayer.dataset.sourceIndex = '0';
+        videoPlayer.dataset.driveLink = driveLink;
+        videoPlayer.src = sources[0];
+        videoPlayer.style.display = 'block';
+        showVideoPlaceholder('Cargando video…', 'Conectando con tu Google Drive mediante el servidor local.', driveLink);
+        videoPlayer.load();
       }
-      if (videoPlaceholder) videoPlaceholder.style.display = 'none';
     } else {
-      if (videoIframe) {
-        videoIframe.src = '';
-        videoIframe.style.display = 'none';
-      }
-      if (videoPlaceholder) {
-        videoPlaceholder.style.display = 'flex';
-        if (placeholderTitle) placeholderTitle.textContent = `Video en Proceso de Sincronización`;
-        if (placeholderDesc) placeholderDesc.textContent = `El video de "${lesson.title}" se encuentra en cola de descarga o aún no está disponible en tu Google Drive.`;
-      }
+      showVideoPlaceholder(
+        'Video en Proceso de Sincronización',
+        `El video de "${lesson.title}" se encuentra en cola de descarga o aún no está disponible en tu Google Drive.`
+      );
     }
 
     // Render Lesson Notes & Content (Rich Text / Instructions / Embedded Links)
@@ -444,7 +518,7 @@
     resources.forEach(res => {
       const card = document.createElement('a');
       card.className = 'resource-card';
-      card.href = res.url;
+      card.href = res.gdriveLink || res.url;
       card.target = '_blank';
       card.rel = 'noopener noreferrer';
 
@@ -809,4 +883,3 @@
   }
 
 })();
-

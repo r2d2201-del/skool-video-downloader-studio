@@ -46,6 +46,8 @@ skool_session_cookies.txt
 *.log
 server.log
 server_err.log
+.course_catalog.lock
+.skool_sync_state.json
 
 # Vercel Deployment
 .vercel

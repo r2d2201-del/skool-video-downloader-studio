@@ -140,8 +140,8 @@ body {
   background: transparent;
   border: 1px solid var(--border-color);
   color: var(--text-secondary);
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
@@ -438,6 +438,12 @@ body {
   transition: all 0.2s ease;
   border: none;
   text-decoration: none;
+  min-height: 32px;
+}
+
+.action-btn:disabled {
+  opacity: 0.55;
+  cursor: wait;
 }
 
 .action-btn.primary {
@@ -548,6 +554,49 @@ body {
   font-size: 13px;
   font-weight: 700;
   color: #fff;
+}
+
+.download-policy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-top: 8px;
+}
+
+.download-policy-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--text-muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.compact-select {
+  min-width: 0;
+  width: 100%;
+  padding: 6px 7px;
+  font-size: 10px;
+  text-transform: none;
+}
+
+.library-status-summary {
+  margin-top: 7px;
+  padding: 7px 9px;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: var(--radius-sm);
+  background: rgba(56, 189, 248, 0.08);
+  color: #bae6fd;
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.library-status-summary.complete {
+  border-color: rgba(16, 185, 129, 0.35);
+  background: rgba(16, 185, 129, 0.1);
+  color: #a7f3d0;
 }
 
 .bulk-summary-text {
@@ -754,8 +803,8 @@ body {
 }
 
 .icon-btn-action {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -832,22 +881,34 @@ body {
 }
 
 .storage-mode-card input {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.storage-mode-card .mode-icon {
+.storage-mode-card .mode-icon,
+.storage-mode-card .radio-card-icon {
   font-size: 16px;
 }
 
-.storage-mode-card .mode-text strong {
+.storage-mode-card .mode-text strong,
+.storage-mode-card .radio-card-title {
   font-size: 10.5px;
   display: block;
   color: #e2e8f0;
 }
 
-.storage-mode-card .mode-text small {
+.storage-mode-card .mode-text small,
+.storage-mode-card .radio-card-desc {
   font-size: 8.5px;
   color: #94a3b8;
+}
+
+.storage-mode-card .radio-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
 .storage-mode-card:hover {
@@ -862,6 +923,16 @@ body {
 
 .storage-mode-card.active strong {
   color: #6ee7b7;
+}
+
+.storage-mode-card:focus-within,
+.action-btn:focus-visible,
+.icon-btn:focus-visible,
+.icon-btn-action:focus-visible,
+.module-header:focus-visible,
+.tab-btn:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
 }
 
 /* Google Drive Status Bar */
@@ -934,6 +1005,168 @@ body {
 .setting-hint {
   font-size: 10px;
   color: var(--text-muted);
+}
+
+.drive-folder-control {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 7px;
+}
+
+.drive-folder-control .setting-input[readonly] {
+  cursor: default;
+  color: #dbeafe;
+}
+
+.folder-picker-button {
+  border: 1px solid #3b82f6;
+  border-radius: var(--radius-sm);
+  background: rgba(59, 130, 246, 0.15);
+  color: #bfdbfe;
+  padding: 7px 11px;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.folder-picker-button:hover,
+.folder-picker-button:focus-visible {
+  background: rgba(59, 130, 246, 0.28);
+  outline: none;
+}
+
+.drive-folder-status.verified {
+  color: #6ee7b7;
+}
+
+.drive-folder-status.error {
+  color: #fca5a5;
+}
+
+.drive-folder-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(2, 6, 23, 0.84);
+  backdrop-filter: blur(5px);
+}
+
+.drive-folder-modal[hidden] {
+  display: none;
+}
+
+.drive-folder-dialog {
+  width: min(410px, 100%);
+  max-height: 86vh;
+  overflow: hidden;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  background: #0b1220;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
+  padding: 14px;
+  display: grid;
+  gap: 11px;
+}
+
+.drive-folder-dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.drive-folder-dialog-header h2 {
+  margin: 0 0 3px;
+  color: #f8fafc;
+  font-size: 14px;
+}
+
+.drive-folder-dialog-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+.drive-folder-close {
+  border: 0;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.drive-folder-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  min-height: 25px;
+}
+
+.drive-folder-crumb {
+  border: 0;
+  background: transparent;
+  color: #60a5fa;
+  padding: 2px;
+  font: inherit;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.drive-folder-list {
+  min-height: 150px;
+  max-height: 290px;
+  overflow-y: auto;
+  display: grid;
+  align-content: start;
+  gap: 5px;
+}
+
+.drive-folder-row {
+  width: 100%;
+  border: 1px solid #26344b;
+  border-radius: 8px;
+  background: #111c2e;
+  color: #e2e8f0;
+  padding: 9px 10px;
+  text-align: left;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.drive-folder-row:hover,
+.drive-folder-row:focus-visible {
+  border-color: #3b82f6;
+  background: #172642;
+  outline: none;
+}
+
+.drive-folder-empty {
+  padding: 28px 12px;
+  color: #64748b;
+  text-align: center;
+  font-size: 10px;
+}
+
+.drive-folder-create,
+.drive-folder-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.drive-folder-create .setting-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.drive-folder-actions {
+  justify-content: flex-end;
 }
 
 /* Empty State & Spinner */

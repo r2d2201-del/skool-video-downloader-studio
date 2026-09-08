@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Skool Downloader - Local Background Companion Server (v2.3.3)
+Skool Downloader - Local Background Companion Server (v2.8.0)
 Features:
 - Native Mux & Fastly Signed HLS Stream Resolver (1080p Full HD)
 - Course Resource Scanner API (/scan-course-resources) to aggregate all Figma, Drive, PDFs across course
@@ -11,6 +11,7 @@ Features:
 """
 
 import json
+import hashlib
 import os
 import re
 import ssl
@@ -20,24 +21,60 @@ import subprocess
 import threading
 import time
 import http.cookiejar
+import fcntl
+from functools import wraps
 import urllib.request
 import urllib.parse
-from http.server import HTTPServer, BaseHTTPRequestHandler
+import urllib.error
+from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 from concurrent.futures import ThreadPoolExecutor
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+if SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, SCRIPT_DIR)
+from catalog_store import course_status, merge_resources, reconcile_course
+from drive_library import (
+    DriveFolderError,
+    breadcrumb as drive_breadcrumb,
+    create_folder as drive_create_folder,
+    list_folders as drive_list_folders,
+    resolve_path as resolve_drive_path,
+    verify_folder as drive_verify_folder,
+)
 
 PORT = 4545
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 COOKIES_FILE = os.path.join(BASE_DIR, "skool_session_cookies.txt")
+CATALOG_LOCK_FILE = os.path.join(BASE_DIR, ".course_catalog.lock")
 
 DOWNLOAD_LOCK = threading.Lock()
 GDRIVE_FOLDER_LOCK = threading.Lock()
 ACTIVE_DOWNLOADS = {}
 COMPLETED_DOWNLOADS = {}
 FAILED_DOWNLOADS = {}
+CATALOG_THREAD_LOCK = threading.Lock()
 
 SSL_CTX = ssl.create_default_context()
-SSL_CTX.check_hostname = False
-SSL_CTX.verify_mode = ssl.CERT_NONE
+
+def synchronized_catalog_write(function):
+    @wraps(function)
+    def wrapper(*args, **kwargs):
+        with CATALOG_THREAD_LOCK:
+            with open(CATALOG_LOCK_FILE, 'a+', encoding='utf-8') as lock_file:
+                fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX)
+                try:
+                    return function(*args, **kwargs)
+                finally:
+                    fcntl.flock(lock_file.fileno(), fcntl.LOCK_UN)
+    return wrapper
+
+def atomic_write_text(path, content):
+    temp_path = f"{path}.tmp.{os.getpid()}.{threading.get_ident()}"
+    with open(temp_path, 'w', encoding='utf-8') as handle:
+        handle.write(content)
+        handle.flush()
+        os.fsync(handle.fileno())
+    os.replace(temp_path, path)
 
 def find_binary(name):
     """Find absolute path to binary across macOS Homebrew, Local, and system paths."""
@@ -55,23 +92,25 @@ def find_binary(name):
 
 YTDLP_BIN = find_binary("yt-dlp")
 FFMPEG_BIN = find_binary("ffmpeg")
+FFPROBE_BIN = find_binary("ffprobe")
+
+VIDEO_QUALITY_FORMATS = {
+    'best': 'bv*+ba/b',
+    '1080': 'bv*[height<=1080]+ba/b[height<=1080]/b',
+    '720': 'bv*[height<=720]+ba/b[height<=720]/b',
+    '480': 'bv*[height<=480]+ba/b[height<=480]/b',
+}
+
+
+def normalize_video_quality(value):
+    quality = str(value or 'best').lower().replace('p', '')
+    return quality if quality in VIDEO_QUALITY_FORMATS else 'best'
 
 def get_exec_env():
     """Build execution environment with full PATH including Homebrew and system binaries."""
     env = os.environ.copy()
     env["PATH"] = f"/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:{env.get('PATH', '')}"
     return env
-
-def save_cookies(cookie_content):
-    """Save browser exported Netscape cookies to local session file."""
-    if not cookie_content:
-        return
-    try:
-        with open(COOKIES_FILE, "w", encoding="utf-8") as f:
-            f.write(cookie_content)
-        print(f"🍪 [Companion Server] Saved authenticated session cookies ({len(cookie_content)} bytes)", flush=True)
-    except Exception as e:
-        print(f"⚠️ [Companion Server] Cookie save error: {e}", flush=True)
 
 def resolve_skool_video_stream(page_url, cookie_file):
     """Fetch Skool lesson page with authenticated cookies and resolve exact signed stream."""
@@ -283,6 +322,10 @@ GDRIVE_CACHE = {
 }
 
 def get_gdrive_access_token():
+    cached_token = GDRIVE_CACHE.get("token")
+    if cached_token and (time.time() - GDRIVE_CACHE.get("token_time", 0)) < 45 * 60:
+        return cached_token
+
     token_path = os.path.expanduser('~/.gemini/gdrive_token.json')
     if not os.path.exists(token_path):
         return None
@@ -378,29 +421,26 @@ def get_or_create_gdrive_folder(folder_name, parent_id=None, token=None):
             GDRIVE_CACHE["folders"].clear()
             return None
 
-def resolve_gdrive_folder_hierarchy(path_parts, root_name="Skool Downloads", token=None):
+def resolve_gdrive_folder_hierarchy(path_parts, root_name="Skool Downloads", token=None, root_id=None, create=True):
     if not token:
         token = get_gdrive_access_token()
     if not token:
         return None
-
-    current_parent = get_or_create_gdrive_folder(clean_folder_name(root_name), None, token)
-    if not current_parent:
-        print("❌ [Google Drive] Failed to resolve root folder", flush=True)
+    normalized_parts = [clean_folder_name(part) for part in path_parts if part]
+    try:
+        if root_id:
+            return resolve_drive_path(token, normalized_parts, root_id=root_id, create=create)
+        return resolve_drive_path(
+            token,
+            [clean_folder_name(root_name)] + normalized_parts,
+            root_id='root',
+            create=create,
+        )
+    except DriveFolderError as error:
+        print(f"❌ [Google Drive] Folder hierarchy error: {error}", flush=True)
         return None
 
-    for part in path_parts:
-        if part:
-            clean_part = clean_folder_name(part)
-            next_parent = get_or_create_gdrive_folder(clean_part, current_parent, token)
-            if not next_parent:
-                print(f"❌ [Google Drive] Failed to resolve subfolder {clean_part}, aborting tree to prevent root spill", flush=True)
-                return None
-            current_parent = next_parent
-
-    return current_parent
-
-def upload_file_to_gdrive(local_file_path, folder_id, token=None, max_retries=3):
+def upload_file_to_gdrive(local_file_path, folder_id, token=None, max_retries=3, replace_file_id=None):
     if not token:
         token = get_gdrive_access_token()
     if not token or not os.path.exists(local_file_path):
@@ -415,15 +455,23 @@ def upload_file_to_gdrive(local_file_path, folder_id, token=None, max_retries=3)
     for attempt in range(1, max_retries + 1):
         print(f"☁️ [Google Drive] Uploading {file_name} ({file_size / (1024*1024):.2f} MB) [Intento {attempt}/{max_retries}]...", flush=True)
         try:
-            metadata = {'name': file_name, 'parents': [folder_id]}
+            metadata = {'name': file_name}
+            if not replace_file_id:
+                metadata['parents'] = [folder_id]
+            upload_endpoint = (
+                f'https://www.googleapis.com/upload/drive/v3/files/{replace_file_id}?uploadType=resumable'
+                if replace_file_id else
+                'https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable'
+            )
             init_req = urllib.request.Request(
-                'https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable',
+                upload_endpoint,
                 data=json.dumps(metadata).encode('utf-8'),
                 headers={
                     'Authorization': f'Bearer {token}',
                     'Content-Type': 'application/json; charset=UTF-8',
                     'X-Upload-Content-Length': str(file_size)
-                }
+                },
+                method='PATCH' if replace_file_id else 'POST'
             )
 
             with urllib.request.urlopen(init_req, context=SSL_CTX, timeout=30) as res:
@@ -475,9 +523,11 @@ def upload_file_to_gdrive(local_file_path, folder_id, token=None, max_retries=3)
                         else:
                             raise he
 
-            if file_id:
-                print(f"✅ [Google Drive] Uploaded successfully: {file_name} (ID: {file_id})", flush=True)
-                return file_id
+            confirmed_id = file_id or replace_file_id
+            if confirmed_id:
+                action = "Replaced" if replace_file_id else "Uploaded"
+                print(f"✅ [Google Drive] {action} successfully: {file_name} (ID: {confirmed_id})", flush=True)
+                return confirmed_id
 
         except Exception as e:
             print(f"⚠️ [Google Drive] Upload attempt {attempt} failed for {file_name}: {e}", flush=True)
@@ -487,6 +537,7 @@ def upload_file_to_gdrive(local_file_path, folder_id, token=None, max_retries=3)
 
     return None
 
+@synchronized_catalog_write
 def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=False):
     """Automatically synchronizes newly uploaded Google Drive files into studio-web/data/course-data.js."""
     if not context or not gdrive_id:
@@ -551,7 +602,7 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
         # 3. Find or create module
         mod = next((m for m in course['modules'] if m.get('title') == module_name or m.get('folder') == module_name), None)
         if not mod:
-            mod_idx = len(course['modules']) + 1
+            mod_idx = int(context.get('moduleIndex') or (len(course['modules']) + 1))
             mod = {
                 "index": mod_idx,
                 "folder": module_name,
@@ -564,8 +615,8 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
         clean_les_title = str(lesson_title).strip()
         les = next((l for l in mod['lessons'] if l.get('title') == clean_les_title or l.get('rawTitle') == clean_les_title), None)
         if not les:
-            les_idx = len(mod['lessons']) + 1
-            global_idx = sum(len(m.get('lessons', [])) for m in course['modules']) + 1
+            les_idx = int(context.get('lessonIndexInModule') or context.get('lessonIndex') or (len(mod['lessons']) + 1))
+            global_idx = int(context.get('globalLessonIndex') or context.get('lessonIndex') or (sum(len(m.get('lessons', [])) for m in course['modules']) + 1))
             les_id = context.get('lessonId') or f"les_{course_id}_{global_idx}"
             les = {
                 "id": les_id,
@@ -576,21 +627,37 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
                 "rawTitle": clean_les_title,
                 "module": module_name,
                 "moduleIndex": mod['index'],
-                "gdriveId": gdrive_id,
-                "gdriveLink": f"https://drive.google.com/file/d/{gdrive_id}/view?usp=drivesdk",
-                "inDrive": True,
+                "inDrive": False,
                 "descriptionHtml": context.get('descriptionHtml') or context.get('description') or "",
                 "resources": resources
             }
             mod['lessons'].append(les)
-        else:
+        if not is_resource:
             les['gdriveId'] = gdrive_id
             les['gdriveLink'] = f"https://drive.google.com/file/d/{gdrive_id}/view?usp=drivesdk"
             les['inDrive'] = True
             if context.get('descriptionHtml') or context.get('description'):
                 les['descriptionHtml'] = context.get('descriptionHtml') or context.get('description')
             if resources:
-                les['resources'] = resources
+                les['resources'] = merge_resources(les.get('resources'), resources)
+            quality = normalize_video_quality(context.get('videoQuality'))
+            les['requestedQuality'] = quality
+            for key in ('actualWidth', 'actualHeight', 'durationSeconds', 'fileSizeBytes'):
+                if context.get(key) is not None:
+                    les[key] = context[key]
+        elif resources:
+            les['resources'] = merge_resources(les.get('resources'), resources)
+
+        course['modules'].sort(key=lambda module: (int(module.get('index') or 10 ** 9), str(module.get('title') or '')))
+        next_global_index = 1
+        for module_position, module in enumerate(course['modules'], 1):
+            module['index'] = int(module.get('index') or module_position)
+            module['lessons'].sort(key=lambda lesson: (int(lesson.get('index') or 10 ** 9), str(lesson.get('title') or '')))
+            for lesson_position, lesson in enumerate(module['lessons'], 1):
+                lesson['index'] = int(lesson.get('index') or lesson_position)
+                lesson['moduleIndex'] = module['index']
+                lesson['globalIndex'] = next_global_index
+                next_global_index += 1
 
         # Update course totals
         course['totalModules'] = len(course['modules'])
@@ -599,11 +666,9 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
 
         # Write back to both root and studio-web course-data.js
         new_content = f"window.COMMUNITIES_DATA = {json.dumps(communities, indent=2, ensure_ascii=False)};\n\nwindow.COURSE_DATA = window.COMMUNITIES_DATA[0].courses[0];\n"
-        with open(course_data_file, 'w', encoding='utf-8') as f:
-            f.write(new_content)
+        atomic_write_text(course_data_file, new_content)
         root_data_file = os.path.join(BASE_DIR, 'data', 'course-data.js')
-        with open(root_data_file, 'w', encoding='utf-8') as rf:
-            rf.write(new_content)
+        atomic_write_text(root_data_file, new_content)
 
         print(f"🎬 [Studio Sync] Automatically updated Cinematic Studio with: {clean_les_title} ({course_name})", flush=True)
         trigger_background_cloud_sync()
@@ -611,42 +676,43 @@ def update_studio_web_course_data(context, file_name, gdrive_id, is_resource=Fal
     except Exception as e:
         print(f"⚠️ [Studio Sync] Note: {e}", flush=True)
 
-_CLOUD_SYNC_TIMER = None
 _CLOUD_SYNC_LOCK = threading.Lock()
+_CLOUD_SYNC_PENDING = False
 
 def trigger_background_cloud_sync():
-    """Debounced asynchronously commit and deploy updated course-data.js to Vercel without blocking downloads."""
-    global _CLOUD_SYNC_TIMER
+    """Mark the catalog dirty; publishing is performed once at the explicit batch boundary."""
+    global _CLOUD_SYNC_PENDING
     with _CLOUD_SYNC_LOCK:
-        if _CLOUD_SYNC_TIMER and _CLOUD_SYNC_TIMER.is_alive():
-            _CLOUD_SYNC_TIMER.cancel()
+        _CLOUD_SYNC_PENDING = True
 
-        def _do_sync():
-            try:
-                studio_dir = os.path.join(BASE_DIR, 'studio-web')
-                env = os.environ.copy()
-                env["PATH"] = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:" + env.get("PATH", "")
-                
-                git_bin = shutil.which("git", path=env["PATH"]) or "/usr/bin/git"
-                vercel_bin = shutil.which("vercel", path=env["PATH"]) or "/opt/homebrew/bin/vercel"
+@synchronized_catalog_write
+def sync_cloud_catalog():
+    """Create at most one Git-triggered Vercel deployment for all pending catalog changes."""
+    global _CLOUD_SYNC_PENDING
+    with _CLOUD_SYNC_LOCK:
+        env = get_exec_env()
+        git_bin = shutil.which('git', path=env['PATH']) or '/usr/bin/git'
+        catalog_paths = ['data/course-data.js', 'studio-web/data/course-data.js']
+        subprocess.run([git_bin, 'add', '--', *catalog_paths], cwd=BASE_DIR, env=env, check=True, capture_output=True, text=True)
+        diff_result = subprocess.run([git_bin, 'diff', '--cached', '--quiet', '--', *catalog_paths], cwd=BASE_DIR, env=env)
+        if diff_result.returncode == 0:
+            _CLOUD_SYNC_PENDING = False
+            return {"success": True, "noChanges": True}
+        if diff_result.returncode != 1:
+            raise RuntimeError('No se pudo comprobar el catálogo antes de sincronizar.')
+        subprocess.run(
+            [git_bin, 'commit', '-m', 'chore: sync course catalog', '--', *catalog_paths],
+            cwd=BASE_DIR, env=env, check=True, capture_output=True, text=True
+        )
+        branch = subprocess.run(
+            [git_bin, 'rev-parse', '--abbrev-ref', 'HEAD'],
+            cwd=BASE_DIR, env=env, check=True, capture_output=True, text=True
+        ).stdout.strip()
+        subprocess.run([git_bin, 'push', 'origin', branch], cwd=BASE_DIR, env=env, check=True, capture_output=True, text=True)
+        _CLOUD_SYNC_PENDING = False
+        return {"success": True, "noChanges": False, "branch": branch}
 
-                subprocess.run([git_bin, "add", "."], cwd=BASE_DIR, env=env, capture_output=True)
-                subprocess.run([git_bin, "commit", "-m", "chore: auto-sync course catalog and notes [skip ci]"], cwd=BASE_DIR, env=env, capture_output=True)
-                subprocess.run([git_bin, "push", "origin", "main"], cwd=BASE_DIR, env=env, capture_output=True)
-                
-                res = subprocess.run([vercel_bin, "--prod", "--yes"], cwd=studio_dir, env=env, capture_output=True, text=True)
-                if res.returncode == 0:
-                    print("🚀 [Vercel Cloud Sync] Successfully deployed newest course catalog to Vercel production!", flush=True)
-                else:
-                    print(f"⚠️ [Vercel Cloud Sync] Vercel CLI returned: {res.stderr.strip()}", flush=True)
-            except Exception as e:
-                print(f"⚠️ [Vercel Cloud Sync] Background deploy error: {e}", flush=True)
-
-        _CLOUD_SYNC_TIMER = threading.Timer(3.0, _do_sync)
-        _CLOUD_SYNC_TIMER.daemon = True
-        _CLOUD_SYNC_TIMER.start()
-
-def process_gdrive_sync(local_file_path, context, storage_mode, gdrive_root, task_id=None):
+def process_gdrive_sync(local_file_path, context, storage_mode, gdrive_root, task_id=None, is_resource=False):
     if storage_mode not in ['gdrive', 'both'] or not os.path.exists(local_file_path):
         return None
 
@@ -658,19 +724,30 @@ def process_gdrive_sync(local_file_path, context, storage_mode, gdrive_root, tas
                 ACTIVE_DOWNLOADS[task_id]["message"] = "☁️ Subiendo a Google Drive..."
 
     try:
-        parts = []
-        if context:
-            if context.get('community'): parts.append(clean_folder_name(context['community']))
-            if context.get('course'): parts.append(clean_folder_name(context['course']))
-            if context.get('module'): parts.append(clean_folder_name(context['module']))
-
-        folder_id = resolve_gdrive_folder_hierarchy(parts, gdrive_root or 'Skool Downloads')
+        replace_file_id = None
+        if context and not is_resource and context.get('duplicatePolicy') == 'replace':
+            replace_file_id = context.get('existingGdriveId')
+        folder_id = 'existing-file-parent' if replace_file_id else None
+        if not replace_file_id:
+            parts = []
+            if context:
+                if context.get('community'): parts.append(clean_folder_name(context['community']))
+                if context.get('course'): parts.append(clean_folder_name(context['course']))
+                if context.get('module'): parts.append(clean_folder_name(context['module']))
+                if context.get('groupLessonPack', True) and context.get('lessonTitle'):
+                    try:
+                        lesson_number = int(context.get('lessonIndexInModule') or context.get('lessonIndex') or 1)
+                    except (TypeError, ValueError):
+                        lesson_number = 1
+                    parts.append(clean_folder_name(f"{lesson_number:02d}_{context['lessonTitle']}"))
+            root_id = (context or {}).get('gdriveRootId')
+            folder_id = resolve_gdrive_folder_hierarchy(parts, gdrive_root or 'Skool Downloads', root_id=root_id)
         if folder_id:
-            uploaded_id = upload_file_to_gdrive(local_file_path, folder_id)
+            uploaded_id = upload_file_to_gdrive(local_file_path, folder_id, replace_file_id=replace_file_id)
             if uploaded_id:
                 # Automatically sync to Studio Web database
                 fname = os.path.basename(local_file_path)
-                update_studio_web_course_data(context, fname, uploaded_id)
+                update_studio_web_course_data(context, fname, uploaded_id, is_resource=is_resource)
 
                 if storage_mode == 'gdrive':
                     try:
@@ -829,6 +906,8 @@ def scan_all_course_resources(classroom_url, cookie_file=COOKIES_FILE):
         base_clean_url = classroom_url.split('?')[0]
         all_resources = []
         seen_urls = set()
+        resource_lock = threading.Lock()
+        scan_errors = []
 
         def scan_lesson(les_info):
             lid, ltitle, mod_folder = les_info
@@ -857,7 +936,9 @@ def scan_all_course_resources(classroom_url, cookie_file=COOKIES_FILE):
                         is_res = any(d in u_clean.lower() for d in ['figma.com', 'drive.google.com/file', 'drive.google.com/drive', 'dropbox.com', 'notion.so', 'canva.com', 'github.com']) or any(ext in u_clean.lower() for ext in ['.pdf', '.zip', '.rar', '.prfpset', '.aep', '.cube', '.mp3', '.wav'])
                         if is_res:
                             dedup_key = f"{lid}_{u_clean}"
-                            if dedup_key not in seen_urls:
+                            with resource_lock:
+                                if dedup_key in seen_urls:
+                                    continue
                                 seen_urls.add(dedup_key)
                                 
                                 label = "Recurso"
@@ -885,26 +966,38 @@ def scan_all_course_resources(classroom_url, cookie_file=COOKIES_FILE):
                                     color = "#ef4444"
 
                                 all_resources.append({
-                                    "id": f"res_{lid}_{len(all_resources)}",
+                                    "id": f"res_{lid}_{hashlib.sha1(u_clean.encode('utf-8')).hexdigest()[:12]}",
                                     "lessonId": lid,
                                     "moduleTitle": real_mod_title,
+                                    "moduleIndex": lesson_map.get(lid, {}).get("moduleNum", 10 ** 6),
                                     "lessonTitle": real_les_title,
+                                    "lessonIndex": lesson_map.get(lid, {}).get("lessonIndex", 10 ** 6),
                                     "name": f"{label} · {real_les_title}",
                                     "url": u_clean,
                                     "category": cat_type,
                                     "categoryLabel": label,
                                     "badgeColor": color
                                 })
-            except Exception:
-                pass
+            except Exception as exc:
+                with resource_lock:
+                    scan_errors.append({"lessonId": lid, "error": str(exc)})
 
-        with ThreadPoolExecutor(max_workers=8) as executor:
-            executor.map(scan_lesson, unique_lessons)
+        with ThreadPoolExecutor(max_workers=3) as executor:
+            list(executor.map(scan_lesson, unique_lessons))
+
+        all_resources.sort(key=lambda resource: (
+            resource.get('moduleIndex', 10 ** 6),
+            resource.get('lessonIndex', 10 ** 6),
+            resource.get('name', '')
+        ))
 
         return {
             "success": True,
             "totalResources": len(all_resources),
-            "resources": all_resources
+            "resources": all_resources,
+            "scannedLessons": len(unique_lessons),
+            "failedLessons": len(scan_errors),
+            "errors": scan_errors[:20]
         }
 
     except Exception as e:
@@ -1178,7 +1271,8 @@ def generate_aesthetic_resource_guide(target_dir, resources_list, community="Ult
             if context.get('community'): parts.append(clean_folder_name(context['community']))
             if context.get('course'): parts.append(clean_folder_name(context['course']))
         
-        folder_id = resolve_gdrive_folder_hierarchy(parts, gdrive_root or 'Skool Downloads')
+        root_id = (context or {}).get('gdriveRootId')
+        folder_id = resolve_gdrive_folder_hierarchy(parts, gdrive_root or 'Skool Downloads', root_id=root_id)
         if folder_id:
             gdoc_all_modules = "\n".join(gdoc_modules_html)
             gdoc_html = f"""<!DOCTYPE html>
@@ -1233,7 +1327,7 @@ def download_file_worker(task_id, raw_url, filename, folder, storage_mode='local
                 "-O", target_dir
             ]
             subprocess.run(cmd, capture_output=True, text=True, timeout=120, env=get_exec_env())
-            gid = process_gdrive_sync(target_path, context, storage_mode, gdrive_root, task_id)
+            gid = process_gdrive_sync(target_path, context, storage_mode, gdrive_root, task_id, is_resource=True)
             with DOWNLOAD_LOCK:
                 if task_id in ACTIVE_DOWNLOADS: del ACTIVE_DOWNLOADS[task_id]
                 COMPLETED_DOWNLOADS[task_id] = {"title": clean_fn, "gdriveId": gid, "type": "resource"}
@@ -1247,7 +1341,7 @@ def download_file_worker(task_id, raw_url, filename, folder, storage_mode='local
                 "-O", target_path
             ]
             subprocess.run(cmd, capture_output=True, text=True, timeout=60, env=get_exec_env())
-            gid = process_gdrive_sync(target_path, context, storage_mode, gdrive_root, task_id)
+            gid = process_gdrive_sync(target_path, context, storage_mode, gdrive_root, task_id, is_resource=True)
             with DOWNLOAD_LOCK:
                 if task_id in ACTIVE_DOWNLOADS: del ACTIVE_DOWNLOADS[task_id]
                 COMPLETED_DOWNLOADS[task_id] = {"title": clean_fn, "gdriveId": gid, "type": "resource"}
@@ -1255,7 +1349,7 @@ def download_file_worker(task_id, raw_url, filename, folder, storage_mode='local
 
         elif any(domain in raw_url for domain in ['figma.com', 'canva.com', 'notion.so', 'miro.com']):
             create_url_shortcut(target_path, raw_url, filename)
-            gid = process_gdrive_sync(target_path + '.url', context, storage_mode, gdrive_root, task_id)
+            gid = process_gdrive_sync(target_path + '.url', context, storage_mode, gdrive_root, task_id, is_resource=True)
             with DOWNLOAD_LOCK:
                 if task_id in ACTIVE_DOWNLOADS: del ACTIVE_DOWNLOADS[task_id]
                 COMPLETED_DOWNLOADS[task_id] = {"title": clean_fn, "gdriveId": gid, "type": "resource"}
@@ -1292,7 +1386,7 @@ def download_file_worker(task_id, raw_url, filename, folder, storage_mode='local
                             ACTIVE_DOWNLOADS[task_id]["percent"] = pct
 
         print(f"✅ [Companion Server] Saved resource: {target_path}", flush=True)
-        gid = process_gdrive_sync(target_path, context, storage_mode, gdrive_root, task_id)
+        gid = process_gdrive_sync(target_path, context, storage_mode, gdrive_root, task_id, is_resource=True)
 
         if storage_mode == 'gdrive' and not gid:
             print(f"❌ [Companion Server] Resource {clean_fn} failed to upload to Google Drive", flush=True)
@@ -1317,13 +1411,11 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
     clean_t = clean_file_name(title)
     out_template = os.path.join(target_dir, f"{clean_t}.%(ext)s")
 
-    # 1. If it's a Skool webpage URL, resolve the signed stream using session cookies
+    # The extension resolves private Skool pages inside the authenticated browser
+    # session before handing a short-lived direct media URL to this legacy bridge.
     download_url = url
     if "skool.com" in url and "stream.mux.com" not in url and ".m3u8" not in url:
-        resolved = resolve_skool_video_stream(url, COOKIES_FILE)
-        if resolved:
-            download_url = resolved
-            print(f"⚡ [Companion Server] Using resolved direct stream: {download_url[:70]}...", flush=True)
+        raise ValueError('La URL de Skool debe resolverse en el navegador antes de iniciar la descarga.')
 
     # 2. If it's a Loom URL, sanitize to clean share URL for native yt-dlp extractor
     if "loom.com" in download_url:
@@ -1332,18 +1424,20 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
             download_url = f"https://www.loom.com/share/{clean_lid.group(1)}"
             print(f"⚡ [Companion Server] Sanitized Loom URL: {download_url}", flush=True)
 
+    context = context or {}
+    selected_quality = normalize_video_quality(context.get('videoQuality'))
     cmd = [
         YTDLP_BIN,
-        "--no-check-certificate",
         "--no-playlist",
+        "--format", VIDEO_QUALITY_FORMATS[selected_quality],
         "--merge-output-format", "mp4",
         "--referer", "https://www.skool.com/",
         "--user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
         "--extractor-args", "youtube:player_client=android,web",
-        "--concurrent-fragments", "10",
+        "--concurrent-fragments", "3",
     ]
-    if os.path.exists(COOKIES_FILE) and os.path.getsize(COOKIES_FILE) > 50:
-        cmd.extend(["--cookies", COOKIES_FILE])
+    if context.get('duplicatePolicy') == 'replace':
+        cmd.append('--force-overwrites')
     cmd.extend(["-o", out_template, download_url])
 
     with DOWNLOAD_LOCK:
@@ -1394,6 +1488,20 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
             gdrive_id = None
             if os.path.exists(final_mp4):
                 fsize = round(os.path.getsize(final_mp4) / (1024*1024), 2)
+                context['fileSizeBytes'] = os.path.getsize(final_mp4)
+                try:
+                    probe = subprocess.run(
+                        [FFPROBE_BIN, '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height:format=duration', '-of', 'json', final_mp4],
+                        capture_output=True, text=True, timeout=30, env=get_exec_env(), check=True
+                    )
+                    metadata = json.loads(probe.stdout or '{}')
+                    stream = (metadata.get('streams') or [{}])[0]
+                    context['actualWidth'] = stream.get('width')
+                    context['actualHeight'] = stream.get('height')
+                    duration = (metadata.get('format') or {}).get('duration')
+                    context['durationSeconds'] = round(float(duration), 3) if duration else None
+                except Exception:
+                    pass
                 gdrive_id = process_gdrive_sync(final_mp4, context, storage_mode, gdrive_root, task_id)
 
             if storage_mode == 'gdrive' and not gdrive_id:
@@ -1429,11 +1537,146 @@ def execute_ytdlp_download(task_id, url, title, folder, storage_mode='local', gd
 # ==========================================
 
 class DownloaderHandler(BaseHTTPRequestHandler):
+    @staticmethod
+    def _origin_is_allowed(origin):
+        return not origin or (
+            origin.startswith('chrome-extension://') or
+            origin.startswith('http://127.0.0.1') or
+            origin.startswith('http://localhost') or
+            origin == 'https://cinematic-lms-studio.vercel.app'
+        )
+
     def _send_cors_headers(self):
-        self.send_header('Access-Control-Allow-Origin', '*')
+        request_origin = self.headers.get('Origin', '')
+        allowed_origin = request_origin if self._origin_is_allowed(request_origin) else 'http://127.0.0.1:4545'
+        self.send_header('Access-Control-Allow-Origin', allowed_origin)
+        self.send_header('Vary', 'Origin')
         self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-        self.send_header('Access-Control-Allow-Headers', 'Content-Type, *')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type, Range')
+        self.send_header('Access-Control-Expose-Headers', 'Accept-Ranges, Content-Length, Content-Range')
         self.send_header('Access-Control-Allow-Private-Network', 'true')
+
+    def _send_json_error(self, status_code, message):
+        self.send_response(status_code)
+        self._send_cors_headers()
+        self.send_header('Content-Type', 'application/json; charset=utf-8')
+        self.send_header('Cache-Control', 'no-store')
+        self.end_headers()
+        self.wfile.write(json.dumps({"success": False, "error": message}).encode('utf-8'))
+
+    def _send_json(self, payload, status_code=200):
+        self.send_response(status_code)
+        self._send_cors_headers()
+        self.send_header('Content-Type', 'application/json; charset=utf-8')
+        self.send_header('Cache-Control', 'no-store')
+        self.end_headers()
+        self.wfile.write(json.dumps(payload, ensure_ascii=False).encode('utf-8'))
+
+    def _drive_folder_browser(self):
+        if not self._origin_is_allowed(self.headers.get('Origin', '')):
+            self._send_json_error(403, 'Este origen no puede consultar Google Drive.')
+            return
+        token = get_gdrive_access_token()
+        if not token:
+            self._send_json_error(503, 'Google Drive no está conectado en el servidor local.')
+            return
+        try:
+            query = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
+            parent_id = str(query.get('parentId', ['root'])[0] or 'root').strip()
+            current = drive_verify_folder(token, parent_id)
+            self._send_json({
+                'success': True,
+                'current': {'id': current['id'], 'name': current.get('name') or 'Carpeta'},
+                'breadcrumb': drive_breadcrumb(token, parent_id),
+                'folders': [
+                    {'id': item['id'], 'name': item.get('name') or 'Carpeta', 'webViewLink': item.get('webViewLink')}
+                    for item in drive_list_folders(token, parent_id)
+                ],
+            })
+        except Exception as error:
+            self._send_json_error(400, str(error))
+
+    def _drive_folder_verify(self):
+        if not self._origin_is_allowed(self.headers.get('Origin', '')):
+            self._send_json_error(403, 'Este origen no puede consultar Google Drive.')
+            return
+        token = get_gdrive_access_token()
+        if not token:
+            self._send_json_error(503, 'Google Drive no está conectado en el servidor local.')
+            return
+        try:
+            query = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
+            folder_id = str(query.get('id', [''])[0]).strip()
+            current = drive_verify_folder(token, folder_id)
+            crumbs = drive_breadcrumb(token, folder_id)
+            self._send_json({
+                'success': True,
+                'folder': {'id': current['id'], 'name': current.get('name') or 'Carpeta'},
+                'breadcrumb': crumbs,
+                'path': ' / '.join(item['name'] for item in crumbs),
+            })
+        except Exception as error:
+            self._send_json_error(400, str(error))
+
+    def _proxy_drive_video(self):
+        """Stream a private Drive video through the user's local OAuth session."""
+        if not self._origin_is_allowed(self.headers.get('Origin', '')):
+            self._send_json_error(403, 'Este origen no puede usar el reproductor local.')
+            return
+
+        query_params = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
+        file_id = str(query_params.get('id', [''])[0]).strip()
+        if not re.fullmatch(r'[A-Za-z0-9_-]{10,200}', file_id):
+            self._send_json_error(400, 'ID de Google Drive inválido.')
+            return
+
+        token = get_gdrive_access_token()
+        if not token:
+            self._send_json_error(503, 'Google Drive no está conectado en el servidor local.')
+            return
+
+        media_url = f'https://www.googleapis.com/drive/v3/files/{urllib.parse.quote(file_id)}?alt=media'
+        request_headers = {'Authorization': f'Bearer {token}'}
+        range_header = self.headers.get('Range')
+        if range_header:
+            request_headers['Range'] = range_header
+
+        response_started = False
+        try:
+            request = urllib.request.Request(media_url, headers=request_headers)
+            with urllib.request.urlopen(request, context=SSL_CTX, timeout=60) as upstream:
+                content_range = upstream.headers.get('Content-Range')
+                response_status = 206 if content_range else 200
+                self.send_response(response_status)
+                self._send_cors_headers()
+                upstream_content_type = upstream.headers.get('Content-Type') or ''
+                content_type = 'video/mp4' if upstream_content_type in ('', 'application/octet-stream') else upstream_content_type
+                self.send_header('Content-Type', content_type)
+                self.send_header('Accept-Ranges', upstream.headers.get('Accept-Ranges') or 'bytes')
+                self.send_header('Cache-Control', 'private, no-store')
+                self.send_header('X-Content-Type-Options', 'nosniff')
+                for header_name in ('Content-Length', 'Content-Range'):
+                    header_value = upstream.headers.get(header_name)
+                    if header_value:
+                        self.send_header(header_name, header_value)
+                self.end_headers()
+                response_started = True
+
+                while True:
+                    chunk = upstream.read(1024 * 1024)
+                    if not chunk:
+                        break
+                    self.wfile.write(chunk)
+        except urllib.error.HTTPError as error:
+            status_code = error.code if error.code in (401, 403, 404, 416) else 502
+            self._send_json_error(status_code, 'Google Drive no permitió leer este video.')
+        except (BrokenPipeError, ConnectionResetError):
+            # Normal when the user seeks or switches lessons before a range finishes.
+            return
+        except Exception as error:
+            print(f"⚠️ [Drive Video] Proxy error for {file_id}: {error}", flush=True)
+            if not response_started:
+                self._send_json_error(502, 'No se pudo reproducir el video desde Google Drive.')
 
     def do_OPTIONS(self):
         self.send_response(200)
@@ -1441,14 +1684,23 @@ class DownloaderHandler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
-        if self.path == '/status':
+        if self.path.startswith('/drive-video'):
+            self._proxy_drive_video()
+
+        elif self.path.startswith('/drive/folders'):
+            self._drive_folder_browser()
+
+        elif self.path.startswith('/drive/folder/verify'):
+            self._drive_folder_verify()
+
+        elif self.path == '/status':
             self.send_response(200)
             self._send_cors_headers()
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
             self.wfile.write(json.dumps({
                 "status": "online",
-                "version": "2.3.3",
+                "version": "2.8.0",
                 "ytdlp": os.path.exists(YTDLP_BIN),
                 "ytdlpPath": YTDLP_BIN,
                 "ffmpeg": os.path.exists(FFMPEG_BIN),
@@ -1488,6 +1740,7 @@ class DownloaderHandler(BaseHTTPRequestHandler):
                 community = query_params.get('community', [None])[0]
                 course = query_params.get('course', [None])[0]
                 gdrive_root = query_params.get('gdriveRoot', ['Skool Downloads'])[0]
+                gdrive_root_id = query_params.get('gdriveRootId', [None])[0]
 
                 token = get_gdrive_access_token()
                 parent_folder_ids = set()
@@ -1497,7 +1750,7 @@ class DownloaderHandler(BaseHTTPRequestHandler):
                     if community: parts.append(clean_folder_name(community))
                     parts.append(clean_folder_name(course))
                     
-                    course_folder_id = resolve_gdrive_folder_hierarchy(parts, gdrive_root, token)
+                    course_folder_id = resolve_gdrive_folder_hierarchy(parts, gdrive_root, token, gdrive_root_id, create=False)
                     if not course_folder_id:
                         self.wfile.write(json.dumps({
                             "success": True,
@@ -1544,6 +1797,22 @@ class DownloaderHandler(BaseHTTPRequestHandler):
             except Exception as e:
                 self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode('utf-8'))
 
+        elif self.path.startswith('/catalog-status'):
+            try:
+                query_params = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
+                community = clean_folder_name(query_params.get('community', ['Comunidad Skool'])[0])
+                course = clean_folder_name(query_params.get('course', ['Curso'])[0])
+                result = course_status(BASE_DIR, community, course)
+                status_code = 200
+            except Exception as exc:
+                result = {"success": False, "error": str(exc)}
+                status_code = 500
+            self.send_response(status_code)
+            self._send_cors_headers()
+            self.send_header('Content-Type', 'application/json')
+            self.end_headers()
+            self.wfile.write(json.dumps(result).encode('utf-8'))
+
         elif self.path.startswith('/scan-course-resources'):
             query_params = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
             classroom_url = query_params.get('url', [None])[0] or "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7"
@@ -1556,12 +1825,17 @@ class DownloaderHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(result).encode('utf-8'))
 
         elif self.path == '/sync-cloud':
-            trigger_background_cloud_sync()
-            self.send_response(200)
+            try:
+                sync_result = sync_cloud_catalog()
+                status_code = 200
+            except Exception as exc:
+                sync_result = {"success": False, "error": str(exc)}
+                status_code = 500
+            self.send_response(status_code)
             self._send_cors_headers()
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
-            self.wfile.write(json.dumps({"success": True, "message": "Cloud sync initiated"}).encode('utf-8'))
+            self.wfile.write(json.dumps(sync_result).encode('utf-8'))
 
         elif self.path == '/studio':
             self.send_response(301)
@@ -1607,7 +1881,47 @@ class DownloaderHandler(BaseHTTPRequestHandler):
             self.end_headers()
 
     def do_POST(self):
-        if self.path == '/download':
+        if self.path == '/drive/folders/create':
+            if not self._origin_is_allowed(self.headers.get('Origin', '')):
+                self._send_json_error(403, 'Este origen no puede modificar Google Drive.')
+                return
+            token = get_gdrive_access_token()
+            if not token:
+                self._send_json_error(503, 'Google Drive no está conectado en el servidor local.')
+                return
+            try:
+                content_length = int(self.headers.get('Content-Length', 0))
+                data = json.loads(self.rfile.read(content_length).decode('utf-8'))
+                created = drive_create_folder(token, data.get('parentId') or 'root', data.get('name'))
+                self._send_json({
+                    'success': True,
+                    'folder': {'id': created['id'], 'name': created.get('name') or 'Carpeta'},
+                }, 201)
+            except Exception as error:
+                self._send_json_error(400, str(error))
+
+        elif self.path == '/catalog-reconcile':
+            content_length = int(self.headers.get('Content-Length', 0))
+            body = self.rfile.read(content_length)
+            try:
+                data = json.loads(body.decode('utf-8'))
+                result = reconcile_course(
+                    BASE_DIR,
+                    clean_folder_name(data.get('community') or 'Comunidad Skool'),
+                    clean_folder_name(data.get('course') or 'Curso'),
+                    data.get('tree') or {},
+                )
+                status_code = 200 if result.get('success') else 400
+            except Exception as exc:
+                result = {"success": False, "error": str(exc)}
+                status_code = 500
+            self.send_response(status_code)
+            self._send_cors_headers()
+            self.send_header('Content-Type', 'application/json')
+            self.end_headers()
+            self.wfile.write(json.dumps(result).encode('utf-8'))
+
+        elif self.path == '/download':
             content_length = int(self.headers.get('Content-Length', 0))
             body = self.rfile.read(content_length)
             try:
@@ -1618,11 +1932,9 @@ class DownloaderHandler(BaseHTTPRequestHandler):
                 task_id = data.get('id') or clean_file_name(title)
                 storage_mode = data.get('storageMode') or 'both'
                 gdrive_root = data.get('gdriveRoot') or 'Skool Downloads'
-                cookies = data.get('cookies')
-                context = data.get('context')
-                
-                if cookies:
-                    save_cookies(cookies)
+                context = dict(data.get('context') or {})
+                if data.get('gdriveRootId'):
+                    context['gdriveRootId'] = data['gdriveRootId']
 
                 if not url:
                     raise ValueError("No URL provided")
@@ -1667,7 +1979,9 @@ class DownloaderHandler(BaseHTTPRequestHandler):
                 task_id = data.get('id') or clean_file_name(filename)
                 storage_mode = data.get('storageMode') or 'both'
                 gdrive_root = data.get('gdriveRoot') or 'Skool Downloads'
-                context = data.get('context')
+                context = dict(data.get('context') or {})
+                if data.get('gdriveRootId'):
+                    context['gdriveRootId'] = data['gdriveRootId']
 
                 if not url:
                     raise ValueError("No URL provided")
@@ -1709,41 +2023,41 @@ class DownloaderHandler(BaseHTTPRequestHandler):
                 folder = data.get('folder') or 'Documentos/Skool Downloads'
                 storage_mode = data.get('storageMode') or 'both'
                 gdrive_root = data.get('gdriveRoot') or 'Skool Downloads'
-                cookies = data.get('cookies')
+                gdrive_root_id = data.get('gdriveRootId')
 
-                if cookies:
-                    save_cookies(cookies)
+                valid_items = [item for item in items if item.get('url')]
+                started_count = len(valid_items)
 
-                started_count = 0
-                for item in items:
-                    url = item.get('url')
-                    item_type = item.get('type') or 'video'
-                    title = item.get('title') or 'Archivo'
-                    item_folder = item.get('folder') or folder
-                    task_id = item.get('id') or clean_file_name(title)
-                    item_ctx = item.get('context')
-
-                    if url:
-                        with DOWNLOAD_LOCK:
-                            COMPLETED_DOWNLOADS.pop(task_id, None)
-                            FAILED_DOWNLOADS.pop(task_id, None)
-
-                        if item_type == 'resource':
-                            t = threading.Thread(
-                                target=download_file_worker,
-                                args=(task_id, url, title, item_folder, storage_mode, gdrive_root, item_ctx),
-                                daemon=True
-                            )
-                        else:
-                            t = threading.Thread(
-                                target=execute_ytdlp_download,
-                                args=(task_id, url, title, item_folder, storage_mode, gdrive_root, item_ctx),
-                                daemon=True
-                            )
-                        
-                        t.start()
-                        started_count += 1
-                        time.sleep(0.5)
+                def run_bounded_batch():
+                    with ThreadPoolExecutor(max_workers=2) as executor:
+                        futures = []
+                        for item in valid_items:
+                            item_type = item.get('type') or 'video'
+                            title = item.get('title') or 'Archivo'
+                            task_id = item.get('id') or clean_file_name(title)
+                            with DOWNLOAD_LOCK:
+                                COMPLETED_DOWNLOADS.pop(task_id, None)
+                                FAILED_DOWNLOADS.pop(task_id, None)
+                            worker = download_file_worker if item_type == 'resource' else execute_ytdlp_download
+                            futures.append(executor.submit(
+                                worker,
+                                task_id,
+                                item.get('url'),
+                                title,
+                                item.get('folder') or folder,
+                                storage_mode,
+                                gdrive_root,
+                                {
+                                    **(item.get('context') or {}),
+                                    **({'gdriveRootId': gdrive_root_id} if gdrive_root_id else {}),
+                                }
+                            ))
+                        for future in futures:
+                            try:
+                                future.result()
+                            except Exception as exc:
+                                print(f"⚠️ [Companion Server] Batch worker error: {exc}", flush=True)
+                threading.Thread(target=run_bounded_batch, daemon=False).start()
 
                 self.send_response(200)
                 self._send_cors_headers()
@@ -1752,7 +2066,7 @@ class DownloaderHandler(BaseHTTPRequestHandler):
                 self.wfile.write(json.dumps({
                     "success": True,
                     "startedCount": started_count,
-                    "message": f"Iniciadas {started_count} descargas en segundo plano",
+                    "message": f"Cola iniciada con {started_count} elementos (máximo 2 simultáneos)",
                     "storageMode": storage_mode
                 }).encode('utf-8'))
 
@@ -1773,7 +2087,9 @@ class DownloaderHandler(BaseHTTPRequestHandler):
                 course = data.get('course') or 'Curso'
                 storage_mode = data.get('storageMode') or 'both'
                 gdrive_root = data.get('gdriveRoot') or 'Skool Downloads'
-                context = data.get('context')
+                context = dict(data.get('context') or {})
+                if data.get('gdriveRootId'):
+                    context['gdriveRootId'] = data['gdriveRootId']
 
                 target_dir = resolve_target_dir(folder)
                 result = generate_aesthetic_resource_guide(
@@ -1796,8 +2112,8 @@ class DownloaderHandler(BaseHTTPRequestHandler):
             self.end_headers()
 
 def run_server():
-    server = HTTPServer(('127.0.0.1', PORT), DownloaderHandler)
-    print(f"⚡ [Skool Downloader Bridge] Server v2.3.3 running on http://127.0.0.1:{PORT}", flush=True)
+    server = ThreadingHTTPServer(('127.0.0.1', PORT), DownloaderHandler)
+    print(f"⚡ [Skool Downloader Bridge] Server v2.8.0 running on http://127.0.0.1:{PORT}", flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

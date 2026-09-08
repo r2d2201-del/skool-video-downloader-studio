@@ -1,5 +1,5 @@
 /**
- * Skool Video Downloader - Popup Script (v2.2.1)
+ * Skool Video Downloader - Popup Script (v2.8.0)
  * Features:
  * - Accurate Section Hierarchies ("Cutting & Preparing", "Storytelling with Your Footage", etc.)
  * - 100% Video Coverage across all 37 lessons
@@ -17,7 +17,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   let selectedLessonIds = new Set();
   let isLocalBridgeOnline = false;
   let queuePollInterval = null;
+  let nativeQueuePollInterval = null;
+  let lastNativeTerminalJobId = null;
   let activeBatchTotal = 0;
+  let libraryCourseExists = false;
+  let libraryLessonMap = new Map();
 
   let pageContext = {
     community: '',
@@ -37,57 +41,70 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  async function getSkoolCookiesNetscape() {
-    try {
-      const cookies = await chrome.cookies.getAll({ domain: "skool.com" });
-      if (!cookies || cookies.length === 0) return "";
-      let lines = ["# Netscape HTTP Cookie File"];
-      for (const c of cookies) {
-        const domain = c.domain.startsWith('.') ? c.domain : '.' + c.domain;
-        const flag = domain.startsWith('.') ? 'TRUE' : 'FALSE';
-        const path = c.path || '/';
-        const secure = c.secure ? 'TRUE' : 'FALSE';
-        const expiration = c.expirationDate ? Math.round(c.expirationDate) : (Math.round(Date.now() / 1000) + 86400 * 30);
-        const name = c.name;
-        const value = c.value;
-        lines.push(`${domain}\t${flag}\t${path}\t${secure}\t${expiration}\t${name}\t${value}`);
-      }
-      return lines.join('\n');
-    } catch (e) {
-      console.warn('[Skool Downloader] Cookies export note:', e);
-      return "";
-    }
-  }
-
   // User Settings State
   let userSettings = {
     storageMode: 'both', // 'local' | 'gdrive' | 'both'
     rootFolder: 'Documentos/Skool_Downloads',
     gdriveFolder: 'Skool Downloads',
+    gdriveRootId: '',
+    gdriveRootPath: 'Skool Downloads',
     folderPattern: '{community}/{course}/{module}/{index}_{title}',
     customCommunityName: '',
     customCourseName: '',
+    customCourseRouteId: '',
     groupLessonPack: true,
-    saveAsDialog: false
+    saveAsDialog: false,
+    videoQuality: 'best',
+    duplicatePolicy: 'skip'
   };
 
+  function getCurrentCourseRouteId() {
+    try {
+      const parts = new URL(currentTab?.url || '').pathname.split('/').filter(Boolean);
+      const classroomIndex = parts.indexOf('classroom');
+      return classroomIndex >= 0 ? (parts[classroomIndex + 1] || '') : '';
+    } catch (error) {
+      return '';
+    }
+  }
+
+  function isUsableDetectedCourseName(value) {
+    const name = String(value || '').trim();
+    const routeId = getCurrentCourseRouteId();
+    return Boolean(name && name !== 'Curso' && name !== routeId && !/^[a-f0-9]{8,}$/i.test(name));
+  }
+
   function getEffectiveCourseName() {
-    if (userSettings.customCourseName && userSettings.customCourseName.trim()) {
+    const detectedName = classroomTree.courseTitle || pageContext.course || '';
+    const routeId = getCurrentCourseRouteId();
+    const scopedOverride = userSettings.customCourseName && (
+      !isUsableDetectedCourseName(detectedName) ||
+      (routeId && userSettings.customCourseRouteId === routeId)
+    );
+    if (scopedOverride) {
       return userSettings.customCourseName.trim();
     }
-    return classroomTree.courseTitle || pageContext.course || 'Curso';
+    return detectedName || 'Curso';
+  }
+
+  function canonicalCommunityName(value) {
+    const name = String(value || '').trim();
+    const key = name.toLocaleLowerCase().replace(/[\s_-]+/g, '');
+    if (key === 'ultimateeditors2' || key === 'ultimateeditors20') return 'Ultimate Editors 2.0';
+    if (key === 'ultimateeditors' || key === 'ultimateeditors5412') return 'Ultimate editors';
+    return name;
   }
 
   function getEffectiveCommunityName() {
     if (userSettings.customCommunityName && userSettings.customCommunityName.trim()) {
-      return userSettings.customCommunityName.trim();
+      return canonicalCommunityName(userSettings.customCommunityName);
     }
-    return classroomTree.communityName || pageContext.community || 'Comunidad Skool';
+    return canonicalCommunityName(classroomTree.communityName || pageContext.community) || 'Comunidad Skool';
   }
 
   function updateDestinationPreview() {
     if (!destinationPathTextEl) return;
-    const gRoot = userSettings.gdriveFolder || 'Skool Downloads';
+    const gRoot = userSettings.gdriveRootPath || userSettings.gdriveFolder || 'Skool Downloads';
     const comm = getEffectiveCommunityName();
     const crs = getEffectiveCourseName();
     destinationPathTextEl.textContent = `${gRoot} / ${comm} / ${crs}`;
@@ -104,9 +121,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   tabButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       tabButtons.forEach(b => b.classList.remove('active'));
+      tabButtons.forEach(b => b.setAttribute('aria-selected', 'false'));
       tabContents.forEach(c => c.classList.remove('active'));
 
       btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
       const targetId = btn.getAttribute('data-tab');
       const targetContent = document.getElementById(targetId);
       if (targetContent) {
@@ -150,6 +169,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   const btnBulkDownloadVideos = document.getElementById('btn-bulk-download-videos');
   const btnBulkDownloadResources = document.getElementById('btn-bulk-download-resources');
   const btnDownloadSelected = document.getElementById('btn-download-selected');
+  const btnSyncCloud = document.getElementById('btn-sync-cloud');
+  const selectVideoQuality = document.getElementById('select-video-quality');
+  const selectDuplicatePolicy = document.getElementById('select-duplicate-policy');
+  const libraryStatusSummary = document.getElementById('library-status-summary');
 
   // Settings & Storage Elements
   const storageModeCards = document.querySelectorAll('.storage-mode-card');
@@ -157,6 +180,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   const inputCustomCourseName = document.getElementById('input-custom-course-name');
   const inputRootFolder = document.getElementById('input-root-folder');
   const inputGdriveFolder = document.getElementById('input-gdrive-folder');
+  const btnBrowseGdrive = document.getElementById('btn-browse-gdrive');
+  const gdriveFolderStatus = document.getElementById('gdrive-folder-status');
+  const driveFolderModal = document.getElementById('drive-folder-modal');
+  const driveFolderBreadcrumb = document.getElementById('drive-folder-breadcrumb');
+  const driveFolderList = document.getElementById('drive-folder-list');
+  const inputNewDriveFolder = document.getElementById('input-new-drive-folder');
+  const btnCreateDriveFolder = document.getElementById('btn-create-drive-folder');
+  const btnUseDriveFolder = document.getElementById('btn-use-drive-folder');
+  const btnCancelDrivePicker = document.getElementById('btn-cancel-drive-picker');
+  const btnCloseDrivePicker = document.getElementById('btn-close-drive-picker');
   const selectFolderPattern = document.getElementById('select-folder-pattern');
   const btnSaveSettings = document.getElementById('btn-save-settings');
   const folderChipButtons = document.querySelectorAll('.folder-chip-btn');
@@ -167,6 +200,33 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (btnHeaderOpenStudio) {
     btnHeaderOpenStudio.addEventListener('click', () => {
       chrome.tabs.create({ url: 'https://cinematic-lms-studio.vercel.app' });
+    });
+  }
+
+  if (btnSyncCloud) {
+    btnSyncCloud.addEventListener('click', async () => {
+      btnSyncCloud.disabled = true;
+      updateProgress('☁️ Sincronizando cambios pendientes...', 99, true);
+      try {
+        await checkBridgeStatus();
+        if (!isNativeMessagingActive && isLocalBridgeOnline) {
+          const bridgeResponse = await callBridge('/sync-cloud', 'GET');
+          if (!bridgeResponse?.success || !bridgeResponse.data?.success) {
+            throw new Error(bridgeResponse?.data?.error || 'No se pudo sincronizar desde el servidor local.');
+          }
+          showToast('✅ Catálogo web sincronizado en un único despliegue.');
+          updateProgress('Sincronización web completada', 100, true);
+          return;
+        }
+        const response = await chrome.runtime.sendMessage({ action: 'SYNC_PENDING_CLOUD' });
+        if (!response?.success) throw new Error(response?.error || 'No se pudo iniciar la sincronización.');
+        showToast('☁️ Sincronización única iniciada.');
+        startNativeQueuePolling(response.job?.id);
+      } catch (error) {
+        showToast(`❌ ${error.message}`);
+      } finally {
+        btnSyncCloud.disabled = false;
+      }
     });
   }
 
@@ -206,6 +266,232 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     return { success: false };
+  }
+
+  let driveFolderPickerState = { current: null, breadcrumb: [] };
+
+  function displayDrivePath(breadcrumb) {
+    const names = (breadcrumb || []).map(item => item.name).filter(Boolean);
+    if (names[0] === 'Mi unidad') names.shift();
+    return names.join(' / ') || 'Mi unidad';
+  }
+
+  function setDriveFolderStatus(message, state = '') {
+    if (!gdriveFolderStatus) return;
+    gdriveFolderStatus.textContent = message;
+    gdriveFolderStatus.classList.toggle('verified', state === 'verified');
+    gdriveFolderStatus.classList.toggle('error', state === 'error');
+  }
+
+  async function saveDriveRoot(folder, breadcrumb) {
+    const path = displayDrivePath(breadcrumb);
+    userSettings.gdriveRootId = folder.id;
+    userSettings.gdriveRootPath = path;
+    userSettings.gdriveFolder = folder.name || 'Skool Downloads';
+    if (inputGdriveFolder) inputGdriveFolder.value = path;
+    await chrome.storage.local.set({
+      gdriveRootId: userSettings.gdriveRootId,
+      gdriveRootPath: userSettings.gdriveRootPath,
+      gdriveFolder: userSettings.gdriveFolder
+    });
+    setDriveFolderStatus('✓ Carpeta comprobada por ID. Las futuras comunidades se crearán dentro.', 'verified');
+    updateDestinationPreview();
+  }
+
+  async function ensureDriveRootSelection() {
+    if (userSettings.storageMode === 'local') return false;
+    if (userSettings.gdriveRootId) {
+      const verified = await callBridge(`/drive/folder/verify?id=${encodeURIComponent(userSettings.gdriveRootId)}`, 'GET');
+      if (verified?.data?.success) {
+        await saveDriveRoot(verified.data.folder, verified.data.breadcrumb);
+        return true;
+      }
+      userSettings.gdriveRootId = '';
+    }
+
+    const root = await callBridge('/drive/folders?parentId=root', 'GET');
+    const matches = (root?.data?.folders || []).filter(folder => folder.name === 'Skool Downloads');
+    if (matches.length === 1) {
+      await saveDriveRoot(matches[0], [
+        { id: 'root', name: 'Mi unidad' },
+        { id: matches[0].id, name: matches[0].name }
+      ]);
+      return true;
+    }
+    setDriveFolderStatus(
+      matches.length > 1
+        ? 'Hay varias carpetas con ese nombre. Pulsa “Elegir…” para seleccionar la correcta.'
+        : 'No se pudo comprobar el destino. Pulsa “Elegir…” para seleccionarlo o crearlo.',
+      'error'
+    );
+    return false;
+  }
+
+  function closeDriveFolderPicker() {
+    if (driveFolderModal) driveFolderModal.hidden = true;
+  }
+
+  async function loadDriveFolder(folderId) {
+    if (!driveFolderList || !driveFolderBreadcrumb) return;
+    driveFolderList.innerHTML = '<div class="drive-folder-empty">Cargando carpetas…</div>';
+    const response = await callBridge(`/drive/folders?parentId=${encodeURIComponent(folderId || 'root')}`, 'GET');
+    if (!response?.data?.success) {
+      driveFolderList.innerHTML = '<div class="drive-folder-empty">No se pudo leer Google Drive. Comprueba la conexión.</div>';
+      return;
+    }
+
+    driveFolderPickerState = {
+      current: response.data.current,
+      breadcrumb: response.data.breadcrumb || []
+    };
+    driveFolderBreadcrumb.replaceChildren();
+    driveFolderPickerState.breadcrumb.forEach((crumb, index) => {
+      if (index > 0) driveFolderBreadcrumb.append(document.createTextNode('›'));
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'drive-folder-crumb';
+      button.textContent = crumb.name;
+      button.addEventListener('click', () => loadDriveFolder(crumb.id));
+      driveFolderBreadcrumb.append(button);
+    });
+
+    driveFolderList.replaceChildren();
+    const folders = response.data.folders || [];
+    if (!folders.length) {
+      driveFolderList.innerHTML = '<div class="drive-folder-empty">Esta carpeta no contiene otras carpetas.</div>';
+    } else {
+      folders.forEach(folder => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'drive-folder-row';
+        button.setAttribute('role', 'listitem');
+        button.textContent = `📁 ${folder.name}`;
+        button.addEventListener('click', () => loadDriveFolder(folder.id));
+        driveFolderList.append(button);
+      });
+    }
+  }
+
+  if (btnBrowseGdrive) {
+    btnBrowseGdrive.addEventListener('click', async () => {
+      if (driveFolderModal) driveFolderModal.hidden = false;
+      await loadDriveFolder(userSettings.gdriveRootId || 'root');
+    });
+  }
+  [btnCancelDrivePicker, btnCloseDrivePicker].forEach(button => {
+    if (button) button.addEventListener('click', closeDriveFolderPicker);
+  });
+  if (driveFolderModal) {
+    driveFolderModal.addEventListener('click', event => {
+      if (event.target === driveFolderModal) closeDriveFolderPicker();
+    });
+  }
+  if (btnCreateDriveFolder) {
+    btnCreateDriveFolder.addEventListener('click', async () => {
+      const name = inputNewDriveFolder?.value.trim();
+      if (!name || !driveFolderPickerState.current?.id) return;
+      btnCreateDriveFolder.disabled = true;
+      const response = await callBridge('/drive/folders/create', 'POST', {
+        parentId: driveFolderPickerState.current.id,
+        name
+      });
+      btnCreateDriveFolder.disabled = false;
+      if (!response?.data?.success) {
+        showToast('❌ No se pudo crear la carpeta.');
+        return;
+      }
+      if (inputNewDriveFolder) inputNewDriveFolder.value = '';
+      await loadDriveFolder(response.data.folder.id);
+    });
+  }
+  if (btnUseDriveFolder) {
+    btnUseDriveFolder.addEventListener('click', async () => {
+      if (!driveFolderPickerState.current?.id) return;
+      await saveDriveRoot(driveFolderPickerState.current, driveFolderPickerState.breadcrumb);
+      closeDriveFolderPicker();
+      showToast(`✅ Carpeta raíz: ${userSettings.gdriveRootPath}`);
+    });
+  }
+
+  function sendNativeCatalogMessage(payload) {
+    return new Promise(resolve => {
+      let settled = false;
+      const timeout = setTimeout(() => {
+        if (!settled) {
+          settled = true;
+          resolve(null);
+        }
+      }, 2500);
+      try {
+        chrome.runtime.sendNativeMessage('com.cinematic.skool_downloader', payload, response => {
+          if (settled) return;
+          settled = true;
+          clearTimeout(timeout);
+          resolve(chrome.runtime.lastError ? null : (response || null));
+        });
+      } catch (error) {
+        clearTimeout(timeout);
+        resolve(null);
+      }
+    });
+  }
+
+  function libraryKeyFromTitle(title) {
+    return `title:${String(title || '').trim().toLocaleLowerCase()}`;
+  }
+
+  function getLibraryLesson(lessonOrContext) {
+    if (!lessonOrContext) return null;
+    const id = lessonOrContext.id || lessonOrContext.lessonId;
+    const title = lessonOrContext.title || lessonOrContext.lessonTitle;
+    return (id && libraryLessonMap.get(String(id))) || libraryLessonMap.get(libraryKeyFromTitle(title)) || null;
+  }
+
+  function qualityLabel(status) {
+    const height = Number(status?.actualHeight || 0);
+    if (height > 0) return `${height}p`;
+    const requested = status?.requestedQuality;
+    return requested && requested !== 'best' ? `${requested}p` : '';
+  }
+
+  function applyLibraryStatus(result) {
+    libraryCourseExists = Boolean(result?.courseExists);
+    libraryLessonMap = new Map();
+    (result?.lessons || []).forEach(lesson => {
+      if (lesson.id) libraryLessonMap.set(String(lesson.id), lesson);
+      if (lesson.title) libraryLessonMap.set(libraryKeyFromTitle(lesson.title), lesson);
+    });
+
+    if (!libraryStatusSummary) return;
+    const savedCount = (result?.lessons || []).filter(lesson => lesson.inDrive).length;
+    const detectedCount = classroomTree.totalLessons || 0;
+    libraryStatusSummary.classList.toggle('complete', libraryCourseExists && detectedCount > 0 && savedCount >= detectedCount);
+    if (!libraryCourseExists) {
+      libraryStatusSummary.textContent = 'Curso nuevo: no aparece todavía en el catálogo local de la web.';
+    } else {
+      const resources = Number(result?.totalResources || 0);
+      libraryStatusSummary.textContent = `Ya guardado: ${savedCount}/${detectedCount || result.totalLessons || 0} videos · ${resources} recursos. La web se publica solo al pulsar “Sincronizar web”.`;
+    }
+  }
+
+  async function refreshLibraryStatus(reconcile = false) {
+    const community = getEffectiveCommunityName();
+    const course = getEffectiveCourseName();
+    const action = reconcile ? 'RECONCILE_COURSE' : 'GET_COURSE_STATUS';
+    const payload = { action, community, course };
+    if (reconcile) payload.tree = classroomTree;
+
+    let result = await sendNativeCatalogMessage(payload);
+    if (!result?.success) {
+      const endpoint = reconcile
+        ? '/catalog-reconcile'
+        : `/catalog-status?community=${encodeURIComponent(community)}&course=${encodeURIComponent(course)}`;
+      const bridgeResult = await callBridge(endpoint, reconcile ? 'POST' : 'GET', reconcile ? { community, course, tree: classroomTree } : null);
+      result = bridgeResult?.data || null;
+    }
+    if (result?.success) applyLibraryStatus(result);
+    else if (libraryStatusSummary) libraryStatusSummary.textContent = 'No se pudo consultar el catálogo local; la descarga seguirá disponible.';
+    return result;
   }
 
   let isNativeMessagingActive = false;
@@ -454,6 +740,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const cleanPercent = Math.min(100, Math.max(0, Math.round(percent)));
     progressPercentageText.textContent = `${cleanPercent}%`;
     progressBarFill.style.width = `${cleanPercent}%`;
+    const progressTrack = progressBarFill.parentElement;
+    if (progressTrack) progressTrack.setAttribute('aria-valuenow', String(cleanPercent));
   }
 
   // Update Storage Mode UI Selection
@@ -489,20 +777,32 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Load User Settings from Storage
   async function loadSettings() {
     try {
-      const res = await chrome.storage.local.get(['storageMode', 'rootFolder', 'gdriveFolder', 'folderPattern', 'customCommunityName', 'customCourseName', 'groupLessonPack', 'saveAsDialog']);
+      const res = await chrome.storage.local.get(['storageMode', 'rootFolder', 'gdriveFolder', 'gdriveRootId', 'gdriveRootPath', 'folderPattern', 'customCommunityName', 'customCourseName', 'customCourseRouteId', 'groupLessonPack', 'saveAsDialog', 'videoQuality', 'duplicatePolicy']);
       if (res.storageMode) userSettings.storageMode = res.storageMode;
       if (res.rootFolder) userSettings.rootFolder = res.rootFolder;
       if (res.gdriveFolder) userSettings.gdriveFolder = res.gdriveFolder;
+      if (res.gdriveRootId) userSettings.gdriveRootId = res.gdriveRootId;
+      if (res.gdriveRootPath) userSettings.gdriveRootPath = res.gdriveRootPath;
       if (res.folderPattern) userSettings.folderPattern = res.folderPattern;
-      if (res.customCommunityName) userSettings.customCommunityName = res.customCommunityName;
+      if (res.customCommunityName) {
+        userSettings.customCommunityName = canonicalCommunityName(res.customCommunityName);
+        if (userSettings.customCommunityName !== res.customCommunityName) {
+          await chrome.storage.local.set({ customCommunityName: userSettings.customCommunityName });
+        }
+      }
       if (res.customCourseName) userSettings.customCourseName = res.customCourseName;
+      if (res.customCourseRouteId) userSettings.customCourseRouteId = res.customCourseRouteId;
       if (typeof res.groupLessonPack === 'boolean') userSettings.groupLessonPack = res.groupLessonPack;
       if (typeof res.saveAsDialog === 'boolean') userSettings.saveAsDialog = res.saveAsDialog;
+      if (['best', '1080', '720', '480'].includes(res.videoQuality)) userSettings.videoQuality = res.videoQuality;
+      if (['skip', 'replace'].includes(res.duplicatePolicy)) userSettings.duplicatePolicy = res.duplicatePolicy;
 
       updateStorageModeUI(userSettings.storageMode);
       inputRootFolder.value = userSettings.rootFolder;
-      inputGdriveFolder.value = userSettings.gdriveFolder;
+      inputGdriveFolder.value = userSettings.gdriveRootPath || userSettings.gdriveFolder;
       selectFolderPattern.value = userSettings.folderPattern;
+      if (selectVideoQuality) selectVideoQuality.value = userSettings.videoQuality;
+      if (selectDuplicatePolicy) selectDuplicatePolicy.value = userSettings.duplicatePolicy;
       if (inputCustomCommunityName) {
         inputCustomCommunityName.value = userSettings.customCommunityName || '';
         inputCustomCommunityName.placeholder = 'Detectado automáticamente';
@@ -520,20 +820,25 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Save Settings Handler
   btnSaveSettings.addEventListener('click', async () => {
     userSettings.rootFolder = inputRootFolder.value.trim() || 'Documentos/Skool_Downloads';
-    userSettings.gdriveFolder = inputGdriveFolder.value.trim() || 'Skool Downloads';
     userSettings.folderPattern = selectFolderPattern.value;
-    if (inputCustomCommunityName) userSettings.customCommunityName = inputCustomCommunityName.value.trim();
+    if (inputCustomCommunityName) userSettings.customCommunityName = canonicalCommunityName(inputCustomCommunityName.value);
     if (inputCustomCourseName) userSettings.customCourseName = inputCustomCourseName.value.trim();
+    userSettings.customCourseRouteId = userSettings.customCourseName ? getCurrentCourseRouteId() : '';
 
     await chrome.storage.local.set({
       storageMode: userSettings.storageMode,
       rootFolder: userSettings.rootFolder,
       gdriveFolder: userSettings.gdriveFolder,
+      gdriveRootId: userSettings.gdriveRootId,
+      gdriveRootPath: userSettings.gdriveRootPath,
       folderPattern: userSettings.folderPattern,
       customCommunityName: userSettings.customCommunityName,
       customCourseName: userSettings.customCourseName,
+      customCourseRouteId: userSettings.customCourseRouteId,
       groupLessonPack: userSettings.groupLessonPack,
-      saveAsDialog: userSettings.saveAsDialog
+      saveAsDialog: userSettings.saveAsDialog,
+      videoQuality: userSettings.videoQuality,
+      duplicatePolicy: userSettings.duplicatePolicy
     });
     updateDestinationPreview();
     let destLabel = 'Ambos (PC + Google Drive)';
@@ -542,6 +847,25 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     showToast(`✅ Destino guardado: ${destLabel}`);
   });
+
+  if (selectVideoQuality) {
+    selectVideoQuality.addEventListener('change', async (event) => {
+      userSettings.videoQuality = event.target.value;
+      await chrome.storage.local.set({ videoQuality: userSettings.videoQuality });
+      showToast(`🎞️ Calidad: ${event.target.options[event.target.selectedIndex].textContent}`);
+    });
+  }
+
+  if (selectDuplicatePolicy) {
+    selectDuplicatePolicy.addEventListener('change', async (event) => {
+      userSettings.duplicatePolicy = event.target.value;
+      await chrome.storage.local.set({ duplicatePolicy: userSettings.duplicatePolicy });
+      renderClassroomTree(classroomTree);
+      showToast(userSettings.duplicatePolicy === 'replace'
+        ? '♻️ Los videos existentes se reemplazarán conservando su enlace de Drive.'
+        : '✅ Los videos ya guardados se omitirán.');
+    });
+  }
 
   // Edit Destination Button Handler
   if (btnEditDestination) {
@@ -565,11 +889,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   if (inputCustomCommunityName) {
     inputCustomCommunityName.addEventListener('input', (e) => {
-      userSettings.customCommunityName = e.target.value.trim();
+      userSettings.customCommunityName = canonicalCommunityName(e.target.value);
       updateDestinationPreview();
     });
     inputCustomCommunityName.addEventListener('change', async (e) => {
-      userSettings.customCommunityName = e.target.value.trim();
+      userSettings.customCommunityName = canonicalCommunityName(e.target.value);
+      e.target.value = userSettings.customCommunityName;
       await chrome.storage.local.set({ customCommunityName: userSettings.customCommunityName });
     });
   }
@@ -577,22 +902,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (inputCustomCourseName) {
     inputCustomCourseName.addEventListener('input', (e) => {
       userSettings.customCourseName = e.target.value.trim();
+      userSettings.customCourseRouteId = userSettings.customCourseName ? getCurrentCourseRouteId() : '';
       updateDestinationPreview();
     });
     inputCustomCourseName.addEventListener('change', async (e) => {
       userSettings.customCourseName = e.target.value.trim();
-      await chrome.storage.local.set({ customCourseName: userSettings.customCourseName });
-    });
-  }
-
-  if (inputGdriveFolder) {
-    inputGdriveFolder.addEventListener('input', (e) => {
-      userSettings.gdriveFolder = e.target.value.trim() || 'Skool Downloads';
-      updateDestinationPreview();
-    });
-    inputGdriveFolder.addEventListener('change', async (e) => {
-      userSettings.gdriveFolder = e.target.value.trim() || 'Skool Downloads';
-      await chrome.storage.local.set({ gdriveFolder: userSettings.gdriveFolder });
+      userSettings.customCourseRouteId = userSettings.customCourseName ? getCurrentCourseRouteId() : '';
+      await chrome.storage.local.set({
+        customCourseName: userSettings.customCourseName,
+        customCourseRouteId: userSettings.customCourseRouteId
+      });
     });
   }
 
@@ -624,8 +943,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const root = (userSettings.rootFolder || 'Documentos/Skool_Downloads').trim();
     const pattern = userSettings.folderPattern || '{community}/{course}/{module}/{index}_{title}';
 
-    const community = (ctx.community || 'Ultimate Editors 2.0').replace(/[<>:"/\\|?*]/g, '').trim();
-    const course = (ctx.course || 'Curso').replace(/[<>:"/\\|?*]/g, '').trim();
+    const community = getEffectiveCommunityName().replace(/[<>:"/\\|?*]/g, '').trim();
+    const course = getEffectiveCourseName().replace(/[<>:"/\\|?*]/g, '').trim();
     const mod = (ctx.module || 'General').replace(/[<>:"/\\|?*]/g, '').trim();
     const idxStr = String(ctx.lessonIndex || 1).padStart(2, '0');
     const safeTitle = (ctx.lessonTitle || 'Leccion').replace(/[<>:"/\\|?*]/g, '').trim();
@@ -727,11 +1046,25 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 1. Download Video
   async function downloadDirectVideo(video, customFolder = null, customId = null, customCtx = null) {
     try {
-      const targetCtx = customCtx || pageContext;
+      const baseContext = customCtx || pageContext;
+      const taskId = customId || video.id || `vid_${Date.now()}`;
+      const existingLesson = getLibraryLesson({ id: baseContext.lessonId || taskId, title: baseContext.lessonTitle || video.title });
+      if (existingLesson?.inDrive && userSettings.duplicatePolicy === 'skip') {
+        showToast('✅ Este video ya está en la web y en Drive. Cambia “Si ya existe” a “Reemplazar” si deseas otra calidad.');
+        return;
+      }
+      const targetCtx = {
+        ...baseContext,
+        videoQuality: userSettings.videoQuality,
+        duplicatePolicy: userSettings.duplicatePolicy,
+        existingGdriveId: existingLesson?.gdriveId || null
+      };
       const targetFolder = customFolder || calculateFolderPath(false, targetCtx);
       const idxStr = String(targetCtx.lessonIndex || 1).padStart(2, '0');
-      const cleanTitle = (video.title || targetCtx.lessonTitle || 'Skool_Video').replace(/[<>:"/\\|?*]/g, '').trim();
-      const taskId = customId || video.id || `vid_${Date.now()}`;
+      const cleanTitle = (video.title || targetCtx.lessonTitle || 'Skool_Video')
+        .replace(/[<>:"/\\|?*]/g, '')
+        .replace(/^\d+[\s._-]+/, '')
+        .trim();
 
       let finalVideoUrl = video.url;
       if (finalVideoUrl.includes('skool.com') && !finalVideoUrl.includes('stream.mux.com') && !finalVideoUrl.includes('.m3u8')) {
@@ -743,11 +1076,25 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
       await checkBridgeStatus();
+      const nativeItem = {
+        id: taskId,
+        type: 'video',
+        url: finalVideoUrl,
+        title: `${idxStr}_${cleanTitle}`,
+        folder: targetFolder,
+        context: targetCtx,
+        quality: userSettings.videoQuality,
+        duplicatePolicy: userSettings.duplicatePolicy,
+        existingGdriveId: existingLesson?.gdriveId || null
+      };
+      if (isNativeMessagingActive) {
+        const accepted = await executeNativeBatch([nativeItem], targetFolder);
+        if (accepted) return;
+      }
       if (isLocalBridgeOnline) {
         const destMsg = userSettings.storageMode === 'gdrive' ? 'a Google Drive' : userSettings.storageMode === 'both' ? 'a PC y Drive' : 'a tu PC';
         updateProgress(`🚀 Iniciando descarga ${destMsg}...`, 20, true);
 
-        const skoolCookies = await getSkoolCookiesNetscape();
         const res = await callBridge('/download', 'POST', {
           id: taskId,
           url: finalVideoUrl,
@@ -755,8 +1102,11 @@ document.addEventListener('DOMContentLoaded', async () => {
           folder: targetFolder,
           storageMode: userSettings.storageMode,
           gdriveRoot: userSettings.gdriveFolder || 'Skool Downloads',
-          cookies: skoolCookies,
-          context: targetCtx
+          gdriveRootId: userSettings.gdriveRootId || null,
+          context: targetCtx,
+          quality: userSettings.videoQuality,
+          duplicatePolicy: userSettings.duplicatePolicy,
+          existingGdriveId: existingLesson?.gdriveId || null
         });
 
         if (res && res.success) {
@@ -796,6 +1146,18 @@ document.addEventListener('DOMContentLoaded', async () => {
       const taskId = resItem.id || `res_${Date.now()}`;
 
       await checkBridgeStatus();
+      const nativeItem = {
+        id: taskId,
+        type: 'resource',
+        url: resItem.url,
+        title: cleanFileName,
+        folder: targetFolder,
+        context: targetCtx
+      };
+      if (isNativeMessagingActive) {
+        const accepted = await executeNativeBatch([nativeItem], targetFolder);
+        if (accepted) return;
+      }
       if (isLocalBridgeOnline) {
         const res = await callBridge('/download-file', 'POST', {
           id: taskId,
@@ -804,6 +1166,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           folder: targetFolder,
           storageMode: userSettings.storageMode,
           gdriveRoot: userSettings.gdriveFolder || 'Skool Downloads',
+          gdriveRootId: userSettings.gdriveRootId || null,
           context: targetCtx
         });
 
@@ -852,10 +1215,48 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     const targetFolder = calculateFolderPath(false);
-    showToast(`🚀 Descargando pack completo de la clase...`);
+    const existingLesson = getLibraryLesson(pageContext);
+    const packContext = {
+      ...pageContext,
+      resources: detectedAttachments,
+      groupLessonPack: userSettings.groupLessonPack,
+      videoQuality: userSettings.videoQuality,
+      duplicatePolicy: userSettings.duplicatePolicy,
+      existingGdriveId: existingLesson?.gdriveId || null
+    };
+    const packItems = [];
+    if (detectedVideos.length > 0 && !(existingLesson?.inDrive && userSettings.duplicatePolicy === 'skip')) {
+      const video = detectedVideos[0];
+      packItems.push({
+        id: video.id || pageContext.lessonId || `vid_${Date.now()}`,
+        type: 'video',
+        url: video.url,
+        title: video.title || pageContext.lessonTitle || 'Video',
+        folder: targetFolder,
+        context: packContext,
+        quality: userSettings.videoQuality,
+        duplicatePolicy: userSettings.duplicatePolicy,
+        existingGdriveId: existingLesson?.gdriveId || null
+      });
+    }
+    detectedAttachments.forEach((attachment, index) => {
+      packItems.push({
+        id: attachment.id || `res_${Date.now()}_${index}`,
+        type: 'resource',
+        url: attachment.url,
+        title: attachment.name || 'Recurso',
+        folder: targetFolder,
+        context: packContext
+      });
+    });
 
-    if (detectedVideos.length > 0) {
-      await downloadDirectVideo(detectedVideos[0], targetFolder);
+    await checkBridgeStatus();
+    if (packItems.length > 0 && isNativeMessagingActive && await executeNativeBatch(packItems, targetFolder)) return;
+
+    showToast('🚀 Descargando pack completo de la clase...');
+
+    if (detectedVideos.length > 0 && !(existingLesson?.inDrive && userSettings.duplicatePolicy === 'skip')) {
+      await downloadDirectVideo(detectedVideos[0], targetFolder, null, packContext);
     }
 
     for (const att of detectedAttachments) {
@@ -864,20 +1265,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     showToast('🎉 ¡Pack completo enviado a descargar!');
-  });
-
-  // 4. Download All Resources Button
-  btnDownloadAllResources.addEventListener('click', async () => {
-    if (detectedAttachments.length === 0) {
-      showToast('No hay recursos para descargar.');
-      return;
-    }
-    const targetFolder = calculateFolderPath(true);
-    showToast(`Descargando ${detectedAttachments.length} recursos...`);
-    for (const att of detectedAttachments) {
-      await downloadResource(att, targetFolder, pageContext);
-      await new Promise(r => setTimeout(r, 300));
-    }
   });
 
   // ==========================================
@@ -892,7 +1279,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const isChecked = checkSelectAll.checked;
     selectedLessonIds.clear();
 
-    document.querySelectorAll('.tree-lesson-checkbox').forEach(cb => {
+    document.querySelectorAll('.tree-lesson-checkbox:not(:disabled)').forEach(cb => {
       cb.checked = isChecked;
       if (isChecked) {
         selectedLessonIds.add(cb.getAttribute('data-lesson-id'));
@@ -906,78 +1293,107 @@ document.addEventListener('DOMContentLoaded', async () => {
     updateSelectedCount();
   });
 
-  function executeNativeBatch(itemsToDownload, rootFolder) {
-    return new Promise(async (resolve) => {
-      try {
-        const skoolCookies = await getSkoolCookiesNetscape();
-        const port = chrome.runtime.connectNative('com.cinematic.skool_downloader');
-        let completedCount = 0;
-        const total = itemsToDownload.length;
+  function updateLessonBadge(lessonId, status, progress = 0) {
+    if (!lessonId) return;
+    const row = document.querySelector(`.tree-lesson-item[data-lesson-id="${CSS.escape(String(lessonId))}"]`);
+    const badge = row?.querySelector('.status-badge');
+    if (!badge) return;
 
-        port.onMessage.addListener((msg) => {
-          if (msg.type === 'DOWNLOAD_PROGRESS' || msg.type === 'UPLOAD_PROGRESS') {
-            const taskId = msg.taskId;
-            const pct = Math.round(msg.progress || 0);
-            const prefix = msg.type === 'UPLOAD_PROGRESS' ? '☁️' : '🔄';
-            const row = document.querySelector(`[data-lesson-id="${taskId}"]`);
-            if (row) {
-              const badge = row.querySelector('.status-badge');
-              if (badge) {
-                badge.className = `status-badge ${msg.type === 'UPLOAD_PROGRESS' ? 'uploading' : 'downloading'}`;
-                badge.textContent = `${prefix} ${pct}%`;
-              }
-            }
-          } else if (msg.type === 'TASK_COMPLETED') {
-            completedCount++;
-            const taskId = msg.taskId;
-            const row = document.querySelector(`[data-lesson-id="${taskId}"]`);
-            if (row) {
-              const badge = row.querySelector('.status-badge');
-              if (badge) {
-                badge.className = 'status-badge completed';
-                badge.textContent = '✅ En Drive 📁';
-              }
-            }
-            updateProgress(`Completado (${completedCount}/${total})...`, Math.round((completedCount / total) * 100), true);
-          } else if (msg.type === 'TASK_ERROR') {
-            const taskId = msg.taskId;
-            const row = document.querySelector(`[data-lesson-id="${taskId}"]`);
-            if (row) {
-              const badge = row.querySelector('.status-badge');
-              if (badge) {
-                badge.className = 'status-badge failed';
-                badge.textContent = '❌ Error';
-              }
-            }
-          } else if (msg.type === 'BATCH_COMPLETED') {
-            showToast(`✅ Descarga por lotes finalizada (${total} elementos)`);
-            updateProgress('Todas las tareas completadas', 100, false);
-            try { port.disconnect(); } catch (e) {}
-            resolve(true);
-          }
-        });
+    if (status === 'completed') {
+      badge.className = 'status-badge completed';
+      badge.textContent = userSettings.storageMode === 'local' ? '✅ Guardado' : '✅ En Drive 📁';
+    } else if (status === 'failed' || status === 'interrupted') {
+      badge.className = 'status-badge failed';
+      badge.textContent = status === 'interrupted' ? '⏸ Interrumpido' : '❌ Error';
+    } else if (status === 'uploading') {
+      badge.className = 'status-badge uploading';
+      badge.textContent = `☁️ ${progress}%`;
+    } else if (status === 'downloading' || status === 'resolving') {
+      badge.className = 'status-badge downloading';
+      badge.textContent = status === 'resolving' ? '🔎 Resolviendo' : `🔄 ${progress}%`;
+    }
+  }
 
-        port.onDisconnect.addListener(() => {
-          resolve(true);
-        });
-
-        port.postMessage({
-          action: 'DOWNLOAD_BATCH',
-          items: itemsToDownload,
-          folder: rootFolder,
-          storageMode: userSettings.storageMode,
-          gdriveRoot: userSettings.gdriveFolder || 'Skool Downloads',
-          cookies: skoolCookies
-        });
-
-        const destMsg = userSettings.storageMode === 'gdrive' ? 'a Google Drive' : userSettings.storageMode === 'both' ? 'a PC y Drive' : 'a tu PC';
-        showToast(`🚀 Descargando ${itemsToDownload.length} elementos ${destMsg} (Motor Nativo)...`);
-
-      } catch (err) {
-        console.error('[Native Messaging Batch Error]', err);
-        resolve(false);
-      }
+  function renderNativeQueueStatus(job) {
+    if (!job || job.status === 'idle') return;
+    Object.values(job.tasks || {}).forEach(task => {
+      updateLessonBadge(task.lessonId, task.status, Math.round(task.progress || 0));
     });
+
+    const done = (job.completed || 0) + (job.failed || 0);
+    const activeTask = Object.values(job.tasks || {}).find(task => ['resolving', 'downloading', 'uploading'].includes(task.status));
+    const fractional = activeTask ? Math.min(0.99, (activeTask.progress || 0) / 100) : 0;
+    const percent = job.total ? Math.round(((done + fractional) / job.total) * 100) : 0;
+
+    if (job.status === 'syncing') {
+      updateProgress('☁️ Sincronizando el catálogo web (un solo despliegue)...', 99, true);
+    } else if (['completed', 'completed_with_errors', 'completed_with_sync_error'].includes(job.status)) {
+      const message = job.status === 'completed_with_sync_error'
+        ? `Descarga completa; falló la sincronización web: ${job.syncError || 'revisa Git/Vercel'}`
+        : job.failed > 0
+        ? `Finalizado: ${job.completed} correctos y ${job.failed} con error`
+        : job.cloudSync === 'deferred'
+        ? 'Descarga completa; cambios web agrupados y pendientes de sincronizar'
+        : userSettings.storageMode === 'local' ? 'Descarga local completada' : 'Descarga y sincronización completadas';
+      updateProgress(message, 100, true);
+      if (lastNativeTerminalJobId !== job.id) {
+        lastNativeTerminalJobId = job.id;
+        showToast(job.failed > 0 || job.status === 'completed_with_sync_error' ? `⚠️ ${message}` : `✅ ${message}`);
+        refreshLibraryStatus(false).then(() => renderClassroomTree(classroomTree));
+      }
+    } else if (job.status === 'interrupted') {
+      updateProgress(`Cola interrumpida: ${job.error || 'motor desconectado'}`, percent, true);
+    } else {
+      const stage = job.status === 'uploading' ? 'Subiendo a Drive' : job.status === 'resolving' ? 'Resolviendo video' : 'Descargando';
+      updateProgress(`${stage} (${done}/${job.total})`, percent, true);
+    }
+  }
+
+  function startNativeQueuePolling(expectedJobId = null) {
+    if (nativeQueuePollInterval) return;
+    const poll = async () => {
+      try {
+        const response = await chrome.runtime.sendMessage({ action: 'GET_NATIVE_BATCH_STATUS' });
+        const job = response?.job;
+        if (!job || (expectedJobId && job.id && job.id !== expectedJobId)) return;
+        renderNativeQueueStatus(job);
+        if (['completed', 'completed_with_errors', 'completed_with_sync_error', 'interrupted'].includes(job.status)) {
+          clearInterval(nativeQueuePollInterval);
+          nativeQueuePollInterval = null;
+        }
+      } catch (err) {
+        console.warn('[Skool Downloader] Native queue polling failed:', err);
+      }
+    };
+    poll();
+    nativeQueuePollInterval = setInterval(poll, 1000);
+  }
+
+  async function executeNativeBatch(itemsToDownload, rootFolder) {
+    try {
+      const response = await chrome.runtime.sendMessage({
+        action: 'START_NATIVE_BATCH',
+        items: itemsToDownload,
+        folder: rootFolder,
+        storageMode: userSettings.storageMode,
+        gdriveRoot: userSettings.gdriveFolder || 'Skool Downloads',
+        gdriveRootId: userSettings.gdriveRootId || null,
+        tabId: currentTab?.id || await getActiveTabId()
+      });
+      if (!response?.success) {
+        throw new Error(response?.error || 'El motor nativo rechazó la cola.');
+      }
+
+      activeBatchTotal = itemsToDownload.length;
+      startNativeQueuePolling(response.job?.id);
+      const destMsg = userSettings.storageMode === 'gdrive' ? 'a Google Drive' : userSettings.storageMode === 'both' ? 'a PC y Drive' : 'a tu PC';
+      showToast(`🚀 Cola iniciada: ${itemsToDownload.length} elementos ${destMsg}. Puedes cerrar esta ventana.`);
+      return true;
+    } catch (err) {
+      console.error('[Native Messaging Batch Error]', err);
+      showToast(`❌ No se pudo iniciar la cola: ${err.message}`);
+      return false;
+    }
   }
 
   async function triggerBatchDownload(filterType = 'all', onlySelected = false) {
@@ -986,29 +1402,38 @@ document.addEventListener('DOMContentLoaded', async () => {
     const community = getEffectiveCommunityName().replace(/[<>:"/\\|?*]/g, '').trim();
     const course = getEffectiveCourseName().replace(/[<>:"/\\|?*]/g, '').trim();
 
-    classroomTree.modules.forEach(mod => {
+    classroomTree.modules.forEach((mod, moduleArrayIndex) => {
       const safeModTitle = (mod.title || 'Modulo').replace(/[<>:"/\\|?*]/g, '').trim();
 
-      mod.lessons.forEach(les => {
+      mod.lessons.forEach((les, lessonArrayIndex) => {
         if (onlySelected && !selectedLessonIds.has(les.id)) return;
 
-        const idxStr = String(les.index || 1).padStart(2, '0');
+        const sourceOrder = les.sourceOrder || les.index || 1;
+        const idxStr = String(sourceOrder).padStart(2, '0');
         const safeLesTitle = (les.title || 'Leccion').replace(/[<>:"/\\|?*]/g, '').trim();
-        const lessonFolder = `${rootFolder}/${community}/${course}/${safeModTitle}`;
-
+        const existingLesson = getLibraryLesson(les);
         const itemCtx = {
           community: community,
           course: course,
           module: safeModTitle,
+          moduleIndex: mod.moduleIndex || moduleArrayIndex + 1,
           lessonTitle: safeLesTitle,
-          lessonIndex: les.index,
+          lessonIndex: sourceOrder,
+          lessonIndexInModule: les.sourceOrder || les.lessonIndexInModule || lessonArrayIndex + 1,
+          globalLessonIndex: les.index,
           lessonId: les.id,
           descriptionHtml: les.descriptionHtml || '',
-          resources: les.attachments || []
+          resources: les.attachments || [],
+          groupLessonPack: userSettings.groupLessonPack,
+          videoQuality: userSettings.videoQuality,
+          duplicatePolicy: userSettings.duplicatePolicy,
+          existingGdriveId: existingLesson?.gdriveId || null
         };
+        const videoFolder = calculateFolderPath(false, itemCtx);
+        const resourceFolder = calculateFolderPath(true, itemCtx);
 
         // Add video (all lessons have video URL)
-        if (filterType === 'all' || filterType === 'videos') {
+        if ((filterType === 'all' || filterType === 'videos') && !(existingLesson?.inDrive && userSettings.duplicatePolicy === 'skip')) {
           const vUrl = les.videoUrl || les.url;
           if (vUrl) {
             itemsToDownload.push({
@@ -1016,8 +1441,11 @@ document.addEventListener('DOMContentLoaded', async () => {
               type: 'video',
               url: vUrl,
               title: `${idxStr}_${safeLesTitle}`,
-              folder: lessonFolder,
-              context: itemCtx
+              folder: videoFolder,
+              context: itemCtx,
+              quality: userSettings.videoQuality,
+              duplicatePolicy: userSettings.duplicatePolicy,
+              existingGdriveId: existingLesson?.gdriveId || null
             });
           }
         }
@@ -1030,7 +1458,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               type: 'resource',
               url: att.url,
               title: att.name,
-              folder: lessonFolder,
+              folder: resourceFolder,
               context: itemCtx
             });
           });
@@ -1046,36 +1474,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     activeBatchTotal = itemsToDownload.length;
     showToast(`🚀 Iniciando descarga de ${itemsToDownload.length} elementos...`);
 
-    // In-browser parallel direct stream resolution
-    const skoolVideoItems = itemsToDownload.filter(it => it.type === 'video' && it.url.includes('skool.com') && !it.url.includes('stream.mux.com') && !it.url.includes('.m3u8'));
-    if (skoolVideoItems.length > 0) {
-      updateProgress(`Extrayendo streams de video (0/${skoolVideoItems.length})...`, 5, true);
-      let done = 0;
-      await Promise.all(skoolVideoItems.map(async (item) => {
-        const streamUrl = await resolveLessonDirectStream(item.url);
-        if (streamUrl) {
-          item.url = streamUrl;
-        }
-        done++;
-        const pct = Math.round(5 + (done / skoolVideoItems.length) * 15);
-        updateProgress(`Extrayendo streams (${done}/${skoolVideoItems.length})...`, pct, true);
-      }));
-    }
-
-    updateProgress(`Descargando ${itemsToDownload.length} elementos...`, 20, true);
+    updateProgress(`Preparando cola de ${itemsToDownload.length} elementos...`, 2, true);
 
     await checkBridgeStatus();
     if (isNativeMessagingActive) {
       const ok = await executeNativeBatch(itemsToDownload, rootFolder);
       if (ok) return;
     } else if (isLocalBridgeOnline) {
-      const skoolCookies = await getSkoolCookiesNetscape();
+      const videosToResolve = itemsToDownload.filter(item => item.type === 'video' && item.url.includes('skool.com'));
+      for (let index = 0; index < videosToResolve.length; index++) {
+        const item = videosToResolve[index];
+        updateProgress(`Resolviendo video ${index + 1}/${videosToResolve.length} para el motor local...`, 5, true);
+        const resolved = await resolveLessonDirectStream(item.url);
+        if (resolved) item.url = resolved;
+      }
       const res = await callBridge('/download-batch', 'POST', {
         items: itemsToDownload,
         folder: rootFolder,
         storageMode: userSettings.storageMode,
         gdriveRoot: userSettings.gdriveFolder || 'Skool Downloads',
-        cookies: skoolCookies
+        gdriveRootId: userSettings.gdriveRootId || null
       });
 
       if (res && res.success) {
@@ -1247,20 +1665,29 @@ document.addEventListener('DOMContentLoaded', async () => {
           course: course,
           module: modTitle,
           lessonTitle: lesTitle,
-          lessonIndex: 1
+          moduleIndex: att.moduleIndex || 1,
+          lessonIndex: att.globalLessonIndex || att.lessonIndex || 1,
+          lessonIndexInModule: att.lessonIndex || 1,
+          globalLessonIndex: att.globalLessonIndex || att.lessonIndex || 1,
+          lessonId: att.lessonId || '',
+          resources: [att],
+          groupLessonPack: userSettings.groupLessonPack
         }
       };
     });
 
     await checkBridgeStatus();
+    if (isNativeMessagingActive) {
+      const accepted = await executeNativeBatch(items, rootFolder);
+      if (accepted) return;
+    }
     if (isLocalBridgeOnline) {
-      const skoolCookies = await getSkoolCookiesNetscape();
       const res = await callBridge('/download-batch', 'POST', {
         items: items,
         folder: rootFolder,
         storageMode: userSettings.storageMode,
         gdriveRoot: userSettings.gdriveFolder || 'Skool Downloads',
-        cookies: skoolCookies
+        gdriveRootId: userSettings.gdriveRootId || null
       });
 
       if (res && res.success) {
@@ -1302,6 +1729,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             course: course,
             storageMode: userSettings.storageMode,
             gdriveRoot: userSettings.gdriveFolder || 'Skool Downloads',
+            gdriveRootId: userSettings.gdriveRootId || null,
             context: {
               community: community,
               course: course,
@@ -1323,20 +1751,83 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   async function fetchCourseResources(pageUrl) {
-    if (!isLocalBridgeOnline) return;
+    if (!currentTab?.id || !classroomTree.modules?.length) return;
     try {
       if (resAllPillCount) resAllPillCount.textContent = '...';
-      const cleanUrl = (pageUrl || window.location.href).split('?')[0];
-      const res = await callBridge(`/scan-course-resources?url=${encodeURIComponent(cleanUrl)}`, 'GET');
-      if (res && res.success && res.data && Array.isArray(res.data.resources)) {
-        courseResourcesList = res.data.resources;
-        if (resAllPillCount) resAllPillCount.textContent = String(courseResourcesList.length);
-        if (currentResourceMode === 'all') {
-          renderResourcesList(courseResourcesList, 'all');
+      const lessons = [];
+      classroomTree.modules.forEach((module, moduleIndex) => {
+        (module.lessons || []).forEach((lesson, lessonIndex) => {
+          lessons.push({ module, lesson, moduleIndex, lessonIndex });
+        });
+      });
+
+      let nextLessonIndex = 0;
+      let scanned = 0;
+      const discovered = [];
+      const worker = async () => {
+        while (nextLessonIndex < lessons.length) {
+          const entry = lessons[nextLessonIndex++];
+          try {
+            const response = await chrome.tabs.sendMessage(currentTab.id, {
+              action: 'FETCH_LESSON_DETAILS',
+              lessonUrl: entry.lesson.url || pageUrl,
+              targetMd: entry.lesson.id
+            });
+            if (response?.success) {
+              const currentPageAttachments = entry.lesson.id === pageContext.lessonId ? detectedAttachments : [];
+              const mergedByUrl = new Map();
+              [...(entry.lesson.attachments || []), ...currentPageAttachments, ...(response.attachments || [])]
+                .forEach(attachment => {
+                  if (attachment?.url) mergedByUrl.set(attachment.url, attachment);
+                });
+              const attachments = Array.from(mergedByUrl.values()).map((attachment, resourceIndex) => ({
+                ...attachment,
+                lessonId: entry.lesson.id,
+                lessonTitle: entry.lesson.title,
+                lessonIndex: entry.lessonIndex + 1,
+                globalLessonIndex: entry.lesson.index,
+                moduleTitle: entry.module.title,
+                moduleIndex: entry.module.moduleIndex || entry.moduleIndex + 1,
+                resourceIndex: resourceIndex + 1
+              }));
+              entry.lesson.attachments = attachments;
+              if (response.descriptionHtml) entry.lesson.descriptionHtml = response.descriptionHtml;
+              else if (entry.lesson.id === pageContext.lessonId && pageContext.descriptionHtml) {
+                entry.lesson.descriptionHtml = pageContext.descriptionHtml;
+              }
+              discovered.push(...attachments);
+            }
+          } catch (err) {
+            console.warn(`[Skool Downloader] Resource scan failed for lesson ${entry.lesson.id}:`, err);
+          } finally {
+            scanned += 1;
+            if (resAllPillCount) resAllPillCount.textContent = `${scanned}/${lessons.length}`;
+          }
         }
+      };
+
+      await Promise.all(Array.from({ length: Math.min(3, lessons.length) }, () => worker()));
+      courseResourcesList = discovered.sort((a, b) =>
+        (a.moduleIndex - b.moduleIndex) ||
+        (a.lessonIndex - b.lessonIndex) ||
+        (a.resourceIndex - b.resourceIndex)
+      );
+      classroomTree.totalAttachments = courseResourcesList.length;
+      if (resAllPillCount) resAllPillCount.textContent = String(courseResourcesList.length);
+
+      const currentLessonResources = courseResourcesList.filter(resource => resource.lessonId === pageContext.lessonId);
+      if (currentLessonResources.length > 0 || pageContext.lessonId) {
+        detectedAttachments = currentLessonResources;
+        renderAttachments(detectedAttachments);
       }
+      if (currentResourceMode === 'all') {
+        renderResourcesList(courseResourcesList, 'all');
+      }
+      await refreshLibraryStatus(true);
+      renderClassroomTree(classroomTree);
     } catch (e) {
       console.warn('Could not fetch course resources:', e);
+      if (resAllPillCount) resAllPillCount.textContent = '0';
     }
   }
 
@@ -1443,45 +1934,62 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     modules.forEach((mod, modIdx) => {
       const modCard = document.createElement('div');
-      modCard.className = 'module-card';
+      const containsCurrentLesson = (mod.lessons || []).some(lesson => lesson.id === pageContext.lessonId);
+      modCard.className = `module-card${containsCurrentLesson || modIdx === 0 ? '' : ' collapsed'}`;
       modCard.id = `mod-card-${modIdx}`;
 
       const lessonsCount = (mod.lessons || []).length;
+      const defaultSelectedIds = new Set();
+      const lessonRows = (mod.lessons || []).map((les) => {
+        const existingLesson = getLibraryLesson(les);
+        const alreadyStored = Boolean(existingLesson?.inDrive);
+        const selectable = userSettings.duplicatePolicy === 'replace' || !alreadyStored;
+        if (selectable) {
+          selectedLessonIds.add(les.id);
+          defaultSelectedIds.add(les.id);
+        }
+        const attCount = les.attachments ? les.attachments.length : 0;
+        const knownQuality = qualityLabel(existingLesson);
+        const statusText = alreadyStored
+          ? userSettings.duplicatePolicy === 'replace'
+            ? `Reemplazar${knownQuality ? ` · ${knownQuality}` : ''}`
+            : `En web${knownQuality ? ` · ${knownQuality}` : ''}`
+          : 'Pendiente';
+        const statusClass = alreadyStored && userSettings.duplicatePolicy === 'skip' ? 'completed' : 'queued';
+        const sourceOrder = les.sourceOrder || les.index;
+        return `
+          <div class="tree-lesson-item" data-lesson-id="${les.id}">
+            <div class="tree-lesson-left">
+              <input type="checkbox" class="tree-lesson-checkbox" data-mod-idx="${modIdx}" data-lesson-id="${les.id}" ${selectable ? 'checked' : 'disabled'}>
+              <span class="tree-lesson-title" title="${les.title}">${sourceOrder}. ${les.title}</span>
+            </div>
+            <div class="tree-lesson-actions">
+              ${les.duration ? `<span class="meta-duration" style="font-size:9px;">⏱️ ${les.duration}</span>` : ''}
+              ${attCount > 0 ? `<span class="badge-tag purple" style="font-size:9px;">📎 ${attCount}</span>` : ''}
+              <span class="status-badge ${statusClass}" id="tree-status-${les.id}">${statusText}</span>
+              <button class="icon-btn-action btn-tree-download-single" data-lesson-id="${les.id}" title="Descargar esta lección">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
 
       modCard.innerHTML = `
-        <div class="module-header" data-mod-idx="${modIdx}">
+        <div class="module-header" data-mod-idx="${modIdx}" role="button" tabindex="0" aria-expanded="${containsCurrentLesson || modIdx === 0 ? 'true' : 'false'}" aria-controls="mod-lessons-${modIdx}">
           <div class="module-header-left">
-            <input type="checkbox" class="module-checkbox" data-mod-idx="${modIdx}" checked>
+            <input type="checkbox" class="module-checkbox" data-mod-idx="${modIdx}" ${defaultSelectedIds.size > 0 ? 'checked' : ''}>
             <span class="module-title-text" title="${mod.title}">📁 ${mod.title}</span>
             <span class="module-meta-pill">${lessonsCount} clases</span>
           </div>
           <span class="module-chevron">▼</span>
         </div>
         <div class="module-lessons-list" id="mod-lessons-${modIdx}">
-          ${(mod.lessons || []).map((les) => {
-            selectedLessonIds.add(les.id);
-            const attCount = les.attachments ? les.attachments.length : 0;
-            return `
-              <div class="tree-lesson-item" data-lesson-id="${les.id}">
-                <div class="tree-lesson-left">
-                  <input type="checkbox" class="tree-lesson-checkbox" data-mod-idx="${modIdx}" data-lesson-id="${les.id}" checked>
-                  <span class="tree-lesson-title" title="${les.title}">${les.index}. ${les.title}</span>
-                </div>
-                <div class="tree-lesson-actions">
-                  ${les.duration ? `<span class="meta-duration" style="font-size:9px;">⏱️ ${les.duration}</span>` : ''}
-                  ${attCount > 0 ? `<span class="badge-tag purple" style="font-size:9px;">📎 ${attCount}</span>` : ''}
-                  <span class="status-badge queued" id="tree-status-${les.id}">Listo</span>
-                  <button class="icon-btn-action btn-tree-download-single" data-lesson-id="${les.id}" title="Descargar esta lección">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                      <polyline points="7 10 12 15 17 10"></polyline>
-                      <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            `;
-          }).join('')}
+          ${lessonRows}
         </div>
       `;
 
@@ -1489,13 +1997,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     updateSelectedCount();
+    if (checkSelectAll) {
+      const selectableCheckboxes = Array.from(document.querySelectorAll('.tree-lesson-checkbox:not(:disabled)'));
+      checkSelectAll.checked = selectableCheckboxes.length > 0 && selectableCheckboxes.every(checkbox => checkbox.checked);
+    }
 
     // Toggle module accordion expand/collapse
     document.querySelectorAll('.module-header').forEach(header => {
-      header.addEventListener('click', (e) => {
+      const toggleModule = (e) => {
         if (e.target.tagName === 'INPUT') return;
         const card = header.closest('.module-card');
         card.classList.toggle('collapsed');
+        header.setAttribute('aria-expanded', String(!card.classList.contains('collapsed')));
+      };
+      header.addEventListener('click', toggleModule);
+      header.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleModule(e);
+        }
       });
     });
 
@@ -1504,7 +2024,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       cb.addEventListener('change', (e) => {
         const modIdx = e.target.getAttribute('data-mod-idx');
         const isChecked = e.target.checked;
-        document.querySelectorAll(`.tree-lesson-checkbox[data-mod-idx="${modIdx}"]`).forEach(lesCb => {
+        document.querySelectorAll(`.tree-lesson-checkbox[data-mod-idx="${modIdx}"]:not(:disabled)`).forEach(lesCb => {
           lesCb.checked = isChecked;
           const lesId = lesCb.getAttribute('data-lesson-id');
           if (isChecked) selectedLessonIds.add(lesId);
@@ -1527,16 +2047,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Single lesson download button from tree
     document.querySelectorAll('.btn-tree-download-single').forEach(btn => {
       btn.addEventListener('click', (e) => {
-        const lesId = e.target.getAttribute('data-lesson-id');
+        const lesId = e.currentTarget.getAttribute('data-lesson-id');
         const community = (classroomTree.communityName || pageContext.community || 'Ultimate Editors 2.0').replace(/[<>:"/\\|?*]/g, '').trim();
         const course = (classroomTree.courseTitle || pageContext.course || 'Cinematic short film editing style').replace(/[<>:"/\\|?*]/g, '').trim();
         const root = (userSettings.rootFolder || 'Documentos/Skool_Downloads').trim();
 
-        for (const mod of classroomTree.modules) {
+        for (let moduleArrayIndex = 0; moduleArrayIndex < classroomTree.modules.length; moduleArrayIndex++) {
+          const mod = classroomTree.modules[moduleArrayIndex];
           const found = mod.lessons.find(l => l.id === lesId);
           if (found) {
             const safeMod = (mod.title || 'Modulo').replace(/[<>:"/\\|?*]/g, '').trim();
-            const idxStr = String(found.index || 1).padStart(2, '0');
+            const sourceOrder = found.sourceOrder || found.index || 1;
+            const idxStr = String(sourceOrder).padStart(2, '0');
             const safeTitle = (found.title || 'Leccion').replace(/[<>:"/\\|?*]/g, '').trim();
             const destFolder = `${root}/${community}/${course}/${safeMod}/${idxStr}_${safeTitle}`;
             
@@ -1544,11 +2066,15 @@ document.addEventListener('DOMContentLoaded', async () => {
               community: community,
               course: course,
               module: safeMod,
+              moduleIndex: mod.moduleIndex || moduleArrayIndex + 1,
               lessonTitle: safeTitle,
-              lessonIndex: found.index,
+              lessonIndex: sourceOrder,
+              lessonIndexInModule: found.sourceOrder || found.lessonIndexInModule || mod.lessons.indexOf(found) + 1,
+              globalLessonIndex: found.index,
               lessonId: found.id,
               descriptionHtml: found.descriptionHtml || '',
-              resources: found.attachments || []
+              resources: found.attachments || [],
+              groupLessonPack: userSettings.groupLessonPack
             };
 
             downloadDirectVideo({ url: found.videoUrl || found.url, title: `${idxStr}_${safeTitle}`, id: found.id }, destFolder, found.id, customCtx);
@@ -1560,30 +2086,25 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Audit Course in Google Drive Button
     const btnAuditCourse = document.getElementById('btn-audit-course');
-    // Studio Web Launcher (Vercel Cloud & PWA)
-    const btnOpenStudio = document.getElementById('btn-open-studio');
-    if (btnOpenStudio) {
-      btnOpenStudio.addEventListener('click', () => {
-        chrome.tabs.create({ url: 'https://cinematic-lms-studio.vercel.app' });
-      });
-    }
-
     // Google Drive Course Folder Link
     const btnOpenGdrive = document.getElementById('btn-open-gdrive');
-    if (btnOpenGdrive) {
+    if (btnOpenGdrive && !btnOpenGdrive.dataset.bound) {
+      btnOpenGdrive.dataset.bound = 'true';
       btnOpenGdrive.addEventListener('click', () => {
-        chrome.tabs.create({ url: 'https://drive.google.com/drive/folders/13CJ1bm6bfY7IdpyhjC75SNukpHFGuiZH' });
+        chrome.tabs.create({ url: 'https://drive.google.com/drive/my-drive' });
       });
     }
 
-    if (btnAuditCourse) {
+    if (btnAuditCourse && !btnAuditCourse.dataset.bound) {
+      btnAuditCourse.dataset.bound = 'true';
       btnAuditCourse.addEventListener('click', async () => {
         showToast('🔍 Auditando videos en Google Drive...');
         try {
           const community = getEffectiveCommunityName();
           const course = getEffectiveCourseName();
           const gdriveRoot = userSettings.gdriveFolder || 'Skool Downloads';
-          const queryStr = `?community=${encodeURIComponent(community)}&course=${encodeURIComponent(course)}&gdriveRoot=${encodeURIComponent(gdriveRoot)}`;
+          const gdriveRootId = userSettings.gdriveRootId || '';
+          const queryStr = `?community=${encodeURIComponent(community)}&course=${encodeURIComponent(course)}&gdriveRoot=${encodeURIComponent(gdriveRoot)}&gdriveRootId=${encodeURIComponent(gdriveRootId)}`;
           let data = null;
           if (isNativeMessagingActive) {
             data = await new Promise(resolve => {
@@ -1591,7 +2112,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 action: 'AUDIT_COURSE',
                 community,
                 course,
-                gdriveRoot
+                gdriveRoot,
+                gdriveRootId
               }, resp => resolve(resp || null));
             });
           } else {
@@ -1604,14 +2126,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             let verifiedCount = 0;
 
             document.querySelectorAll('.tree-lesson-item').forEach(row => {
-              const titleEl = row.querySelector('.lesson-title');
+              const titleEl = row.querySelector('.tree-lesson-title');
               const titleText = titleEl ? titleEl.textContent.trim() : '';
               const badge = row.querySelector('.status-badge');
 
               const isFound = Object.keys(files).some(k => {
                 const cleanK = k.replace(/^\d+_/, '').toLowerCase().replace(/[^a-z0-9]/g, '');
                 const cleanT = titleText.replace(/^\d+\.\s*/, '').toLowerCase().replace(/[^a-z0-9]/g, '');
-                return cleanK.includes(cleanT) || cleanT.includes(cleanK);
+                return Boolean(cleanT) && Boolean(cleanK) && (cleanK.includes(cleanT) || cleanT.includes(cleanK));
               });
 
               if (badge) {
@@ -1677,7 +2199,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       try {
         response = await Promise.race([
           chrome.tabs.sendMessage(currentTab.id, { action: 'SCAN_PAGE_VIDEOS' }),
-          new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT')), 600))
+          new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT')), 3000))
         ]);
       } catch (err) {
         try {
@@ -1688,7 +2210,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           await new Promise(r => setTimeout(r, 150));
           response = await Promise.race([
             chrome.tabs.sendMessage(currentTab.id, { action: 'SCAN_PAGE_VIDEOS' }),
-            new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_AFTER_INJECT')), 1000))
+            new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_AFTER_INJECT')), 4000))
           ]);
         } catch (e) {
           console.warn('[Skool Downloader] Messaging timeout/injection fallback:', e);
@@ -1714,27 +2236,11 @@ document.addEventListener('DOMContentLoaded', async () => {
           updateDestinationPreview();
         }
 
-        // Guarantee active lesson download card is always available on classroom pages
-        if (detectedVideos.length === 0 && currentTab.url && currentTab.url.includes('/classroom/')) {
-          const currentMd = new URLSearchParams(new URL(currentTab.url).search).get('md') || pageContext.lessonId;
-          detectedVideos.push({
-            id: currentMd || 'active_lesson_video',
-            title: pageContext.lessonTitle || 'Video de la Lección',
-            url: currentTab.url,
-            cleanUrl: currentTab.url.split('?')[0],
-            platform: 'Skool Video (MP4)',
-            platformType: 'hls',
-            badgeColor: '#10b981',
-            duration: null,
-            source: 'Video de la Lección',
-            isCurrentLesson: true
-          });
-        }
-
         renderVideos(detectedVideos);
         renderAttachments(detectedAttachments);
+        await refreshLibraryStatus(false);
         renderClassroomTree(classroomTree);
-        fetchCourseResources(currentTab.url);
+        void fetchCourseResources(currentTab.url);
       } else {
         videoListContainer.innerHTML = `
           <div class="empty-state">
@@ -1771,5 +2277,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Initialization
   await loadSettings();
+  await ensureDriveRootSelection();
   await performScan();
+  startNativeQueuePolling();
 });

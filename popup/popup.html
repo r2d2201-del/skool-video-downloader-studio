@@ -14,7 +14,7 @@
         <div class="logo-icon">⚡</div>
         <div class="logo-text">
           <h1>Skool Downloader</h1>
-          <span class="version-tag">v2.5.7</span>
+          <span class="version-tag">v2.8.0</span>
         </div>
       </div>
       <div class="header-actions">
@@ -33,19 +33,19 @@
     </header>
 
     <!-- Navigation Tabs -->
-    <nav class="nav-tabs">
-      <button class="tab-btn active" data-tab="tab-current">
+    <nav class="nav-tabs" role="tablist" aria-label="Secciones de la extensión">
+      <button class="tab-btn active" data-tab="tab-current" role="tab" aria-selected="true" aria-controls="tab-current">
         <span class="tab-icon">📺</span> Lección
       </button>
-      <button class="tab-btn" data-tab="tab-resources">
+      <button class="tab-btn" data-tab="tab-resources" role="tab" aria-selected="false" aria-controls="tab-resources">
         <span class="tab-icon">📎</span> Recursos
         <span id="badge-resources-count" class="count-pill" style="display:none;">0</span>
       </button>
-      <button class="tab-btn" data-tab="tab-bulk">
+      <button class="tab-btn" data-tab="tab-bulk" role="tab" aria-selected="false" aria-controls="tab-bulk">
         <span class="tab-icon">📚</span> Aula Completa
         <span id="badge-lessons-count" class="count-pill" style="display:none;">0</span>
       </button>
-      <button class="tab-btn" data-tab="tab-settings">
+      <button class="tab-btn" data-tab="tab-settings" role="tab" aria-selected="false" aria-controls="tab-settings">
         <span class="tab-icon">⚙️</span> Destino
       </button>
     </nav>
@@ -54,12 +54,12 @@
     <main class="main-content">
 
       <!-- Global Download Progress Bar -->
-      <div id="download-progress-box" class="progress-box" style="display:none;">
+      <div id="download-progress-box" class="progress-box" style="display:none;" role="status" aria-live="polite">
         <div class="progress-info">
           <span id="progress-status-text" class="progress-text">Descargando...</span>
           <span id="progress-percentage-text" class="progress-percentage">0%</span>
         </div>
-        <div class="progress-track">
+        <div class="progress-track" role="progressbar" aria-label="Progreso de descarga" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
           <div id="progress-bar-fill" class="progress-fill" style="width: 0%;"></div>
         </div>
       </div>
@@ -152,6 +152,27 @@
                   ✏️ Cambiar
                 </button>
               </div>
+              <div class="download-policy-grid" aria-label="Opciones de descarga de video">
+                <label class="download-policy-field" for="select-video-quality">
+                  <span>Calidad</span>
+                  <select id="select-video-quality" class="setting-select compact-select">
+                    <option value="best">Máxima disponible</option>
+                    <option value="1080">Hasta 1080p</option>
+                    <option value="720">Hasta 720p</option>
+                    <option value="480">Hasta 480p</option>
+                  </select>
+                </label>
+                <label class="download-policy-field" for="select-duplicate-policy">
+                  <span>Si ya existe</span>
+                  <select id="select-duplicate-policy" class="setting-select compact-select">
+                    <option value="skip">Omitir video</option>
+                    <option value="replace">Reemplazar en Drive</option>
+                  </select>
+                </label>
+              </div>
+              <div id="library-status-summary" class="library-status-summary" role="status" aria-live="polite">
+                Consultando el catálogo local…
+              </div>
             </div>
           </div>
 
@@ -180,6 +201,9 @@
             <button id="btn-open-gdrive" class="action-btn secondary" style="flex: 0.8; font-size: 11px;" title="Abrir carpeta del curso en Google Drive">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
               <span>Abrir en Drive</span>
+            </button>
+            <button id="btn-sync-cloud" class="action-btn secondary" style="flex: 0.8; font-size: 11px;" title="Publicar ahora todos los cambios pendientes del catálogo en un único despliegue">
+              <span>☁️ Sincronizar web</span>
             </button>
           </div>
         </div>
@@ -215,7 +239,7 @@
             <label class="setting-label">
               💾 ¿Dónde deseas guardar las descargas?
             </label>
-            <div class="storage-mode-selector">
+            <div class="storage-mode-selector storage-mode-grid">
               <label class="radio-card storage-mode-card">
                 <input type="radio" name="storage-mode" value="local">
                 <div class="radio-card-body">
@@ -298,7 +322,11 @@
             <label class="setting-label" for="input-gdrive-folder">
               ☁️ Carpeta Raíz en Google Drive:
             </label>
-            <input type="text" id="input-gdrive-folder" class="setting-input" value="Skool Downloads" placeholder="Ej: Skool Downloads o Cursos">
+            <div class="drive-folder-control">
+              <input type="text" id="input-gdrive-folder" class="setting-input" value="Skool Downloads" readonly aria-describedby="gdrive-folder-status">
+              <button type="button" id="btn-browse-gdrive" class="folder-picker-button">Elegir…</button>
+            </div>
+            <small id="gdrive-folder-status" class="setting-hint drive-folder-status">Se comprobará la carpeta por su ID de Drive.</small>
           </div>
 
           <div class="setting-group">
@@ -321,8 +349,30 @@
 
     </main>
 
+    <div id="drive-folder-modal" class="drive-folder-modal" hidden>
+      <div class="drive-folder-dialog" role="dialog" aria-modal="true" aria-labelledby="drive-folder-title">
+        <div class="drive-folder-dialog-header">
+          <div>
+            <h2 id="drive-folder-title">Elegir carpeta raíz</h2>
+            <p>Los cursos se guardarán dentro como Comunidad / Curso.</p>
+          </div>
+          <button type="button" id="btn-close-drive-picker" class="drive-folder-close" aria-label="Cerrar">×</button>
+        </div>
+        <nav id="drive-folder-breadcrumb" class="drive-folder-breadcrumb" aria-label="Ruta de Google Drive"></nav>
+        <div id="drive-folder-list" class="drive-folder-list" role="list"></div>
+        <div class="drive-folder-create">
+          <input type="text" id="input-new-drive-folder" class="setting-input" placeholder="Nombre de la nueva carpeta">
+          <button type="button" id="btn-create-drive-folder" class="folder-picker-button">Crear</button>
+        </div>
+        <div class="drive-folder-actions">
+          <button type="button" id="btn-cancel-drive-picker" class="action-btn secondary">Cancelar</button>
+          <button type="button" id="btn-use-drive-folder" class="action-btn primary">Usar esta carpeta</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Toast Notification -->
-    <div id="toast" class="toast">¡Operación completada!</div>
+    <div id="toast" class="toast" role="status" aria-live="polite">¡Operación completada!</div>
   </div>
 
   <script src="popup.js"></script>

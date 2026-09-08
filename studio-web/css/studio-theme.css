@@ -755,10 +755,18 @@ body::before {
   margin-bottom: 24px;
 }
 
-.video-iframe {
+.video-iframe,
+.video-native {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.video-native {
+  position: relative;
+  z-index: 1;
+  object-fit: contain;
+  background: #000;
 }
 
 .video-placeholder {
