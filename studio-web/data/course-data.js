@@ -35,7 +35,27 @@ window.COMMUNITIES_DATA = [
                 "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=2cdd5e8a471d4a07adc538575f4924d4",
                 "descriptionHtml": "<p>Welcome the Minimal Cinematic Editing style that editors are using to make over $1,000+ every month!<br/><br/>Don't forget to <strong>click that check in the top right</strong> after finishing each course!</p><p>Don't give up, keep up your hard work, soon you'll be making $2k/mo as a video editor...</p>",
                 "resources": [],
-                "inDrive": false
+                "inDrive": true,
+                "gdriveId": "1uTypyfpWNdN4hfrURT_Mqa4LLnK-zCKR",
+                "gdriveLink": "https://drive.google.com/file/d/1uTypyfpWNdN4hfrURT_Mqa4LLnK-zCKR/view?usp=drivesdk",
+                "requestedQuality": "best",
+                "fileSizeBytes": 33725810,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 204.637,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               }
             ]
           },
@@ -69,15 +89,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "What Cinematic Edits Look Like",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 1,
-                    "moduleTitle": "01_Breaking Down Cinematic Editing",
-                    "moduleIndex": 1,
+                    "globalLessonIndex": 2,
+                    "moduleTitle": "02_Breaking Down Cinematic Editing",
+                    "moduleIndex": 2,
                     "resourceIndex": 1
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 1,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=2b234b70de1c4d0a870aead09061aa61"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=2b234b70de1c4d0a870aead09061aa61",
+                "requestedQuality": "best",
+                "fileSizeBytes": 88394587,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 760.337,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "1af1218e6ffe41ae89bf798976035a13",
@@ -102,15 +140,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Gathering Cinematic Inspiration",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 2,
-                    "moduleTitle": "01_Breaking Down Cinematic Editing",
-                    "moduleIndex": 1,
+                    "globalLessonIndex": 3,
+                    "moduleTitle": "02_Breaking Down Cinematic Editing",
+                    "moduleIndex": 2,
                     "resourceIndex": 1
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 2,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=1af1218e6ffe41ae89bf798976035a13"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=1af1218e6ffe41ae89bf798976035a13",
+                "requestedQuality": "best",
+                "fileSizeBytes": 87786560,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 783.256,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "271f97b6488448078e807a69b2b327cc",
@@ -135,15 +191,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Breaking Down Cinematic Reels",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 3,
-                    "moduleTitle": "01_Breaking Down Cinematic Editing",
-                    "moduleIndex": 1,
+                    "globalLessonIndex": 4,
+                    "moduleTitle": "02_Breaking Down Cinematic Editing",
+                    "moduleIndex": 2,
                     "resourceIndex": 1
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 3,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=271f97b6488448078e807a69b2b327cc"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=271f97b6488448078e807a69b2b327cc",
+                "requestedQuality": "best",
+                "fileSizeBytes": 94803680,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 790.221,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "77e277f3ee4c4a5e83cb2fddc2908e3d",
@@ -168,9 +242,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Planning out our Animation",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 4,
-                    "moduleTitle": "01_Breaking Down Cinematic Editing",
-                    "moduleIndex": 1,
+                    "globalLessonIndex": 5,
+                    "moduleTitle": "02_Breaking Down Cinematic Editing",
+                    "moduleIndex": 2,
                     "resourceIndex": 1
                   },
                   {
@@ -183,15 +257,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Planning out our Animation",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 4,
-                    "moduleTitle": "01_Breaking Down Cinematic Editing",
-                    "moduleIndex": 1,
+                    "globalLessonIndex": 5,
+                    "moduleTitle": "02_Breaking Down Cinematic Editing",
+                    "moduleIndex": 2,
                     "resourceIndex": 2
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 4,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=77e277f3ee4c4a5e83cb2fddc2908e3d"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=77e277f3ee4c4a5e83cb2fddc2908e3d",
+                "requestedQuality": "best",
+                "fileSizeBytes": 85750969,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 984.178,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               }
             ]
           },
@@ -225,9 +317,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Cutting & Pacing Fundamentals",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 5,
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "moduleIndex": 2,
+                    "globalLessonIndex": 6,
+                    "moduleTitle": "03_Cutting & Preparing",
+                    "moduleIndex": 3,
                     "resourceIndex": 1
                   },
                   {
@@ -240,15 +332,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cutting & Pacing Fundamentals",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 5,
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "moduleIndex": 2,
+                    "globalLessonIndex": 6,
+                    "moduleTitle": "03_Cutting & Preparing",
+                    "moduleIndex": 3,
                     "resourceIndex": 2
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 1,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=e46dbb64cc43427e9209025bb85a2c64"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=e46dbb64cc43427e9209025bb85a2c64",
+                "requestedQuality": "best",
+                "fileSizeBytes": 77624864,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 685.012,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "a22eea10cd184351a42db71f37bb30bb",
@@ -273,9 +383,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Creating Shorts from Long-Form (Theory)",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 6,
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "moduleIndex": 2,
+                    "globalLessonIndex": 7,
+                    "moduleTitle": "03_Cutting & Preparing",
+                    "moduleIndex": 3,
                     "resourceIndex": 1
                   },
                   {
@@ -288,15 +398,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Creating Shorts from Long-Form (Theory)",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 6,
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "moduleIndex": 2,
+                    "globalLessonIndex": 7,
+                    "moduleTitle": "03_Cutting & Preparing",
+                    "moduleIndex": 3,
                     "resourceIndex": 2
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 2,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=a22eea10cd184351a42db71f37bb30bb"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=a22eea10cd184351a42db71f37bb30bb",
+                "requestedQuality": "best",
+                "fileSizeBytes": 65351676,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 604.949,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "1c5e05c0940348b293b4794a32da6aab",
@@ -321,9 +449,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Creating Short-Form Clips (Practice)",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 7,
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "moduleIndex": 2,
+                    "globalLessonIndex": 8,
+                    "moduleTitle": "03_Cutting & Preparing",
+                    "moduleIndex": 3,
                     "resourceIndex": 1
                   },
                   {
@@ -336,9 +464,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Creating Short-Form Clips (Practice)",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 7,
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "moduleIndex": 2,
+                    "globalLessonIndex": 8,
+                    "moduleTitle": "03_Cutting & Preparing",
+                    "moduleIndex": 3,
                     "resourceIndex": 2
                   },
                   {
@@ -351,15 +479,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Creating Short-Form Clips (Practice)",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 7,
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "moduleIndex": 2,
+                    "globalLessonIndex": 8,
+                    "moduleTitle": "03_Cutting & Preparing",
+                    "moduleIndex": 3,
                     "resourceIndex": 3
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 3,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=1c5e05c0940348b293b4794a32da6aab"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=1c5e05c0940348b293b4794a32da6aab",
+                "requestedQuality": "best",
+                "fileSizeBytes": 209349024,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 1842.921,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "d46921b6792044969dd9cfa1614eb7aa",
@@ -384,9 +530,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Extracting Short-Form Clips (Overview)",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 8,
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "moduleIndex": 2,
+                    "globalLessonIndex": 9,
+                    "moduleTitle": "03_Cutting & Preparing",
+                    "moduleIndex": 3,
                     "resourceIndex": 1
                   },
                   {
@@ -399,9 +545,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Extracting Short-Form Clips (Overview)",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 8,
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "moduleIndex": 2,
+                    "globalLessonIndex": 9,
+                    "moduleTitle": "03_Cutting & Preparing",
+                    "moduleIndex": 3,
                     "resourceIndex": 2
                   },
                   {
@@ -414,15 +560,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Extracting Short-Form Clips (Overview)",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 8,
-                    "moduleTitle": "02_Cutting & Preparing",
-                    "moduleIndex": 2,
+                    "globalLessonIndex": 9,
+                    "moduleTitle": "03_Cutting & Preparing",
+                    "moduleIndex": 3,
                     "resourceIndex": 3
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 4,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=d46921b6792044969dd9cfa1614eb7aa"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=d46921b6792044969dd9cfa1614eb7aa",
+                "requestedQuality": "best",
+                "fileSizeBytes": 87324773,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 747.056,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "8a4e2d13704e49738024a16e0c5e2c07",
@@ -483,7 +647,27 @@ window.COMMUNITIES_DATA = [
                     "resourceIndex": 3
                   }
                 ],
-                "inDrive": false
+                "inDrive": true,
+                "gdriveId": "19hW7OG4H4kqwtTN8DP4DpA1zgEDFwM5O",
+                "gdriveLink": "https://drive.google.com/file/d/19hW7OG4H4kqwtTN8DP4DpA1zgEDFwM5O/view?usp=drivesdk",
+                "requestedQuality": "best",
+                "fileSizeBytes": 100538714,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 887.211,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               }
             ]
           },
@@ -517,9 +701,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "B-roll Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 9,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 11,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 1
                   },
                   {
@@ -532,9 +716,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "B-roll Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 9,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 11,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 2
                   },
                   {
@@ -547,15 +731,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "B-roll Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 9,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 11,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 3
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 1,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=b5e1b0991ede46b593994c7d3d4c94b7"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=b5e1b0991ede46b593994c7d3d4c94b7",
+                "requestedQuality": "best",
+                "fileSizeBytes": 84390169,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 717.148,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "fafbccf9aa45415c898eaddeca3e3a16",
@@ -580,9 +782,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Choosing B-roll For Your Story",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 10,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 12,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 1
                   },
                   {
@@ -595,9 +797,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Choosing B-roll For Your Story",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 10,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 12,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 2
                   },
                   {
@@ -610,9 +812,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Choosing B-roll For Your Story",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 10,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 12,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 3
                   },
                   {
@@ -625,15 +827,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Choosing B-roll For Your Story",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 10,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 12,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 4
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 2,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=fafbccf9aa45415c898eaddeca3e3a16"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=fafbccf9aa45415c898eaddeca3e3a16",
+                "requestedQuality": "best",
+                "fileSizeBytes": 47617778,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 377.487,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "7b9b5b588cdf4bebb0a2db31d6a9af59",
@@ -658,9 +878,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Collecting Stock Footage",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 11,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 13,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 1
                   },
                   {
@@ -673,9 +893,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Collecting Stock Footage",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 11,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 13,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 2
                   },
                   {
@@ -688,9 +908,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Collecting Stock Footage",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 11,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 13,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 3
                   },
                   {
@@ -703,9 +923,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Collecting Stock Footage",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 11,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 13,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 4
                   },
                   {
@@ -718,15 +938,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Collecting Stock Footage",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 11,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 13,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 5
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 3,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=7b9b5b588cdf4bebb0a2db31d6a9af59"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=7b9b5b588cdf4bebb0a2db31d6a9af59",
+                "requestedQuality": "best",
+                "fileSizeBytes": 149207900,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 985.548,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "8418b329db8e41eab6af29cca7bbaa4d",
@@ -751,9 +989,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Storytelling with B-roll",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 12,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 14,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 1
                   },
                   {
@@ -766,9 +1004,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Storytelling with B-roll",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 12,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 14,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 2
                   },
                   {
@@ -781,9 +1019,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Storytelling with B-roll",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 12,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 14,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 3
                   },
                   {
@@ -796,9 +1034,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Storytelling with B-roll",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 12,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 14,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 4
                   },
                   {
@@ -811,15 +1049,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Storytelling with B-roll",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 12,
-                    "moduleTitle": "03_Storytelling with Your Footage",
-                    "moduleIndex": 3,
+                    "globalLessonIndex": 14,
+                    "moduleTitle": "04_Storytelling with Your Footage",
+                    "moduleIndex": 4,
                     "resourceIndex": 5
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 4,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=8418b329db8e41eab6af29cca7bbaa4d"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=8418b329db8e41eab6af29cca7bbaa4d",
+                "requestedQuality": "best",
+                "fileSizeBytes": 109401247,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 1024.255,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               }
             ]
           },
@@ -853,9 +1109,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "The Text Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 13,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 15,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 1
                   },
                   {
@@ -868,9 +1124,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "The Text Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 13,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 15,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 2
                   },
                   {
@@ -883,9 +1139,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "The Text Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 13,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 15,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 3
                   },
                   {
@@ -898,9 +1154,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "The Text Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 13,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 15,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 4
                   },
                   {
@@ -913,15 +1169,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "The Text Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 13,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 15,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 5
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 1,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=89b761d4c6524f609f2defcc141969d7"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=89b761d4c6524f609f2defcc141969d7",
+                "requestedQuality": "best",
+                "fileSizeBytes": 109321956,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 1096.818,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "99374afc1c244a689d1b5ac25a92851d",
@@ -946,9 +1220,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Default Text Workflow",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 14,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 16,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 1
                   },
                   {
@@ -961,9 +1235,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Default Text Workflow",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 14,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 16,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 2
                   },
                   {
@@ -976,9 +1250,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Default Text Workflow",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 14,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 16,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 3
                   },
                   {
@@ -991,9 +1265,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Default Text Workflow",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 14,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 16,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 4
                   },
                   {
@@ -1006,15 +1280,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Default Text Workflow",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 14,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 16,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 5
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 2,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=99374afc1c244a689d1b5ac25a92851d"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=99374afc1c244a689d1b5ac25a92851d",
+                "requestedQuality": "best",
+                "fileSizeBytes": 116799484,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 1443.515,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "4bafd88eb7dc43b8ad37943d62a7051b",
@@ -1039,9 +1331,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "How to Special Design Text",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 15,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 17,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 1
                   },
                   {
@@ -1054,9 +1346,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "How to Special Design Text",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 15,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 17,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 2
                   },
                   {
@@ -1069,9 +1361,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "How to Special Design Text",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 15,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 17,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 3
                   },
                   {
@@ -1084,9 +1376,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "How to Special Design Text",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 15,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 17,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 4
                   },
                   {
@@ -1099,15 +1391,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "How to Special Design Text",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 15,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 17,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 5
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 3,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=4bafd88eb7dc43b8ad37943d62a7051b"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=4bafd88eb7dc43b8ad37943d62a7051b",
+                "requestedQuality": "best",
+                "fileSizeBytes": 123165613,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 1381.007,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "51786b7a38d04460a94cd357240db147",
@@ -1132,9 +1442,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "3D Warped Text Effect",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 16,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 18,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 1
                   },
                   {
@@ -1147,9 +1457,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "3D Warped Text Effect",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 16,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 18,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 2
                   },
                   {
@@ -1162,9 +1472,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "3D Warped Text Effect",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 16,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 18,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 3
                   },
                   {
@@ -1177,9 +1487,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "3D Warped Text Effect",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 16,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 18,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 4
                   },
                   {
@@ -1192,15 +1502,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "3D Warped Text Effect",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 16,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 18,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 5
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 4,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=51786b7a38d04460a94cd357240db147"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=51786b7a38d04460a94cd357240db147",
+                "requestedQuality": "best",
+                "fileSizeBytes": 56013280,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 624.268,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "4354e2bfd21043bbb6e9f6fd96a1ad11",
@@ -1225,9 +1553,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Blending Text Effect",
                     "lessonIndex": 5,
-                    "globalLessonIndex": 17,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 19,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 1
                   },
                   {
@@ -1240,9 +1568,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Blending Text Effect",
                     "lessonIndex": 5,
-                    "globalLessonIndex": 17,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 19,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 2
                   },
                   {
@@ -1255,9 +1583,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Blending Text Effect",
                     "lessonIndex": 5,
-                    "globalLessonIndex": 17,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 19,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 3
                   },
                   {
@@ -1270,9 +1598,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Blending Text Effect",
                     "lessonIndex": 5,
-                    "globalLessonIndex": 17,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 19,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 4
                   },
                   {
@@ -1285,15 +1613,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Blending Text Effect",
                     "lessonIndex": 5,
-                    "globalLessonIndex": 17,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 19,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 5
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 5,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=4354e2bfd21043bbb6e9f6fd96a1ad11"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=4354e2bfd21043bbb6e9f6fd96a1ad11",
+                "requestedQuality": "best",
+                "fileSizeBytes": 54342392,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 642.078,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "75aed36d7b3442c9ad86be5adce7f71a",
@@ -1318,9 +1664,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Tracking Text Effect",
                     "lessonIndex": 6,
-                    "globalLessonIndex": 18,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 20,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 1
                   },
                   {
@@ -1333,9 +1679,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Tracking Text Effect",
                     "lessonIndex": 6,
-                    "globalLessonIndex": 18,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 20,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 2
                   },
                   {
@@ -1348,9 +1694,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Tracking Text Effect",
                     "lessonIndex": 6,
-                    "globalLessonIndex": 18,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 20,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 3
                   },
                   {
@@ -1363,9 +1709,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Tracking Text Effect",
                     "lessonIndex": 6,
-                    "globalLessonIndex": 18,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 20,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 4
                   },
                   {
@@ -1378,15 +1724,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Tracking Text Effect",
                     "lessonIndex": 6,
-                    "globalLessonIndex": 18,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 20,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 5
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 6,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=75aed36d7b3442c9ad86be5adce7f71a"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=75aed36d7b3442c9ad86be5adce7f71a",
+                "requestedQuality": "best",
+                "fileSizeBytes": 47605159,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 546.435,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "19ef8744ff9c4c21b25711625a8fd4e5",
@@ -1411,9 +1775,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Integrating Text into B-roll",
                     "lessonIndex": 7,
-                    "globalLessonIndex": 19,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 21,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 1
                   },
                   {
@@ -1426,9 +1790,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Integrating Text into B-roll",
                     "lessonIndex": 7,
-                    "globalLessonIndex": 19,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 21,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 2
                   },
                   {
@@ -1441,9 +1805,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Integrating Text into B-roll",
                     "lessonIndex": 7,
-                    "globalLessonIndex": 19,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 21,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 3
                   },
                   {
@@ -1456,9 +1820,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Integrating Text into B-roll",
                     "lessonIndex": 7,
-                    "globalLessonIndex": 19,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 21,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 4
                   },
                   {
@@ -1471,15 +1835,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Integrating Text into B-roll",
                     "lessonIndex": 7,
-                    "globalLessonIndex": 19,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 21,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 5
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 7,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=19ef8744ff9c4c21b25711625a8fd4e5"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=19ef8744ff9c4c21b25711625a8fd4e5",
+                "requestedQuality": "best",
+                "fileSizeBytes": 144660189,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 1773.587,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "7073fd31eef54f2a9c8903567fb3753c",
@@ -1490,9 +1872,9 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "Recap Complete Text Workflow",
                 "module": "05 Everything Cinematic Text",
                 "moduleIndex": 5,
-                "gdriveId": null,
-                "gdriveLink": null,
-                "inDrive": false,
+                "gdriveId": "1SsqvTAKewK18xBvERP0fzGuGkZ2ZsPtH",
+                "gdriveLink": "https://drive.google.com/file/d/1SsqvTAKewK18xBvERP0fzGuGkZ2ZsPtH/view?usp=drivesdk",
+                "inDrive": true,
                 "resources": [
                   {
                     "id": "body_link_7073fd31eef54f2a9c8903567fb3753c_162dsax",
@@ -1504,9 +1886,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Recap Complete Text Workflow",
                     "lessonIndex": 8,
-                    "globalLessonIndex": 20,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 22,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 1
                   },
                   {
@@ -1519,9 +1901,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Recap Complete Text Workflow",
                     "lessonIndex": 8,
-                    "globalLessonIndex": 20,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 22,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 2
                   },
                   {
@@ -1534,9 +1916,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Recap Complete Text Workflow",
                     "lessonIndex": 8,
-                    "globalLessonIndex": 20,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 22,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 3
                   },
                   {
@@ -1549,9 +1931,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Recap Complete Text Workflow",
                     "lessonIndex": 8,
-                    "globalLessonIndex": 20,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 22,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 4
                   },
                   {
@@ -1564,15 +1946,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Recap Complete Text Workflow",
                     "lessonIndex": 8,
-                    "globalLessonIndex": 20,
-                    "moduleTitle": "04_Everything Cinematic Text",
-                    "moduleIndex": 4,
+                    "globalLessonIndex": 22,
+                    "moduleTitle": "05_Everything Cinematic Text",
+                    "moduleIndex": 5,
                     "resourceIndex": 5
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 8,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=7073fd31eef54f2a9c8903567fb3753c"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=7073fd31eef54f2a9c8903567fb3753c",
+                "requestedQuality": "best",
+                "fileSizeBytes": 48534645,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 264.22,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "f042197b639a4cec9a5e8d8d18807fa5",
@@ -1663,7 +2063,27 @@ window.COMMUNITIES_DATA = [
                     "resourceIndex": 5
                   }
                 ],
-                "inDrive": false
+                "inDrive": true,
+                "gdriveId": "1H4n6dGzccnRqdeRF3wJfrnguA3YPYcXR",
+                "gdriveLink": "https://drive.google.com/file/d/1H4n6dGzccnRqdeRF3wJfrnguA3YPYcXR/view?usp=drivesdk",
+                "requestedQuality": "best",
+                "fileSizeBytes": 124760226,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 1490.35,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               }
             ]
           },
@@ -1697,9 +2117,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Cinematic Sound Design Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 21,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 24,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 1
                   },
                   {
@@ -1712,9 +2132,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Sound Design Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 21,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 24,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 2
                   },
                   {
@@ -1727,9 +2147,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Sound Design Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 21,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 24,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 3
                   },
                   {
@@ -1742,9 +2162,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Sound Design Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 21,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 24,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 4
                   },
                   {
@@ -1757,9 +2177,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Sound Design Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 21,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 24,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 5
                   },
                   {
@@ -1772,15 +2192,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Sound Design Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 21,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 24,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 6
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 1,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=71ebf19ebc734ad9b6f8118acabdaf56"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=71ebf19ebc734ad9b6f8118acabdaf56",
+                "requestedQuality": "best",
+                "fileSizeBytes": 33182572,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 314.955,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "f2a65983bf024166b2ff2a6a44f66c6f",
@@ -1805,9 +2243,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Environmental Sound Effects",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 22,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 25,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 1
                   },
                   {
@@ -1820,9 +2258,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Environmental Sound Effects",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 22,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 25,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 2
                   },
                   {
@@ -1835,9 +2273,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Environmental Sound Effects",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 22,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 25,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 3
                   },
                   {
@@ -1850,9 +2288,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Environmental Sound Effects",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 22,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 25,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 4
                   },
                   {
@@ -1865,9 +2303,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Environmental Sound Effects",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 22,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 25,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 5
                   },
                   {
@@ -1880,15 +2318,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Environmental Sound Effects",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 22,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 25,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 6
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 2,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=f2a65983bf024166b2ff2a6a44f66c6f"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=f2a65983bf024166b2ff2a6a44f66c6f",
+                "requestedQuality": "best",
+                "fileSizeBytes": 114908793,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 1191.068,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "d4e4e1a4f63643cbbb36293a9e0210ce",
@@ -1913,9 +2369,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Textured Sound Design Workflow",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 23,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 26,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 1
                   },
                   {
@@ -1928,9 +2384,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Textured Sound Design Workflow",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 23,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 26,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 2
                   },
                   {
@@ -1943,9 +2399,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Textured Sound Design Workflow",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 23,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 26,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 3
                   },
                   {
@@ -1958,9 +2414,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Textured Sound Design Workflow",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 23,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 26,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 4
                   },
                   {
@@ -1973,9 +2429,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Textured Sound Design Workflow",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 23,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 26,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 5
                   },
                   {
@@ -1988,15 +2444,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Textured Sound Design Workflow",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 23,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 26,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 6
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 3,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=d4e4e1a4f63643cbbb36293a9e0210ce"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=d4e4e1a4f63643cbbb36293a9e0210ce",
+                "requestedQuality": "best",
+                "fileSizeBytes": 140580528,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 1631.922,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "6148bbe9addd42c2a7e311aba3a4ac0d",
@@ -2021,9 +2495,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Creating Anticipation with Sound Design",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 24,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 27,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 1
                   },
                   {
@@ -2036,9 +2510,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Creating Anticipation with Sound Design",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 24,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 27,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 2
                   },
                   {
@@ -2051,9 +2525,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Creating Anticipation with Sound Design",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 24,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 27,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 3
                   },
                   {
@@ -2066,9 +2540,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Creating Anticipation with Sound Design",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 24,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 27,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 4
                   },
                   {
@@ -2081,9 +2555,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Creating Anticipation with Sound Design",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 24,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 27,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 5
                   },
                   {
@@ -2096,15 +2570,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Creating Anticipation with Sound Design",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 24,
-                    "moduleTitle": "05_Cinematic Sound Workflow",
-                    "moduleIndex": 5,
+                    "globalLessonIndex": 27,
+                    "moduleTitle": "06_Cinematic Sound Workflow",
+                    "moduleIndex": 6,
                     "resourceIndex": 6
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 4,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=6148bbe9addd42c2a7e311aba3a4ac0d"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=6148bbe9addd42c2a7e311aba3a4ac0d",
+                "requestedQuality": "best",
+                "fileSizeBytes": 106792097,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 1035.238,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               }
             ]
           },
@@ -2138,9 +2630,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Cinematic Music Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 25,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 28,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 1
                   },
                   {
@@ -2153,9 +2645,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Music Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 25,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 28,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 2
                   },
                   {
@@ -2168,9 +2660,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Music Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 25,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 28,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 3
                   },
                   {
@@ -2183,9 +2675,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Music Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 25,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 28,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 4
                   },
                   {
@@ -2198,9 +2690,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Music Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 25,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 28,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 5
                   },
                   {
@@ -2213,9 +2705,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Music Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 25,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 28,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 6
                   },
                   {
@@ -2228,15 +2720,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Music Theory",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 25,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 28,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 7
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 1,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=9acc2e5bdb084f5ab3307117b8eb330f"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=9acc2e5bdb084f5ab3307117b8eb330f",
+                "requestedQuality": "best",
+                "fileSizeBytes": 62464177,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 620.205,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "a5c34a037bec41a38d4d2ea82d80bc5d",
@@ -2261,9 +2771,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Testing Music Tracks",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 26,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 29,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 1
                   },
                   {
@@ -2276,9 +2786,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Testing Music Tracks",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 26,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 29,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 2
                   },
                   {
@@ -2291,9 +2801,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Testing Music Tracks",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 26,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 29,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 3
                   },
                   {
@@ -2306,9 +2816,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Testing Music Tracks",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 26,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 29,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 4
                   },
                   {
@@ -2321,9 +2831,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Testing Music Tracks",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 26,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 29,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 5
                   },
                   {
@@ -2336,9 +2846,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Testing Music Tracks",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 26,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 29,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 6
                   },
                   {
@@ -2351,15 +2861,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Testing Music Tracks",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 26,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 29,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 7
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 2,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=a5c34a037bec41a38d4d2ea82d80bc5d"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=a5c34a037bec41a38d4d2ea82d80bc5d",
+                "requestedQuality": "best",
+                "fileSizeBytes": 129261870,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 1271.037,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "0da3e387045741d980bf7755cf9b858b",
@@ -2384,9 +2912,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Bonus Music Effects",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 27,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 30,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 1
                   },
                   {
@@ -2399,9 +2927,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Bonus Music Effects",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 27,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 30,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 2
                   },
                   {
@@ -2414,9 +2942,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Bonus Music Effects",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 27,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 30,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 3
                   },
                   {
@@ -2429,9 +2957,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Bonus Music Effects",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 27,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 30,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 4
                   },
                   {
@@ -2444,9 +2972,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Bonus Music Effects",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 27,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 30,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 5
                   },
                   {
@@ -2459,9 +2987,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Bonus Music Effects",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 27,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 30,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 6
                   },
                   {
@@ -2474,15 +3002,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Bonus Music Effects",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 27,
-                    "moduleTitle": "06_Film-like Music",
-                    "moduleIndex": 6,
+                    "globalLessonIndex": 30,
+                    "moduleTitle": "07_Film-like Music",
+                    "moduleIndex": 7,
                     "resourceIndex": 7
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/file/d/1HDQb5jn94F9sCgH2iiJ_hmvGx5PjjYSF/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Raw Short here</a></p><p><a href=\"https://drive.google.com/drive/folders/1k4pmQmjP0apZXBCat6ruLUPUXllIUKsG?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the YouTube Videos we used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1KzYR9hjSFp9sRCtHL1BCEzEwPRuvz5Pg?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Cinematic Footage used here</a></p><p><a href=\"https://drive.google.com/drive/folders/1eZ52yuU15jJGTy2ISp-Jxzal-DBMoMiu?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download the Stock Footage we collected here</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 3,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=0da3e387045741d980bf7755cf9b858b"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=0da3e387045741d980bf7755cf9b858b",
+                "requestedQuality": "best",
+                "fileSizeBytes": 57809104,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 448.284,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               }
             ]
           },
@@ -2502,9 +3048,9 @@ window.COMMUNITIES_DATA = [
                 "rawTitle": "Reveal Cinematic Practice Project",
                 "module": "08 The Cinematic Practice Project",
                 "moduleIndex": 8,
-                "gdriveId": null,
-                "gdriveLink": null,
-                "inDrive": false,
+                "gdriveId": "1z0JUpaJoHq1ReNkbp0Y09gB_WKzQYyIc",
+                "gdriveLink": "https://drive.google.com/file/d/1z0JUpaJoHq1ReNkbp0Y09gB_WKzQYyIc/view?usp=drivesdk",
+                "inDrive": true,
                 "resources": [
                   {
                     "id": "body_link_8243fb954af24339be94aaf44f41a781_162dsax",
@@ -2516,9 +3062,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Reveal Cinematic Practice Project",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 28,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 31,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 1
                   },
                   {
@@ -2531,9 +3077,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Reveal Cinematic Practice Project",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 28,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 31,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 2
                   },
                   {
@@ -2546,9 +3092,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Reveal Cinematic Practice Project",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 28,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 31,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 3
                   },
                   {
@@ -2561,15 +3107,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Reveal Cinematic Practice Project",
                     "lessonIndex": 1,
-                    "globalLessonIndex": 28,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 31,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 4
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 1,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=8243fb954af24339be94aaf44f41a781"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=8243fb954af24339be94aaf44f41a781",
+                "requestedQuality": "best",
+                "fileSizeBytes": 33154610,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 377.208,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "03bc312abffe4d1daae9c0d4d792bdbc",
@@ -2594,9 +3158,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Creating a Short-Form Clip",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 29,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 32,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 1
                   },
                   {
@@ -2609,9 +3173,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Creating a Short-Form Clip",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 29,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 32,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 2
                   },
                   {
@@ -2624,9 +3188,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Creating a Short-Form Clip",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 29,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 32,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 3
                   },
                   {
@@ -2639,15 +3203,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Creating a Short-Form Clip",
                     "lessonIndex": 2,
-                    "globalLessonIndex": 29,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 32,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 4
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 2,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=03bc312abffe4d1daae9c0d4d792bdbc"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=03bc312abffe4d1daae9c0d4d792bdbc",
+                "requestedQuality": "best",
+                "fileSizeBytes": 148448206,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 1407.872,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "e3029dccbd7b4c30bccda71d9f4ab74e",
@@ -2672,9 +3254,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Planning My Practice Project",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 30,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 33,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 1
                   },
                   {
@@ -2687,9 +3269,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Planning My Practice Project",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 30,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 33,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 2
                   },
                   {
@@ -2702,9 +3284,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Planning My Practice Project",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 30,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 33,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 3
                   },
                   {
@@ -2717,15 +3299,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Planning My Practice Project",
                     "lessonIndex": 3,
-                    "globalLessonIndex": 30,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 33,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 4
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 3,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=e3029dccbd7b4c30bccda71d9f4ab74e"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=e3029dccbd7b4c30bccda71d9f4ab74e",
+                "requestedQuality": "best",
+                "fileSizeBytes": 54008677,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 578.038,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "d4b8dab0968f4201997468b52bac4ca0",
@@ -2750,9 +3350,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Storytelling with B-roll",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 31,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 34,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 1
                   },
                   {
@@ -2765,9 +3365,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Storytelling with B-roll",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 31,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 34,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 2
                   },
                   {
@@ -2780,9 +3380,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Storytelling with B-roll",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 31,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 34,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 3
                   },
                   {
@@ -2795,15 +3395,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Storytelling with B-roll",
                     "lessonIndex": 4,
-                    "globalLessonIndex": 31,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 34,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 4
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 4,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=d4b8dab0968f4201997468b52bac4ca0"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=d4b8dab0968f4201997468b52bac4ca0",
+                "requestedQuality": "best",
+                "fileSizeBytes": 109194266,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 955.176,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "9d8e61a31ae0487a9c28079ffc444cd1",
@@ -2828,9 +3446,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Complete Text Workflow",
                     "lessonIndex": 5,
-                    "globalLessonIndex": 32,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 35,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 1
                   },
                   {
@@ -2843,9 +3461,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Complete Text Workflow",
                     "lessonIndex": 5,
-                    "globalLessonIndex": 32,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 35,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 2
                   },
                   {
@@ -2858,9 +3476,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Complete Text Workflow",
                     "lessonIndex": 5,
-                    "globalLessonIndex": 32,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 35,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 3
                   },
                   {
@@ -2873,15 +3491,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Complete Text Workflow",
                     "lessonIndex": 5,
-                    "globalLessonIndex": 32,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 35,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 4
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 5,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=9d8e61a31ae0487a9c28079ffc444cd1"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=9d8e61a31ae0487a9c28079ffc444cd1",
+                "requestedQuality": "best",
+                "fileSizeBytes": 180926707,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 2221.941,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "05682e7e77274619a953ad69c944051a",
@@ -2906,9 +3542,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Cinematic Sound Design Workflow",
                     "lessonIndex": 6,
-                    "globalLessonIndex": 33,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 36,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 1
                   },
                   {
@@ -2921,9 +3557,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Sound Design Workflow",
                     "lessonIndex": 6,
-                    "globalLessonIndex": 33,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 36,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 2
                   },
                   {
@@ -2936,9 +3572,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Sound Design Workflow",
                     "lessonIndex": 6,
-                    "globalLessonIndex": 33,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 36,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 3
                   },
                   {
@@ -2951,15 +3587,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Cinematic Sound Design Workflow",
                     "lessonIndex": 6,
-                    "globalLessonIndex": 33,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 36,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 4
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 6,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=05682e7e77274619a953ad69c944051a"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=05682e7e77274619a953ad69c944051a",
+                "requestedQuality": "best",
+                "fileSizeBytes": 216610872,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 2346.005,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               },
               {
                 "id": "daee5a59b1ae4aed839085fd29ac7cce",
@@ -2984,9 +3638,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#a855f7",
                     "lessonTitle": "Music and Final Touches",
                     "lessonIndex": 7,
-                    "globalLessonIndex": 34,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 37,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 1
                   },
                   {
@@ -2999,9 +3653,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Music and Final Touches",
                     "lessonIndex": 7,
-                    "globalLessonIndex": 34,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 37,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 2
                   },
                   {
@@ -3014,9 +3668,9 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Music and Final Touches",
                     "lessonIndex": 7,
-                    "globalLessonIndex": 34,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 37,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 3
                   },
                   {
@@ -3029,15 +3683,33 @@ window.COMMUNITIES_DATA = [
                     "categoryColor": "#0ea5e9",
                     "lessonTitle": "Music and Final Touches",
                     "lessonIndex": 7,
-                    "globalLessonIndex": 34,
-                    "moduleTitle": "07_The Cinematic Practice Project",
-                    "moduleIndex": 7,
+                    "globalLessonIndex": 37,
+                    "moduleTitle": "08_The Cinematic Practice Project",
+                    "moduleIndex": 8,
                     "resourceIndex": 4
                   }
                 ],
                 "descriptionHtml": "<p>Don't forget to<strong> check that circle</strong> in the top right once you've walked through this course!</p><p>Be sure to <strong>post your practice project in the community</strong>! (I'd love to review it for you)</p><h3>Assets you'll Need:</h3><p><a href=\"https://www.figma.com/design/uNCVXiRzA55S0cmveJKdpP/Ultimate-Inspiration-Board?node-id=0-1&t=Modt8m9tojHKObeG-1\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Figma Board (Inspiration and planning)</a></p><p><a href=\"https://drive.google.com/drive/folders/1wFUz4TiyHq5QQvqdOu3EpWhFHBV6INrw?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download all the Sound Effects we used</a></p><p><a href=\"https://drive.google.com/drive/folders/1gDK10VBt1OJrdQvMpChnnp6QYmwZzMfI?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">100 Viral Cinematic Songs</a></p><p><a href=\"https://drive.google.com/drive/folders/1qTRtClf48rR7iyDMn8knAMLd_TURPyW4?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"lesson-link\">Download my practice project assets (if you want to follow along)</a></p><p>Got any questions? <strong>Make a post in the community</strong>, or <strong>hop on one of our weekly Q&As</strong> and we'll personally help you out!</p>",
                 "sourceOrder": 7,
-                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=daee5a59b1ae4aed839085fd29ac7cce"
+                "sourceUrl": "https://www.skool.com/ultimateeditors2/classroom/d0fb6bb7?md=daee5a59b1ae4aed839085fd29ac7cce",
+                "requestedQuality": "best",
+                "fileSizeBytes": 50741266,
+                "actualWidth": 1920,
+                "actualHeight": 1080,
+                "videoCodec": "h264",
+                "audioCodec": "aac",
+                "hasAudio": true,
+                "durationSeconds": 503.409,
+                "convertedForBrowser": false,
+                "availableHeights": [
+                  270,
+                  480,
+                  720,
+                  1080
+                ],
+                "sourceMaxHeight": 1080,
+                "expectedHeight": 1080,
+                "browserCompatible": true
               }
             ]
           }
