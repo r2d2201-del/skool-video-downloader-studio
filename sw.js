@@ -3,12 +3,16 @@
  * Cache-First for static assets, Stale-While-Revalidate for course catalog.
  */
 
-const CACHE_NAME = 'cinematic-studio-v2.8.2';
+const CACHE_NAME = 'cinematic-studio-v3.0.0';
 const STATIC_ASSETS = [
   './',
   './index.html',
   './css/studio-theme.css',
   './js/app.js',
+  './js/cloud-config.js',
+  './js/supabase-client.js',
+  './js/progress-store.js',
+  './js/cloud-progress.js',
   './data/course-data.js',
   './manifest.webmanifest'
 ];
@@ -29,7 +33,7 @@ self.addEventListener('activate', (event) => {
     caches.keys().then((keys) => {
       return Promise.all(
         keys.map((key) => {
-          if (key !== CACHE_NAME) {
+          if (key.startsWith('cinematic-studio-') && key !== CACHE_NAME) {
             console.log('[PWA SW] Clearing old cache:', key);
             return caches.delete(key);
           }
@@ -42,6 +46,12 @@ self.addEventListener('activate', (event) => {
 // Fetch Event - Stale-while-revalidate for data, cache-first for assets with ignoreSearch
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
+
+  // Never cache authentication requests or private account progress.
+  if (event.request.method !== 'GET' || url.origin !== self.location.origin) return;
+
+  // Account callback pages must reach the app with their original URL intact.
+  if (url.searchParams.has('code') || url.pathname.startsWith('/auth/')) return;
 
   // Do not intercept external video streams or Google Drive previews
   if (url.origin.includes('google.com') || url.origin.includes('googleapis.com') || url.origin.includes('mux.com')) {

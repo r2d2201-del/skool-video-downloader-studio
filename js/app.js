@@ -6,9 +6,12 @@
 (function () {
   'use strict';
 
-  const STORAGE_KEY_PROGRESS = 'cinematic_lms_completed_lessons';
   const STORAGE_KEY_LAST_LESSON_PREFIX = 'cinematic_lms_last_lesson_';
   const STORAGE_KEY_ACTIVE_COURSE = 'cinematic_lms_active_course_id';
+  const progress = window.CinematicCloud;
+  const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+  const readPreference = key => { try { return localStorage.getItem(key); } catch (_) { return null; } };
+  const savePreference = (key, value) => { try { localStorage.setItem(key, value); } catch (_) {} };
 
   // SVG ICONS CONSTANTS
   const ICONS = {
@@ -37,7 +40,7 @@
     });
   });
   let currentCourse = window.COURSE_DATA || (communitiesList[0] && communitiesList[0].courses[0]);
-  let completedLessonIds = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY_PROGRESS) || '[]'));
+  progress.setCatalog(communitiesList);
   let currentActiveLesson = null;
   let allFlattenedLessons = [];
   let currentView = 'home'; // 'home' or 'player'
@@ -152,38 +155,38 @@
       const commSection = document.createElement('section');
       commSection.className = 'community-group-section';
 
-      commSection.innerHTML = `
+      commSection.innerHTML = window.CinematicSanitize(`
         <div class="community-header">
-          <span class="hud-pill cyan">[ ${comm.badge || 'COMUNIDAD'} ]</span>
-          <h2 class="community-name">${ICONS.ACADEMY} ${comm.name}</h2>
+          <span class="hud-pill cyan">[ ${escapeHtml(comm.badge || 'COMUNIDAD')} ]</span>
+          <h2 class="community-name">${ICONS.ACADEMY} ${escapeHtml(comm.name)}</h2>
         </div>
-        <div class="catalog-grid" id="grid-comm-${comm.id}"></div>
-      `;
+        <div class="catalog-grid" id="grid-comm-${escapeHtml(comm.id)}"></div>
+      `);
 
-      const grid = commSection.querySelector(`#grid-comm-${comm.id}`);
+      const grid = commSection.querySelector('.catalog-grid');
 
       comm.courses.forEach(crs => {
         const total = crs.totalLessons || 1;
         const compCount = crs.modules.reduce((acc, m) => 
-          acc + m.lessons.filter(l => completedLessonIds.has(l.id)).length, 0
+          acc + m.lessons.filter(l => progress.has(crs.id, l.id)).length, 0
         );
         const percent = Math.round((compCount / total) * 100);
 
         const card = document.createElement('div');
         card.className = 'course-card-editorial';
-        card.innerHTML = `
+        card.innerHTML = window.CinematicSanitize(`
           <div class="course-card-banner">
-            <span class="card-subtag">[ ${crs.bannerTag || '1080P HD'} ]</span>
-            <h3>${crs.courseTitle}</h3>
+            <span class="card-subtag">[ ${escapeHtml(crs.bannerTag || '1080P HD')} ]</span>
+            <h3>${escapeHtml(crs.courseTitle)}</h3>
           </div>
           <div class="course-card-body">
             <p style="font-size: 13px; color: var(--text-muted); line-height: 1.5;">
-              ${crs.subtitle || 'Formación completa con video lecciones organizadas y recursos de edición.'}
+              ${escapeHtml(crs.subtitle || 'Formación completa con video lecciones organizadas y recursos de edición.')}
             </p>
             <div class="course-card-meta-row">
-              <span>${ICONS.MODULE} ${crs.totalModules} Módulos</span>
-              <span>${ICONS.PLAY} ${crs.totalLessons} Clases</span>
-              <span>${ICONS.PAPERCLIP} ${crs.totalResources || 0} Recursos</span>
+              <span>${ICONS.MODULE} ${escapeHtml(crs.totalModules)} Módulos</span>
+              <span>${ICONS.PLAY} ${escapeHtml(crs.totalLessons)} Clases</span>
+              <span>${ICONS.PAPERCLIP} ${escapeHtml(crs.totalResources || 0)} Recursos</span>
             </div>
             <div class="course-card-progress">
               <div class="course-card-progress-label">
@@ -198,7 +201,7 @@
               ${ICONS.ROCKET} ENTRAR AL CURSO
             </button>
           </div>
-        `;
+        `);
 
         card.addEventListener('click', () => {
           selectCourse(crs);
@@ -215,14 +218,14 @@
   function selectCourse(courseObj) {
     if (!courseObj) return;
     currentCourse = courseObj;
-    localStorage.setItem(STORAGE_KEY_ACTIVE_COURSE, courseObj.id);
+    savePreference(STORAGE_KEY_ACTIVE_COURSE, courseObj.id);
     flattenLessons();
     updateProgressUI();
     populateCourseSelector();
     switchView('player');
 
     const courseSavedKey = STORAGE_KEY_LAST_LESSON_PREFIX + courseObj.id;
-    const savedLessonId = localStorage.getItem(courseSavedKey);
+    const savedLessonId = readPreference(courseSavedKey);
     const lessonToLoad = allFlattenedLessons.find(l => l.id === savedLessonId) || allFlattenedLessons[0];
     
     currentActiveLesson = lessonToLoad || null;
@@ -246,7 +249,7 @@
   // Update Global HUD Progress
   function updateProgressUI() {
     const total = allFlattenedLessons.length || 1;
-    const completedCount = allFlattenedLessons.filter(l => completedLessonIds.has(l.id)).length;
+    const completedCount = allFlattenedLessons.filter(l => progress.has(currentCourse?.id, l.id)).length;
     const percent = Math.round((completedCount / total) * 100);
 
     if (progressPercentEl) progressPercentEl.textContent = `${percent}%`;
@@ -278,16 +281,16 @@
 
       const modHeader = document.createElement('div');
       modHeader.className = 'module-header';
-      modHeader.innerHTML = `
+      modHeader.innerHTML = window.CinematicSanitize(`
         <div class="module-title-wrap">
-          <span class="module-num">${String(mod.index).padStart(2, '0')}</span>
-          <span class="module-name" title="${mod.title}">${mod.title}</span>
+          <span class="module-num">${escapeHtml(String(mod.index).padStart(2, '0'))}</span>
+          <span class="module-name" title="${escapeHtml(mod.title)}">${escapeHtml(mod.title)}</span>
         </div>
         <div class="module-meta-right">
           <span class="module-count">[ ${filteredLessons.length} ]</span>
           ${ICONS.CHEVRON}
         </div>
-      `;
+      `);
 
       // Accordion Click Handler
       modHeader.addEventListener('click', () => {
@@ -298,24 +301,24 @@
       lessonsList.className = 'lessons-list';
 
       filteredLessons.forEach(les => {
-        const isCompleted = completedLessonIds.has(les.id);
+        const isCompleted = progress.has(currentCourse.id, les.id);
         const isActive = currentActiveLesson && currentActiveLesson.id === les.id;
 
         const row = document.createElement('div');
         row.className = `lesson-row ${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''}`;
         row.setAttribute('data-id', les.id);
 
-        row.innerHTML = `
+        row.innerHTML = window.CinematicSanitize(`
           <div class="lesson-left">
-            <button class="lesson-check-btn ${isCompleted ? 'completed' : ''}" title="Marcar como completada">
+            <button class="lesson-check-btn ${isCompleted ? 'completed' : ''}" title="Marcar como completada" aria-pressed="${isCompleted}">
               ${isCompleted ? ICONS.CHECK : ''}
             </button>
-            <span class="lesson-title-text" title="${les.title}">${les.sourceOrder || les.index} - ${les.title}</span>
+            <span class="lesson-title-text" title="${escapeHtml(les.title)}">${escapeHtml(les.sourceOrder || les.index)} - ${escapeHtml(les.title)}</span>
           </div>
           <span class="lesson-status-tag ${les.inDrive ? 'drive' : 'pending'}">
             ${les.inDrive ? 'Drive ✓' : 'Pendiente'}
           </span>
-        `;
+        `);
 
         // Click Row to Load Lesson
         row.addEventListener('click', (e) => {
@@ -407,7 +410,7 @@
     if (!lesson) return;
     currentActiveLesson = lesson;
     if (currentCourse) {
-      localStorage.setItem(STORAGE_KEY_LAST_LESSON_PREFIX + currentCourse.id, lesson.id);
+      savePreference(STORAGE_KEY_LAST_LESSON_PREFIX + currentCourse.id, lesson.id);
     }
 
     // Auto-expand active module and highlight active row
@@ -436,7 +439,7 @@
     if (stageLessonTitle) stageLessonTitle.textContent = lesson.title;
 
     // Update Mark Complete Button State
-    const isCompleted = completedLessonIds.has(lesson.id);
+    const isCompleted = progress.has(currentCourse?.id, lesson.id);
     if (btnMarkComplete) {
       if (isCompleted) {
         btnMarkComplete.innerHTML = `${ICONS.CHECK} COMPLETADA`;
@@ -446,6 +449,8 @@
         btnMarkComplete.className = 'btn-technical';
       }
     }
+
+    if (btnMarkComplete) btnMarkComplete.setAttribute('aria-pressed', String(isCompleted));
 
     // Prefer the authenticated local bridge for private Drive files. Public files
     // can still use the direct fallbacks without third-party Drive cookies.
@@ -495,7 +500,7 @@
     if (!lessonNotesHud || !lessonNotesBody) return;
     const descHtml = lesson.descriptionHtml || lesson.description || '';
     if (descHtml && typeof descHtml === 'string' && descHtml.trim()) {
-      lessonNotesBody.innerHTML = descHtml;
+      lessonNotesBody.innerHTML = window.CinematicSanitizeNotes(descHtml);
       lessonNotesHud.style.display = 'block';
     } else {
       lessonNotesBody.innerHTML = '';
@@ -522,7 +527,12 @@
     resources.forEach(res => {
       const card = document.createElement('a');
       card.className = 'resource-card';
-      card.href = res.gdriveLink || res.url;
+      const resourceUrl = res.gdriveLink || res.url || '';
+      try {
+        const parsed = new URL(resourceUrl);
+        if (!['http:', 'https:'].includes(parsed.protocol)) return;
+        card.href = parsed.href;
+      } catch (_) { return; }
       card.target = '_blank';
       card.rel = 'noopener noreferrer';
 
@@ -536,50 +546,45 @@
         icon = ICONS.ZIP;
       }
 
-      card.innerHTML = `
+      card.innerHTML = window.CinematicSanitize(`
         <div class="resource-card-info">
-          <span class="resource-card-tag ${tagClass}">${icon} ${res.categoryLabel || 'RECURSO'}</span>
-          <span class="resource-card-title" title="${res.name}">${res.name}</span>
+          <span class="resource-card-tag ${tagClass}">${icon} ${escapeHtml(res.categoryLabel || 'RECURSO')}</span>
+          <span class="resource-card-title" title="${escapeHtml(res.name)}">${escapeHtml(res.name)}</span>
         </div>
         <span class="resource-card-btn">ABRIR ${ICONS.EXTERNAL}</span>
-      `;
+      `);
 
       resourcesGrid.appendChild(card);
     });
   }
 
-  // Toggle Lesson Completion
-  function toggleLessonComplete(lessonId) {
-    if (completedLessonIds.has(lessonId)) {
-      completedLessonIds.delete(lessonId);
-      showToast('Lección desmarcada');
-    } else {
-      completedLessonIds.add(lessonId);
-      showToast('¡Lección marcada como completada!');
-    }
-
-    localStorage.setItem(STORAGE_KEY_PROGRESS, JSON.stringify(Array.from(completedLessonIds)));
+  // Refresh checks without rebuilding the tree or interrupting playback.
+  function refreshProgress() {
     updateProgressUI();
-    
-    // Update checkmark in DOM
-    const row = document.querySelector(`.lesson-row[data-id="${lessonId}"]`);
-    if (row) {
-      const isCompleted = completedLessonIds.has(lessonId);
-      row.className = `lesson-row ${currentActiveLesson && currentActiveLesson.id === lessonId ? 'active' : ''} ${isCompleted ? 'completed' : ''}`;
-      const checkBtn = row.querySelector('.lesson-check-btn');
-      if (checkBtn) {
-        checkBtn.className = `lesson-check-btn ${isCompleted ? 'completed' : ''}`;
-        checkBtn.innerHTML = isCompleted ? ICONS.CHECK : '';
+    document.querySelectorAll('.lesson-row').forEach(row => {
+      const completed = progress.has(currentCourse?.id, row.getAttribute('data-id'));
+      row.classList.toggle('completed', completed);
+      const check = row.querySelector('.lesson-check-btn');
+      if (check) {
+        check.classList.toggle('completed', completed);
+        check.innerHTML = completed ? ICONS.CHECK : '';
+        check.setAttribute('aria-pressed', String(completed));
       }
+    });
+    if (currentActiveLesson && btnMarkComplete) {
+      const completed = progress.has(currentCourse?.id, currentActiveLesson.id);
+      btnMarkComplete.innerHTML = completed ? ICONS.CHECK + ' COMPLETADA' : 'MARCAR COMPLETADA';
+      btnMarkComplete.className = completed ? 'btn-technical secondary' : 'btn-technical';
+      btnMarkComplete.setAttribute('aria-pressed', String(completed));
     }
+    if (currentView === 'home') renderCatalog();
+  }
 
-    if (currentActiveLesson && currentActiveLesson.id === lessonId) {
-      const isCompleted = completedLessonIds.has(lessonId);
-      if (btnMarkComplete) {
-        btnMarkComplete.innerHTML = isCompleted ? `${ICONS.CHECK} COMPLETADA` : `<svg class="svg-icon" viewBox="0 0 24 24" style="stroke:#000;"><polyline points="20 6 9 17 4 12"></polyline></svg> MARCAR COMPLETADA`;
-        btnMarkComplete.className = isCompleted ? 'btn-technical secondary' : 'btn-technical';
-      }
-    }
+  function toggleLessonComplete(lessonId) {
+    if (!currentCourse) return;
+    const result = progress.toggle(currentCourse.id, lessonId);
+    showToast(result.message);
+    if (result.ok) refreshProgress();
   }
 
   // Prev / Next Navigation
@@ -627,6 +632,7 @@
         const executeData = new Function(jsCode);
         executeData();
         communitiesList = window.COMMUNITIES_DATA || [];
+        progress.setCatalog(communitiesList);
         if (currentCourse) {
           const freshCourse = communitiesList.flatMap(c => c.courses).find(c => c.id === currentCourse.id);
           if (freshCourse) {
@@ -830,7 +836,7 @@
 
     // Keyboard navigation
     document.addEventListener('keydown', (e) => {
-      if (e.target.tagName === 'INPUT') return;
+      if (e.target.closest('input, textarea, select, button, dialog') || e.target.isContentEditable) return;
       if (e.key === 'ArrowRight' || e.key === 'l') navigateLesson(1);
       if (e.key === 'ArrowLeft' || e.key === 'h') navigateLesson(-1);
     });
@@ -840,7 +846,7 @@
   async function init() {
     await reloadCourseData();
     communitiesList = window.COMMUNITIES_DATA || [];
-    const savedCourseId = localStorage.getItem(STORAGE_KEY_ACTIVE_COURSE);
+    const savedCourseId = readPreference(STORAGE_KEY_ACTIVE_COURSE);
     if (savedCourseId && communitiesList.length > 0) {
       for (const comm of communitiesList) {
         const found = comm.courses.find(c => c.id === savedCourseId);
@@ -859,11 +865,12 @@
     flattenLessons();
     updateProgressUI();
     setupListeners();
+    progress.subscribe(refreshProgress);
     updateNetworkAndBridgeStatus();
 
     if (currentCourse) {
       const courseSavedKey = STORAGE_KEY_LAST_LESSON_PREFIX + currentCourse.id;
-      const savedLessonId = localStorage.getItem(courseSavedKey);
+      const savedLessonId = readPreference(courseSavedKey);
       const initialLesson = allFlattenedLessons.find(l => l.id === savedLessonId) || allFlattenedLessons[0];
       
       currentActiveLesson = initialLesson || null;

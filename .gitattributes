@@ -1,0 +1,3 @@
+# Generated SDK bundles contain intentional whitespace inside string literals.
+js/supabase-client.js -whitespace linguist-generated=true
+studio-web/js/supabase-client.js -whitespace linguist-generated=true

@@ -7,7 +7,7 @@
   <meta name="description" content="Cinematic LMS Studio - Formaciones y reproductor de cursos con streaming en Google Drive y modo offline.">
   <title>Cinematic LMS Studio · Ultimate Editors 2.0</title>
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/studio-theme.css?v=2.6.6">
+  <link rel="stylesheet" href="css/studio-theme.css?v=3.0.0">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%22100%22%20%22100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 </head>
 <body>
@@ -53,6 +53,40 @@
       </a>
     </div>
   </header>
+
+  <div class="progress-account-bar">
+    <span id="progress-sync-status" role="status" aria-live="polite">Solo en este navegador</span>
+    <button id="btn-account" class="btn-technical secondary">GUARDAR MI PROGRESO</button>
+  </div>
+
+  <dialog id="account-dialog" class="account-dialog" aria-labelledby="account-title">
+    <button id="account-close" class="account-close" aria-label="Cerrar cuenta">×</button>
+    <span class="account-eyebrow">CINEMATIC STUDIO</span>
+    <h2 id="account-title">Guarda tu progreso</h2>
+    <p id="account-local-note">Entra con la misma cuenta en tus dispositivos. Al iniciar sesión se incorporarán las clases completadas que conserva este navegador.</p>
+    <p id="account-cloud-unavailable" hidden>La conexión con tu cuenta aún no está configurada. Puedes seguir guardando el progreso aquí y descargar una copia.</p>
+    <form id="account-auth-form">
+      <label id="account-email-label" for="account-email">Correo electrónico</label>
+      <input id="account-email" name="email" type="email" autocomplete="email" required placeholder="tu@correo.com">
+      <label id="account-password-label" for="account-password">Contraseña</label>
+      <input id="account-password" name="password" type="password" autocomplete="current-password" required>
+      <button id="account-submit" class="btn-technical full-width" type="submit">Entrar</button>
+      <div class="account-form-actions">
+        <button id="account-switch-mode" type="button" class="account-text-button">Crear una cuenta</button>
+        <button id="account-forgot" type="button" class="account-text-button">Olvidé mi contraseña</button>
+      </div>
+    </form>
+    <div id="account-signed-in" hidden>
+      <p id="account-email-value"></p>
+      <p id="account-sync-detail" role="status"></p>
+      <div class="account-form-actions">
+        <button id="account-sync-now" class="btn-technical">Sincronizar ahora</button>
+        <button id="account-signout" class="btn-technical secondary">Cerrar sesión aquí</button>
+      </div>
+    </div>
+    <p id="account-feedback" role="status" aria-live="polite"></p>
+    <button id="account-export" type="button" class="account-text-button account-export">Descargar copia de mi progreso</button>
+  </dialog>
 
   <!-- 1. HOME / MULTI-COURSE CATALOG VIEW -->
   <div id="home-view" class="view-container">
@@ -182,7 +216,11 @@
 
   <!-- DATA & APP SCRIPTS -->
   <script src="data/course-data.js?v=2.7.0"></script>
-  <script src="js/app.js?v=2.7.0"></script>
+  <script src="js/cloud-config.js?v=3.0.0"></script>
+  <script src="js/supabase-client.js?v=3.0.0"></script>
+  <script src="js/progress-store.js?v=3.0.0"></script>
+  <script src="js/cloud-progress.js?v=3.0.0"></script>
+  <script src="js/app.js?v=3.0.0"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {

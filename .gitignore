@@ -51,6 +51,8 @@ server_err.log
 
 # Vercel Deployment
 .vercel
+node_modules/
+test-results/
 
 # Downloaded Media & Large Files
 *.mp4

@@ -94,6 +94,43 @@ body::before {
   fill: currentColor;
 }
 
+/* Account and durable progress status */
+.progress-account-bar {
+  display: flex; align-items: center; justify-content: flex-end; gap: 16px;
+  padding: 8px 24px; background: var(--bg-surface); border-bottom: var(--border-grid);
+  position: relative; z-index: 9; flex-shrink: 0;
+}
+#progress-sync-status { font-size: 12px; color: var(--text-muted); }
+#progress-sync-status[data-state="saved"] { color: var(--accent-lime); }
+#progress-sync-status[data-state="error"] { color: #fbbf24; }
+.progress-account-bar .btn-technical { padding: 7px 12px; font-size: 10px; }
+.account-dialog {
+  margin: auto; width: min(460px, calc(100vw - 32px)); max-height: calc(100vh - 40px); max-height: calc(100dvh - 40px);
+  padding: 32px; border: var(--border-grid-strong); border-radius: 16px;
+  color: var(--text-main); background: var(--bg-surface); box-shadow: 0 24px 80px #0009;
+}
+.account-dialog::backdrop { background: #000b; backdrop-filter: blur(5px); }
+.account-dialog h2 { font-family: var(--font-display); font-size: 26px; margin: 12px 0; }
+.account-dialog p { color: var(--text-muted); font-size: 14px; line-height: 1.6; margin: 12px 0; overflow-wrap: anywhere; }
+.account-eyebrow { font-family: var(--font-mono); font-size: 10px; letter-spacing: .12em; color: var(--accent-cyan); }
+.account-close { position: absolute; top: 12px; right: 12px; background: none; border: 0; color: var(--text-muted); font-size: 26px; cursor: pointer; padding: 4px 8px; }
+.account-dialog label { display: block; font-size: 12px; margin: 18px 0 8px; }
+.account-dialog input { width: 100%; padding: 12px; background: var(--bg-main); border: var(--border-grid-strong); color: var(--text-main); border-radius: 8px; font-size: 16px; }
+.account-dialog input:focus { outline: 2px solid var(--accent-cyan); outline-offset: 2px; }
+.account-dialog [hidden] { display: none !important; }
+.account-dialog .full-width { margin-top: 20px; justify-content: center; width: 100%; }
+.account-dialog button:disabled { opacity: .5; cursor: wait; }
+.account-form-actions { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin: 18px 0; }
+.account-text-button { border: 0; background: none; color: var(--accent-cyan); font: inherit; font-size: 12px; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.account-export { border-top: var(--border-grid); padding-top: 18px; margin-top: 8px; width: 100%; text-align: left; }
+#account-feedback { min-height: 22px; color: var(--accent-cyan); }
+#account-feedback[data-error="true"] { color: #fbbf24; }
+@media (max-width: 640px) {
+  .progress-account-bar { padding: 8px 12px; justify-content: space-between; gap: 8px; }
+  #progress-sync-status { font-size: 11px; }
+  .account-dialog { padding: 24px; }
+}
+
 /* TOP APP HEADER */
 .top-header {
   position: relative;

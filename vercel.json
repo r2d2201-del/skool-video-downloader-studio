@@ -1,4 +1,6 @@
 {
+  "buildCommand": "npm run build -- --require-cloud",
+  "outputDirectory": "dist",
   "cleanUrls": false,
   "headers": [
     {
