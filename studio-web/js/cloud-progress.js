@@ -8,6 +8,7 @@
   let state = 'local', message = '', storageError = null, mode = 'signin', recovering = false, authBusy = false;
   let store;
   let completedKeys = new Set();
+  let checkingService = false;
   function emit() {
     try { if (store) completedKeys = store.completedKeys(); render(); } catch (error) { storageError = error; renderError(); }
     for (const listener of listeners) listener();
@@ -50,12 +51,51 @@
     byId('account-feedback').dataset.error = String(isError);
   }
   function readableError(error) {
-    if (error?.status === 429 || /rate.limit|too many/i.test(error?.message || '')) return 'Se han hecho varios intentos. Espera unos minutos y vuelve a intentar.';
-    if (/invalid login/i.test(error?.message || '')) return 'El correo o la contraseña no coinciden.';
-    if (/email not confirmed/i.test(error?.message || '')) return 'Confirma primero tu correo con el enlace que recibiste.';
-    if (/email_address_not_authorized|email address.*not authorized/i.test((error?.code || '') + (error?.message || ''))) return 'Este servicio de correo aún está limitado a los miembros del proyecto. Contacta con Arturo para habilitar tu cuenta.';
-    if (!navigator.onLine || /fetch|network/i.test(error?.message || '')) return 'Sin conexión. Los cambios guardados en este navegador se enviarán cuando vuelvas a conectarte.';
-    return 'No se pudo completar la operación. Tu progreso local se conserva; vuelve a intentarlo.';
+    const code = error?.code || '', detail = error?.message || '';
+    if (!navigator.onLine) return 'Este dispositivo está sin conexión. Tu progreso local se conserva; vuelve a intentar cuando tengas internet.';
+    if (error?.status === 429 || /rate_limit/.test(code) || /rate.limit|too many/i.test(detail)) return 'Demasiados intentos o correos solicitados. Espera unos minutos antes de volver a intentar.';
+    if (code === 'invalid_credentials' || /invalid login/i.test(detail)) return 'El correo o la contraseña no coinciden. Si nunca te registraste aquí, elige «Crear una cuenta». Si ya tienes cuenta, usa «Olvidé mi contraseña».';
+    if (code === 'email_not_confirmed' || /email not confirmed/i.test(detail)) return 'Tu cuenta necesita confirmar el correo. Abre el enlace de confirmación que recibiste y después vuelve a entrar.';
+    if (code === 'email_address_not_authorized' || /email address.*not authorized/i.test(detail)) return 'No se puede enviar correo a esta dirección con la configuración actual. Usa el correo de tu organización Supabase o solicita habilitar el envío de correos.';
+    if (code === 'weak_password') return 'Elige una contraseña más segura, de al menos 8 caracteres.';
+    if (['email_exists', 'user_already_exists'].includes(code)) return 'Ya hay una cuenta con este correo. Entra o usa «Olvidé mi contraseña».';
+    if (code === 'otp_expired') return 'El enlace ha caducado o ya se usó. Solicita uno nuevo desde «Olvidé mi contraseña».';
+    if (code === 'signup_disabled' || code === 'email_provider_disabled') return 'El registro por correo no está disponible en este momento. Contacta con el administrador.';
+    if (error?.status >= 500) return 'El servicio de acceso está fallando temporalmente. Este error no permite saber si tu contraseña es correcta. Tu progreso local se conserva; vuelve a intentarlo más tarde.';
+    if (code === 'request_timeout' || ['AbortError', 'TimeoutError'].includes(error?.name)) return 'El servicio tardó demasiado en responder. No se pudo comprobar tu acceso; vuelve a intentarlo.';
+    if (['AuthRetryableFetchError', 'TypeError'].includes(error?.name) || /fetch|network|load failed|failed to load/i.test(detail)) return 'No se pudo contactar con el servicio de acceso. Puede estar pausado, no disponible o bloqueado por la conexión. No se pudo comprobar tu correo ni tu contraseña. Tu progreso local se conserva.';
+    return 'No se pudo comprobar tu acceso. Pulsa «Comprobar servicio» y vuelve a intentar. Tu progreso local se conserva.';
+  }
+  async function checkService() {
+    const status = byId('account-service-status'), button = byId('account-check-service');
+    if (!status || checkingService) return;
+    function show(text, state) { status.textContent = text; status.dataset.state = state; }
+    if (!client) { show('Servicio sin configurar.', 'error'); return; }
+    if (!navigator.onLine) { show('Dispositivo sin conexión a internet.', 'error'); return; }
+    checkingService = true;
+    if (button) button.disabled = true;
+    show('Comprobando servicio de acceso…', 'checking');
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 8000);
+    try {
+      // Public settings only: this check never submits an email or password.
+      const response = await fetch(`${config.url}/auth/v1/settings`, {
+        headers: { apikey: config.publishableKey }, cache: 'no-store', signal: controller.signal
+      });
+      if (response.status === 429) show('Servicio con demasiadas solicitudes. Espera unos minutos.', 'error');
+      else if ([401, 403].includes(response.status)) show('La configuración del servicio necesita revisión.', 'error');
+      else if (!response.ok) show('Servicio de acceso no disponible. Inténtalo más tarde.', 'error');
+      else {
+        const settings = await response.json();
+        if (typeof settings?.external?.email !== 'boolean') throw new Error('Unexpected service response');
+        show(settings.external.email ? 'Servicio de acceso disponible.' : 'El acceso por correo está deshabilitado.', settings.external.email ? 'available' : 'error');
+      }
+    } catch (_) {
+      show(navigator.onLine ? 'No se pudo contactar con el servicio. Puede estar pausado o haber un problema de conexión.' : 'Dispositivo sin conexión a internet.', 'error');
+    } finally {
+      clearTimeout(timer); checkingService = false;
+      if (button) button.disabled = false;
+    }
   }
   function remoteFor(activeSession) {
     // Freeze this token for the whole pass. Switching accounts during a request
@@ -137,7 +177,8 @@
     byId('account-forgot').hidden = next !== 'signin';
     feedback('');
   }
-  byId('btn-account').addEventListener('click', () => { emit(); dialog.showModal(); });
+  byId('btn-account').addEventListener('click', () => { emit(); dialog.showModal(); checkService(); });
+  byId('account-check-service')?.addEventListener('click', checkService);
   byId('account-close').addEventListener('click', () => dialog.close());
   byId('account-switch-mode').addEventListener('click', () => setMode(mode === 'signin' ? 'signup' : 'signin'));
   byId('account-forgot').addEventListener('click', () => setMode('reset'));

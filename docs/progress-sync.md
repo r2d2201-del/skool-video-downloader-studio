@@ -83,3 +83,25 @@ confirmación con su propio correo.
 La licencia pendiente de Xcode bloquea `/usr/bin/git`. Para las operaciones Git
 funciona `/Library/Developer/CommandLineTools/usr/bin/git`, sin aceptar licencias
 ni cambiar configuraciones del equipo.
+
+## Incidencia de acceso: 22 de octubre de 2026
+
+El proyecto estaba INACTIVE y su endpoint de Auth no resolvía por DNS. Se reactivó
+con restore_project y volvió a ACTIVE_HEALTHY. Se comprobó mediante una consulta
+administrativa que la cuenta consultada por su titular existe y está confirmada;
+no se consultó ni modificó su contraseña. La pausa del plan gratuito puede volver
+a ocurrir con poca actividad: https://supabase.com/docs/guides/platform/free-project-pausing.
+
+La versión 3.0.1 incorpora «Comprobar servicio» en el formulario. Consulta únicamente
+GET /auth/v1/settings, sin enviar correo ni contraseña, sin caché y con límite de
+8 segundos. Verifica que la respuesta corresponda al servicio de acceso por correo.
+Se consulta al abrir el formulario y bajo petición, sin tareas periódicas nuevas.
+Los mensajes distinguen credenciales incorrectas, correo sin confirmar, restricción
+de correo, límite de intentos, fallo del servidor y errores de conexión de Safari
+(«Load failed»). Un fallo de red no prueba que las credenciales sean incorrectas.
+La interfaz pública no incorpora una consulta de existencia de correos.
+
+Validación: 22 pruebas locales pasan, incluida recuperación del indicador de servicio,
+HTTP 401/429/503, respuesta inesperada y timeout. Comprobación real en el navegador:
+«Servicio de acceso disponible» después de la reactivación. No se enviaron correos
+ni se crearon cuentas de prueba para este arreglo.

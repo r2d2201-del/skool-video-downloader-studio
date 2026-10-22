@@ -118,6 +118,11 @@ body::before {
 .account-dialog input { width: 100%; padding: 12px; background: var(--bg-main); border: var(--border-grid-strong); color: var(--text-main); border-radius: 8px; font-size: 16px; }
 .account-dialog input:focus { outline: 2px solid var(--accent-cyan); outline-offset: 2px; }
 .account-dialog [hidden] { display: none !important; }
+.account-service-check { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding: 12px; border: var(--border-grid); border-radius: 8px; font-size: 12px; line-height: 1.5; }
+.account-service-check span { flex: 1 1 200px; }
+#account-service-status[data-state="available"] { color: var(--accent-cyan); }
+#account-service-status[data-state="error"] { color: #fbbf24; }
+.account-dialog .account-help { font-size: 12px; }
 .account-dialog .full-width { margin-top: 20px; justify-content: center; width: 100%; }
 .account-dialog button:disabled { opacity: .5; cursor: wait; }
 .account-form-actions { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin: 18px 0; }

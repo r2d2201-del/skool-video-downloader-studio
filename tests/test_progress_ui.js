@@ -12,6 +12,7 @@ function backend() {
     rows, offline: false, writes: [],
     async fetch(url, options = {}) {
       if (this.offline) throw new TypeError('Failed to fetch');
+      if (new URL(url).pathname === '/auth/v1/settings') return { ok: true, status: 200, json: async () => ({ external: { email: true } }) };
       const user = options.headers.Authorization.replace('Bearer token-', '');
       const parsed = new URL(url);
       let data;
@@ -100,4 +101,74 @@ test('bundled sanitization removes executable notes while retaining links and fo
   assert.doesNotMatch(safe, /onerror|javascript:/);
   assert.match(safe, /<h2>Notas<\/h2>/);
   assert.match(safe, /https:\/\/example.com/);
+});
+
+test('login errors explain credentials, confirmation, outage and Safari connection failure', async t => {
+  for (const [error, expected] of [
+    [{ code: 'invalid_credentials', status: 400 }, /correo o la contraseña no coinciden.*Crear una cuenta.*Olvidé mi contraseña/],
+    [{ code: 'email_not_confirmed', status: 400 }, /cuenta necesita confirmar el correo/],
+    [{ status: 503 }, /servicio de acceso está fallando.*no permite saber si tu contraseña/],
+    [{ name: 'AuthRetryableFetchError', message: 'Load failed', status: 0 }, /No se pudo contactar.*No se pudo comprobar tu correo ni tu contraseña/],
+    [{ status: 429 }, /Demasiados intentos/],
+    [{ code: 'email_address_not_authorized' }, /configuración actual/]
+  ]) {
+    const a = page(t, backend());
+    a.auth.signInWithPassword = async () => ({ error });
+    a.w.document.getElementById('account-email').value = 'one@example.test';
+    a.w.document.getElementById('account-password').value = 'not-a-real-password';
+    a.w.document.getElementById('account-auth-form').dispatchEvent(new a.w.Event('submit', { cancelable: true }));
+    await until(() => a.w.document.getElementById('account-feedback').dataset.error === 'true');
+    assert.match(a.w.document.getElementById('account-feedback').textContent, expected);
+    assert.equal(a.w.document.getElementById('account-submit').disabled, false);
+  }
+});
+
+test('service check makes only a public request, detects failure and can recover without login', async t => {
+  const remote = backend(), requests = [];
+  const a = page(t, remote);
+  a.w.fetch = async (url, options) => { requests.push({ url, options }); return remote.fetch(url, options); };
+  a.w.document.getElementById('account-email').value = 'private@example.test';
+  a.w.document.getElementById('account-password').value = 'private-password';
+  const status = a.w.document.getElementById('account-service-status');
+  a.w.document.getElementById('btn-account').click();
+  await until(() => status.dataset.state === 'available');
+  assert.equal(requests.length, 1);
+  assert.equal(requests[0].url, 'https://cloud.test/auth/v1/settings');
+  assert.equal(requests[0].options.body, undefined);
+  assert.equal(requests[0].options.headers.Authorization, undefined);
+  assert.doesNotMatch(JSON.stringify(requests), /private@|private-password/);
+  remote.offline = true;
+  a.w.document.getElementById('account-check-service').click();
+  await until(() => status.dataset.state === 'error');
+  assert.match(status.textContent, /pausado|conexión/);
+  remote.offline = false;
+  a.w.document.getElementById('account-check-service').click();
+  await until(() => status.dataset.state === 'available');
+  assert.equal(a.status(), 'Solo en este navegador');
+});
+
+test('service check distinguishes HTTP failures and does not accept an unrelated JSON response', async t => {
+  for (const response of [
+    { ok: false, status: 503 },
+    { ok: false, status: 401 },
+    { ok: false, status: 429 },
+    { ok: true, json: async () => ({}) },
+    { ok: true, json: async () => ({ external: { email: false } }) }
+  ]) {
+    const a = page(t, backend());
+    a.w.fetch = async () => response;
+    a.w.document.getElementById('btn-account').click();
+    await until(() => a.w.document.getElementById('account-service-status').dataset.state === 'error');
+    assert.equal(a.w.document.getElementById('account-check-service').disabled, false);
+  }
+});
+
+test('a stalled service check times out and allows another attempt', async t => {
+  const a = page(t, backend());
+  const originalTimeout = a.w.setTimeout.bind(a.w);
+  a.w.setTimeout = (fn, delay) => originalTimeout(fn, delay === 8000 ? 0 : delay);
+  a.w.fetch = (_url, { signal }) => new Promise((_resolve, reject) => signal.addEventListener('abort', () => reject(new Error('aborted'))));
+  a.w.document.getElementById('btn-account').click();
+  await until(() => a.w.document.getElementById('account-service-status').dataset.state === 'error');
+  assert.equal(a.w.document.getElementById('account-check-service').disabled, false);
 });

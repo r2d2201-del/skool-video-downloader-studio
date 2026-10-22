@@ -7,7 +7,7 @@
   <meta name="description" content="Cinematic LMS Studio - Formaciones y reproductor de cursos con streaming en Google Drive y modo offline.">
   <title>Cinematic LMS Studio · Ultimate Editors 2.0</title>
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/studio-theme.css?v=3.0.0">
+  <link rel="stylesheet" href="css/studio-theme.css?v=3.0.1">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%22100%22%20%22100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 </head>
 <body>
@@ -65,7 +65,12 @@
     <h2 id="account-title">Guarda tu progreso</h2>
     <p id="account-local-note">Entra con la misma cuenta en tus dispositivos. Al iniciar sesión se incorporarán las clases completadas que conserva este navegador.</p>
     <p id="account-cloud-unavailable" hidden>La conexión con tu cuenta aún no está configurada. Puedes seguir guardando el progreso aquí y descargar una copia.</p>
+    <div class="account-service-check">
+      <span id="account-service-status" role="status" aria-live="polite">Estado del servicio sin comprobar.</span>
+      <button id="account-check-service" type="button" class="account-text-button">Comprobar servicio</button>
+    </div>
     <form id="account-auth-form">
+      <p class="account-help">¿Primera vez aquí? Elige «Crear una cuenta». La cuenta de los cursos es independiente de tu cuenta de Google o Supabase.</p>
       <label id="account-email-label" for="account-email">Correo electrónico</label>
       <input id="account-email" name="email" type="email" autocomplete="email" required placeholder="tu@correo.com">
       <label id="account-password-label" for="account-password">Contraseña</label>
@@ -216,11 +221,11 @@
 
   <!-- DATA & APP SCRIPTS -->
   <script src="data/course-data.js?v=2.7.0"></script>
-  <script src="js/cloud-config.js?v=3.0.0"></script>
-  <script src="js/supabase-client.js?v=3.0.0"></script>
-  <script src="js/progress-store.js?v=3.0.0"></script>
-  <script src="js/cloud-progress.js?v=3.0.0"></script>
-  <script src="js/app.js?v=3.0.0"></script>
+  <script src="js/cloud-config.js?v=3.0.1"></script>
+  <script src="js/supabase-client.js?v=3.0.1"></script>
+  <script src="js/progress-store.js?v=3.0.1"></script>
+  <script src="js/cloud-progress.js?v=3.0.1"></script>
+  <script src="js/app.js?v=3.0.1"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
